@@ -82,7 +82,7 @@ function PrivacyPolicy() {
     <div className="space-y-6 text-sm text-gray-700 leading-relaxed">
       <section>
         <h3 className="font-bold text-base text-black mb-3">1. 개인정보의 수집 및 이용목적</h3>
-        <p>경성대 고덕퍼스트치과의원(이하 &apos;병원&apos;)은 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며, 이용 목적이 변경되는 경우에는 개인정보 보호법 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.</p>
+        <p>고덕퍼스트치과의원(이하 &apos;병원&apos;)은 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며, 이용 목적이 변경되는 경우에는 개인정보 보호법 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.</p>
         <ul className="list-disc pl-5 mt-2 space-y-1">
           <li>진료 예약 및 상담</li>
           <li>진료기록 관리 및 의료서비스 제공</li>
@@ -166,7 +166,7 @@ function TermsOfService() {
     <div className="space-y-6 text-sm text-gray-700 leading-relaxed">
       <section>
         <h3 className="font-bold text-base text-black mb-3">제1조 (목적)</h3>
-        <p>이 약관은 경성대 고덕퍼스트치과의원(이하 &quot;병원&quot;)이 제공하는 의료서비스 및 부가서비스의 이용과 관련하여 병원과 이용자의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.</p>
+        <p>이 약관은 고덕퍼스트치과의원(이하 &quot;병원&quot;)이 제공하는 의료서비스 및 부가서비스의 이용과 관련하여 병원과 이용자의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.</p>
       </section>
 
       <section>

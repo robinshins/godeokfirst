@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     description: '평택 고덕동 전문 치과. 전체임플란트, 디지털임플란트, 충치치료, 사랑니발치, 치아미백 전문. 고덕동치과, 평택치과, 고덕국제신도시치과.',
     images: [
       {
-        url: '/images/og-image.png',
+        url: '/고덕퍼스트치과로고.png',
         width: 1200,
         height: 630,
         alt: '고덕퍼스트치과 - 평택임플란트 전문',
@@ -90,7 +90,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '고덕퍼스트치과 | 평택임플란트 고덕동치과',
     description: '평택 고덕동 전문 치과. 전체임플란트, 디지털임플란트, 충치치료, 사랑니발치, 치아미백 전문.',
-    images: ['/images/og-image.png'],
+    images: ['/고덕퍼스트치과로고.png'],
     site: '고덕퍼스트치과',
   },
   verification: {
@@ -158,7 +158,7 @@ const jsonLd = {
           closes: '14:00',
         },
       ],
-      image: 'https://medisksu.co.kr/images/og-image.png',
+      image: 'https://medisksu.co.kr/고덕퍼스트치과로고.png',
       priceRange: '$$',
       currenciesAccepted: 'KRW',
       paymentAccepted: 'Cash, Credit Card',
