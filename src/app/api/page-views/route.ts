@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createClient } from '@/lib/supabase/client';
+import { createServiceClient } from '@/lib/supabase/server';
 
 /**
  * POST - 페이지 방문 기록
@@ -16,7 +16,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const supabase = createClient();
+    const supabase = createServiceClient();
 
     // 페이지 방문 기록 저장 (클라이언트에서 날짜별 중복 체크 완료)
     const { data, error } = await supabase
@@ -63,7 +63,7 @@ export async function GET(request: NextRequest) {
     const startDateParam = searchParams.get('startDate');
     const endDateParam = searchParams.get('endDate');
 
-    const supabase = createClient();
+    const supabase = createServiceClient();
 
     // 기간 계산
     let startDate: Date | null = null;

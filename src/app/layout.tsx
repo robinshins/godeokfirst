@@ -100,9 +100,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/favicon.svg',
-    shortcut: '/favicon.svg',
-    apple: '/favicon.svg',
+    icon: '/Vector3.png',
+    shortcut: '/Vector3.png',
+    apple: '/Vector3.png',
   },
   other: {
     'subject': '고덕퍼스트치과 | 평택임플란트 고덕동치과',
