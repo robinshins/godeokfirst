@@ -1,0 +1,28 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 36 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="flags / UZ">
+<rect id="Mask" x="0.25" y="0.25" width="35.5" height="25.5" rx="1.75" fill="white" stroke="#F5F5F5" stroke-width="0.5"/>
+<mask id="mask0_uz" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="26">
+<rect id="Mask_2" x="0.25" y="0.25" width="35.5" height="25.5" rx="1.75" fill="white" stroke="white" stroke-width="0.5"/>
+</mask>
+<g mask="url(#mask0_uz)">
+<rect width="36" height="8" fill="#1EB53A"/>
+<rect y="8" width="36" height="1" fill="#D22730"/>
+<rect y="9" width="36" height="8" fill="#FFFFFF"/>
+<rect y="17" width="36" height="1" fill="#D22730"/>
+<rect y="18" width="36" height="8" fill="#0099B5"/>
+<circle cx="6" cy="4.5" r="2" fill="#FFFFFF"/>
+<circle cx="7" cy="4.5" r="1.5" fill="#1EB53A"/>
+<g id="stars">
+<path d="M12 3L12.2 3.6H12.8L12.3 4L12.5 4.6L12 4.2L11.5 4.6L11.7 4L11.2 3.6H11.8L12 3Z" fill="#FFFFFF"/>
+<path d="M15 3L15.2 3.6H15.8L15.3 4L15.5 4.6L15 4.2L14.5 4.6L14.7 4L14.2 3.6H14.8L15 3Z" fill="#FFFFFF"/>
+<path d="M18 3L18.2 3.6H18.8L18.3 4L18.5 4.6L18 4.2L17.5 4.6L17.7 4L17.2 3.6H17.8L18 3Z" fill="#FFFFFF"/>
+<path d="M21 3L21.2 3.6H21.8L21.3 4L21.5 4.6L21 4.2L20.5 4.6L20.7 4L20.2 3.6H20.8L21 3Z" fill="#FFFFFF"/>
+<path d="M24 3L24.2 3.6H24.8L24.3 4L24.5 4.6L24 4.2L23.5 4.6L23.7 4L23.2 3.6H23.8L24 3Z" fill="#FFFFFF"/>
+<path d="M13.5 5.5L13.7 6.1H14.3L13.8 6.5L14 7.1L13.5 6.7L13 7.1L13.2 6.5L12.7 6.1H13.3L13.5 5.5Z" fill="#FFFFFF"/>
+<path d="M16.5 5.5L16.7 6.1H17.3L16.8 6.5L17 7.1L16.5 6.7L16 7.1L16.2 6.5L15.7 6.1H16.3L16.5 5.5Z" fill="#FFFFFF"/>
+<path d="M19.5 5.5L19.7 6.1H20.3L19.8 6.5L20 7.1L19.5 6.7L19 7.1L19.2 6.5L18.7 6.1H19.3L19.5 5.5Z" fill="#FFFFFF"/>
+<path d="M22.5 5.5L22.7 6.1H23.3L22.8 6.5L23 7.1L22.5 6.7L22 7.1L22.2 6.5L21.7 6.1H22.3L22.5 5.5Z" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</svg>

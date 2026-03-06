@@ -1,0 +1,7 @@
+{
+  "tool_name": "Read",
+  "tool_input_preview": "{\"file_path\":\"/Users/singyuseob/Dev/dentist_goduk/src/components/ChatInterface.tsx\"}",
+  "error": "File content (48461 tokens) exceeds maximum allowed tokens (25000). Please use offset and limit parameters to read specific portions of the file, or use the GrepTool to search for specific content.",
+  "timestamp": "2026-03-05T15:11:38.987Z",
+  "retry_count": 3
+}

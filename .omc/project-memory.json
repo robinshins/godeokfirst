@@ -1,0 +1,472 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1772709734697,
+  "projectRoot": "/Users/singyuseob/Dev/dentist_goduk",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "tsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "next",
+        "version": "15.4.8",
+        "category": "fullstack"
+      },
+      {
+        "name": "react",
+        "version": "19.1.2",
+        "category": "frontend"
+      },
+      {
+        "name": "react-dom",
+        "version": "19.1.2",
+        "category": "frontend"
+      }
+    ],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": "npm run build",
+    "testCommand": null,
+    "lintCommand": "npm run lint",
+    "devCommand": "npm run dev",
+    "scripts": {
+      "dev": "next dev -p 3002",
+      "build": "NODE_OPTIONS='--max-old-space-size=4096' next build",
+      "start": "next start",
+      "lint": "next lint"
+    }
+  },
+  "conventions": {
+    "namingStyle": "camelCase",
+    "importStyle": "ES modules",
+    "testPattern": null,
+    "fileOrganization": "type-based"
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "docs",
+      "public",
+      "scripts",
+      "src"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "docs": {
+      "path": "docs",
+      "purpose": "Documentation",
+      "fileCount": 1,
+      "lastAccessed": 1772709734676,
+      "keyFiles": [
+        "TRACKING_SYSTEM_GUIDE.md"
+      ]
+    },
+    "public": {
+      "path": "public",
+      "purpose": "Public files",
+      "fileCount": 6,
+      "lastAccessed": 1772709734678,
+      "keyFiles": [
+        "favicon.svg",
+        "file.svg",
+        "globe.svg",
+        "logo_oneword.svg",
+        "window.svg"
+      ]
+    },
+    "scripts": {
+      "path": "scripts",
+      "purpose": "Build/utility scripts",
+      "fileCount": 7,
+      "lastAccessed": 1772709734684,
+      "keyFiles": [
+        "apply-rename.js",
+        "korean-to-english-mapping.json",
+        "path-mapping.txt",
+        "rename-all-korean-to-english.js",
+        "rename-korean-files.js"
+      ]
+    },
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 2,
+      "lastAccessed": 1772709734684,
+      "keyFiles": [
+        "middleware.ts"
+      ]
+    },
+    "src/app": {
+      "path": "src/app",
+      "purpose": "Application code",
+      "fileCount": 9,
+      "lastAccessed": 1772709734685,
+      "keyFiles": [
+        "favicon.ico",
+        "globals.css",
+        "layout.tsx"
+      ]
+    },
+    "src/components": {
+      "path": "src/components",
+      "purpose": "UI components",
+      "fileCount": 14,
+      "lastAccessed": 1772709734685,
+      "keyFiles": [
+        "ChatInterface.tsx",
+        "ConsultationForm.tsx",
+        "CostWarningCard.tsx"
+      ]
+    },
+    "src/lib": {
+      "path": "src/lib",
+      "purpose": "Library code",
+      "fileCount": 9,
+      "lastAccessed": 1772709734686,
+      "keyFiles": [
+        "intent-analyzer.ts",
+        "meta-conversion.ts",
+        "openai.ts"
+      ]
+    },
+    "src/types": {
+      "path": "src/types",
+      "purpose": "Type definitions",
+      "fileCount": 1,
+      "lastAccessed": 1772709734686,
+      "keyFiles": [
+        "dom-to-image-more.d.ts"
+      ]
+    },
+    "src/utils": {
+      "path": "src/utils",
+      "purpose": "Utility functions",
+      "fileCount": 0,
+      "lastAccessed": 1772709734686,
+      "keyFiles": []
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "src/components/region/RegionLandingPage.tsx",
+      "accessCount": 18,
+      "lastAccessed": 1772722788404,
+      "type": "file"
+    },
+    {
+      "path": "src/app/layout.tsx",
+      "accessCount": 13,
+      "lastAccessed": 1772725202752,
+      "type": "directory"
+    },
+    {
+      "path": "src/components/region/RegionArticlePage.tsx",
+      "accessCount": 13,
+      "lastAccessed": 1772725729238,
+      "type": "file"
+    },
+    {
+      "path": "src/app/seojeong/page.tsx",
+      "accessCount": 12,
+      "lastAccessed": 1772722725649,
+      "type": "file"
+    },
+    {
+      "path": "",
+      "accessCount": 11,
+      "lastAccessed": 1772723495794,
+      "type": "directory"
+    },
+    {
+      "path": "src/app/seojeong/implant/page.tsx",
+      "accessCount": 9,
+      "lastAccessed": 1772722729012,
+      "type": "file"
+    },
+    {
+      "path": "src/app/seojeong/cavity-treatment/page.tsx",
+      "accessCount": 7,
+      "lastAccessed": 1772722748458,
+      "type": "file"
+    },
+    {
+      "path": "src/app/seojeong/wisdom-tooth/page.tsx",
+      "accessCount": 7,
+      "lastAccessed": 1772722750611,
+      "type": "file"
+    },
+    {
+      "path": "src/components/home/LocationSection.tsx",
+      "accessCount": 6,
+      "lastAccessed": 1772722760875,
+      "type": "file"
+    },
+    {
+      "path": "src/app/ichung/page.tsx",
+      "accessCount": 5,
+      "lastAccessed": 1772722631159,
+      "type": "file"
+    },
+    {
+      "path": "src/app",
+      "accessCount": 5,
+      "lastAccessed": 1772725117001,
+      "type": "directory"
+    },
+    {
+      "path": "src/app/ichung/implant/page.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1772721985473,
+      "type": "file"
+    },
+    {
+      "path": "src/app/ichung/cavity-treatment/page.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1772722028911,
+      "type": "file"
+    },
+    {
+      "path": "src/app/ichung/wisdom-tooth/page.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1772722077280,
+      "type": "file"
+    },
+    {
+      "path": "src/app/jangdang/page.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1772722635303,
+      "type": "file"
+    },
+    {
+      "path": "src/app/jangdang/implant/page.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1772721583367,
+      "type": "file"
+    },
+    {
+      "path": "src/components/denture/BestReasonSection.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1772722208816,
+      "type": "file"
+    },
+    {
+      "path": "src/components/region",
+      "accessCount": 3,
+      "lastAccessed": 1772722315133,
+      "type": "directory"
+    },
+    {
+      "path": "src/app/godeok/page.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1772722632251,
+      "type": "file"
+    },
+    {
+      "path": "src/app/jije/page.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1772722632571,
+      "type": "file"
+    },
+    {
+      "path": "src/app/dongsak/page.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1772722633389,
+      "type": "file"
+    },
+    {
+      "path": "src/app/segyo/page.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1772722634289,
+      "type": "file"
+    },
+    {
+      "path": "src/app/godeok-myeon/page.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1772722635869,
+      "type": "file"
+    },
+    {
+      "path": "src/components",
+      "accessCount": 3,
+      "lastAccessed": 1772724708958,
+      "type": "directory"
+    },
+    {
+      "path": "CLAUDE.md",
+      "accessCount": 2,
+      "lastAccessed": 1772715726122,
+      "type": "file"
+    },
+    {
+      "path": "src/app/jangdang/cavity-treatment/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1772721583859,
+      "type": "file"
+    },
+    {
+      "path": "src/app/dongsak/implant/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1772721593480,
+      "type": "file"
+    },
+    {
+      "path": "src/app/dongsak/cavity-treatment/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1772721600317,
+      "type": "file"
+    },
+    {
+      "path": "src/app/segyo/implant/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1772721604559,
+      "type": "file"
+    },
+    {
+      "path": "src/components/home/FooterSection.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1772721614699,
+      "type": "file"
+    },
+    {
+      "path": "src/app/segyo/cavity-treatment/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1772721630019,
+      "type": "file"
+    },
+    {
+      "path": "src/app/dongsak/wisdom-tooth/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1772721680312,
+      "type": "file"
+    },
+    {
+      "path": "src/app/jangdang/wisdom-tooth/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1772721683144,
+      "type": "file"
+    },
+    {
+      "path": "src/app/segyo/wisdom-tooth/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1772721701380,
+      "type": "file"
+    },
+    {
+      "path": "src/app/jije/implant/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1772721812890,
+      "type": "file"
+    },
+    {
+      "path": "src/app/godeok-myeon/implant/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1772721882836,
+      "type": "file"
+    },
+    {
+      "path": "src/app/godeok-myeon/cavity-treatment/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1772721887900,
+      "type": "file"
+    },
+    {
+      "path": "src/app/godeok-myeon/wisdom-tooth/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1772721888418,
+      "type": "file"
+    },
+    {
+      "path": "src/app/jije/cavity-treatment/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1772721900376,
+      "type": "file"
+    },
+    {
+      "path": "src/app/jije/wisdom-tooth/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1772721984636,
+      "type": "file"
+    },
+    {
+      "path": "src/app/godeok/implant/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1772722046281,
+      "type": "file"
+    },
+    {
+      "path": "src/app/godeok/cavity-treatment/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1772722046708,
+      "type": "file"
+    },
+    {
+      "path": "src/app/godeok/wisdom-tooth/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1772722047062,
+      "type": "file"
+    },
+    {
+      "path": "src/components/implant",
+      "accessCount": 2,
+      "lastAccessed": 1772722170643,
+      "type": "directory"
+    },
+    {
+      "path": "src/components/denture",
+      "accessCount": 2,
+      "lastAccessed": 1772722170986,
+      "type": "directory"
+    },
+    {
+      "path": "src/components/implant/ThreeStepNewSection.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1772722195079,
+      "type": "file"
+    },
+    {
+      "path": "src/components/denture/ThreeStepNewSection.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1772722196628,
+      "type": "file"
+    },
+    {
+      "path": "src/app/daeyeon/page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1772721214072,
+      "type": "file"
+    },
+    {
+      "path": "src/app/daeyeon/implant/page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1772721214116,
+      "type": "file"
+    },
+    {
+      "path": "src/components/home",
+      "accessCount": 1,
+      "lastAccessed": 1772722044957,
+      "type": "directory"
+    }
+  ],
+  "userDirectives": []
+}

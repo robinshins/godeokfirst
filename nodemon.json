@@ -1,0 +1,9 @@
+{
+  "watch": ["src", "public"],
+  "ext": "js,ts,jsx,tsx,json,css",
+  "ignore": [".next/*", "node_modules/*"],
+  "exec": "next dev",
+  "env": {
+    "NODE_OPTIONS": "--max-old-space-size=4096"
+  }
+}

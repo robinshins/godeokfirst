@@ -1,0 +1,183 @@
+type PageType = 'home' | 'implant' | 'whitening' | 'wisdom-tooth' | 'cavity-treatment' | 'gum-care';
+
+interface FAQ {
+  question: string;
+  answer: string;
+}
+
+interface FAQSectionProps {
+  page?: PageType;
+}
+
+const faqData: Record<PageType, FAQ[]> = {
+  home: [
+    {
+      question: 'Zero re-surgeries in 10 years,\nIs this really possible?',
+      answer: 'Yes, it\'s true. Kyungsung Medis Dental has achieved zero re-surgeries due to surgical failures over 10 years through precision digital guide surgery and thorough post-care. There has not been a single case where an implant fell out or required re-surgery. We promise one-time treatment for life through our integrated dental specialist and conservation specialist collaboration system.'
+    },
+    {
+      question: 'What makes you different\nfrom other dental clinics?',
+      answer: 'Our differentiators include: #1 implant surgery record in Busan Nam-gu (1,500+ cases), official designated hospital of prestigious universities and institutions, certified excellence by Megagen/Osstem/Neo Implants, and expertise demonstrated through lectures to dentists nationwide.'
+    },
+    {
+      question: 'I\'m worried about\ntreatment costs',
+      answer: 'Kyungsung Medis Dental provides the highest quality treatment at reasonable prices. We maximize the use of insurance-covered items and reduce financial burden through interest-free installments and various promotions. You can check approximate costs first through our Quick Consultation Booking.'
+    },
+    {
+      question: 'What happens during\nmy first visit?',
+      answer: 'During your first visit, we accurately assess your oral condition through 3D CT precision diagnosis. Then, we establish a personalized treatment plan through 1:1 consultation with an integrated dental specialist or conservation specialist, providing detailed information about treatment methods, costs, and duration.'
+    }
+  ],
+  implant: [
+    {
+      question: '전체 임플란트만\n진행하시나요?',
+      answer: '아닙니다. 고덕퍼스트치과는 1개 치아 임플란트부터 전체 임플란트(All on X)까지 모든 임플란트 치료를 진행합니다. 개별 임플란트도 동일하게 디지털 가이드 수술과 원내 기공소 시스템을 적용하여, 정밀하고 빠른 치료를 제공합니다.'
+    },
+    {
+      question: '디지털 가이드 수술,\n비용이 비싸지 않나요?',
+      answer: '고덕퍼스트치과는 합리적인 가격으로 최고 품질의 임플란트 치료를 제공합니다. 디지털 가이드 수술의 정밀함으로 재수술 위험이 없어 장기적으로는 더 경제적입니다. 65세 이상은 건강보험 적용이 가능하며, 무이자 할부와 다양한 이벤트를 통해 부담을 덜어드립니다.'
+    },
+    {
+      question: '수술 후 바로\n식사가 가능한가요?',
+      answer: '네, 가능합니다. 원내 기공소에서 즉시 제작되는 고강도 임시치아 덕분에 수술 직후부터 부드러운 식사가 가능합니다. 치아 없이 지내는 날은 단 하루도 없으며, 수술 직후부터 최종 보철물 장착까지 편안한 일상생활을 유지하실 수 있습니다.'
+    },
+    {
+      question: '디지털 가이드 수술이\n일반 수술과 어떻게 다른가요?',
+      answer: '디지털 가이드 수술은 3D 구강 스캐닝으로 정밀 진단 후, 컴퓨터상에서 가상 수술을 먼저 진행합니다. 이를 통해 최적의 식립 위치를 설계하고, 1mm의 오차도 최소화하여 절개를 최소화합니다. 결과적으로 시술시간이 단축되고 통증, 부기, 뼈이식이 최소화됩니다.'
+    },
+    {
+      question: '전체 임플란트 치료,\n얼마나 걸리나요?',
+      answer: '개인의 구강 상태에 따라 다르지만, 일반적으로 3-6개월 정도 소요됩니다. 즉시 보철 임플란트 시스템을 통해 수술 직후부터 임시치아를 사용하실 수 있으며, 뼈와 임플란트가 완전히 유착된 후 최종 보철물을 장착합니다. 정확한 기간은 3D CT 진단 후 안내해 드립니다.'
+    },
+    {
+      question: '임플란트 수술,\n아프지 않나요?',
+      answer: '의식하진정요법(수면마취)을 통해 편안하게 시술받으실 수 있습니다. 수술 중에는 거의 통증을 느끼지 못하시며, 수술 후에도 디지털 가이드 수술의 최소 절개 방식으로 붓기와 통증이 일반 수술에 비해 현저히 적습니다. 처방된 진통제로 충분히 관리 가능한 수준입니다.'
+    },
+    {
+      question: '전체 임플란트가\n틀니보다 정말 좋나요?',
+      answer: '네, 확실히 다릅니다. 틀니는 자연치아 저작력의 30%만 유지하지만, 임플란트는 80-90%까지 회복되어 씹는 맛이 완전히 다릅니다. 빼고 끼는 번거로움이 없고 관리도 자연치아처럼 간편하며, 위생적입니다. 한 번 시술하면 평생 사용 가능하고, 환하게 웃을 수 있어 심리적으로도 자신감을 되찾으실 수 있습니다.'
+    }
+  ],
+  whitening: [
+    {
+      question: '라미네이트와 미백,\n어떤 게 나에게 맞나요?',
+      answer: '치아 색만 밝게 하고 싶다면 미백을, 치아 모양이나 배열까지 개선하고 싶다면 라미네이트를 추천합니다. 라미네이트는 치아 색상뿐만 아니라 모양, 크기, 배열을 동시에 개선할 수 있으며, 2년 보증으로 안심하고 시술받으실 수 있습니다.'
+    },
+    {
+      question: '치과 미백이 셀프 미백보다\n정말 효과가 좋나요?',
+      answer: '네, 확실히 다릅니다. 치과에서는 15% 고농도 과산화수소 의약품을 사용하여 즉각적인 효과를 볼 수 있습니다. 셀프 미백은 저농도 일반의약품으로 효과가 제한적이며, 치과 미백은 전문가가 잇몸을 완벽히 보호한 후 시술하므로 훨씬 안전합니다.'
+    },
+    {
+      question: '미백 후 치아가\n시리지 않나요?',
+      answer: '고덕퍼스트치과는 오스템 뷰티스 시스템을 사용하며, 지각과민 방지제가 함유되어 있어 시림 증상이 최소화됩니다. 시술 전 치아 상태를 정밀 진단하고, 시술 후에도 관리 방법을 상세히 안내해 드려 불편함 없이 밝은 치아를 유지하실 수 있습니다.'
+    },
+    {
+      question: '미백 효과는\n얼마나 지속되나요?',
+      answer: '일반적으로 1-2년 정도 지속되며, 개인의 식습관과 관리 상태에 따라 차이가 있습니다. 커피, 와인, 흡연 등 색소 침착 요인을 줄이고, 정기적인 스케일링과 관리를 받으시면 더 오래 유지하실 수 있습니다. 베스트 미백(4 사이클)은 기본 미백보다 더 확실하고 오래 지속됩니다.'
+    },
+    {
+      question: '스케일링과 미백을\n같이 받으면 할인되나요?',
+      answer: '네, 국가 검진 스케일링을 받으실 때 미백을 함께 받으시면 50% 할인 혜택을 드립니다. 기본 미백(1 사이클)과 베스트 미백(2회 내원, 4 사이클) 모두 할인 적용되며, 스케일링으로 치아 표면을 깨끗하게 한 후 미백을 진행하면 효과가 더욱 좋습니다.'
+    }
+  ],
+  'wisdom-tooth': [
+    {
+      question: '사랑니 발치,\n꼭 해야 하나요?',
+      answer: '통증이 없어도 잇몸 속에서 염증, 충치, 치열 불균형을 일으킬 수 있습니다. 3D CT로 정밀 진단 후 필요 여부를 판단하며, 미리 뽑지 않으면 급성 염증, 인접 치아 손상, 턱관절 장애 등의 문제가 발생할 수 있습니다. 젊을수록 회복이 빠르고 합병증 위험이 적습니다.'
+    },
+    {
+      question: '난이도 높은 사랑니도\n뽑을 수 있나요?',
+      answer: '네, 가능합니다. 고덕퍼스트치과는 2,700건 이상의 발치 경험과 대학병원급 난이도 발치가 가능한 시스템을 갖추고 있습니다. 수평매복, 완전매복 등 일반 치과에서 큰 병원을 권유하는 어려운 케이스도 3D CT 정밀 진단으로 안전하게 발치합니다.'
+    },
+    {
+      question: '사랑니 발치,\n아프지 않나요?',
+      answer: '최신 통증 완화 마취 시스템으로 시술 중 통증을 거의 느끼지 못합니다. 불안하신 분은 의식하진정요법(수면마취)으로 편안하게 시술받으실 수 있습니다. 시술 후 붓기와 통증은 처방된 약으로 충분히 관리 가능하며, 젊을수록 회복이 빠릅니다.'
+    },
+    {
+      question: '사랑니 발치 후\n주의사항이 있나요?',
+      answer: '발치 후에는 뜨겁고 자극적인 음식을 피하고, 부드러운 음식을 드세요. 2-3일간 심한 운동과 사우나는 피하시고, 처방받은 항생제와 소염제를 규칙적으로 복용하세요. 거즈는 30분-1시간 정도 깨물고, 과도한 양치나 빨대 사용은 피해주세요. 자세한 관리 방법은 시술 후 안내해 드립니다.'
+    },
+    {
+      question: '사랑니 발치,\n빠른 진료 가능한가요?',
+      answer: '3D CT 촬영과 진단 후 즉시 발치가 가능합니다. 원스톱 진료 시스템으로 진단부터 발치, 사후 관리까지 한 번의 방문으로 완료됩니다. 다만 염증이 심한 경우 소염 치료 후 발치하는 것이 안전하며, 개인의 구강 상태에 따라 의료진이 최적의 시기를 안내해 드립니다.'
+    },
+  ],
+  'cavity-treatment': [
+    {
+      question: '다른 곳에서 발치하라는데\n살릴 수 있나요?',
+      answer: '네, 가능성이 높습니다. 고덕퍼스트치과는 보존과 전문의가 미세현미경으로 25배 확대하여 정밀 진단합니다. 일반 치과에서 보이지 않던 살릴 방법을 찾을 수 있으며, 자연치아를 살리는 것이 보존과 전문의의 사명입니다. 정밀 진단 후 최선의 방법을 안내해 드립니다.'
+    },
+    {
+      question: '신경치료,\n아프지 않나요?',
+      answer: '최신 통증 완화 마취 시스템과 미세현미경으로 통증을 최소화합니다. 불안하신 분은 의식하진정요법(수면마취)으로 편안하게 시술받으실 수 있습니다. 보존과 전문의의 정밀한 치료로 재발과 부작용을 최소화하며, 치료 후 지속적으로 관리해 드립니다.'
+    },
+    {
+      question: '충치 치료,\n시간이 오래 걸리나요?',
+      answer: '초기 충치는 레진 치료로 빠르게 완료되며, 넓은 충치는 인레이 시스템으로 24시간 내 치료가 가능합니다. 신경치료가 필요한 경우 2-3회 내원이 필요하지만, 미세현미경 정밀 치료로 치료 횟수를 최소화합니다. 개인의 구강 상태에 따라 정확한 기간을 안내해 드립니다.'
+    },
+    {
+      question: '미세현미경 치료가\n일반 치료와 어떻게 다른가요?',
+      answer: '미세현미경은 치아를 25배까지 확대하여 육안으로 보이지 않는 충치, 크랙, 신경관까지 정확히 확인합니다. 이를 통해 정밀한 진단과 치료가 가능하며, 재발과 부작용을 최소화하고 주변 조직 손상도 줄입니다. 일부 대학병원과 전문 치과에서만 보유한 장비입니다.'
+    },
+    {
+      question: '충치 치료,\n보험 적용되나요?',
+      answer: '네, 대부분의 충치 치료는 건강보험이 적용됩니다. 레진 치료, 신경치료, 크라운 등 기본 치료는 보험 혜택을 받으실 수 있으며, 인레이/온레이는 본인 부담이 발생할 수 있습니다. 초진 시 정확한 비용과 보험 적용 여부를 상세히 안내해 드립니다.'
+    }
+  ],
+  'gum-care': [
+    {
+      question: '스케일링만 받으면\n충분하지 않나요?',
+      answer: '스케일링은 치석 제거의 첫 단계입니다. 하지만 잇몸질환이 진행된 경우, NSK varios 970 같은 특수장비로 잇몸 깊숙한 세균까지 제거하는 정밀 치료가 필요합니다.\n\n6개월 간격으로 잇몸치료를 받으시면 자연치아를 오래 보존할 수 있습니다.'
+    },
+    {
+      question: '잇몸치료가 아프다던데\n괜찮을까요?',
+      answer: '걱정하지 마세요. 가글마취, 도포마취, 통증 완화 전동마취기, 신경관마취기까지 4단계 통증완화 시스템을 갖추고 있습니다.\n\n많은 환자분들이 "치과 치료가 이렇게 편할 수도 있구나"라고 놀라워하십니다. 불편함 없이 치료받으실 수 있도록 최선을 다합니다.'
+    },
+    {
+      question: '얼마나 자주\n받아야 하나요?',
+      answer: '기본 스케일링은 연 1회(보험 적용), 잇몸치료는 6개월마다 받으시는 것이 이상적입니다.\n\n잇몸 상태가 심한 경우 3개월 간격으로 관리하시면 더욱 효과적입니다. 정기적인 관리로 임플란트 없이도 자연치아를 평생 사용하실 수 있습니다.'
+    },
+    {
+      question: '보험 적용은\n어떻게 되나요?',
+      answer: '스케일링은 연 1회 건강보험이 적용됩니다. 잇몸치료가 필요한 경우에는 보험 적용을 받으실 수 있으며, 나누어서 진행됩니다.\n\n자세한 보험 적용 범위는 상담을 통해 안내해드립니다.'
+    },
+    {
+      question: '왜 다른 치과는 잇몸치료를\n안 하려고 하나요?',
+      answer: '솔직히 말씀드리면, 잇몸치료보다 임플란트가 수익이 더 좋기 때문입니다. 또한 잇몸치료 후 결국 발치하게 되면 환자분들의 불만이 생길 수 있어 많은 치과가 꺼립니다.\n\n하지만 저희는 자연치아 보존을 최우선으로 하며, 보존과 전문의 협진으로 높은 성공률을 자랑합니다.'
+    }
+  ]
+};
+
+export default function FAQSection({ page = 'home' }: FAQSectionProps) {
+  const faqs = faqData[page];
+
+  return (
+    <div className="bg-white">
+      <div className="max-w-[430px] mx-auto px-4 py-[60px]">
+        {/* Section Title */}
+        <h2 className="text-4xl font-bold text-[#292a2f] text-center mb-[60px]">
+          Frequently Asked Questions
+        </h2>
+
+        {/* FAQ Items */}
+        <div className="space-y-0">
+          {faqs.map((faq, index) => (
+            <div
+              key={index}
+              className={`py-10 space-y-5 ${
+                index !== faqs.length - 1 ? 'border-b border-[#e9ebf1]' : ''
+              }`}
+            >
+              <h3 className="text-[22px] font-bold text-black leading-[1.4] whitespace-pre-line">
+                {faq.question}
+              </h3>
+              <p className="text-[17px] font-medium text-[#5d5f6d] leading-[1.59] pr-5">
+                {faq.answer}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -1,0 +1,19 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 36 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="flags / MN">
+<rect id="Mask" x="0.25" y="0.25" width="35.5" height="25.5" rx="1.75" fill="white" stroke="#F5F5F5" stroke-width="0.5"/>
+<mask id="mask0_mn" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="26">
+<rect id="Mask_2" x="0.25" y="0.25" width="35.5" height="25.5" rx="1.75" fill="white" stroke="white" stroke-width="0.5"/>
+</mask>
+<g mask="url(#mask0_mn)">
+<rect width="12" height="26" fill="#C4272E"/>
+<rect x="12" width="12" height="26" fill="#015197"/>
+<rect x="24" width="12" height="26" fill="#C4272E"/>
+<g id="soyombo">
+<circle cx="6" cy="8" r="1.5" fill="#F9CF02"/>
+<rect x="4.5" y="10" width="3" height="1" fill="#F9CF02"/>
+<rect x="5" y="11.5" width="2" height="5" fill="#F9CF02"/>
+<path d="M6 6L6.5 7H5.5L6 6Z" fill="#F9CF02"/>
+</g>
+</g>
+</g>
+</svg>
