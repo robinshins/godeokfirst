@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     description: 'English-speaking dental clinic in Busan, Korea. Full mouth implants, digital implants, wisdom tooth extraction, teeth whitening.',
     images: [
       {
-        url: '/images/og-image.png',
+        url: '/고덕퍼스트치과로고.png',
         width: 1200,
         height: 630,
         alt: 'Kyungsung Medis Dental - Korean Dental Clinic in Busan',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Kyungsung Medis Dental | Korean Dental Clinic Busan',
     description: 'English-speaking dental clinic in Busan, Korea. Full mouth implants, digital implants, wisdom tooth extraction.',
-    images: ['/images/og-image.png'],
+    images: ['/고덕퍼스트치과로고.png'],
   },
 };
 
@@ -91,7 +91,7 @@ const jsonLdEn = {
           closes: '14:00',
         },
       ],
-      image: 'https://medisksu.co.kr/images/og-image.png',
+      image: 'https://medisksu.co.kr/고덕퍼스트치과로고.png',
       priceRange: '$$',
       currenciesAccepted: 'KRW',
       paymentAccepted: 'Cash, Credit Card',

@@ -168,16 +168,16 @@
   },
   "hotPaths": [
     {
+      "path": "src/app/layout.tsx",
+      "accessCount": 19,
+      "lastAccessed": 1772885610442,
+      "type": "directory"
+    },
+    {
       "path": "src/components/region/RegionLandingPage.tsx",
       "accessCount": 18,
       "lastAccessed": 1772722788404,
       "type": "file"
-    },
-    {
-      "path": "src/app/layout.tsx",
-      "accessCount": 16,
-      "lastAccessed": 1772777075598,
-      "type": "directory"
     },
     {
       "path": "src/components/region/RegionArticlePage.tsx",
@@ -222,16 +222,16 @@
       "type": "file"
     },
     {
+      "path": "src/app",
+      "accessCount": 6,
+      "lastAccessed": 1772885520500,
+      "type": "directory"
+    },
+    {
       "path": "src/app/ichung/page.tsx",
       "accessCount": 5,
       "lastAccessed": 1772722631159,
       "type": "file"
-    },
-    {
-      "path": "src/app",
-      "accessCount": 5,
-      "lastAccessed": 1772725117001,
-      "type": "directory"
     },
     {
       "path": "src/app/ichung/implant/page.tsx",

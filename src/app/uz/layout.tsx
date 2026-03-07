@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: 'https://medisksu.co.kr/uz',
     siteName: 'Kyungsung Medis Stomatologiya',
     title: 'Kyungsung Medis Stomatologiya | Pusan Implant',
-    images: [{ url: '/images/og-image.png', width: 1200, height: 630 }],
+    images: [{ url: '/고덕퍼스트치과로고.png', width: 1200, height: 630 }],
   },
 };
 

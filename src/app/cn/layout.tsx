@@ -32,12 +32,12 @@ export const metadata: Metadata = {
     siteName: '庆星大Medis牙科',
     title: '庆星大Medis牙科 | 釜山种植牙专业',
     description: '釜山大延洞专业牙科。全口种植牙、数字化种植牙、智齿拔除专业。',
-    images: [{ url: '/images/og-image.png', width: 1200, height: 630 }],
+    images: [{ url: '/고덕퍼스트치과로고.png', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: '庆星大Medis牙科 | 釜山种植牙专业',
-    images: ['/images/og-image.png'],
+    images: ['/고덕퍼스트치과로고.png'],
   },
 };
 

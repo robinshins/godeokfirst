@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: 'Nha khoa Medis Kyungsung',
     title: 'Nha khoa Medis Kyungsung | Cấy ghép răng Busan',
     description: 'Nha khoa chuyên nghiệp tại Busan. Cấy ghép toàn hàm, implant kỹ thuật số, nhổ răng khôn.',
-    images: [{ url: '/images/og-image.png', width: 1200, height: 630 }],
+    images: [{ url: '/고덕퍼스트치과로고.png', width: 1200, height: 630 }],
   },
 };
 
