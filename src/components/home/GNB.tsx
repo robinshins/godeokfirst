@@ -50,12 +50,13 @@ export default function GNB() {
 
   const menuItems = [
     { name: '홈', href: '/' },
-    { name: '충치 · 신경 치료', href: '/cavity-treatment' },
     { name: '임플란트', href: '/implant' },
     { name: '틀니 · 전체임플란트', href: '/denture' },
-    { name: '미백 · 라미네이트', href: '/whitening' },
+    { name: '충치 · 신경 치료', href: '/cavity-treatment' },
     { name: '사랑니 발치', href: '/wisdom-tooth' },
     { name: '잇몸 치료 · 스케일링', href: '/gum-care' },
+    { name: '턱관절 치료', href: '/tmj' },
+    { name: '치아 미백', href: '/whitening' },
   ];
 
   // Detect current language from pathname

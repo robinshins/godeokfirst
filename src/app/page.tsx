@@ -36,7 +36,7 @@ const homeJsonLd = {
           position: 2,
           item: {
             '@type': 'Service',
-            name: '미백 & 라미네이트',
+            name: '치아 미백',
             description: '안전하고 효과적인 미백 시술, 스케일링과 함께 50% 할인',
             image: 'https://medisksu.co.kr/icons/whitening.png',
             url: 'https://medisksu.co.kr/whitening',

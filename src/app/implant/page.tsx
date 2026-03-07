@@ -44,7 +44,7 @@ import WhyBestNewSection from '@/components/implant/WhyBestNewSection';
 import AfterCareSection from '@/components/denture/AfterCareSection';
 import BeforeAfterSection from '@/components/implant/BeforeAfterSection';
 import SkillDifferenceSection from '@/components/implant/SkillDifferenceSection';
-import SedationSection from '@/components/cavity-treatment/SedationSection';
+// import SedationSection from '@/components/cavity-treatment/SedationSection';
 import DoctorSection from '@/components/home/DoctorSection';
 import WhyBestSection from '@/components/home/WhyBestSection';
 import LocationSection from '@/components/home/LocationSection';
@@ -79,7 +79,7 @@ export default function ImplantPage() {
       <WhyBestNewSection />
 
       {/* Sedation Section - 의식하진정요법 */}
-      <SedationSection />
+      {/* <SedationSection /> */}
 
       <AfterCareSection />
 

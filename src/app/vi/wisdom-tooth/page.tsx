@@ -9,7 +9,7 @@ import VideoSection from '@/components/vi/wisdom-tooth/VideoSection';
 import CheckupSection from '@/components/vi/wisdom-tooth/CheckupSection';
 import RiskLevelsSection from '@/components/vi/wisdom-tooth/RiskLevelsSection';
 import FeaturesSection from '@/components/vi/wisdom-tooth/FeaturesSection';
-import SedationSection from '@/components/vi/cavity-treatment/SedationSection';
+// import SedationSection from '@/components/vi/cavity-treatment/SedationSection';
 import WhyNowSection from '@/components/vi/wisdom-tooth/WhyNowSection';
 import FooterSection from '@/components/vi/FooterSection';
 import DoctorSection from '@/components/vi/DoctorSection';
@@ -78,7 +78,7 @@ export default function WisdomToothPage() {
       <FeaturesSection />
 
       {/* Sedation Section - Conscious Sedation */}
-      <SedationSection />
+      {/* <SedationSection /> */}
 
       {/* Why Now Section */}
       <WhyNowSection />

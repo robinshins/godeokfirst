@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '고덕동미백 고덕동라미네이트 | 고덕퍼스트치과',
-  description: '고덕동미백 고덕동라미네이트 전문 치과. 오스템 뷰티스 시스템, 스케일링과 함께 할인. 1회 시술로 즉시 효과.',
-  keywords: ['고덕동미백', '고덕동라미네이트', '평택치아미백', '고덕퍼스트치과미백', '평택라미네이트'],
+  title: '고덕동미백 치아미백 | 고덕퍼스트치과',
+  description: '고덕동 치아미백 전문 치과. 오스템 뷰티스 시스템, 스케일링과 함께 할인. 1회 시술로 즉시 효과.',
+  keywords: ['고덕동미백', '평택치아미백', '고덕퍼스트치과미백', '치아미백'],
   alternates: {
     canonical: 'https://medisksu.co.kr/whitening',
   },
   openGraph: {
-    title: '고덕동미백 고덕동라미네이트 | 고덕퍼스트치과',
-    description: '고덕동미백 고덕동라미네이트 전문 치과. 오스템 뷰티스 시스템, 스케일링과 함께 할인.',
+    title: '고덕동미백 치아미백 | 고덕퍼스트치과',
+    description: '고덕동 치아미백 전문 치과. 오스템 뷰티스 시스템, 스케일링과 함께 할인.',
     url: 'https://medisksu.co.kr/whitening',
     siteName: '고덕퍼스트치과',
     type: 'website',
@@ -24,8 +24,8 @@ const whiteningJsonLd = {
     {
       '@type': 'MedicalProcedure',
       '@id': 'https://medisksu.co.kr/whitening#service',
-      name: '미백 & 라미네이트',
-      description: '안전하고 효과적인 미백 시술, 스케일링과 함께 50% 할인',
+      name: '치아 미백',
+      description: '안전하고 효과적인 치아 미백 시술, 스케일링과 함께 50% 할인',
       image: 'https://medisksu.co.kr/icons/whitening.png',
       url: 'https://medisksu.co.kr/whitening',
       procedureType: 'Noninvasive',
@@ -39,14 +39,6 @@ const whiteningJsonLd = {
       '@type': 'FAQPage',
       '@id': 'https://medisksu.co.kr/whitening#faq',
       mainEntity: [
-        {
-          '@type': 'Question',
-          name: '라미네이트와 미백, 어떤 게 나에게 맞나요?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: '치아 색만 밝게 하고 싶다면 미백을, 치아 모양이나 배열까지 개선하고 싶다면 라미네이트를 추천합니다. 라미네이트는 치아 색상뿐만 아니라 모양, 크기, 배열을 동시에 개선할 수 있으며, 2년 보증으로 안심하고 시술받으실 수 있습니다.',
-          },
-        },
         {
           '@type': 'Question',
           name: '치과 미백이 셀프 미백보다 정말 효과가 좋나요?',

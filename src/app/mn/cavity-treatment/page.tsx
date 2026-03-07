@@ -4,7 +4,7 @@ import FixedCTAButton from '@/components/mn/FixedCTAButton';
 import FooterSection from '@/components/mn/FooterSection';
 
 import HeroSection from '@/components/mn/cavity-treatment/HeroSection';
-import SedationSection from '@/components/mn/cavity-treatment/SedationSection';
+// import SedationSection from '@/components/mn/cavity-treatment/SedationSection';
 import ComparisonSection from '@/components/mn/cavity-treatment/ComparisonSection';
 import OneDayInlaySection from '@/components/mn/cavity-treatment/OneDayInlaySection';
 import DoctorProfileSection from '@/components/mn/cavity-treatment/DoctorProfileSection';
@@ -51,7 +51,7 @@ export default function CavityTreatmentPage() {
 
       <HeroSection />
       <VideoSection />
-      <SedationSection />
+      {/* <SedationSection /> */}
       <ComparisonSection />
       <OneDayInlaySection />
       <DoctorProfileSection />

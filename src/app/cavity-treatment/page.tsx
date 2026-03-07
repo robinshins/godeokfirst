@@ -8,7 +8,7 @@ import BeforeAfterSection from '@/components/cavity-treatment/BeforeAfterSection
 import QuestionSection from '@/components/cavity-treatment/QuestionSection';
 import TreatmentMethodsSection from '@/components/cavity-treatment/TreatmentMethodsSection';
 import OneDayInlaySection from '@/components/cavity-treatment/OneDayInlaySection';
-import SedationSection from '@/components/cavity-treatment/SedationSection';
+// import SedationSection from '@/components/cavity-treatment/SedationSection';
 import DoctorProfileSection from '@/components/cavity-treatment/DoctorProfileSection';
 import ComparisonSection from '@/components/cavity-treatment/ComparisonSection';
 import CasesSection from '@/components/cavity-treatment/CasesSection';
@@ -68,7 +68,7 @@ export default function CavityTreatmentPage() {
 
 
       {/* Sedation Section */}
-      <SedationSection />
+      {/* <SedationSection /> */}
 
       <DoctorSection />
       <WhyBestSection />

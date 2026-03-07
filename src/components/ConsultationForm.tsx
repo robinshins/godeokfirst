@@ -21,7 +21,7 @@ const presetOptions = [
   { main: '임플란트', sub: '' },
   { main: '신경치료', sub: '' },
   { main: '보철 치료', sub: '크라운' },
-  { main: '심미 치료', sub: '미백, 라미네이트' },
+  { main: '심미 치료', sub: '미백' },
   { main: '사랑니 발치', sub: '' },
   { main: '잇몸 케어', sub: '' },
   { main: '충치 치료', sub: '레진, 인레이' },

@@ -22,7 +22,7 @@ export default function TreatmentCards() {
       title: '치아 미백',
       subtitle: '최고급 장비 보유',
       description: '안전하고 효과적인 미백 시술\n스케일링과 함께 시 50% 할인',
-      features: ['1회 시술로 즉시 효과', '치아 손상 없음', '합리적인 가격','전문가 미백과 라미네이트 모두 가능'],
+      features: ['1회 시술로 즉시 효과', '치아 손상 없음', '합리적인 가격', '전문가 미백으로 확실한 효과'],
       icon: '✨',
       color: 'purple',
       link: '/whitening',

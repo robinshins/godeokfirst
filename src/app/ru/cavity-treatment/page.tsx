@@ -3,7 +3,7 @@ import GNB from '@/components/ru/GNB';
 import FixedCTAButton from '@/components/ru/FixedCTAButton';
 import FooterSection from '@/components/ru/FooterSection';
 import HeroSection from '@/components/ru/cavity-treatment/HeroSection';
-import SedationSection from '@/components/ru/cavity-treatment/SedationSection';
+// import SedationSection from '@/components/ru/cavity-treatment/SedationSection';
 import TreatmentMethodsSection from '@/components/ru/cavity-treatment/TreatmentMethodsSection';
 import OneDayInlaySection from '@/components/ru/cavity-treatment/OneDayInlaySection';
 import BeforeAfterSection from '@/components/ru/cavity-treatment/BeforeAfterSection';
@@ -53,7 +53,7 @@ export default function CavityTreatmentPage() {
 
       <HeroSection />
       <VideoSection />
-      <SedationSection />
+      {/* <SedationSection /> */}
       <TreatmentMethodsSection />
       <OneDayInlaySection />
       <BeforeAfterSection />

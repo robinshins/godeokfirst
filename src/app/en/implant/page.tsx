@@ -16,7 +16,7 @@ import DigitalGuideSection from '@/components/en/implant/DigitalGuideSection';
 import BeforeAfterSection from '@/components/en/implant/BeforeAfterSection';
 import RealPatientResultsSection from '@/components/en/implant/RealPatientResultsSection';
 import SkillDifferenceSection from '@/components/en/implant/SkillDifferenceSection';
-import SedationSection from '@/components/en/cavity-treatment/SedationSection';
+// import SedationSection from '@/components/en/cavity-treatment/SedationSection';
 import WarrantySection from '@/components/en/implant/WarrantySection';
 import DoctorSection from '@/components/en/DoctorSection';
 import WhyBestSection from '@/components/en/WhyBestSection';
@@ -72,7 +72,7 @@ export default function ImplantPage() {
       <WhyBestNewSection />
 
       {/* Sedation Section */}
-      <SedationSection />
+      {/* <SedationSection /> */}
 
       {/* Three Step Section */}
       <ThreeStepNewSection />

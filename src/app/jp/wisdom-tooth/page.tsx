@@ -9,7 +9,7 @@ import VideoSection from '@/components/jp/wisdom-tooth/VideoSection';
 import CheckupSection from '@/components/jp/wisdom-tooth/CheckupSection';
 import RiskLevelsSection from '@/components/jp/wisdom-tooth/RiskLevelsSection';
 import FeaturesSection from '@/components/jp/wisdom-tooth/FeaturesSection';
-import SedationSection from '@/components/jp/cavity-treatment/SedationSection';
+// import SedationSection from '@/components/jp/cavity-treatment/SedationSection';
 import WhyNowSection from '@/components/jp/wisdom-tooth/WhyNowSection';
 import FooterSection from '@/components/jp/FooterSection';
 import DoctorSection from '@/components/jp/DoctorSection';
@@ -77,7 +77,7 @@ export default function WisdomToothPage() {
       <FeaturesSection />
 
       {/* Sedation Section - 意識下鎮静法 */}
-      <SedationSection />
+      {/* <SedationSection /> */}
 
       {/* Why Now Section */}
       <WhyNowSection />

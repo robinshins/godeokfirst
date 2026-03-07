@@ -33,18 +33,18 @@ export default function TreatmentSection() {
       link: '/denture'
     },
     {
-      icon: '/icons/whitening.svg',
-      iconBg: 'bg-purple-50',
-      title: '미백 & 라미네이트',
-      subtitle: '최고급 장비 보유',
-      description: '안전하고 효과적인 미백 시술\n스케일링과 함께 할인',
+      icon: '/icons/cavity.svg',
+      iconBg: 'bg-orange-50',
+      title: '충치치료 & 신경치료',
+      subtitle: '자연치아 보존 전문',
+      description: '발치 대신 살리는 치료\n통합치의학전문의의 정밀 치료',
       features: [
-        '1회 시술로 즉시 효과',
-        '치아 손상 없음',
-        '합리적인 가격',
-        '전문가 미백과 라미네이트 모두 가능'
+        '미세현미경 정밀 진단',
+        '큐레이 충치 발견',
+        '통증 완화 신경치료',
+        '보험 적용'
       ],
-      link: '/whitening'
+      link: '/cavity-treatment'
     },
     {
       icon: '/icons/extraction.svg',
@@ -58,20 +58,6 @@ export default function TreatmentSection() {
         '철저한 사후관리'
       ],
       link: '/wisdom-tooth'
-    },
-    {
-      icon: '/icons/cavity.svg',
-      iconBg: 'bg-orange-50',
-      title: '충치치료 & 신경치료',
-      subtitle: '자연치아 보존 전문',
-      description: '발치 대신 살리는 치료\n통합치의학전문의의 정밀 치료',
-      features: [
-        '미세현미경 정밀 진단',
-        '큐레이 충치 발견',
-        '통증 완화 신경치료',
-        '보험 적용'
-      ],
-      link: '/cavity-treatment'
     },
     {
       icon: '/icons/gum.svg',
@@ -90,16 +76,30 @@ export default function TreatmentSection() {
     {
       icon: '/icons/gum.svg',
       iconBg: 'bg-indigo-50',
-      title: '틀니',
-      subtitle: '맞춤형 정밀 틀니',
-      description: '편안하고 자연스러운 틀니\n환자 맞춤형 정밀 제작',
+      title: '턱관절 치료',
+      subtitle: '턱관절 통증 · 개구장애 전문',
+      description: '턱에서 소리가 나거나 아프신가요?\n정밀 진단 후 맞춤 치료합니다',
       features: [
-        '정밀 맞춤 제작',
-        '자연스러운 외관',
-        '편안한 착용감',
-        '보험 적용 가능'
+        '턱관절 정밀 진단',
+        '교합 안정장치(스플린트)',
+        '물리치료 · 약물치료',
+        '통합치의학 전문의 직접 진료'
       ],
-      link: '/denture'
+      link: '/tmj'
+    },
+    {
+      icon: '/icons/whitening.svg',
+      iconBg: 'bg-purple-50',
+      title: '치아 미백',
+      subtitle: '최고급 장비 보유',
+      description: '안전하고 효과적인 미백 시술\n스케일링과 함께 할인',
+      features: [
+        '1회 시술로 즉시 효과',
+        '치아 손상 없음',
+        '합리적인 가격',
+        '오스템 뷰티스 시스템'
+      ],
+      link: '/whitening'
     }
   ];
 

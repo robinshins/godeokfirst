@@ -90,14 +90,23 @@ export default function Header() {
             <Link href="/implant" className="block text-white hover:text-cyan-400 transition-colors">
               임플란트
             </Link>
-            <Link href="/whitening" className="block text-white hover:text-cyan-400 transition-colors">
-              미백 / 라미네이트
+            <Link href="/denture" className="block text-white hover:text-cyan-400 transition-colors">
+              틀니 · 전체임플란트
+            </Link>
+            <Link href="/cavity-treatment" className="block text-white hover:text-cyan-400 transition-colors">
+              충치 · 신경 치료
             </Link>
             <Link href="/wisdom-tooth" className="block text-white hover:text-cyan-400 transition-colors">
               사랑니 발치
             </Link>
-            <Link href="/gum-treatment" className="block text-white hover:text-cyan-400 transition-colors">
-              잇몸관리 & 충치치료
+            <Link href="/gum-care" className="block text-white hover:text-cyan-400 transition-colors">
+              잇몸 치료 · 스케일링
+            </Link>
+            <Link href="/tmj" className="block text-white hover:text-cyan-400 transition-colors">
+              턱관절 치료
+            </Link>
+            <Link href="/whitening" className="block text-white hover:text-cyan-400 transition-colors">
+              치아 미백
             </Link>
 
             {/* Auth Links in Menu */}

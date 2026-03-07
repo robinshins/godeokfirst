@@ -48,7 +48,7 @@ import SpeedSection from '@/components/denture/SpeedSection';
 import DigitalGuideSection from '@/components/implant/DigitalGuideSection';
 import RealPatientResultsSection from '@/components/denture/RealPatientResultsSection';
 import SkillDifferenceSection from '@/components/implant/SkillDifferenceSection';
-import SedationSection from '@/components/cavity-treatment/SedationSection';
+// import SedationSection from '@/components/cavity-treatment/SedationSection';
 // import WarrantySection from '@/components/implant/WarrantySection';
 import DoctorSection from '@/components/home/DoctorSection';
 import WhyBestSection from '@/components/home/WhyBestSection';
@@ -87,7 +87,7 @@ export default function DenturePage() {
       <WhyBestNewSection />
 
       {/* Sedation Section - 의식하진정요법 */}
-      <SedationSection />
+      {/* <SedationSection /> */}
 
 
       {/* In-House Lab Section - 원내 기공소 */}
