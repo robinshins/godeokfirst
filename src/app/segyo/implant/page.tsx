@@ -104,13 +104,13 @@ export const metadata: Metadata = {
     '통합치의학전문의 임플란트',
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/segyo/implant',
+    canonical: 'https://gdfirstdent.com/segyo/implant',
   },
   openGraph: {
     title: '세교동 임플란트 | 고덕퍼스트치과',
     description:
       '세교신도시에서 차로 20분. 디지털 가이드 임플란트, 통합치의학전문의 직접 시술.',
-    url: 'https://medisksu.co.kr/segyo/implant',
+    url: 'https://gdfirstdent.com/segyo/implant',
     siteName: '고덕퍼스트치과',
     type: 'article',
   },
@@ -138,19 +138,19 @@ export default function SegyoImplantPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://medisksu.co.kr',
+        item: 'https://gdfirstdent.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '세교동',
-        item: 'https://medisksu.co.kr/segyo',
+        item: 'https://gdfirstdent.com/segyo',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: '임플란트',
-        item: 'https://medisksu.co.kr/segyo/implant',
+        item: 'https://gdfirstdent.com/segyo/implant',
       },
     ],
   };

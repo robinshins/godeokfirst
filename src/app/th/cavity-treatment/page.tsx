@@ -32,12 +32,12 @@ export const metadata: Metadata = {
     'คลินิกทันตกรรมปูซาน'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/th/cavity-treatment',
+    canonical: 'https://gdfirstdent.com/th/cavity-treatment',
   },
   openGraph: {
     title: 'รักษาฟันผุปูซาน | Kyungsung Medis Dental',
     description: 'รักษาฟันธรรมชาติของคุณไว้ด้วยกล้องไมโครสโคปและการรักษาอินเลย์ในวันเดียว',
-    url: 'https://medisksu.co.kr/th/cavity-treatment',
+    url: 'https://gdfirstdent.com/th/cavity-treatment',
     siteName: 'Kyungsung Medis Dental Clinic',
     locale: 'th_TH',
     type: 'website',

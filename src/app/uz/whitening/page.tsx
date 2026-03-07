@@ -30,12 +30,12 @@ export const metadata: Metadata = {
     'Koreya stomatologiya turizmi'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/uz/whitening',
+    canonical: 'https://gdfirstdent.com/uz/whitening',
   },
   openGraph: {
     title: 'Koreya Pusan Tish Oqartirish Stomatologiya | Kyungsung Medis Dental',
     description: '1,000+ oqartirish operatsiyasi 0 ta yon ta\'sir bilan. Pusan Nam-gu 1-o\'rin.',
-    url: 'https://medisksu.co.kr/uz/whitening',
+    url: 'https://gdfirstdent.com/uz/whitening',
     type: 'website',
     locale: 'uz_UZ',
   }

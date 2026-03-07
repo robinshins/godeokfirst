@@ -30,12 +30,12 @@ export const metadata: Metadata = {
     'стоматологический туризм Корея'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/ru/gum-care',
+    canonical: 'https://gdfirstdent.com/ru/gum-care',
   },
   openGraph: {
     title: 'Корея Пусан Лечение Десен Стоматология | Кёнсон Медис',
     description: 'Профессиональное лечение пародонтита и десен. №1 в Намгу Пусан.',
-    url: 'https://medisksu.co.kr/ru/gum-care',
+    url: 'https://gdfirstdent.com/ru/gum-care',
     type: 'website',
     locale: 'ru_RU',
   },

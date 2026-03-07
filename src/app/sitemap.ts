@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://medisksu.co.kr'
+  const baseUrl = 'https://gdfirstdent.com'
 
   // Region SEO pages
   const regions = ['daeyeon', 'busan-namgu', 'namcheon', 'munhyeon', 'yongho', 'gamman', 'geoje']

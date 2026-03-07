@@ -90,12 +90,12 @@ export const metadata: Metadata = {
   description: '동삭동 사랑니 발치 전문 고덕퍼스트치과. 대학병원 외래교수 출신 전문의가 3D CT 정밀 진단 후 최소 절개 발치. 매복 사랑니도 안전하게. 동삭동에서 차량 10분. 031-611-3222',
   keywords: '동삭동 사랑니, 동삭동 사랑니 발치, 동삭지구 치과, 매복 사랑니, 평택 사랑니, 고덕퍼스트치과',
   alternates: {
-    canonical: 'https://medisksu.co.kr/dongsak/wisdom-tooth',
+    canonical: 'https://gdfirstdent.com/dongsak/wisdom-tooth',
   },
   openGraph: {
     title: '동삭동 사랑니 발치 | 고덕퍼스트치과',
     description: '동삭동 매복 사랑니 안전 발치. 대학병원 외래교수 출신 전문의 직접 시술. 3D CT 정밀 진단.',
-    url: 'https://medisksu.co.kr/dongsak/wisdom-tooth',
+    url: 'https://gdfirstdent.com/dongsak/wisdom-tooth',
     siteName: '고덕퍼스트치과',
     locale: 'ko_KR',
     type: 'article',
@@ -124,19 +124,19 @@ export default function DongsakWisdomToothPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://medisksu.co.kr',
+        item: 'https://gdfirstdent.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '동삭동 치과',
-        item: 'https://medisksu.co.kr/dongsak',
+        item: 'https://gdfirstdent.com/dongsak',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: '동삭동 사랑니 발치',
-        item: 'https://medisksu.co.kr/dongsak/wisdom-tooth',
+        item: 'https://gdfirstdent.com/dongsak/wisdom-tooth',
       },
     ],
   };

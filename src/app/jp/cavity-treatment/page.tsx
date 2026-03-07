@@ -31,12 +31,12 @@ export const metadata: Metadata = {
     '韓国デンタルツーリズム'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/jp/cavity-treatment',
+    canonical: 'https://gdfirstdent.com/jp/cavity-treatment',
   },
   openGraph: {
     title: '韓国釜山虫歯治療歯科 | 慶星メディス歯科',
     description: '先進的な虫歯・根管治療。釜山南区No.1。マイクロスコープ完備。',
-    url: 'https://medisksu.co.kr/jp/cavity-treatment',
+    url: 'https://gdfirstdent.com/jp/cavity-treatment',
     type: 'website',
     locale: 'ja_JP',
   }

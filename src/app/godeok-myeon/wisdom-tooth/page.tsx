@@ -90,12 +90,12 @@ export const metadata: Metadata = {
   description: '고덕면에서 차로 5분. 3D CT 기반 정밀 사랑니 진단, 대학병원 외래교수 출신 전문의의 안전 발치. 매복 사랑니 전문. 고덕퍼스트치과 031-611-3222.',
   keywords: ['고덕면 사랑니', '고덕면 사랑니 발치', '고덕국제신도시 사랑니', '평택 사랑니', '고덕퍼스트치과', '매복 사랑니 발치'],
   alternates: {
-    canonical: 'https://medisksu.co.kr/godeok-myeon/wisdom-tooth'
+    canonical: 'https://gdfirstdent.com/godeok-myeon/wisdom-tooth'
   },
   openGraph: {
     title: '고덕면 사랑니 발치 | CT 정밀 진단 | 고덕퍼스트치과',
     description: '고덕면에서 가장 가까운 사랑니 전문 치과. 3D CT 정밀 진단, 통합치의학전문의의 안전한 발치.',
-    url: 'https://medisksu.co.kr/godeok-myeon/wisdom-tooth',
+    url: 'https://gdfirstdent.com/godeok-myeon/wisdom-tooth',
     siteName: '고덕퍼스트치과',
     type: 'article',
     locale: 'ko_KR'
@@ -124,19 +124,19 @@ export default function GodeokMyeonWisdomToothPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://medisksu.co.kr'
+        item: 'https://gdfirstdent.com'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '고덕면',
-        item: 'https://medisksu.co.kr/godeok-myeon'
+        item: 'https://gdfirstdent.com/godeok-myeon'
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: '사랑니 발치',
-        item: 'https://medisksu.co.kr/godeok-myeon/wisdom-tooth'
+        item: 'https://gdfirstdent.com/godeok-myeon/wisdom-tooth'
       }
     ]
   };

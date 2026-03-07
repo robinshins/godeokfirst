@@ -25,12 +25,12 @@ export const metadata = {
     '日本語対応歯科韓国'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/jp',
+    canonical: 'https://gdfirstdent.com/jp',
   },
   openGraph: {
     title: '韓国釜山歯科 | 慶星メディス歯科',
     description: '10年間再手術ゼロ、釜山南区No.1。院長が直接治療。',
-    url: 'https://medisksu.co.kr/jp',
+    url: 'https://gdfirstdent.com/jp',
     type: 'website',
     locale: 'ja_JP'
   }

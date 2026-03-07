@@ -38,12 +38,12 @@ export const metadata: Metadata = {
     'Koreya stomatologiya turizmi'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/uz/implant',
+    canonical: 'https://gdfirstdent.com/uz/implant',
   },
   openGraph: {
     title: 'Koreya Pusan Implant Stomatologiya | Kyungsung Medis Dental',
     description: '10 yil davomida 0 ta qayta implant operatsiyasi. Pusan Nam-gu 1-o\'rin, 1,500+ raqamli implant operatsiyasi.',
-    url: 'https://medisksu.co.kr/uz/implant',
+    url: 'https://gdfirstdent.com/uz/implant',
     type: 'website',
     locale: 'uz_UZ',
   }

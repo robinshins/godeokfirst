@@ -32,12 +32,12 @@ export const metadata: Metadata = {
     'стоматологический туризм Корея'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/ru/whitening',
+    canonical: 'https://gdfirstdent.com/ru/whitening',
   },
   openGraph: {
     title: 'Корея Пусан Отбеливание Стоматология | Кёнсон Медис',
     description: '1,000+ процедур отбеливания, 0 побочных эффектов. №1 в Намгу Пусан.',
-    url: 'https://medisksu.co.kr/ru/whitening',
+    url: 'https://gdfirstdent.com/ru/whitening',
     type: 'website',
     locale: 'ru_RU',
   },

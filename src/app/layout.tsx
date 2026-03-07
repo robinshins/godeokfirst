@@ -24,7 +24,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://medisksu.co.kr'),
+  metadataBase: new URL('https://gdfirstdent.com'),
   title: {
     default: '고덕퍼스트치과 | 평택임플란트 고덕동치과',
     template: '%s | 고덕퍼스트치과',
@@ -61,19 +61,19 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://medisksu.co.kr',
+    canonical: 'https://gdfirstdent.com',
     languages: {
-      'ko-KR': 'https://medisksu.co.kr',
-      'en-US': 'https://medisksu.co.kr/en',
-      'ja-JP': 'https://medisksu.co.kr/jp',
-      'zh-CN': 'https://medisksu.co.kr/cn',
-      'vi-VN': 'https://medisksu.co.kr/vi',
+      'ko-KR': 'https://gdfirstdent.com',
+      'en-US': 'https://gdfirstdent.com/en',
+      'ja-JP': 'https://gdfirstdent.com/jp',
+      'zh-CN': 'https://gdfirstdent.com/cn',
+      'vi-VN': 'https://gdfirstdent.com/vi',
     },
   },
   openGraph: {
     type: 'website',
     locale: 'ko_KR',
-    url: 'https://medisksu.co.kr',
+    url: 'https://gdfirstdent.com',
     siteName: '고덕퍼스트치과',
     title: '고덕퍼스트치과 | 평택임플란트 고덕동치과',
     description: '평택 고덕동 전문 치과. 전체임플란트, 디지털임플란트, 충치치료, 사랑니발치, 치아미백 전문. 고덕동치과, 평택치과, 고덕국제신도시치과.',
@@ -119,11 +119,11 @@ const jsonLd = {
     // 로컬 비즈니스 정보
     {
       '@type': 'Dentist',
-      '@id': 'https://medisksu.co.kr/#dentist',
+      '@id': 'https://gdfirstdent.com/#dentist',
       name: '고덕퍼스트치과',
       alternateName: '고덕퍼스트치과의원',
       description: '평택 고덕동 전문 치과. 전체임플란트, 디지털임플란트, 충치치료, 사랑니발치, 치아미백 전문.',
-      url: 'https://medisksu.co.kr',
+      url: 'https://gdfirstdent.com',
       telephone: '+82-31-611-3222',
       address: {
         '@type': 'PostalAddress',
@@ -158,7 +158,7 @@ const jsonLd = {
           closes: '14:00',
         },
       ],
-      image: 'https://medisksu.co.kr/고덕퍼스트치과로고.png',
+      image: 'https://gdfirstdent.com/고덕퍼스트치과로고.png',
       priceRange: '$$',
       currenciesAccepted: 'KRW',
       paymentAccepted: 'Cash, Credit Card',
@@ -178,28 +178,28 @@ const jsonLd = {
     // 웹사이트 정보
     {
       '@type': 'WebSite',
-      '@id': 'https://medisksu.co.kr/#website',
-      url: 'https://medisksu.co.kr',
+      '@id': 'https://gdfirstdent.com/#website',
+      url: 'https://gdfirstdent.com',
       name: '고덕퍼스트치과',
       description: '평택 고덕동 전문 치과',
       publisher: {
-        '@id': 'https://medisksu.co.kr/#dentist',
+        '@id': 'https://gdfirstdent.com/#dentist',
       },
       inLanguage: 'ko-KR',
     },
     // 조직 정보
     {
       '@type': 'Organization',
-      '@id': 'https://medisksu.co.kr/#organization',
+      '@id': 'https://gdfirstdent.com/#organization',
       name: '고덕퍼스트치과',
-      url: 'https://medisksu.co.kr',
+      url: 'https://gdfirstdent.com',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://medisksu.co.kr/favicon.svg',
+        url: 'https://gdfirstdent.com/favicon.svg',
       },
       sameAs: [
-        'https://www.youtube.com/@medisksu',
-        'https://blog.naver.com/medisksu',
+        'https://www.youtube.com/@gdfirstdental',
+        'https://blog.naver.com/gdfst111',
       ],
     },
   ],

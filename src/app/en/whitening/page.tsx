@@ -32,12 +32,12 @@ export const metadata: Metadata = {
     'dental tourism whitening Korea'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/en/whitening',
+    canonical: 'https://gdfirstdent.com/en/whitening',
   },
   openGraph: {
     title: 'Korean Teeth Whitening Busan Korea | Kyungsung Medis Dental',
     description: '1,000+ whitening procedures with 0 side effects. #1 in Busan Nam-gu. Professional teeth whitening and digital laminate.',
-    url: 'https://medisksu.co.kr/en/whitening',
+    url: 'https://gdfirstdent.com/en/whitening',
     type: 'website',
     locale: 'en_US',
   }

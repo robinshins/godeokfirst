@@ -30,12 +30,12 @@ export const metadata: Metadata = {
     '韓国デンタルツーリズム'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/jp/gum-care',
+    canonical: 'https://gdfirstdent.com/jp/gum-care',
   },
   openGraph: {
     title: '韓国釜山歯周病治療歯科 | 慶星メディス歯科',
     description: '専門的な歯周病治療と歯肉ケア。釜山南区No.1。',
-    url: 'https://medisksu.co.kr/jp/gum-care',
+    url: 'https://gdfirstdent.com/jp/gum-care',
     type: 'website',
     locale: 'ja_JP',
   }

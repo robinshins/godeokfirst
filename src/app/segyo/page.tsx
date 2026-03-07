@@ -138,13 +138,13 @@ export const metadata: Metadata = {
     '디지털 가이드 임플란트',
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/segyo',
+    canonical: 'https://gdfirstdent.com/segyo',
   },
   openGraph: {
     title: '세교동 치과 추천 | 고덕퍼스트치과',
     description:
       '세교신도시에서 차로 20분. 통합치의학전문의의 정확한 진단, 디지털 가이드 임플란트, 충치·사랑니 치료.',
-    url: 'https://medisksu.co.kr/segyo',
+    url: 'https://gdfirstdent.com/segyo',
     siteName: '고덕퍼스트치과',
     type: 'website',
   },
@@ -172,13 +172,13 @@ export default function SegyoPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://medisksu.co.kr',
+        item: 'https://gdfirstdent.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '세교동',
-        item: 'https://medisksu.co.kr/segyo',
+        item: 'https://gdfirstdent.com/segyo',
       },
     ],
   };

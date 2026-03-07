@@ -32,12 +32,12 @@ export const metadata: Metadata = {
     'điều trị sâu răng tiếng Việt Busan'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/vi/cavity-treatment',
+    canonical: 'https://gdfirstdent.com/vi/cavity-treatment',
   },
   openGraph: {
     title: 'Nha khoa Điều trị sâu răng Busan Hàn Quốc | Kyungsung Medis Dental',
     description: 'Điều trị sâu răng và chữa tủy tiên tiến. Số 1 quận Nam Busan. Bác sĩ trưởng trực tiếp điều trị với kính hiển vi.',
-    url: 'https://medisksu.co.kr/vi/cavity-treatment',
+    url: 'https://gdfirstdent.com/vi/cavity-treatment',
     type: 'website',
     locale: 'vi_VN',
   }

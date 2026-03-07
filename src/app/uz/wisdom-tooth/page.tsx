@@ -29,12 +29,12 @@ export const metadata: Metadata = {
     'Koreya stomatologiya turizmi'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/uz/wisdom-tooth',
+    canonical: 'https://gdfirstdent.com/uz/wisdom-tooth',
   },
   openGraph: {
     title: 'Koreya Pusan Donolik Tishi Stomatologiya | Kyungsung Medis Dental',
     description: '2,700+ murakkab donolik tishi operatsiyasi 0 ta asorat bilan. Pusan Nam-gu 1-o\'rin.',
-    url: 'https://medisksu.co.kr/uz/wisdom-tooth',
+    url: 'https://gdfirstdent.com/uz/wisdom-tooth',
     type: 'website',
     locale: 'uz_UZ',
   }

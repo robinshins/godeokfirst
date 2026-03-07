@@ -80,11 +80,11 @@ export const metadata: Metadata = {
   title: '서정동 사랑니 발치 | 대학병원급 안전 발치 | 고덕퍼스트치과',
   description: '서정동 사랑니 발치 전문 치과. 대학병원 외래교수 출신 통합치의학과 전문의 직접 시술. 3D CT 정밀 진단, 매복 사랑니 안전 발치. 서정역에서 차량 5분. 031-611-3222',
   keywords: '서정동 사랑니, 서정동 사랑니 발치, 평택 사랑니 발치, 고덕퍼스트치과, 매복 사랑니, 서정동 치과',
-  alternates: { canonical: 'https://medisksu.co.kr/seojeong/wisdom-tooth' },
+  alternates: { canonical: 'https://gdfirstdent.com/seojeong/wisdom-tooth' },
   openGraph: {
     title: '서정동 사랑니 발치 | 고덕퍼스트치과',
     description: '서정동 주민을 위한 대학병원급 사랑니 발치. 통합치의학과 전문의 직접 시술.',
-    url: 'https://medisksu.co.kr/seojeong/wisdom-tooth',
+    url: 'https://gdfirstdent.com/seojeong/wisdom-tooth',
     siteName: '고덕퍼스트치과',
     locale: 'ko_KR',
     type: 'article',
@@ -106,9 +106,9 @@ export default function SeojeongWisdomToothPage() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: '홈', item: 'https://medisksu.co.kr' },
-      { '@type': 'ListItem', position: 2, name: '서정동 치과', item: 'https://medisksu.co.kr/seojeong' },
-      { '@type': 'ListItem', position: 3, name: '서정동 사랑니 발치', item: 'https://medisksu.co.kr/seojeong/wisdom-tooth' },
+      { '@type': 'ListItem', position: 1, name: '홈', item: 'https://gdfirstdent.com' },
+      { '@type': 'ListItem', position: 2, name: '서정동 치과', item: 'https://gdfirstdent.com/seojeong' },
+      { '@type': 'ListItem', position: 3, name: '서정동 사랑니 발치', item: 'https://gdfirstdent.com/seojeong/wisdom-tooth' },
     ],
   };
 

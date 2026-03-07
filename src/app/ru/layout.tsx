@@ -14,12 +14,12 @@ export const metadata: Metadata = {
     'отбеливание зубов Корея',
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/ru',
+    canonical: 'https://gdfirstdent.com/ru',
   },
   openGraph: {
     type: 'website',
     locale: 'ru_RU',
-    url: 'https://medisksu.co.kr/ru',
+    url: 'https://gdfirstdent.com/ru',
     siteName: 'Стоматология Медис Кёнсон',
     title: 'Стоматология Медис Кёнсон | Имплантация зубов Пусан',
     images: [{ url: '/고덕퍼스트치과로고.png', width: 1200, height: 630 }],
@@ -30,7 +30,7 @@ const jsonLdRu = {
   '@context': 'https://schema.org',
   '@type': 'Dentist',
   name: 'Стоматология Медис Кёнсон',
-  url: 'https://medisksu.co.kr/ru',
+  url: 'https://gdfirstdent.com/ru',
   telephone: '+82-51-628-2879',
   address: { '@type': 'PostalAddress', addressLocality: 'Busan', addressCountry: 'KR' },
   availableLanguage: ['Korean', 'Russian', 'English'],

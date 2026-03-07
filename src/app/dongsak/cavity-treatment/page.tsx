@@ -82,12 +82,12 @@ export const metadata: Metadata = {
   description: '동삭동 충치치료 전문 고덕퍼스트치과. 미세현미경 정밀 치료, 최소 삭제 보존 원칙. 소아·성인 맞춤 충치치료. 통합치의학과 전문의 직접 진료. 031-611-3222',
   keywords: '동삭동 충치치료, 동삭지구 치과, 동삭동 소아치과, 평택 충치치료, 보존치료, 고덕퍼스트치과',
   alternates: {
-    canonical: 'https://medisksu.co.kr/dongsak/cavity-treatment',
+    canonical: 'https://gdfirstdent.com/dongsak/cavity-treatment',
   },
   openGraph: {
     title: '동삭동 충치치료 | 고덕퍼스트치과',
     description: '동삭동 가족을 위한 보존 중심 충치치료. 미세현미경 정밀 치료, 소아·성인 맞춤 진료.',
-    url: 'https://medisksu.co.kr/dongsak/cavity-treatment',
+    url: 'https://gdfirstdent.com/dongsak/cavity-treatment',
     siteName: '고덕퍼스트치과',
     locale: 'ko_KR',
     type: 'article',
@@ -116,19 +116,19 @@ export default function DongsakCavityTreatmentPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://medisksu.co.kr',
+        item: 'https://gdfirstdent.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '동삭동 치과',
-        item: 'https://medisksu.co.kr/dongsak',
+        item: 'https://gdfirstdent.com/dongsak',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: '동삭동 충치치료',
-        item: 'https://medisksu.co.kr/dongsak/cavity-treatment',
+        item: 'https://gdfirstdent.com/dongsak/cavity-treatment',
       },
     ],
   };

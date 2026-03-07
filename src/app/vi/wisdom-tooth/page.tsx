@@ -33,12 +33,12 @@ export const metadata: Metadata = {
     'răng khôn tiếng Việt Busan'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/vi/wisdom-tooth',
+    canonical: 'https://gdfirstdent.com/vi/wisdom-tooth',
   },
   openGraph: {
     title: 'Nha khoa Nhổ răng khôn Busan Hàn Quốc | Kyungsung Medis Dental',
     description: '2,700+ ca nhổ răng khôn độ khó cao với 0 biến chứng. Số 1 quận Nam Busan. Bác sĩ trưởng trực tiếp điều trị.',
-    url: 'https://medisksu.co.kr/vi/wisdom-tooth',
+    url: 'https://gdfirstdent.com/vi/wisdom-tooth',
     type: 'website',
     locale: 'vi_VN',
   }

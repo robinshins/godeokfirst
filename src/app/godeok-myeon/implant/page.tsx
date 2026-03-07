@@ -90,12 +90,12 @@ export const metadata: Metadata = {
   description: '고덕면에서 차로 5분. 통합치의학전문의 이동현 원장의 디지털 가이드 임플란트. 즉시 임플란트, 전악 임플란트, 뼈이식 전문. 고덕퍼스트치과 031-611-3222.',
   keywords: ['고덕면 임플란트', '고덕면 치과', '고덕국제신도시 임플란트', '평택 임플란트', '고덕퍼스트치과', '디지털 가이드 임플란트'],
   alternates: {
-    canonical: 'https://medisksu.co.kr/godeok-myeon/implant'
+    canonical: 'https://gdfirstdent.com/godeok-myeon/implant'
   },
   openGraph: {
     title: '고덕면 임플란트 | 디지털 가이드 전문 | 고덕퍼스트치과',
     description: '고덕면에서 가장 가까운 임플란트 전문 치과. 통합치의학전문의의 디지털 가이드 수술.',
-    url: 'https://medisksu.co.kr/godeok-myeon/implant',
+    url: 'https://gdfirstdent.com/godeok-myeon/implant',
     siteName: '고덕퍼스트치과',
     type: 'article',
     locale: 'ko_KR'
@@ -124,19 +124,19 @@ export default function GodeokMyeonImplantPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://medisksu.co.kr'
+        item: 'https://gdfirstdent.com'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '고덕면',
-        item: 'https://medisksu.co.kr/godeok-myeon'
+        item: 'https://gdfirstdent.com/godeok-myeon'
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: '임플란트',
-        item: 'https://medisksu.co.kr/godeok-myeon/implant'
+        item: 'https://gdfirstdent.com/godeok-myeon/implant'
       }
     ]
   };

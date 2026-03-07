@@ -39,12 +39,12 @@ export const metadata: Metadata = {
     'English implant dentist Korea'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/en/implant',
+    canonical: 'https://gdfirstdent.com/en/implant',
   },
   openGraph: {
     title: 'Korean Dental Implant Busan Korea | Kyungsung Medis Dental',
     description: '10 years with 0 implant re-surgeries. #1 in Busan Nam-gu with 1,500+ digital implant surgeries. Head doctor performs all procedures.',
-    url: 'https://medisksu.co.kr/en/implant',
+    url: 'https://gdfirstdent.com/en/implant',
     type: 'website',
     locale: 'en_US',
   }

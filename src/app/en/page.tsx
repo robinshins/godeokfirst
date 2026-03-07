@@ -27,12 +27,12 @@ export const metadata = {
     'Korean dentist for foreigners'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/en',
+    canonical: 'https://gdfirstdent.com/en',
   },
   openGraph: {
     title: 'Korean Dental Clinic Busan Korea | Kyungsung Medis Dental',
     description: '10 years with 0 re-surgeries. #1 in Busan Nam-gu with 1,500+ implants and 2,700+ wisdom tooth extractions. Head doctor performs all treatments.',
-    url: 'https://medisksu.co.kr/en',
+    url: 'https://gdfirstdent.com/en',
     locale: 'en_US'
   }
 };

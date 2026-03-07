@@ -31,12 +31,12 @@ export const metadata: Metadata = {
     'ถอนฟันคุดไม่เจ็บปูซาน'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/th/wisdom-tooth',
+    canonical: 'https://gdfirstdent.com/th/wisdom-tooth',
   },
   openGraph: {
     title: 'ถอนฟันคุดปูซาน | Kyungsung Medis Dental',
     description: 'ผู้เชี่ยวชาญการถอนฟันคุดในปูซาน ประสบการณ์ 2,700+ เคส ถอนฟันคุดยากๆ ได้อย่างปลอดภัยและรวดเร็ว',
-    url: 'https://medisksu.co.kr/th/wisdom-tooth',
+    url: 'https://gdfirstdent.com/th/wisdom-tooth',
     siteName: 'Kyungsung Medis Dental Clinic',
     locale: 'th_TH',
     type: 'website',

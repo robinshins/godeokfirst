@@ -42,7 +42,7 @@ export default function FooterSection() {
                 Телефон : <span className="font-semibold">0507-1315-7475</span>
               </p>
               <p>
-                Email : <span className="font-semibold">medisksu@naver.com</span>
+                Email : <span className="font-semibold">gdfst111@naver.com</span>
               </p>
             </div>
           </div>
@@ -149,7 +149,7 @@ function PrivacyPolicy() {
           <p><strong>ФИО:</strong> Ким Дон Сок</p>
           <p><strong>Должность:</strong> Главный врач</p>
           <p><strong>Телефон:</strong> 0507-1315-7475</p>
-          <p><strong>Email:</strong> medisksu@naver.com</p>
+          <p><strong>Email:</strong> gdfst111@naver.com</p>
         </div>
       </section>
 

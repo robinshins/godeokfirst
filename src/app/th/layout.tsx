@@ -14,12 +14,12 @@ export const metadata: Metadata = {
     'ฟอกสีฟันเกาหลี',
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/th',
+    canonical: 'https://gdfirstdent.com/th',
   },
   openGraph: {
     type: 'website',
     locale: 'th_TH',
-    url: 'https://medisksu.co.kr/th',
+    url: 'https://gdfirstdent.com/th',
     siteName: 'คลินิกทันตกรรมเมดิสคยองซอง',
     title: 'คลินิกทันตกรรมเมดิสคยองซอง | รากฟันเทียมปูซาน',
     images: [{ url: '/고덕퍼스트치과로고.png', width: 1200, height: 630 }],
@@ -30,7 +30,7 @@ const jsonLdTh = {
   '@context': 'https://schema.org',
   '@type': 'Dentist',
   name: 'คลินิกทันตกรรมเมดิสคยองซอง',
-  url: 'https://medisksu.co.kr/th',
+  url: 'https://gdfirstdent.com/th',
   telephone: '+82-51-628-2879',
   address: { '@type': 'PostalAddress', addressLocality: 'Busan', addressCountry: 'KR' },
   availableLanguage: ['Korean', 'Thai', 'English'],

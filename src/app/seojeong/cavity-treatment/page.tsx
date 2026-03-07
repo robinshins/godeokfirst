@@ -72,11 +72,11 @@ export const metadata: Metadata = {
   title: '서정동 충치치료 | 자연치아 보존 | 고덕퍼스트치과',
   description: '서정동에서 가까운 충치치료 치과. 통합치의학과 전문의 이동현 원장 직접 치료. 큐레이 정밀 진단, 보존 중심 치료. 서정역에서 차량 5분. 031-611-3222',
   keywords: '서정동 충치치료, 서정동 치과, 평택 충치치료, 고덕퍼스트치과, 서정동 신경치료',
-  alternates: { canonical: 'https://medisksu.co.kr/seojeong/cavity-treatment' },
+  alternates: { canonical: 'https://gdfirstdent.com/seojeong/cavity-treatment' },
   openGraph: {
     title: '서정동 충치치료 | 고덕퍼스트치과',
     description: '서정동 주민을 위한 자연치아 보존 충치치료. 통합치의학과 전문의 직접 진료.',
-    url: 'https://medisksu.co.kr/seojeong/cavity-treatment',
+    url: 'https://gdfirstdent.com/seojeong/cavity-treatment',
     siteName: '고덕퍼스트치과',
     locale: 'ko_KR',
     type: 'article',
@@ -98,9 +98,9 @@ export default function SeojeongCavityTreatmentPage() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: '홈', item: 'https://medisksu.co.kr' },
-      { '@type': 'ListItem', position: 2, name: '서정동 치과', item: 'https://medisksu.co.kr/seojeong' },
-      { '@type': 'ListItem', position: 3, name: '서정동 충치치료', item: 'https://medisksu.co.kr/seojeong/cavity-treatment' },
+      { '@type': 'ListItem', position: 1, name: '홈', item: 'https://gdfirstdent.com' },
+      { '@type': 'ListItem', position: 2, name: '서정동 치과', item: 'https://gdfirstdent.com/seojeong' },
+      { '@type': 'ListItem', position: 3, name: '서정동 충치치료', item: 'https://gdfirstdent.com/seojeong/cavity-treatment' },
     ],
   };
 

@@ -39,12 +39,12 @@ export const metadata: Metadata = {
     'implant tiếng Việt Busan'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/vi/implant',
+    canonical: 'https://gdfirstdent.com/vi/implant',
   },
   openGraph: {
     title: 'Nha khoa Cấy ghép Implant Busan Hàn Quốc | Kyungsung Medis Dental',
     description: '10 năm 0 ca tái phẫu thuật implant. Số 1 quận Nam Busan với 1,500+ ca phẫu thuật implant kỹ thuật số. Bác sĩ trưởng trực tiếp điều trị.',
-    url: 'https://medisksu.co.kr/vi/implant',
+    url: 'https://gdfirstdent.com/vi/implant',
     type: 'website',
     locale: 'vi_VN',
   }

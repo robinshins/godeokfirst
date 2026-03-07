@@ -33,12 +33,12 @@ export const metadata: Metadata = {
     '韩国牙科旅游'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/cn/wisdom-tooth',
+    canonical: 'https://gdfirstdent.com/cn/wisdom-tooth',
   },
   openGraph: {
     title: '韩国釜山智齿拔除牙科 | 庆星美迪斯牙科',
     description: '2,700件以上高难度智齿拔除，0例并发症。釜山南区第一。院长亲自施术。',
-    url: 'https://medisksu.co.kr/cn/wisdom-tooth',
+    url: 'https://gdfirstdent.com/cn/wisdom-tooth',
     type: 'website',
     locale: 'zh_CN',
   }

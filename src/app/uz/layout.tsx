@@ -13,12 +13,12 @@ export const metadata: Metadata = {
     'aql tishi olish Koreya',
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/uz',
+    canonical: 'https://gdfirstdent.com/uz',
   },
   openGraph: {
     type: 'website',
     locale: 'uz_UZ',
-    url: 'https://medisksu.co.kr/uz',
+    url: 'https://gdfirstdent.com/uz',
     siteName: 'Kyungsung Medis Stomatologiya',
     title: 'Kyungsung Medis Stomatologiya | Pusan Implant',
     images: [{ url: '/고덕퍼스트치과로고.png', width: 1200, height: 630 }],
@@ -29,7 +29,7 @@ const jsonLdUz = {
   '@context': 'https://schema.org',
   '@type': 'Dentist',
   name: 'Kyungsung Medis Stomatologiya',
-  url: 'https://medisksu.co.kr/uz',
+  url: 'https://gdfirstdent.com/uz',
   telephone: '+82-51-628-2879',
   address: { '@type': 'PostalAddress', addressLocality: 'Busan', addressCountry: 'KR' },
   availableLanguage: ['Korean', 'Uzbek', 'English'],

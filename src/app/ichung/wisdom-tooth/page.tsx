@@ -80,12 +80,12 @@ export const metadata: Metadata = {
   description: '이충동 사랑니 발치 전문 치과. 대학병원 외래교수 출신 통합치의학과 전문의 직접 시술. 3D CT 정밀 진단, 매복 사랑니 안전 발치. 이충동에서 차량 10분. 031-611-3222',
   keywords: '이충동 사랑니, 이충동 사랑니 발치, 평택 사랑니 발치, 고덕퍼스트치과, 매복 사랑니, 이충동 치과',
   alternates: {
-    canonical: 'https://medisksu.co.kr/ichung/wisdom-tooth',
+    canonical: 'https://gdfirstdent.com/ichung/wisdom-tooth',
   },
   openGraph: {
     title: '이충동 사랑니 발치 | 고덕퍼스트치과',
     description: '이충동 주민을 위한 대학병원급 사랑니 발치. 통합치의학과 전문의 직접 시술.',
-    url: 'https://medisksu.co.kr/ichung/wisdom-tooth',
+    url: 'https://gdfirstdent.com/ichung/wisdom-tooth',
     siteName: '고덕퍼스트치과',
     locale: 'ko_KR',
     type: 'article',
@@ -114,19 +114,19 @@ export default function IchungWisdomToothPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://medisksu.co.kr',
+        item: 'https://gdfirstdent.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '이충동 치과',
-        item: 'https://medisksu.co.kr/ichung',
+        item: 'https://gdfirstdent.com/ichung',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: '이충동 사랑니 발치',
-        item: 'https://medisksu.co.kr/ichung/wisdom-tooth',
+        item: 'https://gdfirstdent.com/ichung/wisdom-tooth',
       },
     ],
   };

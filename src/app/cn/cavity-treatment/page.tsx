@@ -32,12 +32,12 @@ export const metadata: Metadata = {
     '韩国牙科旅游'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/cn/cavity-treatment',
+    canonical: 'https://gdfirstdent.com/cn/cavity-treatment',
   },
   openGraph: {
     title: '韩国釜山龋齿治疗牙科 | 庆星美迪斯牙科',
     description: '先进龋齿和根管治疗。釜山南区第一。院长亲自施术，配备显微镜。',
-    url: 'https://medisksu.co.kr/cn/cavity-treatment',
+    url: 'https://gdfirstdent.com/cn/cavity-treatment',
     type: 'website',
     locale: 'zh_CN',
   }

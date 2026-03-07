@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 
 interface BlogPost {
   id: string;
-  blogId: string; // 네이버 블로그 ID (예: medisksu)
+  blogId: string; // 네이버 블로그 ID (예: gdfst111)
 }
 
 interface ExposedPost {
@@ -517,7 +517,7 @@ export default function BlogTracker() {
         <div className="bg-white rounded-lg shadow p-6">
           <h3 className="font-bold mb-2">블로그 관리 ({blogs.length}개)</h3>
           <p className="text-xs text-gray-500 mb-4">
-            네이버 블로그 ID만 입력 (예: medisksu)
+            네이버 블로그 ID만 입력 (예: gdfst111)
           </p>
 
           <div className="flex gap-2 mb-4">
@@ -526,7 +526,7 @@ export default function BlogTracker() {
               value={newBlogId}
               onChange={(e) => setNewBlogId(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && addBlog()}
-              placeholder="블로그 ID (예: medisksu)"
+              placeholder="블로그 ID (예: gdfst111)"
               className="flex-1 px-3 py-2 border border-gray-300 rounded-lg text-sm"
             />
             <button

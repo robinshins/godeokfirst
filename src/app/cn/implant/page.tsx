@@ -39,12 +39,12 @@ export const metadata: Metadata = {
     '韩国牙科旅游'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/cn/implant',
+    canonical: 'https://gdfirstdent.com/cn/implant',
   },
   openGraph: {
     title: '韩国釜山种植牙牙科 | 庆星美迪斯牙科',
     description: '10年种植牙零返修。釜山南区第一，1,500件以上数字化种植牙手术。院长亲自施术。',
-    url: 'https://medisksu.co.kr/cn/implant',
+    url: 'https://gdfirstdent.com/cn/implant',
     type: 'website',
     locale: 'zh_CN',
   }

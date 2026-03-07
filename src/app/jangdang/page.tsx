@@ -97,12 +97,12 @@ export const metadata: Metadata = {
   description: '장당동에서 차로 15분, 통합치의학전문의 이동현 원장 직접 진료. 디지털 가이드 임플란트, 충치 치료, 사랑니 발치 전문. 평택 고덕퍼스트치과의원.',
   keywords: ['장당동 치과', '장당동 임플란트', '장당동 치과 추천', '평택 치과', '고덕퍼스트치과', '장당동 충치 치료', '장당동 사랑니'],
   alternates: {
-    canonical: 'https://medisksu.co.kr/jangdang'
+    canonical: 'https://gdfirstdent.com/jangdang'
   },
   openGraph: {
     title: '장당동 치과 추천 | 고덕퍼스트치과',
     description: '장당동에서 차로 15분. 통합치의학전문의가 직접 진료하는 고덕퍼스트치과. 디지털 가이드 임플란트, 충치, 사랑니 전문.',
-    url: 'https://medisksu.co.kr/jangdang',
+    url: 'https://gdfirstdent.com/jangdang',
     siteName: '고덕퍼스트치과',
     type: 'website',
     locale: 'ko_KR'
@@ -131,13 +131,13 @@ export default function JangdangPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://medisksu.co.kr'
+        item: 'https://gdfirstdent.com'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '장당동',
-        item: 'https://medisksu.co.kr/jangdang'
+        item: 'https://gdfirstdent.com/jangdang'
       }
     ]
   };

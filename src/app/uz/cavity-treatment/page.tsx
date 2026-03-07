@@ -29,12 +29,12 @@ export const metadata: Metadata = {
     'Koreya stomatologiya turizmi'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/uz/cavity-treatment',
+    canonical: 'https://gdfirstdent.com/uz/cavity-treatment',
   },
   openGraph: {
     title: 'Koreya Pusan Karies Davolash Stomatologiya | Kyungsung Medis Dental',
     description: 'Zamonaviy karies va kanal davolash. Pusan Nam-gu 1-o\'rin. Bosh shifokor mikroskop bilan bevosita davolaydi.',
-    url: 'https://medisksu.co.kr/uz/cavity-treatment',
+    url: 'https://gdfirstdent.com/uz/cavity-treatment',
     type: 'website',
     locale: 'uz_UZ',
   }

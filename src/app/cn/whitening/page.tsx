@@ -32,12 +32,12 @@ export const metadata: Metadata = {
     '韩国牙科旅游'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/cn/whitening',
+    canonical: 'https://gdfirstdent.com/cn/whitening',
   },
   openGraph: {
     title: '韩国釜山美白牙科 | 庆星美迪斯牙科',
     description: '1,000件以上施术实绩，0例副作用。釜山南区第一。院长亲自施术的专业美白和数字化贴面。',
-    url: 'https://medisksu.co.kr/cn/whitening',
+    url: 'https://gdfirstdent.com/cn/whitening',
     type: 'website',
     locale: 'zh_CN',
   }

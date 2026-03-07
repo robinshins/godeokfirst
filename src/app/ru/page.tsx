@@ -25,12 +25,12 @@ export const metadata = {
     'стоматологическая клиника Корея'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/ru',
+    canonical: 'https://gdfirstdent.com/ru',
   },
   openGraph: {
     title: 'Корея Пусан Стоматология | Кёнсон Медис',
     description: '0 повторных операций за 10 лет, №1 в Намгу Пусан. Главный врач лечит лично.',
-    url: 'https://medisksu.co.kr/ru',
+    url: 'https://gdfirstdent.com/ru',
     type: 'website',
     locale: 'ru_RU'
   }

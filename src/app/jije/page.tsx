@@ -97,12 +97,12 @@ export const metadata: Metadata = {
   description: '지제동에서 가까운 고덕퍼스트치과. 통합치의학과 전문의 이동현 원장 직접 진료. 디지털 가이드 임플란트, 충치치료, 사랑니 발치. 지제역에서 차량 15분. 031-611-3222',
   keywords: '지제동 치과, 지제동 임플란트, 지제동 충치치료, 지제동 사랑니, 지제역 치과, 평택 치과, 고덕퍼스트치과, 삼성전자 평택 치과',
   alternates: {
-    canonical: 'https://medisksu.co.kr/jije',
+    canonical: 'https://gdfirstdent.com/jije',
   },
   openGraph: {
     title: '지제동 치과 | 고덕퍼스트치과',
     description: '지제동·지제역 인근 주민을 위한 통합치의학 전문 진료. 임플란트, 충치치료, 사랑니 발치. 전문의 직접 진료.',
-    url: 'https://medisksu.co.kr/jije',
+    url: 'https://gdfirstdent.com/jije',
     siteName: '고덕퍼스트치과',
     locale: 'ko_KR',
     type: 'website',
@@ -131,13 +131,13 @@ export default function JijePage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://medisksu.co.kr',
+        item: 'https://gdfirstdent.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '지제동 치과',
-        item: 'https://medisksu.co.kr/jije',
+        item: 'https://gdfirstdent.com/jije',
       },
     ],
   };

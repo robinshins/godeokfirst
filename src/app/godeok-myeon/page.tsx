@@ -97,12 +97,12 @@ export const metadata: Metadata = {
   description: '고덕면에서 차로 5분, 도보 가능. 통합치의학전문의 이동현 원장 직접 진료. 디지털 임플란트, 충치, 사랑니 전문. 고덕퍼스트치과의원 031-611-3222.',
   keywords: ['고덕면 치과', '고덕면 임플란트', '고덕면 치과 추천', '고덕국제신도시 치과', '고덕퍼스트치과', '평택 고덕 치과'],
   alternates: {
-    canonical: 'https://medisksu.co.kr/godeok-myeon'
+    canonical: 'https://gdfirstdent.com/godeok-myeon'
   },
   openGraph: {
     title: '고덕면 치과 | 가장 가까운 전문 치과 | 고덕퍼스트치과',
     description: '고덕면에서 차로 5분, 도보 가능. 통합치의학전문의가 직접 진료하는 고덕퍼스트치과.',
-    url: 'https://medisksu.co.kr/godeok-myeon',
+    url: 'https://gdfirstdent.com/godeok-myeon',
     siteName: '고덕퍼스트치과',
     type: 'website',
     locale: 'ko_KR'
@@ -131,13 +131,13 @@ export default function GodeokMyeonPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://medisksu.co.kr'
+        item: 'https://gdfirstdent.com'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '고덕면',
-        item: 'https://medisksu.co.kr/godeok-myeon'
+        item: 'https://gdfirstdent.com/godeok-myeon'
       }
     ]
   };

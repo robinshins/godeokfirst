@@ -37,12 +37,12 @@ export const metadata: Metadata = {
     'стоматологический туризм Корея'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/ru/implant',
+    canonical: 'https://gdfirstdent.com/ru/implant',
   },
   openGraph: {
     title: 'Корея Пусан Имплантация Стоматология | Кёнсон Медис',
     description: '0 повторных операций за 10 лет, 1,500+ цифровых имплантаций. №1 в Намгу Пусан.',
-    url: 'https://medisksu.co.kr/ru/implant',
+    url: 'https://gdfirstdent.com/ru/implant',
     type: 'website',
     locale: 'ru_RU',
   }

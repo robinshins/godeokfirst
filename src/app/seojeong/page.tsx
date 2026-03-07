@@ -93,12 +93,12 @@ export const metadata: Metadata = {
   description: '서정동에서 가까운 고덕퍼스트치과. 통합치의학과 전문의 이동현 원장 직접 진료. 디지털 가이드 임플란트, 충치치료, 사랑니 발치. 서정역에서 차량 5분. 031-611-3222',
   keywords: '서정동 치과, 서정동 임플란트, 서정동 충치치료, 서정동 사랑니, 평택 치과, 고덕퍼스트치과, 서정역 치과',
   alternates: {
-    canonical: 'https://medisksu.co.kr/seojeong',
+    canonical: 'https://gdfirstdent.com/seojeong',
   },
   openGraph: {
     title: '서정동 치과 | 고덕퍼스트치과',
     description: '서정동 주민을 위한 통합치의학 전문 진료. 임플란트, 충치치료, 사랑니 발치. 전문의 직접 진료.',
-    url: 'https://medisksu.co.kr/seojeong',
+    url: 'https://gdfirstdent.com/seojeong',
     siteName: '고덕퍼스트치과',
     locale: 'ko_KR',
     type: 'website',
@@ -127,13 +127,13 @@ export default function SeojeongPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://medisksu.co.kr',
+        item: 'https://gdfirstdent.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '서정동 치과',
-        item: 'https://medisksu.co.kr/seojeong',
+        item: 'https://gdfirstdent.com/seojeong',
       },
     ],
   };

@@ -89,12 +89,12 @@ export const metadata: Metadata = {
   description: '장당동에서 차로 15분. 통합치의학전문의 이동현 원장의 디지털 가이드 임플란트. 무절개 수술, 당일 임시치아, 뼈이식 전문. 고덕퍼스트치과 031-611-3222.',
   keywords: ['장당동 임플란트', '장당동 임플란트 치과', '평택 임플란트', '디지털 가이드 임플란트', '고덕퍼스트치과', '장당동 치과'],
   alternates: {
-    canonical: 'https://medisksu.co.kr/jangdang/implant'
+    canonical: 'https://gdfirstdent.com/jangdang/implant'
   },
   openGraph: {
     title: '장당동 임플란트 | 디지털 가이드 수술 | 고덕퍼스트치과',
     description: '장당동에서 차로 15분, 통합치의학전문의의 디지털 가이드 임플란트. 정확하고 안전한 수술.',
-    url: 'https://medisksu.co.kr/jangdang/implant',
+    url: 'https://gdfirstdent.com/jangdang/implant',
     siteName: '고덕퍼스트치과',
     type: 'article',
     locale: 'ko_KR'
@@ -123,19 +123,19 @@ export default function JangdangImplantPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://medisksu.co.kr'
+        item: 'https://gdfirstdent.com'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '장당동',
-        item: 'https://medisksu.co.kr/jangdang'
+        item: 'https://gdfirstdent.com/jangdang'
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: '임플란트',
-        item: 'https://medisksu.co.kr/jangdang/implant'
+        item: 'https://gdfirstdent.com/jangdang/implant'
       }
     ]
   };

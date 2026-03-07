@@ -38,12 +38,12 @@ export const metadata: Metadata = {
     '韓国デンタルツーリズム'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/jp/implant',
+    canonical: 'https://gdfirstdent.com/jp/implant',
   },
   openGraph: {
     title: '韓国釜山インプラント歯科 | 慶星メディス歯科',
     description: '10年間再手術ゼロ、1,500件以上のデジタルインプラント実績。釜山南区No.1。',
-    url: 'https://medisksu.co.kr/jp/implant',
+    url: 'https://gdfirstdent.com/jp/implant',
     type: 'website',
     locale: 'ja_JP',
   }

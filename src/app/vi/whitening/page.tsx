@@ -32,12 +32,12 @@ export const metadata: Metadata = {
     'tẩy trắng tiếng Việt Busan'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/vi/whitening',
+    canonical: 'https://gdfirstdent.com/vi/whitening',
   },
   openGraph: {
     title: 'Nha khoa Tẩy trắng răng Busan Hàn Quốc | Kyungsung Medis Dental',
     description: '1,000+ ca tẩy trắng với 0 tác dụng phụ. Số 1 quận Nam Busan. Tẩy trắng chuyên nghiệp và veneer kỹ thuật số.',
-    url: 'https://medisksu.co.kr/vi/whitening',
+    url: 'https://gdfirstdent.com/vi/whitening',
     type: 'website',
     locale: 'vi_VN',
   }

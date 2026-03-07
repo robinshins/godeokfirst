@@ -137,13 +137,13 @@ export const metadata: Metadata = {
     '평택 고덕동 치과',
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/godeok',
+    canonical: 'https://gdfirstdent.com/godeok',
   },
   openGraph: {
     title: '고덕동 치과 | 에듀타운 최초 치과 - 고덕퍼스트치과',
     description:
       '고덕동 에듀타운 도보 5분. 통합치의학전문의의 임플란트, 충치, 사랑니 전문 진료. 우리 동네 치과.',
-    url: 'https://medisksu.co.kr/godeok',
+    url: 'https://gdfirstdent.com/godeok',
     siteName: '고덕퍼스트치과',
     type: 'website',
   },
@@ -171,13 +171,13 @@ export default function GodeokPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://medisksu.co.kr',
+        item: 'https://gdfirstdent.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '고덕동',
-        item: 'https://medisksu.co.kr/godeok',
+        item: 'https://gdfirstdent.com/godeok',
       },
     ],
   };

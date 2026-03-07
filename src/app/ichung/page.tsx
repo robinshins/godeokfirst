@@ -93,12 +93,12 @@ export const metadata: Metadata = {
   description: '이충동에서 가까운 고덕퍼스트치과. 통합치의학과 전문의 이동현 원장 직접 진료. 디지털 가이드 임플란트, 충치치료, 사랑니 발치. 이충동에서 차량 10분. 031-611-3222',
   keywords: '이충동 치과, 이충동 임플란트, 이충동 충치치료, 이충동 사랑니, 평택 치과, 고덕퍼스트치과',
   alternates: {
-    canonical: 'https://medisksu.co.kr/ichung',
+    canonical: 'https://gdfirstdent.com/ichung',
   },
   openGraph: {
     title: '이충동 치과 | 고덕퍼스트치과',
     description: '이충동 주민을 위한 통합치의학 전문 진료. 임플란트, 충치치료, 사랑니 발치. 전문의 직접 진료.',
-    url: 'https://medisksu.co.kr/ichung',
+    url: 'https://gdfirstdent.com/ichung',
     siteName: '고덕퍼스트치과',
     locale: 'ko_KR',
     type: 'website',
@@ -127,13 +127,13 @@ export default function IchungPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://medisksu.co.kr',
+        item: 'https://gdfirstdent.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '이충동 치과',
-        item: 'https://medisksu.co.kr/ichung',
+        item: 'https://gdfirstdent.com/ichung',
       },
     ],
   };

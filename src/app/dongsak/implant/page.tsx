@@ -90,12 +90,12 @@ export const metadata: Metadata = {
   description: '동삭동 임플란트 전문 고덕퍼스트치과. 통합치의학과 전문의 이동현 원장의 디지털 가이드 수술. 3D CT 정밀 진단, 최소 절개, 빠른 회복. 동삭동에서 차량 10분. 031-611-3222',
   keywords: '동삭동 임플란트, 동삭지구 임플란트, 동삭동 치과, 디지털 가이드 임플란트, 평택 임플란트, 고덕퍼스트치과',
   alternates: {
-    canonical: 'https://medisksu.co.kr/dongsak/implant',
+    canonical: 'https://gdfirstdent.com/dongsak/implant',
   },
   openGraph: {
     title: '동삭동 임플란트 | 고덕퍼스트치과',
     description: '동삭동에서 가까운 디지털 가이드 임플란트 전문. 통합치의학과 전문의 직접 수술.',
-    url: 'https://medisksu.co.kr/dongsak/implant',
+    url: 'https://gdfirstdent.com/dongsak/implant',
     siteName: '고덕퍼스트치과',
     locale: 'ko_KR',
     type: 'article',
@@ -124,19 +124,19 @@ export default function DongsakImplantPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://medisksu.co.kr',
+        item: 'https://gdfirstdent.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '동삭동 치과',
-        item: 'https://medisksu.co.kr/dongsak',
+        item: 'https://gdfirstdent.com/dongsak',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: '동삭동 임플란트',
-        item: 'https://medisksu.co.kr/dongsak/implant',
+        item: 'https://gdfirstdent.com/dongsak/implant',
       },
     ],
   };

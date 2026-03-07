@@ -33,12 +33,12 @@ export const metadata: Metadata = {
     'English dentist wisdom tooth Korea'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/en/wisdom-tooth',
+    canonical: 'https://gdfirstdent.com/en/wisdom-tooth',
   },
   openGraph: {
     title: 'Korean Wisdom Tooth Extraction Busan Korea | Kyungsung Medis Dental',
     description: '2,700+ complex wisdom tooth extractions with 0 complications. #1 in Busan Nam-gu. Head doctor performs all procedures.',
-    url: 'https://medisksu.co.kr/en/wisdom-tooth',
+    url: 'https://gdfirstdent.com/en/wisdom-tooth',
     type: 'website',
     locale: 'en_US',
   }

@@ -31,12 +31,12 @@ export const metadata: Metadata = {
     '韩国牙科旅游'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/cn/gum-care',
+    canonical: 'https://gdfirstdent.com/cn/gum-care',
   },
   openGraph: {
     title: '韩国釜山牙龈治疗牙科 | 庆星美迪斯牙科',
     description: '专业牙周疾病治疗和牙龈护理。釜山南区第一。院长亲自施术。',
-    url: 'https://medisksu.co.kr/cn/gum-care',
+    url: 'https://gdfirstdent.com/cn/gum-care',
     type: 'website',
     locale: 'zh_CN',
   }

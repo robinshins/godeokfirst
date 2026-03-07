@@ -12,12 +12,12 @@ export const metadata: Metadata = {
     'шүдний аялал жуулчлал Солонгос',
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/mn',
+    canonical: 'https://gdfirstdent.com/mn',
   },
   openGraph: {
     type: 'website',
     locale: 'mn_MN',
-    url: 'https://medisksu.co.kr/mn',
+    url: 'https://gdfirstdent.com/mn',
     siteName: 'Кёнсон Медис Шүдний Эмнэлэг',
     title: 'Кёнсон Медис Шүдний Эмнэлэг | Пусан Имплант',
     images: [{ url: '/고덕퍼스트치과로고.png', width: 1200, height: 630 }],
@@ -28,7 +28,7 @@ const jsonLdMn = {
   '@context': 'https://schema.org',
   '@type': 'Dentist',
   name: 'Кёнсон Медис Шүдний Эмнэлэг',
-  url: 'https://medisksu.co.kr/mn',
+  url: 'https://gdfirstdent.com/mn',
   telephone: '+82-51-628-2879',
   address: { '@type': 'PostalAddress', addressLocality: 'Busan', addressCountry: 'KR' },
   availableLanguage: ['Korean', 'Mongolian', 'English'],

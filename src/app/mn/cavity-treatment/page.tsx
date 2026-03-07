@@ -29,12 +29,12 @@ export const metadata: Metadata = {
     'Солонгос шүдний аялал'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/mn/cavity-treatment',
+    canonical: 'https://gdfirstdent.com/mn/cavity-treatment',
   },
   openGraph: {
     title: 'Солонгос Пусан Цоорол Эмчилгээ Шүдний Эмнэлэг | Кёнсон Мэдиш',
     description: 'Орчин үеийн цоорол ба сувгийн эмчилгээ. Пусан Нам-гу 1-рт. Эрхлэгч эмч микроскопоор шууд эмчилнэ.',
-    url: 'https://medisksu.co.kr/mn/cavity-treatment',
+    url: 'https://gdfirstdent.com/mn/cavity-treatment',
     type: 'website',
     locale: 'mn_MN',
   }

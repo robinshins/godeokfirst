@@ -42,7 +42,7 @@ export default function FooterSection() {
                 電話 : <span className="font-semibold">0507-1315-7475</span>
               </p>
               <p>
-                メール : <span className="font-semibold">medisksu@naver.com</span>
+                メール : <span className="font-semibold">gdfst111@naver.com</span>
               </p>
             </div>
           </div>
@@ -149,7 +149,7 @@ function PrivacyPolicy() {
           <p><strong>성명:</strong> 김동석</p>
           <p><strong>직책:</strong> 대표원장</p>
           <p><strong>연락처:</strong> 0507-1315-7475</p>
-          <p><strong>이메일:</strong> medisksu@naver.com</p>
+          <p><strong>이메일:</strong> gdfst111@naver.com</p>
         </div>
       </section>
 

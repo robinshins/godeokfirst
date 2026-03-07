@@ -31,12 +31,12 @@ export const metadata: Metadata = {
     'điều trị nướu tiếng Việt Busan'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/vi/gum-care',
+    canonical: 'https://gdfirstdent.com/vi/gum-care',
   },
   openGraph: {
     title: 'Nha khoa Điều trị nướu Busan Hàn Quốc | Kyungsung Medis Dental',
     description: 'Điều trị bệnh nướu và chăm sóc nha chu chuyên nghiệp. Số 1 quận Nam Busan. Bác sĩ trưởng trực tiếp điều trị.',
-    url: 'https://medisksu.co.kr/vi/gum-care',
+    url: 'https://gdfirstdent.com/vi/gum-care',
     type: 'website',
     locale: 'vi_VN',
   }

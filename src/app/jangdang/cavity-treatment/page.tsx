@@ -90,12 +90,12 @@ export const metadata: Metadata = {
   description: '장당동 가족을 위한 충치 치료 전문. 소아 충치부터 성인 신경치료까지, 통합치의학전문의가 치아를 최대한 보존하는 맞춤 치료. 고덕퍼스트치과 031-611-3222.',
   keywords: ['장당동 충치 치료', '장당동 치과', '평택 충치', '소아 충치', '고덕퍼스트치과', '장당동 가족 치과'],
   alternates: {
-    canonical: 'https://medisksu.co.kr/jangdang/cavity-treatment'
+    canonical: 'https://gdfirstdent.com/jangdang/cavity-treatment'
   },
   openGraph: {
     title: '장당동 충치 치료 | 가족 단위 진료 | 고덕퍼스트치과',
     description: '장당동 가족을 위한 맞춤 충치 치료. 아이부터 어른까지, 통합치의학전문의의 보존적 치료.',
-    url: 'https://medisksu.co.kr/jangdang/cavity-treatment',
+    url: 'https://gdfirstdent.com/jangdang/cavity-treatment',
     siteName: '고덕퍼스트치과',
     type: 'article',
     locale: 'ko_KR'
@@ -124,19 +124,19 @@ export default function JangdangCavityTreatmentPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://medisksu.co.kr'
+        item: 'https://gdfirstdent.com'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '장당동',
-        item: 'https://medisksu.co.kr/jangdang'
+        item: 'https://gdfirstdent.com/jangdang'
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: '충치 치료',
-        item: 'https://medisksu.co.kr/jangdang/cavity-treatment'
+        item: 'https://gdfirstdent.com/jangdang/cavity-treatment'
       }
     ]
   };

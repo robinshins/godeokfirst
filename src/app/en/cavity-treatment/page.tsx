@@ -32,12 +32,12 @@ export const metadata: Metadata = {
     'English dentist cavity Korea'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/en/cavity-treatment',
+    canonical: 'https://gdfirstdent.com/en/cavity-treatment',
   },
   openGraph: {
     title: 'Korean Cavity Treatment Busan Korea | Kyungsung Medis Dental',
     description: 'Advanced cavity and root canal treatment. #1 in Busan Nam-gu. Head doctor performs all procedures with microscope.',
-    url: 'https://medisksu.co.kr/en/cavity-treatment',
+    url: 'https://gdfirstdent.com/en/cavity-treatment',
     type: 'website',
     locale: 'en_US',
   }

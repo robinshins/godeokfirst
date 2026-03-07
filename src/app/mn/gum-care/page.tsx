@@ -28,12 +28,12 @@ export const metadata: Metadata = {
     'Солонгос шүдний аялал'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/mn/gum-care',
+    canonical: 'https://gdfirstdent.com/mn/gum-care',
   },
   openGraph: {
     title: 'Солонгос Пусан Буйлны Эмчилгээ Шүдний Эмнэлэг | Кёнсон Мэдиш',
     description: 'Мэргэжлийн буйлны өвчин ба парадонтын эмчилгээ. Пусан Нам-гу 1-рт.',
-    url: 'https://medisksu.co.kr/mn/gum-care',
+    url: 'https://gdfirstdent.com/mn/gum-care',
     type: 'website',
     locale: 'mn_MN',
   }

@@ -37,12 +37,12 @@ export const metadata: Metadata = {
     'Солонгос шүдний аялал'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/mn/implant',
+    canonical: 'https://gdfirstdent.com/mn/implant',
   },
   openGraph: {
     title: 'Солонгос Пусан Имплант Шүдний Эмнэлэг | Кёнсон Мэдиш',
     description: '10 жилийн турш 0 удаагийн давтан имплант хагалгаа. Пусан Нам-гу 1-рт, 1,500+ дижитал имплант хагалгаа.',
-    url: 'https://medisksu.co.kr/mn/implant',
+    url: 'https://gdfirstdent.com/mn/implant',
     type: 'website',
     locale: 'mn_MN',
   }

@@ -90,12 +90,12 @@ export const metadata: Metadata = {
   description: '고덕면에서 차로 5분, 도보 가능. 당일 레진 치료부터 신경치료까지 통합치의학전문의의 맞춤 충치 치료. 고덕퍼스트치과 031-611-3222.',
   keywords: ['고덕면 충치 치료', '고덕면 치과', '고덕국제신도시 충치', '평택 충치 치료', '고덕퍼스트치과', '당일 충치 치료'],
   alternates: {
-    canonical: 'https://medisksu.co.kr/godeok-myeon/cavity-treatment'
+    canonical: 'https://gdfirstdent.com/godeok-myeon/cavity-treatment'
   },
   openGraph: {
     title: '고덕면 충치 치료 | 당일 치료·예방 진료 | 고덕퍼스트치과',
     description: '고덕면에서 가장 가까운 충치 전문 치과. 당일 치료 가능, 통합치의학전문의 직접 진료.',
-    url: 'https://medisksu.co.kr/godeok-myeon/cavity-treatment',
+    url: 'https://gdfirstdent.com/godeok-myeon/cavity-treatment',
     siteName: '고덕퍼스트치과',
     type: 'article',
     locale: 'ko_KR'
@@ -124,19 +124,19 @@ export default function GodeokMyeonCavityTreatmentPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://medisksu.co.kr'
+        item: 'https://gdfirstdent.com'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '고덕면',
-        item: 'https://medisksu.co.kr/godeok-myeon'
+        item: 'https://gdfirstdent.com/godeok-myeon'
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: '충치 치료',
-        item: 'https://medisksu.co.kr/godeok-myeon/cavity-treatment'
+        item: 'https://gdfirstdent.com/godeok-myeon/cavity-treatment'
       }
     ]
   };

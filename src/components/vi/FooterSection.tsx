@@ -42,7 +42,7 @@ export default function FooterSection() {
                 So dien thoai: <span className="font-semibold">0507-1315-7475</span>
               </p>
               <p>
-                Email: <span className="font-semibold">medisksu@naver.com</span>
+                Email: <span className="font-semibold">gdfst111@naver.com</span>
               </p>
             </div>
           </div>

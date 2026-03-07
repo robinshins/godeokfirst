@@ -32,12 +32,12 @@ export const metadata: Metadata = {
     'คลินิกทันตกรรมปูซาน'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/th/whitening',
+    canonical: 'https://gdfirstdent.com/th/whitening',
   },
   openGraph: {
     title: 'ฟอกสีฟัน & วีเนียร์ปูซาน | Kyungsung Medis Dental',
     description: 'คืนรอยยิ้มขาวสะอาดอย่างมั่นใจด้วยเทคโนโลยีการฟอกสีฟันที่เห็นผลทันที',
-    url: 'https://medisksu.co.kr/th/whitening',
+    url: 'https://gdfirstdent.com/th/whitening',
     siteName: 'Kyungsung Medis Dental Clinic',
     locale: 'th_TH',
     type: 'website',

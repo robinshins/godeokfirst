@@ -105,13 +105,13 @@ export const metadata: Metadata = {
     '평택 고덕동 치과',
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/godeok/cavity-treatment',
+    canonical: 'https://gdfirstdent.com/godeok/cavity-treatment',
   },
   openGraph: {
     title: '고덕동 충치 치료 | 고덕퍼스트치과',
     description:
       '에듀타운 도보 5분, 통합치의학전문의의 가족 맞춤 충치 치료. 자연치아 보존, 소아 충치 전문.',
-    url: 'https://medisksu.co.kr/godeok/cavity-treatment',
+    url: 'https://gdfirstdent.com/godeok/cavity-treatment',
     siteName: '고덕퍼스트치과',
     type: 'article',
   },
@@ -139,19 +139,19 @@ export default function GodeokCavityTreatmentPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://medisksu.co.kr',
+        item: 'https://gdfirstdent.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '고덕동',
-        item: 'https://medisksu.co.kr/godeok',
+        item: 'https://gdfirstdent.com/godeok',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: '충치 치료',
-        item: 'https://medisksu.co.kr/godeok/cavity-treatment',
+        item: 'https://gdfirstdent.com/godeok/cavity-treatment',
       },
     ],
   };

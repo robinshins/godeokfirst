@@ -90,12 +90,12 @@ export const metadata: Metadata = {
   description: '지제동 임플란트 전문 고덕퍼스트치과. 통합치의학과 전문의 디지털 가이드 수술. 직장인 최소 내원 치료. 지제역에서 차량 15분. 031-611-3222',
   keywords: '지제동 임플란트, 지제역 임플란트, 지제동 치과, 평택 임플란트, 삼성전자 평택 치과, 디지털 가이드 임플란트, 고덕퍼스트치과',
   alternates: {
-    canonical: 'https://medisksu.co.kr/jije/implant',
+    canonical: 'https://gdfirstdent.com/jije/implant',
   },
   openGraph: {
     title: '지제동 임플란트 | 고덕퍼스트치과',
     description: '지제동 직장인을 위한 효율적 디지털 가이드 임플란트. 통합치의학과 전문의 직접 수술.',
-    url: 'https://medisksu.co.kr/jije/implant',
+    url: 'https://gdfirstdent.com/jije/implant',
     siteName: '고덕퍼스트치과',
     locale: 'ko_KR',
     type: 'article',
@@ -124,19 +124,19 @@ export default function JijeImplantPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://medisksu.co.kr',
+        item: 'https://gdfirstdent.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '지제동 치과',
-        item: 'https://medisksu.co.kr/jije',
+        item: 'https://gdfirstdent.com/jije',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: '지제동 임플란트',
-        item: 'https://medisksu.co.kr/jije/implant',
+        item: 'https://gdfirstdent.com/jije/implant',
       },
     ],
   };

@@ -104,13 +104,13 @@ export const metadata: Metadata = {
     '고덕동 치과',
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/godeok/implant',
+    canonical: 'https://gdfirstdent.com/godeok/implant',
   },
   openGraph: {
     title: '고덕동 임플란트 | 고덕퍼스트치과',
     description:
       '에듀타운 도보 5분. 통합치의학전문의의 디지털 가이드 임플란트, 연구자문위원 원장 직접 시술.',
-    url: 'https://medisksu.co.kr/godeok/implant',
+    url: 'https://gdfirstdent.com/godeok/implant',
     siteName: '고덕퍼스트치과',
     type: 'article',
   },
@@ -138,19 +138,19 @@ export default function GodeokImplantPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://medisksu.co.kr',
+        item: 'https://gdfirstdent.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '고덕동',
-        item: 'https://medisksu.co.kr/godeok',
+        item: 'https://gdfirstdent.com/godeok',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: '임플란트',
-        item: 'https://medisksu.co.kr/godeok/implant',
+        item: 'https://gdfirstdent.com/godeok/implant',
       },
     ],
   };

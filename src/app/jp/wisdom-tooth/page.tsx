@@ -32,12 +32,12 @@ export const metadata: Metadata = {
     '韓国デンタルツーリズム'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/jp/wisdom-tooth',
+    canonical: 'https://gdfirstdent.com/jp/wisdom-tooth',
   },
   openGraph: {
     title: '韓国釜山親知らず抜歯歯科 | 慶星メディス歯科',
     description: '2,700件以上の親知らず抜歯実績、合併症ゼロ。釜山南区No.1。',
-    url: 'https://medisksu.co.kr/jp/wisdom-tooth',
+    url: 'https://gdfirstdent.com/jp/wisdom-tooth',
     type: 'website',
     locale: 'ja_JP',
   }

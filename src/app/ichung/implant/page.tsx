@@ -80,12 +80,12 @@ export const metadata: Metadata = {
   description: '이충동에서 찾는 임플란트 잘하는 치과. 통합치의학과 전문의 이동현 원장 직접 시술. 디지털 가이드 수술, 뼈이식 가능. 이충동에서 차량 10분. 031-611-3222',
   keywords: '이충동 임플란트, 이충동 임플란트 치과, 평택 임플란트, 고덕퍼스트치과 임플란트, 디지털 가이드 임플란트',
   alternates: {
-    canonical: 'https://medisksu.co.kr/ichung/implant',
+    canonical: 'https://gdfirstdent.com/ichung/implant',
   },
   openGraph: {
     title: '이충동 임플란트 | 고덕퍼스트치과',
     description: '이충동 주민을 위한 디지털 가이드 임플란트. 통합치의학과 전문의 직접 진료.',
-    url: 'https://medisksu.co.kr/ichung/implant',
+    url: 'https://gdfirstdent.com/ichung/implant',
     siteName: '고덕퍼스트치과',
     locale: 'ko_KR',
     type: 'article',
@@ -114,19 +114,19 @@ export default function IchungImplantPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://medisksu.co.kr',
+        item: 'https://gdfirstdent.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '이충동 치과',
-        item: 'https://medisksu.co.kr/ichung',
+        item: 'https://gdfirstdent.com/ichung',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: '이충동 임플란트',
-        item: 'https://medisksu.co.kr/ichung/implant',
+        item: 'https://gdfirstdent.com/ichung/implant',
       },
     ],
   };

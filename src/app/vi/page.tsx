@@ -27,12 +27,12 @@ export const metadata: Metadata = {
     'du lịch nha khoa Hàn Quốc'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/vi',
+    canonical: 'https://gdfirstdent.com/vi',
   },
   openGraph: {
     title: 'Nha khoa Busan Hàn Quốc | Kyungsung Medis Dental',
     description: '10 năm 0 ca tái phẫu thuật. Số 1 quận Nam Busan với 1,500+ ca implant và 2,700+ ca nhổ răng khôn. Bác sĩ trưởng trực tiếp điều trị.',
-    url: 'https://medisksu.co.kr/vi',
+    url: 'https://gdfirstdent.com/vi',
     locale: 'vi_VN'
   }
 };

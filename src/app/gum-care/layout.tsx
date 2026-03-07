@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   description: '고덕동잇몸치료 평택잇몸치료 전문. NSK varios 970 특수장비, 페리오클린 관리, 4단계 통증완화 시스템. 연 1회 스케일링 보험 적용.',
   keywords: ['고덕동잇몸치료', '평택잇몸치료', '고덕동스케일링', '평택스케일링', '고덕퍼스트치과잇몸치료'],
   alternates: {
-    canonical: 'https://medisksu.co.kr/gum-care',
+    canonical: 'https://gdfirstdent.com/gum-care',
   },
   openGraph: {
     title: '고덕동잇몸치료 평택잇몸치료 | 고덕퍼스트치과',
     description: '고덕동잇몸치료 평택잇몸치료 전문. NSK varios 970 특수장비, 페리오클린 관리, 4단계 통증완화 시스템.',
-    url: 'https://medisksu.co.kr/gum-care',
+    url: 'https://gdfirstdent.com/gum-care',
     siteName: '고덕퍼스트치과',
     type: 'website',
     images: [{ url: '/icons/gum.png', width: 200, height: 200 }],
@@ -23,11 +23,11 @@ const gumCareJsonLd = {
   '@graph': [
     {
       '@type': 'MedicalProcedure',
-      '@id': 'https://medisksu.co.kr/gum-care#service',
+      '@id': 'https://gdfirstdent.com/gum-care#service',
       name: '고덕동잇몸치료 평택잇몸치료',
       description: '고덕동잇몸치료 평택잇몸치료 전문. 성인 80%가 앓는 잇몸질환, 정기적 관리로 평생 건강한 치아.',
-      image: 'https://medisksu.co.kr/icons/gum.png',
-      url: 'https://medisksu.co.kr/gum-care',
+      image: 'https://gdfirstdent.com/icons/gum.png',
+      url: 'https://gdfirstdent.com/gum-care',
       procedureType: 'Noninvasive',
       bodyLocation: 'Gums',
       provider: {
@@ -37,7 +37,7 @@ const gumCareJsonLd = {
     },
     {
       '@type': 'FAQPage',
-      '@id': 'https://medisksu.co.kr/gum-care#faq',
+      '@id': 'https://gdfirstdent.com/gum-care#faq',
       mainEntity: [
         {
           '@type': 'Question',

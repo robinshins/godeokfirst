@@ -26,12 +26,12 @@ export const metadata = {
     '韩国牙科旅游'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/cn',
+    canonical: 'https://gdfirstdent.com/cn',
   },
   openGraph: {
     title: '韩国釜山牙科 | 庆星美迪斯牙科',
     description: '10年零返修记录。釜山南区第一，1,500件以上种植牙，2,700件以上智齿拔除。院长亲自施术。',
-    url: 'https://medisksu.co.kr/cn',
+    url: 'https://gdfirstdent.com/cn',
     locale: 'zh_CN'
   }
 };

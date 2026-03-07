@@ -31,12 +31,12 @@ export const metadata: Metadata = {
     'стоматологический туризм Корея'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/ru/wisdom-tooth',
+    canonical: 'https://gdfirstdent.com/ru/wisdom-tooth',
   },
   openGraph: {
     title: 'Корея Пусан Удаление Зуба Мудрости Стоматология | Кёнсон Медис',
     description: '2,700+ удалений зубов мудрости, 0 осложнений. №1 в Намгу Пусан.',
-    url: 'https://medisksu.co.kr/ru/wisdom-tooth',
+    url: 'https://gdfirstdent.com/ru/wisdom-tooth',
     type: 'website',
     locale: 'ru_RU',
   },

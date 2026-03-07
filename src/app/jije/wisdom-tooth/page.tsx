@@ -90,12 +90,12 @@ export const metadata: Metadata = {
   description: '지제동 사랑니 발치 전문 고덕퍼스트치과. 대학병원 외래교수 출신 전문의 3D CT 정밀 진단 후 최소 절개 발치. 지제역에서 차량 15분. 031-611-3222',
   keywords: '지제동 사랑니, 지제동 사랑니 발치, 지제역 치과, 매복 사랑니, 평택 사랑니 발치, 고덕퍼스트치과',
   alternates: {
-    canonical: 'https://medisksu.co.kr/jije/wisdom-tooth',
+    canonical: 'https://gdfirstdent.com/jije/wisdom-tooth',
   },
   openGraph: {
     title: '지제동 사랑니 발치 | 고덕퍼스트치과',
     description: '지제동 매복 사랑니 안전 발치. 대학병원 외래교수 출신 전문의 직접 시술. 최소 절개, 빠른 회복.',
-    url: 'https://medisksu.co.kr/jije/wisdom-tooth',
+    url: 'https://gdfirstdent.com/jije/wisdom-tooth',
     siteName: '고덕퍼스트치과',
     locale: 'ko_KR',
     type: 'article',
@@ -124,19 +124,19 @@ export default function JijeWisdomToothPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://medisksu.co.kr',
+        item: 'https://gdfirstdent.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '지제동 치과',
-        item: 'https://medisksu.co.kr/jije',
+        item: 'https://gdfirstdent.com/jije',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: '지제동 사랑니 발치',
-        item: 'https://medisksu.co.kr/jije/wisdom-tooth',
+        item: 'https://gdfirstdent.com/jije/wisdom-tooth',
       },
     ],
   };

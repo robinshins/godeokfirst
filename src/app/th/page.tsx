@@ -26,12 +26,12 @@ export const metadata: Metadata = {
     'ทันตกรรมภาษาไทยปูซาน'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/th',
+    canonical: 'https://gdfirstdent.com/th',
   },
   openGraph: {
     title: 'รากเทียม ปูซาน เกาหลี | Medis Dental Clinic',
     description: 'คลินิกทันตกรรมมืออาชีพในปูซาน 0 เคสการผ่าตัดซ้ำใน 10 ปี',
-    url: 'https://medisksu.co.kr/th',
+    url: 'https://gdfirstdent.com/th',
     locale: 'th_TH'
   }
 };

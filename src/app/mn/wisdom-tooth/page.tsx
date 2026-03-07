@@ -29,12 +29,12 @@ export const metadata: Metadata = {
     'Солонгос шүдний аялал'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/mn/wisdom-tooth',
+    canonical: 'https://gdfirstdent.com/mn/wisdom-tooth',
   },
   openGraph: {
     title: 'Солонгос Пусан Хавирга Шүд Авалт Шүдний Эмнэлэг | Кёнсон Мэдиш',
     description: '2,700+ хүнд хавирга шүд авалт 0 хүндрэлгүй. Пусан Нам-гу 1-рт.',
-    url: 'https://medisksu.co.kr/mn/wisdom-tooth',
+    url: 'https://gdfirstdent.com/mn/wisdom-tooth',
     type: 'website',
     locale: 'mn_MN',
   }

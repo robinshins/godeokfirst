@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   description: '고덕동충치치료 평택충치치료 전문. 통합치의학과 전문의, 정밀 진단, 자연치아 보존 치료. 발치 대신 살리는 치료.',
   keywords: ['고덕동충치치료', '평택충치치료', '고덕퍼스트치과충치', '고덕동신경치료', '평택신경치료'],
   alternates: {
-    canonical: 'https://medisksu.co.kr/cavity-treatment',
+    canonical: 'https://gdfirstdent.com/cavity-treatment',
   },
   openGraph: {
     title: '고덕동충치치료 평택충치치료 | 고덕퍼스트치과',
     description: '고덕동충치치료 평택충치치료 전문. 통합치의학과 전문의, 정밀 진단, 자연치아 보존 치료.',
-    url: 'https://medisksu.co.kr/cavity-treatment',
+    url: 'https://gdfirstdent.com/cavity-treatment',
     siteName: '고덕퍼스트치과',
     type: 'website',
     images: [{ url: '/icons/cavity.png', width: 200, height: 200 }],
@@ -23,11 +23,11 @@ const cavityJsonLd = {
   '@graph': [
     {
       '@type': 'MedicalProcedure',
-      '@id': 'https://medisksu.co.kr/cavity-treatment#service',
+      '@id': 'https://gdfirstdent.com/cavity-treatment#service',
       name: '고덕동충치치료 평택충치치료',
       description: '고덕동충치치료 평택충치치료 전문. 발치 대신 살리는 치료, 통합치의학과 전문의의 정밀 치료.',
-      image: 'https://medisksu.co.kr/icons/cavity.png',
-      url: 'https://medisksu.co.kr/cavity-treatment',
+      image: 'https://gdfirstdent.com/icons/cavity.png',
+      url: 'https://gdfirstdent.com/cavity-treatment',
       procedureType: 'Noninvasive',
       bodyLocation: 'Teeth',
       provider: {
@@ -37,7 +37,7 @@ const cavityJsonLd = {
     },
     {
       '@type': 'FAQPage',
-      '@id': 'https://medisksu.co.kr/cavity-treatment#faq',
+      '@id': 'https://gdfirstdent.com/cavity-treatment#faq',
       mainEntity: [
         {
           '@type': 'Question',

@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   description: '고덕동 치아미백 전문 치과. 오스템 뷰티스 시스템, 스케일링과 함께 할인. 1회 시술로 즉시 효과.',
   keywords: ['고덕동미백', '평택치아미백', '고덕퍼스트치과미백', '치아미백'],
   alternates: {
-    canonical: 'https://medisksu.co.kr/whitening',
+    canonical: 'https://gdfirstdent.com/whitening',
   },
   openGraph: {
     title: '고덕동미백 치아미백 | 고덕퍼스트치과',
     description: '고덕동 치아미백 전문 치과. 오스템 뷰티스 시스템, 스케일링과 함께 할인.',
-    url: 'https://medisksu.co.kr/whitening',
+    url: 'https://gdfirstdent.com/whitening',
     siteName: '고덕퍼스트치과',
     type: 'website',
     images: [{ url: '/icons/whitening.png', width: 200, height: 200 }],
@@ -23,11 +23,11 @@ const whiteningJsonLd = {
   '@graph': [
     {
       '@type': 'MedicalProcedure',
-      '@id': 'https://medisksu.co.kr/whitening#service',
+      '@id': 'https://gdfirstdent.com/whitening#service',
       name: '치아 미백',
       description: '안전하고 효과적인 치아 미백 시술, 스케일링과 함께 50% 할인',
-      image: 'https://medisksu.co.kr/icons/whitening.png',
-      url: 'https://medisksu.co.kr/whitening',
+      image: 'https://gdfirstdent.com/icons/whitening.png',
+      url: 'https://gdfirstdent.com/whitening',
       procedureType: 'Noninvasive',
       bodyLocation: 'Teeth',
       provider: {
@@ -37,7 +37,7 @@ const whiteningJsonLd = {
     },
     {
       '@type': 'FAQPage',
-      '@id': 'https://medisksu.co.kr/whitening#faq',
+      '@id': 'https://gdfirstdent.com/whitening#faq',
       mainEntity: [
         {
           '@type': 'Question',

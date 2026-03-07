@@ -104,13 +104,13 @@ export const metadata: Metadata = {
     '고덕퍼스트치과 사랑니',
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/segyo/wisdom-tooth',
+    canonical: 'https://gdfirstdent.com/segyo/wisdom-tooth',
   },
   openGraph: {
     title: '세교동 사랑니 발치 | 고덕퍼스트치과',
     description:
       '대학병원 외래교수 출신 원장의 안전한 사랑니 발치. CT 정밀 진단, 최소 침습 테크닉.',
-    url: 'https://medisksu.co.kr/segyo/wisdom-tooth',
+    url: 'https://gdfirstdent.com/segyo/wisdom-tooth',
     siteName: '고덕퍼스트치과',
     type: 'article',
   },
@@ -138,19 +138,19 @@ export default function SegyoWisdomToothPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://medisksu.co.kr',
+        item: 'https://gdfirstdent.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '세교동',
-        item: 'https://medisksu.co.kr/segyo',
+        item: 'https://gdfirstdent.com/segyo',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: '사랑니 발치',
-        item: 'https://medisksu.co.kr/segyo/wisdom-tooth',
+        item: 'https://gdfirstdent.com/segyo/wisdom-tooth',
       },
     ],
   };

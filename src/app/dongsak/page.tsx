@@ -93,12 +93,12 @@ export const metadata: Metadata = {
   description: '동삭동에서 가까운 고덕퍼스트치과. 통합치의학과 전문의 이동현 원장 직접 진료. 디지털 가이드 임플란트, 충치치료, 사랑니 발치. 동삭동에서 차량 10분. 031-611-3222',
   keywords: '동삭동 치과, 동삭동 임플란트, 동삭동 충치치료, 동삭동 사랑니, 동삭지구 치과, 평택 치과, 고덕퍼스트치과',
   alternates: {
-    canonical: 'https://medisksu.co.kr/dongsak',
+    canonical: 'https://gdfirstdent.com/dongsak',
   },
   openGraph: {
     title: '동삭동 치과 | 고덕퍼스트치과',
     description: '동삭동·동삭지구 주민을 위한 통합치의학 전문 진료. 임플란트, 충치치료, 사랑니 발치. 전문의 직접 진료.',
-    url: 'https://medisksu.co.kr/dongsak',
+    url: 'https://gdfirstdent.com/dongsak',
     siteName: '고덕퍼스트치과',
     locale: 'ko_KR',
     type: 'website',
@@ -127,13 +127,13 @@ export default function DongsakPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://medisksu.co.kr',
+        item: 'https://gdfirstdent.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '동삭동 치과',
-        item: 'https://medisksu.co.kr/dongsak',
+        item: 'https://gdfirstdent.com/dongsak',
       },
     ],
   };

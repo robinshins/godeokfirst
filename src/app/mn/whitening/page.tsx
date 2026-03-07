@@ -30,12 +30,12 @@ export const metadata: Metadata = {
     'Солонгос шүдний аялал'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/mn/whitening',
+    canonical: 'https://gdfirstdent.com/mn/whitening',
   },
   openGraph: {
     title: 'Солонгос Пусан Шүд Цайруулах Шүдний Эмнэлэг | Кёнсон Мэдиш',
     description: '1,000+ цайруулах үйлчилгээ 0 гаж нөлөөгүй. Пусан Нам-гу 1-рт.',
-    url: 'https://medisksu.co.kr/mn/whitening',
+    url: 'https://gdfirstdent.com/mn/whitening',
     type: 'website',
     locale: 'mn_MN',
   }

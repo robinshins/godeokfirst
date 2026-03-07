@@ -31,12 +31,12 @@ export const metadata: Metadata = {
     'English dentist gum Korea'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/en/gum-care',
+    canonical: 'https://gdfirstdent.com/en/gum-care',
   },
   openGraph: {
     title: 'Korean Gum Treatment Busan Korea | Kyungsung Medis Dental',
     description: 'Professional gum disease treatment and periodontal care. #1 in Busan Nam-gu. Head doctor performs all procedures.',
-    url: 'https://medisksu.co.kr/en/gum-care',
+    url: 'https://gdfirstdent.com/en/gum-care',
     type: 'website',
     locale: 'en_US',
   }

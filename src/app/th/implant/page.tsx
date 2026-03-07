@@ -36,12 +36,12 @@ export const metadata: Metadata = {
     'คลินิกทันตกรรมปูซาน'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/th/implant',
+    canonical: 'https://gdfirstdent.com/th/implant',
   },
   openGraph: {
     title: 'รากฟันเทียมปูซาน | Kyungsung Medis Dental',
     description: 'นวัตกรรมรากฟันเทียมดิจิทัล 0 เคสผ่าตัดซ้ำใน 10 ปี',
-    url: 'https://medisksu.co.kr/th/implant',
+    url: 'https://gdfirstdent.com/th/implant',
     siteName: 'Kyungsung Medis Dental Clinic',
     locale: 'th_TH',
     type: 'website',

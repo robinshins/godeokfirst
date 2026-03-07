@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/admin', '/api/'],
     },
-    sitemap: 'https://medisksu.co.kr/sitemap.xml',
+    sitemap: 'https://gdfirstdent.com/sitemap.xml',
   }
 }

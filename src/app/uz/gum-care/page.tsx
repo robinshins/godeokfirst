@@ -28,12 +28,12 @@ export const metadata: Metadata = {
     'Koreya stomatologiya turizmi'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/uz/gum-care',
+    canonical: 'https://gdfirstdent.com/uz/gum-care',
   },
   openGraph: {
     title: 'Koreya Pusan Milk Davolash Stomatologiya | Kyungsung Medis Dental',
     description: 'Professional milk kasalligi va parodont davolash. Pusan Nam-gu 1-o\'rin.',
-    url: 'https://medisksu.co.kr/uz/gum-care',
+    url: 'https://gdfirstdent.com/uz/gum-care',
     type: 'website',
     locale: 'uz_UZ',
   }

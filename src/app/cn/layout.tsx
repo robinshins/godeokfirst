@@ -17,18 +17,18 @@ export const metadata: Metadata = {
     '庆星大Medis牙科',
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/cn',
+    canonical: 'https://gdfirstdent.com/cn',
     languages: {
-      'ko-KR': 'https://medisksu.co.kr',
-      'en-US': 'https://medisksu.co.kr/en',
-      'ja-JP': 'https://medisksu.co.kr/jp',
-      'zh-CN': 'https://medisksu.co.kr/cn',
+      'ko-KR': 'https://gdfirstdent.com',
+      'en-US': 'https://gdfirstdent.com/en',
+      'ja-JP': 'https://gdfirstdent.com/jp',
+      'zh-CN': 'https://gdfirstdent.com/cn',
     },
   },
   openGraph: {
     type: 'website',
     locale: 'zh_CN',
-    url: 'https://medisksu.co.kr/cn',
+    url: 'https://gdfirstdent.com/cn',
     siteName: '庆星大Medis牙科',
     title: '庆星大Medis牙科 | 釜山种植牙专业',
     description: '釜山大延洞专业牙科。全口种植牙、数字化种植牙、智齿拔除专业。',
@@ -48,7 +48,7 @@ const jsonLdCn = {
       '@type': 'Dentist',
       name: '庆星大Medis牙科',
       description: '釜山大延洞专业牙科。全口种植牙、数字化种植牙、龋齿治疗、智齿拔除、牙齿美白专业。',
-      url: 'https://medisksu.co.kr/cn',
+      url: 'https://gdfirstdent.com/cn',
       telephone: '+82-51-628-2879',
       address: {
         '@type': 'PostalAddress',
@@ -61,9 +61,9 @@ const jsonLdCn = {
     {
       '@type': 'ItemList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, item: { '@type': 'Service', name: '全口种植牙', url: 'https://medisksu.co.kr/cn#implant' } },
-        { '@type': 'ListItem', position: 2, item: { '@type': 'Service', name: '智齿拔除', url: 'https://medisksu.co.kr/cn/wisdom-tooth' } },
-        { '@type': 'ListItem', position: 3, item: { '@type': 'Service', name: '牙齿美白', url: 'https://medisksu.co.kr/cn/whitening' } },
+        { '@type': 'ListItem', position: 1, item: { '@type': 'Service', name: '全口种植牙', url: 'https://gdfirstdent.com/cn#implant' } },
+        { '@type': 'ListItem', position: 2, item: { '@type': 'Service', name: '智齿拔除', url: 'https://gdfirstdent.com/cn/wisdom-tooth' } },
+        { '@type': 'ListItem', position: 3, item: { '@type': 'Service', name: '牙齿美白', url: 'https://gdfirstdent.com/cn/whitening' } },
       ],
     },
   ],

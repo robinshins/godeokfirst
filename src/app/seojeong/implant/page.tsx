@@ -80,12 +80,12 @@ export const metadata: Metadata = {
   description: '서정동에서 찾는 임플란트 잘하는 치과. 통합치의학과 전문의 이동현 원장 직접 시술. 디지털 가이드 수술, 뼈이식 가능. 서정역에서 차량 5분. 031-611-3222',
   keywords: '서정동 임플란트, 서정동 임플란트 치과, 평택 임플란트, 고덕퍼스트치과 임플란트, 디지털 가이드 임플란트',
   alternates: {
-    canonical: 'https://medisksu.co.kr/seojeong/implant',
+    canonical: 'https://gdfirstdent.com/seojeong/implant',
   },
   openGraph: {
     title: '서정동 임플란트 | 고덕퍼스트치과',
     description: '서정동 주민을 위한 디지털 가이드 임플란트. 통합치의학과 전문의 직접 진료.',
-    url: 'https://medisksu.co.kr/seojeong/implant',
+    url: 'https://gdfirstdent.com/seojeong/implant',
     siteName: '고덕퍼스트치과',
     locale: 'ko_KR',
     type: 'article',
@@ -114,19 +114,19 @@ export default function SeojeongImplantPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://medisksu.co.kr',
+        item: 'https://gdfirstdent.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '서정동 치과',
-        item: 'https://medisksu.co.kr/seojeong',
+        item: 'https://gdfirstdent.com/seojeong',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: '서정동 임플란트',
-        item: 'https://medisksu.co.kr/seojeong/implant',
+        item: 'https://gdfirstdent.com/seojeong/implant',
       },
     ],
   };

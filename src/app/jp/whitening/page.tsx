@@ -31,12 +31,12 @@ export const metadata: Metadata = {
     '韓国デンタルツーリズム'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/jp/whitening',
+    canonical: 'https://gdfirstdent.com/jp/whitening',
   },
   openGraph: {
     title: '韓国釜山ホワイトニング歯科 | 慶星メディス歯科',
     description: '1,000件以上のホワイトニング実績、副作用ゼロ。釜山南区No.1。',
-    url: 'https://medisksu.co.kr/jp/whitening',
+    url: 'https://gdfirstdent.com/jp/whitening',
     type: 'website',
     locale: 'ja_JP',
   }

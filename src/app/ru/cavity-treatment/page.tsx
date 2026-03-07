@@ -31,12 +31,12 @@ export const metadata: Metadata = {
     'стоматологический туризм Корея'
   ],
   alternates: {
-    canonical: 'https://medisksu.co.kr/ru/cavity-treatment',
+    canonical: 'https://gdfirstdent.com/ru/cavity-treatment',
   },
   openGraph: {
     title: 'Корея Пусан Лечение Кариеса Стоматология | Кёнсон Медис',
     description: 'Современное лечение кариеса и корневых каналов. №1 в Намгу Пусан. Микроскоп.',
-    url: 'https://medisksu.co.kr/ru/cavity-treatment',
+    url: 'https://gdfirstdent.com/ru/cavity-treatment',
     type: 'website',
     locale: 'ru_RU',
   },
