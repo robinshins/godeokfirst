@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     description: '釜山大延洞の専門歯科。全顎インプラント、デジタルインプラント、親知らず抜歯専門。',
     images: [
       {
-        url: '/고덕퍼스트치과로고.png',
+        url: '/고덕og이미지.png',
         width: 1200,
         height: 630,
         alt: '慶星大メディス歯科 - 釜山インプラント専門',
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '慶星大メディス歯科 | 釜山インプラント専門',
     description: '釜山大延洞の専門歯科。全顎インプラント、デジタルインプラント、親知らず抜歯専門。',
-    images: ['/고덕퍼스트치과로고.png'],
+    images: ['/고덕og이미지.png'],
   },
 };
 
@@ -73,7 +73,7 @@ const jsonLdJp = {
         latitude: 35.1379,
         longitude: 129.0988,
       },
-      image: 'https://gdfirstdent.com/고덕퍼스트치과로고.png',
+      image: 'https://gdfirstdent.com/고덕og이미지.png',
       availableLanguage: ['Korean', 'Japanese', 'English'],
       medicalSpecialty: ['Dental Implant', 'Cosmetic Dentistry', 'General Dentistry'],
     },
