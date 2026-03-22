@@ -37,7 +37,7 @@ export default function ImplantHero() {
               치과의사에게 받는 진료
             </h1>
             <p className="font-semibold leading-[1.5] relative shrink-0 text-[18px] tracking-[-0.36px] w-full text-[#3e3a3a]">
-              조선대학교 치과병원 외래교수 역임, 서울대 치의학대학원 임플란트 우수상 수료 원장이 직접 수술합니다.
+              대학 치과병원 외래교수 역임, 서울대 치의학대학원 임플란트 우수상 수료 원장이 직접 수술합니다.
             </p>
           </div>
         </FadeInSection>

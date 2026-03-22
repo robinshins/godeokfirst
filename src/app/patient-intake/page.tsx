@@ -353,7 +353,7 @@ export default function PatientIntakePage() {
                     onClick={() => setValue('gender', '남')}
                     className={`flex-1 py-4 rounded-xl text-lg font-bold transition-all ${
                       watch('gender') === '남'
-                        ? 'bg-[#006aff] text-white'
+                        ? 'bg-[#008095] text-white'
                         : 'bg-gray-100 text-gray-700'
                     }`}
                   >
@@ -364,7 +364,7 @@ export default function PatientIntakePage() {
                     onClick={() => setValue('gender', '여')}
                     className={`flex-1 py-4 rounded-xl text-lg font-bold transition-all ${
                       watch('gender') === '여'
-                        ? 'bg-[#006aff] text-white'
+                        ? 'bg-[#008095] text-white'
                         : 'bg-gray-100 text-gray-700'
                     }`}
                   >
@@ -478,7 +478,7 @@ export default function PatientIntakePage() {
                         onClick={() => setValue('howDidYouKnow', option)}
                         className={`w-full py-4 rounded-xl text-base font-semibold transition-all ${
                           watchedValues.howDidYouKnow === option
-                            ? 'bg-[#006aff] text-white'
+                            ? 'bg-[#008095] text-white'
                             : 'bg-gray-100 text-gray-700'
                         }`}
                       >
@@ -552,7 +552,7 @@ export default function PatientIntakePage() {
                       onClick={() => setValue('whyVisit', option)}
                       className={`w-full py-4 rounded-xl text-base font-semibold transition-all text-left px-4 ${
                         watchedValues.whyVisit === option
-                          ? 'bg-[#006aff] text-white'
+                          ? 'bg-[#008095] text-white'
                           : 'bg-gray-100 text-gray-700'
                       }`}
                     >
@@ -592,7 +592,6 @@ export default function PatientIntakePage() {
                       '사랑니',
                       '구강건강검진',
                       '라미네이트',
-                      '수면치료',
                       '스케일링',
                       '기타',
                     ] as ConsultationType[]
@@ -605,7 +604,7 @@ export default function PatientIntakePage() {
                       }
                       className={`py-4 px-3 rounded-xl text-sm font-semibold transition-all ${
                         watchedValues.consultationTypes.includes(type)
-                          ? 'bg-[#006aff] text-white'
+                          ? 'bg-[#008095] text-white'
                           : 'bg-gray-100 text-gray-700'
                       }`}
                     >
@@ -637,7 +636,7 @@ export default function PatientIntakePage() {
                       onClick={() => setValue('lastDentalVisit', option)}
                       className={`w-full py-4 rounded-xl text-base font-semibold transition-all ${
                         watch('lastDentalVisit') === option
-                          ? 'bg-[#006aff] text-white'
+                          ? 'bg-[#008095] text-white'
                           : 'bg-gray-100 text-gray-700'
                       }`}
                     >
@@ -658,7 +657,7 @@ export default function PatientIntakePage() {
                     onClick={() => setValue('hasDentalInsurance', '없다')}
                     className={`w-full py-4 rounded-xl text-base font-bold transition-all ${
                       watchedValues.hasDentalInsurance === '없다'
-                        ? 'bg-[#006aff] text-white'
+                        ? 'bg-[#008095] text-white'
                         : 'bg-gray-100 text-gray-700'
                     }`}
                   >
@@ -671,7 +670,7 @@ export default function PatientIntakePage() {
                       onClick={() => setValue('hasDentalInsurance', '있다')}
                       className={`w-full py-4 rounded-xl text-base font-bold transition-all ${
                         watchedValues.hasDentalInsurance === '있다'
-                          ? 'bg-[#006aff] text-white'
+                          ? 'bg-[#008095] text-white'
                           : 'bg-gray-100 text-gray-700'
                       }`}
                     >
@@ -701,7 +700,7 @@ export default function PatientIntakePage() {
                     onClick={() => setValue('hasDentalInsurance', '모른다')}
                     className={`w-full py-4 rounded-xl text-base font-bold transition-all ${
                       watchedValues.hasDentalInsurance === '모른다'
-                        ? 'bg-[#006aff] text-white'
+                        ? 'bg-[#008095] text-white'
                         : 'bg-gray-100 text-gray-700'
                     }`}
                   >
@@ -729,7 +728,7 @@ export default function PatientIntakePage() {
                     onClick={() => setValue('drugAllergy', false)}
                     className={`flex-1 py-4 rounded-xl text-lg font-bold transition-all ${
                       !watchedValues.drugAllergy
-                        ? 'bg-[#006aff] text-white'
+                        ? 'bg-[#008095] text-white'
                         : 'bg-gray-100 text-gray-700'
                     }`}
                   >
@@ -740,7 +739,7 @@ export default function PatientIntakePage() {
                     onClick={() => setValue('drugAllergy', true)}
                     className={`flex-1 py-4 rounded-xl text-lg font-bold transition-all ${
                       watchedValues.drugAllergy
-                        ? 'bg-[#006aff] text-white'
+                        ? 'bg-[#008095] text-white'
                         : 'bg-gray-100 text-gray-700'
                     }`}
                   >
@@ -796,7 +795,7 @@ export default function PatientIntakePage() {
                       }
                       className={`py-3 px-2 rounded-lg text-xs font-semibold transition-all ${
                         watchedValues.medicalConditions.includes(condition)
-                          ? 'bg-[#006aff] text-white'
+                          ? 'bg-[#008095] text-white'
                           : 'bg-gray-100 text-gray-700'
                       }`}
                     >
@@ -825,7 +824,7 @@ export default function PatientIntakePage() {
                     onClick={() => setValue('hasDentalHistory', false)}
                     className={`flex-1 py-4 rounded-xl text-base font-bold transition-all ${
                       !watchedValues.hasDentalHistory
-                        ? 'bg-[#006aff] text-white'
+                        ? 'bg-[#008095] text-white'
                         : 'bg-gray-100 text-gray-700'
                     }`}
                   >
@@ -836,7 +835,7 @@ export default function PatientIntakePage() {
                     onClick={() => setValue('hasDentalHistory', true)}
                     className={`flex-1 py-4 rounded-xl text-base font-bold transition-all ${
                       watchedValues.hasDentalHistory
-                        ? 'bg-[#006aff] text-white'
+                        ? 'bg-[#008095] text-white'
                         : 'bg-gray-100 text-gray-700'
                     }`}
                   >
@@ -922,7 +921,7 @@ export default function PatientIntakePage() {
                 </label>
                 <div className="space-y-3">
                   <div className="bg-gray-50 p-6 rounded-xl text-center">
-                    <div className="text-5xl font-bold text-[#006aff] mb-2">
+                    <div className="text-5xl font-bold text-[#008095] mb-2">
                       {watch('painLevel') || 0}
                     </div>
                     <div className="text-sm text-gray-600">
@@ -940,7 +939,7 @@ export default function PatientIntakePage() {
                     max="10"
                     value={watch('painLevel') || 0}
                     onChange={(e) => setValue('painLevel', parseInt(e.target.value))}
-                    className="w-full h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#006aff]"
+                    className="w-full h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#008095]"
                   />
                   <div className="flex justify-between text-xs text-gray-500">
                     <span>0</span>
@@ -1041,7 +1040,7 @@ export default function PatientIntakePage() {
               </div>
 
               {/* 동의 체크박스 */}
-              <div className="flex items-start gap-3 bg-white border-2 border-[#006aff] p-4 rounded-xl">
+              <div className="flex items-start gap-3 bg-white border-2 border-[#008095] p-4 rounded-xl">
                 <input
                   id="privacy-consent"
                   type="checkbox"
@@ -1254,13 +1253,13 @@ export default function PatientIntakePage() {
         <div className="max-w-[430px] mx-auto px-5 py-4">
           <div className="flex items-center justify-between mb-2">
             <span className="text-sm font-semibold text-gray-600">환자 문진표</span>
-            <span className="text-sm font-bold text-[#006aff]">
+            <span className="text-sm font-bold text-[#008095]">
               {currentStep} / {TOTAL_STEPS}
             </span>
           </div>
           <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
             <div
-              className="h-full bg-[#006aff] transition-all duration-300 ease-out"
+              className="h-full bg-[#008095] transition-all duration-300 ease-out"
               style={{ width: `${(currentStep / TOTAL_STEPS) * 100}%` }}
             />
           </div>
@@ -1295,7 +1294,7 @@ export default function PatientIntakePage() {
               disabled={!isCurrentStepValid}
               className={`flex-1 py-4 rounded-2xl font-bold text-lg transition-colors ${
                 isCurrentStepValid
-                  ? 'bg-[#006aff] text-white hover:bg-[#0058d6]'
+                  ? 'bg-[#008095] text-white hover:bg-[#0058d6]'
                   : 'bg-gray-300 text-gray-500 cursor-not-allowed'
               }`}
             >
@@ -1309,7 +1308,7 @@ export default function PatientIntakePage() {
               onClick={() => console.log('제출 버튼 클릭됨, 유효성:', isCurrentStepValid, '제출중:', isSubmitting)}
               className={`flex-1 py-4 rounded-2xl font-bold text-lg transition-colors ${
                 isCurrentStepValid && !isSubmitting
-                  ? 'bg-[#006aff] text-white hover:bg-[#0058d6]'
+                  ? 'bg-[#008095] text-white hover:bg-[#0058d6]'
                   : 'bg-gray-300 text-gray-500 cursor-not-allowed'
               }`}
             >
@@ -1374,7 +1373,7 @@ export default function PatientIntakePage() {
 
             <button
               onClick={() => window.location.href = '/'}
-              className="w-full py-3 bg-[#006aff] text-white rounded-xl font-bold hover:bg-[#0058d6] transition-colors"
+              className="w-full py-3 bg-[#008095] text-white rounded-xl font-bold hover:bg-[#0058d6] transition-colors"
             >
               확인
             </button>

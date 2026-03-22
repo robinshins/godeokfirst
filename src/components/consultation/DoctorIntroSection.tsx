@@ -10,19 +10,21 @@ export default function DoctorIntroSection() {
     {
       name: '이동현',
       position: '대표원장',
-      image: '/images/goduk_images/이동현원장.jpg',
+      image: '/images/goduk_images/이동현원장님.jpeg',
       credentials: [
-        '보건복지부 인증 통합치의학과 전문의',
+        '통합치의학과 전문의(보건복지부 인증)',
+        '치의학 석사',
         '조선대학교 치과병원 외래교수',
-        '디지털 내비게이션 임플란트 전문',
         '임플란트·보철·신경치료 원스톱 진료',
         '과잉진료 없는 양심진료 원칙'
       ],
       details: [
-        '조선대학교 치과대학 졸업',
-        '조선대학교 치과병원 통합치의학과 전공의 수료',
-        '대한통합치의학회 정회원',
-        '대한구강악안면임플란트학회 정회원'
+        '서울대학교 치의학대학원 임플란트 치의학 우수상 수료',
+        '서울대학교 치의학대학원 고급치의학 수료',
+        '대한통합치의학 학회 정회원',
+        '오스템, 포인트, 덴티스 임플란트 연구자문위원',
+        'Pennsylvania univ. 근관치료과정 수료',
+        '턱관절장애교육연구회 수료'
       ]
     }
   ];
@@ -37,12 +39,12 @@ export default function DoctorIntroSection() {
           {/* Header with Image */}
           <div className="flex items-start gap-5 mb-5">
             <div className="flex-shrink-0 h-[120px] w-[90px] rounded-[16px] overflow-hidden">
-              <div className="relative w-full h-[200px]">
+              <div className="relative w-full h-[250px] -top-[25px]">
                 <Image
                   src={mainDoctor.image}
                   alt={`${mainDoctor.name} ${mainDoctor.position}`}
                   fill
-                  className="object-cover object-top"
+                  className="object-cover object-[80%_20%] scale-[1]"
                 />
               </div>
             </div>

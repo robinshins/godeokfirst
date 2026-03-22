@@ -240,7 +240,7 @@ export default function LocationSection() {
 
                 {/* Nut Naver */}
                 <Link
-                  href="https://m.booking.naver.com/booking/13/bizes/948237?theme=place&lang=ko&area=pll"
+                  href="https://m.booking.naver.com/booking/13/bizes/981541?theme=place&lang=ko&area=pll"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full h-[56px] bg-[#03c75a] rounded-2xl flex items-center justify-center gap-2 hover:bg-[#02b350] transition-colors"

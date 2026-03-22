@@ -19,7 +19,7 @@ export default function CaseStudySection() {
             </p>
           </div>
 
-          {/* Case Card */}
+          {/* Case Card 1 */}
           <div
             className="bg-white rounded-[24px] w-full overflow-hidden"
             style={{ boxShadow: '0 4px 20px -4px rgba(21,26,36,0.08)' }}
@@ -29,7 +29,7 @@ export default function CaseStudySection() {
               <div className="relative w-full">
                 <div className="bg-[#f3f6fb] h-[220px] overflow-hidden relative rounded-[20px] w-full">
                   <Image
-                    src="/cases/미백/치아미백전.jpg"
+                    src="/임상사진/미백/양해영_미백_before.jpg"
                     alt="미백 전"
                     fill
                     className="object-cover"
@@ -46,7 +46,7 @@ export default function CaseStudySection() {
               <div className="relative w-full">
                 <div className="bg-[#f3f6fb] h-[220px] overflow-hidden relative rounded-[20px] w-full">
                   <Image
-                    src="/cases/미백/치아미백후.jpg"
+                    src="/임상사진/미백/양해영_미백_after.jpg"
                     alt="미백 후"
                     fill
                     className="object-cover"
@@ -62,10 +62,62 @@ export default function CaseStudySection() {
               {/* Description */}
               <div className="flex flex-col gap-1.5 pt-2">
                 <p className="font-bold text-[16px] text-black tracking-[-0.32px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-                  오스템 뷰티스 전문가 미백
+                  오스템 뷰티스 전문가 미백 · 양●● 님
                 </p>
                 <p className="font-semibold text-[14px] text-[#727582] leading-[1.5]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
                   시술 당일 1~2시간 완성 · 지각과민 방지제 포함 · 시림 최소화
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Case Card 2 */}
+          <div
+            className="bg-white rounded-[24px] w-full overflow-hidden"
+            style={{ boxShadow: '0 4px 20px -4px rgba(21,26,36,0.08)' }}
+          >
+            <div className="p-5 flex flex-col gap-4">
+              {/* Before */}
+              <div className="relative w-full">
+                <div className="bg-[#f3f6fb] h-[220px] overflow-hidden relative rounded-[20px] w-full">
+                  <Image
+                    src="/임상사진/안동건_미백/안동건_미백_before.jpg"
+                    alt="미백 전"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="absolute left-3 top-3 bg-[#292a2f] px-2.5 py-[5px] rounded-[10px] z-10">
+                  <p className="font-semibold text-[13px] leading-[1.4] text-white tracking-[-0.26px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                    Before
+                  </p>
+                </div>
+              </div>
+
+              {/* After */}
+              <div className="relative w-full">
+                <div className="bg-[#f3f6fb] h-[220px] overflow-hidden relative rounded-[20px] w-full">
+                  <Image
+                    src="/임상사진/안동건_미백/안동건_미백_after.jpg"
+                    alt="미백 후"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="absolute left-3 top-3 bg-[#008095] px-2.5 py-[5px] rounded-[10px] z-10">
+                  <p className="font-semibold text-[13px] leading-[1.4] text-white tracking-[-0.26px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                    After
+                  </p>
+                </div>
+              </div>
+
+              {/* Description */}
+              <div className="flex flex-col gap-1.5 pt-2">
+                <p className="font-bold text-[16px] text-black tracking-[-0.32px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                  전문가 미백 · 안●● 님
+                </p>
+                <p className="font-semibold text-[14px] text-[#727582] leading-[1.5]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                  2주간 전문가 미백 진행 · 자연스럽고 밝은 톤 변화
                 </p>
               </div>
             </div>

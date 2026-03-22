@@ -65,7 +65,7 @@ export default function HeroSection() {
               </Link>
 
               <a
-                href="https://naver.me/5tJd9Xm3"
+                href="https://naver.me/GSD1OqoS"
                 target="_blank"
                 rel="noopener noreferrer"
               >

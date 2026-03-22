@@ -7,60 +7,18 @@ export default function BeforeAfterSection() {
   const [showMore, setShowMore] = useState(false);
   const cases = [
     {
-      name: '김●●',
-      gender: '60대 여성',
-      type: '임플란트',
-      beforeImage: '/images/xray-implant-before-1.jpg',
-      afterImage: '/images/xray-implant-after-1.jpg'
-    },
-    {
-      name: '이●●',
-      gender: '50대 남성',
-      type: '임플란트',
-      beforeImage: '/images/xray-implant-before-2.jpg',
-      afterImage: '/images/xray-implant-after-2.jpg'
+      name: '박●●',
+      gender: '남성',
+      type: '전악 임플란트 · 엑스레이 전후',
+      beforeImage: '/임상사진/박균조_전악임플란트/박균조_전체임플란트_엑스레이_before.jpg',
+      afterImage: '/임상사진/박균조_전악임플란트/박균조_전체임플란트_엑스레이_after.jpg'
     },
     {
       name: '박●●',
-      gender: '60대 여성',
-      type: '임플란트',
-      beforeImage: '/images/xray-implant-before-3.jpg',
-      afterImage: '/images/xray-implant-after-3.jpg'
-    },
-    {
-      name: '최●●',
-      gender: '70대 남성',
-      type: '임플란트',
-      beforeImage: '/images/xray-implant-before-4.jpg',
-      afterImage: '/images/xray-implant-after-4.jpg'
-    },
-    {
-      name: '정●●',
-      gender: '60대 여성',
-      type: '전체임플란트',
-      beforeImage: '/images/xray-full-implant-before-1.jpg',
-      afterImage: '/images/xray-full-implant-after-1.jpg'
-    },
-    {
-      name: '한●●',
-      gender: '70대 남성',
-      type: '전체임플란트',
-      beforeImage: '/images/xray-full-implant-before-2.jpg',
-      afterImage: '/images/xray-full-implant-after-2.jpg'
-    },
-    {
-      name: '윤●●',
-      gender: '60대 여성',
-      type: '전체임플란트',
-      beforeImage: '/images/xray-full-implant-before-3.jpg',
-      afterImage: '/images/xray-full-implant-after-3.jpg'
-    },
-    {
-      name: '강●●',
-      gender: '70대 여성',
-      type: '전체임플란트',
-      beforeImage: '/images/xray-full-implant-before-4.jpg',
-      afterImage: '/images/xray-full-implant-after-4.jpg'
+      gender: '남성',
+      type: '전악 임플란트 · 실제사진 전후',
+      beforeImage: '/임상사진/박균조_전악임플란트/박균조_전체임플란트_실제사진_before.jpg',
+      afterImage: '/임상사진/박균조_전악임플란트/박균조_전체임플란트_실제사진_after.jpg'
     }
   ];
 

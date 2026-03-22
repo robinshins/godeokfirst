@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: '평택 고덕 전체임플란트, 틀니 | 고덕퍼스트치과',
-    description: '조선대학교 치과병원 외래교수 역임 원장이 직접 진료하는 전체임플란트, 틀니 전문. 임플란트 1,200회+, 재수술 0건.',
+    description: '대학 치과병원 외래교수 역임 원장이 직접 진료하는 전체임플란트, 틀니 전문. 임플란트 1,200회+, 재수술 0건.',
     url: 'https://godukfirst.com/denture',
     siteName: '고덕퍼스트치과',
     type: 'website',
@@ -35,7 +35,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 // MedicalProcedure 스키마
 const medicalServiceSchema = generateMedicalServiceSchema({
   name: '전체임플란트·틀니',
-  description: '조선대학교 치과병원 외래교수 역임 원장이 직접 진료하는 전체임플란트, 틀니 전문. 평생 씹는 즐거움을 되찾아드립니다.',
+  description: '대학 치과병원 외래교수 역임 원장이 직접 진료하는 전체임플란트, 틀니 전문. 평생 씹는 즐거움을 되찾아드립니다.',
   url: 'https://godukfirst.com/denture'
 });
 import StatsSection from '@/components/denture/StatsSection';

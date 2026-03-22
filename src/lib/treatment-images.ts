@@ -28,158 +28,355 @@ export const TREATMENT_CASE_IMAGES = {
 
   // 답안1) 치아가 아파요 - 심한충치/치수염으로 신경치료
   cavity_nerve_answer1: [
-    // 심한 충치로 신경치료
     {
-      beforeImage: '/images/cases/cavity-nerve-prosthetic/답안1) 치아가 아파요_심한충치_치수염으로인한 신경치료/답안1) 치아가 아파요_심한충치로 신경치료 및 보철치료완료_ 허재욱/답안1) 치아가 아파요_심한충치로 신경치료 및 보철치료완료_ 허재욱 before(1).jpg',
-      afterImage: '/images/cases/cavity-nerve-prosthetic/답안1) 치아가 아파요_심한충치_치수염으로인한 신경치료/답안1) 치아가 아파요_심한충치로 신경치료 및 보철치료완료_ 허재욱/답안1) 치아가 아파요_심한충치로 신경치료 및 보철치료완료_ 허재욱 after(1).jpg',
-      title: '심한 충치 신경치료 (허재욱님)',
-      description: '충치가 심해서 신경치료 후 보철치료 완료'
+      beforeImage: '/임상사진/충치/김효연_충치_before.jpg',
+      afterImage: '/임상사진/충치/김효연_충치_after.jpg',
+      title: '충치 치료',
+      description: '어금니 충치 제거 후 수복',
+      translations: {
+        en: { title: 'Cavity treatment', description: 'Molar cavity removal and restoration' },
+        jp: { title: '虫歯治療', description: '奥歯の虫歯除去後修復' },
+        cn: { title: '龋齿治疗', description: '磨牙龋齿去除后修复' }
+      }
     },
     {
-      beforeImage: '/images/cases/cavity-nerve-prosthetic/답안1) 치아가 아파요_심한충치_치수염으로인한 신경치료/답안1) 치아가 아파요_심한충치로 신경치료 및 보철치료완료_CHEN LIANG/답안1) 치아가 아파요_심한충치로 신경치료 및 보철치료완료_CHEN LIANG before.jpg',
-      afterImage: '/images/cases/cavity-nerve-prosthetic/답안1) 치아가 아파요_심한충치_치수염으로인한 신경치료/답안1) 치아가 아파요_심한충치로 신경치료 및 보철치료완료_CHEN LIANG/답안1) 치아가 아파요_심한충치로 신경치료 및 보철치료완료_CHEN LIANG after.jpg',
-      title: '심한 충치 신경치료 (CHEN LIANG님)',
-      description: '충치가 심해서 신경치료 후 보철치료 완료'
-    },
-    // 뿌리 염증으로 재신경치료
-    {
-      beforeImage: '/images/cases/cavity-nerve-prosthetic/답안1) 치아가 아파요_심한충치_치수염으로인한 신경치료/답안1) 치아가 아파요_뿌리염증으로 재신경치료 및 보철치료완료_문경태/답안1) 치아가 아파요_뿌리염증으로 재신경치료 및 보철치료완료_문경태 before.jpg',
-      afterImage: '/images/cases/cavity-nerve-prosthetic/답안1) 치아가 아파요_심한충치_치수염으로인한 신경치료/답안1) 치아가 아파요_뿌리염증으로 재신경치료 및 보철치료완료_문경태/답안1) 치아가 아파요_뿌리염증으로 재신경치료 및 보철치료완료_문경태 after.jpg',
-      title: '뿌리 염증 재신경치료 (문경태님)',
-      description: '신경치료했던 치아 뿌리에 염증이 생겨 재신경치료 완료'
+      beforeImage: '/임상사진/충치-1/방준영_충치_before.jpg',
+      afterImage: '/임상사진/충치-1/방준영_충치_after.jpg',
+      title: '다수 충치 치료',
+      description: '다수 충치 제거 후 수복 완료',
+      translations: {
+        en: { title: 'Multiple cavity treatment', description: 'Multiple cavities removed and restoration completed' },
+        jp: { title: '多数虫歯治療', description: '多数の虫歯除去後修復完了' },
+        cn: { title: '多颗龋齿治疗', description: '多颗龋齿去除后修复完成' }
+      }
     },
     {
-      beforeImage: '/images/cases/cavity-nerve-prosthetic/답안1) 치아가 아파요_심한충치_치수염으로인한 신경치료/답안1) 치아가 아파요_뿌리염증으로 재신경치료 및 보철치료완료_전주현/답안1) 치아가 아파요_뿌리염증으로 재신경치료 및 보철치료완료_전주현_before (1).jpg',
-      afterImage: '/images/cases/cavity-nerve-prosthetic/답안1) 치아가 아파요_심한충치_치수염으로인한 신경치료/답안1) 치아가 아파요_뿌리염증으로 재신경치료 및 보철치료완료_전주현/답안1) 치아가 아파요_뿌리염증으로 재신경치료 및 보철치료완료_전주현_after (1).jpg',
-      title: '뿌리 염증 재신경치료 (전주현님)',
-      description: '신경치료했던 치아 뿌리에 염증이 생겨 재신경치료 완료'
+      beforeImage: '/임상사진/크랙/김고운_크랙_실사_before.jpg',
+      afterImage: '/임상사진/크랙/김고운_크랙_실사_after.jpg',
+      title: '크랙 치료',
+      description: '치아 균열 후 크라운 수복',
+      translations: {
+        en: { title: 'Crack treatment', description: 'Tooth crack and crown restoration' },
+        jp: { title: 'クラック治療', description: '歯のひび割れ後クラウン修復' },
+        cn: { title: '裂纹治疗', description: '牙齿裂纹后牙冠修复' }
+      }
     },
     {
-      beforeImage: '/images/cases/cavity-nerve-prosthetic/답안1) 치아가 아파요_심한충치_치수염으로인한 신경치료/답안1) 치아가 아파요_뿌리염증으로 재신경치료 및 보철치료완료_차각수/답안1) 치아가 아파요_뿌리염증으로 재신경치료 및 보철치료완료_차각수 before(1).jpg',
-      afterImage: '/images/cases/cavity-nerve-prosthetic/답안1) 치아가 아파요_심한충치_치수염으로인한 신경치료/답안1) 치아가 아파요_뿌리염증으로 재신경치료 및 보철치료완료_차각수/답안1) 치아가 아파요_뿌리염증으로 재신경치료 및 보철치료완료_차각수 after (1).jpg',
-      title: '뿌리 염증 재신경치료 (차각수님)',
-      description: '신경치료했던 치아 뿌리에 염증이 생겨 재신경치료 완료'
+      beforeImage: '/임상사진/정재윤_앞니보철/정재윤_앞니보철_실제사진_before.jpg',
+      afterImage: '/임상사진/정재윤_앞니보철/정재윤_앞니보철_실제사진_after.jpg',
+      title: '앞니 보철 치료',
+      description: '앞니 보철 수복 전후 비교',
+      translations: {
+        en: { title: 'Front tooth prosthetic treatment', description: 'Before and after front tooth prosthetic restoration' },
+        jp: { title: '前歯補綴治療', description: '前歯補綴修復の前後比較' },
+        cn: { title: '前牙修复治疗', description: '前牙修复前后对比' }
+      }
+    },
+    {
+      beforeImage: '/임상사진/앞니 재보철/앞니재보철_실사_before.jpg',
+      afterImage: '/임상사진/앞니 재보철/앞니재보철_실사_after.jpg',
+      title: '앞니 재보철',
+      description: '기존 앞니 보철물 재치료 전후 비교',
+      translations: {
+        en: { title: 'Front tooth re-prosthetic', description: 'Before and after retreatment of existing front tooth prosthetic' },
+        jp: { title: '前歯再補綴', description: '既存前歯補綴物の再治療前後比較' },
+        cn: { title: '前牙再修复', description: '原有前牙修复体再治疗前后对比' }
+      }
     }
   ],
 
   // 답안2) 치아가 시려요/검게보여요 - 충치(보철)치료
   cavity_nerve_answer2: [
-    // 간단한 충치치료 (레진)
     {
-      beforeImage: '/images/cases/cavity-nerve-prosthetic/답안2) 치아가시려요 검게보여요_충치(보철)치료/답안2) 김승우_검게보여요 간단한 충치치료/답안2) 김승우_검게보여요 간단한 충치치료 before.jpg',
-      afterImage: '/images/cases/cavity-nerve-prosthetic/답안2) 치아가시려요 검게보여요_충치(보철)치료/답안2) 김승우_검게보여요 간단한 충치치료/답안2) 김승우_검게보여요 간단한 충치치료 after.jpg',
-      title: '간단한 충치치료 - 레진 (김승우님)',
-      description: '범위가 작은 간단한 충치, 레진치료로 당일 완료'
+      beforeImage: '/임상사진/충치/김효연_충치_before.jpg',
+      afterImage: '/임상사진/충치/김효연_충치_after.jpg',
+      title: '충치 치료',
+      description: '어금니 충치 제거 후 수복',
+      translations: {
+        en: { title: 'Cavity treatment', description: 'Molar cavity removal and restoration' },
+        jp: { title: '虫歯治療', description: '奥歯の虫歯除去後修復' },
+        cn: { title: '龋齿治疗', description: '磨牙龋齿去除后修复' }
+      }
     },
     {
-      beforeImage: '/images/cases/cavity-nerve-prosthetic/답안2) 치아가시려요 검게보여요_충치(보철)치료/답안2) 박근영_ 검게보여요 간단한 충치치료/답안2) 박근영_ 검게보여요 간단한 충치치료 before.jpg',
-      afterImage: '/images/cases/cavity-nerve-prosthetic/답안2) 치아가시려요 검게보여요_충치(보철)치료/답안2) 박근영_ 검게보여요 간단한 충치치료/답안2) 박근영_ 검게보여요 간단한 충치치료 after.jpg',
-      title: '간단한 충치치료 - 레진 (박근영님)',
-      description: '범위가 작은 간단한 충치, 레진치료로 당일 완료'
-    },
-    // 깊은 충치치료 (인레이보철)
-    {
-      beforeImage: '/images/cases/cavity-nerve-prosthetic/답안2) 치아가시려요 검게보여요_충치(보철)치료/답안2) 유준화_검게보여요 시려요_ 깊은 충치로 인레이보철치료/답안2) 유준화_검게보여요_ 깊은 충치로 인레이보철치료 before(1).jpg',
-      afterImage: '/images/cases/cavity-nerve-prosthetic/답안2) 치아가시려요 검게보여요_충치(보철)치료/답안2) 유준화_검게보여요 시려요_ 깊은 충치로 인레이보철치료/답안2) 유준화_검게보여요_ 깊은 충치로 인레이보철치료 after(1).jpg',
-      title: '깊은 충치 인레이보철 (유준화님)',
-      description: '범위가 깊고 큰 충치, 인레이보철치료로 2-3일 내 완료'
+      beforeImage: '/임상사진/충치-1/방준영_충치_before.jpg',
+      afterImage: '/임상사진/충치-1/방준영_충치_after.jpg',
+      title: '다수 충치 치료',
+      description: '다수 충치 제거 후 수복 완료',
+      translations: {
+        en: { title: 'Multiple cavity treatment', description: 'Multiple cavities removed and restoration completed' },
+        jp: { title: '多数虫歯治療', description: '多数の虫歯除去後修復完了' },
+        cn: { title: '多颗龋齿治疗', description: '多颗龋齿去除后修复完成' }
+      }
     },
     {
-      beforeImage: '/images/cases/cavity-nerve-prosthetic/답안2) 치아가시려요 검게보여요_충치(보철)치료/답안2) 하정원_검게보여요 시려요_ 깊은 충치로 인레이보철치료/답안2) 하정원_검게보여요_ 깊은 충치로 인레이보철치료 before(1).jpg',
-      afterImage: '/images/cases/cavity-nerve-prosthetic/답안2) 치아가시려요 검게보여요_충치(보철)치료/답안2) 하정원_검게보여요 시려요_ 깊은 충치로 인레이보철치료/답안2) 하정원_검게보여요_ 깊은 충치로 인레이보철치료 after(2).jpg',
-      title: '깊은 충치 인레이보철 (하정원님)',
-      description: '범위가 깊고 큰 충치, 미세현미경 치료 후 인레이보철 완료'
+      beforeImage: '/임상사진/크랙/김고운_크랙_실사_before.jpg',
+      afterImage: '/임상사진/크랙/김고운_크랙_실사_after.jpg',
+      title: '크랙 치료',
+      description: '치아 균열 후 크라운 수복',
+      translations: {
+        en: { title: 'Crack treatment', description: 'Tooth crack and crown restoration' },
+        jp: { title: 'クラック治療', description: '歯のひび割れ後クラウン修復' },
+        cn: { title: '裂纹治疗', description: '牙齿裂纹后牙冠修复' }
+      }
+    },
+    {
+      beforeImage: '/임상사진/정재윤_앞니보철/정재윤_앞니보철_실제사진_before.jpg',
+      afterImage: '/임상사진/정재윤_앞니보철/정재윤_앞니보철_실제사진_after.jpg',
+      title: '앞니 보철 치료',
+      description: '앞니 보철 수복 전후 비교',
+      translations: {
+        en: { title: 'Front tooth prosthetic treatment', description: 'Before and after front tooth prosthetic restoration' },
+        jp: { title: '前歯補綴治療', description: '前歯補綴修復の前後比較' },
+        cn: { title: '前牙修复治疗', description: '前牙修复前后对比' }
+      }
+    },
+    {
+      beforeImage: '/임상사진/앞니 재보철/앞니재보철_실사_before.jpg',
+      afterImage: '/임상사진/앞니 재보철/앞니재보철_실사_after.jpg',
+      title: '앞니 재보철',
+      description: '기존 앞니 보철물 재치료 전후 비교',
+      translations: {
+        en: { title: 'Front tooth re-prosthetic', description: 'Before and after retreatment of existing front tooth prosthetic' },
+        jp: { title: '前歯再補綴', description: '既存前歯補綴物の再治療前後比較' },
+        cn: { title: '前牙再修复', description: '原有前牙修复体再治疗前后对比' }
+      }
     }
   ],
 
   // 답안3) 치아가 깨졌어요 - 보철치료 및 신경치료
   cavity_nerve_answer3: [
-    // 보존치료 가능한 경우
     {
-      beforeImage: '/images/cases/cavity-nerve-prosthetic/답안3) 치아가 깨졌어요_ 보철치료 및 신경치료/답안3) 치아가 깨졌어요_ 보철치료 및 신경치료_김태현/답안3) 치아가 깨졌어요_ 보철치료 및 신경치료_김태현 before(1).jpg',
-      afterImage: '/images/cases/cavity-nerve-prosthetic/답안3) 치아가 깨졌어요_ 보철치료 및 신경치료/답안3) 치아가 깨졌어요_ 보철치료 및 신경치료_김태현/답안3) 치아가 깨졌어요_ 보철치료 및 신경치료_김태현 after(1).jpg',
-      title: '깨진 치아 보존치료 (김태현님)',
-      description: '치아가 깨졌지만 보존 가능하여 신경치료 후 보철치료 완료'
+      beforeImage: '/임상사진/충치/김효연_충치_before.jpg',
+      afterImage: '/임상사진/충치/김효연_충치_after.jpg',
+      title: '충치 치료',
+      description: '어금니 충치 제거 후 수복',
+      translations: {
+        en: { title: 'Cavity treatment', description: 'Molar cavity removal and restoration' },
+        jp: { title: '虫歯治療', description: '奥歯の虫歯除去後修復' },
+        cn: { title: '龋齿治疗', description: '磨牙龋齿去除后修复' }
+      }
     },
     {
-      beforeImage: '/images/cases/cavity-nerve-prosthetic/답안3) 치아가 깨졌어요_ 보철치료 및 신경치료/답안3) 치아가 깨졌어요_ 보철치료 및 신경치료_김하람/답안3) 치아가 깨졌어요_ 보철치료 및 신경치료_김태현 before(1).jpg',
-      afterImage: '/images/cases/cavity-nerve-prosthetic/답안3) 치아가 깨졌어요_ 보철치료 및 신경치료/답안3) 치아가 깨졌어요_ 보철치료 및 신경치료_김하람/답안3) 치아가 깨졌어요_ 보철치료 및 신경치료_김태현 after(1).jpg',
-      title: '깨진 치아 보존치료 (김하람님)',
-      description: '치아가 깨졌지만 보존 가능하여 신경치료 후 보철치료 완료'
+      beforeImage: '/임상사진/충치-1/방준영_충치_before.jpg',
+      afterImage: '/임상사진/충치-1/방준영_충치_after.jpg',
+      title: '다수 충치 치료',
+      description: '다수 충치 제거 후 수복 완료',
+      translations: {
+        en: { title: 'Multiple cavity treatment', description: 'Multiple cavities removed and restoration completed' },
+        jp: { title: '多数虫歯治療', description: '多数の虫歯除去後修復完了' },
+        cn: { title: '多颗龋齿治疗', description: '多颗龋齿去除后修复完成' }
+      }
     },
     {
-      beforeImage: '/images/cases/cavity-nerve-prosthetic/답안3) 치아가 깨졌어요_ 보철치료 및 신경치료/답안3) 치아가 깨졌어요_ 보철치료 및 신경치료_김혜인/답안3) 치아가 깨졌어요_ 보철치료 및 신경치료_김혜인 before(1).jpg',
-      afterImage: '/images/cases/cavity-nerve-prosthetic/답안3) 치아가 깨졌어요_ 보철치료 및 신경치료/답안3) 치아가 깨졌어요_ 보철치료 및 신경치료_김혜인/답안3) 치아가 깨졌어요_ 보철치료 및 신경치료_김혜인 after(1).jpg',
-      title: '깨진 치아 보존치료 (김혜인님)',
-      description: '치아가 깨졌지만 보존 가능하여 신경치료 후 보철치료 완료'
+      beforeImage: '/임상사진/크랙/김고운_크랙_실사_before.jpg',
+      afterImage: '/임상사진/크랙/김고운_크랙_실사_after.jpg',
+      title: '크랙 치료',
+      description: '치아 균열 후 크라운 수복',
+      translations: {
+        en: { title: 'Crack treatment', description: 'Tooth crack and crown restoration' },
+        jp: { title: 'クラック治療', description: '歯のひび割れ後クラウン修復' },
+        cn: { title: '裂纹治疗', description: '牙齿裂纹后牙冠修复' }
+      }
     },
     {
-      beforeImage: '/images/cases/cavity-nerve-prosthetic/답안3) 치아가 깨졌어요_ 보철치료 및 신경치료/답안3) 치아가 깨졌어요_ 보철치료 및 신경치료_양윤지/답안3) 치아가 깨졌어요_ 보철치료 및 신경치료_양윤지 before(1).jpg',
-      afterImage: '/images/cases/cavity-nerve-prosthetic/답안3) 치아가 깨졌어요_ 보철치료 및 신경치료/답안3) 치아가 깨졌어요_ 보철치료 및 신경치료_양윤지/답안3) 치아가 깨졌어요_ 보철치료 및 신경치료_양윤지 after(1).jpg',
-      title: '깨진 치아 보존치료 (양윤지님)',
-      description: '치아가 깨졌지만 보존 가능하여 신경치료 후 보철치료 완료'
+      beforeImage: '/임상사진/정재윤_앞니보철/정재윤_앞니보철_실제사진_before.jpg',
+      afterImage: '/임상사진/정재윤_앞니보철/정재윤_앞니보철_실제사진_after.jpg',
+      title: '앞니 보철 치료',
+      description: '앞니 보철 수복 전후 비교',
+      translations: {
+        en: { title: 'Front tooth prosthetic treatment', description: 'Before and after front tooth prosthetic restoration' },
+        jp: { title: '前歯補綴治療', description: '前歯補綴修復の前後比較' },
+        cn: { title: '前牙修复治疗', description: '前牙修复前后对比' }
+      }
+    },
+    {
+      beforeImage: '/임상사진/앞니 재보철/앞니재보철_실사_before.jpg',
+      afterImage: '/임상사진/앞니 재보철/앞니재보철_실사_after.jpg',
+      title: '앞니 재보철',
+      description: '기존 앞니 보철물 재치료 전후 비교',
+      translations: {
+        en: { title: 'Front tooth re-prosthetic', description: 'Before and after retreatment of existing front tooth prosthetic' },
+        jp: { title: '前歯再補綴', description: '既存前歯補綴物の再治療前後比較' },
+        cn: { title: '前牙再修复', description: '原有前牙修复体再治疗前后对比' }
+      }
     }
   ],
 
-  // 답안3) 치아가 깨졌어요 - 발치가 필요한 경우 (before만 있음)
+  // 답안3) 치아가 깨졌어요 - 발치가 필요한 경우
   cavity_nerve_answer3_extraction: [
     {
-      beforeImage: '/images/cases/cavity-nerve-prosthetic/답안3) 치아가 깨졌어요_ 보철치료 및 신경치료/답안3) 치아가 깨졌어요_ 발치하는경우/답안3) 치아가 깨졌어요_ 발치하는경우_김정선.jpg',
-      afterImage: '',
-      title: '발치가 필요한 경우 (김정선님)',
-      description: '치아가 부러져 보존이 불가능하여 발치가 필요한 케이스'
+      beforeImage: '/임상사진/충치/김효연_충치_before.jpg',
+      afterImage: '/임상사진/충치/김효연_충치_after.jpg',
+      title: '충치 치료',
+      description: '어금니 충치 제거 후 수복',
+      translations: {
+        en: { title: 'Cavity treatment', description: 'Molar cavity removal and restoration' },
+        jp: { title: '虫歯治療', description: '奥歯の虫歯除去後修復' },
+        cn: { title: '龋齿治疗', description: '磨牙龋齿去除后修复' }
+      }
     },
     {
-      beforeImage: '/images/cases/cavity-nerve-prosthetic/답안3) 치아가 깨졌어요_ 보철치료 및 신경치료/답안3) 치아가 깨졌어요_ 발치하는경우/답안3) 치아가 깨졌어요_ 발치하는경우_이해경.jpg',
-      afterImage: '',
-      title: '발치가 필요한 경우 (이해경님)',
-      description: '치아가 부러져 보존이 불가능하여 발치가 필요한 케이스'
+      beforeImage: '/임상사진/충치-1/방준영_충치_before.jpg',
+      afterImage: '/임상사진/충치-1/방준영_충치_after.jpg',
+      title: '다수 충치 치료',
+      description: '다수 충치 제거 후 수복 완료',
+      translations: {
+        en: { title: 'Multiple cavity treatment', description: 'Multiple cavities removed and restoration completed' },
+        jp: { title: '多数虫歯治療', description: '多数の虫歯除去後修復完了' },
+        cn: { title: '多颗龋齿治疗', description: '多颗龋齿去除后修复完成' }
+      }
+    },
+    {
+      beforeImage: '/임상사진/크랙/김고운_크랙_실사_before.jpg',
+      afterImage: '/임상사진/크랙/김고운_크랙_실사_after.jpg',
+      title: '크랙 치료',
+      description: '치아 균열 후 크라운 수복',
+      translations: {
+        en: { title: 'Crack treatment', description: 'Tooth crack and crown restoration' },
+        jp: { title: 'クラック治療', description: '歯のひび割れ後クラウン修復' },
+        cn: { title: '裂纹治疗', description: '牙齿裂纹后牙冠修复' }
+      }
+    },
+    {
+      beforeImage: '/임상사진/정재윤_앞니보철/정재윤_앞니보철_실제사진_before.jpg',
+      afterImage: '/임상사진/정재윤_앞니보철/정재윤_앞니보철_실제사진_after.jpg',
+      title: '앞니 보철 치료',
+      description: '앞니 보철 수복 전후 비교',
+      translations: {
+        en: { title: 'Front tooth prosthetic treatment', description: 'Before and after front tooth prosthetic restoration' },
+        jp: { title: '前歯補綴治療', description: '前歯補綴修復の前後比較' },
+        cn: { title: '前牙修复治疗', description: '前牙修复前后对比' }
+      }
+    },
+    {
+      beforeImage: '/임상사진/앞니 재보철/앞니재보철_실사_before.jpg',
+      afterImage: '/임상사진/앞니 재보철/앞니재보철_실사_after.jpg',
+      title: '앞니 재보철',
+      description: '기존 앞니 보철물 재치료 전후 비교',
+      translations: {
+        en: { title: 'Front tooth re-prosthetic', description: 'Before and after retreatment of existing front tooth prosthetic' },
+        jp: { title: '前歯再補綴', description: '既存前歯補綴物の再治療前後比較' },
+        cn: { title: '前牙再修复', description: '原有前牙修复体再治疗前后对比' }
+      }
     }
   ],
 
   // 답안4) 불편해요 - 치아문제 또는 잇몸문제 진단 필요
   cavity_nerve_answer4: [
-    // 치아 문제 (잇몸 근처 시림)
     {
-      beforeImage: '/images/cases/cavity-nerve-prosthetic/답안4) 불편해요_ 치아문제이거나 잇몸문제 진단필요/답안4) 식사할때 양치할때 불편/답안4) 식사할때 양치할때 불편_송행자_윗니 잇몸 근처 치아부분이 시림.jpg',
-      afterImage: '',
-      title: '치아 경계부 시림 (송행자님)',
-      description: '치아와 잇몸 경계부위가 시리거나 불편한 경우 - 정확한 진단 필요'
+      beforeImage: '/임상사진/충치/김효연_충치_before.jpg',
+      afterImage: '/임상사진/충치/김효연_충치_after.jpg',
+      title: '충치 치료',
+      description: '어금니 충치 제거 후 수복',
+      translations: {
+        en: { title: 'Cavity treatment', description: 'Molar cavity removal and restoration' },
+        jp: { title: '虫歯治療', description: '奥歯の虫歯除去後修復' },
+        cn: { title: '龋齿治疗', description: '磨牙龋齿去除后修复' }
+      }
     },
     {
-      beforeImage: '/images/cases/cavity-nerve-prosthetic/답안4) 불편해요_ 치아문제이거나 잇몸문제 진단필요/답안4) 식사할때 양치할때 불편/답안4) 식사할때 양치할때 불편_이경희_윗니아랫니 잇몸 근처 치아부분이 시림.jpg',
-      afterImage: '',
-      title: '치아 경계부 시림 (이경희님)',
-      description: '윗니/아랫니 잇몸 근처 치아부분이 시린 경우 - 정확한 진단 필요'
-    },
-    // 잇몸 문제
-    {
-      beforeImage: '/images/cases/cavity-nerve-prosthetic/답안4) 불편해요_ 치아문제이거나 잇몸문제 진단필요/답안4) 식사할때 양치할때 불편/답안4) 식사할때 양치할때 불편_잇몸관리가안되어 염증이생긴경우_남성.jpg',
-      afterImage: '',
-      title: '잇몸 염증 (남성 환자)',
-      description: '잇몸 관리가 안 되어 염증이 생긴 경우 - 건강한 잇몸 회복 필요'
+      beforeImage: '/임상사진/충치-1/방준영_충치_before.jpg',
+      afterImage: '/임상사진/충치-1/방준영_충치_after.jpg',
+      title: '다수 충치 치료',
+      description: '다수 충치 제거 후 수복 완료',
+      translations: {
+        en: { title: 'Multiple cavity treatment', description: 'Multiple cavities removed and restoration completed' },
+        jp: { title: '多数虫歯治療', description: '多数の虫歯除去後修復完了' },
+        cn: { title: '多颗龋齿治疗', description: '多颗龋齿去除后修复完成' }
+      }
     },
     {
-      beforeImage: '/images/cases/cavity-nerve-prosthetic/답안4) 불편해요_ 치아문제이거나 잇몸문제 진단필요/답안4) 식사할때 양치할때 불편/답안4) 식사할때 양치할때 불편_잇몸관리가안되어 염증이생긴경우_김석훈.jpg',
-      afterImage: '',
-      title: '잇몸 염증 (김석훈님)',
-      description: '잇몸이 좋지 않아 불편한 경우 - 건강한 잇몸 회복 필요'
+      beforeImage: '/임상사진/크랙/김고운_크랙_실사_before.jpg',
+      afterImage: '/임상사진/크랙/김고운_크랙_실사_after.jpg',
+      title: '크랙 치료',
+      description: '치아 균열 후 크라운 수복',
+      translations: {
+        en: { title: 'Crack treatment', description: 'Tooth crack and crown restoration' },
+        jp: { title: 'クラック治療', description: '歯のひび割れ後クラウン修復' },
+        cn: { title: '裂纹治疗', description: '牙齿裂纹后牙冠修复' }
+      }
+    },
+    {
+      beforeImage: '/임상사진/정재윤_앞니보철/정재윤_앞니보철_실제사진_before.jpg',
+      afterImage: '/임상사진/정재윤_앞니보철/정재윤_앞니보철_실제사진_after.jpg',
+      title: '앞니 보철 치료',
+      description: '앞니 보철 수복 전후 비교',
+      translations: {
+        en: { title: 'Front tooth prosthetic treatment', description: 'Before and after front tooth prosthetic restoration' },
+        jp: { title: '前歯補綴治療', description: '前歯補綴修復の前後比較' },
+        cn: { title: '前牙修复治疗', description: '前牙修复前后对比' }
+      }
+    },
+    {
+      beforeImage: '/임상사진/앞니 재보철/앞니재보철_실사_before.jpg',
+      afterImage: '/임상사진/앞니 재보철/앞니재보철_실사_after.jpg',
+      title: '앞니 재보철',
+      description: '기존 앞니 보철물 재치료 전후 비교',
+      translations: {
+        en: { title: 'Front tooth re-prosthetic', description: 'Before and after retreatment of existing front tooth prosthetic' },
+        jp: { title: '前歯再補綴', description: '既存前歯補綴物の再治療前後比較' },
+        cn: { title: '前牙再修复', description: '原有前牙修复体再治疗前后对比' }
+      }
     }
   ],
 
   // 기존 nerve_treatment 호환용 (fallback)
   nerve_treatment: [
     {
-      beforeImage: '/images/cases/cavity-nerve-prosthetic/답안1) 치아가 아파요_심한충치_치수염으로인한 신경치료/답안1) 치아가 아파요_심한충치로 신경치료 및 보철치료완료_ 허재욱/답안1) 치아가 아파요_심한충치로 신경치료 및 보철치료완료_ 허재욱 before(1).jpg',
-      afterImage: '/images/cases/cavity-nerve-prosthetic/답안1) 치아가 아파요_심한충치_치수염으로인한 신경치료/답안1) 치아가 아파요_심한충치로 신경치료 및 보철치료완료_ 허재욱/답안1) 치아가 아파요_심한충치로 신경치료 및 보철치료완료_ 허재욱 after(1).jpg',
-      title: '심한 충치 신경치료',
-      description: '충치가 심해서 신경치료 후 보철치료 완료'
+      beforeImage: '/임상사진/충치/김효연_충치_before.jpg',
+      afterImage: '/임상사진/충치/김효연_충치_after.jpg',
+      title: '충치 치료',
+      description: '어금니 충치 제거 후 수복',
+      translations: {
+        en: { title: 'Cavity treatment', description: 'Molar cavity removal and restoration' },
+        jp: { title: '虫歯治療', description: '奥歯の虫歯除去後修復' },
+        cn: { title: '龋齿治疗', description: '磨牙龋齿去除后修复' }
+      }
     },
     {
-      beforeImage: '/images/cases/cavity-nerve-prosthetic/답안1) 치아가 아파요_심한충치_치수염으로인한 신경치료/답안1) 치아가 아파요_뿌리염증으로 재신경치료 및 보철치료완료_문경태/답안1) 치아가 아파요_뿌리염증으로 재신경치료 및 보철치료완료_문경태 before.jpg',
-      afterImage: '/images/cases/cavity-nerve-prosthetic/답안1) 치아가 아파요_심한충치_치수염으로인한 신경치료/답안1) 치아가 아파요_뿌리염증으로 재신경치료 및 보철치료완료_문경태/답안1) 치아가 아파요_뿌리염증으로 재신경치료 및 보철치료완료_문경태 after.jpg',
-      title: '뿌리 염증 재신경치료',
-      description: '신경치료했던 치아 뿌리에 염증이 생겨 재신경치료 완료'
+      beforeImage: '/임상사진/충치-1/방준영_충치_before.jpg',
+      afterImage: '/임상사진/충치-1/방준영_충치_after.jpg',
+      title: '다수 충치 치료',
+      description: '다수 충치 제거 후 수복 완료',
+      translations: {
+        en: { title: 'Multiple cavity treatment', description: 'Multiple cavities removed and restoration completed' },
+        jp: { title: '多数虫歯治療', description: '多数の虫歯除去後修復完了' },
+        cn: { title: '多颗龋齿治疗', description: '多颗龋齿去除后修复完成' }
+      }
+    },
+    {
+      beforeImage: '/임상사진/크랙/김고운_크랙_실사_before.jpg',
+      afterImage: '/임상사진/크랙/김고운_크랙_실사_after.jpg',
+      title: '크랙 치료',
+      description: '치아 균열 후 크라운 수복',
+      translations: {
+        en: { title: 'Crack treatment', description: 'Tooth crack and crown restoration' },
+        jp: { title: 'クラック治療', description: '歯のひび割れ後クラウン修復' },
+        cn: { title: '裂纹治疗', description: '牙齿裂纹后牙冠修复' }
+      }
+    },
+    {
+      beforeImage: '/임상사진/정재윤_앞니보철/정재윤_앞니보철_실제사진_before.jpg',
+      afterImage: '/임상사진/정재윤_앞니보철/정재윤_앞니보철_실제사진_after.jpg',
+      title: '앞니 보철 치료',
+      description: '앞니 보철 수복 전후 비교',
+      translations: {
+        en: { title: 'Front tooth prosthetic treatment', description: 'Before and after front tooth prosthetic restoration' },
+        jp: { title: '前歯補綴治療', description: '前歯補綴修復の前後比較' },
+        cn: { title: '前牙修复治疗', description: '前牙修复前后对比' }
+      }
+    },
+    {
+      beforeImage: '/임상사진/앞니 재보철/앞니재보철_실사_before.jpg',
+      afterImage: '/임상사진/앞니 재보철/앞니재보철_실사_after.jpg',
+      title: '앞니 재보철',
+      description: '기존 앞니 보철물 재치료 전후 비교',
+      translations: {
+        en: { title: 'Front tooth re-prosthetic', description: 'Before and after retreatment of existing front tooth prosthetic' },
+        jp: { title: '前歯再補綴', description: '既存前歯補綴物の再治療前後比較' },
+        cn: { title: '前牙再修复', description: '原有前牙修复体再治疗前后对比' }
+      }
     }
   ],
 
@@ -247,272 +444,210 @@ export const TREATMENT_CASE_IMAGES = {
     }
   ],
 
-  // 일반 임플란트 케이스 (3개) - 임플란트_new 폴더 사용
+  // 일반 임플란트 케이스 (2개) - 실제 임상사진
   implant: [
     {
-      beforeImage: '/images/cases/implant-new/molar/drinking-smoking-before.jpg',
-      afterImage: '/images/cases/implant-new/molar/drinking-smoking-after.jpg',
-      title: '어금니 다수 임플란트',
-      description: '상하악 양쪽 어금니가 거의 없어 씹기 힘들었던 음주·흡연 환자. 상악 8개, 하악 4개 총 12개 임플란트로 완전한 저작력 회복',
+      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_before.jpg',
+      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_after.jpg',
+      title: '어금니 임플란트 (엑스레이)',
+      description: '어금니 다수 임플란트 식립 전후 엑스레이 비교',
       translations: {
-        en: {
-          title: 'Multiple molar implants',
-          description: 'Smoking and drinking patient who had difficulty chewing with almost no molars. 8 upper + 4 lower = 12 implants restored full chewing function'
-        },
-        jp: {
-          title: '複数奥歯インプラント',
-          description: '上下顎両側の奥歯がほとんどなく噛めなかった飲酒・喫煙患者。上顎8本、下顎4本の計12本インプラントで完全な咀嚼力回復'
-        },
-        cn: {
-          title: '多颗磨牙种植',
-          description: '上下颌两侧磨牙几乎没有难以咀嚼的饮酒吸烟患者。上颌8颗+下颌4颗共12颗种植体完全恢复咀嚼功能'
-        }
+        en: { title: 'Molar implant (X-ray)', description: 'Before and after X-ray comparison of multiple molar implant placement' },
+        jp: { title: '奥歯インプラント（レントゲン）', description: '奥歯多数インプラント埋入前後のレントゲン比較' },
+        cn: { title: '磨牙种植体（X光）', description: '磨牙多颗种植体植入前后X光对比' }
       }
     },
     {
-      beforeImage: '/images/cases/implant-new/molar/bad-gums-before.jpg',
-      afterImage: '/images/cases/implant-new/molar/bad-gums-after.jpg',
-      title: '잇몸질환 환자 임플란트',
-      description: '상악 양쪽 어금니 대부분 상실. 상악 6개, 하악 4개 총 10개 임플란트로 양쪽 씹는 힘 균형있게 회복. 치과 공포증도 수면치료로 극복',
+      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_before.jpg',
+      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_after.jpg',
+      title: '어금니 임플란트 (실제사진)',
+      description: '어금니 임플란트 보철 장착 전후 비교',
       translations: {
-        en: {
-          title: 'Implant for gum disease patient',
-          description: 'Most upper molars missing on both sides. 6 upper + 4 lower = 10 implants restored balanced chewing. Dental phobia overcome with sedation'
-        },
-        jp: {
-          title: '歯周病患者のインプラント',
-          description: '上顎両側の奥歯がほとんど失われた状態。上顎6本、下顎4本の計10本インプラントで両側の噛む力をバランスよく回復。歯科恐怖症も睡眠治療で克服'
-        },
-        cn: {
-          title: '牙龈疾病患者种植',
-          description: '上颌两侧大部分磨牙缺失。上颌6颗+下颌4颗共10颗种植体均衡恢复双侧咀嚼力。牙科恐惧症通过睡眠治疗克服'
-        }
-      }
-    },
-    {
-      beforeImage: '/images/cases/implant-new/revision/male-molar-before.jpg',
-      afterImage: '/images/cases/implant-new/revision/male-molar-after.jpg',
-      title: '임플란트 재수술',
-      description: '상악 8개, 하악 2개 총 10개 임플란트가 있는 복잡한 구강에서 문제 발생. 기존 보철물 구조 유지하며 정밀하게 재수술 완료',
-      translations: {
-        en: {
-          title: 'Implant revision surgery',
-          description: 'Complex case with 10 implants (8 upper + 2 lower) requiring revision. Successfully completed precision revision while maintaining existing structure'
-        },
-        jp: {
-          title: 'インプラント再手術',
-          description: '上顎8本、下顎2本の計10本インプラントがある複雑な口腔で問題発生。既存の補綴物構造を維持しながら精密に再手術完了'
-        },
-        cn: {
-          title: '种植体翻修手术',
-          description: '上颌8颗+下颌2颗共10颗种植体的复杂口腔出现问题。在保持现有结构的同时精密完成翻修'
-        }
+        en: { title: 'Molar implant (clinical photo)', description: 'Before and after molar implant prosthetic placement' },
+        jp: { title: '奥歯インプラント（実際写真）', description: '奥歯インプラント補綴装着前後の比較' },
+        cn: { title: '磨牙种植体（实拍照片）', description: '磨牙种植体修复体安装前后对比' }
       }
     }
   ],
 
-  // 디지털 임플란트 - 임플란트_new 폴더 사용
+  // 디지털 임플란트 - 실제 임상사진
   digital_implant: [
     {
-      beforeImage: '/images/cases/implant-new/molar/drinking-smoking-before.jpg',
-      afterImage: '/images/cases/implant-new/molar/drinking-smoking-after.jpg',
-      title: '디지털 임플란트',
-      description: '상하악 12개 임플란트를 CT 가상수술로 정밀하게 계획. 디지털 가이드로 정확한 위치에 최소 절개 식립, 붓기와 통증 최소화',
+      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_before.jpg',
+      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_after.jpg',
+      title: '어금니 임플란트 (엑스레이)',
+      description: '어금니 다수 임플란트 식립 전후 엑스레이 비교',
       translations: {
-        en: {
-          title: 'Digital implant',
-          description: '12 implants precisely planned with CT virtual surgery. Digital guide enabled minimal incision at exact positions, minimizing swelling and pain'
-        },
-        jp: {
-          title: 'デジタルインプラント',
-          description: '上下顎12本のインプラントをCT仮想手術で精密に計画。デジタルガイドで正確な位置に最小切開で埋入、腫れと痛み最小化'
-        },
-        cn: {
-          title: '数字化种植',
-          description: '通过CT虚拟手术精准规划上下颌12颗种植体。数字导板精确定位微创植入，最大程度减少肿胀疼痛'
-        }
+        en: { title: 'Molar implant (X-ray)', description: 'Before and after X-ray comparison of multiple molar implant placement' },
+        jp: { title: '奥歯インプラント（レントゲン）', description: '奥歯多数インプラント埋入前後のレントゲン比較' },
+        cn: { title: '磨牙种植体（X光）', description: '磨牙多颗种植体植入前后X光对比' }
       }
     },
     {
-      beforeImage: '/images/cases/implant-new/revision/male-molar-before.jpg',
-      afterImage: '/images/cases/implant-new/revision/male-molar-after.jpg',
-      title: '디지털 임플란트 재수술',
-      description: '상악 8개, 하악 2개 총 10개 임플란트의 복잡한 케이스. 디지털 정밀 진단으로 문제 파악 후 기존 구조 유지하며 재수술 성공 (세계구강임플란트학회 이사 직접 시술)',
+      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_before.jpg',
+      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_after.jpg',
+      title: '어금니 임플란트 (실제사진)',
+      description: '어금니 임플란트 보철 장착 전후 비교',
       translations: {
-        en: {
-          title: 'Digital implant revision',
-          description: 'Complex case with 10 implants (8 upper + 2 lower). Digital precision diagnosis identified issues, successfully revised while preserving structure (performed by World Implant Association Director)'
-        },
-        jp: {
-          title: 'デジタルインプラント再手術',
-          description: '上顎8本、下顎2本の計10本インプラントの複雑なケース。デジタル精密診断で問題把握後、既存構造を維持しながら再手術成功（世界口腔インプラント学会理事が直接施術）'
-        },
-        cn: {
-          title: '数字化种植翻修',
-          description: '上颌8颗+下颌2颗共10颗种植体的复杂病例。数字精准诊断识别问题后，保持现有结构成功翻修（世界口腔种植学会理事亲自手术）'
-        }
+        en: { title: 'Molar implant (clinical photo)', description: 'Before and after molar implant prosthetic placement' },
+        jp: { title: '奥歯インプラント（実際写真）', description: '奥歯インプラント補綴装着前後の比較' },
+        cn: { title: '磨牙种植体（实拍照片）', description: '磨牙种植体修复体安装前后对比' }
       }
     }
   ],
 
-  // 디지털전체임플란트(All on X) - 윗니/아랫니 한쪽 전체
+  // 디지털전체임플란트(All on X) - 윗니/아랫니 한쪽 전체 - 실제 임상사진
   implant_upper_lower_one_side: [
     {
-      beforeImage: '/images/cases/implant-new/one-side/male-70-before.jpg',
-      afterImage: '/images/cases/implant-new/one-side/male-70-after.jpg',
-      title: '70대 남성 - 디지털전체임플란트',
-      description: '아랫니 전체가 치주염으로 흔들려 발치가 필요했던 70대 남성. 6개 임플란트로 전체 아랫니 고정, 딱딱한 음식도 편하게 씹을 수 있게 회복',
+      beforeImage: '/임상사진/박균조_전악임플란트/박균조_전체임플란트_엑스레이_before.jpg',
+      afterImage: '/임상사진/박균조_전악임플란트/박균조_전체임플란트_엑스레이_after.jpg',
+      title: '전체 임플란트 (엑스레이)',
+      description: '전악 임플란트 식립 전후 엑스레이 비교',
       translations: {
-        en: { title: 'Male 70s - Digital Full Implant', description: 'Male in his 70s who needed extraction of all lower teeth due to periodontitis. 6 implants fixed all lower teeth, restored ability to chew hard foods comfortably' },
-        jp: { title: '70代男性 - デジタル全顎インプラント', description: '下の歯全体が歯周炎でぐらつき抜歯が必要だった70代男性。6本のインプラントで下の歯全体を固定、硬い食べ物も楽に噛めるように回復' },
-        cn: { title: '70岁男性 - 数字化全口种植', description: '因牙周炎全部下牙松动需拔除的70岁男性。6颗种植体固定全部下牙，恢复轻松咀嚼硬食的能力' }
+        en: { title: 'Full mouth implant (X-ray)', description: 'Before and after X-ray comparison of full mouth implant placement' },
+        jp: { title: '全顎インプラント（レントゲン）', description: '全顎インプラント埋入前後のレントゲン比較' },
+        cn: { title: '全口种植（X光）', description: '全口种植体植入前后X光对比' }
       }
     },
     {
-      beforeImage: '/images/cases/implant-new/one-side/male-60-before.jpg',
-      afterImage: '/images/cases/implant-new/one-side/male-60-after.jpg',
-      title: '60대 남성 - 디지털전체임플란트',
-      description: '윗니 대부분이 충치와 치주염으로 손상된 60대 남성. 디지털 가이드 수술로 최소 절개, 빠른 회복으로 2주 만에 정상 식사 가능',
+      beforeImage: '/임상사진/박균조_전악임플란트/박균조_전체임플란트_실제사진_before.jpg',
+      afterImage: '/임상사진/박균조_전악임플란트/박균조_전체임플란트_실제사진_after.jpg',
+      title: '전체 임플란트 (실제사진)',
+      description: '전악 임플란트 보철 장착 전후 비교',
       translations: {
-        en: { title: 'Male 60s - Digital Full Implant', description: 'Male in his 60s with most upper teeth damaged by decay and periodontitis. Digital guided surgery with minimal incision, able to eat normally in just 2 weeks' },
-        jp: { title: '60代男性 - デジタル全顎インプラント', description: '上の歯のほとんどが虫歯と歯周炎で損傷した60代男性。デジタルガイド手術で最小切開、2週間で通常の食事が可能に' },
-        cn: { title: '60岁男性 - 数字化全口种植', description: '大部分上牙因龋齿和牙周炎受损的60岁男性。数字导板手术微创切口，仅2周即可正常进食' }
-      }
-    },
-    {
-      beforeImage: '/images/cases/implant-new/one-side/female-70-denture-before.jpg',
-      afterImage: '/images/cases/implant-new/one-side/female-70-denture-after.jpg',
-      title: '70대 여성 윗니 틀니 - 디지털전체임플란트',
-      description: '20년간 틀니 사용으로 잇몸이 많이 녹아 틀니가 안 맞던 70대 여성. 임플란트 고정식으로 교체하여 빠지거나 흔들림 없이 자신감 있는 식사와 대화 가능',
-      translations: {
-        en: { title: 'Female 70s Denture - Digital Full Implant', description: 'Female in her 70s whose dentures stopped fitting after 20 years of use and gum loss. Fixed implants replaced dentures, enabling confident eating and speaking without slipping' },
-        jp: { title: '70代女性入れ歯 - デジタル全顎インプラント', description: '20年間の入れ歯使用で歯茎がかなり痩せて入れ歯が合わなくなった70代女性。インプラント固定式に交換し、外れたりぐらついたりせず自信を持って食事と会話が可能に' },
-        cn: { title: '70岁女性假牙 - 数字化全口种植', description: '使用假牙20年牙龈萎缩严重导致假牙不合的70岁女性。更换为种植体固定式，无脱落晃动，自信进餐交谈' }
+        en: { title: 'Full mouth implant (clinical photo)', description: 'Before and after full mouth implant prosthetic placement' },
+        jp: { title: '全顎インプラント（実際写真）', description: '全顎インプラント補綴装着前後の比較' },
+        cn: { title: '全口种植（实拍照片）', description: '全口种植修复体安装前后对比' }
       }
     }
   ],
 
-  // 디지털전체임플란트(All on X) - 모든 치아
+  // 디지털전체임플란트(All on X) - 모든 치아 - 실제 임상사진
   implant_all_teeth: [
     {
-      beforeImage: '/images/cases/implant-new/all-teeth/female-50-before.jpg',
-      intermediateImage: '/images/cases/implant-new/all-teeth/female-50-same-day.jpg',
-      intermediateLabel: '수술 당일 임시치아',
-      afterImage: '/images/cases/implant-new/all-teeth/female-50-after.jpg',
-      title: '50대 여성 - 전체 임플란트',
-      description: '거의 모든 치아가 흔들리고 잇몸 상태가 심각했던 50대 여성. 당일 수술 후 바로 임시치아 장착하여 이가 없는 기간 없이 식사 가능',
+      beforeImage: '/임상사진/박균조_전악임플란트/박균조_전체임플란트_엑스레이_before.jpg',
+      afterImage: '/임상사진/박균조_전악임플란트/박균조_전체임플란트_엑스레이_after.jpg',
+      title: '전체 임플란트 (엑스레이)',
+      description: '전악 임플란트 식립 전후 엑스레이 비교',
       translations: {
-        en: { title: 'Female 50s - Full Mouth Implant', description: 'Female in her 50s with almost all teeth loose and severe gum condition. Same-day temporary teeth after surgery, able to eat without any toothless period' },
-        jp: { title: '50代女性 - 全顎インプラント', description: 'ほぼ全ての歯がぐらつき歯茎の状態が深刻だった50代女性。当日手術後すぐに仮歯装着、歯がない期間なく食事可能' },
-        cn: { title: '50岁女性 - 全口种植', description: '几乎所有牙齿松动、牙龈状况严重的50岁女性。当天手术后立即戴临时牙，无缺牙期可进食' }
+        en: { title: 'Full mouth implant (X-ray)', description: 'Before and after X-ray comparison of full mouth implant placement' },
+        jp: { title: '全顎インプラント（レントゲン）', description: '全顎インプラント埋入前後のレントゲン比較' },
+        cn: { title: '全口种植（X光）', description: '全口种植体植入前后X光对比' }
       }
     },
     {
-      beforeImage: '/images/cases/implant-new/all-teeth/female-60-before.jpg',
-      afterImage: '/images/cases/implant-new/all-teeth/female-60-after.jpg',
-      title: '60대 여성 - 전체 임플란트',
-      description: '치주염으로 치아 대부분을 잃어 틀니를 사용하던 60대 여성. 디지털 가이드 수술로 8개 임플란트에 전체 치아 연결, 틀니 불편함에서 해방',
+      beforeImage: '/임상사진/박균조_전악임플란트/박균조_전체임플란트_실제사진_before.jpg',
+      afterImage: '/임상사진/박균조_전악임플란트/박균조_전체임플란트_실제사진_after.jpg',
+      title: '전체 임플란트 (실제사진)',
+      description: '전악 임플란트 보철 장착 전후 비교',
       translations: {
-        en: { title: 'Female 60s - Full Mouth Implant', description: 'Female in her 60s who lost most teeth to periodontitis and used dentures. 8 implants with full teeth using digital guided surgery, freed from denture discomfort' },
-        jp: { title: '60代女性 - 全顎インプラント', description: '歯周炎でほとんどの歯を失い入れ歯を使用していた60代女性。デジタルガイド手術で8本のインプラントに全歯を連結、入れ歯の不快感から解放' },
-        cn: { title: '60岁女性 - 全口种植', description: '因牙周炎失去大部分牙齿使用假牙的60岁女性。数字导板手术8颗种植体连接全口牙齿，告别假牙不适' }
+        en: { title: 'Full mouth implant (clinical photo)', description: 'Before and after full mouth implant prosthetic placement' },
+        jp: { title: '全顎インプラント（実際写真）', description: '全顎インプラント補綴装着前後の比較' },
+        cn: { title: '全口种植（实拍照片）', description: '全口种植修复体安装前后对比' }
       }
     }
   ],
 
-  // 앞니 다수 임플란트
+  // 앞니 다수 임플란트 - 실제 임상사진
   implant_front_multiple: [
     {
-      beforeImage: '/images/cases/implant-new/front-teeth/female-upper-before.jpg',
-      intermediateImage: '/images/cases/implant-new/front-teeth/female-upper-same-day.jpg',
-      intermediateLabel: '수술 당일 임시치아',
-      afterImage: '/images/cases/implant-new/front-teeth/female-upper-after.jpg',
-      title: '여성 상악 앞니 - 다수 임플란트',
-      description: '앞니가 심하게 변색되고 충치로 검게 변한 부분이 있던 환자. 손상된 앞니들을 발치 후 임플란트로 밝고 균일한 앞니 완성',
+      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_before.jpg',
+      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_after.jpg',
+      title: '어금니 임플란트 (엑스레이)',
+      description: '어금니 다수 임플란트 식립 전후 엑스레이 비교',
       translations: {
-        en: { title: 'Female Upper Front Teeth - Multiple Implants', description: 'Patient with severely discolored front teeth and dark cavities. Extracted damaged teeth and completed bright, uniform implants' },
-        jp: { title: '女性上顎前歯 - 複数インプラント', description: '前歯がひどく変色し虫歯で黒くなった部分があった患者。損傷した前歯を抜歯後インプラントで明るく均一な前歯を完成' },
-        cn: { title: '女性上颌前牙 - 多颗种植', description: '门牙严重变色且有龋齿变黑的患者。拔除受损门牙后通过种植完成明亮均匀的前牙' }
+        en: { title: 'Molar implant (X-ray)', description: 'Before and after X-ray comparison of multiple molar implant placement' },
+        jp: { title: '奥歯インプラント（レントゲン）', description: '奥歯多数インプラント埋入前後のレントゲン比較' },
+        cn: { title: '磨牙种植体（X光）', description: '磨牙多颗种植体植入前后X光对比' }
       }
     },
     {
-      beforeImage: '/images/cases/implant-new/front-teeth/male-upper-before.jpg',
-      afterImage: '/images/cases/implant-new/front-teeth/male-upper-after.jpg',
-      title: '남성 상악 앞니 임플란트',
-      description: '신경치료 받은 앞니가 부러져 발치 후 임플란트 1개 식립. X-ray에서 자연치아와 구분 안 되는 자연스러운 결과',
+      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_before.jpg',
+      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_after.jpg',
+      title: '어금니 임플란트 (실제사진)',
+      description: '어금니 임플란트 보철 장착 전후 비교',
       translations: {
-        en: { title: 'Male Upper Front Tooth Implant', description: 'Front tooth with root canal broke and was extracted, then 1 implant placed. Natural result indistinguishable from natural teeth on X-ray' },
-        jp: { title: '男性上顎前歯インプラント', description: '根管治療を受けた前歯が折れて抜歯後インプラント1本埋入。X-rayで天然歯と区別がつかない自然な結果' },
-        cn: { title: '男性上颌前牙种植', description: '经过根管治疗的门牙折断拔除后植入1颗种植体。X光片上与天然牙无法区分的自然效果' }
+        en: { title: 'Molar implant (clinical photo)', description: 'Before and after molar implant prosthetic placement' },
+        jp: { title: '奥歯インプラント（実際写真）', description: '奥歯インプラント補綴装着前後の比較' },
+        cn: { title: '磨牙种植体（实拍照片）', description: '磨牙种植体修复体安装前后对比' }
       }
     }
   ],
 
-  // 어금니 다수 임플란트
+  // 어금니 다수 임플란트 - 실제 임상사진
   implant_back_multiple: [
     {
-      beforeImage: '/images/cases/implant-new/molar/drinking-smoking-before.jpg',
-      afterImage: '/images/cases/implant-new/molar/drinking-smoking-after.jpg',
-      title: '어금니 다수 임플란트 - 음주/흡연 환자',
-      description: '상하악 양쪽 어금니가 거의 없어 씹기 힘들었던 환자. 상악 8개, 하악 4개 총 12개 임플란트로 완전한 저작력 회복',
+      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_before.jpg',
+      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_after.jpg',
+      title: '어금니 임플란트 (엑스레이)',
+      description: '어금니 다수 임플란트 식립 전후 엑스레이 비교',
       translations: {
-        en: { title: 'Multiple Molar Implants - Smoking/Drinking Patient', description: 'Patient who had difficulty chewing with almost no molars on both sides. 8 upper + 4 lower = 12 implants restored full chewing function' },
-        jp: { title: '複数奥歯インプラント - 飲酒/喫煙患者', description: '上下顎両側の奥歯がほとんどなく噛めなかった患者。上顎8本、下顎4本の計12本インプラントで完全な咀嚼力回復' },
-        cn: { title: '多颗磨牙种植 - 饮酒/吸烟患者', description: '上下颌两侧磨牙几乎没有难以咀嚼的患者。上颌8颗+下颌4颗共12颗种植体完全恢复咀嚼功能' }
+        en: { title: 'Molar implant (X-ray)', description: 'Before and after X-ray comparison of multiple molar implant placement' },
+        jp: { title: '奥歯インプラント（レントゲン）', description: '奥歯多数インプラント埋入前後のレントゲン比較' },
+        cn: { title: '磨牙种植体（X光）', description: '磨牙多颗种植体植入前后X光对比' }
       }
     },
     {
-      beforeImage: '/images/cases/implant-new/molar/bad-gums-before.jpg',
-      afterImage: '/images/cases/implant-new/molar/bad-gums-after.jpg',
-      title: '어금니 다수 임플란트 - 잇몸질환 환자',
-      description: '상악 양쪽 어금니 대부분 상실된 상태. 상악 6개, 하악 4개 총 10개 임플란트로 양쪽 씹는 힘 균형있게 회복',
+      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_before.jpg',
+      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_after.jpg',
+      title: '어금니 임플란트 (실제사진)',
+      description: '어금니 임플란트 보철 장착 전후 비교',
       translations: {
-        en: { title: 'Multiple Molar Implants - Gum Disease Patient', description: 'Most upper molars on both sides were missing. 6 upper + 4 lower = 10 implants restored balanced chewing on both sides' },
-        jp: { title: '複数奥歯インプラント - 歯周病患者', description: '上顎両側の奥歯がほとんど失われた状態。上顎6本、下顎4本の計10本インプラントで両側の噛む力をバランスよく回復' },
-        cn: { title: '多颗磨牙种植 - 牙龈疾病患者', description: '上颌两侧大部分磨牙缺失。上颌6颗+下颌4颗共10颗种植体均衡恢复双侧咀嚼力' }
+        en: { title: 'Molar implant (clinical photo)', description: 'Before and after molar implant prosthetic placement' },
+        jp: { title: '奥歯インプラント（実際写真）', description: '奥歯インプラント補綴装着前後の比較' },
+        cn: { title: '磨牙种植体（实拍照片）', description: '磨牙种植体修复体安装前后对比' }
       }
     }
   ],
 
-  // 임플란트 재수술
+  // 임플란트 재수술 - 실제 임상사진
   implant_revision: [
     {
-      beforeImage: '/images/cases/implant-new/revision/male-molar-before.jpg',
-      afterImage: '/images/cases/implant-new/revision/male-molar-after.jpg',
-      title: '임플란트 재수술 - 고난이도 케이스',
-      description: '상악 8개, 하악 2개 총 10개 임플란트가 있는 복잡한 구강에서 문제 발생. 기존 보철물 구조 유지하며 정밀하게 재수술 완료 (세계구강임플란트학회 이사 직접 시술)',
+      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_before.jpg',
+      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_after.jpg',
+      title: '어금니 임플란트 (엑스레이)',
+      description: '어금니 다수 임플란트 식립 전후 엑스레이 비교',
       translations: {
-        en: { title: 'Implant Revision - High Difficulty Case', description: 'Complex case with 10 implants (8 upper + 2 lower) requiring revision. Successfully completed precision revision while maintaining existing prosthetic structure (performed by World Implant Association Director)' },
-        jp: { title: 'インプラント再手術 - 高難度ケース', description: '上顎8本、下顎2本の計10本インプラントがある複雑な口腔で問題発生。既存の補綴物構造を維持しながら精密に再手術完了（世界口腔インプラント学会理事が直接施術）' },
-        cn: { title: '种植体翻修 - 高难度病例', description: '上颌8颗+下颌2颗共10颗种植体的复杂口腔出现问题。在保持现有修复体结构的同时精密完成翻修（世界口腔种植学会理事亲自手术）' }
+        en: { title: 'Molar implant (X-ray)', description: 'Before and after X-ray comparison of multiple molar implant placement' },
+        jp: { title: '奥歯インプラント（レントゲン）', description: '奥歯多数インプラント埋入前後のレントゲン比較' },
+        cn: { title: '磨牙种植体（X光）', description: '磨牙多颗种植体植入前后X光对比' }
+      }
+    },
+    {
+      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_before.jpg',
+      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_after.jpg',
+      title: '어금니 임플란트 (실제사진)',
+      description: '어금니 임플란트 보철 장착 전후 비교',
+      translations: {
+        en: { title: 'Molar implant (clinical photo)', description: 'Before and after molar implant prosthetic placement' },
+        jp: { title: '奥歯インプラント（実際写真）', description: '奥歯インプラント補綴装着前後の比較' },
+        cn: { title: '磨牙种植体（实拍照片）', description: '磨牙种植体修复体安装前后对比' }
       }
     }
   ],
 
-  // 전체 임플란트 케이스 (All on X) - 새 이미지로 업데이트
+  // 전체 임플란트 케이스 (All on X) - 실제 임상사진
   all_on_x: [
     {
-      beforeImage: '/images/cases/implant-new/all-teeth/female-50-before.jpg',
-      intermediateImage: '/images/cases/implant-new/all-teeth/female-50-same-day.jpg',
-      intermediateLabel: '수술 당일 임시치아',
-      afterImage: '/images/cases/implant-new/all-teeth/female-50-after.jpg',
-      title: '디지털전체임플란트(All on X) - 50대 여성',
-      description: '거의 모든 치아가 흔들리고 잇몸 상태가 심각했던 50대 여성. 당일 수술 후 바로 임시치아 장착하여 이가 없는 기간 없이 식사 가능',
+      beforeImage: '/임상사진/박균조_전악임플란트/박균조_전체임플란트_엑스레이_before.jpg',
+      afterImage: '/임상사진/박균조_전악임플란트/박균조_전체임플란트_엑스레이_after.jpg',
+      title: '전체 임플란트 (엑스레이)',
+      description: '전악 임플란트 식립 전후 엑스레이 비교',
       translations: {
-        en: { title: 'Digital Full Implant (All on X) - Female 50s', description: 'Female in her 50s with almost all teeth loose and severe gum condition. Same-day temporary teeth after surgery, able to eat without any toothless period' },
-        jp: { title: 'デジタル全顎インプラント(All on X) - 50代女性', description: 'ほぼ全ての歯がぐらつき歯茎の状態が深刻だった50代女性。当日手術後すぐに仮歯装着、歯がない期間なく食事可能' },
-        cn: { title: '数字化全口种植(All on X) - 50岁女性', description: '几乎所有牙齿松动、牙龈状况严重的50岁女性。当天手术后立即戴临时牙，无缺牙期可进食' }
+        en: { title: 'Full mouth implant (X-ray)', description: 'Before and after X-ray comparison of full mouth implant placement' },
+        jp: { title: '全顎インプラント（レントゲン）', description: '全顎インプラント埋入前後のレントゲン比較' },
+        cn: { title: '全口种植（X光）', description: '全口种植体植入前后X光对比' }
       }
     },
     {
-      beforeImage: '/images/cases/implant-new/all-teeth/female-60-before.jpg',
-      afterImage: '/images/cases/implant-new/all-teeth/female-60-after.jpg',
-      title: '디지털전체임플란트(All on X) - 60대 여성',
-      description: '치주염으로 치아 대부분을 잃어 틀니를 사용하던 60대 여성. 디지털 가이드 수술로 8개 임플란트에 전체 치아 연결, 틀니 불편함에서 해방',
+      beforeImage: '/임상사진/박균조_전악임플란트/박균조_전체임플란트_실제사진_before.jpg',
+      afterImage: '/임상사진/박균조_전악임플란트/박균조_전체임플란트_실제사진_after.jpg',
+      title: '전체 임플란트 (실제사진)',
+      description: '전악 임플란트 보철 장착 전후 비교',
       translations: {
-        en: { title: 'Digital Full Implant (All on X) - Female 60s', description: 'Female in her 60s who lost most teeth to periodontitis and used dentures. 8 implants with full teeth using digital guided surgery, freed from denture discomfort' },
-        jp: { title: 'デジタル全顎インプラント(All on X) - 60代女性', description: '歯周炎でほとんどの歯を失い入れ歯を使用していた60代女性。デジタルガイド手術で8本のインプラントに全歯を連結、入れ歯の不快感から解放' },
-        cn: { title: '数字化全口种植(All on X) - 60岁女性', description: '因牙周炎失去大部分牙齿使用假牙的60岁女性。数字导板手术8颗种植体连接全口牙齿，告别假牙不适' }
+        en: { title: 'Full mouth implant (clinical photo)', description: 'Before and after full mouth implant prosthetic placement' },
+        jp: { title: '全顎インプラント（実際写真）', description: '全顎インプラント補綴装着前後の比較' },
+        cn: { title: '全口种植（实拍照片）', description: '全口种植修复体安装前后对比' }
       }
     }
   ],

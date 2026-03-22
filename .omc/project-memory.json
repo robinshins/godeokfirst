@@ -168,6 +168,30 @@
   },
   "hotPaths": [
     {
+      "path": "src/components/whitening/CaseStudySection.tsx",
+      "accessCount": 8,
+      "lastAccessed": 1774197077083,
+      "type": "file"
+    },
+    {
+      "path": "src/components/implant/BeforeAfterSection.tsx",
+      "accessCount": 6,
+      "lastAccessed": 1774197045104,
+      "type": "file"
+    },
+    {
+      "path": "src/components/denture/BeforeAfterSection.tsx",
+      "accessCount": 5,
+      "lastAccessed": 1774197056131,
+      "type": "file"
+    },
+    {
+      "path": "src/components/cavity-treatment/CasesSection.tsx",
+      "accessCount": 5,
+      "lastAccessed": 1774197108362,
+      "type": "file"
+    },
+    {
       "path": "src/app/implant/page.tsx",
       "accessCount": 4,
       "lastAccessed": 1774191358661,
@@ -201,6 +225,246 @@
       "path": "src/lib/schema.ts",
       "accessCount": 2,
       "lastAccessed": 1774191378698,
+      "type": "file"
+    },
+    {
+      "path": "src/components/cavity-treatment/BeforeAfterSection.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1774191728150,
+      "type": "file"
+    },
+    {
+      "path": "src/components/gum-care/CaseStudiesSection.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1774191728785,
+      "type": "file"
+    },
+    {
+      "path": "src/lib/intent-analyzer.ts",
+      "accessCount": 2,
+      "lastAccessed": 1774194731600,
+      "type": "directory"
+    },
+    {
+      "path": "src/components/implant/RealPatientResultsSection.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774191574882,
+      "type": "file"
+    },
+    {
+      "path": "src/components/denture/RealPatientResultsSection.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774191575258,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/이영주_임플란트/이영주_20250520_120032.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191612518,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/이영주_임플란트/이영주_20251028_110154.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191612570,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/이영주_임플란트/이영주_20251028_110155.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191613383,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/이영주_임플란트/이영주_20251028_110156.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191613692,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/이영주_임플란트/이영주_20251028_110157.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191614524,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/이영주_임플란트/이영주_20260311_101017.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191614996,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/이영주_임플란트/이영주_20260311_101018.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191615435,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/이영주_임플란트/이영주_20260311_101019.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191615926,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/이영주_임플란트/이영주_20260311_101021.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191616358,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/지종환_임플란트/지종환_20240208_100445.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191650243,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/지종환_임플란트/지종환_20240208_102140.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191650677,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/지종환_임플란트/지종환_20250305_160724.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191651593,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/지종환_임플란트/지종환_20260127_115507.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191651913,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/지종환_임플란트/지종환_20260309_142302.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191652345,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/지종환_임플란트/지종환_20260309_142303.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191652829,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/지종환_임플란트/지종환_20260309_142304.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191653511,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/지종환_임플란트/지종환_20260309_142306.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191653940,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/박균조_전악임플란트/박균조_20240823_152751.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191664446,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/박균조_전악임플란트/박균조_20240904_140351.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191665395,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/박균조_전악임플란트/박균조_20240910_152727.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191666294,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/박균조_전악임플란트/박균조_20240910_182133.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191666674,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/박균조_전악임플란트/박균조_20251201_161954.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191667649,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/박균조_전악임플란트/박균조_20251201_161955.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191668118,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/박균조_전악임플란트/박균조_20251201_162001.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191669034,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/박균조_전악임플란트/박균조_20251201_162003.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191669306,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/미백/양해영_20250811_182537.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191685484,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/미백/양해영_20250811_192233.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191685944,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/안동건_미백/안동건_20240517_175931.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191687335,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/안동건_미백/안동건_20240531_115036.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191688256,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/충치/김효연_20260126_154927.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191689861,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/충치/김효연_20260126_161421.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191690290,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/충치-1/방준영_20251129_111700.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191690342,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/충치-1/방준영_20251203_113343.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191690608,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/크랙/김고운_20250917_153132.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191690949,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/크랙/김고운_20251222_175117.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774191691536,
       "type": "file"
     }
   ],

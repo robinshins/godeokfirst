@@ -10,92 +10,36 @@ export default function BeforeAfterSection() {
   // 구강재건 케이스 (고난도)
   const reconstructionCases = [
     {
-      name: '송●●',
-      gender: '70대 남성',
-      type: '전악 구강재건',
-      beforeImage: '/images/cases/oral-reconstruction/implant-prosthetics-before-photo.jpg',
-      afterImage: '/images/cases/oral-reconstruction/implant-prosthetics-after-photo.jpg'
+      name: '지●●',
+      gender: '남성',
+      type: '다수 임플란트 · 엑스레이',
+      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_before.jpg',
+      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_after.jpg'
     },
     {
-      name: '오●●',
-      gender: '60대 남성',
-      type: '전악 구강재건',
-      beforeImage: '/images/cases/oral-reconstruction/implant-prosthetics-before-photo-2.jpg',
-      afterImage: '/images/cases/oral-reconstruction/implant-prosthetics-after-photo-2.jpg'
-    },
-    {
-      name: '서●●',
-      gender: '60대 여성',
-      type: '전악 구강재건',
-      beforeImage: '/images/cases/oral-reconstruction/before-panorama-1.jpg',
-      afterImage: '/images/cases/oral-reconstruction/after-panorama-1.jpg'
+      name: '지●●',
+      gender: '남성',
+      type: '다수 임플란트 · 실제사진',
+      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_before.jpg',
+      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_after.jpg'
     }
   ];
 
   // 임플란트 케이스
   const implantCases = [
     {
-      name: '김●●',
-      gender: '50대 여성',
-      type: '앞니 임플란트',
-      beforeImage: '/images/cases/implant/front-teeth-before-panorama.jpg',
-      afterImage: '/images/cases/implant/front-teeth-after-panorama.jpg'
+      name: '지●●',
+      gender: '남성',
+      type: '임플란트 보철 · 엑스레이',
+      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_before.jpg',
+      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_after.jpg'
     },
     {
-      name: '이●●',
-      gender: '60대 남성',
-      type: '앞니 임플란트',
-      beforeImage: '/images/cases/implant/front-teeth-before-panorama-2.jpg',
-      afterImage: '/images/cases/implant/front-teeth-after-panorama-2.jpg'
-    },
-    {
-      name: '박●●',
-      gender: '50대 남성',
-      type: '어금니 임플란트',
-      beforeImage: '/images/cases/implant/molar-before.jpg',
-      afterImage: '/images/cases/implant/molar-after.jpg'
-    },
-    {
-      name: '최●●',
-      gender: '60대 여성',
-      type: '어금니 임플란트',
-      beforeImage: '/images/cases/implant/molar-before-2.jpg',
-      afterImage: '/images/cases/implant/molar-after-2.jpg'
-    },
-    {
-      name: '정●●',
-      gender: '60대 남성',
-      type: '상악동거상술 임플란트',
-      beforeImage: '/images/cases/implant/sinus-lift-before.jpg',
-      afterImage: '/images/cases/implant/sinus-lift-after.jpg'
-    },
-    {
-      name: '한●●',
-      gender: '70대 여성',
-      type: '상악동거상술 임플란트',
-      beforeImage: '/images/cases/implant/sinus-lift-before-2.jpg',
-      afterImage: '/images/cases/implant/sinus-lift-after-2.jpg'
-    },
-    {
-      name: '윤●●',
-      gender: '50대 남성',
-      type: '타병원 실패 임플란트 재수술',
-      beforeImage: '/images/cases/implant/failed-revision-before-panorama.jpg',
-      afterImage: '/images/cases/implant/failed-revision-after-panorama.jpg'
-    },
-    {
-      name: '강●●',
-      gender: '60대 여성',
-      type: '타병원 불량 임플란트 재수술',
-      beforeImage: '/images/cases/implant/revision-molar-before-panorama.jpg',
-      afterImage: '/images/cases/implant/revision-molar-after-panorama.jpg'
-    },
-    {
-      name: '조●●',
-      gender: '50대 여성',
-      type: '타병원 부적합 보철 재수복',
-      beforeImage: '/images/cases/implant/wrong-restoration-before-panorama.jpg',
-      afterImage: '/images/cases/implant/wrong-restoration-after-panorama.jpg'
+      name: '지●●',
+      gender: '남성',
+      type: '임플란트 보철 · 실제사진',
+      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_before.jpg',
+      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_after.jpg'
     }
   ];
 

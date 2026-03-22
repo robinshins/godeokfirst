@@ -336,7 +336,6 @@ export async function POST(request: NextRequest) {
       questionCount = 0,
       answerHistory = [],
       language = 'ko',
-      sedationCardShown = false
     } = body as {
       messages: ChatMessage[];
       consultationTopic?: string;
@@ -345,7 +344,6 @@ export async function POST(request: NextRequest) {
       questionCount?: number;
       answerHistory?: Array<{ optionId: string; questionType: string; optionText: string }>;
       language?: 'ko' | 'en' | 'jp' | 'cn' | 'vi' | 'mn' | 'uz' | 'ru' | 'th';
-      sedationCardShown?: boolean;
     };
 
     console.log('📋 상담 주제:', consultationTopic);
@@ -405,91 +403,7 @@ export async function POST(request: NextRequest) {
     // 신경치료/충치 상담: 바로 최종 추천으로 이동
     // 기타 상담: 추가 질문 안내
     if (questionCount === 6) {
-      // Q5 응답 후 sedationCard 계산 (조기 반환 전에 먼저 계산)
-      // 주의: questionCount === 6일 때, answerHistory는 Q1-Q4만 포함하고 Q5 답변은 latestUserMessage에 있음
-      const q5AnswerText = (latestUserMessage || '').toLowerCase();
-      const isPainSelectedQ6 = q5AnswerText.includes('통증') || q5AnswerText.includes('공포') ||
-                               q5AnswerText.includes('pain') || q5AnswerText.includes('fear') ||
-                               q5AnswerText.includes('phobia') || q5AnswerText.includes('무서') ||
-                               q5AnswerText.includes('痛み') || q5AnswerText.includes('恐怖') ||
-                               q5AnswerText.includes('怖') || q5AnswerText.includes('疼痛') ||
-                               q5AnswerText.includes('恐惧') || q5AnswerText.includes('疼');
-
-      console.log('💤 [sedationCard Q6] Q5 응답 텍스트:', q5AnswerText);
-      console.log('💤 [sedationCard Q6] isPainSelectedQ6:', isPainSelectedQ6);
-
-      // Q4에서 이미 통증 선택했는지 확인 (중복 방지)
-      // answerHistory[3]이 Q4 답변 (인덱스 0=Q1, 1=Q2, 2=Q3, 3=Q4)
-      const alreadyShowedInQ4 = answerHistory.some(
-        (answer, idx) => idx === 3 && // Q4는 인덱스 3
-          (answer.optionText.includes('통증') || answer.optionText.includes('pain') ||
-           answer.optionText.includes('痛み') || answer.optionText.includes('疼痛'))
-      );
-      console.log('💤 [sedationCard Q6] alreadyShowedInQ4:', alreadyShowedInQ4);
-
-      let sedationCardQ6: SedationCard | undefined = undefined;
-      if (isPainSelectedQ6 && !alreadyShowedInQ4) {
-        const sedationTextsQ6 = {
-          ko: {
-            headerText: '자면서 치료받으세요!',
-            emphasisText: '공포 때문에 치료 못 받고 가신 분이 없습니다!',
-            highlights: ['수면치료로 통증 없이 편안하게 받으실 수 있어요', '시술 후 불편한 기억이 남지 않아요', '전문 자격증 보유 의료진이 안전하게 진행해요']
-          },
-          en: {
-            headerText: 'Sleep through your treatment!',
-            emphasisText: 'No one has ever left without treatment due to fear!',
-            highlights: ['Safe treatment while conscious', 'Only comfortable memories remain', 'Certified medical professionals']
-          },
-          jp: {
-            headerText: '眠りながら治療を受けましょう！',
-            emphasisText: '恐怖で治療を受けられなかった方はいません！',
-            highlights: ['意識がある状態で安全に施術', '施術後は快適な記憶だけが残る', '専門資格を持つ医療スタッフ']
-          },
-          cn: {
-            headerText: '睡眠中完成治疗！',
-            emphasisText: '从未有人因恐惧而放弃治疗！',
-            highlights: ['在有意识的状态下安全治疗', '术后只留下舒适的记忆', '持有专业资格证书的医疗团队']
-          },
-          vi: {
-            headerText: 'Điều trị trong khi ngủ!',
-            emphasisText: 'Chưa ai từ bỏ điều trị vì sợ hãi!',
-            highlights: ['Điều trị an toàn trong trạng thái có ý thức', 'Chỉ còn lại những ký ức thoải mái', 'Đội ngũ y tế có chứng chỉ chuyên môn']
-          },
-          mn: {
-            headerText: 'Унтаж байхдаа эмчлүүлээрэй!',
-            emphasisText: 'Айдсаас болж эмчлүүлэхээ болих хүн байгаагүй!',
-            highlights: ['Ухамсартай байдлаар аюулгүй эмчилгээ', 'Зөвхөн тухтай дурсамжууд үлдэнэ', 'Мэргэжлийн гэрчилгээтэй эмч нар']
-          },
-          uz: {
-            headerText: 'Uxlab yotganingizda davolanish!',
-            emphasisText: 'Qo\'rquv tufayli davolanishdan voz kechgan hech kim yo\'q!',
-            highlights: ['Hushyor holatda xavfsiz davolash', 'Faqat qulay xotiralar qoladi', 'Sertifikatlangan tibbiy mutaxassislar']
-          },
-          ru: {
-            headerText: 'Лечение во сне!',
-            emphasisText: 'Никто не отказался от лечения из-за страха!',
-            highlights: ['Безопасное лечение в сознании', 'Остаются только комфортные воспоминания', 'Сертифицированные медицинские специалисты']
-          },
-          th: {
-            headerText: 'รักษาในขณะหลับ!',
-            emphasisText: 'ไม่มีใครละทิ้งการรักษาเพราะความกลัว!',
-            highlights: ['การรักษาอย่างปลอดภัยในสภาวะมีสติ', 'เหลือเพียงความทรงจำที่สบาย', 'ทีมแพทย์ที่มีใบรับรองวิชาชีพ']
-          }
-        };
-        const textsQ6 = sedationTextsQ6[language] || sedationTextsQ6.ko;
-        sedationCardQ6 = {
-          show: true,
-          images: [
-            { src: '/images/monitoring-equipment.jpg', alt: '환자 모니터링 장비', title: '환자 모니터링 장비' },
-            { src: '/images/sedation-dental-cpr.png', alt: '치과 전문 소생술 자격증', title: '치과 전문 소생술 자격증' },
-            { src: '/images/sedation-certificate-overseas.png', alt: '전문 교육 이수 자격증', title: '전문 교육 이수 자격증' }
-          ],
-          highlights: textsQ6.highlights,
-          headerText: textsQ6.headerText,
-          emphasisText: textsQ6.emphasisText
-        };
-        console.log('💤 [sedationCard] Q5(questionCount=6)에서 통증/공포 선택 - 의식하진정요법 카드 표시 (조기반환 경로)');
-      }
+      const sedationCardQ6: SedationCard | undefined = undefined;
 
       // 모든 상담에서 Q6 응답 후 바로 최종 추천으로 이동
       const skipAdditionalQuestion = true;
@@ -601,66 +515,7 @@ export async function POST(request: NextRequest) {
 
         // 추천된 치료에 따라 영상 iframe 선택
         const videoIframesQ6: string[] = [];
-        if (treatments.includes('all_on_x')) {
-          videoIframesQ6.push(
-            '<iframe src="https://www.youtube.com/embed/9kP02X04THc" allowfullscreen></iframe>',
-            '<iframe src="https://www.youtube.com/embed/GyzFVUfRqmk" allowfullscreen></iframe>',
-            '<iframe src="https://www.youtube.com/embed/wZYlF4IJYd4" allowfullscreen></iframe>'
-          );
-          console.log('📹 [questionCount 6] 전체 임플란트 영상 3개 추가');
-        } else if (treatments.includes('whitening') || treatments.includes('laminate')) {
-          // 심미치료 (미백/라미네이트): 1개 영상
-          videoIframesQ6.push('<iframe src="https://www.youtube.com/embed/4hJI8OteG3Q" allowfullscreen></iframe>');
-          console.log('📹 [questionCount 6] 심미치료(미백/라미네이트) 영상 1개 추가');
-
-          // 미백 케이스: AI 응답 + 오스템 미백제 어필 문구 추가
-          if (treatments.includes('whitening')) {
-            const whiteningAppeal = `
-
----
-
-## 🦷 고덕퍼스트치과 전문가 미백
-
-### 최고급 오스템 뷰티스 미백 시스템
-- **국내 1위 임플란트 기업 오스템**의 검증된 프리미엄 미백제
-- 식약처 허가 고농도 미백 젤 사용
-- 잇몸 보호 + 시린 증상 최소화 기술 적용
-
-### 미백 치료 차별점
-✅ **전문의 직접 시술** - 안전하고 균일한 미백 효과
-✅ **1회 시술로 2~3톤 개선** - 즉각적인 효과 확인
-✅ **사후관리 프로그램** - 미백 후 시린 증상 케어
-
-### 🎁 원데이 미백 이벤트
-**전문가미백 1회 4.9만원** (정가 15만원)
-- 당일 시술 완료
-- 바쁜 일정에도 부담 없이
-
-> 💡 정확한 진단과 맞춤 상담을 위해 **무료 상담 예약**을 권해드립니다!`;
-
-            finalMessage = finalMessage + whiteningAppeal;
-            console.log('✨ [questionCount 6] 미백 어필 문구 추가 완료');
-          }
-        } else if (treatments.some(t => t.includes('wisdom_tooth'))) {
-          videoIframesQ6.push('<iframe src="https://www.youtube.com/embed/SmjM0-MCGX4" allowfullscreen></iframe>');
-          console.log('📹 [questionCount 6] 사랑니 영상 1개 추가');
-        } else if (treatments.includes('nerve_treatment') || treatments.includes('cavity')) {
-          videoIframesQ6.push('<iframe src="https://www.youtube.com/embed/pSSexzE2wXY" allowfullscreen></iframe>');
-          videoIframesQ6.push('<iframe src="https://www.youtube.com/embed/tUYS2ov5C9w" allowfullscreen></iframe>');
-          console.log('📹 [questionCount 6] 충치/신경치료 영상 2개 추가');
-        } else if (treatments.includes('gum_care') || treatments.includes('scaling')) {
-          videoIframesQ6.push('<iframe src="https://www.youtube.com/embed/m9GC1rlL-vE" allowfullscreen></iframe>');
-          console.log('📹 [questionCount 6] 잇몸치료/스케일링 영상 1개 추가');
-        } else if (treatments.some(t => t.includes('implant') || t === 'digital_implant')) {
-          videoIframesQ6.push('<iframe src="https://www.youtube.com/embed/9kP02X04THc" allowfullscreen></iframe>');
-          console.log('📹 [questionCount 6] 일반 임플란트 영상 1개 추가');
-        }
-
-        // 💤 수면 카드가 표시된 경우 수면치료 영상 추가 (현재 또는 이전 요청에서)
-        if (sedationCardQ6 || sedationCardShown) {
-          videoIframesQ6.push('<iframe src="https://www.youtube.com/embed/WB3M_Uw5X_s" allowfullscreen></iframe>');
-          console.log('📹 [questionCount 6] 수면치료(의식하진정) 영상 추가 - sedationCardQ6:', !!sedationCardQ6, 'sedationCardShown:', sedationCardShown);
-        }
+        // YouTube 영상 제거됨
 
         return NextResponse.json({
           content: finalMessage,
@@ -1151,7 +1006,7 @@ message maydonida yuqoridagi 'Javobga mos javob qo'llanmasi'ga murojaat qiling v
     const videoIframes: string[] = [];
     let isRecommendation = false;
     let displayMessage = assistantMessage; // 사용자에게 보여줄 메시지
-    let sedationCard: SedationCard | undefined = undefined;
+    const sedationCard: SedationCard | undefined = undefined;
 
     // 심미 상담 전용 변수
     let doctorCredentialCard: DoctorCredentialCard | undefined = undefined;
@@ -1159,254 +1014,11 @@ message maydonida yuqoridagi 'Javobga mos javob qo'llanmasi'ga murojaat qiling v
     let cosmeticPath: 'whitening' | 'laminate' | undefined = undefined;
     let skipPhoneOption: boolean | undefined = undefined;
 
-    // Q4/Q5에서 통증 선택 시 의식하진정요법 카드 표시
-    // Q4에서 이미 표시했으면 Q5에서 중복 표시 안 함
-    // 프론트엔드에서 questionCount+1로 전송하므로: Q4 답변 시 questionCount=5, Q5 답변 시 questionCount=6
 
-    // Q4 답변 체크 (questionCount=5일 때 answerHistory의 마지막이 Q4)
+    // Q4/Q5 답변 텍스트 (비용 카드 등에서 사용)
     const q4Answer = answerHistory.length > 0 ? answerHistory[answerHistory.length - 1] : null;
     const q4AnswerText = q4Answer?.optionText || '';
-    const isPainSelectedQ4 = q4AnswerText.includes('통증') || q4AnswerText.includes('공포') ||
-                             q4AnswerText.includes('pain') || q4AnswerText.includes('fear') ||
-                             q4AnswerText.includes('痛み') || q4AnswerText.includes('恐怖') ||
-                             q4AnswerText.includes('疼痛') || q4AnswerText.includes('恐惧');
-
-    // Q5 답변 체크 (questionCount=6일 때, Q5 답변은 latestUserMessage에 있음 - answerHistory에는 아직 추가 안 됨)
     const q5AnswerTextForCard = (latestUserMessage || '').toLowerCase();
-    const isPainSelectedQ5 = q5AnswerTextForCard.includes('통증') || q5AnswerTextForCard.includes('공포') ||
-                             q5AnswerTextForCard.includes('pain') || q5AnswerTextForCard.includes('fear') ||
-                             q5AnswerTextForCard.includes('phobia') || q5AnswerTextForCard.includes('무서') ||
-                             q5AnswerTextForCard.includes('痛み') || q5AnswerTextForCard.includes('恐怖') ||
-                             q5AnswerTextForCard.includes('怖') || q5AnswerTextForCard.includes('疼痛') ||
-                             q5AnswerTextForCard.includes('恐惧') || q5AnswerTextForCard.includes('疼');
-
-    // 사랑니 상담에서 '두려움' 또는 '공포증' 선택 체크
-    const isWisdomToothConsultation = consultationTopic?.toLowerCase().includes('사랑니') ||
-                                       consultationTopic?.toLowerCase().includes('wisdom');
-    const isFearSelectedWisdom = q5AnswerTextForCard.includes('두려움') || q5AnswerTextForCard.includes('fear') ||
-                                  q5AnswerTextForCard.includes('무서') || q5AnswerTextForCard.includes('恐怖') ||
-                                  q5AnswerTextForCard.includes('恐惧') ||
-                                  q5AnswerTextForCard.includes('공포증') || q5AnswerTextForCard.includes('phobia') ||
-                                  q5AnswerTextForCard.includes('치과 공포');
-
-    // Q4에서 이미 통증 선택했는지 확인 (Q5에서 중복 방지용)
-    // answerHistory에서 인덱스 3이 Q4 답변 (0=Q1, 1=Q2, 2=Q3, 3=Q4)
-    const alreadyShowedSedationInQ4 = answerHistory.some(
-      (answer, idx) => idx === 3 && // Q4는 인덱스 3 (0부터 시작)
-        (answer.optionText.includes('통증') || answer.optionText.includes('pain') ||
-         answer.optionText.includes('痛み') || answer.optionText.includes('疼痛'))
-    );
-
-    // 사랑니 상담에서 이미 두려움/공포증 선택했는지 확인 (중복 방지)
-    // 현재 답변(마지막 항목)은 제외하고 이전 답변만 체크
-    const previousAnswers = answerHistory.slice(0, -1);
-    const alreadyShowedSedationForFear = previousAnswers.some(
-      (answer) => answer.optionText.includes('두려움') || answer.optionText.includes('fear') ||
-                  answer.optionText.includes('무서') || answer.optionText.includes('恐怖') ||
-                  answer.optionText.includes('공포증') || answer.optionText.includes('phobia') ||
-                  answer.optionText.includes('치과 공포')
-    );
-
-    console.log('💤 [sedationCard 메인] questionCount:', questionCount);
-    console.log('💤 [sedationCard 메인] Q4 답변:', q4AnswerText, '- isPainSelectedQ4:', isPainSelectedQ4);
-    console.log('💤 [sedationCard 메인] Q5 답변 (latestUserMessage):', q5AnswerTextForCard, '- isPainSelectedQ5:', isPainSelectedQ5);
-    console.log('💤 [sedationCard 메인] alreadyShowedSedationInQ4:', alreadyShowedSedationInQ4);
-    console.log('💤 [sedationCard 메인] 사랑니 상담:', isWisdomToothConsultation, '- 두려움 선택:', isFearSelectedWisdom);
-    console.log('💤 [sedationCard 메인] 이전 답변에서 두려움 선택 여부:', alreadyShowedSedationForFear);
-
-    // Q4 또는 Q5에서 통증/공포 선택 시 카드 표시 (중복 방지)
-    // questionCount=5는 Q4 답변 후, questionCount=6은 Q5 답변 후
-    // 주의: Q4에서 표시했으면 Q5에서는 표시 안 함
-    // 사랑니 상담: '두려움' 선택 시에도 카드 표시
-    const shouldShowSedationCard =
-      (questionCount === 5 && isPainSelectedQ4) ||  // Q4에서 통증 선택 시
-      (questionCount === 6 && isPainSelectedQ5 && !alreadyShowedSedationInQ4) ||  // Q5에서 통증 선택 시 (Q4에서 안 보여줬을 경우만)
-      (isWisdomToothConsultation && isFearSelectedWisdom && !alreadyShowedSedationForFear);  // 사랑니 상담에서 두려움 선택 시
-
-    if (shouldShowSedationCard) {
-      const sedationTexts = {
-        ko: {
-          headerText: '자면서 치료받으세요!',
-          emphasisText: '공포 때문에 치료 못 받고 가신 분이 없습니다!',
-          highlights: [
-            '수면치료로 통증 없이 편안하게 받으실 수 있어요',
-            '시술 후 불편한 기억이 남지 않아요',
-            '전문 자격증 보유 의료진이 안전하게 진행해요'
-          ]
-        },
-        en: {
-          headerText: 'Sleep through your treatment!',
-          emphasisText: 'No one has ever left without treatment due to fear!',
-          highlights: [
-            'Safe treatment while conscious',
-            'Only comfortable memories remain',
-            'Certified medical professionals'
-          ]
-        },
-        jp: {
-          headerText: '眠りながら治療を受けましょう！',
-          emphasisText: '恐怖で治療を受けられなかった方はいません！',
-          highlights: [
-            '意識がある状態で安全に施術',
-            '施術後は快適な記憶だけが残る',
-            '専門資格を持つ医療スタッフ'
-          ]
-        },
-        cn: {
-          headerText: '睡眠中完成治疗！',
-          emphasisText: '从未有人因恐惧而放弃治疗！',
-          highlights: [
-            '在有意识的状态下安全治疗',
-            '术后只留下舒适的记忆',
-            '持有专业资格证书的医疗团队'
-          ]
-        },
-        vi: {
-          headerText: 'Điều trị trong khi ngủ!',
-          emphasisText: 'Chưa ai từ bỏ điều trị vì sợ hãi!',
-          highlights: [
-            'Điều trị an toàn trong trạng thái có ý thức',
-            'Chỉ còn lại những ký ức thoải mái',
-            'Đội ngũ y tế có chứng chỉ chuyên môn'
-          ]
-        },
-        mn: {
-          headerText: 'Унтаж байхдаа эмчлүүлээрэй!',
-          emphasisText: 'Айдсаас болж эмчлүүлэхээ болих хүн байгаагүй!',
-          highlights: [
-            'Ухамсартай байдлаар аюулгүй эмчилгээ',
-            'Зөвхөн тухтай дурсамжууд үлдэнэ',
-            'Мэргэжлийн гэрчилгээтэй эмч нар'
-          ]
-        },
-        uz: {
-          headerText: 'Uxlab yotganingizda davolanish!',
-          emphasisText: 'Qo\'rquv tufayli davolanishdan voz kechgan hech kim yo\'q!',
-          highlights: [
-            'Hushyor holatda xavfsiz davolash',
-            'Faqat qulay xotiralar qoladi',
-            'Sertifikatlangan tibbiy mutaxassislar'
-          ]
-        },
-        ru: {
-          headerText: 'Лечение во сне!',
-          emphasisText: 'Никто не отказался от лечения из-за страха!',
-          highlights: [
-            'Безопасное лечение в сознании',
-            'Остаются только комфортные воспоминания',
-            'Сертифицированные медицинские специалисты'
-          ]
-        },
-        th: {
-          headerText: 'รักษาในขณะหลับ!',
-          emphasisText: 'ไม่มีใครละทิ้งการรักษาเพราะความกลัว!',
-          highlights: [
-            'การรักษาอย่างปลอดภัยในสภาวะมีสติ',
-            'เหลือเพียงความทรงจำที่สบาย',
-            'ทีมแพทย์ที่มีใบรับรองวิชาชีพ'
-          ]
-        }
-      };
-
-      const texts = sedationTexts[language] || sedationTexts.ko;
-
-      sedationCard = {
-        show: true,
-        images: [
-          { src: '/images/monitoring-equipment.jpg', alt: '환자 모니터링 장비', title: '환자 모니터링 장비' },
-          { src: '/images/sedation-dental-cpr.png', alt: '치과 전문 소생술 자격증', title: '치과 전문 소생술 자격증' },
-          { src: '/images/sedation-certificate-overseas.png', alt: '전문 교육 이수 자격증', title: '전문 교육 이수 자격증' }
-        ],
-        highlights: texts.highlights,
-        headerText: texts.headerText,
-        emphasisText: texts.emphasisText
-      };
-      // questionCount=5는 실제 Q4, questionCount=6은 실제 Q5
-      const actualQuestion = questionCount === 5 ? 'Q4' : 'Q5';
-      console.log('💤 [sedationCard] ' + actualQuestion + '(questionCount=' + questionCount + ')에서 통증/공포 선택 - 의식하진정요법 카드 표시');
-    }
-
-    // 💤 직접 입력으로 수면치료 관련 언급 시 의식하진정 카드 표시
-    const sedationKeywords = [
-      // 한국어
-      '수면치료', '수면마취', '의식하진정', '진정치료', '무통치료', '수면 치료', '수면 마취',
-      // 영어
-      'sedation', 'conscious sedation', 'sleep dentistry', 'iv sedation', 'painless',
-      // 일본어
-      '鎮静', '静脈内鎮静', '無痛治療', '睡眠歯科',
-      // 중국어
-      '镇静', '无痛', '睡眠治疗', '静脉镇静'
-    ];
-
-    const latestMessageLower = (latestUserMessage || '').toLowerCase();
-    const isSedationMentioned = sedationKeywords.some(keyword => latestMessageLower.includes(keyword.toLowerCase()));
-
-    if (isSedationMentioned && !sedationCard) {
-      console.log('💤 [sedationCard 직접입력] 수면치료 관련 키워드 감지:', latestUserMessage);
-
-      const sedationTextsDirectInput: Record<string, { headerText: string; emphasisText: string; highlights: string[] }> = {
-        ko: {
-          headerText: '자면서 치료받으세요!',
-          emphasisText: '공포 때문에 치료 못 받고 가신 분이 없습니다!',
-          highlights: ['의식이 있는 상태에서 안전하게 시술', '시술 후 편안한 기억만 남아요', '전문 자격증을 갖춘 의료진']
-        },
-        en: {
-          headerText: 'Get treated while you sleep!',
-          emphasisText: 'No one has ever left without treatment due to fear!',
-          highlights: ['Safe procedure while conscious', 'Only comfortable memories remain', 'Certified medical professionals']
-        },
-        ja: {
-          headerText: '眠りながら治療を受けましょう！',
-          emphasisText: '恐怖で治療を受けられなかった方はいません！',
-          highlights: ['意識がある状態で安全に施術', '施術後は快適な記憶だけが残る', '専門資格を持つ医療スタッフ']
-        },
-        cn: {
-          headerText: '睡眠中完成治疗！',
-          emphasisText: '从未有人因恐惧而放弃治疗！',
-          highlights: ['在有意识的状态下安全治疗', '术后只留下舒适的记忆', '持有专业资格证书的医疗团队']
-        },
-        vi: {
-          headerText: 'Điều trị trong khi ngủ!',
-          emphasisText: 'Chưa ai từ bỏ điều trị vì sợ hãi!',
-          highlights: ['Điều trị an toàn trong trạng thái có ý thức', 'Chỉ còn lại những ký ức thoải mái', 'Đội ngũ y tế có chứng chỉ chuyên môn']
-        },
-        mn: {
-          headerText: 'Унтаж байхдаа эмчлүүлээрэй!',
-          emphasisText: 'Айдсаас болж эмчлүүлэхээ болих хүн байгаагүй!',
-          highlights: ['Ухамсартай байдлаар аюулгүй эмчилгээ', 'Зөвхөн тухтай дурсамжууд үлдэнэ', 'Мэргэжлийн гэрчилгээтэй эмч нар']
-        },
-        uz: {
-          headerText: 'Uxlab yotganingizda davolanish!',
-          emphasisText: 'Qo\'rquv tufayli davolanishdan voz kechgan hech kim yo\'q!',
-          highlights: ['Hushyor holatda xavfsiz davolash', 'Faqat qulay xotiralar qoladi', 'Sertifikatlangan tibbiy mutaxassislar']
-        },
-        ru: {
-          headerText: 'Лечение во сне!',
-          emphasisText: 'Никто не отказался от лечения из-за страха!',
-          highlights: ['Безопасное лечение в сознании', 'Остаются только комфортные воспоминания', 'Сертифицированные медицинские специалисты']
-        },
-        th: {
-          headerText: 'รักษาในขณะหลับ!',
-          emphasisText: 'ไม่มีใครละทิ้งการรักษาเพราะความกลัว!',
-          highlights: ['การรักษาอย่างปลอดภัยในสภาวะมีสติ', 'เหลือเพียงความทรงจำที่สบาย', 'ทีมแพทย์ที่มีใบรับรองวิชาชีพ']
-        }
-      };
-
-      const textsDirectInput = sedationTextsDirectInput[language] || sedationTextsDirectInput.ko;
-
-      sedationCard = {
-        show: true,
-        images: [
-          { src: '/images/monitoring-equipment.jpg', alt: '환자 모니터링 장비', title: '환자 모니터링 장비' },
-          { src: '/images/sedation-dental-cpr.png', alt: '치과 전문 소생술 자격증', title: '치과 전문 소생술 자격증' },
-          { src: '/images/sedation-certificate-overseas.png', alt: '전문 교육 이수 자격증', title: '전문 교육 이수 자격증' }
-        ],
-        highlights: textsDirectInput.highlights,
-        headerText: textsDirectInput.headerText,
-        emphasisText: textsDirectInput.emphasisText
-      };
-      console.log('💤 [sedationCard 직접입력] 의식하진정요법 카드 표시');
-    }
 
     // 💰 비용 선택 시 저가 덤핑 주의 카드 표시 (임플란트 상담만)
     let costWarningCard: CostWarningCard | undefined;
@@ -1447,10 +1059,6 @@ message maydonida yuqoridagi 'Javobga mos javob qo'llanmasi'ga murojaat qiling v
           {
             title: '정품 임플란트 여부 확인',
             description: '몸통(픽스처)만 브랜드 정품이고, 지대주와 보철은 중국산 저가 제품을 사용하는 경우가 많습니다. 저희 병원에서 재수술하는 케이스를 많이 봐왔습니다.'
-          },
-          {
-            title: '전체임플란트(올온엑스) 맞는지 확인',
-            description: '전체임플란트인데 뼈이식을 하자고 하면, 일반 임플란트를 전체임플란트로 속이고 있을 가능성이 있습니다.'
           },
           {
             title: '최종보철까지 진행하는지 확인',
@@ -1648,43 +1256,7 @@ message maydonida yuqoridagi 'Javobga mos javob qo'llanmasi'ga murojaat qiling v
         );
       }
 
-      // 추천된 치료에 따라 영상 iframe 선택 (롱폼 16:9 비율)
-      if (finalTreatments.includes('all_on_x')) {
-        // 전체 임플란트: 3개 영상 (총정리 1개 + 후기 2개)
-        videoIframes.push(
-          '<iframe src="https://www.youtube.com/embed/9kP02X04THc" allowfullscreen></iframe>',
-          '<iframe src="https://www.youtube.com/embed/GyzFVUfRqmk" allowfullscreen></iframe>',
-          '<iframe src="https://www.youtube.com/embed/wZYlF4IJYd4" allowfullscreen></iframe>'
-        );
-        console.log('📹 [questionCount 7] 전체 임플란트 영상 3개 추가');
-      } else if (finalTreatments.includes('whitening') || finalTreatments.includes('laminate')) {
-        // 심미치료 (미백/라미네이트): 1개 영상
-        videoIframes.push('<iframe src="https://www.youtube.com/embed/4hJI8OteG3Q" allowfullscreen></iframe>');
-        console.log('📹 [questionCount 7] 심미치료(미백/라미네이트) 영상 1개 추가');
-      } else if (finalTreatments.includes('wisdom_tooth')) {
-        // 사랑니: 1개 영상
-        videoIframes.push('<iframe src="https://www.youtube.com/embed/SmjM0-MCGX4" allowfullscreen></iframe>');
-        console.log('📹 [questionCount 7] 사랑니 영상 1개 추가');
-      } else if (finalTreatments.includes('nerve_treatment') || finalTreatments.includes('cavity')) {
-        // 충치/신경치료: 2개 영상
-        videoIframes.push('<iframe src="https://www.youtube.com/embed/pSSexzE2wXY" allowfullscreen></iframe>');
-        videoIframes.push('<iframe src="https://www.youtube.com/embed/tUYS2ov5C9w" allowfullscreen></iframe>');
-        console.log('📹 [questionCount 7] 충치/신경치료 영상 2개 추가');
-      } else if (finalTreatments.includes('gum_care') || finalTreatments.includes('scaling')) {
-        // 잇몸치료/스케일링: 1개 영상
-        videoIframes.push('<iframe src="https://www.youtube.com/embed/m9GC1rlL-vE" allowfullscreen></iframe>');
-        console.log('📹 [questionCount 7] 잇몸치료/스케일링 영상 1개 추가');
-      } else if (finalTreatments.some(t => t.includes('implant') || t === 'digital_implant')) {
-        // 일반 임플란트: 1개 영상
-        videoIframes.push('<iframe src="https://www.youtube.com/embed/9kP02X04THc" allowfullscreen></iframe>');
-        console.log('📹 [questionCount 7] 일반 임플란트 영상 1개 추가');
-      }
-
-      // 💤 수면 카드 표시 여부 확인 (현재 요청 또는 이전에 카드가 표시됨)
-      if (sedationCard || sedationCardShown) {
-        videoIframes.push('<iframe src="https://www.youtube.com/embed/WB3M_Uw5X_s" allowfullscreen></iframe>');
-        console.log('📹 [questionCount 7] 수면치료(의식하진정) 영상 추가 - sedationCard:', !!sedationCard, 'sedationCardShown:', sedationCardShown);
-      }
+      // YouTube 영상 제거됨
     }
     // questionCount < 6: 구조화된 질문 생성 (question-generator.ts 사용 또는 AI 생성)
     // Q1~Q5까지 5개 질문을 표시하기 위해 questionCount < 6으로 설정
@@ -1781,33 +1353,9 @@ message maydonida yuqoridagi 'Javobga mos javob qo'llanmasi'ga murojaat qiling v
             aiResponse = assistantMessage || '';
           }
 
-          // AI 응답 + 오스템 미백 어필 문구
-          const whiteningAppeal = `
-
----
-
-## 🦷 고덕퍼스트치과 전문가 미백
-
-### 최고급 오스템 뷰티스 미백 시스템
-저희는 **국내 1위 임플란트 기업 오스템**의 프리미엄 미백 시스템을 사용합니다.
-- **식약처 허가** 고농도 미백 젤
-- **잇몸 보호** + 시린 증상 최소화 기술 적용
-- **전문의 직접 시술**로 안전하고 균일한 효과
-
-### 미백 치료 차별점
-✅ **1회 시술로 2~3톤 개선** - 즉각적인 효과 확인
-✅ **사후관리 프로그램** - 미백 후 시린 증상 케어
-✅ **당일 시술 완료** - 바쁜 일정에도 부담 없이
-
-### 자주 묻는 질문
-- **후유증**: 일시적 시린 증상 있을 수 있으나 2-3일 내 완화
-- **유지기간**: 개인차 있으나 보통 6개월~1년 유지
-- **재시술**: 정기적 터치업으로 밝기 유지 가능
-
-> 💡 정확한 진단과 맞춤 상담을 위해 **무료 상담 예약**을 권해드립니다!`;
-
-          displayMessage = (aiResponse ? aiResponse + '\n' : '') + whiteningAppeal;
-          console.log('✨ [심미 상담] 미백 Q1 선택 → 바로 종합 추천 (AI 응답 + 오스템 어필)');
+          // 미백 어필 문구 제거됨
+          displayMessage = aiResponse || '';
+          console.log('✨ [심미 상담] 미백 Q1 선택 → 바로 종합 추천 (AI 응답)');
         } else {
           // 라미네이트 - 여러 케이스 종류 합치기
           caseImages = [
@@ -1826,7 +1374,7 @@ message maydonida yuqoridagi 'Javobga mos javob qo'llanmasi'ga murojaat qiling v
           price: isWhitening ? '4.9만원' : '49만원/개',
           isUrgent: true,
           ctaText: '네이버로 예약하기',
-          ctaUrl: 'https://m.booking.naver.com/booking/13/bizes/948237/items/7265917'
+          ctaUrl: 'https://m.booking.naver.com/booking/13/bizes/981541/items/7265917'
         };
 
         console.log('🎨 [심미 상담] 종합 추천 생성 완료 - 경로:', cosmeticPath);
@@ -2324,31 +1872,7 @@ ${sameDayCTA}
           // 케이스 이미지 추가
           caseImages = getCaseImagesForMultipleTreatments(finalTreatmentsForFallback, 5, language);
 
-          // 영상 추가
-          if (finalTreatmentsForFallback.includes('all_on_x')) {
-            videoIframes.push(
-              '<iframe src="https://www.youtube.com/embed/9kP02X04THc" allowfullscreen></iframe>',
-              '<iframe src="https://www.youtube.com/embed/GyzFVUfRqmk" allowfullscreen></iframe>',
-              '<iframe src="https://www.youtube.com/embed/wZYlF4IJYd4" allowfullscreen></iframe>'
-            );
-          } else if (finalTreatmentsForFallback.includes('whitening') || finalTreatmentsForFallback.includes('laminate')) {
-            videoIframes.push('<iframe src="https://www.youtube.com/embed/4hJI8OteG3Q" allowfullscreen></iframe>');
-          } else if (finalTreatmentsForFallback.includes('wisdom_tooth')) {
-            videoIframes.push('<iframe src="https://www.youtube.com/embed/SmjM0-MCGX4" allowfullscreen></iframe>');
-          } else if (finalTreatmentsForFallback.includes('nerve_treatment') || finalTreatmentsForFallback.includes('cavity')) {
-            videoIframes.push('<iframe src="https://www.youtube.com/embed/pSSexzE2wXY" allowfullscreen></iframe>');
-            videoIframes.push('<iframe src="https://www.youtube.com/embed/tUYS2ov5C9w" allowfullscreen></iframe>');
-          } else if (finalTreatmentsForFallback.includes('gum_care') || finalTreatmentsForFallback.includes('scaling')) {
-            videoIframes.push('<iframe src="https://www.youtube.com/embed/m9GC1rlL-vE" allowfullscreen></iframe>');
-          } else if (finalTreatmentsForFallback.some(t => t.includes('implant') || t === 'digital_implant')) {
-            videoIframes.push('<iframe src="https://www.youtube.com/embed/9kP02X04THc" allowfullscreen></iframe>');
-          }
-
-          // 수면 카드 표시된 경우 수면 영상 추가
-          if (sedationCard || sedationCardShown) {
-            videoIframes.push('<iframe src="https://www.youtube.com/embed/WB3M_Uw5X_s" allowfullscreen></iframe>');
-            console.log('📹 [Fallback 추천] 수면치료 영상 추가');
-          }
+          // YouTube 영상 제거됨
         } else {
           // questionCount에 따라 fallback 질문 선택 (0-based index 조정)
           let fallbackIndex = Math.min(questionCount - 1, langFallbacks.length - 1);
@@ -2621,43 +2145,7 @@ ${sameDayCTA}
         );
       }
 
-      // 추천된 치료에 따라 영상 iframe 선택 (롱폼 16:9 비율)
-      if (finalTreatments.includes('all_on_x')) {
-        // 전체 임플란트: 3개 영상 (총정리 1개 + 후기 2개)
-        videoIframes.push(
-          '<iframe src="https://www.youtube.com/embed/9kP02X04THc" allowfullscreen></iframe>',
-          '<iframe src="https://www.youtube.com/embed/GyzFVUfRqmk" allowfullscreen></iframe>',
-          '<iframe src="https://www.youtube.com/embed/wZYlF4IJYd4" allowfullscreen></iframe>'
-        );
-        console.log('📹 전체 임플란트 영상 3개 추가:', videoIframes);
-      } else if (finalTreatments.includes('whitening') || finalTreatments.includes('laminate')) {
-        // 심미치료 (미백/라미네이트): 1개 영상
-        videoIframes.push('<iframe src="https://www.youtube.com/embed/4hJI8OteG3Q" allowfullscreen></iframe>');
-        console.log('📹 심미치료(미백/라미네이트) 영상 1개 추가:', videoIframes);
-      } else if (finalTreatments.includes('wisdom_tooth')) {
-        // 사랑니: 1개 영상
-        videoIframes.push('<iframe src="https://www.youtube.com/embed/SmjM0-MCGX4" allowfullscreen></iframe>');
-        console.log('📹 사랑니 영상 1개 추가:', videoIframes);
-      } else if (finalTreatments.includes('nerve_treatment') || finalTreatments.includes('cavity')) {
-        // 충치/신경치료: 2개 영상
-        videoIframes.push('<iframe src="https://www.youtube.com/embed/pSSexzE2wXY" allowfullscreen></iframe>');
-        videoIframes.push('<iframe src="https://www.youtube.com/embed/tUYS2ov5C9w" allowfullscreen></iframe>');
-        console.log('📹 충치/신경치료 영상 2개 추가:', videoIframes);
-      } else if (finalTreatments.includes('gum_care') || finalTreatments.includes('scaling')) {
-        // 잇몸치료/스케일링: 1개 영상
-        videoIframes.push('<iframe src="https://www.youtube.com/embed/m9GC1rlL-vE" allowfullscreen></iframe>');
-        console.log('📹 잇몸치료/스케일링 영상 1개 추가:', videoIframes);
-      } else if (finalTreatments.some(t => t.includes('implant') || t === 'digital_implant')) {
-        // 일반 임플란트: 1개 영상
-        videoIframes.push('<iframe src="https://www.youtube.com/embed/9kP02X04THc" allowfullscreen></iframe>');
-        console.log('📹 일반 임플란트 영상 1개 추가:', videoIframes);
-      }
-
-      // 💤 수면 카드 표시 여부 확인 (현재 요청 또는 이전에 카드가 표시됨)
-      if (sedationCard || sedationCardShown) {
-        videoIframes.push('<iframe src="https://www.youtube.com/embed/WB3M_Uw5X_s" allowfullscreen></iframe>');
-        console.log('📹 수면치료(의식하진정) 영상 추가 - sedationCard:', !!sedationCard, 'sedationCardShown:', sedationCardShown);
-      }
+      // YouTube 영상 제거됨
     }
 
     // 응답 반환
