@@ -15,13 +15,13 @@ import LocationSection from '@/components/home/LocationSection';
 
 export const metadata: Metadata = {
   title: '고덕치아미백 | 고덕퍼스트치과',
-  description: '강동구 고덕 치아미백 전문 치과. 오스템 뷰티스 시스템으로 시리지 않고 안전하게. 통합치의학과 전문의가 직접 진료합니다.',
+  description: '평택 고덕 치아미백 전문 치과. 오스템 뷰티스 시스템으로 시리지 않고 안전하게. 통합치의학과 전문의가 직접 진료합니다.',
   alternates: {
     canonical: 'https://godukfirst.com/whitening',
   },
   openGraph: {
     title: '고덕치아미백 | 고덕퍼스트치과',
-    description: '강동구 고덕 치아미백 전문 치과. 오스템 뷰티스 시스템으로 시리지 않고 안전하게.',
+    description: '평택 고덕 치아미백 전문 치과. 오스템 뷰티스 시스템으로 시리지 않고 안전하게.',
     url: 'https://godukfirst.com/whitening',
     siteName: '고덕퍼스트치과',
     type: 'website',

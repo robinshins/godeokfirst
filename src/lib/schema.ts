@@ -54,8 +54,8 @@ export function generateMedicalServiceSchema({ name, description, url }: Medical
       name: '고덕퍼스트치과',
       address: {
         '@type': 'PostalAddress',
-        addressLocality: '서울특별시 강동구',
-        addressRegion: '서울',
+        addressLocality: '경기도 평택시',
+        addressRegion: '경기',
         addressCountry: 'KR',
       },
     },

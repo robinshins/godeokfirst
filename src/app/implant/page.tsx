@@ -8,14 +8,14 @@ import { faqData } from '@/lib/faqData';
 import { generateFAQSchema, generateBreadcrumbSchema, generateMedicalServiceSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: '강동 고덕 임플란트 | 고덕퍼스트치과',
-  description: '강동 고덕 임플란트. 대학병원 외래교수 출신 원장이 직접 수술하는 대학병원급 임플란트. 디지털 정밀 진단 시스템',
-  keywords: '고덕임플란트, 강동임플란트, 고덕동임플란트, 강동임플란트잘하는곳, 고덕임플란트잘하는곳, 임플란트전문, 고덕퍼스트치과, 강동치과, 고덕치과, 고덕동치과',
+  title: '평택 고덕 임플란트 | 고덕퍼스트치과',
+  description: '평택 고덕 임플란트. 대학병원 외래교수 출신 원장이 직접 수술하는 대학병원급 임플란트. 디지털 정밀 진단 시스템',
+  keywords: '고덕임플란트, 평택임플란트, 고덕동임플란트, 평택임플란트잘하는곳, 고덕임플란트잘하는곳, 임플란트전문, 고덕퍼스트치과, 평택치과, 고덕치과, 고덕동치과',
   alternates: {
     canonical: 'https://godukfirst.com/implant',
   },
   openGraph: {
-    title: '강동 고덕 임플란트 | 고덕퍼스트치과',
+    title: '평택 고덕 임플란트 | 고덕퍼스트치과',
     description: '대학병원 외래교수 출신 원장이 직접 수술하는 대학병원급 임플란트. 1,200회 이상 식립 경험.',
     url: 'https://godukfirst.com/implant',
     siteName: '고덕퍼스트치과',
