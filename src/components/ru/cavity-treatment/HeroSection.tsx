@@ -1,45 +1,94 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
+import Image from 'next/image';
+import FadeInSection from '@/components/common/FadeInSection';
 
 export default function HeroSection() {
+  const scrollToDoctor = () => {
+    const doctorSection = document.getElementById('doctor');
+    if (doctorSection) {
+      doctorSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
-    <section className="relative bg-white pt-20 pb-24 overflow-hidden">
-      <div className="max-w-[430px] mx-auto px-4 relative">
-        <div className="flex flex-col gap-10">
-          <div className="space-y-6">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-600 rounded-2xl border border-blue-100">
-              <span className="text-sm font-black uppercase tracking-widest italic">Pain-Free Medis</span>
+    <div className="bg-gradient-to-b from-[#d2e9f3]/30 to-white w-full relative overflow-hidden">
+      <div className="w-full flex justify-center">
+        <div className="box-border flex flex-col gap-[50px] items-start px-4 py-[60px] relative w-full max-w-[430px] z-10">
+
+          {/* Logo and Text Content */}
+          <FadeInSection className="flex flex-col gap-3 items-center justify-center relative shrink-0 w-full">
+            {/* Logo */}
+            <div className="h-11 overflow-hidden relative shrink-0">
+              <Image
+                src="/고덕퍼스트치과-로고-(블랙).png"
+                alt="Godeok First Dental"
+                width={200}
+                height={40}
+                className="h-20 w-auto object-contain -mt-[18px]"
+              />
             </div>
-            
-            <h1 className="text-[44px] font-bold text-gray-900 leading-[1.1] tracking-tighter">
-              Безболезненное<br />
-              <span className="text-blue-600">лечение кариеса</span>
-            </h1>
-            
-            <p className="text-lg text-gray-500 font-medium leading-relaxed">
-              Честное лечение без лишних процедур. Мы сохраняем ваши зубы здоровыми и красивыми.
-            </p>
-          </div>
 
-          <div className="relative aspect-[4/3] rounded-[48px] overflow-hidden">
-            <Image
-              src="/images/cavity_hero.jpg"
-              alt="Лечение кариеса"
-              fill
-              className="object-cover"
-            />
-          </div>
+            {/* Main Text */}
+            <div className="flex flex-col gap-4 items-start leading-[0] not-italic relative shrink-0 text-center w-full">
+              <h1
+                className="font-extrabold leading-[1.35] relative shrink-0 text-4xl tracking-[-2.16px] w-full text-[#008095]"
+                style={{ fontFamily: '"NanumSquare", sans-serif' }}
+              >
+                кариес лечение,<br />
+ завершение до 
+              </h1>
+              <p
+                className="font-semibold leading-[1.5] relative shrink-0 text-[18px] tracking-[-0.36px] w-full text-[#3e3a3a]"
+                style={{ fontFamily: 'Pretendard, sans-serif' }}
+              >
+                стоматологической больницы Чосонбольница Бывший приглашенный профессор,<br />
+                Специалист комплексной стоматологии Доктор Ли Донхён<br />
+                лично диагностика и лечение.
+              </p>
+            </div>
+          </FadeInSection>
 
-          <Link href="/ru/consultation" className="w-full">
-            <button className="w-full py-5 bg-[#006aff] hover:bg-[#0050c0] text-white text-xl font-bold rounded-[24px] transition-all shadow-xl shadow-blue-500/20 active:scale-[0.98]">
-              Запись на ИИ-консультацию
+          {/* CTA Buttons */}
+          <FadeInSection delay={200} className="flex flex-col gap-4 items-start justify-center relative shrink-0 w-full">
+            <div className="flex gap-3 w-full">
+              <Link href="/ru/consultation" className="flex-1">
+                <button className="bg-[#008095] flex h-14 items-center justify-center px-4 py-3 rounded-[14px] w-full hover:bg-[#006d80] transition-colors border-none outline-none">
+                  <span
+                    className="font-bold leading-[1.5] not-italic relative shrink-0 text-white text-base text-nowrap tracking-[-0.4px]"
+                    style={{ fontFamily: '"NanumSquare", sans-serif' }}
+                  >
+                    Быстрая запись
+                  </span>
+                </button>
+              </Link>
+              <a href="https://naver.me/GSD1OqoS" target="_blank" rel="noopener noreferrer" className="flex-1">
+                <button className="bg-[#03C75A] flex h-14 items-center justify-center px-4 py-3 rounded-[14px] w-full hover:bg-[#02b351] transition-colors border-none outline-none">
+                  <span
+                    className="font-bold leading-[1.5] not-italic relative shrink-0 text-white text-base text-nowrap tracking-[-0.4px]"
+                    style={{ fontFamily: '"NanumSquare", sans-serif' }}
+                  >
+                    запись Naver
+                  </span>
+                </button>
+              </a>
+            </div>
+
+            <button
+              onClick={scrollToDoctor}
+              className="bg-transparent border-2 border-[#008095] box-border flex h-16 items-center justify-center px-6 py-4 relative rounded-[18px] shrink-0 w-full hover:bg-[#008095]/10 transition-colors"
+            >
+              <span
+                className="font-bold leading-[1.5] not-italic relative shrink-0 text-[#008095] text-xl text-nowrap tracking-[-0.4px]"
+                style={{ fontFamily: '"NanumSquare", sans-serif' }}
+              >
+                Посмотреть врачей
+              </span>
             </button>
-          </Link>
+          </FadeInSection>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
-

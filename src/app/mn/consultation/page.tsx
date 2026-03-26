@@ -1,21 +1,22 @@
-import { Metadata } from 'next';
-import ConsultationForm from '@/components/mn/ConsultationForm';
-import GNB from '@/components/mn/GNB';
-import DoctorIntroSection from '@/components/mn/consultation/DoctorIntroSection';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'Зөвлөгөө авах - Кёнсүн Медис Шүдний Эмнэлэг',
-  description: 'Туршлагатай мэргэжилтнүүдээс үнэгүй AI шүдний зөвлөгөө авах. Хувийн эмчилгээний зөвлөмж аваарай.',
-  keywords: 'шүдний зөвлөгөө, үнэгүй зөвлөгөө, AI зөвлөгөө, Солонгос шүдний эмнэлэг, Пусан шүдний эмч, шүдний мэргэжилтэн',
-  openGraph: {
-    title: 'Зөвлөгөө авах - Кёнсүн Медис Шүдний Эмнэлэг',
-    description: 'Туршлагатай мэргэжилтнүүдээс үнэгүй AI шүдний зөвлөгөө авах.',
-    type: 'website',
-    locale: 'mn_MN',
-  }
-};
+import { useEffect } from 'react';
+import ConsultationForm from '@/components/ConsultationForm';
+import GNB from '@/components/mn/GNB';
+import DoctorIntroSection from '@/components/consultation/DoctorIntroSection';
 
 export default function ConsultationPage() {
+  useEffect(() => {
+    // Meta Pixel event
+    if (typeof window !== 'undefined') {
+      const fbq = (window as { fbq?: (...args: unknown[]) => void }).fbq;
+      if (fbq) {
+        fbq('trackCustom', 'ViewCheckoutPage');
+        console.log('✅ Meta Pixel: ViewCheckoutPage 커스텀 이벤트 전송');
+      }
+    }
+  }, []);
+
   return (
     <div className="min-h-screen">
       <GNB />

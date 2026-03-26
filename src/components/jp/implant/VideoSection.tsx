@@ -1,77 +1,57 @@
 export default function VideoSection() {
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full flex justify-center bg-[#f8fbfd] -mt-1">
       <div className="py-[60px] px-4 w-full max-w-[430px]">
         <div className="flex flex-col gap-10">
           {/* Text Content */}
           <div className="flex flex-col gap-3 text-center">
-            <h2 className="text-[32px] font-bold leading-[1.35] tracking-[-0.02em] text-black">
-              この動画でわかる<br />
-              インプラントのすべて
+            <p className="text-[15px] font-bold text-[#4DC8D8] tracking-[3px] uppercase">
+              VIDEO
+            </p>
+            <h2 className="text-[32px] font-bold leading-[1.35] tracking-[-0.02em] text-[#008095]">
+              インプラントの全て<br />
+              映像でご確認ください
             </h2>
-            <p className="text-base font-semibold leading-[1.4] tracking-[-0.02em] text-[#727582]">
-              義歯、インプラント、全体インプラント、オールオン4、<br />
-              デジタルインプラントまで、すべての治療法を説明
+            <p className="text-base font-medium leading-[1.4] tracking-[-0.02em] text-[#3e3a3a]">
+              コドクファースト歯科 代表院長が<br />
+              直接ご説明します
             </p>
           </div>
 
-          {/* YouTube Video */}
-          <div className="flex justify-center">
-            <div className="relative w-full aspect-video rounded-[20px] overflow-hidden shadow-lg">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/9kP02X04THc"
-                title="Complete Implant Guide Video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="absolute top-0 left-0 w-full h-full"
-              />
+          {/* YouTube Placeholder - メイン映像 */}
+          <div className="flex flex-col gap-3">
+            <div className="relative w-full aspect-video rounded-[20px] overflow-hidden bg-[#e9ebf1] flex items-center justify-center">
+              <div className="flex flex-col items-center gap-3 text-center px-6">
+                <div className="w-16 h-16 rounded-full bg-[#008095]/20 flex items-center justify-center">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#008095" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polygon points="5 3 19 12 5 21 5 3" fill="#008095" />
+                  </svg>
+                </div>
+                <p className="text-[#008095] font-bold text-[15px]">映像準備中</p>
+                <p className="text-[#727582] text-[13px] leading-[1.5]">コドクファースト歯科 インプラント映像を<br />まもなくアップロード予定です</p>
+              </div>
             </div>
           </div>
 
-          {/* Real Patient Results Video Section */}
-          <div className="flex flex-col gap-6 pt-10">
-            <div className="flex flex-col gap-3 text-center">
-              <h2 className="text-[32px] font-bold leading-[1.35] tracking-[-0.02em] text-black">
-                実際の患者様が証明する<br />
-                リアルな治療結果
-              </h2>
-              <p className="text-base font-semibold leading-[1.4] tracking-[-0.02em] text-[#727582]">
-                なぜメディス歯科を選び、<br />
-                自信を持って周りに推薦するのか、直接ご確認ください
-              </p>
-            </div>
-
-            {/* Patient Results YouTube Video */}
-            <div className="flex flex-col gap-4">
-              <div className="flex justify-center">
-                <div className="relative w-full aspect-video rounded-[20px] overflow-hidden shadow-lg">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/GyzFVUfRqmk"
-                    title="実際の患者様治療結果動画"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                    className="absolute top-0 left-0 w-full h-full"
-                  />
+          {/* Shorts Placeholder */}
+          <div className="grid grid-cols-2 gap-4">
+            {['インプラント手術過程', 'インプラント管理法'].map((title, i) => (
+              <div key={i} className="flex flex-col gap-2">
+                <div className="relative w-full aspect-[9/16] rounded-[16px] overflow-hidden bg-[#e9ebf1] flex items-center justify-center">
+                  <div className="flex flex-col items-center gap-2 text-center px-3">
+                    <div className="w-10 h-10 rounded-full bg-[#008095]/20 flex items-center justify-center">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#008095" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <polygon points="5 3 19 12 5 21 5 3" fill="#008095" />
+                      </svg>
+                    </div>
+                    <p className="text-[#727582] text-[11px]">準備中</p>
+                  </div>
                 </div>
+                <p className="text-[13px] font-semibold text-[#3e3a3a] text-center leading-[1.3]">
+                  {title}
+                </p>
               </div>
-              <div className="flex justify-center">
-                <div className="relative w-full aspect-video rounded-[20px] overflow-hidden shadow-lg">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/O4pDF0w17iE"
-                    title="患者様レビュー動画 2"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                    className="absolute top-0 left-0 w-full h-full"
-                  />
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

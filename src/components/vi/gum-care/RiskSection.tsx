@@ -1,182 +1,127 @@
 'use client';
 
-import Image from 'next/image';
+const risks = [
+  {
+    tag: 'Tim mạch',
+    title: 'Nguy cơ bệnh tim mạch tăng 3 lần↑',
+    desc: 'Vi khuẩn nha chu trong nướu xâm nhập mạch máu gây viêm thành mạch và thúc đẩy hình thành huyết khối. Theo nghiên cứu, khi có bệnh nướu, nguy cơ nhồi máu cơ timnguy cơ nhồi máu cơ tim tăng tối đa 2.8 lần, nguy cơ đột quỵ tăng trên 16%. Ngược lại, chỉ lấy cao răng định kỳ cũng có thể giảm 10~14% nguy cơ bệnh tim theo báo cáo.',
+    stats: ['Nguy cơ nhồi máu cơ tim tăng 2.8 lần', 'Giảm 16% nguy cơ đột quỵ (lấy cao răng 1 lần/năm)', 'Kiểm tra miệng khi kiểm tra tim khuyến nghị kết hợp'],
+    source: 'Nhóm nghiên cứu BV ĐH Seoul Bundang 2024 · Hiệp hội Tim mạch Hoa Kỳ (AHA) 2020',
+  },
+  {
+    tag: 'Tiểu đường',
+    title: 'Biến chứng tiểu đường tiến triển 2 lần↑',
+    desc: 'Viêm nướu tạo vòng xoáy tăng kháng insulin cản trở kiểm soát đường huyết. Khi có viêm nha chu, khó kiểm soát chỉ số HbA1c, ngược lại khi có tiểu đường thì hiệu quả điều trị nướu cũng giảm. Nghiên cứu lâm sàng cho thấy chỉ điều trị nha chu đã giảm HbA1c 0.4%.',
+    stats: ['Khả năng thất bại kiểm soát đường huyết tăng 6 lần', 'HbA1c giảm 0.4% (khi điều trị nha chu)', 'Tốc độ tiến triển biến chứng tiểu đường tăng 2 lần nhanh hơn'],
+    source: 'BV Eunpyeong St. Mary ĐH Catholic 2023 · Hội Tiểu đường Hàn Quốc',
+  },
+  {
+    tag: 'Bệnh não',
+    title: 'Nguy cơ sa sút trí tuệ 70%↑',
+    desc: 'Khi Porphyromonas gingivalis trong vi khuẩn nha chu vượt qua hàng rào máu-não vào não, đẩy nhanh tích tụ beta-amyloid. Phát hiện độc tố nha chu trong mô não của bệnh nhân Alzheimer, và khi bỏ quên bệnh nướu trên 10 năm, nguy cơ sa sút trí tuệ được báo cáo tăng đáng kể.',
+    stats: ['Phát hiện độc tố nha chu ở 40% bệnh nhân Alzheimer', 'Nguy cơ sa sút trí tuệ 70%↑ khi bỏ quên trên 10 năm', 'Chăm sóc nướu sớmcó thể bảo vệ sức khỏe não'],
+    source: 'Nhóm Tiến sĩ Kantarci ĐH Harvard 2024 · Journal of Neuroinflammation',
+  },
+  {
+    tag: 'Phụ nữ mang thai',
+    title: 'Sinh non và trẻ nhẹ cân tăng 7 lần↑',
+    desc: 'Prostaglandin - chất trung gian viêm từ nướu truyền qua máu đến nhau thai có thể gây chuyển dạ sớm. Chăm sóc nướu khi mang thai dễ bị lơ là chăm sóc nướu, nên khuyến nghị kiểm tra tình trạng nướu trước khi mang thai hoặc đầu thai kỳ.',
+    stats: ['Nguy cơ sinh non tăng 7 lần', 'Sinh trẻ nhẹ cân (dưới 2kg) tăng 2 lần', 'Điều trị nướu khi mang thai được bảo hiểm y tế'],
+    source: 'Hội Nha chu Hoa Kỳ·Châu Âu',
+  },
+];
 
 export default function RiskSection() {
-  const risks = [
-    {
-      icon: '/icons/037_Heart.svg',
-      title: 'Nguy cơ bệnh tim mạch tăng gấp 3↑',
-      titleHighlight: '3배↑', // Keep Korean highlight markers or adapt to translation
-      translatedTitle: 'Nguy cơ bệnh tim mạch tăng gấp 3↑',
-      translatedHighlight: 'gấp 3↑',
-      process: [
-        'Vi khuẩn nha chu xâm nhập mạch máu',
-        'Gây viêm thành mạch máu',
-        'Thúc đẩy hình thành cục máu đông'
-      ],
-      details: [
-        { text: 'Giảm 10% bệnh tim', note: 'Khi khám răng miệng' },
-        { text: 'Nguy cơ nhồi máu cơ tim gấp 2.8 lần' },
-        { text: 'Giảm 16% nguy cơ đột quỵ (Lấy cao răng 1 lần/năm)' }
-      ],
-      source: 'Bệnh viện Bundang Đại học Quốc gia Seoul 2024, Hiệp hội Tim mạch Hoa Kỳ AHA 2020'
-    },
-    {
-      icon: '/icons/034_Bed.svg',
-      title: 'Tiểu đường trầm trọng hơn · Tăng biến chứng',
-      titleHighlight: '악화',
-      titleHighlight2: '증가',
-      translatedTitle: 'Tiểu đường trầm trọng hơn · Tăng biến chứng',
-      translatedHighlight: 'trầm trọng hơn',
-      translatedHighlight2: 'Tăng',
-      process: [
-        'Viêm nướu',
-        'Tăng kháng insulin',
-        'Thất bại trong kiểm soát đường huyết'
-      ],
-      details: [
-        { text: 'Giảm 0.4% HbA1c (Khi điều trị nha chu)' },
-        { text: 'Biến chứng tiểu đường tiến triển nhanh gấp 2 lần' },
-        { text: 'Viêm nha chu làm tăng nguy cơ thất bại kiểm soát đường huyết lên 6 lần' }
-      ],
-      source: 'Đại học Y Catholic, Bệnh viện Eunpyeong St. Mary 2023, Hiệp hội Tiểu đường Hàn Quốc'
-    },
-    {
-      icon: '/icons/057_DNA.svg',
-      title: 'Nguy cơ mất trí nhớ tăng 70%↑',
-      titleHighlight: '70%↑',
-      translatedTitle: 'Nguy cơ mất trí nhớ tăng 70%↑',
-      translatedHighlight: '70%↑',
-      process: [
-        'Vi khuẩn nha chu vượt qua hàng rào máu não',
-        'Viêm não',
-        'Tích tụ Beta-amyloid'
-      ],
-      details: [
-        { text: 'Phát hiện vi khuẩn nha chu ở 40% bệnh nhân Alzheimer' },
-        { text: 'Nguy cơ mất trí nhớ tăng vọt nếu không điều trị trên 10 năm' }
-      ],
-      source: 'Nhóm nghiên cứu TS. Kantarci ĐH Harvard 2024, Journal of Neuroinflammation'
-    },
-    {
-      icon: '/icons/023_Pregnancy_Test.svg',
-      title: 'Nguy cơ biến chứng thai kỳ tăng gấp 7 lần↑',
-      titleHighlight: '7배↑',
-      translatedTitle: 'Nguy cơ biến chứng thai kỳ tăng gấp 7 lần↑',
-      translatedHighlight: 'gấp 7 lần↑',
-      process: [
-        'Chất gây viêm vượt qua nhau thai',
-        'Gây chuyển dạ sớm',
-        'Sinh non và trẻ nhẹ cân'
-      ],
-      details: [
-        { text: 'Nguy cơ sinh non tăng gấp 7 lần' },
-        { text: 'Nguy cơ sinh con nhẹ cân (dưới 2kg) tăng gấp 2 lần' },
-        { text: 'Có khả năng gây vấn đề về phát triển và khả năng học tập của trẻ sau này' }
-      ],
-      source: 'Hiệp hội Nha chu Hoa Kỳ · Châu Âu'
-    }
-  ];
-
   return (
-    <div className="bg-[#0b1727] w-full px-4 py-[60px]">
-      <div className="max-w-[343px] mx-auto flex flex-col gap-[26px] items-center">
+    <div className="bg-[#21314E] w-full py-[80px] px-5">
+      <div className="max-w-[430px] mx-auto flex flex-col gap-12">
+
         {/* Header */}
-        <div className="flex flex-col gap-3 items-start w-full">
-          <div className="flex flex-col gap-4 items-center justify-center w-full">
-            <div className="flex flex-col gap-3 items-center justify-center text-center text-white w-full">
-              <p className="font-['Nanum_Myeongjo'] font-extrabold leading-[0.2] text-[60px] tracking-[-3.6px] w-full">
-                &ldquo;
-              </p>
-              <div className="font-['Pretendard_JP'] font-bold leading-[1.35] text-[32px] tracking-[-0.64px] w-full">
-                <p className="mb-0">Khi viêm nướu</p>
-                <p>lan ra toàn thân...</p>
-              </div>
-            </div>
-          </div>
-          <p className="font-['Pretendard_JP'] font-semibold leading-[1.4] text-[#d2d6e1] text-base text-center tracking-[-0.32px] w-full">
-            Nếu không điều trị, nguy cơ lan sang nhiều bệnh khác là rất cao
+        <div className="flex flex-col gap-4 text-center">
+          <p
+            className="text-[#4DC8D8] font-bold text-[13px] tracking-[0.2em] uppercase"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+            Health Warning
+          </p>
+          <h2
+            className="font-bold text-[30px] leading-[1.3] tracking-[-0.04em] text-white"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+            Bệnh nướu không chỉ<br />nằm trong miệng
+          </h2>
+          <p
+            className="font-medium text-white/60 text-[16px] leading-[1.6] tracking-[-0.02em]"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+            Vi khuẩn trong nướu lan qua mạch máu ra toàn thân<br />gây ra bệnh nghiêm trọng hơn bạn nghĩ.
           </p>
         </div>
 
-        {/* Divider */}
-        <div className="bg-white h-10 opacity-50 shrink-0 w-0.5" />
-
         {/* Risk Cards */}
-        <div className="flex flex-col gap-4 items-start w-full">
-          {risks.map((risk, index) => (
-            <div key={index} className="flex flex-col items-start w-full">
-              {/* White Card */}
-              <div className="bg-white border border-[#f3f6fb] box-border flex flex-col gap-10 items-center justify-center p-6 rounded-t-[24px] w-full">
-                <div className="flex flex-col gap-2.5 items-center justify-center w-full">
-                  <div className="relative shrink-0 w-[100px] h-[100px]">
-                    <Image
-                      src={risk.icon}
-                      alt=""
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-4 items-center justify-center w-full">
-                    <p className="font-['Pretendard_JP'] font-bold leading-[1.35] text-[28px] text-black text-center tracking-[-0.56px] w-full">
-                      {risk.translatedTitle.split(risk.translatedHighlight)[0]}
-                      <span className="text-[#ff1616]">{risk.translatedHighlight}</span>
-                      {risk.translatedHighlight2 && (
-                        <>
-                          {risk.translatedTitle.split(risk.translatedHighlight)[1].split(risk.translatedHighlight2)[0]}
-                          <span className="text-[#ff1616]">{risk.translatedHighlight2}</span>
-                        </>
-                      )}
-                    </p>
-                    <div className="flex flex-col gap-1 items-center w-full">
-                      {risk.process.map((step, stepIndex) => (
-                        <div key={stepIndex} className="flex flex-col items-center w-full">
-                          <p className="font-['Pretendard_JP'] font-bold leading-[1.5] text-[#5d5f6d] text-[17px] text-center tracking-[-0.34px] w-full">
-                            {step}
-                          </p>
-                          {stepIndex < risk.process.length - 1 && (
-                            <div className="relative shrink-0 w-6 h-6">
-                              <Image
-                                src="/icons/arrow-big-down-filled.svg"
-                                alt=""
-                                fill
-                                className="object-contain"
-                              />
-                            </div>
-                          )}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
+        <div className="flex flex-col gap-5">
+          {risks.map((risk, idx) => (
+            <div key={idx} className="bg-white/5 border border-white/10 rounded-[24px] p-6 flex flex-col gap-5">
+              {/* Tag + Title */}
+              <div className="flex flex-col gap-2">
+                <span className="text-[11px] font-bold px-2.5 py-1 rounded-full border border-white/20 text-white/50 uppercase tracking-wider w-fit">
+                  {risk.tag}
+                </span>
+                <h3
+                  className="font-bold text-[20px] text-white tracking-[-0.02em] leading-[1.3]"
+                  style={{ fontFamily: 'Pretendard, sans-serif' }}
+                >
+                  {risk.title}
+                </h3>
               </div>
 
-              {/* Blue Card */}
-              <div className="bg-[#006aff] box-border flex flex-col gap-2 items-center justify-center p-6 rounded-b-[24px] shadow-[0px_32px_64px_-12px_rgba(45,54,67,0.08)] text-white w-full">
-                <div className="flex flex-col gap-1 items-start w-full">
-                  {risk.details.map((detail, detailIndex) => (
-                    <div key={detailIndex} className="flex gap-1.5 items-center w-full text-nowrap whitespace-pre">
-                      <p className="font-['Pretendard_JP'] font-bold leading-[1.5] text-lg tracking-[-0.36px]">
-                        {detail.text}
-                      </p>
-                      {'note' in detail && detail.note && (
-                        <p className="font-['Pretendard_JP'] font-semibold leading-[1.4] opacity-60 text-base tracking-[-0.32px]">
-                          {detail.note}
-                        </p>
-                      )}
-                    </div>
-                  ))}
-                </div>
-                <p className="font-['Pretendard_JP'] font-normal leading-[1.4] opacity-60 text-xs tracking-[-0.24px] w-full">
-                  {risk.source}
-                </p>
+              {/* Description */}
+              <p
+                className="text-white/70 text-[14px] leading-[1.7] tracking-[-0.01em]"
+                style={{ fontFamily: 'Pretendard, sans-serif' }}
+              >
+                {risk.desc}
+              </p>
+
+              {/* Stats */}
+              <div className="flex flex-col gap-2 border-t border-white/10 pt-4">
+                {risk.stats.map((stat, sIdx) => (
+                  <div key={sIdx} className="flex items-start gap-2">
+                    <span className="text-[#4DC8D8] shrink-0 mt-[3px]">
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path d="M2.5 7L5.5 10L11.5 4" stroke="#4DC8D8" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </span>
+                    <p
+                      className="text-[#4DC8D8] font-semibold text-[13px] leading-[1.5]"
+                      style={{ fontFamily: 'Pretendard, sans-serif' }}
+                    >
+                      {stat}
+                    </p>
+                  </div>
+                ))}
               </div>
+
+              {/* Source */}
+              <p className="text-white/30 text-[11px]">Nguồn: {risk.source}</p>
             </div>
           ))}
         </div>
+
+        {/* Bottom Note */}
+        <div className="bg-[#008095]/10 border border-[#008095]/30 rounded-2xl p-6 flex flex-col gap-2 text-center">
+          <p
+            className="text-[#4DC8D8] font-bold text-[16px] leading-[1.5]"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+            Chỉ lấy cao răng 1 lần/năm<br />có thể giảm 14% nguy cơ bệnh tim mạch.
+          </p>
+          <p className="text-white/40 text-[13px]">
+            Lấy cao răng được bảo hiểm y tế — nhất định phải đi ít nhất 1 lần/năm.
+          </p>
+        </div>
+
       </div>
     </div>
   );
 }
-

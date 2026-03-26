@@ -6,35 +6,35 @@ export default function TreatmentSystemSection() {
   const systems = [
     {
       image: '/images/nsk970.png',
-      title: 'Thiết bị đặc biệt NSK Varios 970',
-      description: 'Máy lấy cao răng siêu âm mới nhất của NSK Nhật Bản, giúp loại bỏ chính xác vi khuẩn sâu trong nướu',
+      title: 'Thiết bị đặc biệt NSK varios 970',
+      description: 'Máy cạo vôi siêu âm mới nhất của NSK Nhật Bản, loại bỏ chính xác vi khuẩn sâu trong nướu',
       features: [
-        { label: 'Động cơ iPiezo', text: 'Đảm bảo công suất ổn định với khả năng tự động điều chỉnh tần số' },
-        { label: 'Đầu tip siêu chính xác', text: 'Có thể tiếp cận sâu vào các túi nha chu' }
+        { label: 'Động cơ iPiezo', text: 'Đảm bảo công suất ổn định bằng tự động điều chỉnh tần số' },
+        { label: 'Đầu siêu chính xác', text: 'Có thể tiếp cận sâu trong túi nha chu' }
       ]
     },
     {
       image: '/images/perioclean2.jpg',
-      title: 'Điều trị bằng thuốc mỡ kháng sinh Periocline',
-      description: 'Thuốc kháng sinh tại chỗ chứa Minocycline, được tiêm trực tiếp vào sâu trong nướu để điều trị',
+      title: 'Điều trị thuốc mỡ kháng sinh Periocline',
+      description: 'Kháng sinh tại chỗ thành phần minocycline, tiêm trực tiếp vào sâu trong nướu để điều trị',
       features: [
-        { label: 'Kiểm chứng lâm sàng', text: 'Hiệu quả được chứng nhận qua các thử nghiệm lâm sàng của nhiều nhóm nghiên cứu' },
-        { label: 'Kéo dài một tuần', text: 'Hiệu quả của thuốc duy trì trong một tuần chỉ với một lần tiêm' },
-        { label: 'Giảm vi khuẩn', text: 'Giảm vi khuẩn Red Complex từ 87.5% xuống còn 12.5%' }
+        { label: 'Kiểm chứng lâm sàng', text: 'Hiệu quả được chứng nhận qua thử nghiệm lâm sàng của nhiều nhóm nghiên cứu trong và ngoài nước' },
+        { label: 'Kéo dài 1 tuần', text: 'Một lần tiêm, thuốc duy trì hiệu lực trong 1 tuần' },
+        { label: 'Giảm vi khuẩn', text: 'Vi khuẩn Red Complex giảm từ 87.5% → 12.5%' }
       ]
     },
     {
       image: '/images/painless2.png',
-      title: 'Hệ thống giảm đau 4 giai đoạn',
+      title: 'Hệ thống giảm đau 4 bước',
       description: [
-        '"Hóa ra điều trị nha khoa cũng có thể thoải mái thế này"',
-        'Hệ thống chặn đau từng bước khiến nhiều bệnh nhân ngạc nhiên'
+        '"Không ngờ điều trị nha khoa lại có thể thoải mái thế này"',
+        'Hệ thống chặn đau theo từng bước mà nhiều bệnh nhân ngạc nhiên'
       ],
       features: [
-        { label: 'Gây tê súc miệng', text: 'Súc miệng bằng dung dịch gây tê để giảm cảm giác lần 1' },
-        { label: 'Gây tê bề mặt', text: 'Bôi thuốc mỡ gây tê lên vùng tiêm để chặn đau lần 2' },
-        { label: 'Máy gây tê điện tử', text: 'Điều khiển bằng máy tính để tiêm giảm đau với tốc độ ổn định' },
-        { label: 'Máy gây tê ống thần kinh', text: 'Chặn đau hoàn hảo ngay cả ở những vùng sâu' }
+        { label: 'Gây tê súc miệng', text: 'Súc miệng bằng dung dịch gây tê để giảm nhạy cảm lần 1' },
+        { label: 'Gây tê bôi', text: 'Bôi thuốc mỡ gây tê vào vị trí tiêm để chặn lần 2' },
+        { label: 'Máy gây tê điện tử giảm đau', text: 'Tiêm giảm đau với tốc độ đều do máy tính điều khiển' },
+        { label: 'Máy gây tê thần kinh', text: 'Chặn đau hoàn toàn đến vùng sâu' }
       ]
     }
   ];
@@ -45,8 +45,8 @@ export default function TreatmentSystemSection() {
         {/* Header */}
         <div className="flex flex-col gap-3 items-center justify-center w-full">
           <div className="font-['Pretendard_JP'] font-bold leading-[1.35] text-[32px] text-black text-center tracking-[-0.64px] w-full">
-            <p className="mb-0">Hệ thống điều trị nướu</p>
-            <p>duy nhất tại Nha khoa Medis</p>
+            <p className="mb-0">của Godeok First Dental</p>
+            <p>Hệ thống Điều trị nướu</p>
           </div>
         </div>
 
@@ -65,7 +65,7 @@ export default function TreatmentSystemSection() {
               </div>
 
               {/* Content */}
-              <div className="bg-[#0b1727] box-border flex flex-col gap-6 items-start p-6 w-full">
+              <div className="bg-[#21314E] box-border flex flex-col gap-6 items-start p-6 w-full">
                 <p className="font-['Pretendard_JP'] font-bold leading-[1.35] text-2xl text-center text-white tracking-[-0.48px] w-full">
                   {system.title}
                 </p>
@@ -97,4 +97,3 @@ export default function TreatmentSystemSection() {
     </div>
   );
 }
-

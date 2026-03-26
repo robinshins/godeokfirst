@@ -8,13 +8,13 @@ export default function LocationSection() {
         {/* Section Header */}
         <div className="text-center mb-[60px]">
           <div className="flex justify-center mb-6">
-            <div className="h-8 relative shrink-0">
+            <div className="h-11 relative shrink-0 overflow-hidden">
               <Image
-                src="/images/goduk_images/고덕퍼스트치과로고 1.svg"
+                src="/고덕퍼스트치과-로고-(블랙).png"
                 alt="고덕퍼스트치과"
-                width={160}
-                height={32}
-                className="h-full w-auto object-contain"
+                width={375}
+                height={84}
+                className="h-20 w-auto object-contain -mt-[18px]"
               />
             </div>
           </div>

@@ -35,11 +35,11 @@ export default function SpeedSection() {
           {/* Logo */}
           <div className="h-6 overflow-clip relative shrink-0 w-[168px]">
             <Image
-              src="/images/goduk_images/고덕퍼스트치과_Logo_white.svg"
+              src="/고덕퍼스트치과-로고-(화이트).png"
               alt="고덕퍼스트치과"
               width={168}
               height={24}
-              className="w-full h-full object-contain"
+              className="h-20 w-auto object-contain -mt-[18px]"
             />
           </div>
 

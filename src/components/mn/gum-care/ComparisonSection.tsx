@@ -1,266 +1,224 @@
 'use client';
 
-import Image from 'next/image';
+import Link from 'next/link';
+
+const levels = [
+  {
+    level: 'Step 1',
+ title:'',
+ badge:'',
+ desc:'шүд гадаргуу буйл ·бактери арилгах. буйл шатлал, 2удаа.',
+ point:'(буйл) шүдний чулуу арилгах боломжтой.',
+    insurance: null,
+    highlight: false,
+  },
+  {
+    level: 'Step 2',
+    title: 'цэвэрлэгээ',
+ badge:'1~2удаа · тохиолдолДаатгал хамрагдана',
+ desc:'(буйл) шүдний чулуу арилгах. цэвэрлэгээ 10~14%. 19нас 1удаа тохиолдолдаатгал хамрагдана.',
+ point:'(буйл) цэвэрлэгээ.',
+ insurance:'19нас · 1удаа · тохиолдолДаатгал хамрагдана (өөрийн 20%)',
+    highlight: false,
+  },
+  {
+    level: 'Step 3',
+    title: 'буйл эмчилгээ',
+ badge:'шаардлагатай · тохиолдолДаатгал хамрагдана',
+ desc:'буйл буйлны шүдний чулуу бактери (буйлны эмчилгээ) нарийвчилсан арилгах, гадаргуу бактери. шаардлагатай буйлны тарилга бактери арилгах. тохиолдолДаатгал хамрагдана, явуулах 1~4 явуулах.',
+ point:'буйл эмчилгээ 3~6сар тогтмол үзлэг дахин.',
+ insurance:'тохиолдолДаатгал хамрагдана · явуулах · мэдээ алдуулалт',
+    highlight: true,
+  },
+];
 
 export default function ComparisonSection() {
-  const treatments = [
-    {
-      icon: '/icons/tooth.svg',
-      title: 'Шүд угаах',
-      badge: 'Өдөр бүр заавал',
-      items: [
-        { icon: '/icons/check-icon.svg', text: 'Шүдний гадаргууг цэвэр байлгах боломжтой' },
-        { icon: '/icons/x-icon.svg', text: 'Шүдний чулууг арилгах боломжгүй' },
-        { icon: '/icons/x-icon.svg', text: 'Буйлны доод хэсэгт хүрэхгүй' }
-      ]
-    },
-    {
-      icon: '/icons/tooth-shine.svg',
-      title: 'Скейлинг',
-      badge: 'Жилд 1 удаа заавал',
-      items: [
-        { icon: '/icons/check-icon.svg', text: 'Буйлны дээд хэсгийн чулууг арилгана' },
-        { icon: '/icons/check-icon.svg', text: 'Урьдчилан сэргийлэлт ба хөнгөн эмчилгээ' },
-        { icon: '/icons/x-icon.svg', text: 'Гүн хэсэгт хязгаарлагдмал' }
-      ]
-    },
-    {
-      icon: '/icons/tooth-loosen.svg',
-      title: 'Буйлны эмчилгээ',
-      badge: 'Шаардлагатай үед нэмэлт',
-      items: [
-        { icon: '/icons/check-icon.svg', text: 'Буйлны гүн хэсгийн эмчилгээ' },
-        { icon: '/icons/check-icon.svg', text: 'Язгуурыг гөлгөр болгох эмчилгээ' },
-        { icon: '/icons/check-icon.svg', text: 'Хүндэрсэн өвчний эмчилгээ' }
-      ]
-    }
-  ];
-
   return (
-    <div className="bg-gradient-to-b from-[#0b1727] to-white w-full px-4 py-[60px] relative">
-      {/* Background gradient */}
-      <div className="absolute h-[711px] left-[calc(50%+5.5px)] top-[217.35px] -translate-x-1/2 w-[480px] pointer-events-none">
-        <div className="absolute inset-[-56.26%_-83.33%]">
-          <Image
-            src="/images/stats-gradient.svg"
-            alt=""
-            fill
-            className="block max-w-none object-contain"
-          />
-        </div>
-      </div>
+    <div className="bg-[#f8f9fb] w-full py-[80px] px-5">
+      <div className="max-w-[430px] mx-auto flex flex-col gap-12">
 
-      <div className="max-w-[343px] mx-auto flex flex-col gap-[60px] items-start relative z-10">
         {/* Header */}
-        <div className="flex flex-col gap-4 items-center justify-center w-full">
-          <div className="flex flex-col gap-3 items-center justify-center text-center text-white w-full">
-            <div className="font-['Pretendard_JP'] font-bold leading-[1.35] text-[32px] tracking-[-0.64px] w-full">
-              <p className="mb-0">Шүд угаах, скейлинг хийлгэхэд</p>
-              <p>хангалттай биш үү?</p>
-            </div>
-            <div className="font-['Pretendard_JP'] font-semibold leading-[1.4] text-[#e9ebf1] text-base tracking-[-0.32px] w-full">
-              <p className="mb-0">Энэ хоёр арчилгаа маш чухал</p>
-              <p>Гэхдээ төгс арчилгаа хийхэд хэцүү</p>
-            </div>
-          </div>
+        <div className="flex flex-col gap-4 text-center">
+          <p
+            className="text-[#008095] font-bold text-[13px] tracking-[0.2em] uppercase"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+            Care Levels
+          </p>
+          <h2
+            className="font-bold text-[30px] leading-[1.3] tracking-[-0.04em] text-black"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+ <br /> 
+          </h2>
+          <p
+            className="font-medium text-[#727582] text-[16px] leading-[1.7] tracking-[-0.02em]"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+ буйл тохиолдол шатлал арчилгаа.<br />
+ цэвэрлэгээ буйл эмчилгээ, тохиолдолдаатгал хамрагдана.
+          </p>
         </div>
 
-        {/* Treatment Cards */}
-        <div className="flex flex-col gap-6 items-start w-full">
-          {treatments.map((treatment, index) => (
-            <div key={index} className="bg-white border border-[#f3f6fb] box-border flex flex-col gap-4 items-center justify-center p-6 rounded-[20px] w-full">
-              {/* Header */}
-              <div className="flex items-center justify-between w-full">
-                <div className="flex gap-2 items-center">
-                  <div className="relative shrink-0 w-8 h-8">
-                    <Image
-                      src={treatment.icon}
-                      alt=""
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
-                  <p className="font-['Pretendard_JP'] font-bold leading-[1.35] text-2xl text-black tracking-[-0.48px]">
-                    {treatment.title}
-                  </p>
+        {/* Level Cards */}
+        <div className="flex flex-col gap-5">
+          {levels.map((c, i) => (
+            <div
+              key={i}
+              className={`rounded-[24px] p-6 flex flex-col gap-5 relative overflow-hidden ${
+                c.highlight
+                  ? 'bg-white border-2 border-[#008095] shadow-[0_8px_32px_-8px_rgba(0,128,149,0.2)]'
+                  : 'bg-white border border-[#e9ebf1] shadow-[0_4px_20px_-4px_rgba(21,26,36,0.06)]'
+              }`}
+            >
+              {c.highlight && (
+                <div className="absolute top-0 right-0 bg-[#008095] text-white text-[10px] font-bold px-3 py-1.5 rounded-bl-[14px] rounded-tr-[22px]">
+ чухал
                 </div>
-                <div className="bg-[#e8f8f0] box-border flex items-center justify-center px-2.5 py-1.5 rounded-lg">
-                  <p className="font-['Pretendard_JP'] font-bold leading-[1.4] text-[#15bd66] text-sm tracking-[-0.28px]">
-                    {treatment.badge}
-                  </p>
-                </div>
+              )}
+
+              {/* Level + Badge */}
+              <div className="flex items-center gap-2 flex-wrap">
+                <span
+                  className="text-[11px] font-black text-[#008095] tracking-[0.1em]"
+                  style={{ fontFamily: 'Pretendard, sans-serif' }}
+                >
+                  {c.level}
+                </span>
+                <span
+                  className={`font-bold text-[11px] px-2.5 py-1 rounded-full ${
+                    c.highlight
+                      ? 'bg-[#008095] text-white'
+                      : 'bg-[#f0f7fa] text-[#008095]'
+                  }`}
+                >
+                  {c.badge}
+                </span>
               </div>
 
-              {/* Items */}
-              <div className="bg-[#f3f6fb] box-border flex flex-col gap-3.5 items-start p-5 rounded-2xl w-full">
-                {treatment.items.map((item, itemIndex) => (
-                  <div key={itemIndex} className="flex items-center gap-2 w-full">
-                    <div className="shrink-0 w-6 h-6 flex items-center justify-center">
-                      <Image
-                        src={item.icon}
-                        alt=""
-                        width={20}
-                        height={20}
-                      />
-                    </div>
-                    <p className="font-['Pretendard_JP'] font-bold text-[17px] text-black tracking-[-0.34px] leading-[1.5]">
-                      {item.text}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
-
-          {/* Comparison Table */}
-          <div className="bg-white border border-[#f3f6fb] box-border flex flex-col gap-4 items-center justify-center p-6 rounded-[20px] w-full">
-            {/* Title */}
-            <div className="flex gap-3 items-center justify-center w-full">
-              <p className="font-['Pretendard_JP'] font-bold leading-[1.35] text-2xl text-black tracking-[-0.48px]">
-                Скейлинг
-              </p>
-              <div className="bg-[#f3f6fb] box-border flex items-center justify-center px-2 py-1 rounded-lg">
-                <p className="font-['Pretendard_JP'] font-bold leading-[1.4] text-[#9298a6] text-[15px] tracking-[-0.3px]">
-                  vs
+              {/* Title */}
+              <div className="flex flex-col gap-2">
+                <h3
+                  className="font-bold text-[22px] text-[#2d3340] tracking-[-0.03em]"
+                  style={{ fontFamily: 'Pretendard, sans-serif' }}
+                >
+                  {c.title}
+                </h3>
+                <p
+                  className="font-medium text-[15px] text-[#4a4f5e] leading-[1.7]"
+                  style={{ fontFamily: 'Pretendard, sans-serif' }}
+                >
+                  {c.desc}
                 </p>
               </div>
-              <p className="font-['Pretendard_JP'] font-bold leading-[1.35] text-2xl text-black tracking-[-0.48px]">
-                Буйлны эмчилгээ
-              </p>
-            </div>
 
-            {/* Table */}
-            <div className="bg-white border border-[#006aff] box-border rounded-2xl overflow-hidden w-full">
-              <table className="w-full">
-                <tbody>
-                  <tr className="border-b border-[#e9ebf1]">
-                    <td className="px-2 py-2 w-[52px]"></td>
-                    <td className="px-2 py-2 font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-sm text-center tracking-[-0.28px] leading-[1.4]">
-                      Скейлинг
-                    </td>
-                    <td className="px-2 py-2 font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-sm text-center tracking-[-0.28px] leading-[1.4]">
-                      Буйлны эмчилгээ
-                    </td>
-                  </tr>
-                  <tr className="border-b border-[#e9ebf1]">
-                    <td className="px-2 py-2 font-['Pretendard_JP'] font-semibold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                      Хамрах
-                    </td>
-                    <td className="px-2 py-2 text-center">
-                      <div className="flex flex-col gap-0.5">
-                        <p className="font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                          Буйлны дээд
-                        </p>
-                        <p className="font-['Pretendard_JP'] font-medium text-[#5d5f6d] text-sm tracking-[-0.28px] leading-[1.4]">
-                          (Буйлны дээр)
-                        </p>
-                      </div>
-                    </td>
-                    <td className="px-2 py-2 text-center">
-                      <div className="flex flex-col gap-0.5">
-                        <p className="font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                          Буйлны доод
-                        </p>
-                        <p className="font-['Pretendard_JP'] font-medium text-[#006aff] text-sm tracking-[-0.28px] leading-[1.4]">
-                          (Буйлны доор)
-                        </p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-[#e9ebf1]">
-                    <td className="px-2 py-2 font-['Pretendard_JP'] font-semibold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                      Агуулга
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0">Чулуу болон</p>
-                        <p>хэвэн арилгах</p>
-                      </div>
-                    </td>
-                    <td className="px-2 py-2 text-center">
-                      <div className="flex flex-col gap-0.5">
-                        <p className="font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                          Кюрет ашиглах
-                        </p>
-                        <p className="font-['Pretendard_JP'] font-medium text-[#006aff] text-sm tracking-[-0.28px] leading-[1.4]">
-                          Антибиотик тос
-                        </p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-[#e9ebf1]">
-                    <td className="px-2 py-2 font-['Pretendard_JP'] font-semibold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                      Зорилго
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0">Урьдчилан</p>
-                        <p>сэргийлэлт</p>
-                      </div>
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0 text-[#5d5f6d]">Урьдчилан</p>
-                        <p className="text-[#006aff]">дунд зэрэг+</p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-[#e9ebf1]">
-                    <td className="px-2 py-2 font-['Pretendard_JP'] font-semibold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                      Шаардлага
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0">Ерөнхийдөө</p>
-                        <p>шаардлагагүй</p>
-                      </div>
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[#006aff] text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0">Орон нутгийн</p>
-                        <p>мэдээгүйжүүлэлт</p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-[#e9ebf1]">
-                    <td className="px-2 py-2 font-['Pretendard_JP'] font-semibold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                      Хэрэглэх
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0">Жилд 1 удаа</p>
-                        <p>19+ насны</p>
-                      </div>
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[#006aff] text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0">Эмчилгээ хэрэгтэй</p>
-                        <p>үед хуваан хийх</p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="px-2 py-2 font-['Pretendard_JP'] font-semibold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                      Зорилтот
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0">Бүх насанд</p>
-                        <p>хүрэгчдэд заавал</p>
-                      </div>
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[#006aff] text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0">Буйлны өвчтэй</p>
-                        <p>тохиолдолд</p>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              {/* Point */}
+              <div className="flex items-start gap-2 bg-[#f8f9fb] rounded-2xl p-4">
+                <div className="shrink-0 mt-[3px]">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <circle cx="7" cy="7" r="6" stroke="#008095" strokeWidth="1.5" />
+                    <path d="M7 4.5V7.5M7 9.5V9.8" stroke="#008095" strokeWidth="1.5" strokeLinecap="round" />
+                  </svg>
+                </div>
+                <p
+                  className="text-[13.5px] font-semibold text-[#008095] leading-[1.5]"
+                  style={{ fontFamily: 'Pretendard, sans-serif' }}
+                >
+                  {c.point}
+                </p>
+              </div>
+
+              {/* Insurance Badge */}
+              {c.insurance && (
+                <div className="flex items-center gap-2 pt-1">
+                  <span className="shrink-0">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M8 1.5L2 4V8C2 11.3 4.6 14.4 8 15C11.4 14.4 14 11.3 14 8V4L8 1.5Z" stroke="#008095" strokeWidth="1.5" strokeLinejoin="round" />
+                      <path d="M5.5 8L7 9.5L10.5 6" stroke="#008095" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
+                  <p
+                    className="text-[#008095] font-bold text-[13px]"
+                    style={{ fontFamily: 'Pretendard, sans-serif' }}
+                  >
+                    {c.insurance}
+                  </p>
+                </div>
+              )}
             </div>
-          </div>
+          ))}
         </div>
+
+ {/* даатгал дахин */}
+        <div className="bg-[#21314E] rounded-[24px] p-7 flex flex-col gap-5">
+          <div className="flex flex-col gap-2">
+            <p
+              className="text-[#4DC8D8] font-bold text-[13px] tracking-[0.15em] uppercase"
+              style={{ fontFamily: 'Pretendard, sans-serif' }}
+            >
+ тохиолдолдаатгал 
+            </p>
+            <h4
+              className="text-white font-bold text-[20px] leading-[1.35]"
+              style={{ fontFamily: 'Pretendard, sans-serif' }}
+            >
+ цэвэрлэгээ буйл эмчилгээ,<br /> тохиолдолдаатгал 
+            </h4>
+            <p
+              className="text-white/60 text-[14px] leading-[1.7] mt-1"
+              style={{ fontFamily: 'Pretendard, sans-serif' }}
+            >
+, 1жил цэвэрлэгээ буйл шалгалт нас. явуулах эхний эмчилгээ.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-3">
+            {[
+              {
+                label: 'цэвэрлэгээ',
+ detail:'19нас · 1удаа · өөрийн 20%',
+              },
+              {
+                label: 'буйлны эмчилгээ (буйл эмчилгээ)',
+ detail:'буйлны · Даатгал хамрагдана · мэдээ алдуулалт',
+              },
+              {
+ label:'эмчилгээ',
+ detail:'буйлны боломжтой',
+              },
+            ].map((item, i) => (
+              <div key={i} className="flex flex-col gap-1 bg-white/5 border border-white/10 rounded-2xl px-4 py-3">
+                <p
+                  className="text-white font-bold text-[14px]"
+                  style={{ fontFamily: 'Pretendard, sans-serif' }}
+                >
+                  {item.label}
+                </p>
+                <p
+                  className="text-[#4DC8D8] font-medium text-[13px]"
+                  style={{ fontFamily: 'Pretendard, sans-serif' }}
+                >
+                  {item.detail}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <Link href="/mn/consultation">
+            <div className="bg-[#008095] rounded-[16px] py-4 px-6 flex items-center justify-center gap-2 hover:bg-[#006d80] transition-colors">
+              <p
+                className="text-white font-bold text-[15px]"
+                style={{ fontFamily: 'Pretendard, sans-serif' }}
+              >
+ буйл 
+              </p>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </div>
+          </Link>
+        </div>
+
       </div>
     </div>
   );

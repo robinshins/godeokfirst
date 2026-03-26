@@ -1,32 +1,60 @@
+'use client';
+
 import Image from 'next/image';
 
 export default function SpeedSection() {
   return (
-    <div className="bg-white w-full">
-      <div className="box-border flex flex-col gap-10 items-start px-4 py-[60px] relative w-full max-w-[430px] mx-auto text-center">
-        <div className="flex flex-col gap-4 w-full">
-          <h2 className="font-bold leading-[1.35] text-[32px] text-black tracking-[-0.64px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-            ความเร็วที่มาพร้อม<br />ความแม่นยำ
-          </h2>
-          <p className="font-medium text-[#5d5f6d] text-lg" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-            เราลดระยะเวลาการรักษาให้สั้นลง<br />
-            เพื่อให้คุณกลับไปใช้ชีวิตตามปกติได้เร็วที่สุด
-          </p>
+    <div className="w-full relative flex justify-center bg-[#0b1727]">
+      {/* Background gradient effect - full width */}
+      <div className="absolute h-[711px] left-[calc(50%+0.5px)] top-[calc(50%+75.5px)] -translate-x-1/2 -translate-y-1/2 w-[480px] pointer-events-none">
+        <div className="absolute inset-[-56.26%_-83.33%]">
+          <Image
+            src="/images/speed-gradient.svg"
+            alt=""
+            fill
+            className="block max-w-none object-contain"
+          />
         </div>
+      </div>
 
-        <div className="bg-[#f3f6fb] p-8 rounded-[32px] w-full flex flex-col gap-8">
-          <div className="flex flex-col gap-2">
-            <p className="text-[#006aff] font-bold text-4xl" style={{ fontFamily: 'Pretendard, sans-serif' }}>รวดเร็วกว่า 3 เท่า</p>
-            <p className="text-[#5d5f6d]" style={{ fontFamily: 'Pretendard, sans-serif' }}>ด้วยระบบดิจิทัลที่ครบวงจร</p>
+      {/* Decoration element */}
+      <div className="absolute h-[193.628px] left-[165px] top-[-14.89px] w-[469.325px] pointer-events-none">
+        <div className="absolute inset-[-2.16%_-0.7%_-0.93%_-1%]">
+          <Image
+            src="/images/speed-decoration.svg"
+            alt=""
+            fill
+            className="block max-w-none object-contain"
+          />
+        </div>
+      </div>
+
+      {/* Content container with max-width */}
+      <div className="box-border flex flex-col gap-[70px] items-start px-5 py-[70px] relative w-full max-w-[430px]">
+        <div className="flex flex-col gap-6 items-center relative shrink-0 w-full z-10">
+          {/* Logo */}
+          <div className="h-6 overflow-clip relative shrink-0 w-[168px]">
+            <Image
+              src="/고덕퍼스트치과-로고-(การ이트).png"
+              alt="Godeok First Dental"
+              width={168}
+              height={24}
+              className="h-20 w-auto object-contain -mt-[18px]"
+            />
           </div>
-          <div className="h-px bg-[#e9ebf1] w-full" />
-          <div className="flex flex-col gap-2">
-            <p className="text-[#006aff] font-bold text-4xl" style={{ fontFamily: 'Pretendard, sans-serif' }}>ใส่ฟันได้ทันที</p>
-            <p className="text-[#5d5f6d]" style={{ fontFamily: 'Pretendard, sans-serif' }}>หลังการผ่าตัดในเคสที่เหมาะสม</p>
-          </div>
+
+          {/* Title */}
+          <h2 className="font-bold leading-[1.35] not-italic text-[#fefeff] text-[32px] text-center tracking-[-0.64px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+            ความเร็วและความแตกต่าง<br />
+            ที่ไม่มีคลินิกไหนเทียบได้
+          </h2>
+
+          {/* Subtitle */}
+          <p className="font-bold leading-[32px] not-italic text-[#51aefe] text-base text-center tracking-[1.92px] uppercase w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+            สัมผัสได้เฉพาะที่ Godeok First Dental เท่านั้น
+          </p>
         </div>
       </div>
     </div>
   );
 }
-

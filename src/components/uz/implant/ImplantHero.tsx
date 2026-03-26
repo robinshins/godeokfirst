@@ -1,55 +1,77 @@
-import Image from 'next/image';
+'use client';
+
 import Link from 'next/link';
+import Image from 'next/image';
+import FadeInSection from '@/components/common/FadeInSection';
 
 export default function ImplantHero() {
-  return (
-    <div className="bg-[#0b1727] w-full relative overflow-hidden">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full opacity-30">
-        <Image
-          src="/images/hero-gradient.svg"
-          alt=""
-          fill
-          className="object-cover"
-        />
-      </div>
+  const scrollToDoctor = () => {
+    const doctorSection = document.getElementById('doctor');
+    if (doctorSection) {
+      doctorSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
 
-      <div className="max-w-[430px] mx-auto px-4 py-16 relative z-10">
-        <div className="flex flex-col gap-10">
-          <div className="flex flex-col gap-6">
-            <div className="flex flex-col gap-2">
-              <p className="text-[#006aff] font-bold text-lg">Pusan Nam-gu hududida 1-o'rin</p>
-              <h1 className="text-[36px] font-extrabold text-white leading-[1.2] tracking-[-1px]">
-                Butun umrlik tishlar<br />
-                Raqamli Implantatsiya bilan
-              </h1>
-            </div>
-            <p className="text-lg text-[#9ca3af] leading-[1.6]">
-              Kompyuter tahlili asosida<br />
-              aniq va xavfsiz operatsiya
+  return (
+    <div className="bg-gradient-to-b from-[#d2e9f3]/30 to-white w-full relative overflow-hidden">
+      {/* Content container with max-width */}
+      <div className="w-full flex justify-center">
+        <div className="box-border flex flex-col gap-[50px] items-start px-4 py-[60px] relative w-full max-w-[430px] z-10">
+        {/* Logo and Text Content */}
+        <FadeInSection className="flex flex-col gap-3 items-center justify-center relative shrink-0 w-full">
+          {/* Logo */}
+          <div className="h-11 overflow-hidden relative shrink-0">
+            <Image
+              src="/고덕퍼스트치과-로고-(블랙).png"
+              alt="Godeok First Dental"
+              width={200}
+              height={40}
+              className="h-20 w-auto object-contain -mt-[18px]"
+            />
+          </div>
+
+          {/* Main Text */}
+          <div className="flex flex-col gap-4 items-start leading-[0] not-italic relative shrink-0 text-center w-full">
+            <h1 className="font-extrabold leading-[1.35] relative shrink-0 text-4xl tracking-[-2.16px] w-full text-[#008095]" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+              Universitet shifoxonasi operatsiya sifati<br />
+              sifatini his qiling.
+            </h1>
+            <p className="font-semibold leading-[1.5] relative shrink-0 text-[18px] tracking-[-0.36px] w-full text-[#3e3a3a]">
+              Seul universiteti stomatologiya magistraturasi Implant mukofoti bilan tamomlagan,<br />Choson universiteti stomatologiya shifoxonasi tashqi professori<br />Doktor Li Donghyun shaxsan operatsiya.
             </p>
           </div>
+        </FadeInSection>
 
-          <div className="flex flex-col gap-4">
-            <Link href="/uz/consultation" className="w-full">
-              <button className="w-full h-16 bg-[#006aff] text-white rounded-[20px] font-bold text-xl">
-                AI Konsultatsiyani boshlash
+        {/* CTA Buttons */}
+        <FadeInSection delay={200} className="flex flex-col gap-4 items-start justify-center relative shrink-0 w-full">
+          <div className="flex gap-3 w-full">
+            <Link href="/uz/consultation" className="flex-1">
+              <button className="bg-[#008095] flex h-14 items-center justify-center px-4 py-3 rounded-[14px] w-full hover:bg-[#006B7A] transition-colors border-none outline-none">
+                <span className="font-bold leading-[1.5] not-italic relative shrink-0 text-white text-base text-nowrap tracking-[-0.4px]" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+                  Tezkor yozilish
+                </span>
               </button>
             </Link>
+            <a href="https://naver.me/GSD1OqoS" target="_blank" rel="noopener noreferrer" className="flex-1">
+              <button className="bg-[#03C75A] flex h-14 items-center justify-center px-4 py-3 rounded-[14px] w-full hover:bg-[#02b351] transition-colors border-none outline-none">
+                <span className="font-bold leading-[1.5] not-italic relative shrink-0 text-white text-base text-nowrap tracking-[-0.4px]" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+                  Naver bron
+                </span>
+              </button>
+            </a>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
-            <div className="bg-white/5 backdrop-blur-md border border-white/10 p-4 rounded-[20px]">
-              <p className="text-[#9ca3af] text-sm mb-1">Qayta operatsiya</p>
-              <p className="text-white text-2xl font-bold">0 holat</p>
-            </div>
-            <div className="bg-white/5 backdrop-blur-md border border-white/10 p-4 rounded-[20px]">
-              <p className="text-[#9ca3af] text-sm mb-1">Raqamli operatsiya</p>
-              <p className="text-white text-2xl font-bold">1,500 +</p>
-            </div>
-          </div>
-        </div>
+          <button
+            onClick={scrollToDoctor}
+            className="bg-transparent border-2 border-[#008095] box-border flex h-16 items-center justify-center px-6 py-4 relative rounded-[18px] shrink-0 w-full hover:bg-[#008095]/10 transition-colors"
+          >
+            <span className="font-bold leading-[1.5] not-italic relative shrink-0 text-[#008095] text-xl text-nowrap tracking-[-0.4px]" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+              Shifokorlarni koʼrish
+            </span>
+          </button>
+        </FadeInSection>
+      </div>
       </div>
     </div>
   );
 }
-

@@ -173,7 +173,7 @@ export default function ConsultationForm() {
                 {...register('name')}
                 type="text"
                 placeholder="성함을 입력해 주세요"
-                className={`w-full bg-white border ${errors.name ? 'border-red-400' : 'border-[#e9ebf1]'} rounded-[16px] px-4 py-[17px] font-['Pretendard_JP'] font-semibold text-[16px] tracking-[-0.32px] leading-[1.4] placeholder:text-[#aab2c1] focus:outline-none focus:border-[#006aff]`}
+                className={`w-full bg-white border ${errors.name ? 'border-red-400' : 'border-[#e9ebf1]'} rounded-[16px] px-4 py-[17px] font-['Pretendard_JP'] font-semibold text-[16px] tracking-[-0.32px] leading-[1.4] placeholder:text-[#aab2c1] focus:outline-none focus:border-[#008095]`}
               />
               {errors.name && (
                 <p className="text-xs text-red-600">{errors.name.message}</p>
@@ -191,7 +191,7 @@ export default function ConsultationForm() {
                 placeholder="010 0000 0000"
                 maxLength={13}
                 onChange={handlePhoneChange}
-                className={`w-full bg-white border ${errors.phone ? 'border-red-400' : 'border-[#e9ebf1]'} rounded-[16px] px-4 py-[17px] font-['Pretendard_JP'] font-semibold text-[16px] tracking-[-0.32px] leading-[1.4] placeholder:text-[#aab2c1] focus:outline-none focus:border-[#006aff]`}
+                className={`w-full bg-white border ${errors.phone ? 'border-red-400' : 'border-[#e9ebf1]'} rounded-[16px] px-4 py-[17px] font-['Pretendard_JP'] font-semibold text-[16px] tracking-[-0.32px] leading-[1.4] placeholder:text-[#aab2c1] focus:outline-none focus:border-[#008095]`}
               />
               {errors.phone && (
                 <p className="text-xs text-red-600">{errors.phone.message}</p>
@@ -214,7 +214,7 @@ export default function ConsultationForm() {
                     target.value = target.value.slice(0, 3);
                   }
                 }}
-                className={`w-full bg-white border ${errors.age ? 'border-red-400' : 'border-[#e9ebf1]'} rounded-[16px] px-4 py-[17px] font-['Pretendard_JP'] font-semibold text-[16px] tracking-[-0.32px] leading-[1.4] placeholder:text-[#aab2c1] focus:outline-none focus:border-[#006aff]`}
+                className={`w-full bg-white border ${errors.age ? 'border-red-400' : 'border-[#e9ebf1]'} rounded-[16px] px-4 py-[17px] font-['Pretendard_JP'] font-semibold text-[16px] tracking-[-0.32px] leading-[1.4] placeholder:text-[#aab2c1] focus:outline-none focus:border-[#008095]`}
               />
               {errors.age && (
                 <p className="text-xs text-red-600">{errors.age.message}</p>
@@ -238,7 +238,7 @@ export default function ConsultationForm() {
                       key={index}
                       type="button"
                       onClick={() => handlePresetSelect(option.main)}
-                      className={`flex-1 h-[69px] bg-white border ${selectedPreset === option.main ? 'border-[#006aff]' : 'border-[#e9ebf1]'} rounded-[14px] px-[14px] py-[13px] flex flex-col items-center justify-center`}
+                      className={`flex-1 h-[69px] bg-white border ${selectedPreset === option.main ? 'border-[#008095]' : 'border-[#e9ebf1]'} rounded-[14px] px-[14px] py-[13px] flex flex-col items-center justify-center`}
                     >
                       <p className="font-['Pretendard_JP'] font-semibold text-[15px] text-black tracking-[-0.3px] leading-[1.4]">
                         {option.main}
@@ -259,7 +259,7 @@ export default function ConsultationForm() {
                       key={index + 3}
                       type="button"
                       onClick={() => handlePresetSelect(option.main)}
-                      className={`flex-1 h-[69px] bg-white border ${selectedPreset === option.main ? 'border-[#006aff]' : 'border-[#e9ebf1]'} rounded-[14px] px-[14px] py-[13px] flex flex-col items-center justify-center`}
+                      className={`flex-1 h-[69px] bg-white border ${selectedPreset === option.main ? 'border-[#008095]' : 'border-[#e9ebf1]'} rounded-[14px] px-[14px] py-[13px] flex flex-col items-center justify-center`}
                     >
                       <p className="font-['Pretendard_JP'] font-semibold text-[15px] text-black tracking-[-0.3px] leading-[1.4]">
                         {option.main}
@@ -280,7 +280,7 @@ export default function ConsultationForm() {
                       key={index + 6}
                       type="button"
                       onClick={() => handlePresetSelect(option.main)}
-                      className={`flex-1 h-[69px] bg-white border ${selectedPreset === option.main ? 'border-[#006aff]' : 'border-[#e9ebf1]'} rounded-[14px] px-[14px] py-[13px] flex flex-col items-center justify-center`}
+                      className={`flex-1 h-[69px] bg-white border ${selectedPreset === option.main ? 'border-[#008095]' : 'border-[#e9ebf1]'} rounded-[14px] px-[14px] py-[13px] flex flex-col items-center justify-center`}
                     >
                       <p className="font-['Pretendard_JP'] font-semibold text-[15px] text-black tracking-[-0.3px] leading-[1.4]">
                         {option.main}
@@ -304,7 +304,7 @@ export default function ConsultationForm() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-[#006aff] rounded-[16px] py-4 font-['Pretendard_JP'] font-bold text-[18px] text-white tracking-[-0.36px] leading-[1.5] disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#0058d6] transition-colors"
+            className="w-full bg-[#008095] rounded-[16px] py-4 font-['Pretendard_JP'] font-bold text-[18px] text-white tracking-[-0.36px] leading-[1.5] disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#0058d6] transition-colors"
           >
             {isSubmitting ? '신청 중...' : '상담 시작하기'}
           </button>
@@ -350,9 +350,9 @@ export default function ConsultationForm() {
 
               {/* Dots animation */}
               <div className="flex justify-center gap-1 mt-4">
-                <div className="w-2 h-2 bg-[#006aff] rounded-full animate-bounce"></div>
-                <div className="w-2 h-2 bg-[#006aff] rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
-                <div className="w-2 h-2 bg-[#006aff] rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+                <div className="w-2 h-2 bg-[#008095] rounded-full animate-bounce"></div>
+                <div className="w-2 h-2 bg-[#008095] rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
+                <div className="w-2 h-2 bg-[#008095] rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
               </div>
             </div>
           </div>

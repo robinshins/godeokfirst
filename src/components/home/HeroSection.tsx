@@ -29,13 +29,13 @@ export default function HeroSection() {
       <div className="w-full flex justify-center relative z-10">
         <div className="box-border flex flex-col gap-10 items-start px-4 pb-12 pt-20 w-full max-w-[375px]">
           {/* Logo and Text Content */}
-          <div className="flex flex-col gap-6 items-start justify-center relative shrink-0 w-full">
+          <div className="flex flex-col gap-1 items-start justify-center relative shrink-0 w-full">
             {/* Logo */}
-            <div className="h-8 relative shrink-0">
+            <div className="h-11 relative shrink-0 overflow-hidden">
               <img
-                src="/images/goduk_images/고덕퍼스트치과_Logo_white.svg"
+                src="/고덕퍼스트치과-로고-(화이트).png"
                 alt="고덕퍼스트치과"
-                className="h-full w-auto object-contain"
+                className="h-20 w-auto object-contain -mt-[18px]"
               />
             </div>
 

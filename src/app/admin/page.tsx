@@ -1518,7 +1518,7 @@ export default function AdminPage() {
                                       {...props}
                                       target="_blank"
                                       rel="noopener noreferrer"
-                                      className="text-[#006aff] hover:underline font-medium"
+                                      className="text-[#008095] hover:underline font-medium"
                                     />
                                   ),
                                   h2: ({ children }) => <h2 className="font-bold text-base mt-3 mb-2">{children}</h2>,
@@ -1544,7 +1544,7 @@ export default function AdminPage() {
                             {message.videoIframes && message.videoIframes.length > 0 && (
                               <div className="mt-4 flex flex-col gap-3">
                                 <div className="flex items-center gap-2 pb-2 border-b border-[#e9ebf1]">
-                                  <svg className="w-5 h-5 text-[#006aff]" fill="currentColor" viewBox="0 0 20 20">
+                                  <svg className="w-5 h-5 text-[#008095]" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"/>
                                   </svg>
                                   <p className="font-semibold text-sm text-[#292a2f]">🎬 치료 영상</p>
@@ -1573,7 +1573,7 @@ export default function AdminPage() {
                             {message.caseImages && message.caseImages.length > 0 && (
                               <div className="mt-4 flex flex-col gap-4">
                                 <div className="flex items-center gap-2 pb-2 border-b border-[#e9ebf1]">
-                                  <svg className="w-5 h-5 text-[#006aff]" fill="currentColor" viewBox="0 0 20 20">
+                                  <svg className="w-5 h-5 text-[#008095]" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
                                     <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd"/>
                                   </svg>
@@ -1630,8 +1630,8 @@ export default function AdminPage() {
                                           {/* 타임라인 연결선 2 */}
                                           <div className="flex justify-center py-1">
                                             <div className="flex flex-col items-center">
-                                              <div className="w-0.5 h-4 bg-gradient-to-b from-[#d4a574] to-[#006aff]"></div>
-                                              <div className="text-[#006aff] text-lg">↓</div>
+                                              <div className="w-0.5 h-4 bg-gradient-to-b from-[#d4a574] to-[#008095]"></div>
+                                              <div className="text-[#008095] text-lg">↓</div>
                                             </div>
                                           </div>
 
@@ -1703,7 +1703,7 @@ export default function AdminPage() {
                                                 <div className="h-[100px] w-full rounded-[12px] overflow-hidden relative bg-[#f3f6fb]">
                                                   <Image src={caseImg.afterImage} alt="After" fill className="object-contain" />
                                                 </div>
-                                                <div className="absolute top-1 left-1 bg-[#006aff] px-1.5 py-0.5 rounded-md z-10">
+                                                <div className="absolute top-1 left-1 bg-[#008095] px-1.5 py-0.5 rounded-md z-10">
                                                   <p className="font-semibold text-[9px] text-white tracking-[-0.18px]">After</p>
                                                 </div>
                                               </div>
@@ -1725,7 +1725,7 @@ export default function AdminPage() {
                             {message.structuredQuestion && (
                               <div className="mt-4 p-4 bg-white rounded-xl border border-[#e9ebf1]">
                                 <div className="flex items-start gap-2 mb-3">
-                                  <svg className="w-5 h-5 text-[#006aff] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <svg className="w-5 h-5 text-[#008095] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                   </svg>
                                   <p className="font-semibold text-[14px] text-[#292a2f]">
@@ -1735,7 +1735,7 @@ export default function AdminPage() {
                                 <div className="ml-7 space-y-2">
                                   {message.structuredQuestion.options.map((option, optIdx) => (
                                     <div key={option.id} className="flex items-center gap-2 text-[13px] text-[#727582]">
-                                      <span className="font-medium text-[#006aff]">{optIdx + 1}.</span>
+                                      <span className="font-medium text-[#008095]">{optIdx + 1}.</span>
                                       <span>{option.text}</span>
                                     </div>
                                   ))}
@@ -1761,7 +1761,7 @@ export default function AdminPage() {
                         /* 사용자 메시지 */
                         <div className="flex justify-end">
                           <div className="max-w-[80%]">
-                            <div className="bg-[#006aff] text-white px-4 py-3 rounded-[20px] rounded-br-[4px]">
+                            <div className="bg-[#008095] text-white px-4 py-3 rounded-[20px] rounded-br-[4px]">
                               <p className="text-[15px] leading-[1.4]">{message.content}</p>
                               {message.selectedOptionId && (
                                 <p className="text-xs mt-2 opacity-80 border-t border-white/20 pt-2">
@@ -1849,7 +1849,7 @@ export default function AdminPage() {
                               rehypePlugins={[rehypeRaw]}
                               components={{
                                 a: ({ ...props }) => (
-                                  <a {...props} className="text-[#006aff] font-medium" />
+                                  <a {...props} className="text-[#008095] font-medium" />
                                 ),
                                 h2: ({ children }) => <h2 className="font-bold text-base mt-3 mb-2">{children}</h2>,
                                 h3: ({ children }) => <h3 className="font-bold text-sm mt-3 mb-2">{children}</h3>,
@@ -1872,7 +1872,7 @@ export default function AdminPage() {
                     ) : (
                       <div className="flex justify-end">
                         <div className="max-w-[80%]">
-                          <div className="bg-[#006aff] text-white px-4 py-3 rounded-[20px] rounded-br-[4px]">
+                          <div className="bg-[#008095] text-white px-4 py-3 rounded-[20px] rounded-br-[4px]">
                             <p className="text-[15px] leading-[1.4]">{message.content}</p>
                           </div>
                           <p className="text-xs text-[#9ca3af] mt-1 text-right">

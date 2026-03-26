@@ -1,171 +1,126 @@
 'use client';
 
-import Image from 'next/image';
+const risks = [
+  {
+ tag:'',
+ title:'3дахин↑',
+ desc:'буйл буйлны үрэвсэл. буйл 2.8дахин, 16%. цэвэрлэгээ 10~14%.',
+ stats: ['2.8дахин','16% (1удаа цэвэрлэгээ)','амны хөндий'],
+ source:'минут эмнэлэг 2024 · удаа(AHA) 2020',
+  },
+  {
+ tag:'',
+ title:'хүндрэл явуулах 2дахин↑',
+ desc:'буйл үрэвсэл. буйлны HbA1c, буйл эмчилгээ. буйлны эмчилгээ HbA1c 0.4%.',
+ stats: ['боломжтой 6дахин','HbA1c 0.4% (буйлны эмчилгээ)','хүндрэл явуулах хурд 2дахин'],
+ source:'эмнэлэг 2023 · удаа',
+  },
+  {
+ tag:'',
+ title:'70%↑',
+ desc:'буйлны Porphyromonas gingivalis. өвчтөн буйлны, 10жил буйл.',
+ stats: ['өвчтөн 40% буйлны','10жил 70%↑','буйл арчилгаа тохиолдол боломжтой'],
+ source:'2024 · Journal of Neuroinflammation',
+  },
+  {
+ tag:'',
+ title:'болон 7дахин↑',
+ desc:'буйл үрэвсэл. буйл арчилгаа, · эхний буйл шалгалт.',
+ stats: ['7дахин','(2kg) 2дахин','буйл эмчилгээ тохиолдолДаатгал хамрагдана'],
+ source:'· буйлны удаа',
+  },
+];
 
 export default function RiskSection() {
-  const risks = [
-    {
-      icon: '/icons/037_Heart.svg',
-      title: 'Зүрхний өвчний эрсдэл 3 дахин↑',
-      titleHighlight: '3 дахин↑',
-      process: [
-        'Буйлны нян судсанд нэвтрэх',
-        'Судасны ханан дээр үрэвсэл',
-        'Цус бүлэгнэхийг түргэсгэх'
-      ],
-      details: [
-        { text: 'Зүрхний өвчин 10% буурдаг', note: 'Амны үзлэгт' },
-        { text: 'Зүрхний шигдээсийн эрсдэл 2.8 дахин' },
-        { text: 'Тархины цус харвалт 16% буурдаг (жилд 1 удаа скейлинг)' }
-      ],
-      source: 'Бунданг Сөүл их сургуулийн эмнэлэг 2024, АНУ-ын зүрхний холбоо AHA 2020'
-    },
-    {
-      icon: '/icons/034_Bed.svg',
-      title: 'Чихрийн шижин хүндрэлт · нэмэгдэл',
-      titleHighlight: 'хүндрэлт',
-      titleHighlight2: 'нэмэгдэл',
-      process: [
-        'Буйлны үрэвсэл',
-        'Инсулины эсэргүүцэл нэмэгдэх',
-        'Цусан дахь сахар хянахгүй'
-      ],
-      details: [
-        { text: 'HbA1c 0.4% буурдаг (буйлны эмчилгээнд)' },
-        { text: 'Чихрийн шижин хүндрэл 2 дахин хурдан' },
-        { text: 'Буйлны үрэвсэлтэй бол сахар хянахгүй 6 дахин' }
-      ],
-      source: 'Католик их сургуулийн Ынпён эмнэлэг судалгаа 2023, Солонгосын чихрийн шижин холбоо'
-    },
-    {
-      icon: '/icons/057_DNA.svg',
-      title: 'Мартамхай өвчний эрсдэл 70%↑',
-      titleHighlight: '70%↑',
-      process: [
-        'Буйлны нян тархины хориг давах',
-        'Тархины үрэвсэл',
-        'Бета-амилойд хуримтлагдах'
-      ],
-      details: [
-        { text: 'Альцгеймерийн өвчтөнүүдийн 40%-д буйлны нян илэрсэн' },
-        { text: '10+ жил хайхрамжгүй орхивол мартамхай өвчний эрсдэл' }
-      ],
-      source: 'Харвардын их сургуулийн Кантарси багийн судалгаа 2024, Journal of Neuroinflammation'
-    },
-    {
-      icon: '/icons/023_Pregnancy_Test.svg',
-      title: 'Жирэмслэлтийн хүндрэлийн эрсдэл 7 дахин↑',
-      titleHighlight: '7 дахин↑',
-      process: [
-        'Үрэвслийн бодис ихсээр дамжих',
-        'Эрт төрөлтийг өдөөх',
-        'Дутуу төрөлт болон бага жинтэй хүүхэд'
-      ],
-      details: [
-        { text: 'Дутуу төрөлтийн эрсдэл 7 дахин' },
-        { text: 'Бага жинтэй хүүхэд (2кг-аас бага) төрөх 2 дахин' },
-        { text: 'Хүүхдийн өсөлт хөгжил, суралцах чадварт нөлөөлөх' }
-      ],
-      source: 'АНУ·Европын буйлны эмч нарын холбоо'
-    }
-  ];
-
   return (
-    <div className="bg-[#0b1727] w-full px-4 py-[60px]">
-      <div className="max-w-[343px] mx-auto flex flex-col gap-[26px] items-center">
+    <div className="bg-[#21314E] w-full py-[80px] px-5">
+      <div className="max-w-[430px] mx-auto flex flex-col gap-12">
+
         {/* Header */}
-        <div className="flex flex-col gap-3 items-start w-full">
-          <div className="flex flex-col gap-4 items-center justify-center w-full">
-            <div className="flex flex-col gap-3 items-center justify-center text-center text-white w-full">
-              <p className="font-['Nanum_Myeongjo'] font-extrabold leading-[0.2] text-[60px] tracking-[-3.6px] w-full">
-                &ldquo;
-              </p>
-              <div className="font-['Pretendard_JP'] font-bold leading-[1.35] text-[32px] tracking-[-0.64px] w-full">
-                <p className="mb-0">Буйлны үрэвсэл</p>
-                <p>бүх биед тархвал...</p>
-              </div>
-            </div>
-          </div>
-          <p className="font-['Pretendard_JP'] font-semibold leading-[1.4] text-[#d2d6e1] text-base text-center tracking-[-0.32px] w-full">
-            Хайхрамжгүй орхивол олон өвчинд тархах эрсдэлтэй
+        <div className="flex flex-col gap-4 text-center">
+          <p
+            className="text-[#4DC8D8] font-bold text-[13px] tracking-[0.2em] uppercase"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+            Health Warning
+          </p>
+          <h2
+            className="font-bold text-[30px] leading-[1.3] tracking-[-0.04em] text-white"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+ буйл <br /> 
+          </h2>
+          <p
+            className="font-medium text-white/60 text-[16px] leading-[1.6] tracking-[-0.02em]"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+ буйл бактери ерөнхий <br />.
           </p>
         </div>
 
-        {/* Divider */}
-        <div className="bg-white h-10 opacity-50 shrink-0 w-0.5" />
-
         {/* Risk Cards */}
-        <div className="flex flex-col gap-4 items-start w-full">
-          {risks.map((risk, index) => (
-            <div key={index} className="flex flex-col items-start w-full">
-              {/* White Card */}
-              <div className="bg-white border border-[#f3f6fb] box-border flex flex-col gap-10 items-center justify-center p-6 rounded-t-[24px] w-full">
-                <div className="flex flex-col gap-2.5 items-center justify-center w-full">
-                  <div className="relative shrink-0 w-[100px] h-[100px]">
-                    <Image
-                      src={risk.icon}
-                      alt=""
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-4 items-center justify-center w-full">
-                    <p className="font-['Pretendard_JP'] font-bold leading-[1.35] text-[28px] text-black text-center tracking-[-0.56px] w-full">
-                      {risk.title.split(risk.titleHighlight)[0]}
-                      <span className="text-[#ff1616]">{risk.titleHighlight}</span>
-                      {risk.titleHighlight2 && (
-                        <>
-                          {risk.title.split(risk.titleHighlight)[1].split(risk.titleHighlight2)[0]}
-                          <span className="text-[#ff1616]">{risk.titleHighlight2}</span>
-                        </>
-                      )}
-                    </p>
-                    <div className="flex flex-col gap-1 items-center w-full">
-                      {risk.process.map((step, stepIndex) => (
-                        <div key={stepIndex} className="flex flex-col items-center w-full">
-                          <p className="font-['Pretendard_JP'] font-bold leading-[1.5] text-[#5d5f6d] text-[17px] text-center tracking-[-0.34px] w-full">
-                            {step}
-                          </p>
-                          {stepIndex < risk.process.length - 1 && (
-                            <div className="relative shrink-0 w-6 h-6">
-                              <Image
-                                src="/icons/arrow-big-down-filled.svg"
-                                alt=""
-                                fill
-                                className="object-contain"
-                              />
-                            </div>
-                          )}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
+        <div className="flex flex-col gap-5">
+          {risks.map((risk, idx) => (
+            <div key={idx} className="bg-white/5 border border-white/10 rounded-[24px] p-6 flex flex-col gap-5">
+              {/* Tag + Title */}
+              <div className="flex flex-col gap-2">
+                <span className="text-[11px] font-bold px-2.5 py-1 rounded-full border border-white/20 text-white/50 uppercase tracking-wider w-fit">
+                  {risk.tag}
+                </span>
+                <h3
+                  className="font-bold text-[20px] text-white tracking-[-0.02em] leading-[1.3]"
+                  style={{ fontFamily: 'Pretendard, sans-serif' }}
+                >
+                  {risk.title}
+                </h3>
               </div>
 
-              {/* Blue Card */}
-              <div className="bg-[#006aff] box-border flex flex-col gap-2 items-center justify-center p-6 rounded-b-[24px] shadow-[0px_32px_64px_-12px_rgba(45,54,67,0.08)] text-white w-full">
-                <div className="flex flex-col gap-1 items-start w-full">
-                  {risk.details.map((detail, detailIndex) => (
-                    <div key={detailIndex} className="flex gap-1.5 items-center w-full text-nowrap whitespace-pre">
-                      <p className="font-['Pretendard_JP'] font-bold leading-[1.5] text-lg tracking-[-0.36px]">
-                        {detail.text}
-                      </p>
-                      {'note' in detail && detail.note && (
-                        <p className="font-['Pretendard_JP'] font-semibold leading-[1.4] opacity-60 text-base tracking-[-0.32px]">
-                          {detail.note}
-                        </p>
-                      )}
-                    </div>
-                  ))}
-                </div>
-                <p className="font-['Pretendard_JP'] font-normal leading-[1.4] opacity-60 text-xs tracking-[-0.24px] w-full">
-                  {risk.source}
-                </p>
+              {/* Description */}
+              <p
+                className="text-white/70 text-[14px] leading-[1.7] tracking-[-0.01em]"
+                style={{ fontFamily: 'Pretendard, sans-serif' }}
+              >
+                {risk.desc}
+              </p>
+
+              {/* Stats */}
+              <div className="flex flex-col gap-2 border-t border-white/10 pt-4">
+                {risk.stats.map((stat, sIdx) => (
+                  <div key={sIdx} className="flex items-start gap-2">
+                    <span className="text-[#4DC8D8] shrink-0 mt-[3px]">
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path d="M2.5 7L5.5 10L11.5 4" stroke="#4DC8D8" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </span>
+                    <p
+                      className="text-[#4DC8D8] font-semibold text-[13px] leading-[1.5]"
+                      style={{ fontFamily: 'Pretendard, sans-serif' }}
+                    >
+                      {stat}
+                    </p>
+                  </div>
+                ))}
               </div>
+
+              {/* Source */}
+ <p className="text-white/30 text-[11px]">: {risk.source}</p>
             </div>
           ))}
         </div>
+
+        {/* Bottom Note */}
+        <div className="bg-[#008095]/10 border border-[#008095]/30 rounded-2xl p-6 flex flex-col gap-2 text-center">
+          <p
+            className="text-[#4DC8D8] font-bold text-[16px] leading-[1.5]"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+ 1удаа цэвэрлэгээ <br /> 14%.
+          </p>
+          <p className="text-white/40 text-[13px]">
+ цэвэрлэгээ тохиолдолДаатгал хамрагдана — 1жил нас.
+          </p>
+        </div>
+
       </div>
     </div>
   );

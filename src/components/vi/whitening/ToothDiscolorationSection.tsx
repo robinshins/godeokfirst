@@ -5,22 +5,22 @@ export default function ToothDiscolorationSection() {
     {
       image: '/icons/coffee.svg',
       title: 'Cà phê',
-      description: 'Cà phê uống hàng ngày\nlàm răng bạn ố vàng'
+      description: 'Cà phê uống hàng ngày\nlàm răng ố vàng'
     },
     {
       image: '/icons/smoking.svg',
       title: 'Hút thuốc',
-      description: 'Nicotine và hắc ín là\nnguyên nhân chính gây xỉn màu răng'
+      description: 'Nicotine và hắc ín\nlà thủ phạm gây đổi màu răng'
     },
     {
       image: '/icons/wine.svg',
       title: 'Rượu vang',
-      description: 'Tannin trong rượu vang đỏ\ngây ra các vết ố trên răng'
+      description: 'Tannin trong rượu vang đỏ\ngây nhuộm màu răng'
     }
   ];
 
   return (
-    <div className="bg-[#0b1727] w-full">
+    <div className="bg-[#21314E] w-full">
       <div className="max-w-[375px] mx-auto px-4 py-[60px]">
         {/* Section Header */}
         <div className="flex flex-col gap-3 mb-[26px]">
@@ -30,13 +30,13 @@ export default function ToothDiscolorationSection() {
                 &#x201C;
               </p>
               <h2 className="font-['Pretendard_JP'] font-bold text-[32px] leading-[1.35] tracking-[-0.64px] w-full">
-                Răng của bạn có<br />
-                đang ổn không?
+                Màu răng của bạn<br />
+                có khỏe không?
               </h2>
             </div>
           </div>
           <p className="font-['Pretendard_JP'] font-semibold text-[#e9ebf1] text-base leading-[1.4] tracking-[-0.32px] text-center">
-            Nếu những thói quen dưới đây tiếp diễn<br />
+            Nếu các thói quen dưới đây tiếp tục<br />
             răng sẽ bị ố vàng
           </p>
         </div>
@@ -79,4 +79,3 @@ export default function ToothDiscolorationSection() {
     </div>
   );
 }
-

@@ -14,8 +14,8 @@ export default function ThreeStepSection() {
           {/* Logo */}
           <div className="h-6 w-[168px]">
             <svg width="168" height="24" viewBox="0 0 168 24" fill="none">
-              <text x="0" y="18" fontFamily="Pretendard" fontSize="18" fontWeight="700" fill="#006aff">
-                Kyungsung Medis
+              <text x="0" y="18" fontFamily="Pretendard" fontSize="18" fontWeight="700" fill="#008095">
+                Godeok First Dental
               </text>
             </svg>
           </div>
@@ -23,13 +23,13 @@ export default function ThreeStepSection() {
           {/* Title */}
           <div className="flex flex-col gap-3 text-center">
             <h2 className="text-[32px] font-bold leading-[1.35] tracking-[-0.02em] text-black">
-              Faqat Kyungsung Medisda mavjud<br />
-              3 bosqichli vaqtinchalik tish
+              Godeok First Dental-ning oʼziga xos yagona<br />
+              3bosqich vaqtincha tish
             </h2>
             <p className="text-base font-semibold leading-[1.4] tracking-[-0.02em] text-[#727582]">
-              Bitta vaqtinchalik tish bilan yakunlash emas,<br />
+              Faqat bir marta vaqtincha tish bilan yakunlash emas<br />
               3 bosqichli aniq sozlash orqali<br />
-              o'z tishingiz kabi qulaylikni yaratamiz
+              oʼz tishidek qulaylik beradi
             </p>
           </div>
         </div>
@@ -41,20 +41,20 @@ export default function ThreeStepSection() {
             <div className="w-20 h-20">
               <Image
                 src="/icons/tooth.svg"
-                alt="1-bosqich vaqtinchalik"
+                alt="1farq vaqtincha"
                 width={80}
                 height={80}
               />
             </div>
-            <p className="text-[17px] font-bold leading-[1.5] tracking-[-0.02em] text-[#006aff]">
-              1-bosqich vaqtinchalik
+            <p className="text-[17px] font-bold leading-[1.5] tracking-[-0.02em] text-[#008095]">
+              1farq vaqtincha
             </p>
             <p className="text-2xl font-bold leading-[1.35] tracking-[-0.02em] text-black">
-              Darhol tiklanish
+              darhol tiklanish
             </p>
             <p className="text-[17px] font-bold leading-[1.5] tracking-[-0.02em] text-[#5d5f6d] text-center">
-              Operatsiyadan so'ng darhol o'rnatiladi va<br />
-              kundalik hayot darhol davom etadi
+              Operatsiyadan darhol keyin oʼrnatiladi va<br />
+              kundalik hayotga qaytish mumkin
             </p>
           </div>
 
@@ -68,15 +68,15 @@ export default function ThreeStepSection() {
                 height={80}
               />
             </div>
-            <p className="text-[17px] font-bold leading-[1.5] tracking-[-0.02em] text-[#006aff]">
+            <p className="text-[17px] font-bold leading-[1.5] tracking-[-0.02em] text-[#008095]">
               2-bosqich tishlov barqarorligi
             </p>
             <p className="text-2xl font-bold leading-[1.35] tracking-[-0.02em] text-black">
               Aniq tishlov sozlash
             </p>
             <p className="text-[17px] font-bold leading-[1.5] tracking-[-0.02em] text-[#5d5f6d] text-center">
-              2 haftadan so'ng shaxsiy<br />
-              tishlov holati nozik sozlanadi
+              2 haftadan soʼng shaxsiy<br />
+              tishlov holatini nozik sozlash
             </p>
           </div>
 
@@ -85,20 +85,20 @@ export default function ThreeStepSection() {
             <div className="w-20 h-20">
               <Image
                 src="/icons/implant-group.svg"
-                alt="3-bosqich yakuniy vaqtinchalik"
+                alt="3farq yakuniy vaqtincha"
                 width={80}
                 height={80}
               />
             </div>
-            <p className="text-[17px] font-bold leading-[1.5] tracking-[-0.02em] text-[#006aff]">
-              3-bosqich yakuniy vaqtinchalik
+            <p className="text-[17px] font-bold leading-[1.5] tracking-[-0.02em] text-[#008095]">
+              3farq yakuniy vaqtincha
             </p>
             <p className="text-2xl font-bold leading-[1.35] tracking-[-0.02em] text-black">
-              Mukammal tishlov tekshiruvi
+              mukammal tishlov tekshirish
             </p>
             <p className="text-[17px] font-bold leading-[1.5] tracking-[-0.02em] text-[#5d5f6d] text-center">
               Yakuniy protez tayyorlashdan oldin<br />
-              mukammal tishlovni yana bir bor tekshiramiz
+              mukammal tishlovni yana bir bor tekshirish
             </p>
           </div>
 
@@ -107,20 +107,20 @@ export default function ThreeStepSection() {
             <div className="w-20 h-20">
               <Image
                 src="/icons/tooth-shine.svg"
-                alt="Yakuniy protez"
+                alt="yakuniy protez"
                 width={80}
                 height={80}
               />
             </div>
-            <p className="text-[17px] font-bold leading-[1.5] tracking-[-0.02em] text-[#006aff]">
-              Yakuniy protez
+            <p className="text-[17px] font-bold leading-[1.5] tracking-[-0.02em] text-[#008095]">
+              yakuniy protez
             </p>
             <p className="text-2xl font-bold leading-[1.35] tracking-[-0.02em] text-black">
-              Umrbod o'z tishingiz
+              Umr boʼyi oʼz tishingiz
             </p>
             <p className="text-[17px] font-bold leading-[1.5] tracking-[-0.02em] text-[#5d5f6d] text-center">
-              Barcha sozlashlar tugallangach, mukammal shaxsiylashtirilgan<br />
-              yakuniy protez o'rnatiladi
+              Barcha sozlashlar tugallangan mukammal<br />
+              yakuniy protezni oʼrnatish
             </p>
           </div>
         </div>

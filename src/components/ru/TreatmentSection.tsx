@@ -6,72 +6,101 @@ export default function TreatmentSection() {
     {
       icon: '/images/implant-icon.png',
       iconBg: 'bg-blue-50',
-      title: 'Полная и единичная имплантация',
-      subtitle: 'Наибольшее количество операций по имплантации в районе Намгу, Пусан',
-      description: 'Безопасная и комфортная цифровая операция высокой сложности с компьютерным анализом. Гарантия 10 лет.',
+      title: 'Имплант',
+      subtitle: 'цифровая навигация Имплант операция',
+      description: 'Безопасная и комфортная операция с компьютерным анализом и полной ответственностью.',
       features: [
-        'Передовая цифровая хирургия',
-        'Седация — медикаментозный сон',
+        'Сложная цифровая навигационная операция',
+        'Операция под седацией',
         'Временные зубы сразу после операции',
-        'Операцию проводит главный врач лично',
-        'Крупнейший парк цифрового оборудования в Корее'
+        'Главный врач лично операция',
+        'Полное цифровое оснащение'
       ],
-      link: '/ru/implant'
+      link: '/implant'
     },
     {
-      icon: '/icons/whitening.svg',
-      iconBg: 'bg-purple-50',
-      title: 'Отбеливание и виниры',
-      subtitle: 'Премиальное оборудование',
-      description: 'Безопасное и эффективное отбеливание\nСкидка 50% при комбинации с чисткой',
+      icon: '/icons/gum.svg',
+      iconBg: 'bg-indigo-50',
+      title: 'протез / полный Имплант',
+      subtitle: 'Индивидуальное точное протезирование',
+      description: 'От комфортных натуральных протезов\
+до индивидуально спроектированной полной имплантации',
       features: [
-        'Мгновенный результат за 1 сеанс',
-        'Без повреждения эмали',
-        'Доступные цены',
-        'Профессиональное отбеливание и виниры'
+        'Точное изготовление индивидуальных протезов',
+        'полный Имплант (All-on-4/6)',
+        'Имплант протез(оверденчер)',
+        'Возможно по страховке'
       ],
-      link: '/ru/whitening'
+      link: '/denture'
+    },
+    {
+      icon: '/icons/cavity.svg',
+      iconBg: 'bg-orange-50',
+      title: 'Лечение кариеса и эндодонтия',
+      subtitle: 'Специализация на сохранении естественных зубов',
+      description: 'Лечение вместо удаления\nСпециалиста комплексной стоматологии точный лечение',
+      features: [
+        'Точная диагностика кариеса',
+        'Безболезненная эндодонтия',
+        'Сохранение естественных зубов',
+        'страховое покрытие'
+      ],
+      link: '/cavity-treatment'
     },
     {
       icon: '/icons/extraction.svg',
       iconBg: 'bg-green-50',
-      title: 'Удаление зуба мудрости',
+      title: 'Удаление зубов мудрости',
       subtitle: 'Безопасное и быстрое удаление',
-      description: 'Точная диагностика с 3D КТ\nБезопасное удаление без повреждения нерва',
+      description: '3D CT точный диагностика\nнерв повреждениенет безопасность  удаление',
       features: [
         'Обезболивающая анестезия',
         'Быстрое восстановление',
         'Тщательный послеоперационный уход'
       ],
-      link: '/ru/wisdom-tooth'
-    },
-    {
-      icon: '/icons/cavity.svg',
-      iconBg: 'bg-orange-50',
-      title: 'Лечение кариеса и каналов',
-      subtitle: 'Специалист по сохранению зубов',
-      description: 'Лечение, которое сохраняет, а не удаляет\nТочное лечение от специалиста по консервативной стоматологии',
-      features: [
-        'Микроскопическая точная диагностика',
-        'Обнаружение кариеса Curay',
-        'Безболезненное лечение нервов',
-        'Покрывается страховкой'
-      ],
-      link: '/ru/cavity-treatment'
+      link: '/wisdom-tooth'
     },
     {
       icon: '/icons/gum.svg',
       iconBg: 'bg-pink-50',
-      title: 'Лечение дёсен и чистка',
-      subtitle: 'Основа общего здоровья',
-      description: 'Заболевания дёсен затрагивают 80% взрослых\nЗдоровые зубы на всю жизнь благодаря регулярному уходу',
+      title: 'Лечение десен и чистка',
+      subtitle: 'общий здоров начало',
+      description: '80% взрослых страдают заболеваниями дёсен\nРегулярный уход — здоровые зубы на всю жизнь',
       features: [
-        'Специализированное оборудование NSK varios 970',
-        'Периоклин уход',
+        'Лечение с использованием специального оборудования',
+        'Уход Perioklin',
         'Безболезненное лечение',
-        'Страховка покрывает раз в год'
+        'год 1раз страховое покрытие'
       ],
-      link: '/ru/gum-care'
+      link: '/gum-care'
+    },
+    {
+      icon: '/icons/gum.svg',
+      iconBg: 'bg-indigo-50',
+      title: 'Лечение ВНЧС',
+      subtitle: 'Специализация на боли ВНЧС · нарушения открывания рта',
+      description: 'Щёлкает или болит челюсть?\nточный диагностика после индивидуально лечение',
+      features: [
+        'Точная диагностика ВНЧС',
+        'Окклюзионная шина (сплинт)',
+        'Физиотерапия · Медикаментозное лечение',
+        'Лечение у специалиста комплексной стоматологии'
+      ],
+      link: '/tmj'
+    },
+    {
+      icon: '/icons/whitening.svg',
+      iconBg: 'bg-purple-50',
+      title: 'Отбеливание зубов',
+      subtitle: 'Оборудование премиум-класса',
+      description: 'Безопасная и эффективная процедура отбеливания\nСкидка при совмещении с чисткой',
+      features: [
+        'Мгновенный эффект за одну процедуру',
+        'Без повреждения зубов',
+        'Доступные цены',
+        'Система Osstem Beautis'
+      ],
+      link: '/whitening'
     }
   ];
 
@@ -80,17 +109,17 @@ export default function TreatmentSection() {
       <div className="max-w-[375px] mx-auto px-4 py-12">
         {/* Section Header */}
         <div className="flex flex-col gap-5 items-center justify-center relative shrink-0 w-full mb-10">
-          <div className="h-8 relative shrink-0 w-40">
+          <div className="h-11 relative shrink-0 overflow-hidden">
             <Image
-              src="/icons/Logo_black.svg"
-              alt="Kyungsung Medis Dental Clinic"
-              width={160}
-              height={32}
-              className="w-full h-full"
+              src="/고덕퍼스트치과-로고-(블랙).png"
+              alt="Godeok First Dental"
+              width={375}
+              height={84}
+              className="h-20 w-auto object-contain -mt-[18px]"
             />
           </div>
-          <h2 className="font-bold leading-[1.35] not-italic text-[36px] text-black text-center tracking-[-0.72px] w-full" style={{ fontFamily: 'Noto Sans, sans-serif' }}>
-            Специализированные услуги
+          <h2 className="font-bold leading-[1.35] not-italic text-[36px] text-black text-center tracking-[-0.72px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+            Направления лечения
           </h2>
         </div>
 
@@ -113,7 +142,7 @@ export default function TreatmentSection() {
                       alt={treatment.title}
                       width={64}
                       height={64}
-                      className="w-full h-full object-contain"
+                      className="h-20 w-auto object-contain -mt-[18px]"
                     />
                   </div>
 
@@ -126,11 +155,6 @@ export default function TreatmentSection() {
                       <p className="text-[17px] font-bold text-[#727582] leading-[1.5] tracking-[-0.36px]">
                         {treatment.subtitle}
                       </p>
-                      {index === 0 && (
-                        <p className="text-[13px] text-[#9a9ca8] leading-[1.5] tracking-[-0.28px]">
-                          *На основе цифровой хирургии с компьютерным наведением
-                        </p>
-                      )}
                     </div>
                   </div>
                 </div>
@@ -146,7 +170,7 @@ export default function TreatmentSection() {
                       src="/icons/arrow-right.svg"
                       alt="Подробнее"
                       width={32}
-                      height={32}
+                      height={84}
                     />
                   </Link>
                 ) : (
@@ -158,7 +182,7 @@ export default function TreatmentSection() {
                       src="/icons/arrow-right.svg"
                       alt="Подробнее"
                       width={32}
-                      height={32}
+                      height={84}
                     />
                   </button>
                 )}

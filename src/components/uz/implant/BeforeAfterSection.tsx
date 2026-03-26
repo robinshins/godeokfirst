@@ -1,55 +1,219 @@
+'use client';
+
+import { useState } from 'react';
 import Image from 'next/image';
+import FadeInSection from '@/components/common/FadeInSection';
 
 export default function BeforeAfterSection() {
-  const cases = [
+  const [showMoreReconstruction, setShowMoreReconstruction] = useState(false);
+  const [showMoreImplant, setShowMoreImplant] = useState(false);
+  // 구강재건 케이스 (고난도)
+  const reconstructionCases = [
     {
-      title: 'To\'liq implantatsiya',
-      before: '/images/case-before-01.jpg',
-      after: '/images/case-after-01.jpg',
-      desc: 'Barcha tishlarini yo\'qotgan bemorga raqamli navigatsiya orqali to\'liq implant o\'rnatildi.'
+      name: 'Ji●●',
+      gender: 'Erkak',
+      type: 'Koʼp implant · Rentgen',
+      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_before.jpg',
+      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_after.jpg'
     },
     {
-      title: 'Old tishlar implantatsiyasi',
-      before: '/images/case-before-02.jpg',
-      after: '/images/case-after-02.jpg',
-      desc: 'Estetika muhim bo\'lgan old tishlar implantatsiyasi va vaqtinchalik tish o\'rnatish.'
+      name: 'Ji●●',
+      gender: 'Erkak',
+      type: 'Koʼp implant · Haqiqiy surat',
+      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_before.jpg',
+      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_after.jpg'
     }
   ];
 
-  return (
-    <div className="bg-[#f8f9fa] w-full">
-      <div className="max-w-[430px] mx-auto px-4 py-16">
-        <div className="flex flex-col gap-10">
-          <div className="flex flex-col gap-3 text-center">
-            <h2 className="text-[28px] font-bold text-[#111827]">Davolash natijalari</h2>
-            <p className="text-[#6b7280]">Medis stomatologiyasining real holatlari</p>
-          </div>
+  // 임플란트 케이스
+  const implantCases = [
+    {
+      name: 'Ji●●',
+      gender: 'Erkak',
+      type: 'Implant protezi · Rentgen',
+      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_before.jpg',
+      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_after.jpg'
+    },
+    {
+      name: 'Ji●●',
+      gender: 'Erkak',
+      type: 'Implant protezi · Haqiqiy surat',
+      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_before.jpg',
+      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_after.jpg'
+    },
+    {
+      name: 'Lee●●',
+      gender: 'Ayol',
+      type: 'Implant · Haqiqiy surat',
+      beforeImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_before.jpg',
+      afterImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_after.jpg'
+    }
+  ];
 
-          <div className="flex flex-col gap-12">
-            {cases.map((item, index) => (
-              <div key={index} className="flex flex-col gap-6">
-                <h3 className="text-xl font-bold text-[#374151] px-2">{item.title}</h3>
-                <div className="grid grid-cols-2 gap-2">
-                  <div className="relative aspect-square rounded-2xl overflow-hidden">
-                    <Image src={item.before} alt="Oldin" fill className="object-cover" />
-                    <div className="absolute top-2 left-2 bg-black/50 text-white text-xs px-2 py-1 rounded">Oldin</div>
+  const displayedReconstructionCases = showMoreReconstruction ? reconstructionCases : reconstructionCases.slice(0, 2);
+  const displayedImplantCases = showMoreImplant ? implantCases : implantCases.slice(0, 3);
+
+  // 케이스 카드 렌더링 함수
+  const renderCaseCard = (caseItem: { name: string; gender: string; type: string; beforeImage: string; afterImage: string }, index: number) => (
+    <div key={index} className="bg-white border border-[#f3f6fb] border-solid rounded-[24px] shrink-0 w-full">
+      <div className="flex flex-col items-center justify-center overflow-hidden rounded-[inherit] w-full">
+        <div className="box-border flex flex-col gap-5 items-center justify-center px-4 py-6 relative shrink-0 w-full">
+          <div className="flex flex-col gap-2 items-center justify-center relative shrink-0 w-full">
+            <div className="flex flex-col gap-2 items-center justify-center relative shrink-0 w-full">
+              <div className="flex flex-col gap-4 items-start relative shrink-0 w-full">
+                {/* Before Image */}
+                <div className="bg-[#f3f6fb] h-[192px] overflow-hidden relative rounded-[20px] shrink-0 w-full">
+                  <div className="relative w-full h-full">
+                    <Image
+                      src={caseItem.beforeImage}
+                      alt="Before"
+                      fill
+                      className="object-cover"
+                      sizes="400px"
+                      loading="eager"
+                    />
                   </div>
-                  <div className="relative aspect-square rounded-2xl overflow-hidden">
-                    <Image src={item.after} alt="Keyin" fill className="object-cover" />
-                    <div className="absolute top-2 left-2 bg-[#006aff]/80 text-white text-xs px-2 py-1 rounded">Keyin</div>
+                  {/* Before Badge */}
+                  <div className="absolute box-border flex flex-col gap-2.5 items-start left-0 p-3 top-0 z-10">
+                    <div className="bg-[#292a2f] box-border flex flex-col gap-2.5 items-center justify-center px-2.5 py-[5px] relative rounded-[10px] shrink-0">
+                      <p className="font-semibold leading-[1.4] not-italic text-[13px] text-nowrap text-white tracking-[-0.26px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                        Before
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <p className="text-[#6b7280] leading-[1.6] px-2">{item.desc}</p>
-              </div>
-            ))}
-          </div>
 
-          <p className="text-[12px] text-[#9ca3af] text-center">
-            * Natijalar har bir bemorda har xil bo'lishi mumkin. Operatsiyadan keyin shish yoki qon ketishi kabi asoratlar bo'lishi mumkinligi sababli mutaxassis bilan maslahatlashing.
-          </p>
+                {/* After Image */}
+                <div className="bg-[#f3f6fb] h-[192px] overflow-hidden relative rounded-[20px] shrink-0 w-full">
+                  <div className="relative w-full h-full">
+                    <Image
+                      src={caseItem.afterImage}
+                      alt="After"
+                      fill
+                      className="object-cover"
+                      sizes="400px"
+                      loading="eager"
+                    />
+                  </div>
+                  {/* After Badge */}
+                  <div className="absolute box-border flex flex-col gap-2.5 items-start left-0 p-3 top-0 z-10">
+                    <div className="bg-[#008095] box-border flex flex-col gap-2.5 items-center justify-center px-2.5 py-[5px] relative rounded-[10px] shrink-0">
+                      <p className="font-semibold leading-[1.4] not-italic text-[13px] text-nowrap text-white tracking-[-0.26px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                        After
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col gap-1 items-start relative shrink-0 w-full">
+            <p className="font-semibold leading-[1.4] not-italic text-[#9298a6] text-[15px] text-center tracking-[-0.3px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+              {caseItem.type} · {caseItem.name} · {caseItem.gender}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  return (
+    <div className="bg-[#f3f6fb] w-full flex justify-center">
+      <div className="box-border flex flex-col gap-[60px] items-start px-4 py-[60px] relative w-full max-w-[430px]">
+
+        {/* 구강재건 섹션 */}
+        <div className="flex flex-col gap-[30px] items-start relative shrink-0 w-full">
+          {/* Header */}
+          <FadeInSection className="flex flex-col gap-3 items-start relative shrink-0 w-full">
+            <div className="flex flex-col gap-4 items-center justify-center relative shrink-0 w-full">
+              <div className="bg-[#008095] px-4 py-2 rounded-full">
+                <p className="font-semibold text-white text-sm" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                  Murakkab davolash
+                </p>
+              </div>
+              <div className="flex flex-col gap-3 items-center justify-center relative shrink-0 w-full">
+                <h2 className="font-bold leading-[1.35] not-italic text-[28px] text-black text-center tracking-[-0.56px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                  Toʼliq ogʼiz qayta tiklash<br />
+                  Oldin va keyin holatlari
+                </h2>
+                <p className="text-[#6b7280] text-[15px] text-center leading-[1.6]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                  Toʼliq buzilgan ogʼiz boʼshligʼini<br />
+                  sogʼlom hayotga qaytargan holatlar
+                </p>
+              </div>
+            </div>
+          </FadeInSection>
+
+          {/* 전문의 설명 박스 */}
+          <FadeInSection delay={100}>
+          <div className="bg-white border border-[#e5e7eb] rounded-[16px] p-5 w-full">
+            <div className="flex flex-col gap-3">
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 bg-[#008095] rounded-full" />
+                <p className="font-bold text-[15px] text-[#008095]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                  Integratsiyalashgan stomatologiya mutaxassisining kompleks davolashi
+                </p>
+              </div>
+              <p className="text-[#4b5563] text-[14px] leading-[1.7]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                Integratsiyalashgan stomatologiya mutaxassisi <span className="font-semibold text-black">implant, toj, koʼprik</span> kabi turli davolash usullarini bemor holatiga moslab optimal tarzda birlashtiradi va <span className="font-semibold text-black">maqbul narxlarda</span> <span className="font-semibold text-black">eng yaxshi natijalarni</span> beradi.
+              </p>
+            </div>
+          </div>
+          </FadeInSection>
+
+          {/* 구강재건 Cases */}
+          <FadeInSection delay={200} className="flex flex-col gap-6 items-start relative shrink-0 w-full">
+            {displayedReconstructionCases.map((caseItem, index) => renderCaseCard(caseItem, index))}
+
+            {/* More Button */}
+            {!showMoreReconstruction && reconstructionCases.length > 2 && (
+              <button
+                onClick={() => setShowMoreReconstruction(true)}
+                className="bg-white border border-[#e9ebf1] border-solid box-border flex h-14 items-center justify-center px-6 py-4 relative rounded-[18px] shrink-0 w-full hover:bg-gray-50 transition-colors"
+              >
+                <span className="font-bold leading-[1.5] not-italic text-[#008095] text-lg text-nowrap tracking-[-0.36px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                  Ogʼiz qayta tiklash holatlarini koʼproq koʼrish
+                </span>
+              </button>
+            )}
+          </FadeInSection>
+        </div>
+
+        {/* 구분선 */}
+        <div className="w-full h-[1px] bg-[#e5e7eb]" />
+
+        {/* 임플란트 섹션 */}
+        <div className="flex flex-col gap-[30px] items-start relative shrink-0 w-full">
+          {/* Header */}
+          <FadeInSection className="flex flex-col gap-3 items-start relative shrink-0 w-full">
+            <div className="flex flex-col gap-4 items-center justify-center relative shrink-0 w-full">
+              <div className="flex flex-col gap-2 items-center justify-center relative shrink-0 w-full">
+                <h2 className="font-bold leading-[1.35] not-italic text-[28px] text-black text-center tracking-[-0.56px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                  Raqamli yoʼnaltiruvchi<br />
+                  Implant oldin va keyin holatlari
+                </h2>
+              </div>
+            </div>
+          </FadeInSection>
+
+          {/* 임플란트 Cases */}
+          <FadeInSection delay={100} className="flex flex-col gap-6 items-start relative shrink-0 w-full">
+            {displayedImplantCases.map((caseItem, index) => renderCaseCard(caseItem, index))}
+
+            {/* More Button */}
+            {!showMoreImplant && implantCases.length > 3 && (
+              <button
+                onClick={() => setShowMoreImplant(true)}
+                className="bg-white border border-[#e9ebf1] border-solid box-border flex h-14 items-center justify-center px-6 py-4 relative rounded-[18px] shrink-0 w-full hover:bg-gray-50 transition-colors"
+              >
+                <span className="font-bold leading-[1.5] not-italic text-[#008095] text-lg text-nowrap tracking-[-0.36px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                  Implant holatlarini koʼproq koʼrish
+                </span>
+              </button>
+            )}
+          </FadeInSection>
         </div>
       </div>
     </div>
   );
 }
-

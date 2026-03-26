@@ -4,103 +4,45 @@ import Image from 'next/image';
 
 export default function ImportantMomentsSection() {
   const moments = [
-    {
-      icon: '/images/military.png',
-      label: 'รับราชการทหาร',
-      description: 'ถ้าปวดกะทันหัน\nระหว่างรับราชการจะยุ่งยาก'
-    },
-    {
-      icon: '/images/exam.png',
-      label: 'ช่วงสอบ',
-      description: 'ปวดกะทันหัน\nก่อนวันสอบสำคัญ'
-    },
-    {
-      icon: '/images/wedding.png',
-      label: 'แต่งงาน / สัมภาษณ์',
-      description: 'วันสำคัญในชีวิต\nหน้าบวม...'
-    },
-    {
-      icon: '/images/travel.png',
-      label: 'ท่องเที่ยว / ทำงาน',
-      description: 'ห้องฉุกเฉินต่างประเทศ\nค่ารักษาแพง'
-    }
+    { icon: '/images/military.png', label: 'รับราชการทหาร', description: 'ปวดกะทันหัน\nในกองทัพจัดการยาก' },
+    { icon: '/images/exam.png', label: 'ช่วงสอบ', description: 'ปวดกะทันหัน\nก่อนวันสอบสำคัญ' },
+    { icon: '/images/wedding.png', label: 'งานแต่ง · สัมภาษณ์', description: 'วันสำคัญที่สุด\nแต่หน้าบวม...' },
+    { icon: '/images/travel.png', label: 'เดินทาง · ทำงาน', description: 'ห้องฉุกเฉินต่างประเทศ\nค่ารักษาแพง' }
   ];
 
   return (
-    <div className="bg-[#0b1727] w-full py-[60px]">
+    <div className="bg-white w-full py-[60px]">
       <div className="max-w-[375px] mx-auto px-4">
         <div className="flex flex-col gap-[26px] items-center justify-center w-full">
-          {/* Title with quotes */}
           <div className="flex flex-col gap-3 items-center justify-center w-full">
-            <div className="flex flex-col gap-3 items-center justify-center text-center text-white w-full">
-              <p className="font-['Nanum_Myeongjo'] font-extrabold text-[60px] leading-[0.2] tracking-[-3.6px]">
-                &#x201C;
-              </p>
-              <h2 className="font-bold text-[32px] leading-[1.35] tracking-[-0.64px] whitespace-pre-line">
-                {'มันมาโดยไม่บอกล่วงหน้า\nอาการปวดฟันคุด...'}
-              </h2>
+            <div className="flex flex-col gap-3 items-center justify-center text-center w-full">
+              <p className="text-[13px] font-bold text-[#008095] tracking-[3px] uppercase">DON&apos;T WAIT</p>
+              <h2 className="font-bold text-[32px] leading-[1.35] tracking-[-0.64px] text-[#292a2f]">มาโดยไม่บอกล่วงหน้า<br /><span className="text-[#008095]">อาการปวดฟันคุด...</span></h2>
             </div>
-            <p className="font-semibold text-[14px] leading-[1.4] tracking-[-0.32px] text-[#d2d6e1] text-center w-full">
-              ถ้าแก้ไขตั้งแต่ตอนสบายๆ จะปกป้องช่วงเวลาสำคัญได้
-            </p>
+            <p className="font-semibold text-[14px] leading-[1.4] tracking-[-0.32px] text-[#727582] text-center w-full">แก้ไขล่วงหน้าตอนสบายๆ เพื่อปกป้องช่วงเวลาสำคัญ</p>
           </div>
-
-          {/* White divider */}
-          <div className="h-10 w-0.5 bg-white opacity-50" />
-
-          {/* Cards Grid */}
           <div className="flex flex-col gap-3 w-full">
             <div className="flex gap-3 w-full">
-              {moments.slice(0, 2).map((moment, index) => (
-                <div
-                  key={index}
-                  className="flex-1 bg-white border border-[#f3f6fb] rounded-[24px] p-6 flex flex-col gap-12 items-center justify-center"
-                >
+              {moments.slice(0, 2).map((m, i) => (
+                <div key={i} className="flex-1 bg-[#f3f6fb] rounded-[24px] p-6 flex flex-col gap-12 items-center justify-center">
                   <div className="flex flex-col gap-[6px] items-center justify-center w-full">
-                    <div className="w-20 h-20 relative">
-                      <Image
-                        src={moment.icon}
-                        alt={moment.label}
-                        width={80}
-                        height={80}
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
+                    <div className="w-20 h-20 relative"><Image src={m.icon} alt={m.label} width={80} height={80} className="w-full h-full object-contain" /></div>
                     <div className="flex flex-col gap-2 items-center justify-center text-center w-full">
-                      <p className="font-bold text-[22px] leading-[1.4] tracking-[-0.44px] text-[#37373e]">
-                        {moment.label}
-                      </p>
-                      <p className="font-semibold text-base leading-[1.4] tracking-[-0.32px] text-[#5d5f6d] whitespace-pre-line">
-                        {moment.description}
-                      </p>
+                      <p className="font-bold text-[22px] leading-[1.4] tracking-[-0.44px] text-[#37373e]">{m.label}</p>
+                      <p className="font-semibold text-base leading-[1.4] tracking-[-0.32px] text-[#5d5f6d] whitespace-pre-line">{m.description}</p>
                     </div>
                   </div>
                 </div>
               ))}
             </div>
             <div className="flex gap-3 w-full">
-              {moments.slice(2, 4).map((moment, index) => (
-                <div
-                  key={index + 2}
-                  className="flex-1 bg-white border border-[#f3f6fb] rounded-[24px] p-6 flex flex-col gap-12 items-center justify-center"
-                >
+              {moments.slice(2, 4).map((m, i) => (
+                <div key={i + 2} className="flex-1 bg-[#f3f6fb] rounded-[24px] p-6 flex flex-col gap-12 items-center justify-center">
                   <div className="flex flex-col gap-[6px] items-center justify-center w-full">
-                    <div className="w-20 h-20 relative">
-                      <Image
-                        src={moment.icon}
-                        alt={moment.label}
-                        width={80}
-                        height={80}
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
+                    <div className="w-20 h-20 relative"><Image src={m.icon} alt={m.label} width={80} height={80} className="w-full h-full object-contain" /></div>
                     <div className="flex flex-col gap-2 items-center justify-center text-center w-full">
-                      <p className="font-bold text-[22px] leading-[1.4] tracking-[-0.44px] text-[#37373e]">
-                        {moment.label}
-                      </p>
-                      <p className="font-semibold text-base leading-[1.4] tracking-[-0.32px] text-[#5d5f6d] whitespace-pre-line">
-                        {moment.description}
-                      </p>
+                      <p className="font-bold text-[22px] leading-[1.4] tracking-[-0.44px] text-[#37373e]">{m.label}</p>
+                      <p className="font-semibold text-base leading-[1.4] tracking-[-0.32px] text-[#5d5f6d] whitespace-pre-line">{m.description}</p>
                     </div>
                   </div>
                 </div>

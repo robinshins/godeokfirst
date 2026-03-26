@@ -23,21 +23,22 @@ export default function SelfVsProfessionalSection() {
           <div className="flex flex-col gap-4 items-center justify-center w-full">
             <div className="flex flex-col gap-3 items-center justify-center text-center w-full">
               <h2 className="font-bold text-[32px] leading-[1.35] tracking-[-0.64px] text-black w-full">
-                DIY At-Home Whitening vs<br />
-                Professional Dental Whitening
+                The difference between<br />
+                DIY Whitening at home and<br />
+                Professional Whitening at a dental clinic
               </h2>
               <div className="font-semibold text-base leading-[1.4] tracking-[-0.32px] text-[#727582] w-full">
                 <p className="mb-0">
-                  Dental clinics use <span className="text-[#006aff]">classified as pharmaceutical-grade</span>
+                  The whitening agent used at dental clinics is <span className="text-[#008095]">classified as a pharmaceutical</span>
                 </p>
                 <p className="mb-0">
-                  <span className="text-[#006aff]">high-concentration hydrogen peroxide</span>
+                  <span className="text-[#008095]">high-concentration hydrogen peroxide</span>
                 </p>
                 <p className="mb-0">
-                  Contact with gums can cause damage, so <span className="text-[#006aff]">professionals</span>
+                  Since it can damage gums on contact, <span className="text-[#008095]">a professional</span>
                 </p>
                 <p className="mb-0">
-                  <span className="text-[#006aff]">apply complete protective measures before treatment</span> making it much safer
+                  <span className="text-[#008095]">applies complete protective measures before treatment,</span> making it much safer
                 </p>
                 <p>with immediate visible results</p>
               </div>
@@ -46,21 +47,21 @@ export default function SelfVsProfessionalSection() {
 
           {/* Cards */}
           <div className="flex flex-col gap-10 w-full">
-            {/* Card 1: DIY At-Home Whitening */}
+            {/* Card 1: DIY Teeth Whitening */}
             <div className="bg-white border border-[#f3f6fb] rounded-[20px] w-full">
               <div className="flex flex-col items-center justify-center overflow-hidden rounded-[inherit] w-full">
                 <div className="flex flex-col gap-4 items-center justify-center p-6 w-full">
                   <div className="flex gap-2 items-center w-full justify-center">
                     <p className="font-bold text-[24px] leading-[1.35] tracking-[-0.48px] text-black text-center">
-                      DIY At-Home Whitening
+                      DIY Teeth Whitening
                     </p>
                   </div>
                   <div className="bg-[#f3f6fb] rounded-[16px] p-5 flex flex-col gap-[14px] w-full">
                     {[
-                      { title: 'Low Concentration Agent', desc: 'Over-the-counter with limited effectiveness' },
-                      { title: 'Slow Results', desc: 'Takes weeks to months' },
-                      { title: 'Safety Risks', desc: 'Risk of gum damage if used incorrectly' },
-                      { title: 'Uneven Results', desc: 'Inconsistent whitening effect' }
+                      { title: 'Low-concentration whitening agent', desc: 'Over-the-counter product with limited effectiveness' },
+                      { title: 'Slow results', desc: 'Takes weeks to months' },
+                      { title: 'Safety risk', desc: 'Can damage gums if used improperly' },
+                      { title: 'Uneven results', desc: 'Inconsistent whitening effect' }
                     ].map((item, index) => (
                       <div key={index} className="flex items-start w-full">
                         <div className="shrink-0 w-6 h-6">
@@ -83,26 +84,26 @@ export default function SelfVsProfessionalSection() {
               </div>
             </div>
 
-            {/* Card 2: Professional Dental Whitening */}
+            {/* Card 2: Dental Professional Whitening */}
             <div className="bg-white border border-[#f3f6fb] rounded-[20px] w-full">
               <div className="flex flex-col items-center justify-center overflow-hidden rounded-[inherit] w-full">
                 <div className="flex flex-col gap-4 items-center justify-center p-6 w-full">
                   <div className="flex gap-2 items-center w-full justify-center">
                     <p className="font-bold text-[24px] leading-[1.35] tracking-[-0.48px] text-black text-center">
-                      Professional Dental Whitening
+                      Dental Professional Whitening
                     </p>
                   </div>
                   <div className="bg-[#f3f6fb] rounded-[16px] p-5 flex flex-col gap-[14px] w-full">
                     {[
-                      { title: 'High-Concentration Medical-Grade', desc: 'Professional hydrogen peroxide for powerful effect' },
-                      { title: 'Immediate Results', desc: 'Visible change within 1-3 hours' },
-                      { title: 'Complete Safety', desc: 'Gum protection measures prevent damage' },
-                      { title: 'Even Whitening', desc: 'Professional precision treatment' }
+                      { title: 'High-concentration pharmaceutical', desc: 'Powerful effect with professional hydrogen peroxide' },
+                      { title: 'Immediate results', desc: 'Visible change within 1-3 hours' },
+                      { title: 'Complete safety', desc: 'Gum protection measures prevent damage' },
+                      { title: 'Even whitening', desc: 'Precise professional treatment' }
                     ].map((item, index) => (
                       <div key={index} className="flex items-start w-full">
                         <div className="shrink-0 w-6 h-6">
                           <Image
-                            src="/icons/check-blue.svg"
+                            src="/icons/check-teal.svg"
                             alt=""
                             width={24}
                             height={24}

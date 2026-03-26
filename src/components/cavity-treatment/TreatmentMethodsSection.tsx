@@ -58,7 +58,7 @@ export default function TreatmentMethodsSection() {
                             초기 충치 치료
                           </p>
                           <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582] whitespace-nowrap">
-                            큐레이 진단으로 숨은 충치까지 발견
+                            정밀 진단으로 숨은 충치까지 발견
                           </p>
                         </div>
                       </div>
@@ -186,29 +186,6 @@ export default function TreatmentMethodsSection() {
                   <h3 className="font-['Pretendard_JP'] font-bold text-[24px] leading-[1.35] tracking-[-0.48px] text-black text-center w-full">
                     전문 장비
                   </h3>
-
-                  {/* 큐레이 진단 장비 */}
-                  <div className="flex gap-[22px] items-center w-full">
-                    <div className="bg-white border border-[#e9ebf1] rounded-2xl shrink-0 w-[110px] h-[110px] overflow-hidden relative">
-                      <div className="">
-                        <Image
-                          src="/images/qray-photo2.jpg"
-                          alt="큐레이 진단 장비"
-                          fill
-                          className="object-contain"
-                        />
-                      </div>
-                    </div>
-                    <div className="flex flex-col gap-2 items-start flex-1">
-                      <p className="font-['Pretendard_JP'] font-bold text-[20px] leading-[1.5] tracking-[-0.4px] text-[#008095] w-full">
-                        큐레이 진단 장비
-                      </p>
-                      <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-black w-full">
-                        무해한 가시 광선으로<br />
-                        숨은 충치 발견
-                      </p>
-                    </div>
-                  </div>
 
                   {/* 트리오스5 구강 스캐너 - 강조 섹션 */}
                   <div className="flex flex-col gap-5 items-start w-full">

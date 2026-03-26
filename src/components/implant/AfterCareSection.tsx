@@ -25,7 +25,7 @@ export default function AfterCareSection() {
         <div className="flex flex-col gap-4 items-center justify-center relative shrink-0 w-full">
           <div className="h-6 overflow-clip relative shrink-0 w-[168px]">
             <Image
-              src="/icons/logo.svg"
+              src="/고덕퍼스트치과-로고-(화이트).png"
               alt="고덕퍼스트치과"
               width={168}
               height={24}

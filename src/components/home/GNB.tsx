@@ -90,13 +90,13 @@ export default function GNB() {
         style={{ height: '52px' }}
       >
         {/* Logo */}
-        <Link href="/" className="flex items-center" style={{ height: '32px' }}>
+        <Link href="/" className="flex items-center" style={{ height: '60px' }}>
           <Image
-            src="/images/goduk_images/고덕퍼스트치과로고 1.svg"
+            src="/고덕퍼스트치과-로고-(블랙).png"
             alt="고덕퍼스트치과"
-            width={160}
-            height={32}
-            className="h-8 w-auto object-contain"
+            width={375}
+            height={84}
+            className="h-14 w-auto object-contain"
           />
         </Link>
 

@@ -1,28 +1,57 @@
-'use client';
-
+import type { Metadata } from 'next';
 import GNB from '@/components/home/GNB';
 import FixedCTAButton from '@/components/home/FixedCTAButton';
+import FooterSection from '@/components/home/FooterSection';
+
 import WisdomToothHero from '@/components/wisdom-tooth/WisdomToothHero';
 import WisdomToothStats from '@/components/wisdom-tooth/WisdomToothStats';
 import ImportantMomentsSection from '@/components/wisdom-tooth/ImportantMomentsSection';
 import SymptomsSection from '@/components/wisdom-tooth/SymptomsSection';
-import VideoSection from '@/components/wisdom-tooth/VideoSection';
+import BeforeAfterSection from '@/components/wisdom-tooth/BeforeAfterSection';
 import CheckupSection from '@/components/wisdom-tooth/CheckupSection';
 import RiskLevelsSection from '@/components/wisdom-tooth/RiskLevelsSection';
 import FeaturesSection from '@/components/wisdom-tooth/FeaturesSection';
-// import SedationSection from '@/components/cavity-treatment/SedationSection';
 import WhyNowSection from '@/components/wisdom-tooth/WhyNowSection';
-import FooterSection from '@/components/home/FooterSection';
 import DoctorSection from '@/components/home/DoctorSection';
 import WhyBestSection from '@/components/home/WhyBestSection';
 import LocationSection from '@/components/home/LocationSection';
 import FAQSection from '@/components/home/FAQSection';
-import YouTubeSection from '@/components/home/YouTubeSection';
+import SloganSection from '@/components/home/SloganSection';
+
+import { generateBreadcrumbSchema, generateMedicalServiceSchema } from '@/lib/schema';
+
+export const metadata: Metadata = {
+  title: '평택 고덕 사랑니 발치 | 고덕퍼스트치과',
+  description: '평택 고덕 사랑니 발치. 통합치의학과 전문의가 직접 시술하는 안전한 사랑니 발치. 고난이도 매복 사랑니도 안심.',
+  keywords: '고덕사랑니, 평택사랑니, 고덕동사랑니발치, 사랑니발치잘하는곳, 매복사랑니, 고덕퍼스트치과, 평택치과, 고덕치과',
+  alternates: {
+    canonical: 'https://godukfirst.com/wisdom-tooth',
+  },
+  openGraph: {
+    title: '평택 고덕 사랑니 발치 | 고덕퍼스트치과',
+    description: '통합치의학과 전문의가 직접 시술하는 안전한 사랑니 발치. 고난이도 매복 사랑니도 안심.',
+    url: 'https://godukfirst.com/wisdom-tooth',
+    siteName: '고덕퍼스트치과',
+    type: 'website',
+  },
+};
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: '홈', url: 'https://godukfirst.com' },
+  { name: '사랑니 발치', url: 'https://godukfirst.com/wisdom-tooth' }
+]);
+
+const medicalServiceSchema = generateMedicalServiceSchema({
+  name: '사랑니 발치',
+  description: '통합치의학과 전문의가 직접 시술하는 안전한 사랑니 발치. 고난이도 매복 사랑니, 수평매복 사랑니도 안전하게 발치.',
+  url: 'https://godukfirst.com/wisdom-tooth'
+});
 
 export default function WisdomToothPage() {
-
   return (
-    <main className="min-h-screen overflow-x-hidden bg-white">
+    <main className="min-h-screen overflow-x-hidden">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalServiceSchema) }} />
       <GNB />
       <FixedCTAButton />
 
@@ -35,8 +64,8 @@ export default function WisdomToothPage() {
       {/* Stats Section */}
       <WisdomToothStats />
 
-      {/* Video Section */}
-      <VideoSection />
+      {/* Before/After Section */}
+      <BeforeAfterSection />
 
       {/* Important Moments Section */}
       <ImportantMomentsSection />
@@ -53,22 +82,21 @@ export default function WisdomToothPage() {
       {/* Features Section */}
       <FeaturesSection />
 
-      {/* Sedation Section - 의식하진정요법 */}
-      {/* <SedationSection /> */}
-
       {/* Why Now Section */}
       <WhyNowSection />
 
-      {/* Doctor Section. 이 아래부터는 모든 페이지 공통임 */}
+      {/* 공통 섹션 */}
       <DoctorSection />
+      <SloganSection />
       <WhyBestSection />
       <LocationSection />
-      <YouTubeSection />
-      <FAQSection page="wisdom-tooth" />
+      <FAQSection page="home" />
 
+      {/* Footer */}
       <FooterSection />
 
-
+      {/* Add spacing for fixed bottom button */}
+      <div className="h-[88px]" />
     </main>
   );
 }

@@ -15,11 +15,11 @@ export default function FeaturesSection() {
             </h2>
             <p className="font-semibold text-base leading-[1.5] tracking-[-0.32px] text-[#727582]">
               대학병원 외래교수 역임 원장의<br />
-              체계적인 3단계 통증 제로 시스템
+              체계적인 통증 완화 시스템
             </p>
           </div>
 
-          {/* 3단계 통증 완화 */}
+          {/* 2단계 통증 완화 */}
           <div className="flex flex-col gap-4 w-full">
             {[
               {
@@ -33,13 +33,6 @@ export default function FeaturesSection() {
                 step: '02',
                 title: '전동 무통 마취기',
                 desc: '컴퓨터가 자동으로 주입 속도를 조절해 마취액이 천천히, 균일하게 들어가 통증이 거의 없습니다.',
-                color: '#d0eff2',
-                textColor: '#008095',
-              },
-              {
-                step: '03',
-                title: '의식하 진정요법 (수면마취)',
-                desc: '극도로 긴장하시는 분은 수면마취로 편안하게 진행합니다. 자는 사이에 끝나고 기억도 흐릿합니다.',
                 color: '#008095',
                 textColor: '#ffffff',
                 highlight: true,
@@ -74,34 +67,7 @@ export default function FeaturesSection() {
             ))}
           </div>
 
-          {/* 의식하 진정 강조 박스 */}
-          <div className="bg-[#0b1727] rounded-[24px] p-6 flex flex-col gap-4 w-full">
-            <div className="flex items-center gap-3">
-              <span className="text-3xl">😴</span>
-              <div>
-                <p className="font-bold text-white text-[18px] leading-[1.4]">의식하 진정요법이란?</p>
-                <p className="text-[#6eb7bc] text-[13px] font-semibold">전신마취가 아닌 안전한 수면 유도</p>
-              </div>
-            </div>
-            <p className="text-white/80 text-[14px] leading-[1.7]">
-              약간 졸린 상태에서 시술을 받고, 시술 중 일어난 일을 잘 기억하지 못하게 되는 치료법입니다.
-              의식이 유지되어 안전하고, 치과 공포증이 있으신 분도 <span className="text-[#6eb7bc] font-bold">편안하게</span> 받으실 수 있습니다.
-            </p>
-            <div className="flex flex-col gap-2">
-              {[
-                '혈압·맥박·산소포화도 실시간 모니터링',
-                '역전 약물 항시 구비 — 응급상황 즉각 대응',
-                '전신마취 대비 후유증·부작용 현저히 낮음',
-              ].map((item, i) => (
-                <div key={i} className="flex items-center gap-2">
-                  <span className="text-[#6eb7bc] text-[13px] flex-shrink-0">✓</span>
-                  <span className="text-white/80 text-[13px] font-semibold">{item}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* 정확하게 발치 — 대학병원급 */}
+          {/* 대학병원급 난이도 발치 */}
           <div className="rounded-[24px] border-2 border-[#008095] bg-white p-6 flex flex-col gap-5 items-center w-full">
             <div className="flex flex-col gap-3 items-center w-full">
               <div className="w-16 h-16 bg-[#008095] rounded-full flex items-center justify-center">

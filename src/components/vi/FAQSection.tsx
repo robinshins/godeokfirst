@@ -1,4 +1,4 @@
-type PageType = 'home' | 'implant' | 'whitening' | 'wisdom-tooth' | 'cavity-treatment' | 'gum-care';
+type PageType = 'home' | 'implant' | 'denture' | 'whitening' | 'wisdom-tooth' | 'cavity-treatment' | 'gum-care' | 'tmj';
 
 interface FAQ {
   question: string;
@@ -12,138 +12,174 @@ interface FAQSectionProps {
 const faqData: Record<PageType, FAQ[]> = {
   home: [
     {
-      question: '0 ca tái phẫu thuật trong 10 năm,\nđiều này có thật không?',
-      answer: 'Vâng, đây là sự thật. Nha khoa Kyungsung Medis ghi nhận 0 ca tái phẫu thuật do thất bại trong 10 năm nhờ phẫu thuật hướng dẫn kỹ thuật số chính xác và chăm sóc hậu phẫu kỹ lưỡng. Không có một trường hợp nào implant bị rơi hoặc phải phẫu thuật lại do lỗi. Với hệ thống hợp tác giữa chuyên gia nha khoa tổng hợp và chuyên gia bảo tồn, chúng tôi cam kết chỉ một lần điều trị suốt đời.'
+      question: 'Chuyên gia Nha khoa Tổng hợp\nlà gì?',
+      answer: 'Chuyên gia Nha khoa Tổng hợp là chuyên gia nha khoa được Bộ Y tế Phúc lợi chứng nhận, có thể chẩn đoán và điều trị toàn diện tất cả các lĩnh vực nha khoa như Implant, phục hình, bảo tồn, Điều trị nướu. Bác sĩ trưởng Lee Dong-hyun của Godeok First Dental trực tiếp tư vấn, phẫu thuật, đến chăm sóc sau điều trị chịu trách nhiệm đến cùng.'
     },
     {
-      question: 'Điểm khác biệt với\ncác nha khoa khác là gì?',
-      answer: 'Kinh nghiệm và năng lực số 1 về phẫu thuật implant tại quận Nam, Busan (1,500+ ca), là bệnh viện chỉ định chính thức của các trường đại học và tổ chức nổi tiếng, được chứng nhận là bệnh viện ưu tú về implant Megagen/Osstem/Neo, và chuyên môn giảng dạy cho nha sĩ toàn quốc.'
+      question: 'Điểm khác biệt so với\ncác nha khoa khác là gì?',
+      answer: 'Chuyên gia Nha khoa Tổng hợp được Bộ Y tế Phúc lợi chứng nhận của Godeok First Dental trực tiếp khám. Khác với nơi bác sĩ phụ trách thường xuyên thay đổi, từ tư vấn đến phẫu thuật và chăm sóc sau điều trị một người chịu trách nhiệm. Hoàn thành Sau đại học Nha khoa ĐH Seoul, Cố vấn nghiên cứu Implant Osstem/Point/Dentis là những điểm khác biệt.'
     },
     {
-      question: 'Chi phí điều trị\ncó đắt không?',
-      answer: 'Nha khoa Kyungsung Medis cung cấp điều trị chất lượng cao với giá hợp lý. Chúng tôi tận dụng tối đa các khoản bảo hiểm có thể áp dụng, và giảm gánh nặng tài chính thông qua trả góp không lãi suất và các chương trình khuyến mãi. Bạn có thể kiểm tra ước tính chi phí qua tư vấn AI miễn phí.'
+      question: 'Chi phí điều trị\ncó vẻ đắt quá',
+      answer: 'Godeok First Dental cung cấp điều trị chất lượng cao nhất với giá hợp lý. Tận dụng tối đa các hạng mục được áp dụng bảo hiểm, giảm gánh nặng kinh tế thông qua trả góp không lãi suất và các chương trình khuyến mãi đa dạng. Bạn có thể kiểm tra báo giá sơ bộ qua tư vấn AI miễn phí.'
     },
     {
-      question: 'Quy trình khám\nlần đầu như thế nào?',
-      answer: 'Lần khám đầu tiên, chúng tôi chẩn đoán chính xác tình trạng răng miệng bằng CT 3D. Sau đó, bạn sẽ được tư vấn 1:1 với chuyên gia nha khoa tổng hợp hoặc chuyên gia bảo tồn để lập kế hoạch điều trị cá nhân, và được hướng dẫn chi tiết về phương pháp điều trị, chi phí và thời gian.'
+      question: 'Quy trình khi đến\nlần đầu tiên?',
+      answer: 'Lần khám đầu tiên, chẩn đoán chính xác tình trạng miệng bằng CT 3D. Sau đó, thông qua tư vấn 1:1 với Chuyên gia Nha khoa Tổng hợp, lập kế hoạch điều trị cá nhân hóa và hướng dẫn chi tiết phương pháp điều trị, chi phí và thời gian.'
     }
+  ],
+  denture: [
+    {
+      question: 'Hàm giả và Implant,\ncái nào phù hợp với tôi?',
+      answer: 'Nếu gánh nặng chi phí lớn, Hàm giả được bảo hiểm y tế chi trả là phù hợp; nếu bạn muốn lực nhai tốt và thoải mái, điều trị dòng Implant tốt hơn. Godeok First Dental đề xuất phương pháp điều trị tối ưu xem xét toàn diện tình trạng xương, tuổi tác và ngân sách.'
+    },
+    {
+      question: 'Từ 65 tuổi trở lên\ncó được bảo hiểm không?',
+      answer: 'Vâng, nếu từ 65 tuổi trở lên, bảo hiểm y tế được áp dụng cho tối đa 2 Implant. Ngoài ra, Hàm giả cũng thuộc đối tượng bảo hiểm y tế nên có thể giảm đáng kể phần tự chi trả. Phạm vi bảo hiểm cụ thể sẽ được hướng dẫn chi tiết khi đến bệnh viện.'
+    },
+    {
+      question: 'All on X Implant,\ncó thể thực hiện khi thiếu xương không?',
+      answer: 'Có thể thực hiện ngay cả với người có tình trạng xương không tốt. All on X chọn vùng xương tốt để cấy Implant, nên có thể giảm thiểu ghép xương. Sau khi chẩn đoán chính xác bằng CT 3D, chúng tôi sẽ hướng dẫn chính xác khả năng thực hiện.'
+    },
+    {
+      question: 'Thời gian điều trị Implant toàn hàm\nmất bao lâu?',
+      answer: 'All on X trung bình 3~6 tháng, Implant toàn hàm truyền thống mất khoảng 6 tháng~1 năm tùy thuộc vào việc ghép xương. Ngay sau phẫu thuật sẽ được lắp phục hình tạm thời nên không có thời gian phải sống thiếu răng.'
+    },
+    {
+      question: 'Sau Implant toàn hàm\ncó thể ăn uống thoải mái không?',
+      answer: 'Vâng, khi điều trị hoàn thành thành công, hầu như không có hạn chế trong ăn uống. Phục hồi 80~90% lực nhai của răng tự nhiên, bạn có thể thoải mái ăn thịt, táo và các thức ăn cứng khác.'
+    },
   ],
   implant: [
     {
-      question: 'Chỉ thực hiện\nimplant toàn hàm thôi sao?',
-      answer: 'Không. Nha khoa Kyungsung Medis thực hiện tất cả các loại điều trị implant từ 1 răng đến implant toàn hàm (All on X). Implant đơn lẻ cũng được áp dụng phẫu thuật hướng dẫn kỹ thuật số và hệ thống phòng lab nội bộ, đảm bảo điều trị chính xác và nhanh chóng.'
+      question: 'Chỉ thực hiện\nImplant toàn hàm thôi sao?',
+      answer: 'Không. Godeok First Dental thực hiện tất cả các điều trị Implant từ 1 răng đến Implant toàn hàm (All on X). Implant đơn lẻ cũng được áp dụng hệ thống Phẫu thuật dẫn đường kỹ thuật số tương tự, cung cấp điều trị chính xác và nhanh chóng.'
     },
     {
-      question: 'Phẫu thuật hướng dẫn kỹ thuật số\ncó đắt không?',
-      answer: 'Nha khoa Kyungsung Medis cung cấp điều trị implant chất lượng cao với giá hợp lý. Với độ chính xác của phẫu thuật hướng dẫn kỹ thuật số, không có nguy cơ tái phẫu thuật nên về lâu dài còn tiết kiệm hơn. Người từ 65 tuổi trở lên có thể áp dụng bảo hiểm y tế, và chúng tôi giảm gánh nặng qua trả góp không lãi suất và các chương trình khuyến mãi.'
+      question: 'Phẫu thuật dẫn đường kỹ thuật số,\ncó đắt không?',
+      answer: 'Godeok First Dental cung cấp điều trị Implant chất lượng cao với giá hợp lý. Với sự chính xác của Phẫu thuật dẫn đường kỹ thuật số, làm đúng một lần sẽ kinh tế hơn về lâu dài. Từ 65 tuổi trở lên có thể áp dụng bảo hiểm y tế, và chúng tôi sẽ giảm gánh nặng thông qua trả góp không lãi suất và các ưu đãi đa dạng.'
     },
     {
-      question: 'Sau phẫu thuật\ncó thể ăn ngay không?',
-      answer: 'Vâng, có thể. Nhờ răng tạm độ cứng cao được làm ngay tại phòng lab nội bộ, bạn có thể ăn thức ăn mềm ngay sau phẫu thuật. Không có ngày nào phải sống không có răng, và bạn có thể duy trì sinh hoạt bình thường từ ngay sau phẫu thuật đến khi lắp răng vĩnh viễn.'
+      question: 'Sau phẫu thuật có\năn được ngay không?',
+      answer: 'Vâng, có thể. Ngay sau phẫu thuật cung cấp răng tạm để có thể ăn thức ăn mềm. Không có ngày nào phải sống thiếu răng, từ ngay sau phẫu thuật đến khi lắp phục hình cuối cùng, bạn có thể duy trì cuộc sống hàng ngày thoải mái.'
     },
     {
-      question: 'Phẫu thuật hướng dẫn kỹ thuật số\nkhác gì so với phẫu thuật thông thường?',
-      answer: 'Phẫu thuật hướng dẫn kỹ thuật số tiến hành phẫu thuật ảo trên máy tính sau khi chẩn đoán chính xác bằng quét 3D răng miệng. Qua đó thiết kế vị trí cấy ghép tối ưu, giảm thiểu sai số đến 1mm và giảm thiểu vết cắt. Kết quả là thời gian phẫu thuật rút ngắn, giảm đau, sưng và ghép xương.'
+      question: 'Phẫu thuật dẫn đường kỹ thuật số\nkhác phẫu thuật thông thường thế nào?',
+      answer: 'Phẫu thuật dẫn đường kỹ thuật số sử dụng Quét miệng 3D để Chẩn đoán chính xác, sau đó tiến hành phẫu thuật mô phỏng trên máy tính trước. Qua đó thiết kế vị trí cấy ghép tối ưu, giảm thiểu sai số đến 1mm và giảm thiểu vết cắt. Kết quả là thời gian thủ thuật được rút ngắn, đau, sưng và ghép xương được giảm thiểu.'
     },
     {
-      question: 'Điều trị implant toàn hàm\nmất bao lâu?',
-      answer: 'Tùy thuộc vào tình trạng răng miệng của từng người, thường mất khoảng 3-6 tháng. Với hệ thống implant phục hình tức thời, bạn có thể sử dụng răng tạm ngay sau phẫu thuật, và lắp răng vĩnh viễn sau khi xương và implant hoàn toàn liền hợp. Thời gian chính xác sẽ được hướng dẫn sau khi chẩn đoán CT 3D.'
+      question: 'Điều trị Implant toàn hàm,\nmất bao lâu?',
+      answer: 'Tùy thuộc vào tình trạng miệng cá nhân, nhưng thường mất khoảng 3-6 tháng. Từ ngay sau phẫu thuật, bạn có thể sử dụng răng tạm, và sau khi xương và Implant hoàn toàn tích hợp sẽ hoàn tất tất cả điều chỉnh. Thời gian chính xác sẽ được hướng dẫn sau khi chẩn đoán CT 3D.'
     },
     {
-      question: 'Phẫu thuật implant\ncó đau không?',
-      answer: 'Bạn có thể điều trị thoải mái với phương pháp an thần có ý thức (gây mê nhẹ). Trong quá trình phẫu thuật gần như không cảm thấy đau, và sau phẫu thuật, nhờ phương pháp cắt tối thiểu của phẫu thuật hướng dẫn kỹ thuật số, sưng và đau giảm đáng kể so với phẫu thuật thông thường. Có thể kiểm soát tốt bằng thuốc giảm đau được kê đơn.'
+      question: 'Phẫu thuật cấy ghép Implant,\ncó đau không?',
+      answer: 'Có thể thực hiện thủ thuật thoải mái thông qua an thần có ý thức (gây mê). Trong quá trình phẫu thuật hầu như không cảm thấy đau. Sau phẫu thuật, nhờ phương pháp cắt tối thiểu của Phẫu thuật dẫn đường kỹ thuật số, sưng và đau ít hơn đáng kể so với phẫu thuật thông thường. Thuốc giảm đau được kê đơn đủ để quản lý.'
     },
     {
-      question: 'Implant toàn hàm\nthực sự tốt hơn răng giả sao?',
-      answer: 'Vâng, hoàn toàn khác biệt. Răng giả chỉ duy trì 30% lực nhai của răng tự nhiên, trong khi implant phục hồi lên đến 80-90%, cảm giác nhai hoàn toàn khác. Không cần tháo lắp, chăm sóc đơn giản như răng tự nhiên và vệ sinh hơn. Một lần điều trị có thể sử dụng suốt đời, và có thể cười tươi tự tin, lấy lại sự tự tin về mặt tâm lý.'
+      question: 'Implant toàn hàm\nthực sự tốt hơn Hàm giả sao?',
+      answer: 'Vâng, chắc chắn khác biệt. Hàm giả chỉ duy trì 30% lực nhai của răng tự nhiên, nhưng Implant phục hồi đến 80-90% và cảm giác nhai hoàn toàn khác. Không cần tháo lắp phiền phức, chăm sóc đơn giản như răng tự nhiên và vệ sinh. Chỉ cần thực hiện một lần có thể sử dụng cả đời, và có thể cười tươi giúp lấy lại sự tự tin về mặt tâm lý.'
     }
   ],
   whitening: [
     {
-      question: 'Dán sứ laminate hay tẩy trắng,\ncái nào phù hợp với tôi?',
-      answer: 'Nếu chỉ muốn làm sáng màu răng, chọn tẩy trắng. Nếu muốn cải thiện cả hình dáng và sắp xếp răng, chọn dán sứ laminate. Laminate có thể cải thiện đồng thời màu sắc, hình dáng, kích thước và sắp xếp răng, với bảo hành 2 năm để bạn yên tâm điều trị.'
+      question: 'Tẩy trắng răng,\nai cũng có thể thực hiện không?',
+      answer: 'Hầu hết người lớn khỏe mạnh đều có thể thực hiện tẩy trắng. Tuy nhiên, nếu có sâu răng hoặc bệnh nướu, nên điều trị trước rồi mới tiến hành, và không khuyến nghị cho phụ nữ mang thai hoặc đang cho con bú. Trước khi thực hiện, Chuyên gia Nha khoa Tổng hợp sẽ chẩn đoán chính xác tình trạng răng để đánh giá sự phù hợp.'
     },
     {
-      question: 'Tẩy trắng tại nha khoa\nthực sự hiệu quả hơn tự tẩy trắng không?',
-      answer: 'Vâng, hoàn toàn khác biệt. Nha khoa sử dụng hydrogen peroxide nồng độ cao 15% (thuốc) nên thấy hiệu quả ngay lập tức. Tự tẩy trắng sử dụng thuốc nồng độ thấp nên hiệu quả hạn chế, còn tẩy trắng tại nha khoa an toàn hơn vì chuyên gia bảo vệ nướu hoàn toàn trước khi điều trị.'
+      question: 'Tẩy trắng nha khoa thực sự\nhiệu quả hơn tẩy trắng tại nhà?',
+      answer: 'Vâng, chắc chắn khác biệt. Nha khoa sử dụng hydrogen peroxide nồng độ cao (dược phẩm) cho hiệu quả tức thì. Tẩy trắng tại nhà dùng thuốc không kê đơn nồng độ thấp nên hiệu quả hạn chế, còn tẩy trắng nha khoa bảo vệ nướu hoàn hảo trước khi thực hiện nên an toàn hơn nhiều.'
     },
     {
-      question: 'Sau tẩy trắng răng\ncó bị ê buốt không?',
-      answer: 'Nha khoa Kyungsung Medis sử dụng hệ thống Osstem Beauties có chứa chất chống ê buốt nên triệu chứng ê buốt được giảm thiểu. Trước điều trị, chúng tôi chẩn đoán chính xác tình trạng răng, và sau điều trị hướng dẫn chi tiết cách chăm sóc để bạn duy trì răng trắng sáng mà không khó chịu.'
+      question: 'Sau tẩy trắng\nrăng có bị ê buốt không?',
+      answer: 'Godeok First Dental sử dụng thiết bị tẩy trắng mới nhất, có chứa chất chống ê buốt nên triệu chứng ê buốt được giảm thiểu. Trước khi thực hiện sẽ chẩn đoán chính xác tình trạng răng, và sau khi thực hiện cũng hướng dẫn chi tiết cách chăm sóc để bạn có thể duy trì răng sáng mà không có khó chịu.'
     },
     {
-      question: 'Hiệu quả tẩy trắng\nduy trì được bao lâu?',
-      answer: 'Thông thường duy trì khoảng 1-2 năm, có thể khác nhau tùy thói quen ăn uống và cách chăm sóc. Nếu giảm các yếu tố gây đổi màu như cà phê, rượu vang, hút thuốc và lấy cao răng định kỳ, có thể duy trì lâu hơn. Tẩy trắng Best (4 chu kỳ) hiệu quả rõ rệt và lâu dài hơn tẩy trắng cơ bản.'
+      question: 'Hiệu quả tẩy trắng\nkéo dài bao lâu?',
+      answer: 'Thông thường kéo dài khoảng 1-2 năm, và có sự khác biệt tùy theo thói quen ăn uống và tình trạng chăm sóc cá nhân. Nếu giảm các yếu tố gây đổi màu như cà phê, rượu vang, hút thuốc và lấy cao răng định kỳ cùng chăm sóc, bạn có thể duy trì lâu hơn.'
     },
     {
-      question: 'Lấy cao răng và tẩy trắng\ncùng lúc có giảm giá không?',
-      answer: 'Vâng, khi lấy cao răng theo chương trình kiểm tra sức khỏe quốc gia, bạn được giảm 50% khi tẩy trắng. Cả tẩy trắng cơ bản (1 chu kỳ) và tẩy trắng Best (2 lần đến, 4 chu kỳ) đều được giảm giá, và hiệu quả sẽ tốt hơn khi tẩy trắng sau khi làm sạch bề mặt răng bằng lấy cao răng.'
+      question: 'Lấy cao răng và tẩy trắng\nnhận cùng lúc có giảm giá không?',
+      answer: 'Vâng, nếu bạn nhận tẩy trắng cùng lúc với lấy cao răng, sẽ được giảm giá. Lấy cao răng giúp làm sạch bề mặt răng trước rồi tẩy trắng thì hiệu quả càng tốt hơn.'
     }
   ],
   'wisdom-tooth': [
     {
-      question: 'Nhổ răng khôn\ncó cần thiết không?',
-      answer: 'Ngay cả khi không đau, răng khôn vẫn có thể gây viêm, sâu răng, mất cân bằng hàm bên trong nướu. Sau khi chẩn đoán chính xác bằng CT 3D, chúng tôi sẽ đánh giá có cần nhổ hay không. Nếu không nhổ sớm, có thể xảy ra viêm cấp tính, hư răng bên cạnh, rối loạn khớp thái dương hàm. Càng trẻ càng hồi phục nhanh và ít biến chứng.'
+      question: 'Nhổ răng khôn,\ncó bắt buộc phải nhổ không?',
+      answer: 'Ngay cả khi không đau, có thể gây viêm nhiễm, sâu răng, mất cân bằng hàm răng bên trong nướu. Sau khi chẩn đoán chính xác bằng CT 3D sẽ đánh giá có cần nhổ hay không, nếu không nhổ trước có thể phát sinh vấn đề như viêm cấp tính, tổn thương răng kế cận, rối loạn khớp thái dương hàm. Càng trẻ phục hồi càng nhanh và nguy cơ biến chứng ít hơn.'
     },
     {
-      question: 'Răng khôn khó nhổ\ncó nhổ được không?',
-      answer: 'Vâng, có thể. Nha khoa Kyungsung Medis có hơn 2,700 ca nhổ răng và hệ thống có thể xử lý các ca khó ngang tầm bệnh viện đại học. Các trường hợp khó như răng nằm ngang, răng ngầm hoàn toàn mà nha khoa thông thường chuyển đến bệnh viện lớn, chúng tôi cũng nhổ an toàn với chẩn đoán chính xác CT 3D.'
+      question: 'Răng khôn độ khó cao\ncũng nhổ được không?',
+      answer: 'Vâng, có thể. Godeok First Dental có kinh nghiệm nhổ răng phong phú và trang bị hệ thống nhổ răng độ khó cấp bệnh viện đại học. Các trường hợp khó như răng khôn nằm ngang, răng khôn ngầm hoàn toàn mà nha khoa thông thường phải chuyển bệnh viện lớn cũng được nhổ an toàn bằng chẩn đoán chính xác CT 3D.'
     },
     {
-      question: 'Nhổ răng khôn\ncó đau không?',
-      answer: 'Với hệ thống gây tê giảm đau hiện đại, bạn gần như không cảm thấy đau trong quá trình điều trị. Nếu lo lắng, bạn có thể điều trị thoải mái với phương pháp an thần có ý thức (gây mê nhẹ). Sưng và đau sau điều trị có thể kiểm soát tốt bằng thuốc được kê đơn, càng trẻ càng hồi phục nhanh.'
+      question: 'Nhổ răng khôn,\ncó đau không?',
+      answer: 'Với hệ thống gây tê giảm đau mới nhất, hầu như không cảm thấy đau trong quá trình thủ thuật. Người lo lắng có thể sử dụng an thần có ý thức (gây mê) để thực hiện thoải mái. Sau thủ thuật, sưng và đau có thể quản lý đủ bằng thuốc được kê đơn, và càng trẻ phục hồi càng nhanh.'
     },
     {
-      question: 'Sau nhổ răng khôn\ncần lưu ý gì?',
-      answer: 'Sau nhổ răng, tránh thức ăn nóng và kích thích, ăn thức ăn mềm. Tránh vận động mạnh và xông hơi trong 2-3 ngày, uống kháng sinh và thuốc chống viêm đều đặn theo đơn. Cắn gạc khoảng 30 phút - 1 tiếng, tránh đánh răng quá mạnh hoặc dùng ống hút. Cách chăm sóc chi tiết sẽ được hướng dẫn sau điều trị.'
+      question: 'Sau nhổ răng khôn\ncó lưu ý gì không?',
+      answer: 'Sau nhổ răng, tránh thức ăn nóng và kích thích, ăn thức ăn mềm. Tránh tập thể dục mạnh và xông hơi trong 2-3 ngày, uống thuốc kháng sinh và chống viêm được kê đều đặn. Cắn gạc khoảng 30 phút đến 1 giờ, tránh đánh răng quá mạnh hoặc dùng ống hút. Hướng dẫn chăm sóc chi tiết sau điều trị.'
     },
     {
-      question: 'Nhổ răng khôn\ncó điều trị nhanh được không?',
-      answer: 'Có thể nhổ ngay sau khi chụp CT 3D và chẩn đoán. Với hệ thống điều trị một lần, từ chẩn đoán đến nhổ răng và chăm sóc hậu phẫu đều hoàn thành trong một lần đến. Tuy nhiên, nếu viêm nặng, an toàn hơn là điều trị viêm trước rồi nhổ, bác sĩ sẽ hướng dẫn thời điểm tối ưu tùy tình trạng răng miệng.'
+      question: 'Nhổ răng khôn,\ncó thể khám nhanh không?',
+      answer: 'Có thể nhổ ngay sau chụp và chẩn đoán CT 3D. Hệ thống khám một lần hoàn tất từ chẩn đoán đến nhổ răng và chăm sóc sau. Tuy nhiên, nếu viêm nặng thì nhổ sau điều trị chống viêm an toàn hơn, đội ngũ y tế sẽ hướng dẫn thời điểm tối ưu theo tình trạng miệng cá nhân.'
     },
   ],
   'cavity-treatment': [
     {
-      question: 'Nơi khác bảo phải nhổ,\ncó thể cứu được không?',
-      answer: 'Vâng, khả năng cao. Nha khoa Kyungsung Medis có chuyên gia bảo tồn chẩn đoán chính xác với kính hiển vi phóng đại 25 lần. Có thể tìm ra cách cứu răng mà nha khoa thông thường không thấy được, cứu răng tự nhiên là sứ mệnh của chuyên gia bảo tồn. Sau khi chẩn đoán chính xác, chúng tôi sẽ hướng dẫn phương pháp tốt nhất.'
+      question: 'Nơi khác bảo nhổ\ncó cứu được không?',
+      answer: 'Vâng, khả năng cao. Chuyên gia Nha khoa Tổng hợp Godeok First Dental chẩn đoán chính xác. Có thể tìm ra cách cứu răng mà nha khoa thông thường không phát hiện, và ưu tiên hàng đầu là cứu răng tự nhiên. Sau khi chẩn đoán chính xác, chúng tôi sẽ hướng dẫn phương pháp tốt nhất.'
     },
     {
-      question: 'Điều trị tủy\ncó đau không?',
-      answer: 'Với hệ thống gây tê giảm đau hiện đại và kính hiển vi, đau được giảm thiểu. Nếu lo lắng, bạn có thể điều trị thoải mái với phương pháp an thần có ý thức (gây mê nhẹ). Điều trị chính xác của chuyên gia bảo tồn giảm thiểu tái phát và tác dụng phụ, và chúng tôi tiếp tục chăm sóc sau điều trị.'
+      question: 'Điều trị tủy,\ncó đau không?',
+      answer: 'Giảm thiểu đau bằng hệ thống gây tê giảm đau mới nhất. Người lo lắng có thể thoải mái thực hiện với an thần có ý thức (gây mê). Điều trị chính xác của Chuyên gia Nha khoa Tổng hợp giảm thiểu tái phát và tác dụng phụ, và sau điều trị chúng tôi sẽ liên tục chăm sóc.'
     },
     {
-      question: 'Điều trị sâu răng\nmất bao lâu?',
-      answer: 'Sâu răng giai đoạn đầu hoàn thành nhanh với điều trị trám, sâu răng lớn có thể điều trị trong 24 giờ với hệ thống inlay. Nếu cần điều trị tủy, cần đến 2-3 lần, nhưng với điều trị chính xác bằng kính hiển vi, số lần điều trị được giảm thiểu. Thời gian chính xác sẽ được hướng dẫn tùy tình trạng răng miệng.'
+      question: 'Điều trị sâu răng,\ncó mất nhiều thời gian không?',
+      answer: 'Sâu răng giai đoạn đầu được hoàn thành nhanh chóng bằng điều trị resin, sâu răng rộng có thể điều trị bằng hệ thống inlay. Trường hợp cần điều trị tủy thì cần 2-3 lần đến khám, nhưng điều trị chính xác giúp giảm thiểu số lần điều trị. Thời gian chính xác sẽ được hướng dẫn tùy theo tình trạng miệng cá nhân.'
     },
     {
-      question: 'Điều trị bằng kính hiển vi\nkhác gì so với điều trị thông thường?',
-      answer: 'Kính hiển vi phóng đại răng lên đến 25 lần, xác định chính xác sâu răng, vết nứt, ống tủy mà mắt thường không thấy được. Qua đó có thể chẩn đoán và điều trị chính xác, giảm thiểu tái phát và tác dụng phụ, cũng như giảm tổn thương mô xung quanh. Đây là thiết bị chỉ có ở một số bệnh viện đại học và nha khoa chuyên khoa.'
+      question: 'Điều trị sâu răng,\ncó được bảo hiểm không?',
+      answer: 'Vâng, hầu hết Điều trị sâu răng được bảo hiểm y tế chi trả. Bạn có thể nhận quyền lợi bảo hiểm cho các điều trị cơ bản như điều trị resin, điều trị tủy, mão răng, còn inlay/onlay có thể phát sinh chi phí tự trả. Khi khám lần đầu, chúng tôi sẽ hướng dẫn chi tiết chi phí chính xác và khả năng bảo hiểm.'
+    }
+  ],
+  'tmj': [
+    {
+      question: 'Hàm chỉ có tiếng kêu\ncó cần điều trị không?',
+      answer: 'Tiếng kêu ở hàm là tín hiệu đĩa khớp lệch khỏi vị trí bình thường. Ngay cả khi không đau, nếu bỏ qua, đĩa khớp bị tổn thương tiến triển có thể dẫn đến hạn chế há miệng hoặc đau mãn tính.\n\nChẩn đoán và quản lý sớm sẽ cải thiện bằng điều trị đơn giản.'
     },
     {
-      question: 'Điều trị sâu răng\ncó áp dụng bảo hiểm không?',
-      answer: 'Vâng, hầu hết điều trị sâu răng được áp dụng bảo hiểm y tế. Các điều trị cơ bản như trám răng, điều trị tủy, mão răng đều được hưởng bảo hiểm, inlay/onlay có thể phải tự chi trả một phần. Khi khám lần đầu, chúng tôi sẽ hướng dẫn chi tiết về chi phí chính xác và phạm vi bảo hiểm.'
+      question: 'Splint (máng ổn định khớp cắn)\ncó bắt buộc không?',
+      answer: 'Nếu nguyên nhân là nghiến răng hoặc siết chặt răng, nẹp là phương pháp điều trị hiệu quả nhất. Giảm tải lực quá mức lên khớp thái dương hàm trong khi ngủ, phân tán lực và bảo vệ khớp.\n\nĐược chế tạo tùy chỉnh cho từng bệnh nhân, và điều chỉnh khớp cắn định kỳ để nâng cao hiệu quả điều trị.'
+    },
+    {
+      question: 'Thời gian điều trị khớp thái dương hàm\nmất bao lâu?',
+      answer: 'Đau cấp tính thường cải thiện trong 1~2 tuần bằng điều trị thuốc và vật lý trị liệu. Điều trị nẹp thường mất khoảng 3~6 tháng.\n\nVì có sự khác biệt tùy theo mức độ triệu chứng và nguyên nhân, sau khi chẩn đoán chính xác chúng tôi sẽ hướng dẫn thời gian điều trị chính xác.'
+    },
+    {
+      question: 'Điều trị khớp thái dương hàm,\ncó được bảo hiểm không?',
+      answer: 'Chụp X-ray để chẩn đoán khớp thái dương hàm, kê đơn thuốc được bảo hiểm y tế chi trả. Điều trị nẹp là hạng mục không bảo hiểm, nhưng về lâu dài có thể tránh phẫu thuật nên kinh tế hơn nhiều.\n\nChi phí chi tiết sẽ được hướng dẫn khi tư vấn.'
     }
   ],
   'gum-care': [
     {
-      question: 'Chỉ lấy cao răng\nthôi có đủ không?',
-      answer: 'Lấy cao răng là bước đầu tiên của việc loại bỏ cao răng. Tuy nhiên, nếu bệnh nướu đã tiến triển, cần điều trị chính xác bằng thiết bị đặc biệt như NSK varios 970 để loại bỏ vi khuẩn sâu trong nướu.\n\nNếu điều trị nướu định kỳ 6 tháng một lần, bạn có thể bảo tồn răng tự nhiên lâu dài.'
+      question: 'Chỉ lấy cao răng\nthì chưa đủ sao?',
+      answer: 'Lấy cao răng là bước đầu tiên để loại bỏ cao răng. Tuy nhiên, nếu bệnh nướu đã tiến triển, cần dùng thiết bị đặc biệt để loại bỏ vi khuẩn sâu trong nướu và cần điều trị chính xác.\n\nNếu nhận điều trị nướu mỗi 6 tháng, bạn có thể bảo tồn răng tự nhiên lâu dài.'
     },
     {
-      question: 'Nghe nói điều trị nướu đau,\ncó sao không?',
-      answer: 'Đừng lo lắng. Chúng tôi có hệ thống giảm đau 4 bước: gây tê súc miệng, gây tê bôi, máy gây tê điện giảm đau, máy gây tê thần kinh.\n\nNhiều bệnh nhân ngạc nhiên rằng "điều trị nha khoa cũng có thể thoải mái như thế này". Chúng tôi cố gắng hết sức để bạn điều trị mà không khó chịu.'
+      question: 'Nghe nói Điều trị nướu đau lắm\ncó sao không?',
+      answer: 'Đừng lo lắng. Chúng tôi có hệ thống gây tê giảm đau nên bạn có thể điều trị mà không có khó chịu.\n\nNhiều bệnh nhân ngạc nhiên nói rằng "Điều trị nha khoa cũng có thể thoải mái như thế này".'
     },
     {
-      question: 'Cần điều trị\nbao lâu một lần?',
-      answer: 'Lấy cao răng cơ bản 1 năm/lần (áp dụng bảo hiểm), điều trị nướu lý tưởng là 6 tháng/lần.\n\nNếu tình trạng nướu nghiêm trọng, điều trị 3 tháng/lần sẽ hiệu quả hơn. Với chăm sóc định kỳ, bạn có thể sử dụng răng tự nhiên suốt đời mà không cần implant.'
+      question: 'Bao lâu cần\nđiều trị một lần?',
+      answer: 'Lấy cao răng cơ bản 1 lần/năm (được bảo hiểm), Điều trị nướu nên thực hiện mỗi 6 tháng là lý tưởng.\n\nTrường hợp nướu nghiêm trọng, chăm sóc mỗi 3 tháng sẽ hiệu quả hơn. Với chăm sóc định kỳ, bạn có thể sử dụng răng tự nhiên cả đời mà không cần Implant.'
     },
     {
-      question: 'Bảo hiểm áp dụng\nnhư thế nào?',
-      answer: 'Lấy cao răng được áp dụng bảo hiểm y tế 1 năm/lần. Nếu cần điều trị nướu, có thể được áp dụng bảo hiểm và được chia ra để điều trị.\n\nPhạm vi bảo hiểm chi tiết sẽ được hướng dẫn qua tư vấn.'
+      question: 'Bảo hiểm\nđược áp dụng thế nào?',
+      answer: 'Lấy cao răng được bảo hiểm y tế 1 lần/năm. Trường hợp cần Điều trị nướu, bảo hiểm cũng được áp dụng và được tiến hành chia thành nhiều lần.\n\nPhạm vi bảo hiểm chi tiết sẽ được hướng dẫn thông qua tư vấn.'
     },
     {
       question: 'Tại sao nha khoa khác\nkhông muốn điều trị nướu?',
-      answer: 'Nói thật, vì implant có lợi nhuận cao hơn điều trị nướu. Ngoài ra, nếu cuối cùng phải nhổ răng sau điều trị nướu, có thể có phàn nàn từ bệnh nhân nên nhiều nha khoa ngại.\n\nTuy nhiên, chúng tôi đặt bảo tồn răng tự nhiên lên hàng đầu, và tự hào có tỷ lệ thành công cao với hệ thống hợp tác chuyên gia bảo tồn.'
+      answer: 'Thẳng thắn mà nói, vì Implant có lợi nhuận tốt hơn Điều trị nướu. Ngoài ra, nếu sau Điều trị nướu cuối cùng phải nhổ thì bệnh nhân có thể không hài lòng nên nhiều nha khoa ngại.\n\nNhưng chúng tôi ưu tiên bảo tồn răng tự nhiên hàng đầu, và tự hào với tỷ lệ thành công cao nhờ khám chính xác của Chuyên gia Nha khoa Tổng hợp.'
     }
   ]
 };

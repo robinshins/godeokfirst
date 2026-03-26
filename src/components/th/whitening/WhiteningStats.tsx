@@ -1,27 +1,69 @@
-import Image from 'next/image';
-
 export default function WhiteningStats() {
   return (
-    <div className="bg-white w-full">
-      <div className="box-border flex flex-col gap-10 items-start px-4 py-[60px] relative w-full max-w-[430px] mx-auto text-center">
-        <h2 className="font-bold leading-[1.35] text-[32px] text-black tracking-[-0.64px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-          ยิ้มอย่างมั่นใจ<br />ด้วยผลลัพธ์ที่ชัดเจน
-        </h2>
-        
-        <div className="grid grid-cols-1 gap-6 w-full">
-          <div className="bg-[#f8f9fa] p-8 rounded-2xl flex flex-col items-center gap-2">
-            <p className="text-[#006aff] font-bold text-5xl">95%</p>
-            <p className="font-bold text-xl text-[#292a2f]" style={{ fontFamily: 'Pretendard, sans-serif' }}>ความพึงพอใจของคนไข้</p>
-            <p className="text-sm text-[#5d5f6d]" style={{ fontFamily: 'Pretendard, sans-serif' }}>ฟันขาวขึ้นอย่างเห็นได้ชัดในครั้งแรก</p>
+    <div className="bg-gradient-to-b from-[#21314E] via-[#21314E] to-white">
+      <div className="max-w-[375px] mx-auto px-4 py-[60px]">
+        {/* Section Header */}
+        <div className="text-center mb-[60px]">
+          <h2 className="text-white text-[32px] font-bold leading-[1.35] tracking-[-0.64px] mb-3">
+            การรักษา 1,000+ครั้ง,
+            <br />
+            มีประสบการณ์รักษาฟอกสีฟันมากที่สุด
+          </h2>
+          <p className="text-[#e9ebf1] text-base font-semibold leading-[1.4] tracking-[-0.32px]">
+          ฟอกสีฟันไม่เสียว ปลอดภัย
+            <br />
+            ลองสัมผัสผลลัพธ์ดูนะคะ
+          </p>
+        </div>
+
+        {/* Stats Cards */}
+        <div className="flex flex-col gap-5">
+          {/* 10+ ปี Card */}
+          <div className="bg-white rounded-2xl p-10 text-center">
+            <div className="flex items-start justify-center gap-2 mb-4">
+              <span className="text-[72px] font-bold bg-gradient-to-b from-[#008095] to-[#006d80] bg-clip-text text-transparent leading-normal tracking-[-2.88px]">
+                10+
+              </span>
+              <div className="flex flex-col justify-end self-stretch pb-3 pt-2.5">
+                <span className="text-2xl font-bold text-[#008095] leading-[1.35] tracking-[-0.48px]">ปี</span>
+              </div>
+            </div>
+            <p className="text-[#37373e] text-[22px] font-bold leading-[1.4] tracking-[-0.44px]">
+              ประสบการณ์เฉพาะทางฟอกสีฟัน
+            </p>
           </div>
-          <div className="bg-[#f8f9fa] p-8 rounded-2xl flex flex-col items-center gap-2">
-            <p className="text-[#006aff] font-bold text-5xl">1 ชม.</p>
-            <p className="font-bold text-xl text-[#292a2f]" style={{ fontFamily: 'Pretendard, sans-serif' }}>ระยะเวลาการทำ</p>
-            <p className="text-sm text-[#5d5f6d]" style={{ fontFamily: 'Pretendard, sans-serif' }}>สวยทันใจ ไม่เสียเวลานาน</p>
+
+          {/* 1,000+ ครั้ง Card */}
+          <div className="bg-white rounded-2xl p-10 text-center">
+            <div className="flex items-start justify-center gap-2 mb-4">
+              <span className="text-[72px] font-bold bg-gradient-to-b from-[#008095] to-[#006d80] bg-clip-text text-transparent leading-normal tracking-[-2.88px]">
+                1,000+
+              </span>
+              <div className="flex flex-col justify-end self-stretch pb-3 pt-2.5">
+                <span className="text-2xl font-bold text-[#008095] leading-[1.35] tracking-[-0.48px]">ครั้ง</span>
+              </div>
+            </div>
+            <p className="text-[#292a2f] text-[22px] font-bold leading-[1.4] tracking-[-0.44px]">
+              การรักษา กรณี
+            </p>
+          </div>
+
+          {/* ผลข้างเคียง 0ครั้ง Card */}
+          <div className="bg-white rounded-2xl p-10 text-center">
+            <div className="flex items-start justify-center gap-2 mb-4">
+              <span className="text-[72px] font-bold bg-gradient-to-b from-[#008095] to-[#006d80] bg-clip-text text-transparent leading-normal tracking-[-2.88px]">
+                0
+              </span>
+              <div className="flex flex-col justify-end self-stretch pb-3 pt-2.5">
+                <span className="text-2xl font-bold text-[#008095] leading-[1.35] tracking-[-0.48px]">ครั้ง</span>
+              </div>
+            </div>
+            <p className="text-[#292a2f] text-[22px] font-bold leading-[1.4] tracking-[-0.44px]">
+              ผลข้างเคียง เกิดขึ้น
+            </p>
           </div>
         </div>
       </div>
     </div>
   );
 }
-

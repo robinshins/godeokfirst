@@ -3,18 +3,15 @@ export default function WhiteningComparisonSection() {
     <div className="bg-white w-full py-[60px]">
       <div className="max-w-[375px] mx-auto px-4">
         <div className="flex flex-col gap-10 w-full">
-          {/* Title */}
           <div className="flex flex-col gap-3 items-center justify-center w-full">
             <h2 className="font-bold text-[32px] leading-[1.35] tracking-[-0.64px] text-black text-center w-full">
-              どの施術が<br />
-              私に合っていますか？
+              どの施術が<br />自分に合うでしょうか？
             </h2>
             <p className="font-semibold text-base leading-[1.4] tracking-[-0.32px] text-[#727582] text-center w-full">
-              2つのオプションを比較してください
+              2つのオプションを比較してみてください
             </p>
           </div>
 
-          {/* Comparison Table */}
           <div className="bg-white border border-[#f3f6fb] rounded-[20px] w-full">
             <div className="flex flex-col gap-4 overflow-hidden rounded-[inherit] w-full">
               <div className="flex flex-col gap-[30px] px-4 py-6 w-full">
@@ -22,7 +19,7 @@ export default function WhiteningComparisonSection() {
                   ホワイトニングオプション比較
                 </p>
 
-                <div className="bg-white border border-[#006aff] rounded-[10.671px] overflow-hidden w-full">
+                <div className="bg-white border border-[#008095] rounded-[10.671px] overflow-hidden w-full">
                   <table className="w-full border-collapse">
                     <thead>
                       <tr className="border-b border-[#e9ebf1]">
@@ -34,13 +31,13 @@ export default function WhiteningComparisonSection() {
                     <tbody>
                       <tr className="border-b border-[#e9ebf1]">
                         <td className="font-semibold text-[15px] leading-[1.5] tracking-[-0.3px] text-[#5d5f6d] px-2 py-[8.536px] align-middle">施術時間</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">1-2時間<br />（当日完了）</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">2-3回訪問<br />（1-2週間）</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">1〜2時間<br />（当日完了）</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">2〜3回来院<br />（1〜2週間）</td>
                       </tr>
                       <tr className="border-b border-[#e9ebf1]">
                         <td className="font-semibold text-[15px] leading-[1.5] tracking-[-0.3px] text-[#5d5f6d] px-2 py-[8.536px] align-middle">持続時間</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">1-2年<br />（管理時延長）</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">10-15年<br />（半永久）</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">1〜2年<br />（管理時延長）</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">10〜15年<br />（半永久）</td>
                       </tr>
                       <tr className="border-b border-[#e9ebf1]">
                         <td className="font-semibold text-[15px] leading-[1.5] tracking-[-0.3px] text-[#5d5f6d] px-2 py-[8.536px] align-middle">歯の削除</td>
@@ -49,13 +46,13 @@ export default function WhiteningComparisonSection() {
                       </tr>
                       <tr className="border-b border-[#e9ebf1]">
                         <td className="font-semibold text-[15px] leading-[1.5] tracking-[-0.3px] text-[#5d5f6d] px-2 py-[8.536px] align-middle">価格帯</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">20-30万円<br />（全体）</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">1本あたり<br />50-80万円</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">20〜30万ウォン<br />（全体）</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">1本あたり<br />50〜80万ウォン</td>
                       </tr>
                       <tr className="border-b border-[#e9ebf1]">
-                        <td className="font-semibold text-[15px] leading-[1.5] tracking-[-0.3px] text-[#5d5f6d] px-2 py-[8.536px] align-middle">推奨対象</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">自然な<br />ホワイトニングを希望する方</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">完璧な歯を<br />希望する方</td>
+                        <td className="font-semibold text-[15px] leading-[1.5] tracking-[-0.3px] text-[#5d5f6d] px-2 py-[8.536px] align-middle">おすすめ対象</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">自然な<br />ホワイトニング希望の方</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">完璧な歯を<br />希望の方</td>
                       </tr>
                       <tr>
                         <td className="font-semibold text-[15px] leading-[1.5] tracking-[-0.3px] text-[#5d5f6d] px-2 py-[8.536px] align-middle">注意事項</td>

@@ -43,7 +43,7 @@ export default function TreatmentCards() {
       title: '충치치료 & 신경치료',
       subtitle: '자연치아 보존 전문',
       description: '발치 대신 살리는 치료\n보존과 전문의의 정밀 치료',
-      features: ['미세현미경 정밀 진단', '큐레이 충치 발견', '통증 완화 신경치료', '보험 적용'],
+      features: ['정밀 충치 진단', '통증 완화 신경치료', '자연치아 보존', '보험 적용'],
       icon: '🦷',
       color: 'blue',
       link: '/gum-treatment',

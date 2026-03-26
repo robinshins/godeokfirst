@@ -6,7 +6,7 @@ export default function WhiteningComparisonSection() {
           {/* Title */}
           <div className="flex flex-col gap-3 items-center justify-center w-full">
             <h2 className="font-bold text-[32px] leading-[1.35] tracking-[-0.64px] text-black text-center w-full">
-              哪种施术<br />
+              哪种治疗<br />
               适合我？
             </h2>
             <p className="font-semibold text-base leading-[1.4] tracking-[-0.32px] text-[#727582] text-center w-full">
@@ -22,7 +22,7 @@ export default function WhiteningComparisonSection() {
                   美白选项比较
                 </p>
 
-                <div className="bg-white border border-[#006aff] rounded-[10.671px] overflow-hidden w-full">
+                <div className="bg-white border border-[#008095] rounded-[10.671px] overflow-hidden w-full">
                   <table className="w-full border-collapse">
                     <thead>
                       <tr className="border-b border-[#e9ebf1]">
@@ -33,34 +33,34 @@ export default function WhiteningComparisonSection() {
                     </thead>
                     <tbody>
                       <tr className="border-b border-[#e9ebf1]">
-                        <td className="font-semibold text-[15px] leading-[1.5] tracking-[-0.3px] text-[#5d5f6d] px-2 py-[8.536px] align-middle">施术时间</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">1-2小时<br />（当天完成）</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">2-3次访问<br />（1-2周）</td>
+                        <td className="font-semibold text-[15px] leading-[1.5] tracking-[-0.3px] text-[#5d5f6d] px-2 py-[8.536px] align-middle">治疗时间</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">1-2小时<br />(当天完成)</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">2-3次访问<br />(1-2周)</td>
                       </tr>
                       <tr className="border-b border-[#e9ebf1]">
                         <td className="font-semibold text-[15px] leading-[1.5] tracking-[-0.3px] text-[#5d5f6d] px-2 py-[8.536px] align-middle">持续时间</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">1-2年<br />（护理可延长）</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">10-15年<br />（半永久）</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">1-2年<br />(管理时可延长)</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">10-15年<br />(半永久)</td>
                       </tr>
                       <tr className="border-b border-[#e9ebf1]">
-                        <td className="font-semibold text-[15px] leading-[1.5] tracking-[-0.3px] text-[#5d5f6d] px-2 py-[8.536px] align-middle">牙齿磨削</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">无<br />（0mm）</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">最少磨削<br />（0.3mm）</td>
+                        <td className="font-semibold text-[15px] leading-[1.5] tracking-[-0.3px] text-[#5d5f6d] px-2 py-[8.536px] align-middle">牙齿去除</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">无<br />(0mm)</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">最少去除<br />(0.3mm)</td>
                       </tr>
                       <tr className="border-b border-[#e9ebf1]">
-                        <td className="font-semibold text-[15px] leading-[1.5] tracking-[-0.3px] text-[#5d5f6d] px-2 py-[8.536px] align-middle">价格范围</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">20-30万韩元<br />（全部）</td>
+                        <td className="font-semibold text-[15px] leading-[1.5] tracking-[-0.3px] text-[#5d5f6d] px-2 py-[8.536px] align-middle">价格</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">20-30万韩元<br />(全部)</td>
                         <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">每颗<br />50-80万韩元</td>
                       </tr>
                       <tr className="border-b border-[#e9ebf1]">
                         <td className="font-semibold text-[15px] leading-[1.5] tracking-[-0.3px] text-[#5d5f6d] px-2 py-[8.536px] align-middle">推荐对象</td>
                         <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">想要自然<br />美白的人</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">想要完美<br />牙齿的人</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">想要完美牙齿<br />的人</td>
                       </tr>
                       <tr>
                         <td className="font-semibold text-[15px] leading-[1.5] tracking-[-0.3px] text-[#5d5f6d] px-2 py-[8.536px] align-middle">注意事项</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">24小时<br />注意着色食物</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">注意<br />硬质食物</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">24小时<br />注意色素食物</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">注意硬的<br />食物</td>
                       </tr>
                     </tbody>
                   </table>

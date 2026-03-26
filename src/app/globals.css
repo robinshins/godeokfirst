@@ -179,7 +179,7 @@ body {
 
 .step-input:focus {
   outline: none;
-  border-color: #006aff;
+  border-color: #008095;
   box-shadow: 0 0 0 3px rgba(0, 106, 255, 0.1);
 }
 

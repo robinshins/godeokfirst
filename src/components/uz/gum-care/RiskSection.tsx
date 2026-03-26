@@ -1,171 +1,126 @@
 'use client';
 
-import Image from 'next/image';
+const risks = [
+  {
+    tag: 'Yurak-qon tomir',
+    title: 'Yurak-qon tomir kasalliklari xavfi 3 baravar↑',
+    desc: 'Milk ichidagi parodont bakteriyalari qon tomirlariga kirib, tomir devorlarida yalligʼlanish keltirib chiqaradi va tromb hosil boʼlishini tezlashtiradi. Tadqiqotlarga koʼra, milk kasalligi boʼlgan hollarda miokard infarkti xavfi 2,8 baravargacha, insult xavfi 16% dan ortiq oshadi. Aksincha, muntazam skalering bilan yurak kasalliklari xavfini 10~14% kamaytirish mumkin.',
+    stats: ['Miokard infarkti xavfi 2,8 baravar oshadi', 'Insult xavfi 16% kamayadi (yiliga 1 marta skalering)', 'Yurak tekshiruvida ogʼiz boʼshligʼi tekshiruvi ham tavsiya etiladi'],
+    source: 'Bundang Seul Milliy universitetining tadqiqot guruhi 2024 · AQSh Yurak Assotsiatsiyasi (AHA) 2020',
+  },
+  {
+    tag: 'Diabet',
+    title: 'Diabet asoratlari rivojlanishi 2 baravar↑',
+    desc: 'Milk yalligʼlanishi insulin qarshiligini oshirib, qon shakarini boshqarishga toʼsqinlik qiladigan yomon davr hosil qiladi. Parodontit boʼlganda HbA1c koʼrsatkichini boshqarish qiyinlashadi, aksincha diabet boʼlganda milk davolash samarasi ham pasayadi. Faqat parodont davolash bilan HbA1c 0,4% kamayganini koʼrsatadigan klinik tadqiqotlar ham mavjud.',
+    stats: ['Qon shakarini boshqarish muvaffaqiyatsizligi 6 baravar oshadi', 'HbA1c 0,4% kamayadi (parodont davolashda)', 'Diabet asoratlari rivojlanish tezligi 2 baravar tez'],
+    source: 'Katolik universiteti Enpyong Sonmo shifoxonasi 2023 · Koreya Diabet Jamiyati',
+  },
+  {
+    tag: 'Miya kasalliklari',
+    title: 'Demensiya xavfi 70%↑',
+    desc: 'Parodont bakteriyalaridan Porphyromonas gingivalis qon-miya toʼsigʼidan oʼtib miyaga kirganda beta-amiloid toʼplanishini tezlashtiradi. Altsxaymer bemorlarining miya toʼqimasida bu parodont bakteriyasining toksinlari topilgan va 10 yildan ortiq milk kasalligini davolamasdan qoldirganda demensiya xavfi sezilarli darajada oshishi qayd etilgan.',
+    stats: ['Altsxaymer bemorlarining 40% da parodont bakteriya toksinlari topilgan', '10 yildan ortiq eʼtiborsiz qoldirilganda demensiya xavfi 70%↑', 'Erta milk parvarishi bilan miya salomatligini himoya qilish mumkin'],
+    source: 'Garvard universiteti Dr. Kantarsi jamoasi 2024 · Journal of Neuroinflammation',
+  },
+  {
+    tag: 'Homilador ayollar',
+    title: 'Erta tugʼish va kam vazn tugʼilish xavfi 7 baravar↑',
+    desc: 'Milk yalligʼlanish mediatorlari boʼlgan prostaglandinlar qon orqali plasentaga yetib borganda erta toʼlgʼoqlarni keltirib chiqarishi mumkin. Homiladorlik davrida milk parvarishi eʼtibordan chetda qolishi oson boʼlganligi sababli, homiladorlikni rejalashtirish oldin yoki homiladorlikning boshida milk holatini albatta tekshirtirish tavsiya etiladi.',
+    stats: ['Erta tugʼish xavfi 7 baravar oshadi', 'Kam vaznli chaqaloq (2kg dan kam) tugʼilish 2 baravar oshadi', 'Homiladorlik davridagi milk davolash sugʼurta bilan qoplanadi'],
+    source: 'AQSh va Yevropa Parodontologiya Jamiyatlari',
+  },
+];
 
 export default function RiskSection() {
-  const risks = [
-    {
-      icon: '/icons/037_Heart.svg',
-      title: 'Yurak-qon tomir kasalligi xavfi 3 baravar↑',
-      titleHighlight: '3 baravar↑',
-      process: [
-        'Milk bakteriyalarining qon tomirga kirishi',
-        'Qon tomir devorida yallig\'lanish',
-        'Qon quyilishini tezlashtirish'
-      ],
-      details: [
-        { text: 'Og\'iz tekshiruvi yurak kasalligini 10% kamaytiradi', note: '' },
-        { text: 'Miokard infarkti xavfi 2.8 baravar' },
-        { text: 'Insult xavfi 16% kamayishi (yiliga 1 marta tish tozalash)' }
-      ],
-      source: 'Bundang Seoul National University Hospital 2024, AHA 2020'
-    },
-    {
-      icon: '/icons/034_Bed.svg',
-      title: 'Diabet og\'irlashishi · Asoratlar ko\'payishi',
-      titleHighlight: 'og\'irlashishi',
-      titleHighlight2: 'ko\'payishi',
-      process: [
-        'Milk yallig\'lanishi',
-        'Insulin qarshiligi oshishi',
-        'Qon shakarini nazorat qilish imkonsizligi'
-      ],
-      details: [
-        { text: 'HbA1c 0.4% kamayishi (milk davolashda)' },
-        { text: 'Diabet asoratlari 2 baravar tez rivojlanadi' },
-        { text: 'Parodontit bilan qon shakari nazorati 6 baravar qiyinlashadi' }
-      ],
-      source: 'Catholic University Eunpyeong St. Mary\'s Hospital 2023'
-    },
-    {
-      icon: '/icons/057_DNA.svg',
-      title: 'Demensiya xavfi 70%↑',
-      titleHighlight: '70%↑',
-      process: [
-        'Milk bakteriyalari miya to\'sig\'ini kesib o\'tadi',
-        'Miyada yallig\'lanish',
-        'Beta-amiloid to\'planishi'
-      ],
-      details: [
-        { text: 'Alzheimer bemorlarining 40% da milk bakteriyalari topilgan' },
-        { text: '10 yildan ortiq e\'tiborsiz qoldirilsa demensiya xavfi keskin oshadi' }
-      ],
-      source: 'Harvard University Dr. Kantarci jamoasi 2024'
-    },
-    {
-      icon: '/icons/023_Pregnancy_Test.svg',
-      title: 'Homiladorlik asoratlari xavfi 7 baravar↑',
-      titleHighlight: '7 baravar↑',
-      process: [
-        'Yallig\'lanish moddalari yo\'ldoshdan o\'tadi',
-        'Erta tug\'ruq qo\'zg\'atilishi',
-        'Erta tug\'ruq va kam vazn'
-      ],
-      details: [
-        { text: 'Erta tug\'ruq xavfi 7 baravar oshadi' },
-        { text: 'Kam vaznli (2 kg dan kam) tug\'ilish 2 baravar oshadi' },
-        { text: 'Bolaning rivojlanishi va o\'rganish qobiliyatiga ta\'sir qilishi mumkin' }
-      ],
-      source: 'Amerika va Yevropa Parodontologiya jamiyatlari'
-    }
-  ];
-
   return (
-    <div className="bg-[#0b1727] w-full px-4 py-[60px]">
-      <div className="max-w-[343px] mx-auto flex flex-col gap-[26px] items-center">
+    <div className="bg-[#21314E] w-full py-[80px] px-5">
+      <div className="max-w-[430px] mx-auto flex flex-col gap-12">
+
         {/* Header */}
-        <div className="flex flex-col gap-3 items-start w-full">
-          <div className="flex flex-col gap-4 items-center justify-center w-full">
-            <div className="flex flex-col gap-3 items-center justify-center text-center text-white w-full">
-              <p className="font-['Nanum_Myeongjo'] font-extrabold leading-[0.2] text-[60px] tracking-[-3.6px] w-full">
-                &ldquo;
-              </p>
-              <div className="font-['Pretendard_JP'] font-bold leading-[1.35] text-[32px] tracking-[-0.64px] w-full">
-                <p className="mb-0">Milk yallig'lanishi</p>
-                <p>butun tanaga tarqalsa...</p>
-              </div>
-            </div>
-          </div>
-          <p className="font-['Pretendard_JP'] font-semibold leading-[1.4] text-[#d2d6e1] text-base text-center tracking-[-0.32px] w-full">
-            E'tiborsiz qoldirilsa bir nechta kasalliklarga tarqalish xavfi katta
+        <div className="flex flex-col gap-4 text-center">
+          <p
+            className="text-[#4DC8D8] font-bold text-[13px] tracking-[0.2em] uppercase"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+            Health Warning
+          </p>
+          <h2
+            className="font-bold text-[30px] leading-[1.3] tracking-[-0.04em] text-white"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+            Milk kasalligi faqat<br />ogʼiz ichida qolmaydi
+          </h2>
+          <p
+            className="font-medium text-white/60 text-[16px] leading-[1.6] tracking-[-0.02em]"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+            Milk ichidagi bakteriyalar qon tomirlari orqali butun tanaga tarqalib,<br />oʼylaganingizdan ancha jiddiy kasalliklarni keltirib chiqaradi.
           </p>
         </div>
 
-        {/* Divider */}
-        <div className="bg-white h-10 opacity-50 shrink-0 w-0.5" />
-
         {/* Risk Cards */}
-        <div className="flex flex-col gap-4 items-start w-full">
-          {risks.map((risk, index) => (
-            <div key={index} className="flex flex-col items-start w-full">
-              {/* White Card */}
-              <div className="bg-white border border-[#f3f6fb] box-border flex flex-col gap-10 items-center justify-center p-6 rounded-t-[24px] w-full">
-                <div className="flex flex-col gap-2.5 items-center justify-center w-full">
-                  <div className="relative shrink-0 w-[100px] h-[100px]">
-                    <Image
-                      src={risk.icon}
-                      alt=""
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-4 items-center justify-center w-full">
-                    <p className="font-['Pretendard_JP'] font-bold leading-[1.35] text-[28px] text-black text-center tracking-[-0.56px] w-full">
-                      {risk.title.split(risk.titleHighlight)[0]}
-                      <span className="text-[#ff1616]">{risk.titleHighlight}</span>
-                      {risk.titleHighlight2 && (
-                        <>
-                          {risk.title.split(risk.titleHighlight)[1].split(risk.titleHighlight2)[0]}
-                          <span className="text-[#ff1616]">{risk.titleHighlight2}</span>
-                        </>
-                      )}
-                    </p>
-                    <div className="flex flex-col gap-1 items-center w-full">
-                      {risk.process.map((step, stepIndex) => (
-                        <div key={stepIndex} className="flex flex-col items-center w-full">
-                          <p className="font-['Pretendard_JP'] font-bold leading-[1.5] text-[#5d5f6d] text-[17px] text-center tracking-[-0.34px] w-full">
-                            {step}
-                          </p>
-                          {stepIndex < risk.process.length - 1 && (
-                            <div className="relative shrink-0 w-6 h-6">
-                              <Image
-                                src="/icons/arrow-big-down-filled.svg"
-                                alt=""
-                                fill
-                                className="object-contain"
-                              />
-                            </div>
-                          )}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
+        <div className="flex flex-col gap-5">
+          {risks.map((risk, idx) => (
+            <div key={idx} className="bg-white/5 border border-white/10 rounded-[24px] p-6 flex flex-col gap-5">
+              {/* Tag + Title */}
+              <div className="flex flex-col gap-2">
+                <span className="text-[11px] font-bold px-2.5 py-1 rounded-full border border-white/20 text-white/50 uppercase tracking-wider w-fit">
+                  {risk.tag}
+                </span>
+                <h3
+                  className="font-bold text-[20px] text-white tracking-[-0.02em] leading-[1.3]"
+                  style={{ fontFamily: 'Pretendard, sans-serif' }}
+                >
+                  {risk.title}
+                </h3>
               </div>
 
-              {/* Blue Card */}
-              <div className="bg-[#006aff] box-border flex flex-col gap-2 items-center justify-center p-6 rounded-b-[24px] shadow-[0px_32px_64px_-12px_rgba(45,54,67,0.08)] text-white w-full">
-                <div className="flex flex-col gap-1 items-start w-full">
-                  {risk.details.map((detail, detailIndex) => (
-                    <div key={detailIndex} className="flex gap-1.5 items-center w-full text-nowrap whitespace-pre">
-                      <p className="font-['Pretendard_JP'] font-bold leading-[1.5] text-lg tracking-[-0.36px]">
-                        {detail.text}
-                      </p>
-                      {'note' in detail && detail.note && (
-                        <p className="font-['Pretendard_JP'] font-semibold leading-[1.4] opacity-60 text-base tracking-[-0.32px]">
-                          {detail.note}
-                        </p>
-                      )}
-                    </div>
-                  ))}
-                </div>
-                <p className="font-['Pretendard_JP'] font-normal leading-[1.4] opacity-60 text-xs tracking-[-0.24px] w-full">
-                  {risk.source}
-                </p>
+              {/* Description */}
+              <p
+                className="text-white/70 text-[14px] leading-[1.7] tracking-[-0.01em]"
+                style={{ fontFamily: 'Pretendard, sans-serif' }}
+              >
+                {risk.desc}
+              </p>
+
+              {/* Stats */}
+              <div className="flex flex-col gap-2 border-t border-white/10 pt-4">
+                {risk.stats.map((stat, sIdx) => (
+                  <div key={sIdx} className="flex items-start gap-2">
+                    <span className="text-[#4DC8D8] shrink-0 mt-[3px]">
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path d="M2.5 7L5.5 10L11.5 4" stroke="#4DC8D8" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </span>
+                    <p
+                      className="text-[#4DC8D8] font-semibold text-[13px] leading-[1.5]"
+                      style={{ fontFamily: 'Pretendard, sans-serif' }}
+                    >
+                      {stat}
+                    </p>
+                  </div>
+                ))}
               </div>
+
+              {/* Source */}
+              <p className="text-white/30 text-[11px]">Manba: {risk.source}</p>
             </div>
           ))}
         </div>
+
+        {/* Bottom Note */}
+        <div className="bg-[#008095]/10 border border-[#008095]/30 rounded-2xl p-6 flex flex-col gap-2 text-center">
+          <p
+            className="text-[#4DC8D8] font-bold text-[16px] leading-[1.5]"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+            Yiliga 1 marta skalering bilan<br />yurak-qon tomir kasalliklari xavfini 14% kamaytirish mumkin.
+          </p>
+          <p className="text-white/40 text-[13px]">
+            Skalering sogʼliq sugʼurtasi bilan qoplanadi — yiliga bir marta albatta qildiring.
+          </p>
+        </div>
+
       </div>
     </div>
   );

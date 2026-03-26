@@ -1,11 +1,12 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import {
   ConsultationType,
   MedicalCondition,
@@ -14,21 +15,22 @@ import { KR, US, JP, CN, VN, MN, UZ, RU, TH } from 'country-flag-icons/react/3x2
 
 // Validation schema (age field removed since it's calculated from resident number)
 const patientIntakeSchema = z.object({
-  name: z.string().min(1, 'Please enter your name'),
-  gender: z.enum(['Male', 'Female'], { required_error: 'Please select your gender' }),
-  residentNumber: z.string().optional(),
-  passportNumber: z.string().optional(),
-  birthdate: z.string().optional(),
-  address: z.string().min(1, 'Please enter your address'),
-  phoneNumber: z.string().regex(/^010-\d{4}-\d{4}$/, 'Invalid phone number format (010-0000-0000)'),
+  name: z.string().min(1, '이름을 입력해주세요'),
+  gender: z.enum(['남', '여'], { required_error: '성별을 선택해주세요' }),
+  residentNumber: z.string().regex(/^\d{6}-\d{7}$/, '올바른 주민등록번호 형식이 아닙니다 (000000-0000000)'),
+  address: z.string().min(1, '주소를 입력해주세요'),
+  phoneNumber: z.string().regex(/^010-\d{4}-\d{4}$/, '올바른 휴대폰 번호 형식이 아닙니다 (010-0000-0000)'),
   guardianPhoneNumber: z.string().optional(),
-  howDidYouKnow: z.string().min(1, 'Please select how you found out about Kyungsung Medith Dental'),
+  howDidYouKnow: z.string().min(1, '고덕퍼스트치과를 알게 된 경로를 선택해주세요'),
   howDidYouKnowOther: z.string().optional(),
-  whyVisit: z.string().min(1, 'Please select the reason for your visit'),
+  howDidYouKnowSearch: z.string().optional(),
+  howDidYouKnowPartner: z.string().optional(),
+  referrerName: z.string().optional(),
+  whyVisit: z.string().min(1, '방문하게 된 이유를 선택해주세요'),
   whyVisitOther: z.string().optional(),
-  consultationTypes: z.array(z.string()).min(1, 'Please select at least one consultation type'),
+  consultationTypes: z.array(z.string()).min(1, '최소 하나의 상담과목을 선택해주세요'),
   otherConsultation: z.string().optional(),
-  lastDentalVisit: z.enum(['Within 1 year', 'Within 2 years', 'Over 2 years', 'Never']),
+  lastDentalVisit: z.enum(['1년 이내', '2년 이내', '2년 이상', '받은 적 없다']),
   drugAllergy: z.boolean(),
   drugAllergyDetails: z.string().optional(),
   medicalConditions: z.array(z.string()),
@@ -38,28 +40,29 @@ const patientIntakeSchema = z.object({
   smokingAmount: z.number().optional().or(z.nan()).transform((val) => (isNaN(val as number) ? undefined : val)),
   drinkingFrequency: z.number().optional().or(z.nan()).transform((val) => (isNaN(val as number) ? undefined : val)),
   noSmokingDrinking: z.boolean(),
-  hasDentalInsurance: z.boolean(),
+  hasDentalInsurance: z.enum(['없다', '있다', '모른다'], { required_error: '치과 보험 가입 유무를 선택해주세요' }),
+  insuranceCompany: z.string().optional(),
   insuranceYear: z.number().optional().or(z.nan()).transform((val) => (isNaN(val as number) ? undefined : val)),
-  symptoms: z.string().min(1, 'Please enter your symptoms'),
+  symptoms: z.string().min(1, '증상을 입력해주세요'),
   painLevel: z.number().min(0).max(10),
   privacyConsent: z.boolean().refine((val) => val === true, {
-    message: 'Please agree to the collection and use of personal information',
+    message: '개인정보 수집·활용에 동의해주세요',
   }),
-  signature: z.string().min(1, 'Please enter your signature'),
+  signature: z.string().min(1, '서명을 입력해주세요'),
   guardianName: z.string().optional(),
   guardianRelationship: z.string().optional(),
   guardianSignature: z.string().optional(),
 }).refine((data) => data.signature === data.name, {
-  message: 'Signature must exactly match the name you entered above',
+  message: '서명은 위에 입력한 이름과 정확히 일치해야 합니다',
   path: ['signature'],
 }).refine((data) => {
-  // Guardian signature must match guardian name if provided
+  // 보호자 서명이 있으면 보호자 이름과 일치해야 함
   if (data.guardianSignature && data.guardianName) {
     return data.guardianSignature === data.guardianName;
   }
   return true;
 }, {
-  message: 'Guardian signature must exactly match the guardian name',
+  message: '보호자 서명은 보호자 이름과 정확히 일치해야 합니다',
   path: ['guardianSignature'],
 });
 
@@ -68,10 +71,47 @@ type FormData = z.infer<typeof patientIntakeSchema>;
 const TOTAL_STEPS = 6;
 
 export default function PatientIntakePage() {
+  const router = useRouter();
   const [currentStep, setCurrentStep] = useState(1);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isLangOpen, setIsLangOpen] = useState(false);
+
+  // Auto-redirect based on browser language
+  useEffect(() => {
+    const browserLang = navigator.language.toLowerCase();
+
+    // Check if already redirected (to prevent infinite loop)
+    const hasRedirected = sessionStorage.getItem('langRedirected');
+
+    if (!hasRedirected) {
+      if (browserLang.startsWith('en')) {
+        sessionStorage.setItem('langRedirected', 'true');
+        router.push('/en/patient-intake');
+      } else if (browserLang.startsWith('ja')) {
+        sessionStorage.setItem('langRedirected', 'true');
+        router.push('/jp/patient-intake');
+      } else if (browserLang.startsWith('zh')) {
+        sessionStorage.setItem('langRedirected', 'true');
+        router.push('/cn/patient-intake');
+      } else if (browserLang.startsWith('vi')) {
+        sessionStorage.setItem('langRedirected', 'true');
+        router.push('/vi/patient-intake');
+      } else if (browserLang.startsWith('mn')) {
+        sessionStorage.setItem('langRedirected', 'true');
+        router.push('/mn/patient-intake');
+      } else if (browserLang.startsWith('uz')) {
+        sessionStorage.setItem('langRedirected', 'true');
+        router.push('/uz/patient-intake');
+      } else if (browserLang.startsWith('ru')) {
+        sessionStorage.setItem('langRedirected', 'true');
+        router.push('/ru/patient-intake');
+      } else if (browserLang.startsWith('th')) {
+        sessionStorage.setItem('langRedirected', 'true');
+        router.push('/th/patient-intake');
+      }
+    }
+  }, [router]);
 
   const {
     register,
@@ -87,7 +127,6 @@ export default function PatientIntakePage() {
       drugAllergy: false,
       hasDentalHistory: false,
       noSmokingDrinking: false,
-      hasDentalInsurance: false,
       privacyConsent: false,
       painLevel: 0,
     },
@@ -104,23 +143,6 @@ export default function PatientIntakePage() {
     residentNumber: watch('residentNumber'),
     howDidYouKnow: watch('howDidYouKnow'),
     whyVisit: watch('whyVisit'),
-  };
-
-  // Auto-format birthdate input
-  const handleBirthdateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    let value = e.target.value.replace(/\D/g, ''); // Remove non-digits
-
-    if (value.length >= 4) {
-      value = value.slice(0, 4) + '-' + value.slice(4);
-    }
-    if (value.length >= 7) {
-      value = value.slice(0, 7) + '-' + value.slice(7);
-    }
-    if (value.length > 10) {
-      value = value.slice(0, 10);
-    }
-
-    setValue('birthdate', value);
   };
 
   // Calculate if minor from resident number or birthdate
@@ -154,8 +176,19 @@ export default function PatientIntakePage() {
     return currentYear - fullYear;
   };
 
-  const age = calculateAge(watchedValues.residentNumber, watch('birthdate'));
+  const age = calculateAge(watchedValues.residentNumber || '');
   const isMinor = age > 0 && age < 14;
+
+  // Scroll to top when step changes
+  useEffect(() => {
+    // Use setTimeout to ensure DOM has updated
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      // Fallback for Safari
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    }, 100);
+  }, [currentStep]);
 
   // Phone number formatting
   const formatPhoneNumber = (value: string): string => {
@@ -196,7 +229,7 @@ export default function PatientIntakePage() {
   };
 
   const onSubmit = async (data: FormData) => {
-    console.log('Form submission started:', data);
+    console.log('폼 제출 시작:', data);
     setIsSubmitting(true);
     try {
       const response = await fetch('/api/patient-intake', {
@@ -204,7 +237,7 @@ export default function PatientIntakePage() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ...data,
-          age: calculateAge(data.residentNumber, data.birthdate),
+          age: calculateAge(data.residentNumber),
           consentDate: new Date().toISOString(),
         }),
       });
@@ -214,11 +247,11 @@ export default function PatientIntakePage() {
       }
 
       const result = await response.json();
-      console.log('Submission successful:', result);
+      console.log('제출 성공:', result);
       setShowSuccessModal(true);
     } catch (error) {
       console.error('Error submitting patient intake:', error);
-      alert('An error occurred during submission. Please try again.');
+      alert('제출 중 오류가 발생했습니다. 다시 시도해주세요.');
     } finally {
       setIsSubmitting(false);
     }
@@ -233,6 +266,8 @@ export default function PatientIntakePage() {
         return !!(
           values.name &&
           values.gender &&
+          values.residentNumber &&
+          /^\d{6}-\d{7}$/.test(values.residentNumber) &&
           values.address &&
           values.phoneNumber &&
           /^010-\d{4}-\d{4}$/.test(values.phoneNumber)
@@ -257,6 +292,7 @@ export default function PatientIntakePage() {
         return !!(values.symptoms && values.painLevel !== undefined);
       case 6:
         const basicConsent = !!(values.privacyConsent && values.signature);
+        // 만 14세 미만이면 법정대리인 정보도 필수
         if (isMinor) {
           return !!(
             basicConsent &&
@@ -276,77 +312,77 @@ export default function PatientIntakePage() {
   const nextStep = () => {
     if (currentStep < TOTAL_STEPS && isCurrentStepValid) {
       setCurrentStep(currentStep + 1);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
 
   const prevStep = () => {
     if (currentStep > 1) {
       setCurrentStep(currentStep - 1);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
 
   const renderStep = () => {
     switch (currentStep) {
       case 1:
+        // 기본정보: 이름, 성별, 주민번호, 주소, 연락처
         return (
-          <StepContainer title="Please enter your basic information">
+          <StepContainer title="기본정보를 입력해주세요">
             <div className="space-y-5">
-              {/* Name */}
+              {/* 이름 */}
               <div>
                 <label className="block text-base font-semibold text-gray-700 mb-2">
-                  Name <span className="text-red-600">*</span>
+                  이름 <span className="text-red-600">*</span>
                 </label>
                 <input
                   {...register('name')}
                   type="text"
-                  placeholder="John Doe"
+                  placeholder="홍길동"
                   className="step-input"
                 />
                 {errors.name && <ErrorMessage>{errors.name.message}</ErrorMessage>}
               </div>
 
-              {/* Gender */}
+              {/* 성별 */}
               <div>
                 <label className="block text-base font-semibold text-gray-700 mb-2">
-                  Gender <span className="text-red-600">*</span>
+                  성별 <span className="text-red-600">*</span>
                 </label>
                 <div className="flex gap-3">
                   <button
                     type="button"
-                    onClick={() => setValue('gender', 'Male')}
+                    onClick={() => setValue('gender', '남')}
                     className={`flex-1 py-4 rounded-xl text-lg font-bold transition-all ${
-                      watch('gender') === 'Male'
-                        ? 'bg-[#006aff] text-white'
+                      watch('gender') === '남'
+                        ? 'bg-[#008095] text-white'
                         : 'bg-gray-100 text-gray-700'
                     }`}
                   >
-                    Male
+                    남성
                   </button>
                   <button
                     type="button"
-                    onClick={() => setValue('gender', 'Female')}
+                    onClick={() => setValue('gender', '여')}
                     className={`flex-1 py-4 rounded-xl text-lg font-bold transition-all ${
-                      watch('gender') === 'Female'
-                        ? 'bg-[#006aff] text-white'
+                      watch('gender') === '여'
+                        ? 'bg-[#008095] text-white'
                         : 'bg-gray-100 text-gray-700'
                     }`}
                   >
-                    Female
+                    여성
                   </button>
                 </div>
                 {errors.gender && <ErrorMessage>{errors.gender.message}</ErrorMessage>}
               </div>
 
-              {/* Resident Number (Optional for foreigners) */}
+              {/* 주민등록번호 */}
               <div>
                 <label className="block text-base font-semibold text-gray-700 mb-2">
-                  Resident Registration Number <span className="text-gray-400 text-xs">(Optional - Korean nationals)</span>
+                  주민등록번호 <span className="text-red-600">*</span>
                 </label>
                 <input
                   {...register('residentNumber')}
                   type="text"
+                  inputMode="numeric"
                   placeholder="000000-0000000"
                   maxLength={14}
                   className="step-input"
@@ -358,58 +394,29 @@ export default function PatientIntakePage() {
                 {errors.residentNumber && <ErrorMessage>{errors.residentNumber.message}</ErrorMessage>}
               </div>
 
-              {/* Passport Number */}
+              {/* 주소 */}
               <div>
                 <label className="block text-base font-semibold text-gray-700 mb-2">
-                  Passport Number <span className="text-gray-400 text-xs">(For foreigners)</span>
-                </label>
-                <input
-                  {...register('passportNumber')}
-                  type="text"
-                  placeholder="Enter your passport number"
-                  className="step-input"
-                />
-                {errors.passportNumber && <ErrorMessage>{errors.passportNumber.message}</ErrorMessage>}
-              </div>
-
-              {/* Birthdate */}
-              <div>
-                <label className="block text-base font-semibold text-gray-700 mb-2">
-                  Date of Birth <span className="text-gray-400 text-xs">(If no resident registration number)</span>
-                </label>
-                <input
-                  {...register('birthdate')}
-                  type="text"
-                  className="step-input"
-                  placeholder="YYYY-MM-DD (e.g., 1990-01-15)"
-                  onChange={handleBirthdateChange}
-                  maxLength={10}
-                />
-                {errors.birthdate && <ErrorMessage>{errors.birthdate.message}</ErrorMessage>}
-              </div>
-
-              {/* Address */}
-              <div>
-                <label className="block text-base font-semibold text-gray-700 mb-2">
-                  Address <span className="text-red-600">*</span>
+                  주소 <span className="text-red-600">*</span>
                 </label>
                 <input
                   {...register('address')}
                   type="text"
-                  placeholder="123 Main St, City..."
+                  placeholder="경기 평택시 고덕동..."
                   className="step-input"
                 />
                 {errors.address && <ErrorMessage>{errors.address.message}</ErrorMessage>}
               </div>
 
-              {/* Phone Number */}
+              {/* 연락처 */}
               <div>
                 <label className="block text-base font-semibold text-gray-700 mb-2">
-                  Your Phone Number <span className="text-red-600">*</span>
+                  본인 연락처 <span className="text-red-600">*</span>
                 </label>
                 <input
                   {...register('phoneNumber')}
                   type="tel"
+                  inputMode="numeric"
                   placeholder="010-0000-0000"
                   maxLength={13}
                   className="step-input"
@@ -421,14 +428,15 @@ export default function PatientIntakePage() {
                 {errors.phoneNumber && <ErrorMessage>{errors.phoneNumber.message}</ErrorMessage>}
               </div>
 
-              {/* Guardian Phone */}
+              {/* 보호자 연락처 */}
               <div>
                 <label className="block text-base font-semibold text-gray-700 mb-2">
-                  Guardian Phone Number (Optional)
+                  보호자 연락처 (선택)
                 </label>
                 <input
                   {...register('guardianPhoneNumber')}
                   type="tel"
+                  inputMode="numeric"
                   placeholder="010-0000-0000"
                   maxLength={13}
                   className="step-input"
@@ -443,65 +451,100 @@ export default function PatientIntakePage() {
         );
 
       case 2:
+        // 내원경로
         return (
-          <StepContainer title="Please tell us how you found us">
+          <StepContainer title="내원 경로를 알려주세요">
             <div className="space-y-6">
-              {/* How did you know */}
+              {/* 어떻게 알게 되셨나요 */}
               <div>
                 <label className="block text-lg font-semibold text-gray-800 mb-3">
-                  How did you find out about Kyungsung Medith Dental? <span className="text-red-600">*</span>
+                  고덕퍼스트치과는 어떻게 알게 되셨나요? <span className="text-red-600">*</span>
                 </label>
                 <div className="space-y-2">
                   {[
-                    'Searched on Naver',
-                    'Searched on Naver Map',
-                    'Searched on Google Maps',
-                    'YouTube/Instagram',
-                    'Saw sign/subway ad',
-                    'Friend referral',
-                    'Other',
+                    '네이버에 검색해서',
+                    '카카오맵에 검색해서',
+                    '네이버지도에 검색해서',
+                    '유튜브/인스타그램을 보고',
+                    '지나가다가 간판(지하철광고)을 보고',
+                    'AI(챗GPT, 제미니 등)에서 추천받아서',
+                    '주변 추천(지인, 이웃 등)',
+                    '지인 추천 (직원, 원장님 포함)',
+                    '기타',
                   ].map((option) => (
-                    <button
-                      key={option}
-                      type="button"
-                      onClick={() => setValue('howDidYouKnow', option)}
-                      className={`w-full py-4 rounded-xl text-base font-semibold transition-all ${
-                        watchedValues.howDidYouKnow === option
-                          ? 'bg-[#006aff] text-white'
-                          : 'bg-gray-100 text-gray-700'
-                      }`}
-                    >
-                      {option}
-                    </button>
+                    <div key={option}>
+                      <button
+                        type="button"
+                        onClick={() => setValue('howDidYouKnow', option)}
+                        className={`w-full py-4 rounded-xl text-base font-semibold transition-all ${
+                          watchedValues.howDidYouKnow === option
+                            ? 'bg-[#008095] text-white'
+                            : 'bg-gray-100 text-gray-700'
+                        }`}
+                      >
+                        {option}
+                      </button>
+                      {watchedValues.howDidYouKnow === option && option === '네이버에 검색해서' && (
+                        <input
+                          {...register('howDidYouKnowSearch')}
+                          type="text"
+                          placeholder="검색어를 입력해주세요 (선택사항)"
+                          className="step-input mt-3"
+                        />
+                      )}
+                      {watchedValues.howDidYouKnow === option && option === '주변 추천(지인, 이웃 등)' && (
+                        <input
+                          {...register('howDidYouKnowPartner')}
+                          type="text"
+                          placeholder="추천인 또는 경로를 입력해주세요 (선택사항)"
+                          className="step-input mt-3"
+                        />
+                      )}
+                      {watchedValues.howDidYouKnow === option && option === '기타' && (
+                        <input
+                          {...register('howDidYouKnowOther')}
+                          type="text"
+                          placeholder="기타 경로를 입력해주세요"
+                          className="step-input mt-3"
+                        />
+                      )}
+                      {watchedValues.howDidYouKnow === option && option === '지인 추천 (직원, 원장님 포함)' && (
+                        <div className="mt-3">
+                          <input
+                            {...register('referrerName')}
+                            type="text"
+                            placeholder="지인의 성함을 입력해주세요 (선택사항)"
+                            className="step-input"
+                          />
+                          <p className="text-sm text-gray-500 mt-2">
+                            * 선택사항입니다.
+                          </p>
+                        </div>
+                      )}
+                    </div>
                   ))}
                 </div>
-                {watchedValues.howDidYouKnow === 'Other' && (
-                  <input
-                    {...register('howDidYouKnowOther')}
-                    type="text"
-                    placeholder="Please specify"
-                    className="step-input mt-3"
-                  />
-                )}
                 {errors.howDidYouKnow && <ErrorMessage>{errors.howDidYouKnow.message}</ErrorMessage>}
               </div>
 
-              {/* Why visit */}
+              {/* 방문하게 된 이유 */}
               <div>
                 <label className="block text-lg font-semibold text-gray-800 mb-3">
-                  What made you decide to visit Kyungsung Medith Dental?<br />
-                  <span className="text-sm font-normal text-gray-600">(Select the main reason)</span> <span className="text-red-600">*</span>
+                  고덕퍼스트치과에 방문해야겠다는 생각은 어떻게 하시게 되었나요?<br />
+                  <span className="text-sm font-normal text-gray-600">(제일 컸던 이유 1개만 선택)</span> <span className="text-red-600">*</span>
                 </label>
                 <div className="space-y-2">
                   {[
-                    'Good reviews on Naver Maps',
-                    'Positive feedback on Naver Cafe',
-                    'Website was informative',
-                    'Blog posts were helpful',
-                    'YouTube/Instagram videos',
-                    'Friend\'s recommendation',
-                    'Close to my home',
-                    'Other',
+                    '네이버 지도 리뷰가 좋아보여서',
+                    '네이버 카페에서 평가가 좋아 보여서',
+                    '홈페이지를 봤더니 설명이 잘 되어 있어서',
+                    '블로그글을 봤더니 설명이 잘 되어 있어서',
+                    '유튜브/인스타그램 영상을 보고 신뢰가 가서',
+                    'AI(챗GPT, 제미니 등)에 추천이라 신뢰가 가서',
+                    '지인소개라 신뢰가 가서',
+                    '주변 추천(지인, 이웃 등)라서',
+                    '집이랑 가까워서',
+                    '기타',
                   ].map((option) => (
                     <button
                       key={option}
@@ -509,7 +552,7 @@ export default function PatientIntakePage() {
                       onClick={() => setValue('whyVisit', option)}
                       className={`w-full py-4 rounded-xl text-base font-semibold transition-all text-left px-4 ${
                         watchedValues.whyVisit === option
-                          ? 'bg-[#006aff] text-white'
+                          ? 'bg-[#008095] text-white'
                           : 'bg-gray-100 text-gray-700'
                       }`}
                     >
@@ -517,11 +560,11 @@ export default function PatientIntakePage() {
                     </button>
                   ))}
                 </div>
-                {watchedValues.whyVisit === 'Other' && (
+                {watchedValues.whyVisit === '기타' && (
                   <input
                     {...register('whyVisitOther')}
                     type="text"
-                    placeholder="Please specify"
+                    placeholder="기타 이유를 입력해주세요"
                     className="step-input mt-3"
                   />
                 )}
@@ -532,25 +575,25 @@ export default function PatientIntakePage() {
         );
 
       case 3:
+        // 상담과목 및 치과 방문 이력
         return (
-          <StepContainer title="Please enter consultation information">
+          <StepContainer title="상담 정보를 입력해주세요">
             <div className="space-y-6">
-              {/* Consultation types */}
+              {/* 상담과목 */}
               <div>
                 <label className="block text-lg font-semibold text-gray-800 mb-3">
-                  Consultation Type (Multiple selection allowed) <span className="text-red-600">*</span>
+                  상담과목 (중복 선택 가능) <span className="text-red-600">*</span>
                 </label>
                 <div className="grid grid-cols-2 gap-3">
                   {(
                     [
-                      'Implants',
-                      'General treatment',
-                      'Wisdom teeth',
-                      'Oral health exam',
-                      'Veneers',
-                      'Sedation treatment',
-                      'Scaling',
-                      'Other',
+                      '임플란트',
+                      '일반진료(충치, 잇몸, 보철 등)',
+                      '사랑니',
+                      '구강건강검진',
+                      '라미네이트',
+                      '스케일링',
+                      '기타',
                     ] as ConsultationType[]
                   ).map((type) => (
                     <button
@@ -561,7 +604,7 @@ export default function PatientIntakePage() {
                       }
                       className={`py-4 px-3 rounded-xl text-sm font-semibold transition-all ${
                         watchedValues.consultationTypes.includes(type)
-                          ? 'bg-[#006aff] text-white'
+                          ? 'bg-[#008095] text-white'
                           : 'bg-gray-100 text-gray-700'
                       }`}
                     >
@@ -569,31 +612,31 @@ export default function PatientIntakePage() {
                     </button>
                   ))}
                 </div>
-                {watchedValues.consultationTypes.includes('Other') && (
+                {watchedValues.consultationTypes.includes('기타') && (
                   <input
                     {...register('otherConsultation')}
                     type="text"
-                    placeholder="Please specify"
+                    placeholder="기타 상담 내용을 입력해주세요"
                     className="step-input mt-3"
                   />
                 )}
                 {errors.consultationTypes && <ErrorMessage>{errors.consultationTypes.message}</ErrorMessage>}
               </div>
 
-              {/* Last dental visit */}
+              {/* 최근 치과 진료 */}
               <div>
                 <label className="block text-lg font-semibold text-gray-800 mb-3">
-                  When was your last dental visit? <span className="text-red-600">*</span>
+                  최근 치과 진료는 언제 받으셨나요? <span className="text-red-600">*</span>
                 </label>
                 <div className="space-y-2">
-                  {(['Within 1 year', 'Within 2 years', 'Over 2 years', 'Never'] as const).map((option) => (
+                  {(['1년 이내', '2년 이내', '2년 이상', '받은 적 없다'] as const).map((option) => (
                     <button
                       key={option}
                       type="button"
                       onClick={() => setValue('lastDentalVisit', option)}
                       className={`w-full py-4 rounded-xl text-base font-semibold transition-all ${
                         watch('lastDentalVisit') === option
-                          ? 'bg-[#006aff] text-white'
+                          ? 'bg-[#008095] text-white'
                           : 'bg-gray-100 text-gray-700'
                       }`}
                     >
@@ -603,56 +646,81 @@ export default function PatientIntakePage() {
                 </div>
               </div>
 
-              {/* Dental insurance */}
+              {/* 치과 보험 */}
               <div>
                 <label className="block text-lg font-semibold text-gray-800 mb-3">
-                  Do you have dental insurance? <span className="text-red-600">*</span>
+                  치과 보험 가입이 되셨나요? <span className="text-red-600">*</span>
                 </label>
-                <div className="flex gap-3 mb-3">
+                <div className="space-y-3">
                   <button
                     type="button"
-                    onClick={() => setValue('hasDentalInsurance', false)}
-                    className={`flex-1 py-4 rounded-xl text-base font-bold transition-all ${
-                      !watchedValues.hasDentalInsurance
-                        ? 'bg-[#006aff] text-white'
+                    onClick={() => setValue('hasDentalInsurance', '없다')}
+                    className={`w-full py-4 rounded-xl text-base font-bold transition-all ${
+                      watchedValues.hasDentalInsurance === '없다'
+                        ? 'bg-[#008095] text-white'
                         : 'bg-gray-100 text-gray-700'
                     }`}
                   >
-                    No
+                    없다
                   </button>
+
+                  <div>
+                    <button
+                      type="button"
+                      onClick={() => setValue('hasDentalInsurance', '있다')}
+                      className={`w-full py-4 rounded-xl text-base font-bold transition-all ${
+                        watchedValues.hasDentalInsurance === '있다'
+                          ? 'bg-[#008095] text-white'
+                          : 'bg-gray-100 text-gray-700'
+                      }`}
+                    >
+                      있다
+                    </button>
+                    {watchedValues.hasDentalInsurance === '있다' && (
+                      <div className="space-y-3 mt-3">
+                        <input
+                          {...register('insuranceCompany')}
+                          type="text"
+                          placeholder="보험 회사명을 입력해주세요 (선택사항)"
+                          className="step-input"
+                        />
+                        <input
+                          {...register('insuranceYear', { valueAsNumber: true })}
+                          type="number"
+                          inputMode="numeric"
+                          placeholder="가입연도 (예: 2020, 선택사항)"
+                          className="step-input"
+                        />
+                      </div>
+                    )}
+                  </div>
+
                   <button
                     type="button"
-                    onClick={() => setValue('hasDentalInsurance', true)}
-                    className={`flex-1 py-4 rounded-xl text-base font-bold transition-all ${
-                      watchedValues.hasDentalInsurance
-                        ? 'bg-[#006aff] text-white'
+                    onClick={() => setValue('hasDentalInsurance', '모른다')}
+                    className={`w-full py-4 rounded-xl text-base font-bold transition-all ${
+                      watchedValues.hasDentalInsurance === '모른다'
+                        ? 'bg-[#008095] text-white'
                         : 'bg-gray-100 text-gray-700'
                     }`}
                   >
-                    Yes
+                    모른다
                   </button>
                 </div>
-                {watchedValues.hasDentalInsurance && (
-                  <input
-                    {...register('insuranceYear', { valueAsNumber: true })}
-                    type="number"
-                    placeholder="Year enrolled (e.g. 2020)"
-                    className="step-input"
-                  />
-                )}
               </div>
             </div>
           </StepContainer>
         );
 
       case 4:
+        // 건강 상태 및 약물
         return (
-          <StepContainer title="Please tell us about your health">
+          <StepContainer title="건강 상태를 알려주세요">
             <div className="space-y-6">
-              {/* Drug allergy */}
+              {/* 약 부작용 */}
               <div>
                 <label className="block text-lg font-semibold text-gray-800 mb-3">
-                  Do you have any drug allergies? <span className="text-red-600">*</span>
+                  약에 대한 부작용이 있나요? <span className="text-red-600">*</span>
                 </label>
                 <div className="flex gap-3 mb-3">
                   <button
@@ -660,63 +728,63 @@ export default function PatientIntakePage() {
                     onClick={() => setValue('drugAllergy', false)}
                     className={`flex-1 py-4 rounded-xl text-lg font-bold transition-all ${
                       !watchedValues.drugAllergy
-                        ? 'bg-[#006aff] text-white'
+                        ? 'bg-[#008095] text-white'
                         : 'bg-gray-100 text-gray-700'
                     }`}
                   >
-                    No
+                    없다
                   </button>
                   <button
                     type="button"
                     onClick={() => setValue('drugAllergy', true)}
                     className={`flex-1 py-4 rounded-xl text-lg font-bold transition-all ${
                       watchedValues.drugAllergy
-                        ? 'bg-[#006aff] text-white'
+                        ? 'bg-[#008095] text-white'
                         : 'bg-gray-100 text-gray-700'
                     }`}
                   >
-                    Yes
+                    있다
                   </button>
                 </div>
                 {watchedValues.drugAllergy && (
                   <input
                     {...register('drugAllergyDetails')}
                     type="text"
-                    placeholder="Please specify"
+                    placeholder="구체적으로 입력해주세요"
                     className="step-input"
                   />
                 )}
               </div>
 
-              {/* Medical conditions */}
+              {/* 질환 */}
               <div>
                 <label className="block text-lg font-semibold text-gray-800 mb-3">
-                  Do you have any medical conditions? (Multiple selection allowed) <span className="text-red-600">*</span>
+                  앓았거나 앓고 있는 질환이 있나요? (중복 선택 가능) <span className="text-red-600">*</span>
                 </label>
                 <div className="grid grid-cols-2 gap-2 max-h-[50vh] overflow-y-auto p-1">
                   {(
                     [
-                      'None',
-                      'Hypertension',
-                      'Diabetes',
-                      'Taking aspirin',
-                      'Bleeding disorder',
-                      'Osteoporosis medication',
-                      'Lidocaine allergy',
-                      'Chronic renal failure',
-                      'Lactation',
-                      'Hepatitis B/C',
-                      'Gastric disorder',
-                      'Kidney dialysis',
-                      'Penicillin allergy',
-                      'Chronic liver cirrhosis',
-                      'Pregnant/possibly pregnant',
-                      'Hyperthyroidism',
-                      'Chronic heart valve disease',
-                      'Angina/MI/stroke',
-                      'Endocarditis risk',
-                      'Hyperlipidemia',
-                      'Other',
+                      '없음',
+                      '고혈압',
+                      '당뇨',
+                      '아스피린 복용중',
+                      '출혈성 질환',
+                      '골다공증약 장기 복용',
+                      '리트케인 알러지',
+                      '만성신부전',
+                      '수유증',
+                      'B, C형 간염',
+                      '위장 장애',
+                      '신장 투석',
+                      '폐니실린 알러지',
+                      '만성간경화',
+                      '임신중, 임신가능성',
+                      '갑상선 기능 항진증',
+                      '만성 심장판막 질환',
+                      '혈심증, 심근, 뇌경색',
+                      '갑염성심내막염 위험환자',
+                      '고지혈증',
+                      '기타',
                     ] as MedicalCondition[]
                   ).map((condition) => (
                     <button
@@ -727,7 +795,7 @@ export default function PatientIntakePage() {
                       }
                       className={`py-3 px-2 rounded-lg text-xs font-semibold transition-all ${
                         watchedValues.medicalConditions.includes(condition)
-                          ? 'bg-[#006aff] text-white'
+                          ? 'bg-[#008095] text-white'
                           : 'bg-gray-100 text-gray-700'
                       }`}
                     >
@@ -735,20 +803,20 @@ export default function PatientIntakePage() {
                     </button>
                   ))}
                 </div>
-                {watchedValues.medicalConditions.includes('Other') && (
+                {watchedValues.medicalConditions.includes('기타') && (
                   <input
                     {...register('otherCondition')}
                     type="text"
-                    placeholder="Please specify"
+                    placeholder="기타 질환을 입력해주세요"
                     className="step-input mt-3"
                   />
                 )}
               </div>
 
-              {/* Dental history */}
+              {/* 치과 진료 이력 */}
               <div>
                 <label className="block text-lg font-semibold text-gray-800 mb-3">
-                  Do you have any dental treatment or surgery history?
+                  치과 진료 및 수술 이력이 있나요?
                 </label>
                 <div className="flex gap-3 mb-3">
                   <button
@@ -756,37 +824,37 @@ export default function PatientIntakePage() {
                     onClick={() => setValue('hasDentalHistory', false)}
                     className={`flex-1 py-4 rounded-xl text-base font-bold transition-all ${
                       !watchedValues.hasDentalHistory
-                        ? 'bg-[#006aff] text-white'
+                        ? 'bg-[#008095] text-white'
                         : 'bg-gray-100 text-gray-700'
                     }`}
                   >
-                    No
+                    없음
                   </button>
                   <button
                     type="button"
                     onClick={() => setValue('hasDentalHistory', true)}
                     className={`flex-1 py-4 rounded-xl text-base font-bold transition-all ${
                       watchedValues.hasDentalHistory
-                        ? 'bg-[#006aff] text-white'
+                        ? 'bg-[#008095] text-white'
                         : 'bg-gray-100 text-gray-700'
                     }`}
                   >
-                    Yes
+                    있음
                   </button>
                 </div>
                 {watchedValues.hasDentalHistory && (
                   <textarea
                     {...register('dentalHistoryDetails')}
-                    placeholder="Please specify"
+                    placeholder="구체적으로 입력해주세요"
                     className="step-input min-h-[100px]"
                   />
                 )}
               </div>
 
-              {/* Smoking/Drinking */}
+              {/* 흡연/음주 */}
               <div>
                 <label className="block text-lg font-semibold text-gray-800 mb-3">
-                  What are your smoking and drinking habits?
+                  흡연 및 음주 정도는 어떻게 되시나요?
                 </label>
                 <div className="flex items-center gap-3 mb-3">
                   <input
@@ -796,25 +864,27 @@ export default function PatientIntakePage() {
                     onChange={(e) => setValue('noSmokingDrinking', e.target.checked)}
                     className="w-5 h-5"
                   />
-                  <label htmlFor="no-smoking-drinking" className="text-base font-semibold cursor-pointer">Not applicable</label>
+                  <label htmlFor="no-smoking-drinking" className="text-base font-semibold cursor-pointer">해당 없음</label>
                 </div>
                 {!watchedValues.noSmokingDrinking && (
                   <div className="grid grid-cols-2 gap-3">
                     <div>
-                      <label className="block text-sm text-gray-600 mb-2">Smoking (packs/day)</label>
+                      <label className="block text-sm text-gray-600 mb-2">흡연 (하루 갑수)</label>
                       <input
                         {...register('smokingAmount', { valueAsNumber: true })}
                         type="number"
+                        inputMode="decimal"
                         step="0.5"
                         placeholder="0"
                         className="step-input"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm text-gray-600 mb-2">Drinking (times/week)</label>
+                      <label className="block text-sm text-gray-600 mb-2">음주 (주 횟수)</label>
                       <input
                         {...register('drinkingFrequency', { valueAsNumber: true })}
                         type="number"
+                        inputMode="numeric"
                         placeholder="0"
                         className="step-input"
                       />
@@ -827,39 +897,40 @@ export default function PatientIntakePage() {
         );
 
       case 5:
+        // 증상 및 통증
         return (
-          <StepContainer title="Please tell us about your symptoms">
+          <StepContainer title="불편하신 증상을 알려주세요">
             <div className="space-y-6">
-              {/* Symptoms */}
+              {/* 증상 */}
               <div>
                 <label className="block text-lg font-semibold text-gray-800 mb-3">
-                  Please describe your dental symptoms in detail <span className="text-red-600">*</span>
+                  치아의 증상을 자세히 적어주세요 <span className="text-red-600">*</span>
                 </label>
                 <textarea
                   {...register('symptoms')}
-                  placeholder="e.g. Left molar hurts when chewing"
+                  placeholder="예: 왼쪽 어금니가 씹을 때 아파요"
                   className="step-input min-h-[120px]"
                 />
                 {errors.symptoms && <ErrorMessage>{errors.symptoms.message}</ErrorMessage>}
               </div>
 
-              {/* Pain level */}
+              {/* 통증 정도 */}
               <div>
                 <label className="block text-lg font-semibold text-gray-800 mb-3">
-                  Pain Level (0-10) <span className="text-red-600">*</span>
+                  통증의 정도 (0-10) <span className="text-red-600">*</span>
                 </label>
                 <div className="space-y-3">
                   <div className="bg-gray-50 p-6 rounded-xl text-center">
-                    <div className="text-5xl font-bold text-[#006aff] mb-2">
+                    <div className="text-5xl font-bold text-[#008095] mb-2">
                       {watch('painLevel') || 0}
                     </div>
                     <div className="text-sm text-gray-600">
-                      {watch('painLevel') === 0 && 'No pain'}
-                      {watch('painLevel') >= 1 && watch('painLevel') <= 2 && 'Mild pain'}
-                      {watch('painLevel') >= 3 && watch('painLevel') <= 4 && 'Moderate pain'}
-                      {watch('painLevel') >= 5 && watch('painLevel') <= 6 && 'Severe pain'}
-                      {watch('painLevel') >= 7 && watch('painLevel') <= 8 && 'Very severe pain'}
-                      {watch('painLevel') >= 9 && 'Unbearable pain'}
+                      {watch('painLevel') === 0 && '통증 없음'}
+                      {watch('painLevel') >= 1 && watch('painLevel') <= 2 && '약한 통증'}
+                      {watch('painLevel') >= 3 && watch('painLevel') <= 4 && '중등도 통증'}
+                      {watch('painLevel') >= 5 && watch('painLevel') <= 6 && '심한 통증'}
+                      {watch('painLevel') >= 7 && watch('painLevel') <= 8 && '극심한 통증'}
+                      {watch('painLevel') >= 9 && '참을 수 없는 통증'}
                     </div>
                   </div>
                   <input
@@ -868,7 +939,7 @@ export default function PatientIntakePage() {
                     max="10"
                     value={watch('painLevel') || 0}
                     onChange={(e) => setValue('painLevel', parseInt(e.target.value))}
-                    className="w-full h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#006aff]"
+                    className="w-full h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#008095]"
                   />
                   <div className="flex justify-between text-xs text-gray-500">
                     <span>0</span>
@@ -890,84 +961,86 @@ export default function PatientIntakePage() {
         );
 
       case 6:
+        // 개인정보 동의 및 서명
         return (
-          <StepContainer title="Privacy Policy Consent">
+          <StepContainer title="개인정보 수집·활용 동의">
             <div className="space-y-6">
-              {/* Privacy policy */}
+              {/* 동의서 내용 */}
               <div className="bg-gray-50 p-5 rounded-xl text-sm leading-relaxed">
-                <h3 className="font-bold text-lg mb-3 text-gray-900">Privacy Policy Consent Form</h3>
+                <h3 className="font-bold text-lg mb-3 text-gray-900">개인정보 수집·활용 동의서</h3>
 
                 <p className="mb-3 text-gray-700">
-                  Kyungsung Medith Dental values your privacy and complies with privacy protection laws.
+                  고덕퍼스트치과는 귀하의 개인정보를 매우 중요시 하며 개인정보 보호법을 준수하고 있습니다.
                 </p>
 
                 <p className="mb-4 text-gray-700">
-                  Through this privacy policy, we inform you about how your personal information is used and what measures are taken to protect it.
+                  고덕퍼스트치과는 개인정보처리방침을 통하여 귀하께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며
+                  개인정보 보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다. 이 개인정보처리방침의 순서는 다음과 같습니다.
                 </p>
 
-                <h4 className="font-bold mt-5 mb-2 text-gray-900">Collection and Use of Personal Information</h4>
+                <h4 className="font-bold mt-5 mb-2 text-gray-900">개인정보의 수집 및 이용목적</h4>
 
-                <h5 className="font-semibold mt-3 mb-2 text-gray-800">[Personal Information Collected]</h5>
+                <h5 className="font-semibold mt-3 mb-2 text-gray-800">[개인정보 수집항목]</h5>
                 <ul className="list-disc pl-5 space-y-1.5 text-gray-700">
-                  <li>Required: Name, date of birth, gender, address, age, contact number, mobile phone, email, hospital registration number, service application status</li>
-                  <li>Health information: Visit information, diagnosis information, prescription information, admission/discharge information, examination information</li>
-                  <li>Payment information: Card company name, card number and other card payment approval information</li>
-                  <li>CCTV operation for crime prevention, facility safety and fire prevention</li>
+                  <li>필수항목: 성명, 생년월일, 성별, 주소, 연령, 연락처, 휴대전화, 이메일, 병원등록번호, 서비스 신청여부</li>
+                  <li>건강정보: 내원정보, 상병정보, 치방정보, 입퇴원정보, 검진정보</li>
+                  <li>수납정보: 카드사명, 카드번호 등 카드결제 승인정보</li>
+                  <li>법죄예방, 시설안전 및 화재예방을 위한 영상정보처리기(CCTV) 운영관련</li>
                 </ul>
 
-                <h5 className="font-semibold mt-4 mb-2 text-gray-800">[Purpose of Using Personal Information]</h5>
+                <h5 className="font-semibold mt-4 mb-2 text-gray-800">[개인정보 이용목적]</h5>
                 <ul className="list-disc pl-5 space-y-1.5 text-gray-700">
-                  <li>Medical care: Examination appointments, appointment inquiries and identity verification for membership services</li>
-                  <li>Examination results and personalized SMS, E-mail information and differentiated content provision</li>
-                  <li>Information about new services and events, and customer satisfaction surveys</li>
-                  <li>Medical services for new service development and administrative services such as billing, payment and refund</li>
-                  <li>Basic data for external commissioned examination requests</li>
-                  <li>Collection of consumer hazard information in accordance with Article 52 of the Framework Act on Consumers</li>
-                  <li>Taking intraoral and extraoral photos and X-rays for examination and treatment, using photos for research, consultation, and promotion (in-hospital, website, other hospital promotional media, etc.)</li>
+                  <li>진료: 검진 예약, 예약조회 및 회원제 서비스 이용에 따른 본인 확인 절차에 이용</li>
+                  <li>검사결과 및 개인별 맞춤 SMS, E-mail 정보 및 차별화된 컨텐츠 제공에 이용</li>
+                  <li>새로운 서비스와 행사정보에 대한 안내 및 고객만족도조사에 이용</li>
+                  <li>신규 서비스 개발을 위한 진료서비스와 접구, 수납 및 환급 등의 원무서비스 제공</li>
+                  <li>외부 수탁 검사 의뢰를 위한 기초자료</li>
+                  <li>소비자 기본법 제52조에 의거한 소비자 위해 정보 수집</li>
+                  <li>검사 및 치료를 등을 위한 구강내외 사진 및 X-ray를 촬영, 촬영한 사진은 더 나은 진료를 위한 연구 및 상담, 홍보(원내, 홈페이지, 기타 병원 홍보매체 등) 목적으로 활용</li>
                 </ul>
 
-                <h4 className="font-bold mt-5 mb-2 text-gray-900">Retention and Use Period of Personal Information</h4>
+                <h4 className="font-bold mt-5 mb-2 text-gray-900">개인정보의 보유 및 이용기간</h4>
                 <ul className="list-disc pl-5 space-y-1.5 text-gray-700">
-                  <li>The hospital retains collected customer personal information and medical information only for the legal period (5 years) and then deletes it from the database.</li>
-                  <li>If the information provider requests deletion of personal information, it will be deleted immediately. However, it may be retained during the period required by other laws.</li>
-                  <li>Records on consumer complaints or dispute resolution: 3 years (Act on Consumer Protection in Electronic Commerce, etc.)</li>
-                  <li>Records on collection/processing and use of credit information: 3 years (Act on Use and Protection of Credit Information)</li>
-                  <li>Records on identity verification: 6 months (Act on Promotion of Information and Communications Network Utilization and Information Protection, etc.)</li>
+                  <li>법원은 수집된 고객의 개인정보 및 진료정보를 보관하는 법정 기간(5년)동안만 보유하며, 그 이후에는 DB에서 삭제하고 있습니다.</li>
+                  <li>정보제공자가 개인정보 삭제를 요청할 경우 즉시 삭제합니다. 단, 타 법령의 규정에 의해 보유하도록 한 기간 동안은 보관할 수 있습니다.</li>
+                  <li>소비자의 불만 또는 분쟁처리에 관한 기록: 3년 (전자상거래등에서의 소비자보호에 관한 법률)</li>
+                  <li>신용정보의 수집/처리 및 이용 등에 관한 기록: 3년 (신용정보의 이용 및 보호에 관한 법률)</li>
+                  <li>본인 확인에 관한 기록: 6개월 (정보통신망 이용촉진 및 정보보호 등에 관한 법률)</li>
                 </ul>
 
-                <h4 className="font-bold mt-5 mb-2 text-gray-900">Right to Refuse Consent and Disadvantages of Refusal</h4>
+                <h4 className="font-bold mt-5 mb-2 text-gray-900">개인정보 제공 동의 거부 권리 및 동의 거부에 따른 불이익 내용 또는 제한사항</h4>
                 <p className="text-gray-700 mb-3">
-                  You have the right to refuse consent to provide personal information, and there are no disadvantages for refusing.
-                  However, you will not be able to receive medical services.
+                  귀하는 개인정보 제공 동의를 거부할 권리가 있으며, 동의 거부에 따른 불이익은 없습니다.
+                  다만, 진료관련 서비스를 받을 수 없습니다.
                 </p>
 
                 <div className="bg-yellow-50 p-4 rounded-lg mt-4 mb-4">
-                  <p className="font-semibold text-gray-800 mb-2">※ For children under 14 years of age, consent from a legal guardian is required.</p>
+                  <p className="font-semibold text-gray-800 mb-2">※ 만14세 미만 아동인 경우 반드시 법정 대리인의 동의가 필요합니다.</p>
                   <p className="text-gray-700 text-sm">
-                    [Legal Guardian Consent] I, as the legal guardian of the minor, agree to the application for Kyungsung Medith Dental services.
+                    [법적대리인 동의서] 본인은 미성년자의 법정대리인으로 고덕퍼스트치과 서비스 이용 신청에 동의합니다.
                   </p>
                 </div>
 
                 <div className="bg-blue-50 p-4 rounded-lg mt-4">
                   <p className="text-gray-700 text-sm mb-2">
-                    ※ Personal information will not be used for purposes other than those agreed upon,
-                    and you may request viewing, correction, or deletion through the personal information manager when you wish to refuse the use of provided personal information.
+                    ※ 개인정보 제공자가 동의한 내용 외의 다른 목적으로 활용하지 않으며,
+                    제공된 개인정보의 이용을 거부하고자 할 때에는 개인정보 관리 책임자를 통해 열람, 정정, 삭제를 요구할 수 있습니다.
                   </p>
                   <p className="text-gray-800 font-semibold text-sm">
-                    [Personal Information Protection Act] In accordance with related laws such as the above, I agree to the collection and use of personal information.
+                    [개인정보보호법] 등 관련 법규에 의거하여 상기 본인은 위와 같이 개인정보 수집 및 활용에 동의합니다.
                   </p>
                 </div>
               </div>
 
-              {/* Consent date */}
+              {/* 동의일 */}
               <div className="bg-blue-50 p-4 rounded-xl">
                 <p className="text-sm text-gray-700">
-                  Consent date: <span className="font-semibold">{new Date().toLocaleDateString('en-US')}</span>
+                  동의일: <span className="font-semibold">{new Date().toLocaleDateString('ko-KR')}</span>
                 </p>
               </div>
 
-              {/* Consent checkbox */}
-              <div className="flex items-start gap-3 bg-white border-2 border-[#006aff] p-4 rounded-xl">
+              {/* 동의 체크박스 */}
+              <div className="flex items-start gap-3 bg-white border-2 border-[#008095] p-4 rounded-xl">
                 <input
                   id="privacy-consent"
                   type="checkbox"
@@ -976,61 +1049,61 @@ export default function PatientIntakePage() {
                   className="w-6 h-6 mt-0.5"
                 />
                 <label htmlFor="privacy-consent" className="text-base font-semibold text-gray-800 cursor-pointer">
-                  I agree to the collection and use of personal information <span className="text-red-600">*</span>
+                  개인정보 수집 및 활용에 동의합니다 <span className="text-red-600">*</span>
                 </label>
               </div>
               {errors.privacyConsent && <ErrorMessage>{errors.privacyConsent.message}</ErrorMessage>}
 
-              {/* Signature */}
+              {/* 서명 */}
               <div>
                 <label className="block text-lg font-semibold text-gray-800 mb-3">
-                  Please sign with your name <span className="text-red-600">*</span>
+                  본인 이름으로 서명해주세요 <span className="text-red-600">*</span>
                 </label>
                 <input
                   {...register('signature')}
                   type="text"
-                  placeholder="John Doe"
+                  placeholder="홍길동"
                   className="step-input text-center text-2xl font-bold"
                 />
                 {errors.signature && <ErrorMessage>{errors.signature.message}</ErrorMessage>}
               </div>
 
-              {/* Guardian info for minors */}
+              {/* 만 14세 미만 법정대리인 */}
               {isMinor && (
                 <div className="bg-yellow-50 p-5 rounded-xl space-y-4">
                   <p className="text-sm font-semibold text-gray-800">
-                    ⚠️ Legal guardian consent required for children under 14 years old
+                    ⚠️ 만 14세 미만으로 법정대리인 동의가 필요합니다
                   </p>
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">
-                      Legal Guardian Name <span className="text-red-600">*</span>
+                      법정대리인 성명 <span className="text-red-600">*</span>
                     </label>
                     <input
                       {...register('guardianName')}
                       type="text"
-                      placeholder="Guardian name"
+                      placeholder="법정대리인 이름"
                       className="step-input"
                     />
                   </div>
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">
-                      Relationship <span className="text-red-600">*</span>
+                      관계 <span className="text-red-600">*</span>
                     </label>
                     <input
                       {...register('guardianRelationship')}
                       type="text"
-                      placeholder="Father, Mother, etc."
+                      placeholder="부, 모 등"
                       className="step-input"
                     />
                   </div>
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">
-                      Legal Guardian Signature <span className="text-red-600">*</span>
+                      법정대리인 서명 <span className="text-red-600">*</span>
                     </label>
                     <input
                       {...register('guardianSignature')}
                       type="text"
-                      placeholder="Guardian name"
+                      placeholder="법정대리인 이름"
                       className="step-input text-center text-xl font-bold"
                     />
                     {errors.guardianSignature && <ErrorMessage>{errors.guardianSignature.message}</ErrorMessage>}
@@ -1038,10 +1111,10 @@ export default function PatientIntakePage() {
                 </div>
               )}
 
-              {/* Completion date */}
+              {/* 작성일 */}
               <div className="bg-blue-50 p-4 rounded-xl text-center">
                 <p className="text-sm text-gray-700">
-                  Completion date: {new Date().toLocaleDateString('en-US', {
+                  작성일: {new Date().toLocaleDateString('ko-KR', {
                     year: 'numeric',
                     month: 'long',
                     day: 'numeric',
@@ -1087,7 +1160,7 @@ export default function PatientIntakePage() {
           style={{ height: '52px' }}
         >
           {/* Logo */}
-          <Link href="/en" className="flex items-center" style={{ height: '32px' }}>
+          <Link href="/" className="flex items-center" style={{ height: '32px' }}>
             <svg width="168" height="32" viewBox="0 0 168 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clipPath="url(#clip0_1_4305)">
                 <path d="M24 16C24 9.37234 18.6271 4 12 4C7.5641 4 3.69091 6.40734 1.61377 9.98645L5.2815 13.0158C5.67266 13.407 6.30709 13.407 6.69881 13.0158L13.445 7.44365C14.3921 6.49652 16.0109 7.16764 16.0109 8.50649V27.3125C20.6659 25.6621 24 21.2211 24 16.0006V16Z" fill="#398BFF"/>
@@ -1125,7 +1198,7 @@ export default function PatientIntakePage() {
               className="bg-white border border-gray-200 rounded-md flex items-center gap-1"
               style={{ height: '28px', padding: '4px 8px' }}
             >
-              <US className="w-4 h-3 rounded-sm" title="English" />
+              <KR className="w-4 h-3 rounded-sm" title="한국어" />
               <svg width="10" height="10" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
@@ -1159,7 +1232,7 @@ export default function PatientIntakePage() {
                           {lang.name}
                         </p>
                       </div>
-                      {lang.code === 'us' && (
+                      {lang.code === 'kr' && (
                         <div className="w-5 h-5 shrink-0">
                           <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
@@ -1179,14 +1252,14 @@ export default function PatientIntakePage() {
       <div className="sticky bg-white shadow-sm z-10" style={{ top: '52px' }}>
         <div className="max-w-[430px] mx-auto px-5 py-4">
           <div className="flex items-center justify-between mb-2">
-            <span className="text-sm font-semibold text-gray-600">Patient Intake Form</span>
-            <span className="text-sm font-bold text-[#006aff]">
+            <span className="text-sm font-semibold text-gray-600">환자 문진표</span>
+            <span className="text-sm font-bold text-[#008095]">
               {currentStep} / {TOTAL_STEPS}
             </span>
           </div>
           <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
             <div
-              className="h-full bg-[#006aff] transition-all duration-300 ease-out"
+              className="h-full bg-[#008095] transition-all duration-300 ease-out"
               style={{ width: `${(currentStep / TOTAL_STEPS) * 100}%` }}
             />
           </div>
@@ -1196,7 +1269,7 @@ export default function PatientIntakePage() {
       {/* Form Content */}
       <form
         onSubmit={handleSubmit(onSubmit, (errors) => {
-          console.log('Form validation failed:', errors);
+          console.log('폼 유효성 검사 실패:', errors);
         })}
         className="max-w-[430px] mx-auto px-5 py-8"
         style={{ marginTop: '60px' }}
@@ -1211,7 +1284,7 @@ export default function PatientIntakePage() {
               onClick={prevStep}
               className="flex-1 py-4 bg-gray-200 text-gray-700 rounded-2xl font-bold text-lg hover:bg-gray-300 transition-colors"
             >
-              Previous
+              이전
             </button>
           )}
           {currentStep < TOTAL_STEPS && (
@@ -1221,25 +1294,25 @@ export default function PatientIntakePage() {
               disabled={!isCurrentStepValid}
               className={`flex-1 py-4 rounded-2xl font-bold text-lg transition-colors ${
                 isCurrentStepValid
-                  ? 'bg-[#006aff] text-white hover:bg-[#0058d6]'
+                  ? 'bg-[#008095] text-white hover:bg-[#0058d6]'
                   : 'bg-gray-300 text-gray-500 cursor-not-allowed'
               }`}
             >
-              Next
+              다음
             </button>
           )}
           {currentStep === TOTAL_STEPS && (
             <button
               type="submit"
               disabled={!isCurrentStepValid || isSubmitting}
-              onClick={() => console.log('Submit button clicked, valid:', isCurrentStepValid, 'submitting:', isSubmitting)}
+              onClick={() => console.log('제출 버튼 클릭됨, 유효성:', isCurrentStepValid, '제출중:', isSubmitting)}
               className={`flex-1 py-4 rounded-2xl font-bold text-lg transition-colors ${
                 isCurrentStepValid && !isSubmitting
-                  ? 'bg-[#006aff] text-white hover:bg-[#0058d6]'
+                  ? 'bg-[#008095] text-white hover:bg-[#0058d6]'
                   : 'bg-gray-300 text-gray-500 cursor-not-allowed'
               }`}
             >
-              {isSubmitting ? 'Submitting...' : 'Submit'}
+              {isSubmitting ? '제출 중...' : '제출하기'}
             </button>
           )}
         </div>
@@ -1255,54 +1328,54 @@ export default function PatientIntakePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-2">Submission Complete</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-2">제출 완료</h3>
               <p className="text-gray-600 mb-6">
-                Your intake form has been submitted.<br />
-                Please check in at the reception desk.
+                문진표 작성이 완료되었습니다.<br />
+                접수대에서 안내받으실 수 있습니다.
               </p>
             </div>
 
-            {/* Review Event Notice */}
+            {/* 리뷰 이벤트 안내 */}
             <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-5 mb-6 border-2 border-blue-200">
               <div className="flex items-center gap-2 mb-3">
                 <span className="text-2xl">🎁</span>
-                <h4 className="text-lg font-bold text-gray-800">Review Event</h4>
+                <h4 className="text-lg font-bold text-gray-800">리뷰 이벤트</h4>
               </div>
               <div className="space-y-2 text-sm text-gray-700 mb-3">
                 <p className="font-semibold text-base text-blue-600">
-                  Write a Naver Map review after treatment
+                  진료 후 네이버 지도 리뷰 작성 시
                 </p>
                 <p className="font-bold text-gray-800">
-                  🎉 Get 5,000 won gift certificate!
+                  🎉 5,000원 상품권 증정!
                 </p>
               </div>
               <div className="bg-white/80 rounded-lg p-3 space-y-1.5 text-xs text-gray-600">
                 <div className="flex items-center gap-2">
                   <span className="text-green-600">✓</span>
-                  <span>GS25 mobile gift certificate</span>
+                  <span>GS25 모바일 상품권</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-green-600">✓</span>
-                  <span>Baemin delivery coupon</span>
+                  <span>배달의민족 쿠폰</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-green-600">✓</span>
-                  <span>Starbucks coupon</span>
+                  <span>스타벅스 쿠폰</span>
                 </div>
                 <p className="text-center pt-2 text-gray-500 italic">
-                  ※ Choose 1 of 3 options
+                  ※ 3가지 중 1개 선택 가능
                 </p>
               </div>
               <p className="text-xs text-gray-500 mt-3 text-center">
-                Details available at the reception desk
+                자세한 사항은 접수대에서 안내받으실 수 있습니다
               </p>
             </div>
 
             <button
-              onClick={() => window.location.href = '/en'}
-              className="w-full py-3 bg-[#006aff] text-white rounded-xl font-bold hover:bg-[#0058d6] transition-colors"
+              onClick={() => window.location.href = '/'}
+              className="w-full py-3 bg-[#008095] text-white rounded-xl font-bold hover:bg-[#0058d6] transition-colors"
             >
-              Confirm
+              확인
             </button>
           </div>
         </div>

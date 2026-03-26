@@ -1,78 +1,50 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
+import Image from 'next/image';
+import FadeInSection from '@/components/common/FadeInSection';
 
 export default function WisdomToothHero() {
   const scrollToDoctor = () => {
     const doctorSection = document.getElementById('doctor');
-    if (doctorSection) {
-      doctorSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+    if (doctorSection) doctorSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   return (
-    <div className="bg-[#0b1727] w-full py-[60px] relative">
-      {/* Background Gradient - same as whitening hero */}
-      <div className="absolute h-[222px] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[247px] pointer-events-none">
-        <div className="absolute inset-0">
-          <Image
-            src="/images/hero-gradient.svg"
-            alt=""
-            fill
-            className="object-contain"
-          />
-        </div>
-      </div>
-
-      <div className="max-w-[375px] mx-auto px-4 relative z-10">
-        <div className="flex flex-col gap-[50px] w-full">
-          {/* Content */}
-          <div className="flex flex-col gap-8 items-center justify-center w-full">
-            {/* Logo */}
-            <div className="h-6 overflow-clip relative shrink-0 w-[168px]">
-              <Image
-                src="/icons/Logo.svg"
-                alt="庆星美迪斯牙科"
-                width={168}
-                height={24}
-                className="w-full h-full"
-              />
-            </div>
-
-            {/* Text */}
-            <div className="flex flex-col gap-4 items-start text-center text-white w-full">
-              <h1 className="font-['Nanum_Myeongjo'] font-extrabold text-[36px] leading-[1.35] tracking-[-2.16px] text-white w-full">
-                智齿，<br />
-                拖延只会加重痛苦
-              </h1>
-              <div className="font-['Pretendard',sans-serif] font-semibold text-[18px] leading-[1.5] tracking-[-0.36px] text-white w-full">
-                <p className="mb-0">趁疼痛来袭前先拔除</p>
-                <p className="mb-0">不知何时爆发的定时炸弹，</p>
-                <p>别让它毁了重要时刻</p>
-              </div>
-            </div>
+    <div className="bg-gradient-to-b from-[#d2e9f3]/30 to-white w-full relative overflow-hidden">
+      <div className="w-full flex justify-center">
+        <div className="box-border flex flex-col gap-[50px] items-start px-4 py-[60px] relative w-full max-w-[430px] z-10">
+        <FadeInSection className="flex flex-col gap-3 items-center justify-center relative shrink-0 w-full">
+          <div className="h-11 overflow-hidden relative shrink-0">
+            <Image src="/고덕퍼스트치과-로고-(블랙).png" alt="Godeok First Dental" width={200} height={40} className="h-20 w-auto object-contain -mt-[18px]" />
           </div>
-
-          {/* Buttons */}
-          <div className="flex flex-col gap-4 items-start justify-center w-full">
-            <Link href="/cn/consultation" className="w-full">
-              <button className="bg-[#006aff] rounded-[18px] h-16 px-6 py-4 flex items-center justify-center w-full">
-                <p className="font-['Pretendard',sans-serif] font-bold text-[20px] leading-[1.5] tracking-[-0.4px] text-white whitespace-pre">
-                  快速咨询预约
-                </p>
+          <div className="flex flex-col gap-4 items-start leading-[0] not-italic relative shrink-0 text-center w-full">
+            <h1 className="font-extrabold leading-[1.35] relative shrink-0 text-4xl tracking-[-2.16px] w-full text-[#008095]" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+              智齿，<br />拖得越久越痛
+            </h1>
+            <p className="font-semibold leading-[1.5] relative shrink-0 text-[18px] tracking-[-0.36px] w-full text-[#3e3a3a]">
+              曾任大学附属医院客座教授的院长亲自安全拔除复杂阻生智齿
+            </p>
+          </div>
+        </FadeInSection>
+        <FadeInSection delay={200} className="flex flex-col gap-4 items-start justify-center relative shrink-0 w-full">
+          <div className="flex gap-3 w-full">
+            <Link href="/cn/consultation" className="flex-1">
+              <button className="bg-[#008095] flex h-14 items-center justify-center px-4 py-3 rounded-[14px] w-full hover:bg-[#006B7A] transition-colors border-none outline-none">
+                <span className="font-bold leading-[1.5] not-italic relative shrink-0 text-white text-base text-nowrap tracking-[-0.4px]" style={{ fontFamily: '"NanumSquare", sans-serif' }}>快速咨询预约</span>
               </button>
             </Link>
-            <button
-              onClick={scrollToDoctor}
-              className="bg-white border border-[#e9ebf1] rounded-[18px] h-16 px-6 py-4 flex items-center justify-center w-full"
-            >
-              <p className="font-['Pretendard',sans-serif] font-bold text-[20px] leading-[1.5] tracking-[-0.4px] text-[#006aff] whitespace-pre">
-                查看医疗团队
-              </p>
-            </button>
+            <a href="https://naver.me/GSD1OqoS" target="_blank" rel="noopener noreferrer" className="flex-1">
+              <button className="bg-[#03C75A] flex h-14 items-center justify-center px-4 py-3 rounded-[14px] w-full hover:bg-[#02b351] transition-colors border-none outline-none">
+                <span className="font-bold leading-[1.5] not-italic relative shrink-0 text-white text-base text-nowrap tracking-[-0.4px]" style={{ fontFamily: '"NanumSquare", sans-serif' }}>Naver预约</span>
+              </button>
+            </a>
           </div>
-        </div>
+          <button onClick={scrollToDoctor} className="bg-transparent border-2 border-[#008095] box-border flex h-16 items-center justify-center px-6 py-4 relative rounded-[18px] shrink-0 w-full hover:bg-[#008095]/10 transition-colors">
+            <span className="font-bold leading-[1.5] not-italic relative shrink-0 text-[#008095] text-xl text-nowrap tracking-[-0.4px]" style={{ fontFamily: '"NanumSquare", sans-serif' }}>查看医疗团队</span>
+          </button>
+        </FadeInSection>
+      </div>
       </div>
     </div>
   );

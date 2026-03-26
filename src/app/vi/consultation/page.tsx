@@ -1,21 +1,22 @@
-import { Metadata } from 'next';
-import ConsultationForm from '@/components/vi/ConsultationForm';
-import GNB from '@/components/vi/GNB';
-import DoctorIntroSection from '@/components/vi/consultation/DoctorIntroSection';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'Yeu cau tu van - Nha khoa Kyungsung Medis',
-  description: 'Yeu cau tu van nha khoa AI mien phi voi cac chuyen gia giau kinh nghiem. Nhan khuyen nghi dieu tri ca nhan hoa.',
-  keywords: 'tu van nha khoa, tu van mien phi, tu van AI, nha khoa Han Quoc, nha si Busan, chuyen gia nha khoa',
-  openGraph: {
-    title: 'Yeu cau tu van - Nha khoa Kyungsung Medis',
-    description: 'Yeu cau tu van nha khoa AI mien phi voi cac chuyen gia giau kinh nghiem.',
-    type: 'website',
-    locale: 'vi_VN',
-  }
-};
+import { useEffect } from 'react';
+import ConsultationForm from '@/components/ConsultationForm';
+import GNB from '@/components/vi/GNB';
+import DoctorIntroSection from '@/components/consultation/DoctorIntroSection';
 
 export default function ConsultationPage() {
+  useEffect(() => {
+    // Meta Pixel event
+    if (typeof window !== 'undefined') {
+      const fbq = (window as { fbq?: (...args: unknown[]) => void }).fbq;
+      if (fbq) {
+        fbq('trackCustom', 'ViewCheckoutPage');
+        console.log('✅ Meta Pixel: ViewCheckoutPage 커스텀 이벤트 전송');
+      }
+    }
+  }, []);
+
   return (
     <div className="min-h-screen">
       <GNB />

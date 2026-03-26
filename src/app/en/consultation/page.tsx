@@ -1,21 +1,22 @@
-import { Metadata } from 'next';
-import ConsultationForm from '@/components/en/ConsultationForm';
-import GNB from '@/components/en/GNB';
-import DoctorIntroSection from '@/components/en/consultation/DoctorIntroSection';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'Consultation Request - Kyungsung Medis Dental Clinic',
-  description: 'Request a free AI dental consultation with experienced specialists. Get personalized treatment recommendations.',
-  keywords: 'dental consultation, free consultation, AI consultation, Korean dental clinic, Busan dentist, dental specialist',
-  openGraph: {
-    title: 'Consultation Request - Kyungsung Medis Dental Clinic',
-    description: 'Request a free AI dental consultation with experienced specialists.',
-    type: 'website',
-    locale: 'en_US',
-  }
-};
+import { useEffect } from 'react';
+import ConsultationForm from '@/components/ConsultationForm';
+import GNB from '@/components/en/GNB';
+import DoctorIntroSection from '@/components/consultation/DoctorIntroSection';
 
 export default function ConsultationPage() {
+  useEffect(() => {
+    // Meta Pixel: ViewCheckoutPage custom event
+    if (typeof window !== 'undefined') {
+      const fbq = (window as { fbq?: (...args: unknown[]) => void }).fbq;
+      if (fbq) {
+        fbq('trackCustom', 'ViewCheckoutPage');
+        console.log('✅ Meta Pixel: ViewCheckoutPage custom event sent');
+      }
+    }
+  }, []);
+
   return (
     <div className="min-h-screen">
       <GNB />

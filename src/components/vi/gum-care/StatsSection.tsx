@@ -1,95 +1,81 @@
 'use client';
 
-import Image from 'next/image';
-
 export default function StatsSection() {
   const stats = [
-    { number: '80', unit: '%', label: 'Tỷ lệ mắc bệnh nướu ở người lớn', source: 'Hiệp hội Nha chu Hàn Quốc 2024' },
-    { number: '14', unit: '% giảm', label: 'Giảm bệnh tim mạch khi lấy cao răng', source: 'Bệnh viện Bundang Đại học Quốc gia Seoul 2024' },
-    { number: '6', unit: 'lần', label: 'Thất bại trong kiểm soát đường huyết khi bị viêm nha chu', source: 'Đại học Y Catholic 2023' }
+    { number: '80', unit: '%', label: 'Tỷ lệ người lớn mắc bệnh nướu', source: 'Hội Nha chu Hàn Quốc 2024' },
+    { number: '14', unit: '% giảm', label: 'Giảm bệnh tim mạch khi lấy cao răng', source: 'BV ĐH Seoul Bundang 2024' },
+    { number: '6', unit: 'lần', label: 'Thất bại kiểm soát đường huyết khi viêm nha chu', source: 'Y khoa ĐH Catholic 2023' },
   ];
 
   return (
-    <div className="bg-gradient-to-b from-[#0b1727] from-[0.541%] to-white w-full relative">
-      {/* Background gradient effect - full width */}
-      <div className="absolute h-[711px] left-[calc(50%+5.5px)] top-[217.35px] -translate-x-1/2 w-[480px] pointer-events-none">
-        <div className="absolute inset-[-56.26%_-83.33%]">
-          <Image
-            src="/images/stats-gradient.svg"
-            alt=""
-            fill
-            className="block max-w-none object-contain"
-          />
-        </div>
-      </div>
-
-      {/* Content container with max-width */}
+    <div className="bg-gradient-to-b from-[#21314E] to-white w-full">
       <div className="w-full flex justify-center">
         <div className="box-border flex flex-col gap-[60px] items-start px-4 py-[60px] relative w-full max-w-[430px]">
+
           {/* Header */}
           <div className="flex flex-col gap-4 items-center justify-center relative shrink-0 w-full z-10">
             <div className="flex flex-col gap-3 items-center justify-center relative shrink-0 w-full">
-              {/* Logo */}
-              <div className="h-6 overflow-clip relative shrink-0 w-[168px]">
-                <Image
-                  src="/icons/Logo.svg"
-                  alt="Nha khoa Medis Kyungsungdae"
-                  width={168}
-                  height={24}
-                  className="w-full h-full"
-                />
-              </div>
-
-              {/* Title */}
-              <h2 className="font-['Pretendard_JP'] font-bold leading-[1.35] text-[30px] text-center text-white tracking-[-0.64px] w-full">
-                Bệnh về nướu,<br />
-                không chỉ dừng lại ở vấn đề răng miệng
+              <h2
+                className="font-bold leading-[1.35] text-[30px] text-center text-white tracking-[-0.64px] w-full"
+                style={{ fontFamily: 'Pretendard, sans-serif' }}
+              >
+                bệnh nướu,<br />
+                Không chỉ là vấn đề trong miệng
               </h2>
-
-              {/* Subtitle */}
-              <p className="font-['Pretendard_JP'] font-semibold leading-[1.4] text-[#e9ebf1] text-base text-center tracking-[-0.32px] w-full">
-                Nguy cơ của bệnh nướu gây ảnh hưởng nghiêm trọng<br />
-                đến sức khỏe toàn thân
+              <p
+                className="font-semibold leading-[1.4] text-white/80 text-base text-center tracking-[-0.32px] w-full"
+                style={{ fontFamily: 'Pretendard, sans-serif' }}
+              >
+                Ảnh hưởng nghiêm trọng đến sức khỏe toàn thân<br />
+                Sự nguy hiểm của bệnh nướu
               </p>
             </div>
           </div>
 
           {/* Stats Cards */}
-          <div className="flex flex-col gap-5 items-start relative shrink-0 w-full z-10">
-            <div className="flex flex-col gap-4 items-center justify-center relative shrink-0 w-full">
-              {stats.map((stat, index) => (
-                <div key={index} className="bg-white box-border flex flex-col gap-4 items-center px-4 py-10 relative rounded-2xl shrink-0 w-full">
-                  <div className="flex gap-2 items-baseline justify-center relative shrink-0 w-full">
-                    <p
-                      className="font-['Pretendard_JP'] font-bold leading-none text-[72px] text-center text-nowrap tracking-[-2.88px]"
-                      style={{
-                        background: 'linear-gradient(to bottom, #006aff 0%, #0050c0 100%)',
-                        WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent',
-                        backgroundClip: 'text'
-                      }}
-                    >
-                      {stat.number}
-                    </p>
-                    <p className="font-['Pretendard_JP'] font-bold leading-none text-[#006aff] text-2xl text-center tracking-[-0.48px]">
-                      {stat.unit}
-                    </p>
-                  </div>
-                  <div className="flex flex-col gap-2 items-start leading-[1.4] not-italic relative shrink-0 text-center w-full">
-                    <p className="font-['Pretendard_JP'] font-bold text-[#37373e] text-[22px] tracking-[-0.44px] w-full">
-                      {stat.label}
-                    </p>
-                    <p className="font-['Pretendard_JP'] font-medium text-[#9298a6] text-[14px] tracking-[-0.28px] w-full">
-                      {stat.source}
-                    </p>
-                  </div>
+          <div className="flex flex-col gap-4 items-start relative shrink-0 w-full z-10">
+            {stats.map((stat, index) => (
+              <div key={index} className="bg-white box-border flex flex-col gap-4 items-center px-4 py-10 relative rounded-2xl shrink-0 w-full shadow-[0_4px_20px_-4px_rgba(21,26,36,0.08)]">
+                <div className="flex gap-2 items-baseline justify-center relative shrink-0 w-full">
+                  <p
+                    className="font-bold leading-none text-[72px] text-center text-nowrap tracking-[-2.88px]"
+                    style={{
+                      background: 'linear-gradient(to bottom, #008095 0%, #006d80 100%)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text',
+                      fontFamily: 'Pretendard, sans-serif',
+                    }}
+                  >
+                    {stat.number}
+                  </p>
+                  <p
+                    className="font-bold leading-none text-[#008095] text-2xl text-center tracking-[-0.48px]"
+                    style={{ fontFamily: 'Pretendard, sans-serif' }}
+                  >
+                    {stat.unit}
+                  </p>
                 </div>
-              ))}
-            </div>
+                <div className="flex flex-col gap-2 items-start leading-[1.4] not-italic relative shrink-0 text-center w-full">
+                  <p
+                    className="font-bold text-[#37373e] text-[22px] tracking-[-0.44px] w-full"
+                    style={{ fontFamily: 'Pretendard, sans-serif' }}
+                  >
+                    {stat.label}
+                  </p>
+                  <p
+                    className="font-medium text-[#9298a6] text-[14px] tracking-[-0.28px] w-full"
+                    style={{ fontFamily: 'Pretendard, sans-serif' }}
+                  >
+                    {stat.source}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
+
         </div>
       </div>
     </div>
   );
 }
-

@@ -1,39 +1,166 @@
+'use client';
+
+import Image from 'next/image';
+
 export default function ComparisonSection() {
-  const points = [
-    { title: 'Безболезненность', medis: 'Седация и современные анестетики', other: 'Только локальная анестезия' },
-    { title: 'Оборудование', medis: '3D сканеры и микроскопы', other: 'Традиционные методы' },
-    { title: 'Сроки', medis: 'Лечение за один день (One-Day)', other: 'Минимум 2-3 визита' },
-    { title: 'Гарантия', medis: 'Долгосрочная гарантия качества', other: 'Ограниченная ответственность' }
-  ];
-
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-[430px] mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4 tracking-tight">
-            Почему Medis?
-          </h2>
-        </div>
+    <div className="bg-[#f3f6fb] w-full py-[60px] px-4">
+      <div className="max-w-[375px] mx-auto">
+        <div className="flex flex-col gap-[50px] items-start w-full">
+          {/* Title */}
+          <div className="flex flex-col gap-3 items-start w-full">
+            <div className="flex flex-col gap-4 items-center justify-center w-full">
+              <div className="flex flex-col gap-3 items-center justify-center w-full">
+                <h2 className="font-['Pretendard_JP'] font-bold text-[32px] leading-[1.35] tracking-[-0.64px] text-black text-center w-full">
+ сохранение стоматология
+                </h2>
+              </div>
+            </div>
+            <p className="font-['Pretendard_JP'] font-semibold text-base leading-[1.4] tracking-[-0.32px] text-[#727582] text-center w-full">
+ зуб один снова <br />
+ 1 тоже более специалист 
+            </p>
+          </div>
 
-        <div className="space-y-4">
-          {points.map((point, index) => (
-            <div key={index} className="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-4">
-              <div className="text-center font-black text-gray-300 uppercase tracking-[0.2em] text-[10px]">{point.title}</div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <div className="text-[10px] font-black text-blue-500 uppercase italic">Medis</div>
-                  <p className="text-sm font-bold text-gray-900 leading-tight">{point.medis}</p>
+          {/* Comparison Table */}
+          <div className="relative w-full h-[263px]">
+            {/* обычный стоматология и */}
+            <div className="absolute left-[10px] top-[20.21px] w-[133px]">
+              <div className="flex flex-col gap-[10px] items-start w-full">
+                <div className="flex gap-[10.671px] items-start w-full">
+                  <h3 className="font-['Pretendard_JP'] font-bold text-[22px] leading-[1.4] tracking-[-0.44px] text-[#37373e] flex-1">
+                    обычный стоматология
+                  </h3>
                 </div>
-                <div className="space-y-2 border-l border-gray-100 pl-4">
-                  <div className="text-[10px] font-black text-gray-300 uppercase italic">Другие</div>
-                  <p className="text-sm font-medium text-gray-400 leading-tight">{point.other}</p>
+                <div className="flex flex-col items-start w-full">
+                  <div className="border-b border-[#e9ebf1] py-3 w-full">
+                    <p className="font-['Pretendard_JP'] font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] w-full">
+                      доход во времяустановка
+                    </p>
+                    <p className="font-['Pretendard_JP'] font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#727582] w-full">
+ удаление/Имплант 
+                    </p>
+                  </div>
+                  <div className="border-b border-[#e9ebf1] py-3 w-full">
+                    <p className="font-['Pretendard_JP'] font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d]">
+ процедура быстро 
+                    </p>
+                  </div>
+                  <div className="border-b border-[#e9ebf1] py-3 w-full">
+                    <p className="font-['Pretendard_JP'] font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d]">
+                      обычный лечение проведение операции
+                    </p>
+                  </div>
+                  <div className="py-3 w-full">
+                    <p className="font-['Pretendard_JP'] font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d]">
+ стоимость Имплант 
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          ))}
+
+            {/* Godeok First Dental */}
+            <div className="absolute left-[157px] top-[-13px] w-[186px] bg-white border-2 border-[#008095] rounded-2xl p-5">
+              <div className="flex flex-col gap-[10px] items-center justify-center w-full">
+                <div className="flex gap-[10.671px] items-start w-full">
+                  <h3 className="font-['Pretendard_JP'] font-bold text-[18px] leading-[1.4] tracking-[-0.36px] text-black flex-1">
+                    Godeok First Dental
+                  </h3>
+                </div>
+                <div className="flex flex-col items-start w-full">
+                  <div className="border-b border-[#e9ebf1] py-3 w-full">
+                    <p className="font-['Pretendard_JP'] font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#37373e] w-full">
+                      сохранение во времяустановка
+                    </p>
+                    <p className="font-['Pretendard_JP'] font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#008095] w-full">
+ натуральныйстоматология сохранение линия
+                    </p>
+                  </div>
+                  <div className="border-b border-[#e9ebf1] py-3 w-full">
+                    <p className="font-['Pretendard_JP'] font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#37373e]">
+                      точный диагностика этап лечение
+                    </p>
+                  </div>
+                  <div className="border-b border-[#e9ebf1] py-3 w-full">
+                    <p className="font-['Pretendard_JP'] font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#37373e]">
+                      Специалист комплексной стоматологии лично проведение операции
+                    </p>
+                  </div>
+                  <div className="py-3 w-full">
+                    <p className="font-['Pretendard_JP'] font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#37373e] w-full">
+ страховое покрытие линия
+                    </p>
+                    <p className="font-['Pretendard_JP'] font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#008095] w-full">
+                      пациент нагрузка минимальный
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Review Cards */}
+          <div className="flex flex-col gap-6 items-start w-full">
+            {/* Review 1 */}
+            <div className="bg-white border border-[#f3f6fb] rounded-[24px] w-full overflow-hidden">
+              <div className="flex flex-col items-center justify-center w-full">
+                <div className="flex flex-col gap-5 items-center justify-center px-4 py-6 w-full">
+                  <h3 className="font-['Pretendard_JP'] font-bold text-[22px] leading-[1.4] tracking-[-0.44px] text-black text-center w-full">
+ &ldquo; примерно тоже <br />
+ лечение &rdquo;
+                  </h3>
+                  <div className="flex flex-col gap-4 items-start w-full">
+                    {/* Before Image */}
+                    <div className="bg-[#f3f6fb] h-48 overflow-hidden relative rounded-[20px] w-full">
+                      <Image
+                        src="/images/cavity-before-after.png"
+                        alt="До лечения"
+                        fill
+                        className="object-cover"
+                        style={{ objectPosition: 'center 0%' }}
+                      />
+                      <div className="absolute left-0 top-0 p-3 z-10">
+                        <div className="bg-[#292a2f] px-2.5 py-1.5 rounded-[10px]">
+                          <p className="font-['Pretendard_JP'] font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-white">
+                            Before
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* After Image */}
+                    <div className="bg-[#f3f6fb] h-48 overflow-hidden relative rounded-[20px] w-full">
+                      <Image
+                        src="/images/cavity-before-after.png"
+                        alt="После лечения"
+                        fill
+                        className="object-cover"
+                        style={{ objectPosition: 'center 100%' }}
+                      />
+                      <div className="absolute left-0 top-0 p-3">
+                        <div className="bg-[#008095] px-2.5 py-1.5 rounded-[10px]">
+                          <p className="font-['Pretendard_JP'] font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-white">
+                            After
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex flex-col gap-1 items-start text-center w-full">
+                    <p className="font-['Pretendard_JP'] font-bold text-base leading-[1.4] tracking-[-0.32px] text-black w-full">
+ вкладка повторныйПосле лечения 5лет нет
+                    </p>
+                    <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#9298a6] w-full">
+ Ким●● · 40 Женщина
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
-

@@ -35,23 +35,23 @@ export default function SpeedSection() {
           {/* Logo */}
           <div className="h-6 overflow-clip relative shrink-0 w-[168px]">
             <Image
-              src="/icons/Logo.svg"
-              alt="Kyungsung Medis Dental Clinic"
+              src="/고덕퍼스트치과-로고-(화이트).png"
+              alt="コドクファースト歯科"
               width={168}
               height={24}
-              className="w-full h-full"
+              className="h-20 w-auto object-contain -mt-[18px]"
             />
           </div>
 
           {/* Title */}
-          <h2 className="font-bold leading-[1.35] not-italic text-[#fefeff] text-[32px] text-center tracking-[-0.64px] w-full" style={{ fontFamily: 'Pretendard_JP, sans-serif' }}>
-            他の医院では真似できない<br />
-            スピードと差別化
+          <h2 className="font-bold leading-[1.35] not-italic text-[#fefeff] text-[32px] text-center tracking-[-0.64px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+            どの歯科も追いつけない<br />
+            スピードと違い
           </h2>
 
           {/* Subtitle */}
-          <p className="font-bold leading-[32px] not-italic text-[#51aefe] text-base text-center tracking-[1.92px] uppercase w-full" style={{ fontFamily: 'Pretendard_JP, sans-serif' }}>
-            Only available at Medis
+          <p className="font-bold leading-[32px] not-italic text-[#51aefe] text-base text-center tracking-[1.92px] uppercase w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+            コドクファースト歯科だけで体験できます
           </p>
         </div>
       </div>

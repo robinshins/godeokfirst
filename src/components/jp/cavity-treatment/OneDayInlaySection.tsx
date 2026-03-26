@@ -6,111 +6,81 @@ export default function OneDayInlaySection() {
   const benefits = [
     {
       icon: '/icons/clock-fast.svg',
-      title: '迅速な治療完了',
-      description: '1回の来院で治療が完了し\n忙しい日常を邪魔しません'
+      title: '不快な型取りなし',
+      description: '粘着性印象材の代わりに超高速3Dスキャンで\n快適に歯の形態を採得します'
     },
     {
       icon: '/icons/shield.svg',
-      title: '精密な補綴物',
-      description: 'デジタルスキャンとミリングマシンで\n完璧にカスタム製作されます'
+      title: '精密オーダーメイド補綴',
+      description: 'デジタルデータ基盤で\n誤差を最小化したインレーを製作します'
     },
     {
       icon: '/icons/smile.svg',
-      title: 'すぐに使用可能',
-      description: '仮歯なしで\nすぐに通常の食事が可能です'
+      title: '検証された専門技工所',
+      description: '院長が直接厳選した専門技工所で\n高品質セラミック補綴物を製作します'
     }
   ];
 
   return (
     <div className="bg-white w-full flex justify-center">
       <div className="box-border flex flex-col gap-[60px] items-start px-4 py-[60px] relative w-full max-w-[430px]">
-      {/* Header */}
       <div className="flex flex-col gap-3 items-center justify-center leading-[0] not-italic relative shrink-0 text-center w-full">
         <h2 className="font-bold leading-[1.35] text-[32px] text-black tracking-[-0.64px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-          24時間完成<br />
-          デジタルインレーシステム
+          TRIOS5デジタルスキャンで<br />
+          より精密に
         </h2>
         <p className="font-semibold leading-[1.4] text-[#727582] text-base tracking-[-0.32px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-        デジタルスキャンと院内技工所で<br />
-        迅速な治療完成を目指します
+          不快な型取りなしに3Dスキャンで<br />
+          インレー・クラウンをオーダーメイド製作します
         </p>
       </div>
 
-      {/* Content Cards */}
       <div className="flex flex-col gap-6 items-start relative shrink-0 w-full">
-        {/* デジタルスキャン */}
         <div className="flex flex-col items-center overflow-clip relative rounded-[24px] shrink-0 w-full">
           <div className="h-[192px] relative shrink-0 w-full">
             <Image
-              src="/images/lab-1.png"
-              alt="デジタルスキャン"
+              src="/images/트리오스5.jpg"
+              alt="TRIOS5口腔スキャナー"
               fill
               className="object-cover"
             />
           </div>
-          <div className="bg-[#0b1727] box-border flex flex-col gap-6 items-start not-italic p-6 relative shrink-0 text-center w-full">
+          <div className="bg-[#21314E] box-border flex flex-col gap-6 items-start not-italic p-6 relative shrink-0 text-center w-full">
             <p className="font-bold leading-[1.35] text-2xl text-white tracking-[-0.48px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-              精密なデジタルスキャン
+              TRIOS5口腔スキャナー
             </p>
             <p className="font-semibold leading-[1.4] opacity-80 text-[#e9ebf1] text-[15px] tracking-[-0.3px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-              口腔スキャナーで歯を精密に3Dスキャンし、患者様の歯の形態を完璧に把握します<br />
+              3Shapeの最新口腔スキャナーで粘着性印象材なしに超高速3Dスキャンが可能です<br />
               <br />
-              不快な型取り過程なしに、より正確で快適な治療が可能であり、デジタルデータでただちに補綴物製作に活用されます
+              水分のある口腔環境でも誤差なく歯の形態を正確に採得し、よりフィットするインレーを製作します
             </p>
           </div>
         </div>
 
-        {/* ミリングマシン製作 */}
-        <div className="flex flex-col items-center overflow-clip relative rounded-[24px] shrink-0 w-full">
-          <div className="h-[192px] relative shrink-0 w-full overflow-hidden">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="absolute inset-0 w-full h-full object-cover"
-            >
-              <source src="/videos/milling-machine.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div className="bg-[#0b1727] box-border flex flex-col gap-6 items-start not-italic p-6 relative shrink-0 text-center w-full">
-            <p className="font-bold leading-[1.35] text-2xl text-white tracking-[-0.48px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-              院内ミリングマシン製作
-            </p>
-            <p className="font-semibold leading-[1.4] opacity-80 text-[#e9ebf1] text-[15px] tracking-[-0.3px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-              デジタルスキャンデータを基に院内ミリングマシンで高品質セラミックブロックを精密に削り出します<br />
-              <br />
-              外部技工所を経由しないため時間が短縮され、24時間以内の治療が可能です
-            </p>
-          </div>
-        </div>
-
-        {/* 院内技工所がなければ? */}
         <div className="flex flex-col items-center overflow-clip relative rounded-[24px] shrink-0 w-full">
           <div className="h-[192px] relative shrink-0 w-full">
             <Image
-              src="/images/lab-2.png"
-              alt="院内技工所がなければ?"
+              src="/cases/충치치료/인레이제거후스캔채득.jpg"
+              alt="インレー除去後スキャン採得"
               fill
               className="object-cover"
             />
           </div>
-          <div className="bg-[#0b1727] box-border flex flex-col gap-6 items-start not-italic p-6 relative shrink-0 text-center w-full">
+          <div className="bg-[#21314E] box-border flex flex-col gap-6 items-start not-italic p-6 relative shrink-0 text-center w-full">
             <p className="font-bold leading-[1.35] text-2xl text-white tracking-[-0.48px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-              院内技工所がなければ?
+              治療直後にすぐスキャン
             </p>
             <p className="font-semibold leading-[1.4] opacity-80 text-[#e9ebf1] text-[15px] tracking-[-0.3px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-              外部技工所に補綴物製作を依頼することになり、最低5-7日かかります<br />
+              虫歯除去および形成が完了したらすぐ口腔スキャンを実施します<br />
               <br />
-              何度も来院しなければならず、仮歯を使用する不便さがあり、微細な調整が難しくなります
+              スキャンデータを専門技工所に転送し精密にオーダーメイド製作されたインレーを完成します
             </p>
           </div>
         </div>
 
-        {/* Benefits */}
         {benefits.map((benefit, index) => (
           <div key={index} className="bg-white box-border flex flex-col gap-5 items-center justify-center p-6 relative rounded-[24px] shadow-[0px_24px_50px_-12px_rgba(45,54,67,0.12)] shrink-0 w-full">
-            <div className="relative shrink-0 size-[80px] bg-[#f0f7ff] rounded-2xl flex items-center justify-center">
+            <div className="relative shrink-0 size-[80px] bg-[#e6f7f8] rounded-2xl flex items-center justify-center">
               <Image
                 src={benefit.icon}
                 alt={benefit.title}

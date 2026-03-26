@@ -5,22 +5,22 @@ export default function ToothDiscolorationSection() {
     {
       image: '/icons/coffee.svg',
       title: 'Кофе',
-      description: 'Ежедневный кофе\nделает зубы желтыми'
+      description: 'Ежедневный кофе\nделает зубы жёлтыми'
     },
     {
       image: '/icons/smoking.svg',
       title: 'Курение',
-      description: 'Никотин и смолы —\nглавные причины потемнения'
+      description: 'Никотин и смола —\nглавные причины потемнения'
     },
     {
       image: '/icons/wine.svg',
       title: 'Вино',
-      description: 'Танины красного вина\nокрашивают зубы'
+      description: 'Танин красного вина\nвызывает окрашивание зубов'
     }
   ];
 
   return (
-    <div className="bg-[#0b1727] w-full">
+    <div className="bg-[#21314E] w-full">
       <div className="max-w-[375px] mx-auto px-4 py-[60px]">
         {/* Section Header */}
         <div className="flex flex-col gap-3 mb-[26px]">
@@ -30,14 +30,14 @@ export default function ToothDiscolorationSection() {
                 &#x201C;
               </p>
               <h2 className="font-['Pretendard_JP'] font-bold text-[32px] leading-[1.35] tracking-[-0.64px] w-full">
-                Ваши зубы<br />
-                в порядке?
+                Как выглядит цвет<br />
+                ваших зубов?
               </h2>
             </div>
           </div>
           <p className="font-['Pretendard_JP'] font-semibold text-[#e9ebf1] text-base leading-[1.4] tracking-[-0.32px] text-center">
-            При таких привычках<br />
-            зубы желтеют
+            Если такие привычки продолжатся,<br />
+            зубы станут жёлтыми
           </p>
         </div>
 

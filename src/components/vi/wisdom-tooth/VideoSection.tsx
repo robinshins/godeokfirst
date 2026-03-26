@@ -7,25 +7,26 @@ export default function VideoSection() {
           <div className="flex flex-col gap-3 text-center">
             <h2 className="text-[32px] font-bold leading-[1.35] tracking-[-0.02em] text-black">
               Tất cả về nhổ răng khôn<br />
-              Chúng tôi sẽ giải đáp trong video này
+              Chúng tôi sẽ cho bạn biết tất cả trong video này
             </h2>
             <p className="text-base font-semibold leading-[1.4] tracking-[-0.02em] text-[#727582]">
-              Chúng tôi giải thích chi tiết mọi thông tin từ thời điểm, phương pháp đến các lưu ý khi nhổ răng khôn
+              Từ thời điểm, phương pháp đến lưu ý nhổ răng khôn<br />
+              Chúng tôi giải thích chi tiết tất cả thông tin
             </p>
           </div>
 
-          {/* YouTube Video */}
+          {/* Video Placeholder */}
           <div className="flex justify-center">
-            <div className="relative w-full aspect-video rounded-[20px] overflow-hidden shadow-lg">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/SmjM0-MCGX4"
-                title="Video hướng dẫn hoàn hảo về nhổ răng khôn"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="absolute top-0 left-0 w-full h-full"
-              />
+            <div className="relative w-full aspect-video rounded-[20px] overflow-hidden shadow-lg bg-gradient-to-br from-[#008095]/10 to-[#008095]/20 flex items-center justify-center">
+              <div className="flex flex-col items-center gap-3 p-6 text-center">
+                <div className="w-16 h-16 rounded-full bg-[#008095]/20 flex items-center justify-center">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#008095" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polygon points="5 3 19 12 5 21 5 3" />
+                  </svg>
+                </div>
+                <p className="font-bold text-[#008095] text-[15px]">Đang chuẩn bị video</p>
+                <p className="text-[13px] text-[#008095]/70">Video nhổ răng khôn Godeok First Dental sẽ sớm được tải lên</p>
+              </div>
             </div>
           </div>
         </div>
@@ -33,4 +34,3 @@ export default function VideoSection() {
     </div>
   );
 }
-

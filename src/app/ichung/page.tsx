@@ -23,8 +23,8 @@ const regionData: RegionData = {
     {
       type: 'cavity-treatment',
       title: '충치치료',
-      description: '큐레이 정밀 진단으로 초기 충치까지 발견하고, 최소 삭제 원칙으로 자연치아를 최대한 보존하는 맞춤 치료를 제공합니다.',
-      features: ['큐레이 충치 탐지', '최소 삭제 원칙', '심미 보철 재료', '통증 최소화 치료'],
+      description: '정밀 진단으로 초기 충치까지 발견하고, 최소 삭제 원칙으로 자연치아를 최대한 보존하는 맞춤 치료를 제공합니다.',
+      features: ['정밀 충치 진단', '최소 삭제 원칙', '심미 보철 재료', '통증 최소화 치료'],
     },
     {
       type: 'wisdom-tooth',
@@ -56,7 +56,7 @@ const regionData: RegionData = {
     {
       type: 'cavity-treatment',
       title: '이충동 충치치료, 자연치아 보존이 핵심',
-      summary: '큐레이 정밀 진단과 보존 중심 충치치료의 장점을 소개합니다.',
+      summary: '정밀 진단과 보존 중심 충치치료의 장점을 소개합니다.',
     },
     {
       type: 'wisdom-tooth',

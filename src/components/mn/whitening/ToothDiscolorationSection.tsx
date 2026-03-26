@@ -4,23 +4,23 @@ export default function ToothDiscolorationSection() {
   const causes = [
     {
       image: '/icons/coffee.svg',
-      title: 'Кофе',
-      description: 'Өдөр бүр уудаг кофе нь\nшүдийг шарлуулдаг'
+ title:'',
+ description:'\nшүд'
     },
     {
       image: '/icons/smoking.svg',
-      title: 'Тамхи',
-      description: 'Никотин болон бохь нь\nшүд өнгө солих гол шалтгаан'
+ title:'',
+ description:'\nшүд'
     },
     {
       image: '/icons/wine.svg',
-      title: 'Дарс',
-      description: 'Улаан дарсны таннин нь\nшүдэнд толбо үлдээдэг'
+ title:'',
+ description:'\nшүд'
     }
   ];
 
   return (
-    <div className="bg-[#0b1727] w-full">
+    <div className="bg-[#21314E] w-full">
       <div className="max-w-[375px] mx-auto px-4 py-[60px]">
         {/* Section Header */}
         <div className="flex flex-col gap-3 mb-[26px]">
@@ -30,14 +30,14 @@ export default function ToothDiscolorationSection() {
                 &#x201C;
               </p>
               <h2 className="font-['Pretendard_JP'] font-bold text-[32px] leading-[1.35] tracking-[-0.64px] w-full">
-                Таны шүд<br />
-                эрүүл байна уу?
+ шүд <br />
+?
               </h2>
             </div>
           </div>
           <p className="font-['Pretendard_JP'] font-semibold text-[#e9ebf1] text-base leading-[1.4] tracking-[-0.32px] text-center">
-            Доорх зуршлууд үргэлжилбэл<br />
-            шүд шарладаг
+ <br />
+ шүд 
           </p>
         </div>
 

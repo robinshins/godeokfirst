@@ -25,43 +25,44 @@ export default function WhiteningPeroxideSection() {
           {/* Title */}
           <div className="flex flex-col gap-3 items-center justify-center w-full">
             <h2 className="font-bold text-[32px] leading-[1.35] tracking-[-0.64px] text-black text-center w-full">
-              Tẩy trắng răng chuyên nghiệp tại nha khoa<br />
-              Tẩy trắng bằng Hydrogen Peroxide
+              Tẩy trắng chuyên gia nha khoa<br />
+              Tẩy trắng hydrogen peroxide
             </h2>
             <p className="font-semibold text-base leading-[1.4] tracking-[-0.32px] text-[#727582] text-center w-full">
-              Trải nghiệm tẩy trắng an toàn và hiệu quả với thuốc tẩy trắng nồng độ cao chuyên dụng trong y tế
+              Với chất tẩy trắng nồng độ cao y tế<br />
+              hãy trải nghiệm tẩy trắng an toàn và hiệu quả
             </p>
           </div>
 
           {/* Main Card */}
           <div className="bg-white rounded-[24px] shadow-[0px_24px_50px_-12px_rgba(45,54,67,0.12)] p-6 flex flex-col gap-5 w-full">
-            {/* 오스템 뷰티스 미백제 */}
-            <div className="bg-gradient-to-br from-[#006aff] to-[#0052cc] rounded-[16px] p-5 flex flex-col gap-4 w-full">
+            {/* Chất tẩy trắng Osstem Beautis */}
+            <div className="bg-gradient-to-br from-[#008095] to-[#006d80] rounded-[16px] p-5 flex flex-col gap-4 w-full">
               <div className="flex items-center gap-2">
-                <div className="text-2xl">✨</div>
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" className="shrink-0"><circle cx="11" cy="11" r="10" stroke="white" strokeWidth="1.5"/><path d="M11 6v5l3 3" stroke="white" strokeWidth="1.5" strokeLinecap="round"/></svg>
                 <p className="font-bold text-[18px] leading-[1.5] tracking-[-0.36px] text-white">
                   Hệ thống tẩy trắng Osstem Beautis
                 </p>
               </div>
               <p className="font-semibold text-[14px] leading-[1.4] tracking-[-0.28px] text-white opacity-90">
-                Hệ thống tẩy trắng chuyên nghiệp cao cấp từ Osstem - tập đoàn implant số 1 Hàn Quốc
+                Hệ thống tẩy trắng chuyên gia cao cấp của Osstem - công ty Implant số 1 Hàn Quốc
               </p>
 
-              {/* 뷰티스 미백제 이미지 */}
+              {/* Ảnh chất tẩy trắng Beautis */}
               <div className="bg-white/10 rounded-[16px] overflow-hidden relative w-full aspect-[4/3]">
                 <Image
                   src="/images/beautis-whitening-agent.png"
-                  alt="Thuốc tẩy trắng Osstem Beautis"
+                  alt="Chất tẩy trắng Osstem Beautis"
                   fill
                   className="object-contain"
                 />
               </div>
 
-              {/* 뷰티스 라이트 기기 이미지 */}
+              {/* Beautis Light 기기 hình ảnh */}
               <div className="bg-white/10 rounded-[16px] overflow-hidden relative w-full aspect-[4/3]">
                 <Image
                   src="/images/beautis-light-device.jpg"
-                  alt="Thiết bị đèn Beautis Light của Osstem"
+                  alt="Thiết bị Osstem Beautis Light"
                   fill
                   className="object-cover"
                 />
@@ -71,39 +72,39 @@ export default function WhiteningPeroxideSection() {
                 <div className="flex items-start gap-2">
                   <span className="text-white text-sm shrink-0">•</span>
                   <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-white">
-                    <span className="font-bold">Thuốc tẩy trắng Beautis 15:</span> 15% Hydrogen Peroxide + hoạt chất đặc biệt giúp trắng nhanh
+                    <span className="font-bold">Chất tẩy trắng Beautis 15:</span> Hiệu quả tẩy trắng nhanh với 15% hydrogen peroxide + chất hoạt hóa đặc biệt
                   </p>
                 </div>
                 <div className="flex items-start gap-2">
                   <span className="text-white text-sm shrink-0">•</span>
                   <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-white">
-                    <span className="font-bold">Beautis Light:</span> Tối đa hóa hiệu quả tẩy trắng bằng tia LED cường độ cao (150-220mW/cm²)
+                    <span className="font-bold">Beautis Light:</span> Tối đa hóa hiệu quả tẩy trắng bằng ánh sáng LED cường độ cao (150-220mW/㎠)
                   </p>
                 </div>
                 <div className="flex items-start gap-2">
                   <span className="text-white text-sm shrink-0">•</span>
                   <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-white">
-                    <span className="font-bold">Chứa chất chống nhạy cảm:</span> Công thức an toàn giúp giảm thiểu tình trạng ê buốt
+                    <span className="font-bold">Có chứa chất chống ê buốt:</span> Công thức an toàn giảm thiểu ê buốt
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* 시술 원리 */}
+            {/* Nguyên lý thủ thuật */}
             <div className="bg-[#f3f6fb] rounded-[16px] p-5 flex flex-col gap-[14px] w-full">
               <div className="flex flex-col gap-3 w-full">
                 <p className="font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black w-full">
-                  Nguyên lý thực hiện
+                  Nguyên lý thủ thuật
                 </p>
                 <p className="font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582] w-full">
-                  Hydrogen Peroxide nồng độ cao chuyên dụng (15%) thẩm thấu qua lớp men răng để oxy hóa và phân hủy các phân tử gây màu bên trong ngà răng<br />
-                  Trong quá trình này, các chất gây màu chuyển thành các phân tử nhỏ không màu, giúp răng trắng sáng tự nhiên
+                  Hydrogen peroxide nồng độ cao y tế (15%) thấm qua men răng và oxy hóa·phân giải phân tử nhiễm màu bên trong ngà răng<br />
+                  Trong quá trình này, chất nhiễm màu được chuyển thành phân tử nhỏ không màu, tự nhiên có răng trắng
                 </p>
-                {/* H2O2 반응 이미지 */}
+                {/* Ảnh phản ứng H2O2 */}
                 <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden bg-white">
                   <Image
                     src="/images/h2o2.png"
-                    alt="Nguyên lý tẩy trắng bằng Hydrogen Peroxide"
+                    alt="Tẩy trắng hydrogen peroxide nguyên lý"
                     fill
                     className="object-contain"
                   />
@@ -111,23 +112,23 @@ export default function WhiteningPeroxideSection() {
               </div>
             </div>
 
-            {/* 시술 과정 */}
+            {/* Quy trình thủ thuật */}
             <div className="bg-[#f3f6fb] rounded-[16px] p-5 flex flex-col gap-[14px] w-full">
               <div className="flex flex-col gap-1.5 w-full">
                 <p className="font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black w-full">
-                  Quy trình thực hiện
+                  Quy trình thủ thuật
                 </p>
                 <div className="flex flex-col gap-[5px]">
                   {[
-                    'Bôi chất bảo vệ nướu (Ngăn ngừa tổn thương nướu)',
-                    'Bôi thuốc tẩy trắng nồng độ cao',
-                    'Chiếu đèn LED (15-20 phút)',
-                    'Lặp lại 2-3 lần (Hoàn tất trong ngày)',
-                    'Kết thúc bằng việc bôi Fluoride'
+                    'Bôi chất bảo vệ nướu (phòng tổn thương nướu)',
+                    'Bôi chất tẩy trắng nồng độ cao',
+                    'Chiếu ánh sáng LED (15-20 phút)',
+                    'Lặp lại 2-3 lần (hoàn thành trong ngày)',
+                    'Hoàn thành bằng bôi fluor'
                   ].map((step, index) => (
                     <div key={index} className="flex gap-2 items-start font-semibold text-[15px] leading-[1.4] tracking-[-0.3px]">
-                      <p className="text-[#006aff] w-3 shrink-0">{index + 1}</p>
-                      <p className="text-[#727582] whitespace-pre-line">{step}</p>
+                      <p className="text-[#008095] w-3 shrink-0">{index + 1}</p>
+                      <p className="text-[#727582] whitespace-pre">{step}</p>
                     </div>
                   ))}
                 </div>
@@ -135,11 +136,11 @@ export default function WhiteningPeroxideSection() {
             </div>
 
             {/* Benefits */}
-            <div className="bg-[#006aff] rounded-[16px] p-5 flex flex-col gap-[14px] w-full">
+            <div className="bg-[#008095] rounded-[16px] p-5 flex flex-col gap-[14px] w-full">
               {[
-                { title: 'KHÔNG mài răng', desc: 'Không làm hỏng men răng' },
-                { title: 'Hiệu quả tức thì', desc: 'Trắng lên 2-8 cấp độ ngay sau khi thực hiện' },
-                { title: 'Màu sắc tự nhiên', desc: 'Nâng tông màu răng gốc' }
+                { title: 'KHÔNG mài răng', desc: 'Không tổn thương men răng' },
+                { title: 'Hiệu quả tức thì', desc: 'Sáng hơn 2-8 tông ngay sau thủ thuật' },
+                { title: 'Màu sắc tự nhiên', desc: 'Nâng tông màu răng tự nhiên' }
               ].map((benefit, index) => (
                 <div key={index} className="flex items-start gap-0 w-full">
                   <div className="w-6 h-6 shrink-0">
@@ -150,7 +151,7 @@ export default function WhiteningPeroxideSection() {
                       height={24}
                     />
                   </div>
-                  <div className="flex flex-col gap-1 text-white whitespace-pre-line">
+                  <div className="flex flex-col gap-1 text-white whitespace-pre">
                     <p className="font-bold text-[17px] leading-[1.5] tracking-[-0.34px]">
                       {benefit.title}
                     </p>
@@ -164,60 +165,60 @@ export default function WhiteningPeroxideSection() {
 
           </div>
 
-          {/* 전문가 미백 vs 셀프 미백 */}
-          <div className="bg-white rounded-[24px] border-2 border-[#006aff] p-6 flex flex-col gap-5 w-full">
-            <h3 className="font-bold text-[20px] leading-[1.4] tracking-[-0.4px] text-[#006aff] text-center">
-              Tại sao nên chọn tẩy trắng chuyên nghiệp?
+          {/* Tẩy trắng chuyên gia vs Tẩy trắng tại nhà */}
+          <div className="bg-white rounded-[24px] border-2 border-[#008095] p-6 flex flex-col gap-5 w-full">
+            <h3 className="font-bold text-[20px] leading-[1.4] tracking-[-0.4px] text-[#008095] text-center">
+              Tại sao phải là tẩy trắng chuyên gia?
             </h3>
 
-            {/* 안전성 검증 */}
+            {/* Kiểm chứng an toàn */}
             <div className="bg-[#f3f6fb] rounded-[16px] p-5 flex flex-col gap-3">
               <div className="flex items-center gap-2">
-                <div className="text-xl">🛡️</div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="shrink-0"><path d="M10 2L3 5v5c0 4.1 3.1 7.9 7 9 3.9-1.1 7-4.9 7-9V5L10 2Z" stroke="#008095" strokeWidth="1.5" strokeLinejoin="round"/><path d="M7 10l2 2 4-4" stroke="#008095" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 <p className="font-bold text-[16px] leading-[1.5] tracking-[-0.32px] text-black">
-                  Độ an toàn được các bác sĩ nha khoa toàn thế giới công nhận
+                  An toàn được nha sĩ toàn thế giới công nhận
                 </p>
               </div>
               <p className="font-semibold text-[14px] leading-[1.4] tracking-[-0.28px] text-[#727582]">
-                Điều trị tẩy trắng là phương pháp điều trị răng an toàn nhất được các bác sĩ nha khoa trên toàn thế giới công nhận. Độ an toàn đã được chứng minh qua nhiều nghiên cứu và lâm sàng. Tẩy trắng chuyên nghiệp được thực hiện dưới sự giám sát của bác sĩ cho đến nay hầu như không ghi nhận tác dụng phụ nào đối với răng.
+                Tẩy trắng trước điều trị được nha sĩ trên thế giới công nhận là là phương pháp điều trị răng an toàn nhất. Đã được chứng minh an toàn qua nhiều nghiên cứu và lâm sàng, nha sĩ giám sát tiến hành. Tẩy trắng chuyên gia cho đến nay hầu như không có báo cáo tác dụng phụ lên răng.
               </p>
             </div>
 
-            {/* 효과 차이 */}
+            {/* Chênh lệch hiệu quả */}
             <div className="bg-white rounded-[12px] border border-[#e9ebf1] overflow-hidden">
               <div className="grid grid-cols-2 gap-px bg-[#e9ebf1]">
                 {/* Header */}
-                <div className="bg-[#006aff] p-3 flex items-center justify-center">
-                  <p className="font-bold text-[14px] leading-[1.4] tracking-[-0.28px] text-white text-center">Tẩy trắng chuyên nghiệp</p>
+                <div className="bg-[#008095] p-3 flex items-center justify-center">
+                  <p className="font-bold text-[14px] leading-[1.4] tracking-[-0.28px] text-white">Tẩy trắng chuyên gia</p>
                 </div>
                 <div className="bg-[#f3f6fb] p-3 flex items-center justify-center">
-                  <p className="font-bold text-[14px] leading-[1.4] tracking-[-0.28px] text-[#727582] text-center">Tẩy trắng tại nhà</p>
+                  <p className="font-bold text-[14px] leading-[1.4] tracking-[-0.28px] text-[#727582]">Tẩy trắng tại nhà</p>
                 </div>
 
-                {/* 농도 */}
+                {/* Nồng độ */}
                 <div className="bg-white p-3 flex flex-col gap-1">
-                  <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#006aff]">Nồng độ cao 15%</p>
-                  <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#727582]">Dùng trong y tế, được KFDA cấp phép</p>
+                  <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#008095]">15% nồng độ cao</p>
+                  <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#727582]">Y tế được Cục ATTP cấp phép</p>
                 </div>
                 <div className="bg-white p-3 flex flex-col gap-1">
-                  <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#727582]">Nồng độ thấp 1-4%</p>
-                  <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#999]">Hiệu quả kém</p>
-                </div>
-
-                {/* 효과 */}
-                <div className="bg-white p-3 flex flex-col gap-1">
-                  <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#006aff]">Chỉ trong một ngày</p>
-                  <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#727582]">Trắng lên 3-4 cấp độ</p>
-                </div>
-                <div className="bg-white p-3 flex flex-col gap-1">
-                  <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#727582]">Trên 4 tuần</p>
-                  <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#999]">Hiệu quả chậm và ít</p>
+                  <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#727582]">1-4% nồng độ thấp</p>
+                  <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#999]">Hiệu quả nhỏ</p>
                 </div>
 
-                {/* 안전성 */}
+                {/* Hiệu quả */}
                 <div className="bg-white p-3 flex flex-col gap-1">
-                  <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#006aff]">Khám khoang miệng trước</p>
-                  <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#727582]">+ Bôi Fluoride</p>
+                  <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#008095]">Trong một ngày</p>
+                  <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#727582]">Sáng hơn 3-4 tông</p>
+                </div>
+                <div className="bg-white p-3 flex flex-col gap-1">
+                  <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#727582]">4 tuần trở lên</p>
+                  <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#999]">Hiệu quả nhỏ dần dần</p>
+                </div>
+
+                {/* An toàn */}
+                <div className="bg-white p-3 flex flex-col gap-1">
+                  <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#008095]">Kiểm tra miệng trước</p>
+                  <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#727582]">+ Xử lý bôi fluor</p>
                 </div>
                 <div className="bg-white p-3 flex flex-col gap-1">
                   <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#727582]">Tự thực hiện</p>
@@ -226,53 +227,53 @@ export default function WhiteningPeroxideSection() {
               </div>
             </div>
 
-            {/* 부작용 최소화 */}
+            {/* Giảm thiểu tác dụng phụ */}
             <div className="bg-[#f3f6fb] rounded-[16px] p-5 flex flex-col gap-3">
               <div className="flex items-center gap-2">
-                <div className="text-xl">⚕️</div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="shrink-0"><rect x="8" y="3" width="4" height="14" rx="2" stroke="#008095" strokeWidth="1.5"/><rect x="3" y="8" width="14" height="4" rx="2" stroke="#008095" strokeWidth="1.5"/></svg>
                 <p className="font-bold text-[16px] leading-[1.5] tracking-[-0.32px] text-black">
-                  Quản lý tác dụng phụ bài bản
+                  Quản lý tác dụng phụ có hệ thống
                 </p>
               </div>
               <div className="flex flex-col gap-2">
                 <div className="flex items-start gap-2">
-                  <span className="text-[#006aff] text-sm shrink-0">✓</span>
+                  <span className="text-[#008095] text-sm shrink-0">✓</span>
                   <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#727582]">
-                    <span className="font-bold text-[#006aff]">Khám trước khi thực hiện:</span> Kiểm tra sâu răng, bệnh nướu để tiến hành an toàn
+                    <span className="font-bold text-[#008095]">Kiểm tra trước thủ thuật:</span> Tiến hành an toàn sau khi xác nhận sâu răng, bệnh nướu
                   </p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <span className="text-[#006aff] text-sm shrink-0">✓</span>
+                  <span className="text-[#008095] text-sm shrink-0">✓</span>
                   <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#727582]">
-                    <span className="font-bold text-[#006aff]">Bảo vệ nướu:</span> Ngăn ngừa 100% bỏng mô mềm bằng chất bảo vệ chuyên dụng
+                    <span className="font-bold text-[#008095]">Bảo vệ nướu:</span> Phòng ngừa 100% bỏng mô mềm bằng chất bảo vệ y tế
                   </p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <span className="text-[#006aff] text-sm shrink-0">✓</span>
+                  <span className="text-[#008095] text-sm shrink-0">✓</span>
                   <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#727582]">
-                    <span className="font-bold text-[#006aff]">Chăm sóc sau khi thực hiện:</span> Giảm thiểu ê buốt bằng cách bôi Fluoride/tái khoáng hóa
+                    <span className="font-bold text-[#008095]">Chăm sóc sau thủ thuật:</span> Giảm thiểu ê buốt bằng bôi fluor·tái khoáng hóa
                   </p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <span className="text-[#006aff] text-sm shrink-0">✓</span>
+                  <span className="text-[#008095] text-sm shrink-0">✓</span>
                   <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#727582]">
-                    <span className="font-bold text-[#006aff]">Giám sát bởi chuyên gia:</span> Theo dõi tình trạng thời gian thực để tẩy trắng an toàn
+                    <span className="font-bold text-[#008095]">Giám sát của chuyên gia:</span> Tẩy trắng an toàn với kiểm tra tình trạng thời gian thực
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* 임상 경험 */}
-            <div className="bg-gradient-to-br from-[#006aff] to-[#0052cc] rounded-[16px] p-5 flex flex-col gap-3">
+            {/* Kinh nghiệm lâm sàng */}
+            <div className="bg-gradient-to-br from-[#008095] to-[#006d80] rounded-[16px] p-5 flex flex-col gap-3">
               <div className="flex items-center gap-2">
-                <div className="text-xl">📊</div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="shrink-0"><rect x="3" y="10" width="3" height="7" rx="1" fill="white" fillOpacity="0.7"/><rect x="8.5" y="6" width="3" height="11" rx="1" fill="white" fillOpacity="0.7"/><rect x="14" y="3" width="3" height="14" rx="1" fill="white"/></svg>
                 <p className="font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-white">
                   Kinh nghiệm lâm sàng phong phú
                 </p>
               </div>
               <div className="bg-white/10 rounded-[12px] p-3 flex flex-col gap-2">
                 <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-white">
-                  <span className="font-bold">Với kinh nghiệm hơn 1.000 ca tẩy trắng</span>, chúng tôi sở hữu bí quyết xử lý đa dạng tình trạng răng. Chúng tôi lập kế hoạch tẩy trắng tùy chỉnh dựa trên mức độ xỉn màu, độ nhạy cảm của răng và các phục hình hiện có.
+                  <span className="font-bold">Kinh nghiệm hơn 1.000 ca tẩy trắng</span>có kinh nghiệm với nhiều tình trạng răng khác nhau. Tẩy trắng tùy chỉnh xem xét mức độ nhiễm màu, độ nhạy cảm răng, phục hình hiện có để lập kế hoạch.
                 </p>
               </div>
             </div>
@@ -287,28 +288,28 @@ export default function WhiteningPeroxideSection() {
             <div className="flex flex-col gap-3">
               {[
                 {
-                  question: 'Răng có bị ê buốt sau khi tẩy trắng không?',
-                  answer: 'Có thể có cảm giác ê buốt nhẹ tạm thời, nhưng thuốc tẩy trắng Beautis chứa chất chống nhạy cảm nên giảm thiểu tối đa tình trạng này. Sau khi thực hiện, chúng tôi bôi Fluoride và tái khoáng hóa để giảm thêm độ nhạy cảm, hầu hết sẽ biến mất trong vài ngày. Với hơn 10 năm kinh nghiệm lâm sàng, chúng tôi tiến hành an toàn phù hợp với tình trạng răng của từng bệnh nhân.'
+                  question: 'Sau tẩy trắng răng có bị ê buốt không?',
+                  answer: 'Có thể có triệu chứng ê buốt nhẹ tạm thời, nhưng chất tẩy trắng Beautis có chứa chất chống ê buốt nên giảm thiểu triệu chứng. Giảm thêm độ nhạy cảm bằng bôi fluor và tái khoáng hóa sau thủ thuật, hầu hết biến mất trong vài ngày. Hơn 10 năm kinh nghiệm lâm sàng, tiến hành an toàn phù hợp với tình trạng răng của từng bệnh nhân.'
                 },
                 {
                   question: 'Hiệu quả tẩy trắng kéo dài bao lâu?',
-                  answer: 'Hiệu quả của tẩy trắng chuyên nghiệp thường kéo dài trên 1-2 năm. Thời gian này khác nhau tùy vào thói quen ăn uống, hút thuốc và tình trạng chăm sóc răng miệng của mỗi người. Nếu thường xuyên dùng thực phẩm gây màu như cà phê, rượu vang, cà ri hoặc hút thuốc, thời gian duy trì hiệu quả có thể ngắn lại. Lấy cao răng định kỳ và đánh răng đúng cách sẽ giúp duy trì hiệu quả tẩy trắng lâu hơn.'
+                  answer: 'Tẩy trắng chuyên gia hiệu quả thường kéo dài trên 1-2 năm. Có sự khác biệt tùy theo thói quen ăn uống, hút thuốc, tình trạng chăm sóc miệng, nếu thường xuyên ăn thức ăn gây màu như cà phê, rượu vang, cà ri hoặc hút thuốc thì hiệu quả thời gian duy trì có thể ngắn hơn. Với lấy cao răng định kỳ và đánh răng đúng cách, có thể duy trì hiệu quả tẩy trắng lâu hơn.'
                 },
                 {
-                  question: 'Nếu răng bị xỉn màu lại thì có thể làm lại không?',
-                  answer: 'Có, bạn hoàn toàn có thể làm lại. Chúng tôi khuyên bạn nên làm lại sau khoảng 6 tháng đến 1 năm kể từ lần tẩy trắng đầu tiên, và kết quả có thể đạt được với thời gian ngắn hơn và số lần ít hơn so với lần đầu. Thủ thuật tẩm bổ (touch-up) định kỳ giúp duy trì hàm răng sáng bóng, và chi phí cũng rẻ hơn so với lần đầu.'
+                  question: 'Nếu bị nhiễm màu lại có thể tái thủ thuật không?',
+                  answer: 'Vâng, có thể tái thủ thuật. Khuyến nghị tái thủ thuật sau khoảng 6 tháng~1 năm kể từ tẩy trắng ban đầu, có thể thấy hiệu quả với thời gian ngắn hơn và ít lần hơn so với thủ thuật ban đầu. Duy trì răng trắng sáng bằng thủ thuật touch-up định kỳ , và chi phí cũng rẻ hơn thủ thuật ban đầu.'
                 },
                 {
-                  question: 'Có lưu ý gì sau khi tẩy trắng không?',
-                  answer: 'Trong vòng 24-48 giờ sau khi tẩy trắng, vui lòng tránh thực phẩm gây màu (cà phê, rượu vang, cà ri, kim chi, socola, v.v.) và thuốc lá. Đây là thời điểm các lỗ li ti trên bề mặt răng đang mở nên rất dễ bị bám màu. Ngoài ra, hãy cẩn thận với đồ ăn quá lạnh hoặc quá nóng vì có thể gây ê buốt tạm thời, và chúng tôi khuyên bạn nên dùng kem đánh răng chứa Fluoride.'
+                  question: 'Sau tẩy trắng có lưu ý gì không?',
+                  answer: 'Trong 24-48 giờ sau tẩy trắng, hãy tránh thức ăn gây nhiễm màu (cà phê, rượu vang, cà ri, kimchi, socola, v.v.) và thuốc lá. Đây là giai đoạn lỗ nhỏ trên bề mặt răng đang mở nên dễ bị nhiễm màu. Ngoài ra, thức ăn lạnh hoặc nóng có thể gây ê buốt tạm thời nên hãy cẩn thận, khuyến nghị sử dụng kem đánh răng chứa fluor.'
                 },
                 {
-                  question: 'Các phục hình hiện có (mão răng, resin) có trắng lên không?',
-                  answer: 'Không, các phục hình nhân tạo không trắng lên được. Thuốc tẩy trắng Hydrogen Peroxide chỉ phân hủy các chất gây màu trên răng thật, vì vậy các phục hình như mão răng, resin, veneer sẽ giữ nguyên màu cũ. Do đó, nếu bạn có phục hình, màu sắc giữa chúng và răng thật sau khi tẩy trắng có thể khác nhau, và bạn có thể cần cân nhắc thay thế phục hình. Bạn sẽ được hướng dẫn chính xác thông qua tư vấn trước khi thực hiện.'
+                  question: 'Phục hình hiện có (mão răng, resin) có tẩy trắng được không?',
+                  answer: 'Không, phục hình nhân tạo không thể tẩy trắng. Vì chất tẩy trắng hydrogen peroxide chỉ phân giải chất gây màu trên răng tự nhiên, mão răng, resin, Veneer sứ v.v. giữ nguyên màu ban đầu. Do đó, nếu có phục hình, sau tẩy trắng có thể thấy sự khác biệt màu giữa phục hình và răng tự nhiên, có thể cần cân nhắc thay phục hình. Bạn có thể nhận hướng dẫn chính xác thông qua tư vấn trước thủ thuật.'
                 },
                 {
                   question: 'Đang mang thai hoặc cho con bú có tẩy trắng được không?',
-                  answer: 'Chúng tôi không khuyến khích tẩy trắng khi đang mang thai hoặc cho con bú. Do chưa có đủ nghiên cứu về ảnh hưởng của Hydrogen Peroxide đối với thai nhi hoặc sữa mẹ, để đảm bảo an toàn, bạn nên thực hiện sau khi kết thúc giai đoạn mang thai và cho con bú.'
+                  answer: 'Không khuyến nghị tẩy trắng khi mang thai hoặc cho con bú. Chưa có đủ nghiên cứu về ảnh hưởng của Hydrogen peroxide đến thai nhi hoặc sữa mẹ, vì an toàn khuyến nghị thực hiện sau khi kết thúc mang thai và cho con bú.'
                 }
               ].map((faq, index) => (
                 <div
@@ -320,19 +321,19 @@ export default function WhiteningPeroxideSection() {
                     className="w-full p-5 flex items-start justify-between gap-3 text-left hover:bg-[#e9ebf1] transition-colors"
                   >
                     <div className="flex items-start gap-3 flex-1">
-                      <span className="text-[#006aff] font-bold text-[16px] shrink-0">Q.</span>
+                      <span className="text-[#008095] font-bold text-[16px] shrink-0">Q.</span>
                       <p className="font-bold text-[15px] leading-[1.5] tracking-[-0.3px] text-black">
                         {faq.question}
                       </p>
                     </div>
-                    <div className={`text-[#006aff] text-xl shrink-0 transition-transform ${openFAQ === index ? 'rotate-180' : ''}`}>
+                    <div className={`text-[#008095] text-xl shrink-0 transition-transform ${openFAQ === index ? 'rotate-180' : ''}`}>
                       ▼
                     </div>
                   </button>
                   {openFAQ === index && (
                     <div className="px-5 pb-5 pt-0">
                       <div className="bg-white rounded-[12px] p-4 flex items-start gap-3">
-                        <span className="text-[#006aff] font-bold text-[16px] shrink-0">A.</span>
+                        <span className="text-[#008095] font-bold text-[16px] shrink-0">A.</span>
                         <p className="font-semibold text-[14px] leading-[1.5] tracking-[-0.28px] text-[#727582]">
                           {faq.answer}
                         </p>
@@ -348,4 +349,3 @@ export default function WhiteningPeroxideSection() {
     </div>
   );
 }
-

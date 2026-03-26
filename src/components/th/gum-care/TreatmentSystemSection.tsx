@@ -7,34 +7,34 @@ export default function TreatmentSystemSection() {
     {
       image: '/images/nsk970.png',
       title: 'อุปกรณ์พิเศษ NSK varios 970',
-      description: 'เครื่องขูดหินปูนอัลตร้าโซนิครุ่นล่าสุดจาก NSK ญี่ปุ่น ขจัดเชื้อโรคลึกในเหงือกอย่างแม่นยำ',
+      description: 'เครื่องขูดหินปูนอัลตราซาวด์รุ่นล่าสุดจาก NSK ญี่ปุ่น กำจัดแบคทีเรียลึกในเหงือกอย่างแม่นยำ',
       features: [
-        { label: 'เครื่องยนต์ iPiezo', text: 'ปรับความถี่อัตโนมัติ รับประกันกำลังส่งออกที่เสถียร' },
-        { label: 'หัวความละเอียดสูง', text: 'เข้าถึงร่องเหงือกลึกได้' }
+        { label: 'iPiezo Engine', text: 'ปรับความถี่อัตโนมัติเพื่อเอาต์พุตที่มั่นคง' },
+        { label: 'หัวเข็มแม่นยำสูง', text: 'เข้าถึงถุงปริทันต์ลึกได้' }
       ]
     },
     {
       image: '/images/perioclean2.jpg',
-      title: 'การรักษาด้วยยาปฏิชีวนะเปริโอคลิน',
-      description: 'ยาปฏิชีวนะเฉพาะที่ที่มีส่วนผสมไมโนไซคลิน ฉีดเข้าลึกในเหงือกเพื่อการรักษาโดยตรง',
+      title: 'รักษาด้วยยาปฏิชีวนะเพอริโอคลีน',
+      description: 'ยาปฏิชีวนะเฉพาะที่ชนิดไมโนไซคลิน ฉีดเข้าเหงือกลึกโดยตรงเพื่อรักษา',
       features: [
-        { label: 'ผ่านการทดสอบทางคลินิก', text: 'ประสิทธิภาพได้รับการรับรองจากการทดลองทางคลินิกหลายทีมวิจัยทั้งในและต่างประเทศ' },
+        { label: 'พิสูจน์ทางคลินิก', text: 'ผ่านการทดลองทางคลินิกจากทีมวิจัยทั้งในและต่างประเทศ' },
         { label: 'ออกฤทธิ์ 1 สัปดาห์', text: 'ฉีดครั้งเดียว ยาออกฤทธิ์นาน 1 สัปดาห์' },
-        { label: 'ลดเชื้อแบคทีเรีย', text: 'แบคทีเรีย Red Complex ลดจาก 87.5% เหลือ 12.5%' }
+        { label: 'ลดแบคทีเรีย', text: 'Red Complex แบคทีเรีย 87.5% → 12.5%' }
       ]
     },
     {
       image: '/images/painless2.png',
-      title: 'ระบบบรรเทาความเจ็บปวด 4 ขั้นตอน',
+      title: 'ระบบลดความเจ็บปวด 4 ขั้นตอน',
       description: [
-        '"การรักษาฟันสบายขนาดนี้ได้หรือ"',
-        'ระบบบล็อกความเจ็บปวดทีละขั้นตอนที่คนไข้หลายคนประหลาดใจ'
+        '"ไม่คิดว่าทำฟันจะสบายขนาดนี้"',
+        'ระบบตัดความเจ็บปวดเป็นขั้นที่ผู้ป่วยหลายคนทึ่ง'
       ],
       features: [
-        { label: 'ยาชากลั้วปาก', text: 'กลั้วปากด้วยยาชา ทำให้ชาทั่วปากเป็นขั้นแรก' },
-        { label: 'ยาชาทาเฉพาะที่', text: 'ทายาชาบริเวณที่จะฉีดเป็นขั้นที่ 2' },
-        { label: 'เครื่องฉีดยาชาไฟฟ้าลดปวด', text: 'ควบคุมด้วยคอมพิวเตอร์ ฉีดด้วยความเร็วคงที่ลดความเจ็บปวด' },
-        { label: 'เครื่องฉีดยาชาเส้นประสาท', text: 'บล็อกความเจ็บปวดอย่างสมบูรณ์แม้บริเวณลึก' }
+        { label: 'บ้วนยาชา', text: 'บ้วนน้ำยาชาทั่วปากเพื่อลดความรู้สึกขั้นแรก' },
+        { label: 'ทายาชา', text: 'ทาครีมยาชาที่จุดฉีดเพื่อตัดความเจ็บขั้นที่สอง' },
+        { label: 'เครื่องฉีดยาชาไฟฟ้า', text: 'คอมพิวเตอร์ควบคุมความเร็วสม่ำเสมอ' },
+        { label: 'เครื่องชาเส้นประสาท', text: 'ตัดความเจ็บปวดสมบูรณ์แม้จุดลึก' }
       ]
     }
   ];
@@ -46,7 +46,7 @@ export default function TreatmentSystemSection() {
         <div className="flex flex-col gap-3 items-center justify-center w-full">
           <div className="font-['Pretendard_JP'] font-bold leading-[1.35] text-[32px] text-black text-center tracking-[-0.64px] w-full">
             <p className="mb-0">ระบบรักษาเหงือก</p>
-            <p>เฉพาะของคยองซอง เมดิส</p>
+            <p>ของ Godeok First Dental</p>
           </div>
         </div>
 
@@ -65,7 +65,7 @@ export default function TreatmentSystemSection() {
               </div>
 
               {/* Content */}
-              <div className="bg-[#0b1727] box-border flex flex-col gap-6 items-start p-6 w-full">
+              <div className="bg-[#21314E] box-border flex flex-col gap-6 items-start p-6 w-full">
                 <p className="font-['Pretendard_JP'] font-bold leading-[1.35] text-2xl text-center text-white tracking-[-0.48px] w-full">
                   {system.title}
                 </p>

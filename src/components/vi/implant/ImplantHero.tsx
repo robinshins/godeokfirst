@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import FadeInSection from '@/components/common/FadeInSection';
 
 export default function ImplantHero() {
   const scrollToDoctor = () => {
@@ -12,70 +13,65 @@ export default function ImplantHero() {
   };
 
   return (
-    <div className="bg-[#0b1727] w-full relative overflow-hidden">
-      {/* Background gradient effect - full width */}
-      <div className="absolute h-[610px] left-1/2 top-[calc(50%-53.5px)] -translate-x-1/2 -translate-y-1/2 w-[343px] pointer-events-none">
-        <div className="absolute inset-[-31.15%_-55.39%]">
-          <Image
-            src="/images/hero-gradient.svg"
-            alt=""
-            fill
-            className="block max-w-none object-contain"
-          />
-        </div>
-      </div>
-
+    <div className="bg-gradient-to-b from-[#d2e9f3]/30 to-white w-full relative overflow-hidden">
       {/* Content container with max-width */}
       <div className="w-full flex justify-center">
         <div className="box-border flex flex-col gap-[50px] items-start px-4 py-[60px] relative w-full max-w-[430px] z-10">
         {/* Logo and Text Content */}
-        <div className="flex flex-col gap-8 items-center justify-center relative shrink-0 w-full">
+        <FadeInSection className="flex flex-col gap-3 items-center justify-center relative shrink-0 w-full">
           {/* Logo */}
-          <div className="h-6 overflow-clip relative shrink-0 w-[168px]">
+          <div className="h-11 overflow-hidden relative shrink-0">
             <Image
-              src="/icons/Logo.svg"
-              alt="Nha khoa Medis Kyungsungdae"
-              width={168}
-              height={24}
-              className="w-full h-full"
+              src="/고덕퍼스트치과-로고-(블랙).png"
+              alt="Godeok First Dental"
+              width={200}
+              height={40}
+              className="h-20 w-auto object-contain -mt-[18px]"
             />
           </div>
 
           {/* Main Text */}
-          <div className="flex flex-col gap-4 items-start leading-[0] not-italic relative shrink-0 text-center text-white w-full">
-            <h1 className="font-extrabold leading-[1.35] relative shrink-0 text-4xl tracking-[-2.16px] w-full" style={{ fontFamily: 'Nanum Myeongjo, serif' }}>
-              Vượt qua Busan,<br />
-              Cấy ghép Implant đẳng cấp<br />
-              hàng đầu Hàn Quốc
+          <div className="flex flex-col gap-4 items-start leading-[0] not-italic relative shrink-0 text-center w-full">
+            <h1 className="font-extrabold leading-[1.35] relative shrink-0 text-4xl tracking-[-2.16px] w-full text-[#008095]" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+              Chất lượng phẫu thuật cấp bệnh viện đại học<br />
+              như bệnh viện đại học.
             </h1>
-            <p className="font-semibold leading-[1.5] relative shrink-0 text-[18px] tracking-[-0.36px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-              0 ca phẫu thuật lại trong 10 năm, khớp cắn chính xác với quy trình răng tạm 3 giai đoạn. Bác sĩ trưởng với bí quyết cấy ghép implant hàng đầu trực tiếp điều trị.
+            <p className="font-semibold leading-[1.5] relative shrink-0 text-[18px] tracking-[-0.36px] w-full text-[#3e3a3a]">
+              Hoàn thành xuất sắc khóa Implant, Sau đại học Nha khoa ĐH Seoul,<br />Giáo sư thỉnh giảng BV Nha khoa ĐH Chosun<br />Bác sĩ Lee Dong-hyun trực tiếp phẫu thuật.
             </p>
           </div>
-        </div>
+        </FadeInSection>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col gap-4 items-start justify-center relative shrink-0 w-full">
-          <Link href="/vi/consultation" className="w-full">
-            <button className="bg-[#006aff] box-border flex h-16 items-center justify-center px-6 py-4 relative rounded-[18px] shrink-0 w-full">
-              <span className="font-bold leading-[1.5] not-italic relative shrink-0 text-white text-xl text-nowrap tracking-[-0.4px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-                Đặt lịch tư vấn AI
-              </span>
-            </button>
-          </Link>
+        <FadeInSection delay={200} className="flex flex-col gap-4 items-start justify-center relative shrink-0 w-full">
+          <div className="flex gap-3 w-full">
+            <Link href="/vi/consultation" className="flex-1">
+              <button className="bg-[#008095] flex h-14 items-center justify-center px-4 py-3 rounded-[14px] w-full hover:bg-[#006B7A] transition-colors border-none outline-none">
+                <span className="font-bold leading-[1.5] not-italic relative shrink-0 text-white text-base text-nowrap tracking-[-0.4px]" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+                  Đặt lịch nhanh
+                </span>
+              </button>
+            </Link>
+            <a href="https://naver.me/GSD1OqoS" target="_blank" rel="noopener noreferrer" className="flex-1">
+              <button className="bg-[#03C75A] flex h-14 items-center justify-center px-4 py-3 rounded-[14px] w-full hover:bg-[#02b351] transition-colors border-none outline-none">
+                <span className="font-bold leading-[1.5] not-italic relative shrink-0 text-white text-base text-nowrap tracking-[-0.4px]" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+                  Đặt lịch Naver
+                </span>
+              </button>
+            </a>
+          </div>
 
           <button
             onClick={scrollToDoctor}
-            className="bg-white border border-[#e9ebf1] border-solid box-border flex h-16 items-center justify-center px-6 py-4 relative rounded-[18px] shrink-0 w-full"
+            className="bg-transparent border-2 border-[#008095] box-border flex h-16 items-center justify-center px-6 py-4 relative rounded-[18px] shrink-0 w-full hover:bg-[#008095]/10 transition-colors"
           >
-            <span className="font-bold leading-[1.5] not-italic relative shrink-0 text-[#006aff] text-xl text-nowrap tracking-[-0.4px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+            <span className="font-bold leading-[1.5] not-italic relative shrink-0 text-[#008095] text-xl text-nowrap tracking-[-0.4px]" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
               Xem đội ngũ bác sĩ
             </span>
           </button>
-        </div>
+        </FadeInSection>
       </div>
       </div>
     </div>
   );
 }
-

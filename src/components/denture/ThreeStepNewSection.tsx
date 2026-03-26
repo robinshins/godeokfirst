@@ -50,10 +50,10 @@ export default function ThreeStepNewSection() {
         {/* Logo */}
         <div className="h-6 overflow-clip relative shrink-0 w-[168px]">
           <Image
-            src="/images/goduk_images/고덕퍼스트치과로고 1.svg"
+            src="/고덕퍼스트치과-로고-(블랙).png"
             alt="고덕퍼스트치과"
-            width={160}
-            height={32}
+            width={375}
+            height={84}
             className="w-full h-full"
           />
         </div>

@@ -15,8 +15,8 @@ export default function GNB() {
   const pathname = usePathname();
 
   useEffect(() => {
-    // onAuthStateChange만 사용 (getUser 호출 제거로 egress 절약)
-    // INITIAL_SESSION 이벤트가 현재 세션 상태를 제공
+ // onAuthStateChange (getUser арилгах egress)
+ // INITIAL_SESSION дахин нас 
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
       setUser(session?.user ?? null);
     });
@@ -37,7 +37,7 @@ export default function GNB() {
   };
 
   const languages = [
-    { code: 'kr', name: 'Korean', flag: '/icons/flags-kr.svg', href: getCurrentPage() === '/' ? '/' : getCurrentPage() },
+ { code:'kr', name:'', flag:'/icons/flags-kr.svg', href: getCurrentPage() ==='/'?'/': getCurrentPage() },
     { code: 'us', name: 'English', flag: '/icons/flags-us.svg', href: `/en${getCurrentPage()}` },
     { code: 'jp', name: 'Japanese', flag: '/icons/flags-jp.svg', href: `/jp${getCurrentPage()}` },
     { code: 'cn', name: 'Chinese', flag: '/icons/flags-cn.svg', href: `/cn${getCurrentPage()}` },
@@ -49,12 +49,14 @@ export default function GNB() {
   ];
 
   const menuItems = [
-    { name: 'Нүүр', href: '/mn' },
-    { name: 'Имплант', href: '/mn/implant' },
-    { name: 'Шүд цайруулах · Ламинат', href: '/mn/whitening' },
-    { name: 'Шүд авалт', href: '/mn/wisdom-tooth' },
-    { name: 'Цоорол · Сувгийн эмчилгээ', href: '/mn/cavity-treatment' },
-    { name: 'Буйлны эмчилгээ · Чулуу цэвэрлэгээ', href: '/mn/gum-care' }
+    { name: 'Нүүр', href: '/' },
+    { name: 'Имплант', href: '/implant' },
+    { name: 'Хиймэл шүд · Бүрэн имплант', href: '/denture' },
+    { name: 'Цооронхой · Мэдрэлийн эмчилгээ', href: '/cavity-treatment' },
+    { name: 'Ахам шүд авах', href: '/wisdom-tooth' },
+    { name: 'Буйлны эмчилгээ · Цэвэрлэгээ', href: '/gum-care' },
+    { name: 'Эрүүний үений эмчилгээ', href: '/tmj' },
+    { name: 'Шүд цайруулах', href: '/whitening' },
   ];
 
   // Detect current language from pathname
@@ -88,15 +90,14 @@ export default function GNB() {
         style={{ height: '52px' }}
       >
         {/* Logo */}
-        <Link href="/mn" className="flex items-center" style={{ height: '32px' }}>
-          <svg width="168" height="32" viewBox="0 0 168 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clipPath="url(#clip0_1_4305)">
-              <path d="M24 16C24 9.37234 18.6271 4 12 4C7.5641 4 3.69091 6.40734 1.61377 9.98645L5.2815 13.0158C5.67266 13.407 6.30709 13.407 6.69881 13.0158L13.445 7.44365C14.3921 6.49652 16.0109 7.16764 16.0109 8.50649V27.3125C20.6659 25.6621 24 21.2211 24 16.0006V16Z" fill="#398BFF"/>
-              <path d="M7.40715 18.3193C6.62427 19.1021 5.35541 19.1021 4.57253 18.3193L0.0462841 14.9496C0.0163688 15.2956 0 15.6461 0 16C0 22.6271 5.37234 28 12 28C12.0011 28 12.0017 28 12.0028 28V14.8982L7.40715 18.3198V18.3193Z" fill="#398BFF"/>
-              <path d="M13.4451 7.44319L6.69888 13.0153C6.30772 13.4065 5.67329 13.4065 5.28157 13.0153L1.61384 9.98655C0.75363 11.4688 0.202172 13.1525 0.0463867 14.9497L4.5732 18.3199C5.35608 19.1028 6.62494 19.1028 7.40782 18.3199L12.0035 14.8983V28.0001C13.4095 28.0001 14.7585 27.7568 16.0121 27.3126V8.50603C16.0121 7.16661 14.3933 6.49605 13.4462 7.44319H13.4451Z" fill="white"/>
-              {/* Other logo paths... */}
-            </g>
-          </svg>
+        <Link href="/mn" className="flex items-center" style={{ height: '60px' }}>
+          <Image
+            src="/고덕퍼스트치과-로고-(블랙).png"
+            alt="Godeok First Dental"
+            width={375}
+            height={84}
+            className="h-14 w-auto object-contain"
+          />
         </Link>
 
         {/* Right Side Controls */}
@@ -151,7 +152,7 @@ export default function GNB() {
                           className="object-contain"
                         />
                       </div>
-                      <p className="font-medium text-[#292a2f] text-[20px]">
+                      <p className="font-['Pretendard_JP'] font-medium leading-[1.5] text-[#292a2f] text-[20px] tracking-[-0.4px] whitespace-nowrap">
                         {lang.name}
                       </p>
                     </div>
@@ -201,7 +202,8 @@ export default function GNB() {
               zIndex: 9998,
               top: '52px',
               borderBottomLeftRadius: '20px',
-              borderBottomRightRadius: '20px'
+              borderBottomRightRadius: '20px',
+              boxShadow: '0px 24px 50px -12px rgba(45, 54, 67, 0.12)'
             }}
           >
             <div className="max-w-[430px] mx-auto">
@@ -221,7 +223,7 @@ export default function GNB() {
                     key={index}
                     href={item.href}
                     onClick={() => setIsMenuOpen(false)}
-                    className="font-medium text-[20px] text-black"
+                    className="font-['Pretendard_JP'] font-medium leading-[1.5] text-[20px] text-black tracking-[-0.4px]"
                   >
                     {item.name}
                   </Link>
@@ -233,13 +235,13 @@ export default function GNB() {
                 {user ? (
                   <button
                     onClick={handleLogout}
-                    className="text-left font-medium text-[14px] text-[#727582]"
+                    className="text-left font-['Pretendard_JP'] font-medium text-[14px] leading-[1.5] tracking-[-0.28px] text-[#727582]"
                   >
                     Гарах
                   </button>
                 ) : (
-                  <Link href="/login" onClick={() => setIsMenuOpen(false)}>
-                    <span className="font-medium text-[14px] text-[#727582]">
+                  <Link href="/mn/login" onClick={() => setIsMenuOpen(false)}>
+                    <span className="font-['Pretendard_JP'] font-medium text-[14px] leading-[1.5] tracking-[-0.28px] text-[#727582]">
                       Нэвтрэх
                     </span>
                   </Link>
@@ -249,12 +251,12 @@ export default function GNB() {
               {/* Action Buttons */}
               <div className="flex flex-col gap-4 px-5 pb-[30px] pt-4">
                 <Link href="/mn/consultation" className="w-full">
-                  <button className="w-full bg-[#006aff] text-white font-bold text-[20px] rounded-[18px] h-16 flex items-center justify-center">
-                    AI Зөвлөгөө эхлүүлэх
+                  <button className="w-full bg-[#008095] text-white font-['Pretendard_JP'] font-bold text-[20px] leading-[1.5] tracking-[-0.4px] rounded-[18px] h-16 flex items-center justify-center">
+                    AI Зөвлөгөө
                   </button>
                 </Link>
-                <a href="tel:051-627-7475" className="w-full">
-                  <button className="w-full bg-white border border-[#e9ebf1] text-[#006aff] font-bold text-[20px] rounded-[18px] h-16 flex items-center justify-center">
+                <a href="tel:031-611-3222" className="w-full">
+                  <button className="w-full bg-white border border-[#e9ebf1] text-[#008095] font-['Pretendard_JP'] font-bold text-[20px] leading-[1.5] tracking-[-0.4px] rounded-[18px] h-16 flex items-center justify-center">
                     Утсаар холбогдох
                   </button>
                 </a>
@@ -266,4 +268,3 @@ export default function GNB() {
     </header>
   );
 }
-

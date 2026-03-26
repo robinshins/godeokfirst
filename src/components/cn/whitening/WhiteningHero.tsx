@@ -2,118 +2,116 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
 
 export default function WhiteningHero() {
-  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
-
-  const videos = [
-    '/videos/laminate-smile2.mp4',
-    '/videos/laminate-smile.mp4'
-  ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentVideoIndex((prev) => (prev + 1) % videos.length);
-    }, 5000); // 5秒切换
-
-    return () => clearInterval(interval);
-  }, [videos.length]);
-
   const scrollToDoctor = () => {
-    const doctorSection = document.getElementById('doctor');
-    if (doctorSection) {
-      doctorSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+    const el = document.getElementById('doctor');
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   return (
-    <div className="bg-[#0b1727] w-full relative overflow-hidden">
-      {/* Background gradient effect - full width */}
-      <div className="absolute h-[610px] left-1/2 top-[calc(50%-53.5px)] -translate-x-1/2 -translate-y-1/2 w-[343px] pointer-events-none">
-        <div className="absolute inset-[-31.15%_-55.39%]">
-          <Image
-            src="/images/hero-gradient.svg"
-            alt=""
-            fill
-            className="block max-w-none object-contain"
-          />
-        </div>
-      </div>
-
-      {/* Content container with max-width */}
+    <div className="bg-gradient-to-b from-[#d2e9f3]/30 to-white w-full relative overflow-hidden">
       <div className="w-full flex justify-center">
-        <div className="box-border flex flex-col gap-[50px] items-start px-4 py-[60px] relative w-full max-w-[375px] z-10">
-        {/* Logo and Title */}
-        <div className="flex flex-col gap-8 items-center justify-center w-full">
-          {/* Logo */}
-          <div className="h-6 overflow-clip relative shrink-0 w-[168px]">
-            <Image
-              src="/icons/Logo.svg"
-              alt="庆星美迪斯牙科"
-              width={168}
-              height={24}
-              className="w-full h-full"
-            />
-          </div>
+        <div className="box-border flex flex-col gap-[50px] items-start px-4 py-[60px] relative w-full max-w-[430px] z-10">
 
-          {/* Title */}
-          <h1 className="font-['Pretendard,_sans-serif'] font-bold leading-[1.35] text-[36px] text-center text-white tracking-[-2.16px]">
-            一个微笑<br />
-            改变形象<br />
-            从美白开始
-          </h1>
-        </div>
+          {/* Logo + Main Text */}
+          <div className="flex flex-col gap-3 items-center justify-center w-full">
+            <div className="h-11 overflow-hidden relative shrink-0">
+              <Image
+                src="/고덕퍼스트牙科-로고-(블랙).png"
+                alt="高德First牙科"
+                width={200}
+                height={40}
+                className="h-20 w-auto object-contain -mt-[18px]"
+              />
+            </div>
 
-        {/* Hero Video - 自动切换 */}
-        <div className="w-full relative">
-          <div className="bg-[#f3f6fb] rounded-[20px] overflow-hidden relative w-full h-[240px]">
-            <video
-              key={currentVideoIndex}
-              className="w-full h-full object-cover"
-              autoPlay
-              loop
-              muted
-              playsInline
-            >
-              <source src={videos[currentVideoIndex]} type="video/mp4" />
-            </video>
-
-            {/* 指示器 */}
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
-              {videos.map((_, index) => (
-                <div
-                  key={index}
-                  className={`h-1.5 rounded-full transition-all duration-300 ${
-                    index === currentVideoIndex
-                      ? 'w-8 bg-white'
-                      : 'w-1.5 bg-white/50'
-                  }`}
-                />
-              ))}
+            <div className="flex flex-col gap-4 text-center w-full">
+              <h1
+                className="font-extrabold leading-[1.35] text-4xl tracking-[-2.16px] w-full text-[#008095]"
+                style={{ fontFamily: '"NanumSquare", sans-serif' }}
+              >
+                仅凭一个微笑<br />
+                改变的印象
+              </h1>
+              <p
+                className="font-semibold leading-[1.5] text-[18px] tracking-[-0.36px] w-full text-[#3e3a3a]"
+                style={{ fontFamily: 'Pretendard, sans-serif' }}
+              >
+                奥齿泰 Beautis 时统地<br />
+                不敏感、安全，当天完成
+              </p>
             </div>
           </div>
-        </div>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col gap-4 w-full">
-          <Link href="/cn/consultation" className="w-full">
-            <button className="bg-[#006aff] h-16 w-full rounded-[18px] px-6 py-4 hover:bg-[#0052cc] transition-colors">
-              <p className="font-['Pretendard,_sans-serif'] font-bold leading-[1.5] text-[20px] text-white tracking-[-0.4px]">
-                快速咨询预约
-              </p>
+          {/* Before / After 미리보기 */}
+          <div className="w-full flex flex-col gap-3">
+            <div className="relative w-full rounded-[20px] overflow-hidden">
+              <div className="bg-[#f3f6fb] h-[200px] relative w-full">
+                <Image
+                  src="/cases/美白/牙齿美白前.jpg"
+                  alt="美白 前"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="absolute left-3 top-3 bg-[#292a2f] px-2.5 py-[5px] rounded-[10px] z-10">
+                <p className="font-semibold text-[13px] text-white tracking-[-0.26px]">Before</p>
+              </div>
+            </div>
+            <div className="relative w-full rounded-[20px] overflow-hidden">
+              <div className="bg-[#f3f6fb] h-[200px] relative w-full">
+                <Image
+                  src="/cases/美白/牙齿美白后.jpg"
+                  alt="美白 后"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="absolute left-3 top-3 bg-[#008095] px-2.5 py-[5px] rounded-[10px] z-10">
+                <p className="font-semibold text-[13px] text-white tracking-[-0.26px]">After</p>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col gap-4 w-full">
+            <div className="flex gap-3 w-full">
+              <Link href="/cn/consultation" className="flex-1">
+                <button className="bg-[#008095] flex h-14 items-center justify-center px-4 py-3 rounded-[14px] w-full hover:bg-[#006d80] transition-colors border-none outline-none">
+                  <span
+                    className="font-bold text-white text-base text-nowrap tracking-[-0.4px]"
+                    style={{ fontFamily: '"NanumSquare", sans-serif' }}
+                  >
+                    快速咨询预约
+                  </span>
+                </button>
+              </Link>
+              <a href="https://naver.me/GSD1OqoS" target="_blank" rel="noopener noreferrer" className="flex-1">
+                <button className="bg-[#03C75A] flex h-14 items-center justify-center px-4 py-3 rounded-[14px] w-full hover:bg-[#02b351] transition-colors border-none outline-none">
+                  <span
+                    className="font-bold text-white text-base text-nowrap tracking-[-0.4px]"
+                    style={{ fontFamily: '"NanumSquare", sans-serif' }}
+                  >
+                    Naver预约
+                  </span>
+                </button>
+              </a>
+            </div>
+            <button
+              onClick={scrollToDoctor}
+              className="bg-transparent border-2 border-[#008095] flex h-16 items-center justify-center px-6 py-4 rounded-[18px] w-full hover:bg-[#008095]/10 transition-colors"
+            >
+              <span
+                className="font-bold text-[#008095] text-xl text-nowrap tracking-[-0.4px]"
+                style={{ fontFamily: '"NanumSquare", sans-serif' }}
+              >
+                查看医疗团队
+              </span>
             </button>
-          </Link>
-          <button
-            onClick={scrollToDoctor}
-            className="bg-white border border-[#e9ebf1] h-16 w-full rounded-[18px] px-6 py-4 hover:bg-gray-50 transition-colors"
-          >
-            <p className="font-['Pretendard,_sans-serif'] font-bold leading-[1.5] text-[20px] text-[#006aff] tracking-[-0.4px]">
-              查看医疗团队
-            </p>
-          </button>
+          </div>
+
         </div>
-      </div>
       </div>
     </div>
   );

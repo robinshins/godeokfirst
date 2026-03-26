@@ -25,44 +25,44 @@ export default function WhiteningPeroxideSection() {
           {/* Title */}
           <div className="flex flex-col gap-3 items-center justify-center w-full">
             <h2 className="font-bold text-[32px] leading-[1.35] tracking-[-0.64px] text-black text-center w-full">
-              Профессиональное<br />
-              перекисное отбеливание
+              стоматология и специалист отбеливание<br />
+              перекись водорода отбеливание
             </h2>
             <p className="font-semibold text-base leading-[1.4] tracking-[-0.32px] text-[#727582] text-center w-full">
-              Безопасное и эффективное отбеливание<br />
-              с медицинским высококонцентрированным гелем
+ высококонцентрированный тоже отбеливание<br />
+ безопасность и эффект отбеливание опытлет 
             </p>
           </div>
 
           {/* Main Card */}
           <div className="bg-white rounded-[24px] shadow-[0px_24px_50px_-12px_rgba(45,54,67,0.12)] p-6 flex flex-col gap-5 w-full">
-            {/* Ostem Beautis System */}
-            <div className="bg-gradient-to-br from-[#006aff] to-[#0052cc] rounded-[16px] p-5 flex flex-col gap-4 w-full">
+            {/* Отбеливающий гель Osstem Beautis */}
+            <div className="bg-gradient-to-br from-[#008095] to-[#006d80] rounded-[16px] p-5 flex flex-col gap-4 w-full">
               <div className="flex items-center gap-2">
-                <div className="text-2xl">✨</div>
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" className="shrink-0"><circle cx="11" cy="11" r="10" stroke="white" strokeWidth="1.5"/><path d="M11 6v5l3 3" stroke="white" strokeWidth="1.5" strokeLinecap="round"/></svg>
                 <p className="font-bold text-[18px] leading-[1.5] tracking-[-0.36px] text-white">
-                  Система отбеливания Ostem Beautis
+                  Osstem Beautis(Beautis) отбеливание система
                 </p>
               </div>
               <p className="font-semibold text-[14px] leading-[1.4] tracking-[-0.28px] text-white opacity-90">
-                Премиум система профессионального отбеливания от ведущего производителя имплантатов №1 в Корее
+ внутри 1 Имплант Osstem специалист отбеливание система
               </p>
 
-              {/* Beautis Gel Image */}
+              {/* Beautis отбеливание уже */}
               <div className="bg-white/10 rounded-[16px] overflow-hidden relative w-full aspect-[4/3]">
                 <Image
                   src="/images/beautis-whitening-agent.png"
-                  alt="Ostem Beautis гель для отбеливания"
+                  alt="Отбеливающий гель Osstem Beautis"
                   fill
                   className="object-contain"
                 />
               </div>
 
-              {/* Beautis Light Device Image */}
+ {/* Beautis уже */}
               <div className="bg-white/10 rounded-[16px] overflow-hidden relative w-full aspect-[4/3]">
                 <Image
                   src="/images/beautis-light-device.jpg"
-                  alt="Ostem Beautis LED устройство"
+ alt="Osstem Beautis"
                   fill
                   className="object-cover"
                 />
@@ -72,39 +72,39 @@ export default function WhiteningPeroxideSection() {
                 <div className="flex items-start gap-2">
                   <span className="text-white text-sm shrink-0">•</span>
                   <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-white">
-                    <span className="font-bold">Beautis 15 гель:</span> 15% перекись водорода + специальные активаторы для быстрого эффекта
+ <span className="font-bold">Beautis 15 отбеливание:</span> 15% перекись водорода + быстрый отбеливание эффект
                   </p>
                 </div>
                 <div className="flex items-start gap-2">
                   <span className="text-white text-sm shrink-0">•</span>
                   <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-white">
-                    <span className="font-bold">Beautis Light:</span> Высокоинтенсивный LED (150-220mW/cm2) для максимального эффекта
+ <span className="font-bold">Beautis:</span> тоже LED линия(150-220mW/㎠) отбеливание эффект и 
                   </p>
                 </div>
                 <div className="flex items-start gap-2">
                   <span className="text-white text-sm shrink-0">•</span>
                   <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-white">
-                    <span className="font-bold">Защита от чувствительности:</span> Безопасная формула, минимизирующая дискомфорт
+ <span className="font-bold">гиперчувствительность предотвращение:</span> чувствительность симптом минимальный безопасностьодин назначение
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Procedure Principle */}
+            {/* Принцип процедуры */}
             <div className="bg-[#f3f6fb] rounded-[16px] p-5 flex flex-col gap-[14px] w-full">
               <div className="flex flex-col gap-3 w-full">
                 <p className="font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black w-full">
-                  Принцип действия
+                  Принцип процедуры
                 </p>
                 <p className="font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582] w-full">
-                  Медицинская высококонцентрированная перекись водорода (15%) проникает через эмаль и окисляет пигментные молекулы в дентине.<br />
-                  В этом процессе пигменты превращаются в бесцветные молекулы, делая зубы естественно белыми.
+ высококонцентрированный тоже перекись водорода(15%) зуб качество качество внутри окрашивание минут ·минут <br />
+ процесс окрашивание материалкачество бесплатный минут натуральный зуб 
                 </p>
-                {/* H2O2 Reaction Image */}
+ {/* H2O2 уже */}
                 <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden bg-white">
                   <Image
                     src="/images/h2o2.png"
-                    alt="Принцип перекисного отбеливания"
+                    alt="перекись водорода отбеливание вон"
                     fill
                     className="object-contain"
                   />
@@ -112,22 +112,22 @@ export default function WhiteningPeroxideSection() {
               </div>
             </div>
 
-            {/* Procedure Steps */}
+            {/* процедура процесс */}
             <div className="bg-[#f3f6fb] rounded-[16px] p-5 flex flex-col gap-[14px] w-full">
               <div className="flex flex-col gap-1.5 w-full">
                 <p className="font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black w-full">
-                  Этапы процедуры
+                  процедура процесс
                 </p>
                 <div className="flex flex-col gap-[5px]">
                   {[
-                    'Защита десен (предотвращение повреждений)',
-                    'Нанесение отбеливающего геля',
-                    'LED облучение (15-20 минут)',
-                    'Повтор 2-3 раза (за один визит)',
-                    'Финальная фторизация'
+                    'десна защита нанесение (десна повреждение предотвращение)',
+                    'высококонцентрированный тоже отбеливание нанесение',
+'LED линия (15-20минут)',
+'2-3раз (Завершение в тот же день)',
+                    'фтор нанесение завершение'
                   ].map((step, index) => (
                     <div key={index} className="flex gap-2 items-start font-semibold text-[15px] leading-[1.4] tracking-[-0.3px]">
-                      <p className="text-[#006aff] w-3 shrink-0">{index + 1}</p>
+                      <p className="text-[#008095] w-3 shrink-0">{index + 1}</p>
                       <p className="text-[#727582] whitespace-pre">{step}</p>
                     </div>
                   ))}
@@ -136,11 +136,11 @@ export default function WhiteningPeroxideSection() {
             </div>
 
             {/* Benefits */}
-            <div className="bg-[#006aff] rounded-[16px] p-5 flex flex-col gap-[14px] w-full">
+            <div className="bg-[#008095] rounded-[16px] p-5 flex flex-col gap-[14px] w-full">
               {[
-                { title: 'Без обточки зубов', desc: 'Без повреждения эмали' },
-                { title: 'Мгновенный эффект', desc: 'Осветление на 2-8 тонов сразу' },
-                { title: 'Естественный цвет', desc: 'Натуральное улучшение оттенка' }
+ { title:'зуб удаление ZERO', desc:'качество повреждение нет'},
+ { title:'Мгновенный эффект', desc:'процедура сразу после 2-8этап'},
+ { title:'натуральный цвет', desc:'зуб'}
               ].map((benefit, index) => (
                 <div key={index} className="flex items-start gap-0 w-full">
                   <div className="w-6 h-6 shrink-0">
@@ -165,115 +165,115 @@ export default function WhiteningPeroxideSection() {
 
           </div>
 
-          {/* Professional vs Self Whitening */}
-          <div className="bg-white rounded-[24px] border-2 border-[#006aff] p-6 flex flex-col gap-5 w-full">
-            <h3 className="font-bold text-[20px] leading-[1.4] tracking-[-0.4px] text-[#006aff] text-center">
-              Почему профессиональное отбеливание?
+          {/* специалист отбеливание vs домашний отбеливание */}
+          <div className="bg-white rounded-[24px] border-2 border-[#008095] p-6 flex flex-col gap-5 w-full">
+            <h3 className="font-bold text-[20px] leading-[1.4] tracking-[-0.4px] text-[#008095] text-center">
+ почему специалист отбеливание?
             </h3>
 
-            {/* Safety Verification */}
+ {/* безопасность */}
             <div className="bg-[#f3f6fb] rounded-[16px] p-5 flex flex-col gap-3">
               <div className="flex items-center gap-2">
-                <div className="text-xl">🛡️</div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="shrink-0"><path d="M10 2L3 5v5c0 4.1 3.1 7.9 7 9 3.9-1.1 7-4.9 7-9V5L10 2Z" stroke="#008095" strokeWidth="1.5" strokeLinejoin="round"/><path d="M7 10l2 2 4-4" stroke="#008095" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 <p className="font-bold text-[16px] leading-[1.5] tracking-[-0.32px] text-black">
-                  Безопасность, признанная стоматологами всего мира
+                  до лет стоматологияврач примерноодин безопасность
                 </p>
               </div>
               <p className="font-semibold text-[14px] leading-[1.4] tracking-[-0.28px] text-[#727582]">
-                Отбеливание зубов признано стоматологами всего мира как один из самых безопасных методов лечения зубов. Многочисленные исследования подтвердили его безопасность, а профессиональное отбеливание под наблюдением врача практически не имеет побочных эффектов.
+ отбеливаниеДо лечения лет стоматологи примерноодин самый безопасностьодин зублечение метод. много исследование и клинический безопасность, стоматологияврач мониторинг проведение специалист отбеливание повторный до зуб стоматология побочные эффекты сообщается.
               </p>
             </div>
 
-            {/* Comparison Table */}
+            {/* эффект и разница */}
             <div className="bg-white rounded-[12px] border border-[#e9ebf1] overflow-hidden">
               <div className="grid grid-cols-2 gap-px bg-[#e9ebf1]">
                 {/* Header */}
-                <div className="bg-[#006aff] p-3 flex items-center justify-center">
-                  <p className="font-bold text-[14px] leading-[1.4] tracking-[-0.28px] text-white">Профессиональное</p>
+                <div className="bg-[#008095] p-3 flex items-center justify-center">
+                  <p className="font-bold text-[14px] leading-[1.4] tracking-[-0.28px] text-white">специалист отбеливание</p>
                 </div>
                 <div className="bg-[#f3f6fb] p-3 flex items-center justify-center">
-                  <p className="font-bold text-[14px] leading-[1.4] tracking-[-0.28px] text-[#727582]">Домашнее</p>
+                  <p className="font-bold text-[14px] leading-[1.4] tracking-[-0.28px] text-[#727582]">домашний отбеливание</p>
                 </div>
 
-                {/* Concentration */}
+ {/* тоже */}
                 <div className="bg-white p-3 flex flex-col gap-1">
-                  <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#006aff]">15% концентрация</p>
-                  <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#727582]">Сертифицированное медицинское средство</p>
+                  <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#008095]">15% высококонцентрированный</p>
+ <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#727582]"> </p>
                 </div>
                 <div className="bg-white p-3 flex flex-col gap-1">
-                  <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#727582]">1-4% концентрация</p>
-                  <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#999]">Минимальный эффект</p>
-                </div>
-
-                {/* Effect */}
-                <div className="bg-white p-3 flex flex-col gap-1">
-                  <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#006aff]">За один день</p>
-                  <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#727582]">Осветление на 3-4 тона</p>
-                </div>
-                <div className="bg-white p-3 flex flex-col gap-1">
-                  <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#727582]">4+ недели</p>
-                  <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#999]">Постепенный слабый эффект</p>
+                  <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#727582]">1-4% низкоконцентрированный</p>
+                  <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#999]">эффект и </p>
                 </div>
 
-                {/* Safety */}
+                {/* эффект и */}
                 <div className="bg-white p-3 flex flex-col gap-1">
-                  <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#006aff]">Предварительный осмотр</p>
-                  <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#727582]">+ фторизация</p>
+ <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#008095]">день </p>
+ <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#727582]">3-4этап </p>
                 </div>
                 <div className="bg-white p-3 flex flex-col gap-1">
-                  <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#727582]">Самостоятельно</p>
-                  <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#999]">Риск ожога десен</p>
+                  <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#727582]">4неделя и более</p>
+                  <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#999]"> один эффект</p>
+                </div>
+
+                {/* безопасность */}
+                <div className="bg-white p-3 flex flex-col gap-1">
+ <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#008095]">предварительный полость рта </p>
+                  <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#727582]">+ фторнанесение процедура</p>
+                </div>
+                <div className="bg-white p-3 flex flex-col gap-1">
+                  <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#727582]"> процедура</p>
+ <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#999]">десна риск</p>
                 </div>
               </div>
             </div>
 
-            {/* Side Effect Management */}
+            {/* побочные эффекты минимальный */}
             <div className="bg-[#f3f6fb] rounded-[16px] p-5 flex flex-col gap-3">
               <div className="flex items-center gap-2">
-                <div className="text-xl">⚕️</div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="shrink-0"><rect x="8" y="3" width="4" height="14" rx="2" stroke="#008095" strokeWidth="1.5"/><rect x="3" y="8" width="14" height="4" rx="2" stroke="#008095" strokeWidth="1.5"/></svg>
                 <p className="font-bold text-[16px] leading-[1.5] tracking-[-0.32px] text-black">
-                  Контроль побочных эффектов
+ побочные эффекты уход
                 </p>
               </div>
               <div className="flex flex-col gap-2">
                 <div className="flex items-start gap-2">
-                  <span className="text-[#006aff] text-sm shrink-0">✓</span>
+                  <span className="text-[#008095] text-sm shrink-0">✓</span>
                   <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#727582]">
-                    <span className="font-bold text-[#006aff]">Осмотр перед процедурой:</span> Проверка кариеса и состояния десен
+ <span className="font-bold text-[#008095]">процедура до:</span> кариес, десна заболевание проверка после безопасность проведение
                   </p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <span className="text-[#006aff] text-sm shrink-0">✓</span>
+                  <span className="text-[#008095] text-sm shrink-0">✓</span>
                   <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#727582]">
-                    <span className="font-bold text-[#006aff]">Защита десен:</span> 100% предотвращение ожогов мягких тканей
+ <span className="font-bold text-[#008095]">десна защита:</span> защита год 100% профилактика
                   </p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <span className="text-[#006aff] text-sm shrink-0">✓</span>
+                  <span className="text-[#008095] text-sm shrink-0">✓</span>
                   <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#727582]">
-                    <span className="font-bold text-[#006aff]">Уход после процедуры:</span> Фторизация для минимизации чувствительности
+ <span className="font-bold text-[#008095]">процедура после уход:</span> фторнанесение·повторный процедура чувствительность симптом минимальный
                   </p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <span className="text-[#006aff] text-sm shrink-0">✓</span>
+                  <span className="text-[#008095] text-sm shrink-0">✓</span>
                   <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#727582]">
-                    <span className="font-bold text-[#006aff]">Контроль специалиста:</span> Безопасное отбеливание в реальном времени
+                    <span className="font-bold text-[#008095]">специалист мониторинг:</span> время состояние проверка безопасностьодин отбеливание
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Clinical Experience */}
-            <div className="bg-gradient-to-br from-[#006aff] to-[#0052cc] rounded-[16px] p-5 flex flex-col gap-3">
+            {/* клинический опыт */}
+            <div className="bg-gradient-to-br from-[#008095] to-[#006d80] rounded-[16px] p-5 flex flex-col gap-3">
               <div className="flex items-center gap-2">
-                <div className="text-xl">📊</div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="shrink-0"><rect x="3" y="10" width="3" height="7" rx="1" fill="white" fillOpacity="0.7"/><rect x="8.5" y="6" width="3" height="11" rx="1" fill="white" fillOpacity="0.7"/><rect x="14" y="3" width="3" height="14" rx="1" fill="white"/></svg>
                 <p className="font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-white">
-                  Богатый клинический опыт
+                  богатый клинический опыт
                 </p>
               </div>
               <div className="bg-white/10 rounded-[12px] p-3 flex flex-col gap-2">
                 <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-white">
-                  <span className="font-bold">Более 1,000 процедур отбеливания</span> — у нас есть опыт работы с различными состояниями зубов. Мы разрабатываем индивидуальный план с учетом степени пигментации, чувствительности зубов и имеющихся протезов.
+ <span className="font-bold">1,000случаев и более отбеливание процедура опыт</span> различные зуб состояние о ноу-хау хранение и. окрашивание около, зуб, существующий протезматериал и т.д. один индивидуальнотип отбеливание план.
                 </p>
               </div>
             </div>
@@ -288,28 +288,28 @@ export default function WhiteningPeroxideSection() {
             <div className="flex flex-col gap-3">
               {[
                 {
-                  question: 'Будут ли зубы чувствительными после отбеливания?',
-                  answer: 'Возможна легкая временная чувствительность, но гель Beautis содержит компоненты для ее минимизации. Фторизация после процедуры дополнительно снижает дискомфорт, который обычно проходит за несколько дней. Более 10 лет клинического опыта позволяют нам проводить процедуру максимально безопасно.'
+ question:'После отбеливания зуб?',
+ answer:'временно симптом может, Beautis отбеливание гиперчувствительность предотвращение и чувствительность симптом минимальный. процедура после фторнанесение и повторный процедура через тоже более, большинствоминут внутри. 10лет и более клинический опыт пациент индивидуальный зуб состояние подходящий безопасность проведение.'
                 },
                 {
-                  question: 'Как долго сохраняется эффект?',
-                  answer: 'Эффект профессионального отбеливания обычно держится 1-2 года. Длительность зависит от питания, курения и гигиены полости рта. Частое употребление кофе, вина, карри и курение могут сократить срок. Регулярная чистка и правильный уход помогут сохранить результат дольше.'
+ question:'отбеливание эффект и продолжительно?',
+ answer:'специалист отбеливание эффект и обычный 1-2лет и более продолжительно. индивидуальный, курение или нет, полость рта уход состояние в зависимости от разница и, кофе, вино, карри и т.д. окрашивание еда неделя курение случай эффект и продолжительно период качество может. периодически чистка и правильный чистка зубовкачество отбеливание эффект и более долго поддержание может.'
                 },
                 {
-                  question: 'Можно ли повторить процедуру при повторном потемнении?',
-                  answer: 'Да, повторное отбеливание возможно. Рекомендуется через 6-12 месяцев после первой процедуры. Повторные процедуры занимают меньше времени и стоят дешевле. Регулярные поддерживающие процедуры помогут сохранить белизну зубов.'
+ question:'окрашивание снова повторныйпроцедура возможный?',
+ answer:'Да, повторныйпроцедура возможно. начальный После отбеливания 6месяцев~1лет примерно тоже повторныйпроцедура, начальный процедура более время и количество раз тоже эффект и может. периодически стоматология (touch-up) процедура зуб внутри поддержание и, стоимость тоже начальный процедура.'
                 },
                 {
-                  question: 'Какие ограничения после отбеливания?',
-                  answer: 'В течение 24-48 часов следует избегать красящих продуктов (кофе, вино, карри, кимчи, шоколад) и курения. В этот период поверхность зубов особенно восприимчива к пигментации. Также стоит избегать слишком холодной или горячей пищи. Рекомендуется зубная паста с фтором.'
+ question:'После отбеливания неделяврач?',
+ answer:'После отбеливания 24-48время окрашивание вызывать еда(кофе, вино, карри, кимчи, шоколад и т.д.) и сигарета неделялет. период зуб поверхность летодин окрашивание. также разница еда еда временно чувствительность может вызвать может установка, фтор стоматология.'
                 },
                 {
-                  question: 'Отбеливаются ли протезы (коронки, пломбы)?',
-                  answer: 'Нет, искусственные конструкции не отбеливаются. Перекись водорода разрушает только пигменты естественных зубов. Коронки, пломбы и ламинаты сохраняют свой цвет. После отбеливания может потребоваться замена протезов для соответствия новому оттенку. Консультация перед процедурой поможет разобраться.'
+                  question: 'существующий протезматериал(коронка, композит) тоже отбеливание ?',
+ answer:'Нет, протезматериал отбеливание. перекись водорода отбеливание натуральный зуб окрашивание материалкачество только минут, коронка, композит, виниры и т.д. протезматериал оригинальный цвет поддержание. в зависимости от протезматериал случай, После отбеливания протезматериал и натуральный зуб цвет разница протезматериал должен может. процедура до консультация через точный информирование получить может.'
                 },
                 {
-                  question: 'Можно ли отбеливать во время беременности или кормления?',
-                  answer: 'Отбеливание не рекомендуется беременным и кормящим. Влияние перекиси водорода на плод и грудное молоко недостаточно изучено. Рекомендуем дождаться окончания беременности и кормления.'
+ question:'беременность во время грудное вскармливание во время тоже отбеливание возможный?',
+ answer:'беременность во время грудное вскармливание во время отбеливание процедура. перекись водорода плод грудное молоко стоматология влияние о достаточноодин исследование без, безопасность для беременность и грудное вскармливание конец после процедураполучить.'
                 }
               ].map((faq, index) => (
                 <div
@@ -321,19 +321,19 @@ export default function WhiteningPeroxideSection() {
                     className="w-full p-5 flex items-start justify-between gap-3 text-left hover:bg-[#e9ebf1] transition-colors"
                   >
                     <div className="flex items-start gap-3 flex-1">
-                      <span className="text-[#006aff] font-bold text-[16px] shrink-0">В.</span>
+                      <span className="text-[#008095] font-bold text-[16px] shrink-0">Q.</span>
                       <p className="font-bold text-[15px] leading-[1.5] tracking-[-0.3px] text-black">
                         {faq.question}
                       </p>
                     </div>
-                    <div className={`text-[#006aff] text-xl shrink-0 transition-transform ${openFAQ === index ? 'rotate-180' : ''}`}>
+                    <div className={`text-[#008095] text-xl shrink-0 transition-transform ${openFAQ === index ? 'rotate-180' : ''}`}>
                       ▼
                     </div>
                   </button>
                   {openFAQ === index && (
                     <div className="px-5 pb-5 pt-0">
                       <div className="bg-white rounded-[12px] p-4 flex items-start gap-3">
-                        <span className="text-[#006aff] font-bold text-[16px] shrink-0">О.</span>
+                        <span className="text-[#008095] font-bold text-[16px] shrink-0">A.</span>
                         <p className="font-semibold text-[14px] leading-[1.5] tracking-[-0.28px] text-[#727582]">
                           {faq.answer}
                         </p>

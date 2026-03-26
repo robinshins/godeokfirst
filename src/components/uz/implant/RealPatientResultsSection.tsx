@@ -1,56 +1,99 @@
+'use client';
+
 import Image from 'next/image';
 
 export default function RealPatientResultsSection() {
   const cases = [
     {
-      age: '60 yoshli erkak',
-      title: 'To\'liq implantatsiya',
-      description: 'Tabiiy tishlari deyarli bo\'lmagan bemorga raqamli navigatsiya orqali 12 ta implant o\'rnatilib, bir kunda vaqtinchalik tish berilgan holat.',
-      image: '/images/real-case-01.jpg'
+      name: 'Ji●●',
+      description: 'orqa tishlar Implant (rentgen)',
+      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_before.jpg',
+      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_after.jpg',
     },
     {
-      age: '50 yoshli ayol',
-      title: 'Jag\' tishlari implantatsiyasi',
-      description: 'Uzoq vaqt tishsiz yurish natijasida jag\' suyagi kamaygan bemorga suyak o\'stirish operatsiyasi bilan implant muvaffaqiyatli o\'rnatilgan holat.',
-      image: '/images/real-case-02.jpg'
-    }
+      name: 'Ji●●',
+      description: 'Orqa tishlar implant (haqiqiy surat)',
+      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_before.jpg',
+      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_after.jpg',
+    },
+    {
+      name: 'I●●',
+      description: 'Implant (haqiqiy surat)',
+      beforeImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_before.jpg',
+      afterImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_after.jpg',
+    },
   ];
 
   return (
-    <div className="bg-white w-full">
-      <div className="max-w-[430px] mx-auto px-4 py-16">
-        <div className="flex flex-col gap-10">
-          <div className="flex flex-col gap-3">
-            <h2 className="text-[28px] font-bold text-[#111827] leading-[1.3]">Real davolash hikoyalari</h2>
-            <p className="text-[#6b7280]">Bemurlarimizning mamnuniyatli natijalari</p>
+    <div className="bg-[#0b1727] w-full flex justify-center">
+      <div className="box-border flex flex-col gap-[60px] items-center px-4 py-[60px] relative w-full max-w-[430px]">
+        {/* Header */}
+        <div className="flex flex-col gap-4 items-center justify-center relative shrink-0 w-full">
+          <div className="flex flex-col gap-3 items-center justify-center leading-[0] not-italic relative shrink-0 text-center w-full">
+            <h2 className="font-bold leading-[1.35] text-[32px] text-white tracking-[-0.64px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+              Implant Oldin va keyin
+            </h2>
           </div>
+        </div>
 
-          <div className="flex flex-col gap-8">
-            {cases.map((item, index) => (
-              <div key={index} className="bg-[#f8f9fa] rounded-[32px] overflow-hidden flex flex-col">
-                <div className="relative w-full aspect-[4/3]">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-8 flex flex-col gap-4">
-                  <div className="flex flex-col gap-1">
-                    <span className="text-[#006aff] font-bold text-sm">{item.age}</span>
-                    <h3 className="text-2xl font-bold text-[#374151]">{item.title}</h3>
+        {/* Cases */}
+        <div className="flex flex-col gap-6 items-start relative shrink-0 w-full">
+          {cases.map((caseItem, index) => (
+            <div key={index} className="bg-white border border-[#f3f6fb] border-solid rounded-[24px] shrink-0 w-full">
+              <div className="flex flex-col items-center justify-center overflow-hidden rounded-[inherit] w-full">
+                <div className="box-border flex flex-col gap-5 items-center justify-center px-4 py-6 relative shrink-0 w-full">
+                  <div className="flex flex-col gap-4 items-center justify-center relative shrink-0 w-full">
+                    {/* Before */}
+                    <div className="bg-[#f3f6fb] h-[192px] overflow-hidden relative rounded-[20px] shrink-0 w-full">
+                      <div className="relative w-full h-full">
+                        <Image
+                          src={caseItem.beforeImage}
+                          alt="Before"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                      {/* Before Badge */}
+                      <div className="absolute box-border flex flex-col gap-2.5 items-start left-0 p-3 top-0 z-10">
+                        <div className="bg-[#292a2f] box-border flex flex-col gap-2.5 items-center justify-center px-2.5 py-[5px] relative rounded-[10px] shrink-0">
+                          <p className="font-semibold leading-[1.4] not-italic text-[13px] text-nowrap text-white tracking-[-0.26px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                            Before
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* After */}
+                    <div className="bg-[#f3f6fb] h-[192px] overflow-hidden relative rounded-[20px] shrink-0 w-full">
+                      <div className="relative w-full h-full">
+                        <Image
+                          src={caseItem.afterImage}
+                          alt="After"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                      {/* After Badge */}
+                      <div className="absolute box-border flex flex-col gap-2.5 items-start left-0 p-3 top-0 z-10">
+                        <div className="bg-[#008095] box-border flex flex-col gap-2.5 items-center justify-center px-2.5 py-[5px] relative rounded-[10px] shrink-0">
+                          <p className="font-semibold leading-[1.4] not-italic text-[13px] text-nowrap text-white tracking-[-0.26px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                            After
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <p className="text-[#6b7280] leading-[1.6]">
-                    {item.description}
-                  </p>
+                  <div className="flex flex-col gap-1 items-start relative shrink-0 w-full">
+                    <p className="font-semibold leading-[1.4] not-italic text-[#9298a6] text-[15px] text-center tracking-[-0.3px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                      {caseItem.name} · {caseItem.description}
+                    </p>
+                  </div>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
   );
 }
-

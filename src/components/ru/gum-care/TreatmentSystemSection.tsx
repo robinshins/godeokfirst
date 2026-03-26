@@ -6,35 +6,35 @@ export default function TreatmentSystemSection() {
   const systems = [
     {
       image: '/images/nsk970.png',
-      title: 'Специальное оборудование NSK varios 970',
-      description: 'Новейший ультразвуковой скейлер японской компании NSK для точного удаления бактерий глубоко в деснах',
+      title: 'Специальное оборудование NSK Varios 970',
+      description: 'Новейший ультразвуковой скейлер NSK — точное удаление бактерий из глубоких карманов',
       features: [
-        { label: 'Двигатель iPiezo', text: 'Стабильная мощность с автоматической регулировкой частоты' },
-        { label: 'Сверхточные насадки', text: 'Доступ к глубоким пародонтальным карманам' }
+        { label: 'Двигатель iPiezo', text: 'Автоконтроль ультразвука — безопасная мощность' },
+        { label: 'Сверхточные насадки', text: 'Доступ до глубоких карманов' }
       ]
     },
     {
       image: '/images/perioclean2.jpg',
-      title: 'Лечение антибиотической мазью Периоклин',
-      description: 'Местный антибиотик на основе миноциклина для прямого введения глубоко в десны',
+      title: 'PerioClean антибактериальный мазь лечение',
+      description: 'Местный антибиотик Nosacline — введение в глубокие участки дёсен',
       features: [
-        { label: 'Клинически проверено', text: 'Эффективность подтверждена многочисленными исследованиями' },
-        { label: 'Действует неделю', text: 'Одно введение сохраняет эффект в течение недели' },
-        { label: 'Снижение бактерий', text: 'Бактерии Red Complex снижаются с 87.5% до 12.5%' }
+ { label:'Клинически проверено', text:'внутри исследованиекоманда клинический эффект и сертификация'},
+        { label: 'Действие 7 дней', text: 'Одно введение — эффект 7 дней' },
+        { label: 'бактерии снижение', text: 'Red Complex бактерии 87.5% → 12.5% снижение' }
       ]
     },
     {
       image: '/images/painless2.png',
-      title: '4-этапная система обезболивания',
+      title: '4этап боль облегчение система',
       description: [
-        '"Оказывается, лечение зубов может быть таким комфортным"',
-        'Многоуровневая система блокировки боли, которая удивляет пациентов'
+        '"Не думал, что лечение может быть таким комфортным"',
+        'Поэтапная система обезболивания'
       ],
       features: [
-        { label: 'Полоскание с анестетиком', text: 'Первичное обезболивание всей полости рта' },
-        { label: 'Нанесение анестезии', text: 'Вторичная блокировка мазью на место укола' },
-        { label: 'Электронный анестезиолог', text: 'Безболезненное введение с компьютерным контролем скорости' },
-        { label: 'Нервная блокада', text: 'Полная блокировка боли до глубоких участков' }
+        { label: 'Полоскание анестетиком', text: 'Полоскание анестетиком — 1-й этап' },
+        { label: 'Аппликационная анестезия', text: 'Нанесение мази — 2-й этап' },
+ { label:'боль облегчение электрический аппарат анестезии', text:'примерно внутри тоже боль облегчение введение'},
+        { label: 'аппарат нервной анестезии', text: 'Идеальное обезболивание глубоких участков' }
       ]
     }
   ];
@@ -45,8 +45,8 @@ export default function TreatmentSystemSection() {
         {/* Header */}
         <div className="flex flex-col gap-3 items-center justify-center w-full">
           <div className="font-['Pretendard_JP'] font-bold leading-[1.35] text-[32px] text-black text-center tracking-[-0.64px] w-full">
-            <p className="mb-0">Система лечения десен</p>
-            <p>клиники Medis</p>
+            <p className="mb-0">Godeok First Dental</p>
+            <p>десна лечение система</p>
           </div>
         </div>
 
@@ -65,7 +65,7 @@ export default function TreatmentSystemSection() {
               </div>
 
               {/* Content */}
-              <div className="bg-[#0b1727] box-border flex flex-col gap-6 items-start p-6 w-full">
+              <div className="bg-[#21314E] box-border flex flex-col gap-6 items-start p-6 w-full">
                 <p className="font-['Pretendard_JP'] font-bold leading-[1.35] text-2xl text-center text-white tracking-[-0.48px] w-full">
                   {system.title}
                 </p>

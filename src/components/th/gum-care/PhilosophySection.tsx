@@ -1,175 +1,171 @@
 'use client';
 
-import Image from 'next/image';
-
 export default function PhilosophySection() {
   return (
-    <div className="bg-white w-full px-4 py-[60px] relative">
-      {/* Background gradient */}
-      <div className="absolute h-[636px] left-[calc(50%+5.5px)] top-[149px] -translate-x-1/2 w-[480px] pointer-events-none">
-        <div className="absolute inset-[-62.89%_-83.33%]">
-          <Image
-            src="/images/ellipse-gradient.svg"
-            alt=""
-            fill
-            className="block max-w-none object-contain"
-          />
-        </div>
-      </div>
+    <div className="bg-white w-full py-[80px] px-5 relative overflow-hidden">
 
-      <div className="max-w-[343px] mx-auto flex flex-col gap-10 items-start relative z-10">
-        {/* Header */}
-        <div className="flex flex-col gap-4 items-center justify-center w-full">
-          <div className="flex flex-col gap-3 items-center justify-center text-center w-full">
-            <p className="font-['Pretendard_JP'] font-bold leading-[1.35] text-[32px] text-black tracking-[-0.64px] w-full">
-              มาตรฐานคลินิกทันตกรรมที่ดี
-            </p>
-            <div className="font-['Pretendard_JP'] font-semibold leading-[1.4] text-[#727582] text-base tracking-[-0.32px] w-full">
-              <p className="mb-0">คลินิกที่รักษาเหงือกอย่างจริงจัง</p>
-              <p>คือคลินิกที่ดี</p>
+      {/* Background Decor */}
+      <div className="absolute top-0 right-[-100px] w-[300px] h-[300px] bg-[#008095]/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-[-100px] left-[-100px] w-[300px] h-[300px] bg-[#008095]/5 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="max-w-[430px] mx-auto flex flex-col gap-[60px] relative z-10">
+
+        {/* Main Philosophy Header */}
+        <div className="flex flex-col gap-5 text-center">
+          <p
+            className="text-[#008095] font-bold text-[13px] tracking-[0.2em] uppercase"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+            Our Philosophy
+          </p>
+          <h2
+            className="font-bold text-[32px] leading-[1.3] tracking-[-0.04em] text-black"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+            รักษาเหงือกอย่างจริงจัง<br />ทันตกรรมที่แนะนำ<br />
+            <span className="text-[#008095]">ความจริงใจ ที่มี ทันตกรรม</span>ค่ะ
+          </h2>
+          <p
+            className="font-medium text-[#727582] text-[16px] leading-[1.7] tracking-[-0.02em]"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+            ไม่ว่ารากฟันเทียมจะดีแค่ไหนก็ชนะฟันธรรมชาติไม่ได้ค่ะ.<br />
+            การรักษาฟันธรรมชาติไว้คือการรักษาที่ดีที่สุดค่ะ.
+          </p>
+        </div>
+
+        {/* Story Flow */}
+        <div className="flex flex-col gap-8">
+
+          {/* Box 1: ทำไมถึงเลี่ยงรักษาเหงือก */}
+          <div className="flex flex-col gap-4">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="bg-[#2d3340]/5 text-[#2d3340]/50 font-bold text-[11px] px-2.5 py-1 rounded-full uppercase tracking-wider whitespace-nowrap">
+                Problem
+              </span>
+              <p className="font-bold text-[15px] text-[#2d3340]">
+                ทำไมหลายโรงพยาบาลถึงลังเลรักษาเหงือก?
+              </p>
+            </div>
+            <div className="bg-[#f8f9fb] rounded-[24px] p-6 flex flex-col gap-5 border border-[#e9ebf1]">
+              {[
+                {
+                  n: '1',
+                  text: 'ถอนฟันแล้วทำรากฟันเทียมมีรายได้สูงกว่ามาก',
+                  sub: 'แม้รักษาเหงือกเพื่อรักษาฟัน ก็ไม่ได้ค่ารักษารากฟันเทียมค่ะ.',
+                },
+                {
+                  n: '2',
+                  text: 'ค่าธรรมเนียมประกันสุขภาพต่ำเมื่อเทียบกับเวลาและความพยายาม',
+                  sub: 'การรักษาเหงือกใช้เวลาและละเอียดแต่รายได้น้อย โรงพยาบาลจึงเลี่ยงค่ะ.',
+                },
+                {
+                  n: '3',
+                  text: 'หลังรักษาต้องดูแลต่อเนื่อง ผลลัพธ์ไม่แน่นอน',
+                  sub: 'หากผู้ป่วยไม่ร่วมมืออย่างสม่ำเสมอ อาจกลับเป็นซ้ำได้ เป็นภาระเรื่องผลการรักษา.',
+                },
+              ].map((item) => (
+                <div key={item.n} className="flex items-start gap-3">
+                  <span className="w-6 h-6 rounded-full bg-white flex items-center justify-center border border-[#e9ebf1] shrink-0 mt-[2px]">
+                    <span className="text-[11px] text-[#2d3340]/40 font-bold">{item.n}</span>
+                  </span>
+                  <div className="flex flex-col gap-1">
+                    <p
+                      className="text-[15px] font-bold text-[#2d3340] leading-[1.4]"
+                      style={{ fontFamily: 'Pretendard, sans-serif' }}
+                    >
+                      {item.text}
+                    </p>
+                    <p
+                      className="text-[13px] font-medium text-[#2d3340]/50 leading-[1.5]"
+                      style={{ fontFamily: 'Pretendard, sans-serif' }}
+                    >
+                      {item.sub}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
-        </div>
 
-        {/* Content Cards */}
-        <div className="flex flex-col gap-10 items-start w-full">
-          <div className="flex flex-col gap-6 items-start w-full">
-            {/* Bad Reasons Card */}
-            <div className="bg-white box-border flex flex-col gap-5 items-center justify-center p-6 rounded-[24px] shadow-[0px_24px_50px_-12px_rgba(45,54,67,0.12)] w-full">
-              <div className="font-['Pretendard_JP'] font-bold leading-[1.35] text-2xl text-black text-center tracking-[-0.48px] w-full">
-                <p className="mb-0">เหตุผลที่คลินิกหลายแห่ง</p>
-                <p>หลีกเลี่ยงการรักษาเหงือก</p>
-              </div>
-              <div className="bg-[#f3f6fb] box-border flex flex-col gap-3.5 items-start p-5 rounded-2xl w-full">
-                <div className="flex items-center gap-2 w-full">
-                  <div className="shrink-0 w-6 h-6 flex items-center justify-center">
-                    <Image
-                      src="/icons/x-icon.svg"
-                      alt=""
-                      width={20}
-                      height={20}
-                    />
-                  </div>
-                  <p className="font-['Pretendard_JP'] font-bold text-[16px] text-black tracking-[-0.34px] leading-[1.5]">
-                    ถอนฟันแล้วทำรากเทียมกำไรมากกว่า
-                  </p>
-                </div>
-                <div className="flex items-center gap-2 w-full">
-                  <div className="shrink-0 w-6 h-6 flex items-center justify-center">
-                    <Image
-                      src="/icons/x-icon.svg"
-                      alt=""
-                      width={20}
-                      height={20}
-                    />
-                  </div>
-                  <p className="font-['Pretendard_JP'] font-bold text-[16px] text-black tracking-[-0.34px] leading-[1.5]">
-                    คนไข้ไม่ชอบความเจ็บปวดจากการรักษาเหงือก
-                  </p>
-                </div>
-                <div className="flex items-center gap-2 w-full">
-                  <div className="shrink-0 w-6 h-6 flex items-center justify-center">
-                    <Image
-                      src="/icons/x-icon.svg"
-                      alt=""
-                      width={20}
-                      height={20}
-                    />
-                  </div>
-                  <p className="font-['Pretendard_JP'] font-bold text-[16px] text-black tracking-[-0.34px] leading-[1.5]">
-                    กลัวคนไข้ร้องเรียนหากต้องถอนหลังรักษา
-                  </p>
-                </div>
-                <div className="flex items-center gap-2 w-full">
-                  <div className="shrink-0 w-6 h-6 flex items-center justify-center">
-                    <Image
-                      src="/icons/x-icon.svg"
-                      alt=""
-                      width={20}
-                      height={20}
-                    />
-                  </div>
-                  <p className="font-['Pretendard_JP'] font-bold text-[16px] text-black tracking-[-0.34px] leading-[1.5]">
-                    ใช้เวลาและแรงมากแต่รายได้น้อย
-                  </p>
-                </div>
-              </div>
+          {/* Arrow Divider */}
+          <div className="flex flex-col items-center gap-1 py-2">
+            <div className="w-0.5 h-8 bg-gradient-to-b from-[#e9ebf1] to-[#008095]/50" />
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M9 3V15M9 15L4 10M9 15L14 10" stroke="#008095" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
+
+          {/* Box 2: เหตุผลที่เรายืนยัน */}
+          <div className="flex flex-col gap-4">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="bg-[#008095]/10 text-[#008095] font-bold text-[11px] px-2.5 py-1 rounded-full uppercase tracking-wider whitespace-nowrap">
+                Identity
+              </span>
+              <p className="font-bold text-[15px] text-[#008095]">
+                เหตุผลที่ Godeok First Dental ยืนยันรักษาเหงือก
+              </p>
             </div>
-
-            {/* Good Reasons Card */}
-            <div className="bg-white box-border flex flex-col gap-5 items-center justify-center p-6 rounded-[24px] shadow-[0px_24px_50px_-12px_rgba(45,54,67,0.12)] w-full">
-              <div className="font-['Pretendard_JP'] font-bold leading-[1.35] text-2xl text-black text-center tracking-[-0.48px] w-full">
-                <p className="mb-0">เหตุผลที่คลินิกเรา</p>
-                <p>ยืนยันรักษาเหงือก</p>
+            <div className="bg-[#008095] rounded-[24px] p-7 flex flex-col gap-6 shadow-xl shadow-[#008095]/20">
+              <div className="flex flex-col gap-2">
+                <p
+                  className="text-white font-bold text-[22px] leading-[1.35]"
+                  style={{ fontFamily: 'Pretendard, sans-serif' }}
+                >
+                  อนุรักษ์ฟันธรรมชาติ<br />ต้องเป็นอันดับ 1 เสมอค่ะ
+                </p>
+                <div className="h-0.5 w-14 bg-white/30 mt-1 mb-2" />
+                <p
+                  className="text-white/80 text-[14px] leading-[1.7]"
+                  style={{ fontFamily: 'Pretendard, sans-serif' }}
+                >
+                  แม้จะไม่สะดวกและลำบากบ้าง การปกป้องฟันให้ผู้ป่วย
+                  คือการรักษาที่ดีที่สุดสำหรับเราด้วยค่ะ. ผู้ที่รักษาเหงือกแล้วใช้ฟัน
+                  ได้นานๆ เป็นสิ่งที่ภูมิใจที่สุดค่ะ.
+                </p>
               </div>
-              <div className="bg-[#f3f6fb] box-border flex flex-col gap-3.5 items-start p-5 rounded-2xl w-full">
-                <div className="flex items-center gap-2 w-full">
-                  <Image
-                    src="/icons/check-icon.svg"
-                    alt=""
-                    width={24}
-                    height={24}
-                    className="shrink-0"
-                  />
-                  <p className="font-['Pretendard_JP'] font-bold text-[16px] text-black tracking-[-0.34px] leading-[1.5]">
-                    <span className="text-[#006aff]">รักษาฟันธรรมชาติ</span>
-                    <span>เป็นอันดับ </span>1 เสมอ
-                  </p>
-                </div>
-                <div className="flex items-center gap-2 w-full">
-                  <Image
-                    src="/icons/check-icon.svg"
-                    alt=""
-                    width={24}
-                    height={24}
-                    className="shrink-0"
-                  />
-                  <p className="font-['Pretendard_JP'] font-bold text-[16px] text-black tracking-[-0.34px] leading-[1.5]">
-                    <span className="text-[#006aff]">ระบบยาชา 4 ขั้นตอน</span>
-                    <span> </span>รักษาสบาย
-                  </p>
-                </div>
-                <div className="flex items-center gap-2 w-full">
-                  <Image
-                    src="/icons/check-icon.svg"
-                    alt=""
-                    width={24}
-                    height={24}
-                    className="shrink-0"
-                  />
-                  <p className="font-['Pretendard_JP'] font-bold text-[16px] text-black tracking-[-0.34px] leading-[1.5]">
-                    <span className="text-[#006aff]">ร่วมมือกับทันตแพทย์เฉพาะทาง</span> อัตราสำเร็จสูง
-                  </p>
-                </div>
-                <div className="flex items-center gap-2 w-full">
-                  <Image
-                    src="/icons/check-icon.svg"
-                    alt=""
-                    width={24}
-                    height={24}
-                    className="shrink-0"
-                  />
-                  <p className="font-['Pretendard_JP'] font-bold text-[16px] text-black tracking-[-0.34px] leading-[1.5]">
-                    <span>ให้ความสำคัญกับ</span>
-                    <span className="text-[#006aff]">สุขภาพฟันตลอดชีวิต</span>ของคนไข้
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Blue Conclusion Card */}
-            <div className="bg-[#006aff] box-border flex flex-col font-['Pretendard_JP'] font-bold gap-5 items-center justify-center leading-[0] p-6 rounded-[24px] text-center text-white w-full">
-              <div className="leading-[1.35] text-2xl tracking-[-0.48px] w-full">
-                <p className="mb-0">การรักษาฟันธรรมชาติ</p>
-                <p>คือการรักษาที่ดีที่สุด</p>
-              </div>
-              <div className="leading-[1.5] opacity-80 text-[17px] tracking-[-0.34px] w-full">
-                <p className="mb-0">แม้จะลำบากบ้าง การรักษาเหงือกเป็นประจำ</p>
-                <p className="mb-0">เพื่อรักษาฟันธรรมชาติ</p>
-                <p>มีคุณค่ามากกว่ารากเทียม</p>
-              </div>
+              <ul className="flex flex-col gap-4">
+                {[
+                  {
+                    title: 'ผู้เชี่ยวชาญทันตกรรมบูรณาการ โดยตรง การรักษา',
+                    desc: 'เหงือก สภาพ แม่นยำอย่าง วินิจฉัยและ, การรักษา แผนตั้งแต่ เสร็จสิ้นจนถึง โดยตรง รับผิดชอบค่ะ.',
+                  },
+                  {
+                    title: 'ลดปวด 4 ขั้นตอน ยาชา ระบบ',
+                    desc: 'กลั้วปาก ยาชา → ทา ยาชา → เครื่องชาไฟฟ้า → เครื่องชาประสาท. ลดความไม่สะดวกของการรักษาเหงือกให้มากที่สุดค่ะ.',
+                  },
+                  {
+                    title: 'โปรแกรมดูแลประจำ',
+                    desc: 'หลังรักษาก็ตรวจทุก 3~6 เดือนเพื่อป้องกันการกลับเป็นซ้ำและยืดอายุฟัน.',
+                  },
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <div className="shrink-0 mt-[2px]">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="10" cy="10" r="9" stroke="rgba(255,255,255,0.3)" strokeWidth="1.5" />
+                        <path d="M6 10L9 13L14 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </div>
+                    <div className="flex flex-col gap-0.5">
+                      <p
+                        className="text-white font-bold text-[15px] leading-[1.4]"
+                        style={{ fontFamily: 'Pretendard, sans-serif' }}
+                      >
+                        {item.title}
+                      </p>
+                      <p
+                        className="text-white/70 text-[13px] leading-[1.5]"
+                        style={{ fontFamily: 'Pretendard, sans-serif' }}
+                      >
+                        {item.desc}
+                      </p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
+
         </div>
       </div>
     </div>

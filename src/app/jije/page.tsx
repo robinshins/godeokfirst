@@ -24,7 +24,7 @@ const regionData: RegionData = {
       type: 'cavity-treatment',
       title: '충치치료',
       description: '직장인의 바쁜 일정을 고려한 효율적인 충치치료. 치아 보존을 최우선으로 최소 삭제 원칙을 적용합니다.',
-      features: ['미세현미경 정밀 치료', '당일 레진 치료', '고강도 심미 재료', '최소 내원 치료 계획'],
+      features: ['정밀 충치 진단', '당일 레진 치료', '고강도 심미 재료', '최소 내원 치료 계획'],
     },
     {
       type: 'wisdom-tooth',

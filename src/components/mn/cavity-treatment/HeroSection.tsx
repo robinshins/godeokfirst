@@ -1,36 +1,94 @@
-import Image from 'next/image';
+'use client';
+
 import Link from 'next/link';
+import Image from 'next/image';
+import FadeInSection from '@/components/common/FadeInSection';
 
 export default function HeroSection() {
-  return (
-    <div className="bg-[#fff7ed] w-full relative overflow-hidden">
-      <div className="max-w-[430px] mx-auto px-4 py-20 relative z-10">
-        <div className="flex flex-col gap-8">
-          <div className="flex flex-col gap-4">
-            <span className="text-[#f97316] font-bold">Цоорол ба Сувгийн эмчилгээ</span>
-            <h1 className="text-[36px] font-extrabold text-[#111827] leading-[1.2]">
-              Шүдийг авахаас өмнө<br />
-              <span className="text-[#f97316]">Төрөлх шүдээ</span> хадгалъя
-            </h1>
-            <p className="text-lg text-[#6b7280] leading-[1.6]">
-              Шүдний цоорлыг эрт илрүүлж,<br />
-              нарийн эмчилгээгээр шүдийг тань хамгаална.
-            </p>
-          </div>
+  const scrollToDoctor = () => {
+    const doctorSection = document.getElementById('doctor');
+    if (doctorSection) {
+      doctorSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
 
-          <Link href="/mn/consultation" className="w-full">
-            <button className="w-full h-16 bg-[#f97316] text-white rounded-[20px] font-bold text-xl">
-              AI Зөвлөгөө эхлүүлэх
+  return (
+    <div className="bg-gradient-to-b from-[#d2e9f3]/30 to-white w-full relative overflow-hidden">
+      <div className="w-full flex justify-center">
+        <div className="box-border flex flex-col gap-[50px] items-start px-4 py-[60px] relative w-full max-w-[430px] z-10">
+
+          {/* Logo and Text Content */}
+          <FadeInSection className="flex flex-col gap-3 items-center justify-center relative shrink-0 w-full">
+            {/* Logo */}
+            <div className="h-11 overflow-hidden relative shrink-0">
+              <Image
+                src="/고덕퍼스트치과-로고-(블랙).png"
+                alt="Godeok First Dental"
+                width={200}
+                height={40}
+                className="h-20 w-auto object-contain -mt-[18px]"
+              />
+            </div>
+
+            {/* Main Text */}
+            <div className="flex flex-col gap-4 items-start leading-[0] not-italic relative shrink-0 text-center w-full">
+              <h1
+                className="font-extrabold leading-[1.35] relative shrink-0 text-4xl tracking-[-2.16px] w-full text-[#008095]"
+                style={{ fontFamily: '"NanumSquare", sans-serif' }}
+              >
+                цооронхой эмчилгээ,<br />
+ дуусгах 
+              </h1>
+              <p
+                className="font-semibold leading-[1.5] relative shrink-0 text-[18px] tracking-[-0.36px] w-full text-[#3e3a3a]"
+                style={{ fontFamily: 'Pretendard, sans-serif' }}
+              >
+                Чосоны их сургуулийн шүдний эмнэлэгэмнэлэг Зочин профессор байсан,<br />
+                Нийлмэл шүдний мэргэжилтэн Эмч Ли Донхён<br />
+ эмчилгээ.
+              </p>
+            </div>
+          </FadeInSection>
+
+          {/* CTA Buttons */}
+          <FadeInSection delay={200} className="flex flex-col gap-4 items-start justify-center relative shrink-0 w-full">
+            <div className="flex gap-3 w-full">
+              <Link href="/mn/consultation" className="flex-1">
+                <button className="bg-[#008095] flex h-14 items-center justify-center px-4 py-3 rounded-[14px] w-full hover:bg-[#006d80] transition-colors border-none outline-none">
+                  <span
+                    className="font-bold leading-[1.5] not-italic relative shrink-0 text-white text-base text-nowrap tracking-[-0.4px]"
+                    style={{ fontFamily: '"NanumSquare", sans-serif' }}
+                  >
+                    Хурдан бүртгүүлэх
+                  </span>
+                </button>
+              </Link>
+              <a href="https://naver.me/GSD1OqoS" target="_blank" rel="noopener noreferrer" className="flex-1">
+                <button className="bg-[#03C75A] flex h-14 items-center justify-center px-4 py-3 rounded-[14px] w-full hover:bg-[#02b351] transition-colors border-none outline-none">
+                  <span
+                    className="font-bold leading-[1.5] not-italic relative shrink-0 text-white text-base text-nowrap tracking-[-0.4px]"
+                    style={{ fontFamily: '"NanumSquare", sans-serif' }}
+                  >
+                    Naver захиалга
+                  </span>
+                </button>
+              </a>
+            </div>
+
+            <button
+              onClick={scrollToDoctor}
+              className="bg-transparent border-2 border-[#008095] box-border flex h-16 items-center justify-center px-6 py-4 relative rounded-[18px] shrink-0 w-full hover:bg-[#008095]/10 transition-colors"
+            >
+              <span
+                className="font-bold leading-[1.5] not-italic relative shrink-0 text-[#008095] text-xl text-nowrap tracking-[-0.4px]"
+                style={{ fontFamily: '"NanumSquare", sans-serif' }}
+              >
+                Эмч нарыг харах
+              </span>
             </button>
-          </Link>
+          </FadeInSection>
         </div>
-      </div>
-      
-      {/* Decoration */}
-      <div className="absolute bottom-0 right-0 w-64 h-64 opacity-20 translate-y-1/4 translate-x-1/4">
-        <Image src="/icons/cavity.svg" alt="" fill className="object-contain" />
       </div>
     </div>
   );
 }
-

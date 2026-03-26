@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function PromotionSection() {
   return (
-    <div className="bg-[#0a1628] w-full py-[70px] relative overflow-hidden">
+    <div className="bg-[#21314E] w-full py-[70px] relative overflow-hidden">
       {/* Background Gradient */}
       <div className="absolute h-[711px] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[375px] pointer-events-none">
         <div className="absolute inset-0">
@@ -22,38 +22,38 @@ export default function PromotionSection() {
           {/* Title */}
           <div className="flex flex-col gap-6 items-start w-full text-center">
             <h2 className="font-bold text-[36px] leading-[1.35] tracking-[-0.72px] text-[#f2f2f2] w-full">
-              Bạn đã lấy cao răng<br />
-              trong năm nay chưa?
+              Năm nay bạn chưa lấy cao răng<br />
+              phải không?
             </h2>
-            <div className="font-bold text-base leading-[2] tracking-[1.92px] uppercase text-[#51aefe] w-full">
-              <p className="mb-0">Giảm giá 50% khi tẩy trắng cùng lúc</p>
-              <p>với lấy cao răng định kỳ!</p>
+            <div className="font-bold text-base leading-[2] tracking-[1.92px] uppercase text-[#4DC8D8] w-full">
+              <p className="mb-0">Khi lấy cao răng kiểm tra quốc gia</p>
+              <p>tẩy trắng giảm 50%!</p>
             </div>
           </div>
 
           {/* Cards */}
           <div className="flex flex-col gap-6 w-full">
-            {/* Card 1: 스탠다드 미백 */}
-            <div className="bg-[#0b1727] border border-[#ffdb59] rounded-[12px] p-6 flex flex-col gap-4 w-full">
+            {/* Card 1: Tẩy trắng tiêu chuẩn */}
+            <div className="bg-[#21314E] border border-[#ffdb59] rounded-[12px] p-6 flex flex-col gap-4 w-full">
               <div className="flex items-start justify-between w-full">
                 <div className="flex flex-col gap-[6px] items-start justify-center text-white">
                   <p className="font-bold text-[24px] leading-[normal] tracking-[-0.96px] w-full">
                     Tẩy trắng tiêu chuẩn
                   </p>
                   <p className="font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] opacity-70 w-full">
-                    Thực hiện 1 chu kỳ trong ngày
+                    Tiến hành 1 chu kỳ/ngày
                   </p>
                 </div>
                 <div className="bg-[#ffc53d] rounded-[8px] px-2.5 py-[5px]">
                   <p className="font-bold text-[14px] leading-[23px] tracking-[-0.56px] text-black whitespace-nowrap">
-                    GIẢM 50%
+                    50% OFF
                   </p>
                 </div>
               </div>
 
               <div className="flex flex-col items-start w-full">
                 <p className="font-medium text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] line-through w-full">
-                  Giá gốc
+                  Giá thường
                 </p>
                 <div className="flex gap-1 items-end w-full">
                   <p className="font-bold text-[60px] leading-none tracking-[-1.2px] text-white whitespace-nowrap">
@@ -78,7 +78,7 @@ export default function PromotionSection() {
                     />
                   </div>
                   <p className="font-semibold text-[18px] leading-[1.5] tracking-[-0.36px] text-white">
-                    Hoàn tất nhanh chóng
+                    Hoàn thành nhanh
                   </p>
                 </div>
                 <div className="flex gap-3 items-center w-full">
@@ -91,7 +91,7 @@ export default function PromotionSection() {
                     />
                   </div>
                   <p className="font-semibold text-[18px] leading-[1.5] tracking-[-0.36px] text-white">
-                    Chăm sóc cho đến sau khi thực hiện
+                    Chăm sóc đến sau phẫu thuật
                   </p>
                 </div>
               </div>
@@ -104,4 +104,3 @@ export default function PromotionSection() {
     </div>
   );
 }
-

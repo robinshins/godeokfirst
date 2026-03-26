@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import GNB from '@/components/en/GNB';
 import FixedCTAButton from '@/components/en/FixedCTAButton';
 import FooterSection from '@/components/en/FooterSection';
@@ -11,6 +11,8 @@ import OneDayInlaySection from '@/components/en/cavity-treatment/OneDayInlaySect
 // import SedationSection from '@/components/en/cavity-treatment/SedationSection';
 import DoctorProfileSection from '@/components/en/cavity-treatment/DoctorProfileSection';
 import ComparisonSection from '@/components/en/cavity-treatment/ComparisonSection';
+import CasesSection from '@/components/en/cavity-treatment/CasesSection';
+import BlogColumnSection from '@/components/en/cavity-treatment/BlogColumnSection';
 import DoctorSection from '@/components/en/DoctorSection';
 import WhyBestSection from '@/components/en/WhyBestSection';
 import LocationSection from '@/components/en/LocationSection';
@@ -18,29 +20,18 @@ import FAQSection from '@/components/en/FAQSection';
 import VideoSection from '@/components/en/cavity-treatment/VideoSection';
 
 export const metadata: Metadata = {
-  title: 'Korean Cavity Treatment Busan Korea | Kyungsung Medis Dental',
-  description: 'Advanced cavity and root canal treatment. #1 in Busan Nam-gu. Head doctor performs all procedures with microscope and university hospital-level digital equipment.',
-  keywords: [
-    'cavity treatment Korea',
-    'cavity treatment Busan',
-    'root canal Korea',
-    'dental inlay Korea',
-    'endodontics Busan',
-    'cavity filling Korea',
-    'microscope dentistry Korea',
-    'dental tourism cavity Korea',
-    'English dentist cavity Korea'
-  ],
+  title: 'Cavity Treatment | Godeok First Dental',
+  description: 'Cavity and root canal treatment by a Comprehensive Dentistry Specialist. Resin, inlay, digital scan.',
   alternates: {
     canonical: 'https://gdfirstdent.com/en/cavity-treatment',
   },
   openGraph: {
-    title: 'Korean Cavity Treatment Busan Korea | Kyungsung Medis Dental',
-    description: 'Advanced cavity and root canal treatment. #1 in Busan Nam-gu. Head doctor performs all procedures with microscope.',
+    title: 'Cavity Treatment | Godeok First Dental',
+    description: 'Cavity treatment by a Comprehensive Dentistry Specialist at Godeok First Dental.',
     url: 'https://gdfirstdent.com/en/cavity-treatment',
+    siteName: 'Godeok First Dental',
     type: 'website',
-    locale: 'en_US',
-  }
+  },
 };
 
 export default function CavityTreatmentPage() {
@@ -58,8 +49,13 @@ export default function CavityTreatmentPage() {
       {/* Video Section */}
       <VideoSection />
 
-      {/* Before/After Section */}
-      <BeforeAfterSection />
+      {/* Cases Section */}
+      <CasesSection />
+
+
+      {/* Blog Column Section */}
+      <BlogColumnSection />
+
 
       {/* Question Section */}
       <QuestionSection />
@@ -70,14 +66,9 @@ export default function CavityTreatmentPage() {
       {/* One Day Inlay Section */}
       <OneDayInlaySection />
 
+
       {/* Sedation Section */}
       {/* <SedationSection /> */}
-
-      {/* Doctor Profile Section */}
-      <DoctorProfileSection />
-
-      {/* Comparison Section */}
-      <ComparisonSection />
 
       <DoctorSection />
       <WhyBestSection />

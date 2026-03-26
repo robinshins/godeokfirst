@@ -1,171 +1,126 @@
 'use client';
 
-import Image from 'next/image';
+const risks = [
+  {
+    tag: 'установкакровеносный сосуд',
+    title: 'установкакровеносный сосуд заболевание риск 3раз↑',
+    desc: 'Пародонтальные бактерии проникают в сосуды, вызывая воспаление и тромбообразование. При заболевании дёсен риск инфаркта до 2,8 раз, инсульта — на 16%. Регулярная чистка снижает риск на 10-14%.',
+    stats: ['Риск инфаркта в 2,8 раза', 'Снижение риска инсульта на 16%', 'Совмещайте кардио- и стоматологический осмотры'],
+    source: 'Больница Сеульского нац. университета 2024 · AHA 2020',
+  },
+  {
+    tag: 'диабет',
+    title: 'диабет осложнение проведение 2раз↑',
+    desc: 'Воспаление дёсен повышает инсулинорезистентность, создавая порочный круг. При пародонтите сложнее контролировать HbA1c; при диабете снижается эффект лечения дёсен. Клинически доказано снижение HbA1c на 0,4% от лечения пародонта.',
+    stats: ['Потеря контроля сахара в 6 раз', 'HbA1c -0,4% после лечения', 'Осложнения диабета в 2 раза быстрее'],
+    source: 'Больница Католического университета 2023 · Общество диабетологии',
+  },
+  {
+    tag: 'мозгзаболевание',
+    title: 'деменция возникновение риск 70%↑',
+ desc:'пародонт во время Porphyromonas gingivalis мозг мозг если внутри. В мозге пациентов с Альцгеймером обнаружены пародонтальные токсины. При запущенности >10 лет риск деменции значительно возрастает.',
+    stats: ['У 40% пациентов с Альцгеймером обнаружены токсины', 'При запущенности >10 лет риск деменции +70%↑', 'Ранний уход за дёснами защищает мозг'],
+    source: 'Гарвардский университет 2024 · Journal of Neuroinflammation',
+  },
+  {
+    tag: 'беременная',
+    title: 'Преждевременные роды и маловесный ребёнок в 7 раз↑',
+    desc: 'Воспалительные медиаторы через кровь достигают плаценты, вызывая преждевременные схватки. Рекомендуется проверить дёсны до беременности·или на ранних сроках.',
+    stats: ['Риск преждевременных родов в 7 раз', 'Маловесный ребёнок (<2 кг) в 2 раза', 'Лечение дёсен при беременности по страховке'],
+    source: 'Корейское и Европейское пародонтологические общества',
+  },
+];
 
 export default function RiskSection() {
-  const risks = [
-    {
-      icon: '/icons/037_Heart.svg',
-      title: 'Риск сердечно-сосудистых заболеваний в 3 раза',
-      titleHighlight: 'в 3 раза',
-      process: [
-        'Бактерии проникают в сосуды',
-        'Вызывают воспаление стенок',
-        'Способствуют образованию тромбов'
-      ],
-      details: [
-        { text: 'Снижение болезней сердца на 10%', note: 'при осмотре полости рта' },
-        { text: 'Риск инфаркта в 2.8 раза выше' },
-        { text: 'Риск инсульта снижается на 16% (скейлинг 1 раз в год)' }
-      ],
-      source: 'Исследования больницы Бундан 2024, AHA 2020'
-    },
-    {
-      icon: '/icons/034_Bed.svg',
-      title: 'Ухудшение диабета и увеличение осложнений',
-      titleHighlight: 'Ухудшение',
-      titleHighlight2: 'увеличение',
-      process: [
-        'Воспаление десен',
-        'Повышение инсулинорезистентности',
-        'Неудача контроля сахара'
-      ],
-      details: [
-        { text: 'Снижение HbA1c на 0.4% (при лечении пародонта)' },
-        { text: 'Осложнения диабета прогрессируют в 2 раза быстрее' },
-        { text: 'При пародонтите неудача контроля сахара в 6 раз чаще' }
-      ],
-      source: 'Исследования Католического университета 2023'
-    },
-    {
-      icon: '/icons/057_DNA.svg',
-      title: 'Риск деменции на 70% выше',
-      titleHighlight: 'на 70% выше',
-      process: [
-        'Бактерии проникают через ГЭБ',
-        'Воспаление мозга',
-        'Накопление бета-амилоида'
-      ],
-      details: [
-        { text: 'У 40% пациентов с Альцгеймером обнаружены пародонтальные бактерии' },
-        { text: 'При игнорировании более 10 лет риск деменции резко возрастает' }
-      ],
-      source: 'Исследования Гарварда 2024, Journal of Neuroinflammation'
-    },
-    {
-      icon: '/icons/023_Pregnancy_Test.svg',
-      title: 'Риск осложнений беременности в 7 раз выше',
-      titleHighlight: 'в 7 раз выше',
-      process: [
-        'Воспалительные вещества проникают через плаценту',
-        'Провоцируют преждевременные роды',
-        'Преждевременные роды и низкий вес'
-      ],
-      details: [
-        { text: 'Риск преждевременных родов в 7 раз выше' },
-        { text: 'Риск рождения с низким весом (менее 2 кг) в 2 раза выше' },
-        { text: 'Возможны проблемы с развитием и обучением ребенка' }
-      ],
-      source: 'Американская и Европейская ассоциации пародонтологии'
-    }
-  ];
-
   return (
-    <div className="bg-[#0b1727] w-full px-4 py-[60px]">
-      <div className="max-w-[343px] mx-auto flex flex-col gap-[26px] items-center">
+    <div className="bg-[#21314E] w-full py-[80px] px-5">
+      <div className="max-w-[430px] mx-auto flex flex-col gap-12">
+
         {/* Header */}
-        <div className="flex flex-col gap-3 items-start w-full">
-          <div className="flex flex-col gap-4 items-center justify-center w-full">
-            <div className="flex flex-col gap-3 items-center justify-center text-center text-white w-full">
-              <p className="font-['Nanum_Myeongjo'] font-extrabold leading-[0.2] text-[60px] tracking-[-3.6px] w-full">
-                &ldquo;
-              </p>
-              <div className="font-['Pretendard_JP'] font-bold leading-[1.35] text-[32px] tracking-[-0.64px] w-full">
-                <p className="mb-0">Когда воспаление десен</p>
-                <p>распространяется по телу...</p>
-              </div>
-            </div>
-          </div>
-          <p className="font-['Pretendard_JP'] font-semibold leading-[1.4] text-[#d2d6e1] text-base text-center tracking-[-0.32px] w-full">
-            При игнорировании высокий риск распространения на другие органы
+        <div className="flex flex-col gap-4 text-center">
+          <p
+            className="text-[#4DC8D8] font-bold text-[13px] tracking-[0.2em] uppercase"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+            Health Warning
+          </p>
+          <h2
+            className="font-bold text-[30px] leading-[1.3] tracking-[-0.04em] text-white"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+            Заболевания дёсен<br />не ограничиваются полостью рта
+          </h2>
+          <p
+            className="font-medium text-white/60 text-[16px] leading-[1.6] tracking-[-0.02em]"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+            Бактерии из дёсен попадают в кровоток<br />вызывая серьёзные заболевания.
           </p>
         </div>
 
-        {/* Divider */}
-        <div className="bg-white h-10 opacity-50 shrink-0 w-0.5" />
-
         {/* Risk Cards */}
-        <div className="flex flex-col gap-4 items-start w-full">
-          {risks.map((risk, index) => (
-            <div key={index} className="flex flex-col items-start w-full">
-              {/* White Card */}
-              <div className="bg-white border border-[#f3f6fb] box-border flex flex-col gap-10 items-center justify-center p-6 rounded-t-[24px] w-full">
-                <div className="flex flex-col gap-2.5 items-center justify-center w-full">
-                  <div className="relative shrink-0 w-[100px] h-[100px]">
-                    <Image
-                      src={risk.icon}
-                      alt=""
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-4 items-center justify-center w-full">
-                    <p className="font-['Pretendard_JP'] font-bold leading-[1.35] text-[28px] text-black text-center tracking-[-0.56px] w-full">
-                      {risk.title.split(risk.titleHighlight)[0]}
-                      <span className="text-[#ff1616]">{risk.titleHighlight}</span>
-                      {risk.titleHighlight2 && (
-                        <>
-                          {risk.title.split(risk.titleHighlight)[1].split(risk.titleHighlight2)[0]}
-                          <span className="text-[#ff1616]">{risk.titleHighlight2}</span>
-                        </>
-                      )}
-                    </p>
-                    <div className="flex flex-col gap-1 items-center w-full">
-                      {risk.process.map((step, stepIndex) => (
-                        <div key={stepIndex} className="flex flex-col items-center w-full">
-                          <p className="font-['Pretendard_JP'] font-bold leading-[1.5] text-[#5d5f6d] text-[17px] text-center tracking-[-0.34px] w-full">
-                            {step}
-                          </p>
-                          {stepIndex < risk.process.length - 1 && (
-                            <div className="relative shrink-0 w-6 h-6">
-                              <Image
-                                src="/icons/arrow-big-down-filled.svg"
-                                alt=""
-                                fill
-                                className="object-contain"
-                              />
-                            </div>
-                          )}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
+        <div className="flex flex-col gap-5">
+          {risks.map((risk, idx) => (
+            <div key={idx} className="bg-white/5 border border-white/10 rounded-[24px] p-6 flex flex-col gap-5">
+              {/* Tag + Title */}
+              <div className="flex flex-col gap-2">
+                <span className="text-[11px] font-bold px-2.5 py-1 rounded-full border border-white/20 text-white/50 uppercase tracking-wider w-fit">
+                  {risk.tag}
+                </span>
+                <h3
+                  className="font-bold text-[20px] text-white tracking-[-0.02em] leading-[1.3]"
+                  style={{ fontFamily: 'Pretendard, sans-serif' }}
+                >
+                  {risk.title}
+                </h3>
               </div>
 
-              {/* Blue Card */}
-              <div className="bg-[#006aff] box-border flex flex-col gap-2 items-center justify-center p-6 rounded-b-[24px] shadow-[0px_32px_64px_-12px_rgba(45,54,67,0.08)] text-white w-full">
-                <div className="flex flex-col gap-1 items-start w-full">
-                  {risk.details.map((detail, detailIndex) => (
-                    <div key={detailIndex} className="flex gap-1.5 items-center w-full text-nowrap whitespace-pre">
-                      <p className="font-['Pretendard_JP'] font-bold leading-[1.5] text-lg tracking-[-0.36px]">
-                        {detail.text}
-                      </p>
-                      {'note' in detail && detail.note && (
-                        <p className="font-['Pretendard_JP'] font-semibold leading-[1.4] opacity-60 text-base tracking-[-0.32px]">
-                          {detail.note}
-                        </p>
-                      )}
-                    </div>
-                  ))}
-                </div>
-                <p className="font-['Pretendard_JP'] font-normal leading-[1.4] opacity-60 text-xs tracking-[-0.24px] w-full">
-                  {risk.source}
-                </p>
+              {/* Description */}
+              <p
+                className="text-white/70 text-[14px] leading-[1.7] tracking-[-0.01em]"
+                style={{ fontFamily: 'Pretendard, sans-serif' }}
+              >
+                {risk.desc}
+              </p>
+
+              {/* Stats */}
+              <div className="flex flex-col gap-2 border-t border-white/10 pt-4">
+                {risk.stats.map((stat, sIdx) => (
+                  <div key={sIdx} className="flex items-start gap-2">
+                    <span className="text-[#4DC8D8] shrink-0 mt-[3px]">
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path d="M2.5 7L5.5 10L11.5 4" stroke="#4DC8D8" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </span>
+                    <p
+                      className="text-[#4DC8D8] font-semibold text-[13px] leading-[1.5]"
+                      style={{ fontFamily: 'Pretendard, sans-serif' }}
+                    >
+                      {stat}
+                    </p>
+                  </div>
+                ))}
               </div>
+
+              {/* Source */}
+              <p className="text-white/30 text-[11px]">Источник : {risk.source}</p>
             </div>
           ))}
         </div>
+
+        {/* Bottom Note */}
+        <div className="bg-[#008095]/10 border border-[#008095]/30 rounded-2xl p-6 flex flex-col gap-2 text-center">
+          <p
+            className="text-[#4DC8D8] font-bold text-[16px] leading-[1.5]"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+            Одна чистка в год<br />снижает риск сердечно-сосудистых заболеваний на 14%.
+          </p>
+          <p className="text-white/40 text-[13px]">
+            Чистка по страховке — обязательно 1 раз в год.
+          </p>
+        </div>
+
       </div>
     </div>
   );

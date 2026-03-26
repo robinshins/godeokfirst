@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 
 type ModalType = 'privacy' | 'terms' | 'rights' | 'prices' | null;
 
@@ -9,12 +10,22 @@ export default function FooterSection() {
 
   return (
     <footer className="bg-white border-t border-[#e9ebf1]">
+      {/* 의료법 준수 면책조항 */}
+      <div className="bg-gray-100 py-4 px-4">
+        <div className="max-w-[430px] mx-auto">
+          <p className="text-[10px] text-gray-500 leading-relaxed text-center">
+            Treatment cases and reviews are based on individual experiences. Results may vary.
+            All medical procedures carry risks including bleeding, infection, and swelling. Please consult with a specialist before deciding on treatment.
+          </p>
+        </div>
+      </div>
+
       <div className="max-w-[430px] mx-auto px-4 py-10">
         <div className="space-y-20">
           {/* Footer Links */}
           <div className="flex justify-between text-[13px] font-semibold text-[#37373e]">
             <button onClick={() => setOpenModal('privacy')} className="hover:text-gray-900">Privacy Policy</button>
-            <button onClick={() => setOpenModal('terms')} className="hover:text-gray-900">Terms of Service</button>
+            <button onClick={() => setOpenModal('terms')} className="hover:text-gray-900">Terms</button>
             <button onClick={() => setOpenModal('rights')} className="hover:text-gray-900">Patient Rights</button>
             <button onClick={() => setOpenModal('prices')} className="hover:text-gray-900">Pricing</button>
           </div>
@@ -22,28 +33,50 @@ export default function FooterSection() {
           {/* Company Info */}
           <div className="space-y-8">
             <div className="space-y-3.5">
-              <div className="text-xl font-bold text-gray-900">Medis Dental Clinic</div>
+              <div className="text-xl font-bold text-gray-900">Godeok First Dental</div>
               <p className="text-[15px] font-semibold text-[#292a2f]">
-                Kyungsung Medis Dental Clinic
+                Godeok First Dental Clinic
               </p>
             </div>
 
             <div className="space-y-2 text-[15px] text-[#292a2f]">
               <p>
-                Director : <span className="font-semibold">Dr. Kim Dong-seok</span>
+                Representative : <span className="font-semibold">Lee Dong-hyun</span>
               </p>
               <p>
-                Business Registration : <span className="font-semibold">484-31-00750</span>
+                Business No. : <span className="font-semibold">210-49-03603</span>
               </p>
               <p>
-                Address : <span className="font-semibold">4F Seoung Building, 295 Suyeong-ro, Nam-gu, Busan</span>
+                Address : <span className="font-semibold">4F 401, 402, Edu Sky, 250 Godeok-ro, Pyeongtaek-si, Gyeonggi-do</span>
               </p>
               <p>
-                Phone : <span className="font-semibold">0507-1315-7475</span>
+                Phone : <span className="font-semibold">031-611-3222</span>
               </p>
-              <p>
-                Email : <span className="font-semibold">gdfst111@naver.com</span>
-              </p>
+            </div>
+          </div>
+
+          {/* 지역별 진료 안내 */}
+          <div className="pt-6 border-t border-gray-200">
+            <p className="text-[11px] text-gray-400 mb-2">Service Areas</p>
+            <div className="flex flex-wrap gap-x-3 gap-y-1">
+              {[
+                { name: '고덕동', slug: 'godeok' },
+                { name: '고덕면', slug: 'godeok-myeon' },
+                { name: '서정동', slug: 'seojeong' },
+                { name: '이충동', slug: 'ichung' },
+                { name: '장당동', slug: 'jangdang' },
+                { name: '동삭동', slug: 'dongsak' },
+                { name: '지제동', slug: 'jije' },
+                { name: '세교동', slug: 'segyo' },
+              ].map((region) => (
+                <Link
+                  key={region.slug}
+                  href={`/${region.slug}`}
+                  className="text-[11px] text-gray-400 hover:text-gray-600"
+                >
+                  {region.name}
+                </Link>
+              ))}
             </div>
           </div>
         </div>
@@ -57,10 +90,10 @@ export default function FooterSection() {
               <h2 className="text-xl font-bold">
                 {openModal === 'privacy' && 'Privacy Policy'}
                 {openModal === 'terms' && 'Terms of Service'}
-                {openModal === 'rights' && 'Patient Rights & Responsibilities'}
-                {openModal === 'prices' && 'Non-Insurance Pricing'}
+                {openModal === 'rights' && 'Patient Rights'}
+                {openModal === 'prices' && 'Non-Insurance Prices'}
               </h2>
-              <button onClick={() => setOpenModal(null)} className="text-2xl text-gray-500 hover:text-gray-900">×</button>
+              <button onClick={() => setOpenModal(null)} className="text-2xl text-gray-500 hover:text-gray-900">&times;</button>
             </div>
 
             <div className="p-6">
@@ -146,10 +179,9 @@ function PrivacyPolicy() {
       <section>
         <h3 className="font-bold text-base text-black mb-3">7. 개인정보 보호책임자</h3>
         <div className="bg-gray-50 p-4 rounded-lg mt-2">
-          <p><strong>성명:</strong> 김동석</p>
+          <p><strong>성명:</strong> 이동현</p>
           <p><strong>직책:</strong> 대표원장</p>
-          <p><strong>연락처:</strong> 0507-1315-7475</p>
-          <p><strong>이메일:</strong> gdfst111@naver.com</p>
+          <p><strong>연락처:</strong> 031-611-3222</p>
         </div>
       </section>
 
@@ -173,7 +205,7 @@ function TermsOfService() {
         <h3 className="font-bold text-base text-black mb-3">제2조 (서비스의 내용)</h3>
         <p>병원이 제공하는 서비스는 다음 각 호와 같습니다.</p>
         <ul className="list-disc pl-5 mt-2 space-y-1">
-          <li>치과 진료 서비스 (일반진료, 임플란트, 치아교정, 심미치료 등)</li>
+          <li>치과 진료 서비스 (일반진료, 임플란트, 심미치료 등)</li>
           <li>진료 예약 및 상담 서비스</li>
           <li>온라인 AI 상담 서비스</li>
           <li>진료 관련 정보 제공 서비스</li>
@@ -327,7 +359,7 @@ function PatientRights() {
         <h4 className="font-semibold text-black mb-2">문의 및 상담</h4>
         <p className="text-sm">환자의 권리 보호 및 의료분쟁과 관련한 문의사항이 있으신 경우</p>
         <div className="mt-2 space-y-1">
-          <p><strong>병원 대표번호:</strong> 0507-1315-7475</p>
+          <p><strong>병원 대표번호:</strong> 031-611-3222</p>
           <p><strong>한국의료분쟁조정중재원:</strong> 1670-2545</p>
         </div>
       </section>
@@ -338,28 +370,18 @@ function PatientRights() {
 // 비급여 진료비용
 function NonInsurancePrices() {
   const prices = [
-    { code: 'UW3021017', item: '치과 처치: 수술료/치석제거/1/3악당', classification: '치석제거 1/3', price: '10,000', minPrice: '', maxPrice: '', note: '', updated: '2021-11-18' },
-    { code: 'UW3021027', item: '치과 처치: 수술료/치석제거/상악', classification: '치석제거 상악', price: '25,000', minPrice: '', maxPrice: '', note: '', updated: '2021-11-19' },
-    { code: 'UW3021037', item: '치과 처치: 수술료/치석제거/하악', classification: '치석제거 하악', price: '25,000', minPrice: '', maxPrice: '', note: '', updated: '2021-11-20' },
-    { code: 'UW3021047', item: '치과 처치: 수술료/치석제거/전악', classification: '치석제거 전악', price: '70,000', minPrice: '', maxPrice: '', note: '', updated: '2021-11-21' },
-    { code: 'UZ0040014', item: '치과 처치: 수술료/인레이(Inlay) 및 온레이(Onlay) 간접충전(금 등을 사용한 충전치료)-인레이', classification: 'ceramic inlay', price: '300,000', minPrice: '', maxPrice: '', note: '', updated: '2021-11-24' },
-    { code: 'U02390000', item: '치과 처치: 수술료/광중합형 복합레진 충전/우식-1면', classification: '레진 우식1면', price: '100,000', minPrice: '', maxPrice: '', note: '', updated: '2021-11-25' },
-    { code: 'U02400000', item: '치과 처치: 수술료/광중합형 복합레진 충전/우식-2면', classification: '레진 2면', price: '100,000', minPrice: '', maxPrice: '', note: '', updated: '2021-11-26' },
-    { code: 'U02410000', item: '치과 처치: 수술료/광중합형 복합레진 충전/우식-3면 이상', classification: '레진 3면이상', price: '150,000', minPrice: '', maxPrice: '', note: '', updated: '2021-11-27' },
-    { code: 'UZ0050001', item: '치과 처치: 수술료/광중합형 복합레진 충전/파모', classification: '레진충전(치경부)', price: '80,000', minPrice: '', maxPrice: '', note: '', updated: '2021-11-28' },
-    { code: 'UB0010051', item: '치관의 보철료/치과임플란트(1치당)/Zirconia', classification: '임플란트 zir', price: '', minPrice: '890,000', maxPrice: '1,290,000', note: '', updated: '2021-12-01' },
-    { code: 'UW609F350', item: '치관의 보철료/크라운/Zirconia', classification: 'zirconia', price: '500,000', minPrice: '', maxPrice: '', note: 'core별도', updated: '2021-12-04' },
-    { code: 'PDZ010000', item: '제증명수수료/진단서/일반', classification: '일반진단서', price: '20,000', minPrice: '', maxPrice: '', note: '', updated: '2021-12-05' },
-    { code: 'PDZ070003', item: '제증명수수료/후유장애진단서', classification: '후유장애진단서', price: '100,000', minPrice: '', maxPrice: '', note: '', updated: '2021-12-06' },
-    { code: 'PDZ020001', item: '제증명수수료/상해진단서/3주미만', classification: '상해진단서 3주미만', price: '100,000', minPrice: '', maxPrice: '', note: '', updated: '2021-12-07' },
-    { code: 'PDZ020002', item: '제증명수수료/상해진단서/3주이상', classification: '상해진단서 3주이상', price: '150,000', minPrice: '', maxPrice: '', note: '', updated: '2021-12-08' },
-    { code: 'PDZ090007', item: '제증명수수료/확인서/진료', classification: '진료확인서', price: '3,000', minPrice: '', maxPrice: '', note: '', updated: '2021-12-09' },
-    { code: 'PDZ140001', item: '제증명수수료/향후진료비추정서/천만원미만', classification: '천만원미만', price: '50,000', minPrice: '', maxPrice: '', note: '', updated: '2021-12-10' },
-    { code: 'PDZ140002', item: '제증명수수료/향후진료비추정서/천만원이상', classification: '천만원이상', price: '100,000', minPrice: '', maxPrice: '', note: '', updated: '2021-12-11' },
-    { code: 'PDZ110101', item: '제증명수수료/진료기록사본/1~5매', classification: '1-5매', price: '1,000', minPrice: '', maxPrice: '', note: '', updated: '2021-12-12' },
-    { code: 'PDZ110003', item: '제증명수수료/진료기록(영상)/필름', classification: '필름', price: '5,000', minPrice: '', maxPrice: '', note: '', updated: '2021-12-13' },
-    { code: 'PDZ110004', item: '제증명수수료/진료기록(영상)/CD', classification: 'CD', price: '10,000', minPrice: '', maxPrice: '', note: '', updated: '2021-12-14' },
-    { code: 'PDZ160000', item: '제증명수수료/제증명서 사본', classification: '제증명사본', price: '1,000', minPrice: '', maxPrice: '', note: '', updated: '2021-12-15' },
+    { code: 'UW3021017', item: '치과 처치: 수술료/치석제거/1/3악당', classification: '치석제거 1/3', price: '10,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
+    { code: 'UW3021027', item: '치과 처치: 수술료/치석제거/상악', classification: '치석제거 상악', price: '25,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
+    { code: 'UW3021037', item: '치과 처치: 수술료/치석제거/하악', classification: '치석제거 하악', price: '25,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
+    { code: 'UW3021047', item: '치과 처치: 수술료/치석제거/전악', classification: '치석제거 전악', price: '70,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
+    { code: 'UZ0040014', item: '치과 처치: 수술료/인레이(Inlay) 및 온레이(Onlay)', classification: 'ceramic inlay', price: '300,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
+    { code: 'U02390000', item: '치과 처치: 수술료/광중합형 복합레진 충전/우식-1면', classification: '레진 우식1면', price: '100,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
+    { code: 'U02400000', item: '치과 처치: 수술료/광중합형 복합레진 충전/우식-2면', classification: '레진 2면', price: '100,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
+    { code: 'U02410000', item: '치과 처치: 수술료/광중합형 복합레진 충전/우식-3면 이상', classification: '레진 3면이상', price: '150,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
+    { code: 'UB0010051', item: '치관의 보철료/치과임플란트(1치당)/Zirconia', classification: '임플란트 zir', price: '', minPrice: '890,000', maxPrice: '1,290,000', note: '', updated: '2024-01-01' },
+    { code: 'UW609F350', item: '치관의 보철료/크라운/Zirconia', classification: 'zirconia', price: '500,000', minPrice: '', maxPrice: '', note: 'core별도', updated: '2024-01-01' },
+    { code: 'PDZ010000', item: '제증명수수료/진단서/일반', classification: '일반진단서', price: '20,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
+    { code: 'PDZ090007', item: '제증명수수료/확인서/진료', classification: '진료확인서', price: '3,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
   ];
 
   return (
@@ -367,7 +389,7 @@ function NonInsurancePrices() {
       <div className="bg-blue-50 p-4 rounded-lg text-sm text-gray-700">
         <p className="font-semibold mb-2">비급여 진료비용 안내</p>
         <p className="text-xs leading-relaxed">
-          본 비급여 진료비용은 2021년 11월 기준으로 작성되었으며, 환자의 구강 상태 및 사용 재료에 따라 변동될 수 있습니다.
+          본 비급여 진료비용은 2024년 기준으로 작성되었으며, 환자의 구강 상태 및 사용 재료에 따라 변동될 수 있습니다.
           정확한 진료비용은 내원 시 상담을 통해 안내드립니다.
         </p>
       </div>
@@ -375,15 +397,14 @@ function NonInsurancePrices() {
       <div className="overflow-x-auto -mx-6 px-6">
         <table className="w-full text-xs border-collapse">
           <thead>
-            <tr className="bg-[#6b8cce] text-white">
+            <tr className="bg-[#008095] text-white">
               <th className="border border-gray-300 px-2 py-2 text-left min-w-[100px]">코드</th>
-              <th className="border border-gray-300 px-2 py-2 text-left min-w-[200px]">중분류 / 소분류 / 상세분류</th>
-              <th className="border border-gray-300 px-2 py-2 text-left min-w-[120px]">의료기관 사용명칭</th>
+              <th className="border border-gray-300 px-2 py-2 text-left min-w-[200px]">중분류 / 소분류</th>
+              <th className="border border-gray-300 px-2 py-2 text-left min-w-[120px]">사용명칭</th>
               <th className="border border-gray-300 px-2 py-2 text-right min-w-[80px]">비용</th>
               <th className="border border-gray-300 px-2 py-2 text-right min-w-[80px]">최저비용</th>
               <th className="border border-gray-300 px-2 py-2 text-right min-w-[80px]">최고비용</th>
-              <th className="border border-gray-300 px-2 py-2 text-left min-w-[150px]">특이사항</th>
-              <th className="border border-gray-300 px-2 py-2 text-center min-w-[90px]">최종변경일</th>
+              <th className="border border-gray-300 px-2 py-2 text-left min-w-[80px]">특이사항</th>
             </tr>
           </thead>
           <tbody>
@@ -402,7 +423,6 @@ function NonInsurancePrices() {
                   {item.maxPrice ? `${item.maxPrice}원` : '-'}
                 </td>
                 <td className="border border-gray-300 px-2 py-2 text-xs text-gray-600">{item.note}</td>
-                <td className="border border-gray-300 px-2 py-2 text-center text-gray-500">{item.updated}</td>
               </tr>
             ))}
           </tbody>

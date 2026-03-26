@@ -1,21 +1,47 @@
+'use client';
+
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function FixedCTAButton() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const heroSectionHeight = 700;
+      setIsVisible(window.scrollY > heroSectionHeight);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-[9999] px-4 pb-6 pointer-events-none">
-      <div className="max-w-[430px] mx-auto w-full pointer-events-auto">
-        <Link href="/mn/consultation">
-          <button className="w-full h-16 bg-[#006aff] text-white rounded-[20px] font-bold text-lg flex items-center justify-center gap-3 shadow-[0_12px_40px_rgba(0,106,255,0.4)] transition-transform active:scale-95" style={{ fontFamily: "'Noto Sans', sans-serif" }}>
-            <div className="flex flex-col items-center justify-center gap-0.5">
-              <span className="text-xs opacity-80 font-medium">1 минутанд</span>
-              <span className="text-xl">AI Зөвлөгөө эхлүүлэх</span>
-            </div>
-            <Image src="/icons/arrow-right-white.svg" alt="Arrow" width={24} height={24} />
-          </button>
-        </Link>
+    <div
+      className={`fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-gray-100 transition-transform duration-300 ${
+        isVisible ? 'translate-y-0' : 'translate-y-full'
+      }`}
+    >
+      <div className="max-w-[430px] mx-auto px-4 py-3">
+        <div className="flex gap-3 w-full">
+          <Link href="/mn/consultation" className="flex-1">
+            <button className="w-full h-14 bg-[#008095] text-white text-lg font-bold rounded-[18px] hover:bg-[#006B7A] transition-colors shadow-lg">
+              AI Зөвлөгөө
+            </button>
+          </Link>
+          <a
+            href="https://naver.me/GSD1OqoS"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="h-14 bg-[#03C75A] text-white text-base font-bold px-4 rounded-[18px] hover:bg-[#02b351] transition-colors shadow-lg">
+              N Захиалга
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   );
 }
-

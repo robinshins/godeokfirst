@@ -3,47 +3,79 @@ import Image from 'next/image';
 export default function ToothDiscolorationSection() {
   const causes = [
     {
-      title: 'Kofe va Choy',
-      desc: 'Doimiy kofe va choy iste\'mol qilish tish emalida dog\'lar hosil qiladi.',
-      image: '/images/coffee.jpg'
+      image: '/icons/coffee.svg',
+      title: 'Qahva',
+      description: 'Har kuni ichiladigan qahva\ntishlarni sargʼaytirib yuboradi'
     },
     {
+      image: '/icons/smoking.svg',
       title: 'Chekish',
-      desc: 'Tamaki tarkibidagi nikotin tishlarni juda tez sarg\'aytiradi.',
-      image: '/images/smoking.jpg'
+      description: 'Nikotin va smola\ntish ranglanishining asosiy sababi'
     },
     {
-      title: 'Yosh o\'tishi',
-      desc: 'Yosh o\'tgan sari tish emali yupqalashib, ichki sarg\'ish rang ko\'zga tashlanadi.',
-      image: '/images/aging.jpg'
+      image: '/icons/wine.svg',
+      title: 'Vino',
+      description: 'Qizil vinodagi tannin\ntish ranglanishiga sabab boʼladi'
     }
   ];
 
   return (
-    <div className="bg-[#fffafb] w-full">
-      <div className="max-w-[430px] mx-auto px-4 py-16">
-        <div className="flex flex-col gap-10">
-          <div className="flex flex-col gap-3 text-center">
-            <h2 className="text-[28px] font-bold text-[#111827]">Tish sarg'ayishi sabablari</h2>
-            <p className="text-[#6b7280]">Tishingiz nima uchun rangini yo'qotgan?</p>
+    <div className="bg-[#21314E] w-full">
+      <div className="max-w-[375px] mx-auto px-4 py-[60px]">
+        {/* Section Header */}
+        <div className="flex flex-col gap-3 mb-[26px]">
+          <div className="flex flex-col gap-4 items-center justify-center w-full">
+            <div className="flex flex-col gap-3 items-center justify-center text-center text-white w-full">
+              <p className="font-['Nanum_Myeongjo'] font-extrabold text-[60px] leading-[0.2] tracking-[-3.6px] w-full">
+                &#x201C;
+              </p>
+              <h2 className="font-['Pretendard_JP'] font-bold text-[32px] leading-[1.35] tracking-[-0.64px] w-full">
+                Tishlaringiz rangi<br />
+                yaxshimi?
+              </h2>
+            </div>
           </div>
+          <p className="font-['Pretendard_JP'] font-semibold text-[#e9ebf1] text-base leading-[1.4] tracking-[-0.32px] text-center">
+            Quyidagi odatlar davom etsa<br />
+            tishlar sargʼayib ranglanadi
+          </p>
+        </div>
 
-          <div className="flex flex-col gap-6">
-            {causes.map((cause, index) => (
-              <div key={index} className="flex gap-6 items-center p-6 bg-white rounded-[24px] shadow-sm">
-                <div className="w-20 h-20 relative rounded-xl overflow-hidden shrink-0">
-                  <Image src={cause.image} alt={cause.title} fill className="object-cover" />
+        {/* Divider Line */}
+        <div className="bg-white/50 h-10 w-0.5 mx-auto mb-[26px]" />
+
+        {/* Causes Cards */}
+        <div className="flex flex-col gap-3 w-full">
+          {causes.map((cause, index) => (
+            <div
+              key={index}
+              className="bg-white border border-[#f3f6fb] rounded-[24px] p-6 w-full"
+            >
+              <div className="flex gap-[30px] items-center justify-center w-full">
+                {/* Image */}
+                <div className="relative shrink-0 w-20 h-20">
+                  <Image
+                    src={cause.image}
+                    alt={cause.title}
+                    fill
+                    className="object-contain"
+                  />
                 </div>
-                <div className="flex flex-col gap-1">
-                  <h3 className="font-bold text-[#374151]">{cause.title}</h3>
-                  <p className="text-[#6b7280] text-sm leading-[1.5]">{cause.desc}</p>
+
+                {/* Text Content */}
+                <div className="flex-1 flex flex-col gap-2">
+                  <h3 className="font-['Pretendard_JP'] font-bold text-[#37373e] text-[22px] leading-[1.4] tracking-[-0.44px]">
+                    {cause.title}
+                  </h3>
+                  <p className="font-['Pretendard_JP'] font-semibold text-[#5d5f6d] text-base leading-[1.4] tracking-[-0.32px] whitespace-pre-line">
+                    {cause.description}
+                  </p>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
   );
 }
-

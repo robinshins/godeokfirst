@@ -1,77 +1,57 @@
 export default function VideoSection() {
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full flex justify-center bg-[#f8fbfd] -mt-1">
       <div className="py-[60px] px-4 w-full max-w-[430px]">
         <div className="flex flex-col gap-10">
           {/* Text Content */}
           <div className="flex flex-col gap-3 text-center">
-            <h2 className="text-[32px] font-bold leading-[1.35] tracking-[-0.02em] text-black">
+            <p className="text-[15px] font-bold text-[#4DC8D8] tracking-[3px] uppercase">
+              VIDEO
+            </p>
+            <h2 className="text-[32px] font-bold leading-[1.35] tracking-[-0.02em] text-[#008095]">
               Everything About Implants<br />
-              Explained in This Video
+              Watch the Video
             </h2>
-            <p className="text-base font-semibold leading-[1.4] tracking-[-0.02em] text-[#727582]">
-              From dentures, implants, full implants, full-arch implants,<br />
-              to digital implants - all treatment options explained
+            <p className="text-base font-medium leading-[1.4] tracking-[-0.02em] text-[#3e3a3a]">
+              Our head doctor explains<br />
+              everything directly
             </p>
           </div>
 
-          {/* YouTube Video */}
-          <div className="flex justify-center">
-            <div className="relative w-full aspect-video rounded-[20px] overflow-hidden shadow-lg">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/9kP02X04THc"
-                title="Complete Implant Guide Video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="absolute top-0 left-0 w-full h-full"
-              />
+          {/* YouTube Placeholder - main video */}
+          <div className="flex flex-col gap-3">
+            <div className="relative w-full aspect-video rounded-[20px] overflow-hidden bg-[#e9ebf1] flex items-center justify-center">
+              <div className="flex flex-col items-center gap-3 text-center px-6">
+                <div className="w-16 h-16 rounded-full bg-[#008095]/20 flex items-center justify-center">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#008095" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polygon points="5 3 19 12 5 21 5 3" fill="#008095" />
+                  </svg>
+                </div>
+                <p className="text-[#008095] font-bold text-[15px]">Video Coming Soon</p>
+                <p className="text-[#727582] text-[13px] leading-[1.5]">Our implant video will be<br />uploaded soon</p>
+              </div>
             </div>
           </div>
 
-          {/* Real Patient Results Video Section */}
-          <div className="flex flex-col gap-6 pt-10">
-            <div className="flex flex-col gap-3 text-center">
-              <h2 className="text-[32px] font-bold leading-[1.35] tracking-[-0.02em] text-black">
-                Real Results<br />
-                Proven by Actual Patients
-              </h2>
-              <p className="text-base font-semibold leading-[1.4] tracking-[-0.02em] text-[#727582]">
-                See for yourself why they chose Medis Dental<br />
-                and confidently recommend us to others
-              </p>
-            </div>
-
-            {/* Patient Results YouTube Video */}
-            <div className="flex flex-col gap-4">
-              <div className="flex justify-center">
-                <div className="relative w-full aspect-video rounded-[20px] overflow-hidden shadow-lg">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/GyzFVUfRqmk"
-                    title="Real Patient Treatment Results Video"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                    className="absolute top-0 left-0 w-full h-full"
-                  />
+          {/* Shorts Placeholder */}
+          <div className="grid grid-cols-2 gap-4">
+            {['Implant Surgery Process', 'Implant Care Guide'].map((title, i) => (
+              <div key={i} className="flex flex-col gap-2">
+                <div className="relative w-full aspect-[9/16] rounded-[16px] overflow-hidden bg-[#e9ebf1] flex items-center justify-center">
+                  <div className="flex flex-col items-center gap-2 text-center px-3">
+                    <div className="w-10 h-10 rounded-full bg-[#008095]/20 flex items-center justify-center">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#008095" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <polygon points="5 3 19 12 5 21 5 3" fill="#008095" />
+                      </svg>
+                    </div>
+                    <p className="text-[#727582] text-[11px]">Coming Soon</p>
+                  </div>
                 </div>
+                <p className="text-[13px] font-semibold text-[#3e3a3a] text-center leading-[1.3]">
+                  {title}
+                </p>
               </div>
-              <div className="flex justify-center">
-                <div className="relative w-full aspect-video rounded-[20px] overflow-hidden shadow-lg">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/O4pDF0w17iE"
-                    title="Real Patient Review Video 2"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                    className="absolute top-0 left-0 w-full h-full"
-                  />
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

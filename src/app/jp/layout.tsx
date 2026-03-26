@@ -1,128 +1,24 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: {
-    default: '慶星大メディス歯科 | 釜山インプラント専門',
-    template: '%s | 慶星大メディス歯科',
+  "title": {
+    "default": "コドクファースト歯科 | 平沢・高徳エデュタウン",
+    "template": "%s | コドクファースト歯科"
   },
-  description: '釜山大延洞の専門歯科。全顎インプラント、デジタルインプラント、虫歯治療、親知らず抜歯、ホワイトニング専門。10年間再手術ゼロの実績。',
-  keywords: [
-    '釜山歯科',
-    '韓国インプラント',
-    '釜山インプラント',
-    '韓国歯科観光',
-    '日本語対応歯科韓国',
-    '親知らず抜歯韓国',
-    'ホワイトニング韓国',
-    '慶星大メディス歯科',
-  ],
-  alternates: {
-    canonical: 'https://gdfirstdent.com/jp',
-    languages: {
-      'ko-KR': 'https://gdfirstdent.com',
-      'en-US': 'https://gdfirstdent.com/en',
-      'ja-JP': 'https://gdfirstdent.com/jp',
-      'zh-CN': 'https://gdfirstdent.com/cn',
-    },
+  "description": "高徳エデュタウン初の歯科。統合歯科専門医が直接治療。",
+  "alternates": {
+    "canonical": "https://gdfirstdent.com/jp"
   },
-  openGraph: {
-    type: 'website',
-    locale: 'ja_JP',
-    url: 'https://gdfirstdent.com/jp',
-    siteName: '慶星大メディス歯科',
-    title: '慶星大メディス歯科 | 釜山インプラント専門',
-    description: '釜山大延洞の専門歯科。全顎インプラント、デジタルインプラント、親知らず抜歯専門。',
-    images: [
-      {
-        url: '/고덕og이미지.png',
-        width: 1200,
-        height: 630,
-        alt: '慶星大メディス歯科 - 釜山インプラント専門',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: '慶星大メディス歯科 | 釜山インプラント専門',
-    description: '釜山大延洞の専門歯科。全顎インプラント、デジタルインプラント、親知らず抜歯専門。',
-    images: ['/고덕og이미지.png'],
-  },
+  "openGraph": {
+    "siteName": "コドクファースト歯科",
+    "title": "コドクファースト歯科 | 平沢・高徳エデュタウン",
+    "description": "高徳エデュタウン初の歯科。統合歯科専門医が直接治療。",
+    "url": "https://gdfirstdent.com/jp",
+    "locale": "ja_JP",
+    "type": "website"
+  }
 };
 
-const jsonLdJp = {
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'Dentist',
-      '@id': 'https://gdfirstdent.com/jp/#dentist',
-      name: '慶星大メディス歯科',
-      alternateName: 'メディス歯科',
-      description: '釜山大延洞の専門歯科。全顎インプラント、デジタルインプラント、虫歯治療、親知らず抜歯、ホワイトニング専門。',
-      url: 'https://gdfirstdent.com/jp',
-      telephone: '+82-51-628-2879',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: '釜山広域市南区水営路312、3階',
-        addressLocality: '釜山',
-        addressRegion: '南区',
-        postalCode: '48434',
-        addressCountry: 'KR',
-      },
-      geo: {
-        '@type': 'GeoCoordinates',
-        latitude: 35.1379,
-        longitude: 129.0988,
-      },
-      image: 'https://gdfirstdent.com/고덕og이미지.png',
-      availableLanguage: ['Korean', 'Japanese', 'English'],
-      medicalSpecialty: ['Dental Implant', 'Cosmetic Dentistry', 'General Dentistry'],
-    },
-    {
-      '@type': 'ItemList',
-      itemListElement: [
-        {
-          '@type': 'ListItem',
-          position: 1,
-          item: {
-            '@type': 'Service',
-            name: '全顎インプラント',
-            description: '3Dデジタルガイドによる精密な全顎インプラント手術',
-            url: 'https://gdfirstdent.com/jp#implant',
-          },
-        },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          item: {
-            '@type': 'Service',
-            name: '親知らず抜歯',
-            description: '口腔外科専門医による親知らず抜歯',
-            url: 'https://gdfirstdent.com/jp/wisdom-tooth',
-          },
-        },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          item: {
-            '@type': 'Service',
-            name: 'ホワイトニング',
-            description: '専門ホワイトニング施術',
-            url: 'https://gdfirstdent.com/jp/whitening',
-          },
-        },
-      ],
-    },
-  ],
-};
-
-export default function JpLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdJp) }}
-      />
-      {children}
-    </>
-  );
+export default function Layout({ children }: { children: React.ReactNode }) {
+  return <>{children}</>;
 }

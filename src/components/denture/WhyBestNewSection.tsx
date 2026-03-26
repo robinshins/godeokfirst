@@ -11,11 +11,11 @@ export default function WhyBestNewSection() {
         <FadeInSection className="flex flex-col gap-4 items-center justify-center relative shrink-0 w-full">
           <div className="h-6 overflow-clip relative shrink-0 w-[168px]">
             <Image
-              src="/images/goduk_images/고덕퍼스트치과로고 1.svg"
+              src="/고덕퍼스트치과-로고-(블랙).png"
               alt="고덕퍼스트치과"
               width={168}
               height={24}
-              className="w-full h-full object-contain"
+              className="h-20 w-auto object-contain -mt-[18px]"
             />
           </div>
 

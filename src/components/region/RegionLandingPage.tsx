@@ -85,7 +85,7 @@ export default function RegionLandingPage({ data }: { data: RegionData }) {
             </div>
 
             <div className="flex justify-center">
-              <Image src="/images/goduk_images/고덕퍼스트치과_Logo_white.svg" alt="고덕퍼스트치과" width={180} height={32} />
+              <Image src="/고덕퍼스트치과-로고-(화이트).png" alt="고덕퍼스트치과" width={375} height={84} />
             </div>
 
             <h1

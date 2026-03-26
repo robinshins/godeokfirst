@@ -5,22 +5,22 @@ export default function ToothDiscolorationSection() {
     {
       image: '/icons/coffee.svg',
       title: 'Coffee',
-      description: 'Daily coffee consumption\ncan yellow your teeth'
+      description: 'Daily coffee\nmakes your teeth yellow'
     },
     {
       image: '/icons/smoking.svg',
       title: 'Smoking',
-      description: 'Nicotine and tar are\nmain culprits of discoloration'
+      description: 'Nicotine and tar are\nthe main culprits of tooth discoloration'
     },
     {
       image: '/icons/wine.svg',
       title: 'Wine',
-      description: 'Tannins in red wine\ncause tooth staining'
+      description: 'Tannins in red wine\ncause staining on teeth'
     }
   ];
 
   return (
-    <div className="bg-[#0b1727] w-full">
+    <div className="bg-[#21314E] w-full">
       <div className="max-w-[375px] mx-auto px-4 py-[60px]">
         {/* Section Header */}
         <div className="flex flex-col gap-3 mb-[26px]">
@@ -29,15 +29,15 @@ export default function ToothDiscolorationSection() {
               <p className="font-['Nanum_Myeongjo'] font-extrabold text-[60px] leading-[0.2] tracking-[-3.6px] w-full">
                 &#x201C;
               </p>
-              <h2 className="font-['Pretendard'] font-bold text-[32px] leading-[1.35] tracking-[-0.64px] w-full">
-                How Are<br />
-                Your Teeth?
+              <h2 className="font-['Pretendard_JP'] font-bold text-[32px] leading-[1.35] tracking-[-0.64px] w-full">
+                How is the color<br />
+                of your teeth?
               </h2>
             </div>
           </div>
-          <p className="font-['Pretendard'] font-semibold text-[#e9ebf1] text-base leading-[1.4] tracking-[-0.32px] text-center">
+          <p className="font-['Pretendard_JP'] font-semibold text-[#e9ebf1] text-base leading-[1.4] tracking-[-0.32px] text-center">
             If these habits continue,<br />
-            your teeth will become discolored
+            your teeth will turn yellow
           </p>
         </div>
 
@@ -64,10 +64,10 @@ export default function ToothDiscolorationSection() {
 
                 {/* Text Content */}
                 <div className="flex-1 flex flex-col gap-2">
-                  <h3 className="font-['Pretendard'] font-bold text-[#37373e] text-[22px] leading-[1.4] tracking-[-0.44px]">
+                  <h3 className="font-['Pretendard_JP'] font-bold text-[#37373e] text-[22px] leading-[1.4] tracking-[-0.44px]">
                     {cause.title}
                   </h3>
-                  <p className="font-['Pretendard'] font-semibold text-[#5d5f6d] text-base leading-[1.4] tracking-[-0.32px] whitespace-pre-line">
+                  <p className="font-['Pretendard_JP'] font-semibold text-[#5d5f6d] text-base leading-[1.4] tracking-[-0.32px] whitespace-pre-line">
                     {cause.description}
                   </p>
                 </div>

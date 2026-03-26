@@ -1,92 +1,101 @@
 import Image from 'next/image';
 
 export default function DoctorSection() {
-  const doctors = [
-    {
-      name: 'Ким Дунг Сог',
-      position: 'Ерөнхий эмч',
-      image: '/images/dr-kim-dongseok.jpg',
-      credentials: [
-        'Нэгдсэн шүдний эмчилгээний магистр',
-        'Эрүүл мэнд, халамжийн яамнаас баталгаажсан нэгдсэн шүдний эмчилгээний мэргэжилтэн'
-      ],
-      details: [
-        'Сөүлийн Үндэсний Их Сургуулийн Шүдний дээд сургуулийн дээд шатны курс төгссөн',
-        'Сөүлийн Үндэсний Их Сургуулийн Шүдний дээд сургуулийн имплантын курс төгссөн',
-        'Дэлхийн эрүү нүүрний имплантын холбооны (ICOI) гишүүн',
-        'Солонгосын эрүү нүүрний имплантын холбооны гишүүн',
-        'Техасын их сургуулийн шүдний протезын холбооны гишүүн',
-        'О스템 имплантын зөвлөх эмч',
-        'Дижитал гайд хагалгааны 1,500 гаруй тохиолдол'
-      ]
-    }
-  ];
+  const doctor = {
+    name: 'Ли Донхён',
+    position: 'Ерөнхий эмч',
+ image:'/images/goduk_images/.jpeg',
+    credentials: [
+      'Шүдний эмчийн магистр',
+      'Нийлмэл шүдний мэргэжилтэн(Эрүүл мэндийн яам баталгаажуулалт)'
+    ],
+    details: [
+      'Чосон их сургуулийн шүдний эмнэлгийн зочин профессор',
+'Сөүлийн их сургуулийн шүдний эмчилгээниймагистрантура Имплант төгссөн',
+      'Сөүлийн үндэсний их сургуулийн дэвшилтэт шүдний эмчилгээний курс',
+      'Сөүл Кёнги ахлах сургууль төгссөн',
+      'Кёнги ахлах сургуулийн төгсөгчдийн шүдний эмнэлэг',
+'Нийлмэл шүдний нийгэмлэгийн гишүүн',
+      'Osstem, Point, Dentis Имплант судалгааны зөвлөлийн гишүүнвон',
+'Pennsylvania univ. эмчилгээ төгссөн',
+'ATC Implant Advanced төгссөн',
+      'KAYA шүдний эмнэлэгэмнэлэг Prosthetic Course төгссөн',
+'JPDA шүдний эмнэлэг удаа төгссөн',
+      'Эрүүний үений эмгэгийн курс',
+      'Өмнө нь) E-Pyeonhan Sesang Dental захирал',
+      'Өмнө нь) First In Dental захирал'
+    ]
+  };
 
   return (
-    <div id="doctor" className="bg-white w-full">
-      <div className="max-w-[430px] mx-auto px-4 py-16">
-        <div className="flex flex-col gap-12">
-          {/* Header */}
-          <div className="flex flex-col gap-4 text-center">
-            <h2 className="text-[32px] font-bold text-[#111827] leading-[1.3] tracking-[-0.64px]" style={{ fontFamily: 'Noto Sans, sans-serif' }}>
-              0 удаагийн давтан хагалгааны амжилт<br />
-              Мэргэжлийн эмч нарын баг
-            </h2>
-            <p className="text-base text-[#4b5563] leading-[1.6] tracking-[-0.32px]" style={{ fontFamily: 'Noto Sans, sans-serif' }}>
-              Кёнсон Мэдиш шүдний эмнэлэг нь өвчтөн бүрт<br />
-              сэтгэл гарган үнэн зөв эмчилгээг амлаж байна.
-            </p>
+    <div id="doctor" style={{ background: 'linear-gradient(161deg, #21314E 13.86%, #1a2740 19.07%, #0f1a2d 28.55%)' }}>
+      <div className="max-w-[430px] mx-auto px-4 py-[60px]">
+        {/* Section Header */}
+        <div className="flex flex-col items-center gap-5 mb-12">
+          <div className="h-11 relative shrink-0 overflow-hidden">
+            <Image
+              src="/고덕퍼스트치과-로고-(화이트).png"
+              alt="Godeok First Dental"
+              width={375}
+              height={84}
+              className="h-20 w-auto object-contain -mt-[18px]"
+            />
+          </div>
+          <p className="text-[17px] font-['Pretendard_JP'] font-bold text-[#4DC8D8] uppercase tracking-[2.04px] leading-[32px]">
+            Нийлмэл шүдний мэргэжилтэн Эмч Ли Донхён
+          </p>
+          <h2 className="text-[36px] font-['Pretendard_JP'] font-bold text-white leading-[1.35] tracking-[-0.72px] text-center">
+            Godeok First Dental
+            <br />
+            Шилдэг эмч нар
+          </h2>
+        </div>
+
+        {/* Doctor Card */}
+        <div className="flex flex-col gap-8 mt-[60px]">
+          {/* Doctor Image */}
+          <div className="bg-white rounded-[20px] overflow-hidden shadow-lg h-[350px] relative">
+            <Image
+              src={doctor.image}
+              alt={`${doctor.name} ${doctor.position}`}
+              fill
+              className="object-cover object-top"
+            />
           </div>
 
-          {/* Doctors List */}
-          <div className="flex flex-col gap-16">
-            {doctors.map((doctor, index) => (
-              <div key={index} className="flex flex-col gap-8">
-                {/* Doctor Image */}
-                <div className="relative w-full aspect-[4/5] rounded-[24px] overflow-hidden bg-[#f3f4f6]">
-                  <Image
-                    src={doctor.image}
-                    alt={doctor.name}
-                    fill
-                    className="object-cover object-top"
-                  />
-                </div>
+          {/* Doctor Info */}
+          <div className="text-white">
+            <div className="flex items-center gap-2 mb-5">
+              <h3 className="text-3xl font-bold">{doctor.name}</h3>
+              <span className="text-lg font-bold">{doctor.position}</span>
+            </div>
 
-                {/* Doctor Info */}
-                <div className="flex flex-col gap-6">
-                  <div className="flex flex-col gap-2">
-                    <p className="text-[#006aff] font-bold text-lg">{doctor.position}</p>
-                    <h3 className="text-[36px] font-extrabold text-[#111827]">{doctor.name}</h3>
-                  </div>
+            <div className="text-2xl font-bold mb-8 leading-[1.6]">
+              {doctor.credentials.map((cred, i) => (
+                <p key={i} className={i === 0 ? 'mb-0' : ''}>{cred}</p>
+              ))}
+            </div>
 
-                  {/* Credentials */}
-                  <div className="flex flex-col gap-3">
-                    {doctor.credentials.map((cred, idx) => (
-                      <div key={idx} className="flex gap-2">
-                        <div className="w-1.5 h-1.5 rounded-full bg-[#006aff] mt-2.5 shrink-0" />
-                        <p className="text-[17px] font-bold text-[#374151] leading-[1.5]">{cred}</p>
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* Divider */}
-                  <div className="h-[1px] bg-[#e5e7eb] w-full" />
-
-                  {/* Details */}
-                  <div className="flex flex-col gap-2">
-                    {doctor.details.map((detail, idx) => (
-                      <p key={idx} className="text-[15px] text-[#6b7280] leading-[1.6] tracking-[-0.3px]">
-                        • {detail}
-                      </p>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
+            <ul className="space-y-2 text-sm opacity-80">
+              {doctor.details.map((detail, i) => (
+                <li key={i} className="leading-[1.4] pl-5 relative before:content-['•'] before:absolute before:left-0">
+                  {detail}
+                </li>
+              ))}
+            </ul>
           </div>
+        </div>
+
+        {/* Credentials Photo */}
+        <div className="mt-12 rounded-[20px] overflow-hidden shadow-lg relative h-[250px]">
+          <Image
+            src="/images/goduk_images/원장이력 등 걸려있는사진.jpg"
+            alt="Godeok First Dental эмч ажлын туршлага болон баталгаажуулалт"
+            fill
+            className="object-cover"
+          />
         </div>
       </div>
     </div>
   );
 }
-

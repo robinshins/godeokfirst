@@ -6,18 +6,18 @@ export default function InHouseLabSection() {
   const benefits = [
     {
       icon: '/icons/shield.svg',
-      title: 'Răng tạm với độ bền tối đa',
-      description: 'Với vật liệu đặc biệt từ quan hệ đối tác độc quyền, bạn có thể ăn uống bình thường ngay sau khi phẫu thuật'
+      title: 'Răng tạm cường độ cao nhất',
+      description: 'Với vật liệu đặc biệt từ đối tác độc quyền\nNgay sau phẫu thuậtcó thể ăn uống bình thường'
     },
     {
       icon: '/icons/tooth-xray-spot.svg',
-      title: 'Thay thế ngay lập tức nếu bị hỏng',
-      description: 'Không cần lo lắng về những hỏng hóc có thể xảy ra. Chúng tôi sẽ thay thế ngay lập tức tại phòng lab trong nha khoa'
+      title: 'Thay thế ngay khi hỏng',
+      description: 'Không lo lắng ngay cả khi hỏng có thể xảy ra\nThay thế ngay tại phòng lab nội bộ'
     },
     {
       icon: '/icons/smile.svg',
-      title: 'Không có ngày nào thiếu răng',
-      description: 'Từ ngay sau khi phẫu thuật cho đến khi lắp phục hình cuối cùng, không có một ngày nào bạn phải sống mà thiếu răng'
+      title: 'Không ngày nào thiếu răng',
+      description: 'Ngay sau phẫu thuật đến lắp phục hình cuối, không có ngày nào phải sống thiếu răng'
     }
   ];
 
@@ -27,11 +27,12 @@ export default function InHouseLabSection() {
       {/* Header */}
       <div className="flex flex-col gap-3 items-center justify-center leading-[0] not-italic relative shrink-0 text-center w-full">
         <h2 className="font-bold leading-[1.35] text-[32px] text-black tracking-[-0.64px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-          Hệ thống Implant<br />
-          phục hình tức thì
+          Phục hình ngay<br />
+          Hệ thống Implant
         </h2>
         <p className="font-semibold leading-[1.4] text-[#727582] text-base tracking-[-0.32px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-        Chúng tôi hướng tới việc sản xuất phục hình nhanh chóng với quy trình kỹ thuật số và phòng lab kỹ thuật số ngay tại nha khoa.<br />
+        Với quy trình kỹ thuật số và phòng lab nội bộ kỹ thuật số <br />
+        hướng đến chế tạo phục hình nhanh.<br />
         </p>
       </div>
 
@@ -42,19 +43,19 @@ export default function InHouseLabSection() {
           <div className="h-[192px] relative shrink-0 w-full">
             <Image
               src="/images/lab-1.png"
-              alt="Sản xuất phục hình nhanh chóng và tinh xảo"
+              alt="Chế tạo phục hình nhanh và tinh xảo"
               fill
               className="object-cover"
             />
           </div>
           <div className="bg-[#0b1727] box-border flex flex-col gap-6 items-start not-italic p-6 relative shrink-0 text-center w-full">
             <p className="font-bold leading-[1.35] text-2xl text-white tracking-[-0.48px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-              Sản xuất phục hình nhanh chóng và tinh xảo
+              Chế tạo phục hình nhanh và tinh xảo
             </p>
             <p className="font-semibold leading-[1.4] opacity-80 text-[#e9ebf1] text-[15px] tracking-[-0.3px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-              Bác sĩ trưởng cung cấp dịch vụ điều trị thoải mái dựa trên kinh nghiệm lâm sàng phong phú và trực tiếp sản xuất phục hình bằng máy phay kỹ thuật số<br />
+              Bác sĩ trưởng với kinh nghiệm lâm sàng phong phú, cung cấp khám thoải mái và sử dụng máy milling để trực tiếp chế tạo phục hình<br />
               <br />
-              Sau khi sản xuất, chúng tôi kiểm tra lại một lần nữa xem có sự khó chịu hay tác dụng phụ nào không, đồng thời quản lý liên tục sau khi điều trị để nỗ lực nâng cao mức độ hài lòng của bệnh nhân
+              Sau chế tạo, kiểm tra thêm lần nữa xem có khó chịu hay tác dụng phụ không, tiếp tục chăm sóc sau điều trị và nỗ lực hết sức để nâng cao sự hài lòng của bệnh nhân
             </p>
           </div>
         </div>
@@ -64,19 +65,19 @@ export default function InHouseLabSection() {
           <div className="h-[192px] relative shrink-0 w-full">
             <Image
               src="/images/lab-2.png"
-              alt="Nếu không có phòng lab tại nha khoa?"
+              alt="Nếu không có phòng lab nội bộ?"
               fill
               className="object-cover"
             />
           </div>
           <div className="bg-[#0b1727] box-border flex flex-col gap-6 items-start not-italic p-6 relative shrink-0 text-center w-full">
             <p className="font-bold leading-[1.35] text-2xl text-white tracking-[-0.48px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-              Nếu không có phòng lab tại nha khoa?
+              Nếu không có phòng lab nội bộ?
             </p>
             <p className="font-semibold leading-[1.4] opacity-80 text-[#e9ebf1] text-[15px] tracking-[-0.3px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-              Nếu không có phòng lab tại nha khoa, việc yêu cầu sản xuất phục hình tại các phòng lab bên ngoài sẽ mất nhiều thời gian<br />
+              Nếu không có phòng lab nội bộ, phải ủy thác chế tạo phục hình cho phòng lab bên ngoài nên mất nhiều thời gian<br />
               <br />
-              Có những nhược điểm như sự phiền phức khi phải gửi ra ngoài một lần nữa để phản hồi quá trình sản xuất và chỉnh sửa, cũng như khó khăn trong việc chỉnh sửa các chi tiết nhỏ
+              Có nhược điểm là phiền phức khi phải gửi lại bên ngoài để phản ánh quá trình chế tạo và sửa chữa, và khó thực hiện sửa chữa tinh vi
             </p>
           </div>
         </div>
@@ -106,4 +107,3 @@ export default function InHouseLabSection() {
     </div>
   );
 }
-

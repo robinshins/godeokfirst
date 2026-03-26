@@ -1,21 +1,22 @@
-import { Metadata } from 'next';
-import ConsultationForm from '@/components/th/ConsultationForm';
-import GNB from '@/components/th/GNB';
-import DoctorIntroSection from '@/components/th/consultation/DoctorIntroSection';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'ขอรับคำปรึกษา - คลินิกทันตกรรม Kyungsung Medis',
-  description: 'ขอรับคำปรึกษาทันตกรรม AI ฟรีจากผู้เชี่ยวชาญที่มีประสบการณ์ รับคำแนะนำการรักษาที่เหมาะกับคุณ',
-  keywords: 'คำปรึกษาทันตกรรม, คำปรึกษาฟรี, คำปรึกษา AI, ทันตกรรมเกาหลี, ทันตแพทย์ปูซาน, ผู้เชี่ยวชาญทันตกรรม',
-  openGraph: {
-    title: 'ขอรับคำปรึกษา - คลินิกทันตกรรม Kyungsung Medis',
-    description: 'ขอรับคำปรึกษาทันตกรรม AI ฟรีจากผู้เชี่ยวชาญที่มีประสบการณ์',
-    type: 'website',
-    locale: 'th_TH',
-  }
-};
+import { useEffect } from 'react';
+import ConsultationForm from '@/components/ConsultationForm';
+import GNB from '@/components/th/GNB';
+import DoctorIntroSection from '@/components/consultation/DoctorIntroSection';
 
 export default function ConsultationPage() {
+  useEffect(() => {
+    // Meta Pixel event
+    if (typeof window !== 'undefined') {
+      const fbq = (window as { fbq?: (...args: unknown[]) => void }).fbq;
+      if (fbq) {
+        fbq('trackCustom', 'ViewCheckoutPage');
+        console.log('✅ Meta Pixel: ViewCheckoutPage 커스텀 이벤트 전송');
+      }
+    }
+  }, []);
+
   return (
     <div className="min-h-screen">
       <GNB />

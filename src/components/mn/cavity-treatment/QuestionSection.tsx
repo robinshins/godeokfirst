@@ -2,7 +2,7 @@
 
 export default function QuestionSection() {
   return (
-    <div className="bg-[#0b1727] w-full py-[60px] px-4">
+    <div className="bg-[#21314E] w-full py-[60px] px-4">
       <div className="max-w-[375px] mx-auto">
         <div className="flex flex-col gap-[30px] items-center w-full">
           {/* Title */}
@@ -13,12 +13,12 @@ export default function QuestionSection() {
                   &#x201C;
                 </p>
                 <p className="font-['Pretendard_JP'] font-bold text-[32px] leading-[1.35] tracking-[-0.64px] w-full">
-                  Имплантаас өөр<br />хадгалах арга байхгүй юу?
+ шүдний эмнэлэг 
                 </p>
               </div>
             </div>
             <p className="font-['Pretendard_JP'] font-semibold text-base leading-[1.4] tracking-[-0.32px] text-[#d2d6e1] text-center w-full">
-              Бусад газар заавал авах ёстой гэсэн шүү дээ...
+ Godeok First Dental ирэлт өвчтөн 
             </p>
           </div>
 
@@ -28,8 +28,8 @@ export default function QuestionSection() {
           {/* Info Card */}
           <div className="bg-white/[0.08] rounded-[20px] px-5 py-[30px] flex flex-col gap-6 items-center justify-end w-full">
             <p className="font-['Pretendard_JP'] font-semibold text-[17px] leading-[1.5] tracking-[-0.34px] text-center text-white w-full">
-              Хадгалах эмчилгээ нь удаан хугацаа шаардаж, орлого бага учраас<br />
-              олон шүдний эмнэлэг зайлсхийдэг нь бодит байдал юм
+ цооронхой эмчилгээ арилгах чухал<br />
+ төрөл ·зуун·өнгө нас дуусгах
             </p>
           </div>
         </div>

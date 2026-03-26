@@ -4,40 +4,34 @@ import FixedCTAButton from '@/components/uz/FixedCTAButton';
 import FooterSection from '@/components/uz/FooterSection';
 
 import HeroSection from '@/components/uz/cavity-treatment/HeroSection';
-// import SedationSection from '@/components/uz/cavity-treatment/SedationSection';
-import ComparisonSection from '@/components/uz/cavity-treatment/ComparisonSection';
-import OneDayInlaySection from '@/components/uz/cavity-treatment/OneDayInlaySection';
-import DoctorProfileSection from '@/components/uz/cavity-treatment/DoctorProfileSection';
 import BeforeAfterSection from '@/components/uz/cavity-treatment/BeforeAfterSection';
 import QuestionSection from '@/components/uz/cavity-treatment/QuestionSection';
 import TreatmentMethodsSection from '@/components/uz/cavity-treatment/TreatmentMethodsSection';
+import OneDayInlaySection from '@/components/uz/cavity-treatment/OneDayInlaySection';
+// import SedationSection from '@/components/uz/cavity-treatment/SedationSection';
+import DoctorProfileSection from '@/components/uz/cavity-treatment/DoctorProfileSection';
+import ComparisonSection from '@/components/uz/cavity-treatment/ComparisonSection';
+import CasesSection from '@/components/uz/cavity-treatment/CasesSection';
+import BlogColumnSection from '@/components/uz/cavity-treatment/BlogColumnSection';
+import DoctorSection from '@/components/uz/DoctorSection';
+import WhyBestSection from '@/components/uz/WhyBestSection';
+import LocationSection from '@/components/uz/LocationSection';
 import FAQSection from '@/components/uz/FAQSection';
-import CTASection from '@/components/uz/CTASection';
 import VideoSection from '@/components/uz/cavity-treatment/VideoSection';
 
 export const metadata: Metadata = {
-  title: 'Koreya Pusan Karies Davolash Stomatologiya | Kyungsung Medis Dental',
-  description: 'Zamonaviy karies va kanal davolash. Pusan Nam-gu 1-o\'rin. Bosh shifokor universitetlar darajasidagi mikroskop va raqamli uskunalar bilan bevosita davolaydi.',
-  keywords: [
-    'Koreya karies davolash',
-    'Pusan karies',
-    'Koreya kanal davolash',
-    'Stomatologiya inley Koreya',
-    'Endodontiya Koreya',
-    'Mikroskop stomatologiya Koreya',
-    'O\'zbek karies Pusan',
-    'Koreya stomatologiya turizmi'
-  ],
+  title: 'Cavity Treatment Godeok | Godeok First Dental',
+  description: 'Pyeongtaek Godeok Cavity treatment specialist. Comprehensive Dentistry Specialist treats directly. Resin, inlay, root canal, TRIOS5 digital scan.',
   alternates: {
     canonical: 'https://gdfirstdent.com/uz/cavity-treatment',
   },
   openGraph: {
-    title: 'Koreya Pusan Karies Davolash Stomatologiya | Kyungsung Medis Dental',
-    description: 'Zamonaviy karies va kanal davolash. Pusan Nam-gu 1-o\'rin. Bosh shifokor mikroskop bilan bevosita davolaydi.',
+    title: 'Cavity Treatment Godeok | Godeok First Dental',
+    description: 'Pyeongtaek Godeok Cavity treatment specialist. Comprehensive Dentistry Specialist treats directly.',
     url: 'https://gdfirstdent.com/uz/cavity-treatment',
+    siteName: 'Godeok First Dental',
     type: 'website',
-    locale: 'uz_UZ',
-  }
+  },
 };
 
 export default function CavityTreatmentPage() {
@@ -46,23 +40,46 @@ export default function CavityTreatmentPage() {
       <GNB />
       <FixedCTAButton />
 
+      {/* Add spacing for fixed GNB */}
       <div className="h-[52px]" />
 
+      {/* Hero Section */}
       <HeroSection />
+
+      {/* Video Section */}
       <VideoSection />
-      {/* <SedationSection /> */}
-      <ComparisonSection />
-      <OneDayInlaySection />
-      <DoctorProfileSection />
-      <TreatmentMethodsSection />
-      <BeforeAfterSection />
+
+      {/* Cases Section */}
+      <CasesSection />
+
+
+      {/* Blog Column Section */}
+      <BlogColumnSection />
+
+
+      {/* Question Section */}
       <QuestionSection />
-      <FAQSection page="home" />
-      <CTASection />
+
+      {/* Treatment Methods Section */}
+      <TreatmentMethodsSection />
+
+      {/* One Day Inlay Section */}
+      <OneDayInlaySection />
+
+
+      {/* Sedation Section */}
+      {/* <SedationSection /> */}
+
+      <DoctorSection />
+      <WhyBestSection />
+      <LocationSection />
+      <FAQSection page="cavity-treatment" />
+
+      {/* Footer */}
       <FooterSection />
 
+      {/* Add spacing for fixed bottom button */}
       <div className="h-[88px]" />
     </main>
   );
 }
-

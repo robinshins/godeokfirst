@@ -6,72 +6,100 @@ export default function TreatmentSection() {
     {
       icon: '/images/implant-icon.png',
       iconBg: 'bg-blue-50',
-      title: '全体・部分インプラント',
-      subtitle: '釜山南区インプラント手術件数No.1',
-      description: 'コンピューター分析による安全で快適な高難度デジタルガイド手術。10年保証。',
+      title: 'インプラント',
+      subtitle: 'デジタルガイドインプラント手術',
+      description: 'コンピュータ分析による高難度デジタルガイド手術で安全かつ快適に、最後まで責任を持ちます。',
       features: [
-        '先進デジタルガイド手術',
-        '意識下鎮静睡眠麻酔',
-        '手術直後に仮歯提供',
-        '代表院長が直接手術',
-        '韓国最大規模のデジタル機器保有'
+        '高難度デジタルガイド手術',
+        '意識下鎮静法による無痛麻酔手術',
+        '手術直後の仮歯提供',
+        '代表院長による直接手術',
+        'デジタル設備完備'
       ],
-      link: '/jp/implant'
+      link: '/implant'
     },
     {
-      icon: '/icons/whitening.svg',
-      iconBg: 'bg-purple-50',
-      title: 'ホワイトニング・ラミネート',
-      subtitle: 'プレミアム機器',
-      description: '安全で効果的なホワイトニング治療\nスケーリングと併用で50%割引',
+      icon: '/icons/gum.svg',
+      iconBg: 'bg-indigo-50',
+      title: '入れ歯 / 全顎インプラント',
+      subtitle: 'オーダーメイド精密補綴',
+      description: '快適で自然な入れ歯から\n全顎インプラントまでオーダーメイド設計',
       features: [
-        '1回で即効果',
-        '歯を傷めない',
-        'リーズナブルな価格',
-        'オフィスホワイトニング＆ラミネート可能'
+        '精密オーダーメイド入れ歯製作',
+        '全顎インプラント（All-on-4/6）',
+        'インプラント入れ歯（オーバーデンチャー）',
+        '保険適用入れ歯可能'
       ],
-      link: '/jp/whitening'
+      link: '/denture'
+    },
+    {
+      icon: '/icons/cavity.svg',
+      iconBg: 'bg-orange-50',
+      title: '虫歯治療 & 根管治療',
+      subtitle: '天然歯保存専門',
+      description: '抜歯の代わりに救う治療\n統合歯科専門医の精密治療',
+      features: [
+        '精密虫歯診断',
+        '痛み軽減の根管治療',
+        '天然歯保存',
+        '保険適用'
+      ],
+      link: '/cavity-treatment'
     },
     {
       icon: '/icons/extraction.svg',
       iconBg: 'bg-green-50',
       title: '親知らず抜歯',
-      subtitle: '安全で迅速な抜歯',
-      description: '3D CT精密診断\n神経損傷のない安全な抜歯',
+      subtitle: '安全かつ迅速な抜歯',
+      description: '3D CT精密診断で\n神経損傷なく安全に抜歯',
       features: [
-        '無痛麻酔',
-        '早期回復',
+        '痛み軽減麻酔実施',
+        '早い回復',
         '徹底したアフターケア'
       ],
-      link: '/jp/wisdom-tooth'
-    },
-    {
-      icon: '/icons/cavity.svg',
-      iconBg: 'bg-orange-50',
-      title: '虫歯・根管治療',
-      subtitle: '自然歯保存専門',
-      description: '抜歯ではなく保存する治療\n保存専門医の精密治療',
-      features: [
-        '顕微鏡精密診断',
-        'Curay虫歯検出',
-        '無痛神経治療',
-        '保険適用可能'
-      ],
-      link: '/jp/cavity-treatment'
+      link: '/wisdom-tooth'
     },
     {
       icon: '/icons/gum.svg',
       iconBg: 'bg-pink-50',
-      title: '歯周病治療・スケーリング',
-      subtitle: '全身健康の基礎',
-      description: '成人の80%が罹患する歯周病\n定期ケアで生涯健康な歯を',
+      title: '歯周病治療 & スケーリング',
+      subtitle: '全身健康の始まり',
+      description: '成人の80%が罹患する歯周病\n定期管理で生涯健康な歯を',
       features: [
-        'NSK varios 970専門機器',
-        'ペリオクリーン管理',
-        '無痛治療',
-        '年1回保険適用可能'
+        '特殊設備活用治療',
+        'ペリオクリン管理',
+        '痛み軽減治療',
+        '年1回保険適用'
       ],
-      link: '/jp/gum-care'
+      link: '/gum-care'
+    },
+    {
+      icon: '/icons/gum.svg',
+      iconBg: 'bg-indigo-50',
+      title: '顎関節治療',
+      subtitle: '顎関節痛・開口障害専門',
+      description: '顎から音がしたり痛みがありますか？\n精密診断後オーダーメイド治療します',
+      features: [
+        '顎関節精密診断',
+        '咬合安定装置（スプリント）',
+        '物理治療・薬物治療',
+        '統合歯科専門医による直接診療'
+      ],
+      link: '/tmj'
+    },
+    {
+      icon: '/icons/whitening.svg',
+      iconBg: 'bg-purple-50',
+      title: 'ホワイトニング',
+      subtitle: '最高級設備保有',
+      description: '安全で効果的なホワイトニング施術\nスケーリングと合わせて割引',
+      features: [
+        '1回の施術で即効果',
+        '歯へのダメージなし',
+        'リーズナブルな価格',
+        'オステム ビューティス システム'
+      ],
+      link: '/whitening'
     }
   ];
 
@@ -80,17 +108,17 @@ export default function TreatmentSection() {
       <div className="max-w-[375px] mx-auto px-4 py-12">
         {/* Section Header */}
         <div className="flex flex-col gap-5 items-center justify-center relative shrink-0 w-full mb-10">
-          <div className="h-8 relative shrink-0 w-40">
+          <div className="h-11 relative shrink-0 overflow-hidden">
             <Image
-              src="/icons/Logo_black.svg"
-              alt="Kyungsung Medis Dental Clinic"
-              width={160}
-              height={32}
-              className="w-full h-full"
+              src="/고덕퍼스트치과-로고-(블랙).png"
+              alt="コドクファースト歯科"
+              width={375}
+              height={84}
+              className="h-20 w-auto object-contain -mt-[18px]"
             />
           </div>
           <h2 className="font-bold leading-[1.35] not-italic text-[36px] text-black text-center tracking-[-0.72px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-            Specialized Treatments
+            専門診療分野
           </h2>
         </div>
 
@@ -113,7 +141,7 @@ export default function TreatmentSection() {
                       alt={treatment.title}
                       width={64}
                       height={64}
-                      className="w-full h-full object-contain"
+                      className="h-20 w-auto object-contain -mt-[18px]"
                     />
                   </div>
 
@@ -126,11 +154,6 @@ export default function TreatmentSection() {
                       <p className="text-[17px] font-bold text-[#727582] leading-[1.5] tracking-[-0.36px]">
                         {treatment.subtitle}
                       </p>
-                      {index === 0 && (
-                        <p className="text-[13px] text-[#9a9ca8] leading-[1.5] tracking-[-0.28px]">
-                          *Based on computer-guided digital guide surgery
-                        </p>
-                      )}
                     </div>
                   </div>
                 </div>
@@ -144,9 +167,9 @@ export default function TreatmentSection() {
                   >
                     <Image
                       src="/icons/arrow-right.svg"
-                      alt="Learn more"
+                      alt="詳しく見る"
                       width={32}
-                      height={32}
+                      height={84}
                     />
                   </Link>
                 ) : (
@@ -156,9 +179,9 @@ export default function TreatmentSection() {
                   >
                     <Image
                       src="/icons/arrow-right.svg"
-                      alt="Learn more"
+                      alt="詳しく見る"
                       width={32}
-                      height={32}
+                      height={84}
                     />
                   </button>
                 )}

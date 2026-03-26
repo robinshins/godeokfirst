@@ -1,118 +1,144 @@
 'use client';
 
-export default function SkillDifferenceSection() {
-  const generalClinic = [
-    {
-      title: '没有自营技工所',
-      description: '委托外部技工所增加费用和时间，\n无法进行精细作业'
-    },
-    {
-      title: '1阶段临时牙',
-      description: '未经咬合调整直接制作最终修复体'
-    },
-    {
-      title: '存在再次手术可能性',
-      description: '缺乏专业设备和适当的后期护理，\n存在再次手术的可能性'
-    }
-  ];
+import FadeInSection from '@/components/common/FadeInSection';
 
-  const medisClinic = [
+export default function SkillDifferenceSection() {
+  const advantages = [
     {
-      title: '完美技术',
-      description: '牙医们来此学习，\n院长亲自培训其他牙医'
+      title: '朝鲜大学客座教授亲自手术',
+      description: '在大学医院教导后辈医生的\n经验证专家亲自执刀',
+      highlight: '教育者的实力',
+      iconPath: 'M22 10v6M2 10v6M12 2L2 7l10 5 10-5-10-5zM12 22V12'
     },
     {
-      title: '3阶段临时牙系统',
-      description: '分阶段精密调整，打造完美咬合'
+      title: '奥齿泰·Point·Dentis研究顾问',
+      description: '韩国代表性种植牙企业的研究顾问\n直接运用最新技术和设备',
+      highlight: '经验证的技术',
+      iconPath: 'M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18'
     },
     {
-      title: '零再次手术记录',
-      description: '凭借卓越技术实力，一次手术完美完成'
+      title: '3D数字化引导手术',
+      description: '0.1mm误差的精密植入\n神经/血管损伤风险最小化',
+      highlight: '精密技术',
+      iconPath: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'
+    },
+    {
+      title: '无切口 & 当日植入',
+      description: '出血、疼痛、肿胀最小化\n快速回归日常',
+      highlight: '舒适手术',
+      iconPath: 'M13 2L3 14h9l-1 8 10-12h-9l1-8z'
     }
   ];
 
   return (
-    <div className="bg-[#f3f6fb] w-full flex justify-center">
-      <div className="box-border flex flex-col gap-[50px] items-start px-4 py-[60px] relative w-full max-w-[430px]">
-        {/* Header */}
-        <div className="flex flex-col gap-3 items-start relative shrink-0 w-full">
-          <div className="flex flex-col gap-4 items-center justify-center relative shrink-0 w-full">
-            <div className="flex flex-col gap-3 items-center justify-center relative shrink-0 w-full">
-              <h2 className="font-bold leading-[1.35] not-italic text-[32px] text-black text-center tracking-[-0.64px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-                不同的技术<br />
-                不同的结果
-              </h2>
-            </div>
-          </div>
-          <div className="font-semibold leading-[1.4] not-italic text-[#727582] text-base text-center tracking-[-0.32px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-            第一次就做对是最明智的选择<br />
-            无需再次手术的完美治疗，才是真正的技术
-          </div>
-        </div>
+    <div className="bg-[#0a1628] w-full flex justify-center overflow-hidden relative">
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#008095]/10 rounded-full blur-3xl" />
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-[#4DC8D8]/10 rounded-full blur-3xl" />
+      </div>
 
-        {/* Comparison */}
-        <div className="flex flex-col gap-6 items-start relative shrink-0 w-full">
-          {/* General Clinic */}
-          <div className="flex flex-col gap-10 items-start relative shrink-0 w-full">
-            <div className="flex flex-col gap-6 items-start relative shrink-0 w-full">
-              <div className="bg-white box-border flex flex-col gap-5 items-center justify-center p-6 relative rounded-[24px] shadow-[0px_24px_50px_-12px_rgba(45,54,67,0.12)] shrink-0 w-full">
-                <div className="flex flex-col gap-[14px] items-start relative shrink-0 w-full">
-                  <div className="flex flex-col gap-4 items-start not-italic relative shrink-0 text-center w-full">
-                    <p className="font-bold leading-[1.35] text-2xl text-black tracking-[-0.48px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-                      普通牙科
-                    </p>
-                    <p className="font-semibold leading-[1.4] text-[#727582] text-base tracking-[-0.32px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-                      治疗后仍存在不安
-                    </p>
-                  </div>
+      <div className="box-border flex flex-col gap-12 items-center px-6 py-[80px] relative z-10 w-full max-w-[430px]">
+        <FadeInSection className="text-center w-full">
+          <p className="text-[#4DC8D8] text-[13px] font-bold tracking-[3px] uppercase mb-4" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+            WHY GODUK FIRST
+          </p>
+          <h2 className="font-extrabold text-[32px] text-white leading-[1.3] tracking-tight mb-5" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+            实力不同
+            <br />
+            <span className="text-[#008095]">结果就不同</span>
+          </h2>
+          <p className="font-medium leading-[1.6] text-white/70 text-[15px] tracking-[-0.3px]" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+            从一开始就做对是最明智的选择
+            <br />
+            无需再手术的完美治疗，这才是真正的实力
+          </p>
+        </FadeInSection>
+
+        <FadeInSection delay={100} className="w-full">
+          <div className="bg-gradient-to-br from-[#008095] to-[#006B7A] rounded-3xl p-6 shadow-2xl shadow-[#008095]/30 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2" />
+            <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2" />
+
+            <div className="relative z-10">
+              <div className="text-center mb-6">
+                <p className="text-white/80 text-[14px] font-medium mb-2" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+                  高德First牙科种植牙
+                </p>
+                <div className="flex items-baseline justify-center gap-2">
+                  <span className="text-[64px] font-black text-white leading-none" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+                    1,200
+                  </span>
+                  <span className="text-[24px] font-bold text-white/80" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+                    次+
+                  </span>
                 </div>
-                {generalClinic.map((item, index) => (
-                  <div key={index} className="bg-[#f3f6fb] box-border flex flex-col gap-[14px] items-start p-5 relative rounded-2xl shrink-0 w-full">
-                    <div className="flex flex-col gap-1.5 items-start justify-center not-italic relative shrink-0 text-center w-full">
-                      <p className="font-bold leading-[1.5] text-[17px] text-black tracking-[-0.34px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-                        {item.title}
-                      </p>
-                      <p className="font-semibold leading-[1.4] text-[#727582] text-[15px] tracking-[-0.3px] w-full whitespace-pre-line" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-                        {item.description}
-                      </p>
-                    </div>
-                  </div>
-                ))}
+                <p className="text-white/90 text-[15px] font-semibold mt-2" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+                  累计种植牙植入
+                </p>
+              </div>
+
+              <div className="grid grid-cols-2 gap-3">
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-center border border-white/10">
+                  <p className="text-[28px] font-black text-white mb-1" style={{ fontFamily: '"NanumSquare", sans-serif' }}>2,000+</p>
+                  <p className="text-[12px] text-white/70 font-medium" style={{ fontFamily: '"NanumSquare", sans-serif' }}>智齿拔除经验</p>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-center border border-white/10">
+                  <p className="text-[28px] font-black text-white mb-1" style={{ fontFamily: '"NanumSquare", sans-serif' }}>4.9</p>
+                  <p className="text-[12px] text-white/70 font-medium" style={{ fontFamily: '"NanumSquare", sans-serif' }}>患者满意度 / 5.0</p>
+                </div>
               </div>
             </div>
           </div>
+        </FadeInSection>
 
-          {/* Medis Clinic */}
-          <div className="flex flex-col gap-10 items-start relative shrink-0 w-full">
-            <div className="flex flex-col gap-6 items-start relative shrink-0 w-full">
-              <div className="bg-[#006aff] box-border flex flex-col gap-5 items-center justify-center p-6 relative rounded-[24px] shadow-[0px_24px_50px_-12px_rgba(45,54,67,0.12)] shrink-0 w-full">
-                <div className="flex flex-col gap-[14px] items-start relative shrink-0 w-full">
-                  <div className="flex flex-col gap-4 items-start not-italic relative shrink-0 text-center text-white w-full">
-                    <p className="font-bold leading-[1.35] text-2xl tracking-[-0.48px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-                      庆星美迪斯牙科
+        <FadeInSection delay={200} className="w-full space-y-4">
+          <p className="text-center text-white/50 text-[13px] font-medium tracking-wide" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+            高德First牙科差异化的系统
+          </p>
+
+          <div className="grid grid-cols-1 gap-3">
+            {advantages.map((item, index) => (
+              <div
+                key={index}
+                className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-5 hover:bg-white/10 hover:border-[#008095]/50 transition-all duration-300"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#008095]/20 to-[#006B7A]/20 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#008095]">
+                      <path d={item.iconPath} />
+                    </svg>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2 mb-1.5">
+                      <h3 className="font-bold text-[16px] text-white" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+                        {item.title}
+                      </h3>
+                    </div>
+                    <p className="text-[13px] text-white/60 leading-[1.5] whitespace-pre-line" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+                      {item.description}
                     </p>
-                    <p className="font-semibold leading-[1.4] text-base tracking-[-0.32px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-                      庆星美迪斯牙科承诺<br />
-                      凭借卓越技术实现一生一次的治疗
-                    </p>
+                  </div>
+                  <div className="shrink-0">
+                    <span className="inline-block px-2.5 py-1 bg-[#008095]/20 text-[#4DC8D8] text-[11px] font-bold rounded-full" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+                      {item.highlight}
+                    </span>
                   </div>
                 </div>
-                {medisClinic.map((item, index) => (
-                  <div key={index} className="bg-white box-border flex flex-col gap-[14px] items-start p-5 relative rounded-2xl shrink-0 w-full">
-                    <div className="flex flex-col gap-1.5 items-start justify-center not-italic relative shrink-0 text-center w-full">
-                      <p className="font-bold leading-[1.5] text-[17px] text-black tracking-[-0.34px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-                        {item.title}
-                      </p>
-                      <p className="font-semibold leading-[1.4] text-[#727582] text-[15px] tracking-[-0.3px] w-full whitespace-pre-line" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-                        {item.description}
-                      </p>
-                    </div>
-                  </div>
-                ))}
               </div>
-            </div>
+            ))}
           </div>
-        </div>
+        </FadeInSection>
+
+        <FadeInSection delay={300} className="w-full">
+          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-5 text-center">
+            <p className="text-white/80 text-[14px] leading-[1.6] mb-3" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+              <span className="text-[#4DC8D8] font-bold">终身使用的种植牙</span>，您要交给谁？
+            </p>
+            <p className="text-white text-[15px] font-bold" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+              体验大学医院水准的诊疗
+            </p>
+          </div>
+        </FadeInSection>
       </div>
     </div>
   );

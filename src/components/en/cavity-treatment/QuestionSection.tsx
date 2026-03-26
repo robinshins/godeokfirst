@@ -2,7 +2,7 @@
 
 export default function QuestionSection() {
   return (
-    <div className="bg-[#0b1727] w-full py-[60px] px-4">
+    <div className="bg-[#21314E] w-full py-[60px] px-4">
       <div className="max-w-[375px] mx-auto">
         <div className="flex flex-col gap-[30px] items-center w-full">
           {/* Title */}
@@ -12,13 +12,13 @@ export default function QuestionSection() {
                 <p className="font-['Nanum_Myeongjo'] font-extrabold text-[60px] leading-[0.2] tracking-[-3.6px] w-full">
                   &#x201C;
                 </p>
-                <p className="font-['Pretendard'] font-bold text-[32px] leading-[1.35] tracking-[-0.64px] w-full">
-                  Is there a way to save it instead of an implant?
+                <p className="font-['Pretendard_JP'] font-bold text-[32px] leading-[1.35] tracking-[-0.64px] w-full">
+                  I never knew there was a dental clinic this thorough
                 </p>
               </div>
             </div>
-            <p className="font-['Pretendard'] font-semibold text-base leading-[1.4] tracking-[-0.32px] text-[#d2d6e1] text-center w-full">
-              They all said extraction elsewhere...
+            <p className="font-['Pretendard_JP'] font-semibold text-base leading-[1.4] tracking-[-0.32px] text-[#d2d6e1] text-center w-full">
+              Actual patient review from Godeok First Dental
             </p>
           </div>
 
@@ -27,9 +27,9 @@ export default function QuestionSection() {
 
           {/* Info Card */}
           <div className="bg-white/[0.08] rounded-[20px] px-5 py-[30px] flex flex-col gap-6 items-center justify-end w-full">
-            <p className="font-['Pretendard'] font-semibold text-[17px] leading-[1.5] tracking-[-0.34px] text-center text-white w-full">
-              Preservation treatment takes time and is less profitable<br />
-              so many dental clinics avoid it
+            <p className="font-['Pretendard_JP'] font-semibold text-[17px] leading-[1.5] tracking-[-0.34px] text-center text-white w-full">
+              What comes after cavity removal matters more<br />
+              We meticulously perfect the shape, bite, and color
             </p>
           </div>
         </div>

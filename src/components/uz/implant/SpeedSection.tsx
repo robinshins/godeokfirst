@@ -1,59 +1,60 @@
+'use client';
+
 import Image from 'next/image';
 
 export default function SpeedSection() {
   return (
-    <div className="bg-white w-full">
-      <div className="max-w-[430px] mx-auto px-4 py-16">
-        <div className="flex flex-col gap-10">
-          <div className="flex flex-col gap-4">
-            <h2 className="text-[32px] font-bold text-[#111827] leading-[1.2] tracking-[-0.64px]">
-              Bir kun ichida<br />
-              <span className="text-[#006aff]">Tezkor va Mukammal</span>
-            </h2>
-            <p className="text-lg text-[#6b7280] leading-[1.6]">
-              Band insonlar uchun mo'ljallangan<br />
-              Bir kunlik implantatsiya tizimi
-            </p>
+    <div className="w-full relative flex justify-center bg-[#0b1727]">
+      {/* Background gradient effect - full width */}
+      <div className="absolute h-[711px] left-[calc(50%+0.5px)] top-[calc(50%+75.5px)] -translate-x-1/2 -translate-y-1/2 w-[480px] pointer-events-none">
+        <div className="absolute inset-[-56.26%_-83.33%]">
+          <Image
+            src="/images/speed-gradient.svg"
+            alt=""
+            fill
+            className="block max-w-none object-contain"
+          />
+        </div>
+      </div>
+
+      {/* Decoration element */}
+      <div className="absolute h-[193.628px] left-[165px] top-[-14.89px] w-[469.325px] pointer-events-none">
+        <div className="absolute inset-[-2.16%_-0.7%_-0.93%_-1%]">
+          <Image
+            src="/images/speed-decoration.svg"
+            alt=""
+            fill
+            className="block max-w-none object-contain"
+          />
+        </div>
+      </div>
+
+      {/* Content container with max-width */}
+      <div className="box-border flex flex-col gap-[70px] items-start px-5 py-[70px] relative w-full max-w-[430px]">
+        <div className="flex flex-col gap-6 items-center relative shrink-0 w-full z-10">
+          {/* Logo */}
+          <div className="h-6 overflow-clip relative shrink-0 w-[168px]">
+            <Image
+              src="/고덕퍼스트치과-로고-(화이트).png"
+              alt="Godeok First Dental"
+              width={168}
+              height={24}
+              className="h-20 w-auto object-contain -mt-[18px]"
+            />
           </div>
 
-          <div className="bg-[#f8f9fa] p-8 rounded-[32px] flex flex-col gap-8">
-            <div className="flex flex-col gap-6">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-sm">
-                  <Image src="/icons/time.svg" alt="Vaqt" width={24} height={24} />
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-[#6b7280] text-sm">Konsultatsiya + Operatsiya</span>
-                  <span className="text-xl font-bold text-[#374151]">Bir kunda yakunlanadi</span>
-                </div>
-              </div>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-sm">
-                  <Image src="/icons/recovery.svg" alt="Tiklanish" width={24} height={24} />
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-[#6b7280] text-sm">Tez tiklanish</span>
-                  <span className="text-xl font-bold text-[#374151]">Kesmalarsiz usul</span>
-                </div>
-              </div>
-            </div>
+          {/* Title */}
+          <h2 className="font-bold leading-[1.35] not-italic text-[#fefeff] text-[32px] text-center tracking-[-0.64px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+            Hech qanday stomatologiya yeta olmaydigan<br />
+            tezlik farq
+          </h2>
 
-            <div className="relative w-full aspect-video rounded-[20px] overflow-hidden">
-              <Image
-                src="/images/speed-implant.jpg"
-                alt="Tezkor implantatsiya"
-                fill
-                className="object-cover"
-              />
-            </div>
-
-            <p className="text-[#6b7280] text-sm text-center">
-              * Jag' suyagi holati yaxshi bo'lganda bir kunda amalga oshirish mumkin.
-            </p>
-          </div>
+          {/* Subtitle */}
+          <p className="font-bold leading-[32px] not-italic text-[#51aefe] text-base text-center tracking-[1.92px] uppercase w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+            Faqat Godeok First Dental-da tajriba qilishingiz mumkin
+          </p>
         </div>
       </div>
     </div>
   );
 }
-

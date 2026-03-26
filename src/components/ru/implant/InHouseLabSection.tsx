@@ -6,18 +6,18 @@ export default function InHouseLabSection() {
   const benefits = [
     {
       icon: '/icons/shield.svg',
-      title: 'Прочные временные зубы',
-      description: 'Специальный материал от эксклюзивного партнера\nпозволяет нормально питаться сразу после операции'
+ title:'тоже временный зуб',
+ description:'повторный\nоперация сразу после от обычный прием пищи возможно'
     },
     {
       icon: '/icons/tooth-xray-spot.svg',
-      title: 'Немедленная замена при поломке',
-      description: 'Не волнуйтесь о возможных повреждениях\nНемедленная замена в нашей лаборатории'
+ title:'немедленно',
+ description:'возникновение может тоже беспокойство нет\nвнутренняя зуботехническая лаборатория немедленно предоставляем'
     },
     {
       icon: '/icons/smile.svg',
-      title: 'Ни дня без зубов',
-      description: 'С момента операции до установки финальной коронки — ни одного дня без зубов'
+ title:'зуб нет',
+      description: 'операция сразу после от финальный протез установка до ни одного дня без зубов'
     }
   ];
 
@@ -27,12 +27,12 @@ export default function InHouseLabSection() {
       {/* Header */}
       <div className="flex flex-col gap-3 items-center justify-center leading-[0] not-italic relative shrink-0 text-center w-full">
         <h2 className="font-bold leading-[1.35] text-[32px] text-black tracking-[-0.64px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-          Система немедленного<br />
-          протезирования
+          немедленно протез<br />
+          Имплант система
         </h2>
         <p className="font-semibold leading-[1.4] text-[#727582] text-base tracking-[-0.32px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-        Цифровые технологии и собственная лаборатория<br />
-        для быстрого изготовления протезов<br />
+ процесс и внутренняязуботехническая лаборатория <br />
+ быстрый протезизготовление.<br />
         </p>
       </div>
 
@@ -50,12 +50,12 @@ export default function InHouseLabSection() {
           </div>
           <div className="bg-[#0b1727] box-border flex flex-col gap-6 items-start not-italic p-6 relative shrink-0 text-center w-full">
             <p className="font-bold leading-[1.35] text-2xl text-white tracking-[-0.48px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-              Быстрое и точное изготовление
+              Быстрое и точное изготовление протезов
             </p>
             <p className="font-semibold leading-[1.4] opacity-80 text-[#e9ebf1] text-[15px] tracking-[-0.3px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-              Главный врач, опираясь на богатый клинический опыт, обеспечивает комфортное лечение и лично изготавливает протезы на фрезерном станке<br />
+ Главный врач богатый клинический опыт сразу комфортный лечение предоставление и протезматериал лично изготовление и <br />
               <br />
-              После изготовления мы еще раз проверяем отсутствие дискомфорта или побочных эффектов и продолжаем заботиться о пациентах после лечения
+ изготовление после побочные эффекты без один более проверка и лечение после тоже постоянно уход и предоставляем пациентминут удовлетворение тоже высокий для линия и 
             </p>
           </div>
         </div>
@@ -65,19 +65,19 @@ export default function InHouseLabSection() {
           <div className="h-[192px] relative shrink-0 w-full">
             <Image
               src="/images/lab-2.png"
-              alt="Без собственной лаборатории?"
+ alt="внутренняя зуботехническая лаборатория нет?"
               fill
               className="object-cover"
             />
           </div>
           <div className="bg-[#0b1727] box-border flex flex-col gap-6 items-start not-italic p-6 relative shrink-0 text-center w-full">
             <p className="font-bold leading-[1.35] text-2xl text-white tracking-[-0.48px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-              Без собственной лаборатории?
+ внутренняя зуботехническая лаборатория нет?
             </p>
             <p className="font-semibold leading-[1.4] opacity-80 text-[#e9ebf1] text-[15px] tracking-[-0.3px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-              Без собственной лаборатории заказ протезов во внешней мастерской увеличивает время и стоимость<br />
+ внутренняя зуботехническая лаборатория нет неделя зуботехническая лаборатория протезизготовление конструкции направление время долго <br />
               <br />
-              Необходимость повторного обращения для корректировки создает неудобства и затрудняет мелкие правки
+ изготовление и примерно процесс для снова и летодин примерно сложный 
             </p>
           </div>
         </div>

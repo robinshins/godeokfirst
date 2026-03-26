@@ -6,72 +6,100 @@ export default function TreatmentSection() {
     {
       icon: '/images/implant-icon.png',
       iconBg: 'bg-blue-50',
-      title: '全口 & 单牙种植',
-      subtitle: '釜山南区种植牙手术量第一',
-      description: '采用计算机分析的安全舒适高难度数字化导板手术。10年保修。',
+      title: '种植牙',
+      subtitle: '数字化引导种植手术',
+      description: '通过计算机分析进行高难度数字化引导手术，安全舒适，全程负责。',
       features: [
-        '先进的数字化导板手术',
-        '意识镇静睡眠麻醉',
+        '高难度数字化引导手术',
+        '意识镇静疗法（睡眠麻醉手术）',
         '术后立即提供临时牙',
-        '院长亲自手术',
-        '韩国最大规模的数字化设备'
+        '代表院长亲自手术',
+        '数字化设备齐全'
       ],
-      link: '/cn/implant'
+      link: '/implant'
     },
     {
-      icon: '/icons/whitening.svg',
-      iconBg: 'bg-purple-50',
-      title: '美白 & 贴面',
-      subtitle: '高端设备',
-      description: '安全有效的美白治疗\n与洗牙一起做可享受50%折扣',
+      icon: '/icons/gum.svg',
+      iconBg: 'bg-indigo-50',
+      title: '假牙 / 全口种植',
+      subtitle: '定制精密修复',
+      description: '从舒适自然的假牙到\n全口种植牙定制设计',
       features: [
-        '一次治疗立即见效',
-        '不伤害牙齿',
-        '合理价格',
-        '美白和贴面均可选择'
+        '精密定制假牙制作',
+        '全口种植牙 (All-on-4/6)',
+        '种植覆盖义齿',
+        '医保适用假牙'
       ],
-      link: '/cn/whitening'
+      link: '/denture'
+    },
+    {
+      icon: '/icons/cavity.svg',
+      iconBg: 'bg-orange-50',
+      title: '龋齿治疗 & 根管治疗',
+      subtitle: '天然牙保存专家',
+      description: '拔牙前先保牙\n综合牙科专家的精密治疗',
+      features: [
+        '精密龋齿诊断',
+        '疼痛缓解根管治疗',
+        '天然牙保存',
+        '医保适用'
+      ],
+      link: '/cavity-treatment'
     },
     {
       icon: '/icons/extraction.svg',
       iconBg: 'bg-green-50',
       title: '智齿拔除',
-      subtitle: '安全快速拔除',
-      description: '3D CT精密诊断\n不伤害神经的安全拔除',
+      subtitle: '安全快速的拔牙',
+      description: '3D CT精密诊断\n无神经损伤安全拔除',
       features: [
-        '无痛麻醉',
+        '疼痛缓解麻醉',
         '快速恢复',
-        '彻底的术后护理'
+        '彻底的术后管理'
       ],
-      link: '/cn/wisdom-tooth'
-    },
-    {
-      icon: '/icons/cavity.svg',
-      iconBg: 'bg-orange-50',
-      title: '蛀牙 & 根管治疗',
-      subtitle: '保留天然牙齿的专家',
-      description: '能保留就不拔牙的治疗\n保守治疗专科医生的精密治疗',
-      features: [
-        '显微镜精密诊断',
-        'Curay龋齿检测',
-        '无痛神经治疗',
-        '可申请保险'
-      ],
-      link: '/cn/cavity-treatment'
+      link: '/wisdom-tooth'
     },
     {
       icon: '/icons/gum.svg',
       iconBg: 'bg-pink-50',
-      title: '牙周护理 & 洗牙',
-      subtitle: '全身健康的基础',
-      description: '80%成年人患有牙周疾病\n定期护理保持终生健康牙齿',
+      title: '牙周治疗 & 洁牙',
+      subtitle: '全身健康的起点',
+      description: '80%的成人患有牙周疾病\n通过定期管理保持终身健康牙齿',
       features: [
-        'NSK varios 970专用设备',
-        'Perioclean管理',
-        '无痛治疗',
-        '每年可申请一次保险'
+        '专用设备治疗',
+        'Perio Clean管理',
+        '疼痛缓解治疗',
+        '每年1次医保适用'
       ],
-      link: '/cn/gum-care'
+      link: '/gum-care'
+    },
+    {
+      icon: '/icons/gum.svg',
+      iconBg: 'bg-indigo-50',
+      title: '颞下颌关节治疗',
+      subtitle: '颞下颌关节疼痛·开口障碍专科',
+      description: '下巴有响声或疼痛吗？\n精密诊断后定制治疗',
+      features: [
+        '颞下颌关节精密诊断',
+        '咬合稳定装置（合板）',
+        '物理治疗·药物治疗',
+        '综合牙科专家亲自诊疗'
+      ],
+      link: '/tmj'
+    },
+    {
+      icon: '/icons/whitening.svg',
+      iconBg: 'bg-purple-50',
+      title: '牙齿美白',
+      subtitle: '拥有顶级设备',
+      description: '安全有效的美白治疗\n与洁牙同享优惠',
+      features: [
+        '1次治疗即见效果',
+        '不损伤牙齿',
+        '合理价格',
+        '奥齿泰Beautis系统'
+      ],
+      link: '/whitening'
     }
   ];
 
@@ -80,17 +108,17 @@ export default function TreatmentSection() {
       <div className="max-w-[375px] mx-auto px-4 py-12">
         {/* Section Header */}
         <div className="flex flex-col gap-5 items-center justify-center relative shrink-0 w-full mb-10">
-          <div className="h-8 relative shrink-0 w-40">
+          <div className="h-11 relative shrink-0 overflow-hidden">
             <Image
-              src="/icons/Logo_black.svg"
-              alt="Kyungsung Medis Dental Clinic"
-              width={160}
-              height={32}
-              className="w-full h-full"
+              src="/고덕퍼스트치과-로고-(블랙).png"
+              alt="高德First牙科"
+              width={375}
+              height={84}
+              className="h-20 w-auto object-contain -mt-[18px]"
             />
           </div>
           <h2 className="font-bold leading-[1.35] not-italic text-[36px] text-black text-center tracking-[-0.72px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-            专业治疗项目
+            专业诊疗领域
           </h2>
         </div>
 
@@ -113,7 +141,7 @@ export default function TreatmentSection() {
                       alt={treatment.title}
                       width={64}
                       height={64}
-                      className="w-full h-full object-contain"
+                      className="h-20 w-auto object-contain -mt-[18px]"
                     />
                   </div>
 
@@ -126,11 +154,6 @@ export default function TreatmentSection() {
                       <p className="text-[17px] font-bold text-[#727582] leading-[1.5] tracking-[-0.36px]">
                         {treatment.subtitle}
                       </p>
-                      {index === 0 && (
-                        <p className="text-[13px] text-[#9a9ca8] leading-[1.5] tracking-[-0.28px]">
-                          *基于计算机分析的数字化导板手术
-                        </p>
-                      )}
                     </div>
                   </div>
                 </div>
@@ -144,9 +167,9 @@ export default function TreatmentSection() {
                   >
                     <Image
                       src="/icons/arrow-right.svg"
-                      alt="Learn more"
+                      alt="查看详情"
                       width={32}
-                      height={32}
+                      height={84}
                     />
                   </Link>
                 ) : (
@@ -156,9 +179,9 @@ export default function TreatmentSection() {
                   >
                     <Image
                       src="/icons/arrow-right.svg"
-                      alt="Learn more"
+                      alt="查看详情"
                       width={32}
-                      height={32}
+                      height={84}
                     />
                   </button>
                 )}

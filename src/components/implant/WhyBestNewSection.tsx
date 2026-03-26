@@ -11,10 +11,10 @@ export default function WhyBestNewSection() {
         <FadeInSection className="text-center w-full mb-4">
           <div className="flex justify-center mb-6 opacity-80">
             <Image
-              src="/images/goduk_images/고덕퍼스트치과로고 1.svg"
+              src="/고덕퍼스트치과-로고-(블랙).png"
               alt="고덕퍼스트치과"
               width={140}
-              height={32}
+              height={84}
               className="object-contain grayscale opacity-60"
             />
           </div>

@@ -8,8 +8,8 @@ export default function SameDayTemporarySection() {
       <div className="flex flex-col gap-8 items-center">
         {/* Title */}
         <h2 className="text-[28px] font-extrabold text-center leading-[1.4] tracking-[-0.03em]">
-          Operatsiyadan so'ng darhol <span className="text-[#006aff]">vaqtinchalik tish</span>gacha<br />
-          Tushdan keyin operatsiya, kechqurun ovqat
+          operatsiya darhol keyin <span className="text-[#008095]">vaqtincha tish</span>gacha<br />
+          tushdan keyin operatsiya, kechqurun ovqatlanish
         </h2>
 
         {/* Images Grid */}
@@ -18,7 +18,7 @@ export default function SameDayTemporarySection() {
           <div className="relative w-full h-[180px] rounded-2xl overflow-hidden">
             <Image
               src="/images/implant-morning-surgery.png"
-              alt="Tushdan keyin operatsiya"
+              alt="tushdan keyin operatsiya"
               fill
               className="object-cover"
             />
@@ -29,7 +29,7 @@ export default function SameDayTemporarySection() {
             <div className="relative flex-1 h-[180px] rounded-2xl overflow-hidden">
               <Image
                 src="/images/implant-dinner.png"
-                alt="Kechqurun ovqat"
+                alt="kechqurun ovqatlanish"
                 fill
                 className="object-cover"
               />
@@ -37,7 +37,7 @@ export default function SameDayTemporarySection() {
             <div className="relative flex-1 h-[180px] rounded-2xl overflow-hidden">
               <Image
                 src="/images/implant-temporary-tooth.png"
-                alt="Vaqtinchalik tish darhol o'rnatiladi"
+                alt="vaqtinchatish darhol o'rnatish"
                 fill
                 className="object-cover"
               />
@@ -47,8 +47,8 @@ export default function SameDayTemporarySection() {
 
         {/* Description */}
         <p className="text-base text-[#475569] text-center leading-[1.6] tracking-[-0.01em]">
-          Operatsiyadan so'ng darhol <span className="font-bold text-[#0b1727]">vaqtinchalik tish</span> o'rnatiladi.<br />
-          Ovqatlanish mumkin va tashqi ko'rinishda <span className="font-bold text-[#0b1727]">umuman sezilmaydi</span>.
+          operatsiya darhol keyin <span className="font-bold text-[#0b1727]">vaqtincha tish</span> oʼrnatilamiz.<br />
+          ovqatlanish mumkin, va tashqi koʼrinishdan <span className="font-bold text-[#0b1727]">umuman sezilmaydi</span>.
         </p>
       </div>
     </section>

@@ -1,59 +1,122 @@
-import { Metadata } from 'next';
 import GNB from '@/components/vi/GNB';
 import HeroSection from '@/components/vi/HeroSection';
+import ZeroFailureSection from '@/components/vi/ZeroFailureSection';
 import StatsSection from '@/components/vi/StatsSection';
 import TreatmentSection from '@/components/vi/TreatmentSection';
 import DoctorSection from '@/components/vi/DoctorSection';
-import FAQSection from '@/components/vi/FAQSection';
 import WhyBestSection from '@/components/vi/WhyBestSection';
 import LocationSection from '@/components/vi/LocationSection';
-import YouTubeSection from '@/components/vi/YouTubeSection';
+// import YouTubeSection from '@/components/vi/YouTubeSection';
+import FAQSection from '@/components/vi/FAQSection';
 import CTASection from '@/components/vi/CTASection';
 import FooterSection from '@/components/vi/FooterSection';
 import FixedCTAButton from '@/components/vi/FixedCTAButton';
 
-export const metadata: Metadata = {
-  title: 'Nha khoa Busan Hàn Quốc | Kyungsung Medis Dental',
-  description: '10 năm 0 ca tái phẫu thuật. Số 1 quận Nam Busan với 1,500+ ca implant và 2,700+ ca nhổ răng khôn. Bác sĩ trưởng trực tiếp điều trị với công nghệ kỹ thuật số tiên tiến.',
-  keywords: [
-    'nha khoa Busan',
-    'nha khoa Hàn Quốc',
-    'nha khoa tiếng Việt Busan',
-    'cấy ghép implant Hàn Quốc',
-    'implant Busan',
-    'tẩy trắng răng Busan',
-    'nhổ răng khôn Busan',
-    'điều trị nha khoa Busan',
-    'du lịch nha khoa Hàn Quốc'
+// Homepage JSON-LD
+const homeJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    // ItemList
+    {
+      '@type': 'ItemList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          item: {
+            '@type': 'Service',
+            name: '전체임플란트 & 임플란트',
+            description: '컴퓨터분석을 통한 고난도 디지털 가이드 수술로 안전하고 편안하게, 10년을 책임집니다.',
+            image: 'https://gdfirstdent.com/images/implant-icon.png',
+            url: 'https://gdfirstdent.com/implant',
+          },
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          item: {
+            '@type': 'Service',
+            name: '치아 미백',
+            description: '안전하고 효과적인 미백 시술, 스케일링과 함께 50% 할인',
+            image: 'https://gdfirstdent.com/icons/whitening.png',
+            url: 'https://gdfirstdent.com/whitening',
+          },
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          item: {
+            '@type': 'Service',
+            name: '사랑니 발치',
+            description: '3D CT precise diagnosis으로 신경 손상없이 안전하게 발치',
+            image: 'https://gdfirstdent.com/icons/extraction.png',
+            url: 'https://gdfirstdent.com/wisdom-tooth',
+          },
+        },
+        {
+          '@type': 'ListItem',
+          position: 4,
+          item: {
+            '@type': 'Service',
+            name: '충치치료 & 신경치료',
+            description: '발치 대신 살리는 치료, 보존과 전문의의 정밀 치료',
+            image: 'https://gdfirstdent.com/icons/cavity.png',
+            url: 'https://gdfirstdent.com/cavity-treatment',
+          },
+        },
+        {
+          '@type': 'ListItem',
+          position: 5,
+          item: {
+            '@type': 'Service',
+            name: '잇몸치료 & 스케일링',
+            description: '성인 80%가 앓는 잇몸질환, 정기적 관리로 평생 건강한 치아',
+            image: 'https://gdfirstdent.com/icons/gum.png',
+            url: 'https://gdfirstdent.com/gum-care',
+          },
+        },
+      ],
+    },
+    // Site Navigation
+    {
+      '@type': 'SiteNavigationElement',
+      '@id': 'https://gdfirstdent.com/#navigation',
+      name: '메인 메뉴',
+      hasPart: [
+        { '@type': 'SiteNavigationElement', name: '임플란트', url: 'https://gdfirstdent.com/implant' },
+        { '@type': 'SiteNavigationElement', name: '미백', url: 'https://gdfirstdent.com/whitening' },
+        { '@type': 'SiteNavigationElement', name: '사랑니', url: 'https://gdfirstdent.com/wisdom-tooth' },
+        { '@type': 'SiteNavigationElement', name: '충치치료', url: 'https://gdfirstdent.com/cavity-treatment' },
+        { '@type': 'SiteNavigationElement', name: '잇몸치료', url: 'https://gdfirstdent.com/gum-care' },
+      ],
+    },
   ],
-  alternates: {
-    canonical: 'https://gdfirstdent.com/vi',
-  },
-  openGraph: {
-    title: 'Nha khoa Busan Hàn Quốc | Kyungsung Medis Dental',
-    description: '10 năm 0 ca tái phẫu thuật. Số 1 quận Nam Busan với 1,500+ ca implant và 2,700+ ca nhổ răng khôn. Bác sĩ trưởng trực tiếp điều trị.',
-    url: 'https://gdfirstdent.com/vi',
-    locale: 'vi_VN'
-  }
 };
 
 export default function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden">
+      {/* JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJsonLd) }}
+      />
       <GNB />
       <FixedCTAButton />
 
       {/* Add spacing for fixed GNB */}
       <div className="h-[52px]" />
 
+      {/* <Banner /> */}
       <HeroSection />
+      <ZeroFailureSection />
       <StatsSection />
       <TreatmentSection />
       <DoctorSection />
       <WhyBestSection />
       <LocationSection />
-      <YouTubeSection />
-      <FAQSection page="home" />
+      {/* <YouTubeSection /> */}
+      <FAQSection />
       <CTASection />
       <FooterSection />
 

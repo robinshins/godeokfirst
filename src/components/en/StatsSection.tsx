@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function StatsSection() {
   return (
-    <div className="bg-gradient-to-b from-[#0b1727] from-[0.541%] to-white w-full relative">
+    <div className="bg-gradient-to-b from-[#21314E] from-[0.541%] to-white w-full relative">
       {/* Background gradient effect - full width */}
       <div className="absolute h-[711px] left-[calc(50%+5.5px)] top-[217.35px] -translate-x-1/2 w-[480px] pointer-events-none">
         <div className="absolute inset-[-56.26%_-83.33%]">
@@ -24,91 +24,69 @@ export default function StatsSection() {
           <div className="flex flex-col gap-4 items-center justify-center relative shrink-0 w-full z-10">
             <div className="flex flex-col gap-3 items-center justify-center relative shrink-0 w-full">
               {/* Logo */}
-              <div className="h-6 overflow-clip relative shrink-0 w-[168px]">
+              <div className="h-11 overflow-hidden relative shrink-0">
                 <Image
-                  src="/icons/Logo.svg"
-                  alt="Kyungsung Medis Dental Clinic"
-                  width={168}
-                  height={24}
-                  className="w-full h-full"
+                  src="/고덕퍼스트치과-로고-(화이트).png"
+                  alt="Godeok First Dental"
+                  width={375}
+                  height={84}
+                  className="h-20 w-auto object-contain -mt-[18px]"
                 />
               </div>
 
               {/* Title */}
               <h2 className="font-bold leading-[1.35] not-italic text-[32px] text-center text-white tracking-[-0.64px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-                Zero Re-surgeries,<br />
-                Maximum Implant Expertise
+                Treated by a dentist<br />
+                who teaches dentists
               </h2>
 
               {/* Subtitle */}
               <p className="font-semibold leading-[1.4] not-italic text-[#e9ebf1] text-base text-center tracking-[-0.32px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-                Kyungsung Medis Dental promises<br />
-                one-time treatment with overwhelming expertise
+                A university hospital professor<br />
+                consults directly and takes full responsibility
               </p>
             </div>
           </div>
 
           {/* Stats Cards */}
           <div className="flex flex-col gap-4 items-center justify-center relative shrink-0 w-full z-10">
-            {/* Card 1: 재수술 0건 */}
+            {/* Card 1: Specialist */}
+            <div className="bg-white box-border flex flex-col gap-5 items-center px-5 py-8 relative rounded-2xl shrink-0 w-full">
+              <div className="flex gap-3 items-baseline justify-center relative shrink-0 w-full">
+                <p
+                  className="font-bold leading-[1] not-italic text-[48px] text-center text-nowrap tracking-[-2.88px] text-[#008095]"
+                  style={{ fontFamily: 'Pretendard, sans-serif' }}
+                >
+                  University Hospital
+                </p>
+              </div>
+              <div className="flex flex-col gap-2 items-center w-full">
+                <p className="font-bold leading-[1.4] not-italic text-[#37373e] text-[22px] text-center tracking-[-0.44px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                  Visiting Professor
+                </p>
+                <p className="text-[15px] text-[#5d5f6d] text-center leading-[1.5]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                  Former university hospital professor<br />
+                  personally consults, operates, and takes full responsibility
+                </p>
+              </div>
+            </div>
+
+            {/* Card 2: Implant surgeries */}
             <div className="bg-white box-border flex flex-col gap-4 items-center px-4 py-10 relative rounded-2xl shrink-0 w-full">
               <div className="flex gap-3 items-baseline justify-center relative shrink-0 w-full">
                 <p
-                  className="font-bold leading-[1] not-italic text-[72px] text-center text-nowrap tracking-[-2.88px]"
-                  style={{
-                    fontFamily: 'Pretendard, sans-serif',
-                    background: 'linear-gradient(to bottom, #006aff 0%, #0050c0 100%)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    backgroundClip: 'text'
-                  }}
+                  className="font-bold leading-[1] not-italic text-[72px] text-center text-nowrap tracking-[-2.88px] text-[#008095]"
+                  style={{ fontFamily: 'Pretendard, sans-serif' }}
                 >
-                  0
+                  1,200 +
                 </p>
-                <p className="font-bold leading-[1] text-[#006aff] text-2xl tracking-[-0.48px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                <p className="font-bold leading-[1] text-[#008095] text-2xl tracking-[-0.48px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
                   cases
                 </p>
               </div>
-              <p className="font-bold leading-[1.4] not-italic text-[#37373e] text-[22px] text-center tracking-[-0.44px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-                Re-surgeries in 10 Years
-              </p>
-            </div>
-
-            {/* Card 2: 임플란트 수술 건수 */}
-            <div className="bg-white box-border flex flex-col gap-4 items-center px-4 py-10 relative rounded-2xl shrink-0 w-full">
-              <div className="flex flex-col gap-[10px] items-start relative shrink-0 w-full">
-                {/* 부산 남구 1등 Badge */}
-                <div className="flex items-center justify-center relative shrink-0 w-full">
-                  <Image
-                    src="/icons/busan-namgu-no1.svg"
-                    alt="#1 in Busan Nam-gu"
-                    width={311}
-                    height={27}
-                  />
-                </div>
-
-                {/* Number */}
-                <div className="flex gap-3 items-baseline justify-center relative shrink-0 w-full">
-                  <p
-                    className="font-bold leading-[1] not-italic text-[72px] text-center text-nowrap tracking-[-2.88px]"
-                    style={{
-                      fontFamily: 'Pretendard, sans-serif',
-                      background: 'linear-gradient(to bottom, #006aff 0%, #0050c0 100%)',
-                      WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent',
-                      backgroundClip: 'text'
-                    }}
-                  >
-                    1,500 +
-                  </p>
-                  <p className="font-bold leading-[1] text-[#006aff] text-2xl tracking-[-0.48px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-                    cases
-                  </p>
-                </div>
-              </div>
               <div className="flex flex-col gap-1 items-center w-full">
                 <p className="text-sm text-[#5d5f6d] text-center" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-                  Using computer-guided analysis
+                  Computer-analyzed
                 </p>
                 <p className="font-bold leading-[1.4] not-italic text-[#37373e] text-[22px] text-center tracking-[-0.44px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
                   Digital Implant Surgeries
@@ -116,28 +94,63 @@ export default function StatsSection() {
               </div>
             </div>
 
-            {/* Card 3: 사랑니 발치 */}
+            {/* Card 3: Wisdom tooth */}
             <div className="bg-white box-border flex flex-col gap-4 items-center px-4 py-10 relative rounded-2xl shrink-0 w-full">
               <div className="flex gap-3 items-baseline justify-center relative shrink-0 w-full">
                 <p
-                  className="font-bold leading-[1] not-italic text-[72px] text-center text-nowrap tracking-[-2.88px]"
-                  style={{
-                    fontFamily: 'Pretendard, sans-serif',
-                    background: 'linear-gradient(to bottom, #006aff 0%, #0050c0 100%)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    backgroundClip: 'text'
-                  }}
+                  className="font-bold leading-[1] not-italic text-[72px] text-center text-nowrap tracking-[-2.88px] text-[#008095]"
+                  style={{ fontFamily: 'Pretendard, sans-serif' }}
                 >
-                  2,700 +
+                  2,000 +
                 </p>
-                <p className="font-bold leading-[1] text-[#006aff] text-2xl tracking-[-0.48px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                <p className="font-bold leading-[1] text-[#008095] text-2xl tracking-[-0.48px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
                   cases
                 </p>
               </div>
-              <p className="font-bold leading-[1.4] not-italic text-[#37373e] text-[22px] text-center tracking-[-0.44px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-                Complex Wisdom Tooth Extractions
+              <div className="flex flex-col gap-1 items-center w-full">
+                <p className="font-bold leading-[1.4] not-italic text-[#37373e] text-[22px] text-center tracking-[-0.44px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                  Wisdom Tooth Extractions
+                </p>
+              </div>
+            </div>
+
+            {/* Card 4: Government Certified */}
+            <div className="bg-white box-border flex flex-col gap-5 items-center px-5 py-8 relative rounded-2xl shrink-0 w-full">
+              <div className="flex gap-3 items-baseline justify-center relative shrink-0 w-full">
+                <p
+                  className="font-bold leading-[1] not-italic text-[42px] text-center text-nowrap tracking-[-2.88px] text-[#008095]"
+                  style={{ fontFamily: 'Pretendard, sans-serif' }}
+                >
+                  Gov. Certified
+                </p>
+              </div>
+              <div className="flex flex-col gap-2 items-center w-full">
+                <p className="font-bold leading-[1.4] not-italic text-[#37373e] text-[22px] text-center tracking-[-0.44px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                  Comprehensive Dentistry Specialist
+                </p>
+                <p className="text-[15px] text-[#5d5f6d] text-center leading-[1.5]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                  Implants, root canal, gum care, prosthetics —<br />
+                  comprehensive treatment across all fields
+                </p>
+              </div>
+            </div>
+
+            {/* Explanation */}
+            <div className="bg-[#f8f9fb] box-border flex flex-col gap-4 items-start px-5 py-6 relative rounded-2xl shrink-0 w-full mt-2">
+              <p className="font-bold text-[18px] text-[#37373e] leading-[1.4]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                What is a Comprehensive Dentistry Specialist?
               </p>
+              <div className="flex flex-col gap-3 text-[15px] text-[#5d5f6d] leading-[1.6]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                <p>
+                  A government-certified specialist who can<br />
+                  comprehensively treat all dental fields including<br />
+                  implants, root canals, prosthetics, and gum care.
+                </p>
+                <p className="text-[#008095] font-medium">
+                  At Godeok First Dental, the head doctor personally<br />
+                  consults, operates, and manages aftercare to the end.
+                </p>
+              </div>
             </div>
           </div>
         </div>

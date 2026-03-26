@@ -6,72 +6,100 @@ export default function TreatmentSection() {
     {
       icon: '/images/implant-icon.png',
       iconBg: 'bg-blue-50',
-      title: 'Implant toàn hàm & Implant',
-      subtitle: 'Số ca phẫu thuật implant nhiều nhất quận Nam, Busan',
-      description: 'Phẫu thuật hướng dẫn kỹ thuật số độ khó cao với phân tích máy tính, an toàn và thoải mái, cam kết 10 năm.',
+      title: 'Implant',
+      subtitle: 'Phẫu thuật cấy ghép Implant kỹ thuật số',
+      description: 'Phẫu thuật dẫn đường kỹ thuật số độ khó cao qua phân tích máy tính, an toàn và thoải mái, chịu tráchách nhiệm đến cùng.',
       features: [
-        'Phẫu thuật hướng dẫn kỹ thuật số độ khó cao',
-        'Phẫu thuật gây mê an thần có ý thức',
+        'Phẫu thuật dẫn đường kỹ thuật số độ khó cao',
+        'Phẫu thuật gây mê qua an thần có ý thức',
         'Cung cấp răng tạm ngay sau phẫu thuật',
         'Bác sĩ trưởng trực tiếp phẫu thuật',
-        'Trang bị thiết bị kỹ thuật số lớn nhất Hàn Quốc'
+        'Trang bị đầy đủ thiết bị kỹ thuật số'
       ],
-      link: '/vi/implant'
+      link: '/implant'
     },
     {
-      icon: '/icons/whitening.svg',
-      iconBg: 'bg-purple-50',
-      title: 'Tẩy trắng & Dán sứ Laminate',
-      subtitle: 'Sở hữu thiết bị cao cấp nhất',
-      description: 'Tẩy trắng an toàn và hiệu quả\nGiảm 50% khi kết hợp lấy cao răng',
+      icon: '/icons/gum.svg',
+      iconBg: 'bg-indigo-50',
+      title: 'Hàm giả / Implant toàn hàm',
+      subtitle: 'Phục hình chính xác theo yêu cầu',
+      description: 'Từ Hàm giả thoải mái tự nhiên\nđến Implant toàn hàm thiết kế theo yêu cầu',
       features: [
-        'Hiệu quả ngay sau 1 lần điều trị',
-        'Không gây hại răng',
-        'Giá cả hợp lý',
-        'Có thể tẩy trắng chuyên nghiệp và dán sứ laminate'
+        'Chế tạo Hàm giả chính xác theo yêu cầu',
+        'Implant toàn hàm (All-on-4/6)',
+        'Hàm giả trên Implant (Overdenture)',
+        'Có thể áp dụng bảo hiểm Hàm giả'
       ],
-      link: '/vi/whitening'
+      link: '/denture'
+    },
+    {
+      icon: '/icons/cavity.svg',
+      iconBg: 'bg-orange-50',
+      title: 'Điều trị sâu răng & Điều trị tủy',
+      subtitle: 'Chuyên bảo tồn răng tự nhiên',
+      description: 'Điều trị cứu răng thay vì nhổ\nĐiều trị chính xác của Chuyên gia Nha khoa Tổng hợp',
+      features: [
+        'Chẩn đoán sâu răng chính xác',
+        'giảm đau Điều trị tủy',
+        'Bảo tồn răng tự nhiên',
+        'Bảo hiểm'
+      ],
+      link: '/cavity-treatment'
     },
     {
       icon: '/icons/extraction.svg',
       iconBg: 'bg-green-50',
       title: 'Nhổ răng khôn',
       subtitle: 'Nhổ răng an toàn và nhanh chóng',
-      description: 'Chẩn đoán chính xác với CT 3D\nNhổ răng an toàn không tổn thương thần kinh',
+      description: 'Nhổ răng an toàn không tổn thương thần kinh\nvới chẩn đoán chính xác 3D CT',
       features: [
-        'Gây tê giảm đau',
-        'Phục hồi nhanh',
-        'Chăm sóc hậu phẫu kỹ lưỡng'
+        'Gây mê giảm đau',
+        'Hồi phục nhanh',
+        'Chăm sóc sau điều trị kỹ lưỡng'
       ],
-      link: '/vi/wisdom-tooth'
-    },
-    {
-      icon: '/icons/cavity.svg',
-      iconBg: 'bg-orange-50',
-      title: 'Điều trị sâu răng & Điều trị tủy',
-      subtitle: 'Chuyên gia bảo tồn răng tự nhiên',
-      description: 'Điều trị bảo tồn thay vì nhổ răng\nĐiều trị chính xác bởi chuyên gia nha khoa bảo tồn',
-      features: [
-        'Chẩn đoán chính xác bằng kính hiển vi',
-        'Phát hiện sâu răng bằng Qray',
-        'Điều trị tủy giảm đau',
-        'Áp dụng bảo hiểm'
-      ],
-      link: '/vi/cavity-treatment'
+      link: '/wisdom-tooth'
     },
     {
       icon: '/icons/gum.svg',
       iconBg: 'bg-pink-50',
-      title: 'Điều trị nướu & Lấy cao răng',
-      subtitle: 'Khởi đầu của sức khỏe toàn thân',
-      description: '80% người lớn mắc bệnh nướu\nRăng khỏe suốt đời với chăm sóc định kỳ',
+      title: 'Điều trị nướu & Cạo vôi răng',
+      subtitle: 'Khởi đầu sức khỏe toàn diện',
+      description: '80% người lớn mắc bệnh nướu\nRăng khỏe mạnh suốt đời nhờ chăm sóc định kỳ',
       features: [
-        'Thiết bị đặc biệt NSK varios 970',
-        'Chăm sóc Perio Clean',
+        'Điều trị sử dụng thiết bị đặc biệt',
+        'Quản lý Perioclin',
         'Điều trị giảm đau',
         'Bảo hiểm áp dụng 1 lần/năm'
       ],
-      link: '/vi/gum-care'
+      link: '/gum-care'
+    },
+    {
+      icon: '/icons/gum.svg',
+      iconBg: 'bg-indigo-50',
+      title: 'Điều trị khớp thái dương hàm',
+      subtitle: 'Chuyên đau khớp thái dương hàm · Rối loạn há miệng',
+      description: 'Hàm của bạn có tiếng kêu hoặc đau?\nĐiều trị theo yêu cầu sau chẩn đoán chính xác',
+      features: [
+        'khớp thái dương hàm Chẩn đoán chính xác',
+        'Máng ổn định khớp cắn (Splint)',
+        'Vật lý trị liệu · Điều trị thuốc',
+        'Chuyên gia Nha khoa Tổng hợp trực tiếp khám'
+      ],
+      link: '/tmj'
+    },
+    {
+      icon: '/icons/whitening.svg',
+      iconBg: 'bg-purple-50',
+      title: 'Tẩy trắng răng',
+      subtitle: 'Sở hữu thiết bị cao cấp nhất',
+      description: 'Tẩy trắng an toàn và hiệu quả\nGiảm giá khi kết hợp lấy cao răng',
+      features: [
+        'Hiệu quả ngay sau 1 lần điều trị',
+        'Không tổn thương răng',
+        'Giá hợp lý',
+        'Hệ thống Osstem Beautis'
+      ],
+      link: '/whitening'
     }
   ];
 
@@ -80,17 +108,17 @@ export default function TreatmentSection() {
       <div className="max-w-[375px] mx-auto px-4 py-12">
         {/* Section Header */}
         <div className="flex flex-col gap-5 items-center justify-center relative shrink-0 w-full mb-10">
-          <div className="h-8 relative shrink-0 w-40">
+          <div className="h-11 relative shrink-0 overflow-hidden">
             <Image
-              src="/icons/Logo_black.svg"
-              alt="Kyungsung Medis Dental"
-              width={160}
-              height={32}
-              className="w-full h-full"
+              src="/고덕퍼스트치과-로고-(블랙).png"
+              alt="Godeok First Dental"
+              width={375}
+              height={84}
+              className="h-20 w-auto object-contain -mt-[18px]"
             />
           </div>
           <h2 className="font-bold leading-[1.35] not-italic text-[36px] text-black text-center tracking-[-0.72px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-            Lĩnh vực điều trị chuyên môn
+            Chuyên khoa điều trị
           </h2>
         </div>
 
@@ -113,7 +141,7 @@ export default function TreatmentSection() {
                       alt={treatment.title}
                       width={64}
                       height={64}
-                      className="w-full h-full object-contain"
+                      className="h-20 w-auto object-contain -mt-[18px]"
                     />
                   </div>
 
@@ -126,11 +154,6 @@ export default function TreatmentSection() {
                       <p className="text-[17px] font-bold text-[#727582] leading-[1.5] tracking-[-0.36px]">
                         {treatment.subtitle}
                       </p>
-                      {index === 0 && (
-                        <p className="text-[13px] text-[#9a9ca8] leading-[1.5] tracking-[-0.28px]">
-                          *Tiêu chuẩn phẫu thuật hướng dẫn kỹ thuật số qua phân tích máy tính
-                        </p>
-                      )}
                     </div>
                   </div>
                 </div>
@@ -146,7 +169,7 @@ export default function TreatmentSection() {
                       src="/icons/arrow-right.svg"
                       alt="Xem chi tiết"
                       width={32}
-                      height={32}
+                      height={84}
                     />
                   </Link>
                 ) : (
@@ -158,7 +181,7 @@ export default function TreatmentSection() {
                       src="/icons/arrow-right.svg"
                       alt="Xem chi tiết"
                       width={32}
-                      height={32}
+                      height={84}
                     />
                   </button>
                 )}

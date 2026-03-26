@@ -5,8 +5,8 @@ export default function WhiteningVideoSection() {
         <div className="flex flex-col gap-10 items-center w-full">
           {/* Title */}
           <h2 className="font-bold text-[32px] leading-[1.35] tracking-[-0.02em] text-black text-center w-full">
-            牙科美白的所有知识<br />
-            这个视频全告诉您
+            牙科 美白的一切<br />
+            视频为您全面讲解
           </h2>
 
           {/* YouTube Video */}
@@ -15,7 +15,7 @@ export default function WhiteningVideoSection() {
               width="100%"
               height="100%"
               src="https://www.youtube.com/embed/4hJI8OteG3Q"
-              title="牙科美白视频"
+              title="牙科 美白 视频"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
               className="absolute top-0 left-0 w-full h-full"

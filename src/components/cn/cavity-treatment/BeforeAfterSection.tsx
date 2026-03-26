@@ -2,9 +2,52 @@
 
 import Image from 'next/image';
 
+const cases = [
+  {
+    name: '김●●',
+    type: '충치 레진 수복',
+    badgeColor: 'bg-[#fff9ec]',
+    badgeTextColor: 'text-[#ffc53d]',
+    title: '충치로 손상된 치아를 레진으로 복원',
+    before: '/임상사진/충치/김효연_충치_before.jpg',
+    after: '/임상사진/충치/김효연_충치_after.jpg',
+    description: '충치 제거 후 자연치아 색상에 맞춰 레진 수복 완료',
+  },
+  {
+    name: '김●●',
+    type: '크랙 크라운 수복',
+    badgeColor: 'bg-[#fef1e5]',
+    badgeTextColor: 'text-[#f57400]',
+    title: '치아 균열로 인한 통증, 크라운으로 보호',
+    before: '/임상사진/크랙/김고운_크랙_실사_before.jpg',
+    after: '/임상사진/크랙/김고운_크랙_실사_after.jpg',
+    description: '크랙이 진행된 치아를 크라운으로 안전하게 수복',
+  },
+  {
+    name: '정●●',
+    type: '앞니 보철 수복',
+    badgeColor: 'bg-[#e8f4fd]',
+    badgeTextColor: 'text-[#0088cc]',
+    title: '손상된 앞니를 보철로 자연스럽게 복원',
+    before: '/임상사진/정재윤_앞니보철/정재윤_앞니보철_실제사진_before.jpg',
+    after: '/임상사진/정재윤_앞니보철/정재윤_앞니보철_실제사진_after.jpg',
+    description: '앞니 보철로 심미성과 기능 모두 회복',
+  },
+  {
+    name: '정●●',
+    type: '앞니 심미보철 크라운',
+    badgeColor: 'bg-[#ffebed]',
+    badgeTextColor: 'text-[#ff1616]',
+    title: '변색된 앞니를 심미보철로 개선',
+    before: '/임상사진/정민아B_앞니 보철/정민아B_앞니심미보철크라운_before.jpg',
+    after: '/임상사진/정민아B_앞니 보철/정민아B_앞니심미보철크라운_after.jpg',
+    description: '심미보철 크라운으로 자연스러운 앞니 완성',
+  },
+];
+
 export default function BeforeAfterSection() {
   return (
-    <div className="bg-gradient-to-b from-[#0b1727] from-[0.541%] to-white w-full py-[60px] px-4 relative">
+    <div className="bg-gradient-to-b from-[#21314E] from-[0.541%] to-white w-full py-[60px] px-4 relative">
       {/* Background gradient ellipse */}
       <div className="absolute h-[711px] left-[calc(50%+5.5px)] top-[217.35px] -translate-x-1/2 w-[480px] pointer-events-none">
         <div className="absolute inset-[-56.26%_-83.33%]">
@@ -22,277 +65,86 @@ export default function BeforeAfterSection() {
           {/* Title */}
           <div className="flex flex-col gap-4 items-center justify-center w-full">
             <div className="flex flex-col gap-3 items-center justify-center text-center w-full">
-              <h2 className="font-['Pretendard,sans-serif'] font-bold text-[32px] leading-[1.35] tracking-[-0.64px] text-white w-full">
-                被建议拔牙的患者<br />
-                我们成功保留了牙齿
+              <h2 className="font-['Pretendard_JP'] font-bold text-[32px] leading-[1.35] tracking-[-0.64px] text-white w-full">
+                충치·보철 치료,<br />
+                전후 사례로 확인하세요
               </h2>
-              <p className="font-['Pretendard,sans-serif'] font-semibold text-base leading-[1.4] tracking-[-0.32px] text-[#e9ebf1] w-full">
-                其他医院建议拔牙<br />
-                通过根管治疗成功保留
+              <p className="font-['Pretendard_JP'] font-semibold text-base leading-[1.4] tracking-[-0.32px] text-[#e9ebf1] w-full">
+                실제 환자분의 치료 전·후<br />
+                임상 사진입니다
               </p>
             </div>
           </div>
 
           {/* Before/After Cards */}
           <div className="flex flex-col gap-6 items-start w-full">
-            {/* Case 1: 37番 根尖病变 */}
-            <div className="bg-white border border-[#f3f6fb] rounded-[24px] w-full overflow-hidden">
-              <div className="flex flex-col gap-4 items-center justify-center px-4 py-6 w-full">
-                <div className="flex flex-col gap-3 items-center justify-center w-full">
-                  <div className="bg-[#fff9ec] px-3 py-1.5 rounded-lg">
-                    <p className="font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#ffc53d] text-center">
-                      根尖病变治愈
-                    </p>
-                  </div>
-                  <p className="font-bold text-[20px] leading-[1.35] tracking-[-0.4px] text-black text-center w-full">
-                    牙根尖炎症被建议拔牙的磨牙
-                  </p>
-                </div>
-
-                {/* Before/After Images */}
-                <div className="flex flex-col gap-3 w-full">
-                  {/* Before */}
-                  <div className="relative w-full">
-                    <div className="h-[192px] w-full rounded-[20px] overflow-hidden relative bg-[#f3f6fb]">
-                      <Image
-                        src="/images/nerve-treatment-cases/saved/case2-before.jpg"
-                        alt="治疗前"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                    <div className="absolute top-3 left-3 bg-[#292a2f] rounded-[10px] px-2.5 py-[5px] z-10">
-                      <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-white">
-                        Before
+            {cases.map((c, i) => (
+              <div key={i} className="bg-white border border-[#f3f6fb] rounded-[24px] w-full overflow-hidden">
+                <div className="flex flex-col gap-4 items-center justify-center px-4 py-6 w-full">
+                  <div className="flex flex-col gap-3 items-center justify-center w-full">
+                    <div className={`${c.badgeColor} px-3 py-1.5 rounded-lg`}>
+                      <p className={`font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] ${c.badgeTextColor} text-center`}>
+                        {c.type}
                       </p>
                     </div>
+                    <p className="font-bold text-[20px] leading-[1.35] tracking-[-0.4px] text-black text-center w-full">
+                      {c.title}
+                    </p>
                   </div>
 
-                  {/* After */}
-                  <div className="relative w-full">
-                    <div className="h-[192px] w-full rounded-[20px] overflow-hidden relative bg-[#f3f6fb]">
-                      <Image
-                        src="/images/nerve-treatment-cases/saved/case2-after-14months.jpg"
-                        alt="治疗1年2个月后"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                    <div className="absolute top-0 left-0 w-[196px] h-[86px]">
-                      <Image
-                        src="/images/after-badge.svg"
-                        alt=""
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                    <div className="absolute top-3 left-3">
-                      <div className="rounded-[10px] px-2.5 py-[5px]">
+                  {/* Before/After Images */}
+                  <div className="flex flex-col gap-3 w-full">
+                    {/* Before */}
+                    <div className="relative w-full">
+                      <div className="h-[192px] w-full rounded-[20px] overflow-hidden relative bg-[#f3f6fb]">
+                        <Image
+                          src={c.before}
+                          alt="치료 전"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                      <div className="absolute top-3 left-3 bg-[#292a2f] rounded-[10px] px-2.5 py-[5px] z-10">
                         <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-white">
-                          After
+                          Before
                         </p>
                       </div>
                     </div>
-                  </div>
-                </div>
 
-                <p className="font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center">
-                  根管治疗1年2个月后根尖病变完全治愈
-                </p>
-              </div>
-            </div>
-
-            {/* Case 2: 36番 根尖病变 */}
-            <div className="bg-white border border-[#f3f6fb] rounded-[24px] w-full overflow-hidden">
-              <div className="flex flex-col gap-4 items-center justify-center px-4 py-6 w-full">
-                <div className="flex flex-col gap-3 items-center justify-center w-full">
-                  <div className="bg-[#fff9ec] px-3 py-1.5 rounded-lg">
-                    <p className="font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#ffc53d] text-center">
-                      根尖病变治愈
-                    </p>
-                  </div>
-                  <p className="font-bold text-[20px] leading-[1.35] tracking-[-0.4px] text-black text-center w-full">
-                    严重炎症化脓的磨牙
-                  </p>
-                </div>
-
-                <div className="flex flex-col gap-3 w-full">
-                  <div className="relative w-full">
-                    <div className="h-[192px] w-full rounded-[20px] overflow-hidden relative bg-[#f3f6fb]">
-                      <Image
-                        src="/images/nerve-treatment-cases/saved/case1-before.jpg"
-                        alt="治疗前"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                    <div className="absolute top-3 left-3 bg-[#292a2f] rounded-[10px] px-2.5 py-[5px] z-10">
-                      <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-white">
-                        Before
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="relative w-full">
-                    <div className="h-[192px] w-full rounded-[20px] overflow-hidden relative bg-[#f3f6fb]">
-                      <Image
-                        src="/images/nerve-treatment-cases/saved/case1-after-6months.jpg"
-                        alt="治疗6个月后"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                    <div className="absolute top-0 left-0 w-[196px] h-[86px]">
-                      <Image
-                        src="/images/after-badge.svg"
-                        alt=""
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                    <div className="absolute top-3 left-3">
-                      <div className="rounded-[10px] px-2.5 py-[5px]">
-                        <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-white">
-                          After
-                        </p>
+                    {/* After */}
+                    <div className="relative w-full">
+                      <div className="h-[192px] w-full rounded-[20px] overflow-hidden relative bg-[#f3f6fb]">
+                        <Image
+                          src={c.after}
+                          alt="치료 후"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                      <div className="absolute top-0 left-0 w-[196px] h-[86px]">
+                        <Image
+                          src="/images/after-badge.svg"
+                          alt=""
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                      <div className="absolute top-3 left-3">
+                        <div className="rounded-[10px] px-2.5 py-[5px]">
+                          <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-white">
+                            After
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <p className="font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center">
-                  治疗6个月后根尖病变完全治愈
-                </p>
-              </div>
-            </div>
-
-            {/* Case 3: 再根管治疗 - 发现额外根管 */}
-            <div className="bg-white border border-[#f3f6fb] rounded-[24px] w-full overflow-hidden">
-              <div className="flex flex-col gap-4 items-center justify-center px-4 py-6 w-full">
-                <div className="flex flex-col gap-3 items-center justify-center w-full">
-                  <div className="bg-[#fef1e5] px-3 py-1.5 rounded-lg">
-                    <p className="font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#f57400] text-center">
-                      再根管治疗
-                    </p>
-                  </div>
-                  <p className="font-bold text-[20px] leading-[1.35] tracking-[-0.4px] text-black text-center w-full">
-                    其他医院治疗后复发的磨牙
+                  <p className="font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center">
+                    {c.name} 님 | {c.description}
                   </p>
                 </div>
-
-                <div className="flex flex-col gap-3 w-full">
-                  <div className="relative w-full">
-                    <div className="h-[192px] w-full rounded-[20px] overflow-hidden relative bg-[#f3f6fb]">
-                      <Image
-                        src="/images/nerve-treatment-cases/retreatment/case1-initial.jpg"
-                        alt="治疗前"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                    <div className="absolute top-3 left-3 bg-[#292a2f] rounded-[10px] px-2.5 py-[5px] z-10">
-                      <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-white">
-                        Before
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="relative w-full">
-                    <div className="h-[192px] w-full rounded-[20px] overflow-hidden relative bg-[#f3f6fb]">
-                      <Image
-                        src="/images/nerve-treatment-cases/retreatment/case1-after-21months.jpg"
-                        alt="治疗1年9个月后"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                    <div className="absolute top-0 left-0 w-[196px] h-[86px]">
-                      <Image
-                        src="/images/after-badge.svg"
-                        alt=""
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                    <div className="absolute top-3 left-3">
-                      <div className="rounded-[10px] px-2.5 py-[5px]">
-                        <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-white">
-                          After
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <p className="font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center">
-                  再根管治疗发现额外根管，1年9个月后完全治愈
-                </p>
               </div>
-            </div>
-
-            {/* Case 4: 根尖切除术 */}
-            <div className="bg-white border border-[#f3f6fb] rounded-[24px] w-full overflow-hidden">
-              <div className="flex flex-col gap-4 items-center justify-center px-4 py-6 w-full">
-                <div className="flex flex-col gap-3 items-center justify-center w-full">
-                  <div className="bg-[#ffebed] px-3 py-1.5 rounded-lg">
-                    <p className="font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#ff1616] text-center">
-                      根尖切除术
-                    </p>
-                  </div>
-                  <p className="font-bold text-[20px] leading-[1.35] tracking-[-0.4px] text-black text-center w-full">
-                    炎症蔓延至牙根尖的前牙
-                  </p>
-                </div>
-
-                <div className="flex flex-col gap-3 w-full">
-                  <div className="relative w-full">
-                    <div className="h-[192px] w-full rounded-[20px] overflow-hidden relative bg-[#f3f6fb]">
-                      <Image
-                        src="/images/nerve-treatment-cases/apicoectomy/case1-initial.jpg"
-                        alt="治疗前"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                    <div className="absolute top-3 left-3 bg-[#292a2f] rounded-[10px] px-2.5 py-[5px] z-10">
-                      <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-white">
-                        Before
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="relative w-full">
-                    <div className="h-[192px] w-full rounded-[20px] overflow-hidden relative bg-[#f3f6fb]">
-                      <Image
-                        src="/images/nerve-treatment-cases/apicoectomy/case1-healed.jpg"
-                        alt="治疗后"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                    <div className="absolute top-0 left-0 w-[196px] h-[86px]">
-                      <Image
-                        src="/images/after-badge.svg"
-                        alt=""
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                    <div className="absolute top-3 left-3">
-                      <div className="rounded-[10px] px-2.5 py-[5px]">
-                        <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-white">
-                          After
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <p className="font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center">
-                  再根管治疗及根尖切除术后病变完全治愈
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

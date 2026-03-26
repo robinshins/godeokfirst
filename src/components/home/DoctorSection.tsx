@@ -32,13 +32,13 @@ export default function DoctorSection() {
       <div className="max-w-[430px] mx-auto px-4 py-[60px]">
         {/* Section Header */}
         <div className="flex flex-col items-center gap-5 mb-12">
-          <div className="h-8 relative shrink-0">
+          <div className="h-11 relative shrink-0 overflow-hidden">
             <Image
-              src="/images/goduk_images/고덕퍼스트치과_Logo_white.svg"
+              src="/고덕퍼스트치과-로고-(화이트).png"
               alt="고덕퍼스트치과"
-              width={180}
-              height={32}
-              className="h-full w-auto object-contain"
+              width={375}
+              height={84}
+              className="h-20 w-auto object-contain -mt-[18px]"
             />
           </div>
           <p className="text-[17px] font-['Pretendard_JP'] font-bold text-[#4DC8D8] uppercase tracking-[2.04px] leading-[32px]">

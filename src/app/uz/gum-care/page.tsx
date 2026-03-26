@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import GNB from '@/components/uz/GNB';
 import FixedCTAButton from '@/components/uz/FixedCTAButton';
 import FooterSection from '@/components/uz/FooterSection';
-
 import HeroSection from '@/components/uz/gum-care/HeroSection';
+import DoctorMessageSection from '@/components/uz/gum-care/DoctorMessageSection';
 import StatsSection from '@/components/uz/gum-care/StatsSection';
 import VideoSection from '@/components/uz/gum-care/VideoSection';
 import RiskSection from '@/components/uz/gum-care/RiskSection';
@@ -11,32 +11,24 @@ import PhilosophySection from '@/components/uz/gum-care/PhilosophySection';
 import ComparisonSection from '@/components/uz/gum-care/ComparisonSection';
 import TreatmentSystemSection from '@/components/uz/gum-care/TreatmentSystemSection';
 import CaseStudiesSection from '@/components/uz/gum-care/CaseStudiesSection';
+import DoctorSection from '@/components/uz/DoctorSection';
+import WhyBestSection from '@/components/uz/WhyBestSection';
+import LocationSection from '@/components/uz/LocationSection';
 import FAQSection from '@/components/uz/FAQSection';
-import CTASection from '@/components/uz/CTASection';
 
 export const metadata: Metadata = {
-  title: 'Koreya Pusan Milk Davolash Stomatologiya | Kyungsung Medis Dental',
-  description: 'Professional milk kasalligi va parodont davolash. Pusan Nam-gu 1-o\'rin. Bosh shifokor zamonaviy raqamli uskunalar bilan bevosita davolaydi.',
-  keywords: [
-    'Koreya milk davolash',
-    'Pusan milk davolash',
-    'Koreya parodont',
-    'Tish tozalash Koreya',
-    'Milk operatsiyasi Koreya',
-    'Koreya stomatologiya milk',
-    'O\'zbek milk Pusan',
-    'Koreya stomatologiya turizmi'
-  ],
+  title: 'Gum Care & Scaling Godeok | Godeok First Dental',
+  description: 'Pyeongtaek Godeok Gum care & scaling specialist. Comprehensive Dentistry Specialist treats directly. Gum disease, periodontitis, scaling.',
   alternates: {
     canonical: 'https://gdfirstdent.com/uz/gum-care',
   },
   openGraph: {
-    title: 'Koreya Pusan Milk Davolash Stomatologiya | Kyungsung Medis Dental',
-    description: 'Professional milk kasalligi va parodont davolash. Pusan Nam-gu 1-o\'rin.',
+    title: 'Gum Care & Scaling Godeok | Godeok First Dental',
+    description: 'Pyeongtaek Godeok Gum care & scaling specialist. Comprehensive Dentistry Specialist treats directly.',
     url: 'https://gdfirstdent.com/uz/gum-care',
+    siteName: 'Godeok First Dental',
     type: 'website',
-    locale: 'uz_UZ',
-  }
+  },
 };
 
 export default function GumCarePage() {
@@ -48,19 +40,21 @@ export default function GumCarePage() {
       <div className="h-[52px]" />
 
       <HeroSection />
+      <DoctorMessageSection />
       <StatsSection />
-      <VideoSection />
       <RiskSection />
       <PhilosophySection />
       <ComparisonSection />
       <TreatmentSystemSection />
       <CaseStudiesSection />
-      <FAQSection page="gum" />
-      <CTASection />
-      <FooterSection />
 
+      <DoctorSection />
+      <WhyBestSection />
+      <LocationSection />
+      <FAQSection page="gum-care" />
+
+      <FooterSection />
       <div className="h-[88px]" />
     </main>
   );
 }
-

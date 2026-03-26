@@ -7,26 +7,26 @@ export default function ThreeStepNewSection() {
     {
       icon: '/icons/tooth.svg',
       label: '1次仮歯',
-      title: '即日回復',
-      description: '手術直後、すぐに装着し\n日常生活に即座に復帰'
+      title: '即時回復',
+      description: '手術直後、即時装着で\n日常生活がすぐに可能です'
     },
     {
       icon: '/icons/crown.svg',
-      label: '2次咬合安定化',
+      label: '2次咬合安定',
       title: '精密咬合調整',
-      description: '2週間後、カスタマイズされた\n咬合状態の精密調整'
+      description: '2週間後にオーダーメイドで\n咬合状態を微細に調整します'
     },
     {
       icon: '/icons/implant-group.svg',
       label: '3次最終仮歯',
-      title: '完璧な咬合検証',
-      description: '最終補綴物製作前に\n完璧な咬合をもう一度確認'
+      title: '完璧な咬合確認',
+      description: '最終補綴物製作前に\n完璧な咬合をもう一度確認します'
     },
     {
       icon: '/icons/tooth-shine.svg',
-      label: '最終補綴物',
-      title: '生涯の歯',
-      description: 'すべての調整が完了した\n完璧にカスタマイズされた最終補綴物を装着'
+      label: '最終補綴',
+      title: '一生の歯',
+      description: '全ての調整が完了した完璧にパーソナライズされた\n最終補綴物を装着します'
     }
   ];
 
@@ -50,24 +50,24 @@ export default function ThreeStepNewSection() {
         {/* Logo */}
         <div className="h-6 overflow-clip relative shrink-0 w-[168px]">
           <Image
-            src="/icons/Logo_black.svg"
-            alt="Kyungsung Medis Dental Clinic"
-            width={168}
-            height={24}
+            src="/고덕퍼스트치과-로고-(블랙).png"
+            alt="コドクファースト歯科"
+            width={375}
+            height={84}
             className="w-full h-full"
           />
         </div>
 
         {/* Title */}
         <div className="flex flex-col gap-3 items-center justify-center leading-[0] not-italic relative shrink-0 text-center w-full">
-          <h2 className="font-bold leading-[1.35] text-[32px] text-black tracking-[-0.64px] w-full" style={{ fontFamily: 'Pretendard_JP, sans-serif' }}>
-            京城メディスだけの<br />
+          <h2 className="font-bold leading-[1.35] text-[32px] text-black tracking-[-0.64px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+            コドクファースト歯科だけの<br />
             3段階仮歯
           </h2>
-          <p className="font-semibold leading-[1.4] text-[#727582] text-base tracking-[-0.32px] w-full" style={{ fontFamily: 'Pretendard_JP, sans-serif' }}>
-            1回の仮歯で終わるのではなく、<br />
-            3段階の精密調整を通じて<br />
-            自分の歯のような快適さを実現
+          <p className="font-semibold leading-[1.4] text-[#727582] text-base tracking-[-0.32px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+            1回の仮歯で終わらせるのではなく<br />
+            3段階にわたる精密調整を通じて<br />
+            自分の歯のような快適さを実現します
           </p>
         </div>
       </div>
@@ -89,17 +89,17 @@ export default function ThreeStepNewSection() {
               </div>
 
               {/* Label */}
-              <p className="font-bold leading-[1.5] not-italic text-[#006aff] text-[17px] text-center tracking-[-0.34px] w-full" style={{ fontFamily: 'Pretendard_JP, sans-serif' }}>
+              <p className="font-bold leading-[1.5] not-italic text-[#008095] text-[17px] text-center tracking-[-0.34px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
                 {step.label}
               </p>
 
               {/* Title */}
-              <p className="font-bold leading-[1.35] not-italic text-2xl text-black text-center tracking-[-0.48px] w-full" style={{ fontFamily: 'Pretendard_JP, sans-serif' }}>
+              <p className="font-bold leading-[1.35] not-italic text-2xl text-black text-center tracking-[-0.48px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
                 {step.title}
               </p>
 
               {/* Description */}
-              <p className="font-bold leading-[1.5] not-italic text-[#5d5f6d] text-[17px] text-center tracking-[-0.34px] w-full whitespace-pre-line" style={{ fontFamily: 'Pretendard_JP, sans-serif' }}>
+              <p className="font-bold leading-[1.5] not-italic text-[#5d5f6d] text-[17px] text-center tracking-[-0.34px] w-full whitespace-pre-line" style={{ fontFamily: 'Pretendard, sans-serif' }}>
                 {step.description}
               </p>
             </div>

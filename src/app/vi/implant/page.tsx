@@ -1,58 +1,64 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import GNB from '@/components/vi/GNB';
 import FixedCTAButton from '@/components/vi/FixedCTAButton';
 import FooterSection from '@/components/vi/FooterSection';
 
 import ImplantHero from '@/components/vi/implant/ImplantHero';
-import StatsSection from '@/components/vi/implant/StatsSection';
-import VideoSection from '@/components/vi/implant/VideoSection';
-import ThreeStepNewSection from '@/components/vi/implant/ThreeStepNewSection';
-import WhyBestNewSection from '@/components/vi/implant/WhyBestNewSection';
-import InHouseLabSection from '@/components/vi/implant/InHouseLabSection';
-import AfterCareSection from '@/components/vi/implant/AfterCareSection';
-import SpecialTechSection from '@/components/vi/implant/SpecialTechSection';
-import SpeedSection from '@/components/vi/implant/SpeedSection';
-import DigitalGuideSection from '@/components/vi/implant/DigitalGuideSection';
-import BeforeAfterSection from '@/components/vi/implant/BeforeAfterSection';
-import RealPatientResultsSection from '@/components/vi/implant/RealPatientResultsSection';
-import SkillDifferenceSection from '@/components/vi/implant/SkillDifferenceSection';
-// import SedationSection from '@/components/vi/cavity-treatment/SedationSection';
-import WarrantySection from '@/components/vi/implant/WarrantySection';
-import DoctorSection from '@/components/vi/DoctorSection';
-import WhyBestSection from '@/components/vi/WhyBestSection';
-import LocationSection from '@/components/vi/LocationSection';
-import YouTubeSection from '@/components/vi/YouTubeSection';
-import FAQSection from '@/components/vi/FAQSection';
+import { faqData } from '@/lib/faqData';
+import { generateFAQSchema, generateBreadcrumbSchema, generateMedicalServiceSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Nha khoa Cấy ghép Implant Busan Hàn Quốc | Kyungsung Medis Dental',
-  description: '10 năm 0 ca tái phẫu thuật implant. Số 1 quận Nam Busan với 1,500+ ca phẫu thuật implant kỹ thuật số. Bác sĩ trưởng trực tiếp điều trị với quy trình răng tạm 3 giai đoạn.',
-  keywords: [
-    'cấy ghép implant Hàn Quốc',
-    'implant Busan',
-    'implant Hàn Quốc',
-    'phẫu thuật implant Hàn Quốc',
-    'implant kỹ thuật số',
-    'nha khoa implant Busan',
-    'chuyên gia implant Hàn Quốc',
-    'du lịch nha khoa Hàn Quốc',
-    'implant tiếng Việt Busan'
-  ],
+  title: 'Dental Implant Pyeongtaek | Godeok First Dental',
+  description: 'Dental Implant Pyeongtaek. 대학병원 외래교수 출신 원장이 직접 수술하는 대학병원급 임플란트. 디지털 정밀 진단 시스템',
+  keywords: '고덕임플란트, 평택임플란트, 고덕동임플란트, 평택임플란트잘하는곳, 고덕임플란트잘하는곳, 임플란트전문, Godeok First Dental, 평택치과, 고덕치과, 고덕동치과',
   alternates: {
     canonical: 'https://gdfirstdent.com/vi/implant',
   },
   openGraph: {
-    title: 'Nha khoa Cấy ghép Implant Busan Hàn Quốc | Kyungsung Medis Dental',
-    description: '10 năm 0 ca tái phẫu thuật implant. Số 1 quận Nam Busan với 1,500+ ca phẫu thuật implant kỹ thuật số. Bác sĩ trưởng trực tiếp điều trị.',
+    title: 'Dental Implant Pyeongtaek | Godeok First Dental',
+    description: '대학병원 외래교수 출신 원장이 직접 수술하는 대학병원급 임플란트. 1,200회 이상 식립 경험.',
     url: 'https://gdfirstdent.com/vi/implant',
+    siteName: 'Godeok First Dental',
     type: 'website',
-    locale: 'vi_VN',
-  }
+  },
 };
+
+// FAQ Schema
+const faqSchema = generateFAQSchema(faqData.implant);
+
+// Breadcrumb Schema
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: '홈', url: 'https://gdfirstdent.com/vi' },
+  { name: '임플란트', url: 'https://gdfirstdent.com/vi/implant' }
+]);
+
+// Medical Service Schema
+const medicalServiceSchema = generateMedicalServiceSchema({
+  name: '임플란트',
+  description: '조선대학교 치과병원 외래교수 출신 원장이 직접 수술하는 대학병원급 임플란트. 디지털 가이드 시스템으로 정밀하고 안전한 시술.',
+  url: 'https://gdfirstdent.com/vi/implant'
+});
+import VideoSection from '@/components/vi/implant/VideoSection';
+import StatsSection from '@/components/vi/implant/StatsSection';
+import WhyBestNewSection from '@/components/vi/implant/WhyBestNewSection';
+import AfterCareSection from '@/components/vi/denture/AfterCareSection';
+import BeforeAfterSection from '@/components/vi/implant/BeforeAfterSection';
+import SkillDifferenceSection from '@/components/vi/implant/SkillDifferenceSection';
+// import SedationSection from '@/components/vi/cavity-treatment/SedationSection';
+import DoctorSection from '@/components/vi/DoctorSection';
+import WhyBestSection from '@/components/vi/WhyBestSection';
+import LocationSection from '@/components/vi/LocationSection';
+// import YouTubeSection from '@/components/vi/YouTubeSection';
+import MobileColumnSection from '@/components/vi/MobileColumnSection';
+import FAQSection from '@/components/vi/FAQSection';
+import SloganSection from '@/components/vi/SloganSection';
 
 export default function ImplantPage() {
   return (
     <main className="min-h-screen overflow-x-hidden">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalServiceSchema) }} />
       <GNB />
       <FixedCTAButton />
 
@@ -67,6 +73,7 @@ export default function ImplantPage() {
 
       {/* Video Section */}
       <VideoSection />
+      <MobileColumnSection page="implant" />
 
       {/* Why Best Section */}
       <WhyBestNewSection />
@@ -74,40 +81,26 @@ export default function ImplantPage() {
       {/* Sedation Section */}
       {/* <SedationSection /> */}
 
-      {/* Three Step Section */}
-      <ThreeStepNewSection />
-
-      {/* Speed Section */}
-      <SpeedSection />
-
-      {/* In-House Lab Section */}
-      <InHouseLabSection />
-
-      {/* After Care Section */}
       <AfterCareSection />
 
-      {/* Special Tech Section */}
-      <SpecialTechSection />
 
       {/* Digital Guide Section */}
-      <DigitalGuideSection />
+      {/* <DigitalGuideSection /> */}
 
       {/* Before/After Section */}
       <BeforeAfterSection />
-
-      {/* Real Patient Results Section */}
-      <RealPatientResultsSection />
 
       {/* Skill Difference Section */}
       <SkillDifferenceSection />
 
       {/* Warranty Section */}
-      <WarrantySection />
+      {/* <WarrantySection /> */}
 
       <DoctorSection />
+      <SloganSection />
       <WhyBestSection />
       <LocationSection />
-      <YouTubeSection />
+      {/* <YouTubeSection /> */}
       <FAQSection page="implant" />
 
       {/* Footer */}

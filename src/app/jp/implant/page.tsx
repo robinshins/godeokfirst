@@ -1,57 +1,64 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import GNB from '@/components/jp/GNB';
 import FixedCTAButton from '@/components/jp/FixedCTAButton';
 import FooterSection from '@/components/jp/FooterSection';
 
 import ImplantHero from '@/components/jp/implant/ImplantHero';
-import StatsSection from '@/components/jp/implant/StatsSection';
-import VideoSection from '@/components/jp/implant/VideoSection';
-import ThreeStepNewSection from '@/components/jp/implant/ThreeStepNewSection';
-import WhyBestNewSection from '@/components/jp/implant/WhyBestNewSection';
-import InHouseLabSection from '@/components/jp/implant/InHouseLabSection';
-import AfterCareSection from '@/components/jp/implant/AfterCareSection';
-import SpecialTechSection from '@/components/jp/implant/SpecialTechSection';
-import SpeedSection from '@/components/jp/implant/SpeedSection';
-import DigitalGuideSection from '@/components/jp/implant/DigitalGuideSection';
-import BeforeAfterSection from '@/components/jp/implant/BeforeAfterSection';
-import RealPatientResultsSection from '@/components/jp/implant/RealPatientResultsSection';
-import SkillDifferenceSection from '@/components/jp/implant/SkillDifferenceSection';
-// import SedationSection from '@/components/jp/cavity-treatment/SedationSection';
-import WarrantySection from '@/components/jp/implant/WarrantySection';
-import DoctorSection from '@/components/jp/DoctorSection';
-import WhyBestSection from '@/components/jp/WhyBestSection';
-import LocationSection from '@/components/jp/LocationSection';
-import YouTubeSection from '@/components/jp/YouTubeSection';
-import FAQSection from '@/components/jp/FAQSection';
+import { faqData } from '@/lib/faqData';
+import { generateFAQSchema, generateBreadcrumbSchema, generateMedicalServiceSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: '韓国釜山インプラント歯科 | 慶星メディス歯科',
-  description: '10年間再手術ゼロ、1,500件以上のデジタルインプラント実績。釜山南区No.1。院長が直接行う3段階仮歯システムとデジタルガイド手術。',
-  keywords: [
-    '韓国インプラント',
-    '釜山インプラント',
-    '韓国インプラント専門医',
-    'デジタルインプラント',
-    '韓国インプラント手術',
-    '韓国歯科インプラント',
-    '日本語対応インプラント韓国',
-    '韓国デンタルツーリズム'
-  ],
+  title: '平沢・高徳インプラント | コドクファースト歯科',
+  description: '平沢・高徳インプラント. 대학병원 외래교수 출신 원장이 직접 수술하는 대학병원급 임플란트. 디지털 정밀 진단 시스템',
+  keywords: '고덕임플란트, 평택임플란트, 고덕동임플란트, 평택임플란트잘하는곳, 고덕임플란트잘하는곳, 임플란트전문, コドクファースト歯科, 평택치과, 고덕치과, 고덕동치과',
   alternates: {
     canonical: 'https://gdfirstdent.com/jp/implant',
   },
   openGraph: {
-    title: '韓国釜山インプラント歯科 | 慶星メディス歯科',
-    description: '10年間再手術ゼロ、1,500件以上のデジタルインプラント実績。釜山南区No.1。',
+    title: '平沢・高徳インプラント | コドクファースト歯科',
+    description: '대학병원 외래교수 출신 원장이 직접 수술하는 대학병원급 임플란트. 1,200회 이상 식립 경험.',
     url: 'https://gdfirstdent.com/jp/implant',
+    siteName: 'コドクファースト歯科',
     type: 'website',
-    locale: 'ja_JP',
-  }
+  },
 };
+
+// FAQ Schema
+const faqSchema = generateFAQSchema(faqData.implant);
+
+// Breadcrumb Schema
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: '홈', url: 'https://gdfirstdent.com/jp' },
+  { name: '임플란트', url: 'https://gdfirstdent.com/jp/implant' }
+]);
+
+// Medical Service Schema
+const medicalServiceSchema = generateMedicalServiceSchema({
+  name: '임플란트',
+  description: '조선대학교 치과병원 외래교수 출신 원장이 직접 수술하는 대학병원급 임플란트. 디지털 가이드 시스템으로 정밀하고 안전한 시술.',
+  url: 'https://gdfirstdent.com/jp/implant'
+});
+import VideoSection from '@/components/jp/implant/VideoSection';
+import StatsSection from '@/components/jp/implant/StatsSection';
+import WhyBestNewSection from '@/components/jp/implant/WhyBestNewSection';
+import AfterCareSection from '@/components/jp/denture/AfterCareSection';
+import BeforeAfterSection from '@/components/jp/implant/BeforeAfterSection';
+import SkillDifferenceSection from '@/components/jp/implant/SkillDifferenceSection';
+// import SedationSection from '@/components/jp/cavity-treatment/SedationSection';
+import DoctorSection from '@/components/jp/DoctorSection';
+import WhyBestSection from '@/components/jp/WhyBestSection';
+import LocationSection from '@/components/jp/LocationSection';
+// import YouTubeSection from '@/components/jp/YouTubeSection';
+import MobileColumnSection from '@/components/jp/MobileColumnSection';
+import FAQSection from '@/components/jp/FAQSection';
+import SloganSection from '@/components/jp/SloganSection';
 
 export default function ImplantPage() {
   return (
     <main className="min-h-screen overflow-x-hidden">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalServiceSchema) }} />
       <GNB />
       <FixedCTAButton />
 
@@ -66,6 +73,7 @@ export default function ImplantPage() {
 
       {/* Video Section */}
       <VideoSection />
+      <MobileColumnSection page="implant" />
 
       {/* Why Best Section */}
       <WhyBestNewSection />
@@ -73,40 +81,26 @@ export default function ImplantPage() {
       {/* Sedation Section */}
       {/* <SedationSection /> */}
 
-      {/* Three Step Section */}
-      <ThreeStepNewSection />
-
-      {/* Speed Section */}
-      <SpeedSection />
-
-      {/* In-House Lab Section */}
-      <InHouseLabSection />
-
-      {/* After Care Section */}
       <AfterCareSection />
 
-      {/* Special Tech Section */}
-      <SpecialTechSection />
 
       {/* Digital Guide Section */}
-      <DigitalGuideSection />
+      {/* <DigitalGuideSection /> */}
 
       {/* Before/After Section */}
       <BeforeAfterSection />
-
-      {/* Real Patient Results Section */}
-      <RealPatientResultsSection />
 
       {/* Skill Difference Section */}
       <SkillDifferenceSection />
 
       {/* Warranty Section */}
-      <WarrantySection />
+      {/* <WarrantySection /> */}
 
       <DoctorSection />
+      <SloganSection />
       <WhyBestSection />
       <LocationSection />
-      <YouTubeSection />
+      {/* <YouTubeSection /> */}
       <FAQSection page="implant" />
 
       {/* Footer */}

@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1774191310413,
+  "lastScanned": 1774420183239,
   "projectRoot": "/Users/singyuseob/Dev/dentist_goduk",
   "techStack": {
     "languages": [
@@ -76,7 +76,7 @@
       "path": "docs",
       "purpose": "Documentation",
       "fileCount": 1,
-      "lastAccessed": 1774191310367,
+      "lastAccessed": 1774420183162,
       "keyFiles": [
         "TRACKING_SYSTEM_GUIDE.md"
       ]
@@ -85,7 +85,7 @@
       "path": "public",
       "purpose": "Public files",
       "fileCount": 8,
-      "lastAccessed": 1774191310388,
+      "lastAccessed": 1774420183165,
       "keyFiles": [
         "Vector3.png",
         "file.svg",
@@ -98,7 +98,7 @@
       "path": "scripts",
       "purpose": "Build/utility scripts",
       "fileCount": 7,
-      "lastAccessed": 1774191310388,
+      "lastAccessed": 1774420183199,
       "keyFiles": [
         "apply-rename.js",
         "korean-to-english-mapping.json",
@@ -111,7 +111,7 @@
       "path": "src",
       "purpose": "Source code",
       "fileCount": 2,
-      "lastAccessed": 1774191310388,
+      "lastAccessed": 1774420183200,
       "keyFiles": [
         "middleware.ts"
       ]
@@ -120,7 +120,7 @@
       "path": "src/app",
       "purpose": "Application code",
       "fileCount": 9,
-      "lastAccessed": 1774191310389,
+      "lastAccessed": 1774420183204,
       "keyFiles": [
         "favicon.ico",
         "globals.css",
@@ -131,7 +131,7 @@
       "path": "src/components",
       "purpose": "UI components",
       "fileCount": 14,
-      "lastAccessed": 1774191310389,
+      "lastAccessed": 1774420183205,
       "keyFiles": [
         "ChatInterface.tsx",
         "ConsultationForm.tsx",
@@ -142,7 +142,7 @@
       "path": "src/lib",
       "purpose": "Library code",
       "fileCount": 12,
-      "lastAccessed": 1774191310389,
+      "lastAccessed": 1774420183207,
       "keyFiles": [
         "faqData.ts",
         "intent-analyzer.ts",
@@ -153,7 +153,7 @@
       "path": "src/types",
       "purpose": "Type definitions",
       "fileCount": 1,
-      "lastAccessed": 1774191310389,
+      "lastAccessed": 1774420183208,
       "keyFiles": [
         "dom-to-image-more.d.ts"
       ]
@@ -162,310 +162,310 @@
       "path": "src/utils",
       "purpose": "Utility functions",
       "fileCount": 0,
-      "lastAccessed": 1774191310390,
+      "lastAccessed": 1774420183209,
       "keyFiles": []
     }
   },
   "hotPaths": [
     {
-      "path": "src/components/whitening/CaseStudySection.tsx",
+      "path": "src/components/th/cavity-treatment/TreatmentMethodsSection.tsx",
+      "accessCount": 32,
+      "lastAccessed": 1774502883649,
+      "type": "file"
+    },
+    {
+      "path": "src/components/cn/cavity-treatment/TreatmentMethodsSection.tsx",
+      "accessCount": 19,
+      "lastAccessed": 1774496315402,
+      "type": "file"
+    },
+    {
+      "path": "src/components/th/TreatmentSection.tsx",
+      "accessCount": 16,
+      "lastAccessed": 1774496637251,
+      "type": "file"
+    },
+    {
+      "path": "src/components/uz/TreatmentSection.tsx",
+      "accessCount": 15,
+      "lastAccessed": 1774513536629,
+      "type": "file"
+    },
+    {
+      "path": "src/components",
+      "accessCount": 14,
+      "lastAccessed": 1774424443651,
+      "type": "directory"
+    },
+    {
+      "path": "src/components/en/HeroSection.tsx",
+      "accessCount": 13,
+      "lastAccessed": 1774429859163,
+      "type": "file"
+    },
+    {
+      "path": "src/components/home/HeroSection.tsx",
+      "accessCount": 13,
+      "lastAccessed": 1774433367612,
+      "type": "file"
+    },
+    {
+      "path": "src/components/en/FAQSection.tsx",
+      "accessCount": 12,
+      "lastAccessed": 1774430467249,
+      "type": "file"
+    },
+    {
+      "path": "src/components/en/TreatmentSection.tsx",
+      "accessCount": 11,
+      "lastAccessed": 1774430029094,
+      "type": "file"
+    },
+    {
+      "path": "src/app/api/chat/route.ts",
+      "accessCount": 10,
+      "lastAccessed": 1774421009519,
+      "type": "directory"
+    },
+    {
+      "path": "src/components/uz/cavity-treatment/TreatmentMethodsSection.tsx",
+      "accessCount": 10,
+      "lastAccessed": 1774503480955,
+      "type": "file"
+    },
+    {
+      "path": "src/app/ichung/cavity-treatment/page.tsx",
+      "accessCount": 9,
+      "lastAccessed": 1774420988096,
+      "type": "file"
+    },
+    {
+      "path": "src/components/en/cavity-treatment/TreatmentMethodsSection.tsx",
+      "accessCount": 9,
+      "lastAccessed": 1774433024346,
+      "type": "file"
+    },
+    {
+      "path": "src/components/cn/FAQSection.tsx",
       "accessCount": 8,
-      "lastAccessed": 1774197077083,
+      "lastAccessed": 1774434537827,
       "type": "file"
     },
     {
-      "path": "src/components/implant/BeforeAfterSection.tsx",
+      "path": "src/components/cavity-treatment/TreatmentMethodsSection.tsx",
       "accessCount": 6,
-      "lastAccessed": 1774197045104,
+      "lastAccessed": 1774420876136,
       "type": "file"
     },
     {
-      "path": "src/components/denture/BeforeAfterSection.tsx",
+      "path": "src/components/vi/cavity-treatment/TreatmentMethodsSection.tsx",
+      "accessCount": 6,
+      "lastAccessed": 1774420994892,
+      "type": "file"
+    },
+    {
+      "path": "src/components/jp/cavity-treatment/TreatmentMethodsSection.tsx",
+      "accessCount": 6,
+      "lastAccessed": 1774435904454,
+      "type": "file"
+    },
+    {
+      "path": "src/app/jije/cavity-treatment/page.tsx",
       "accessCount": 5,
-      "lastAccessed": 1774197056131,
+      "lastAccessed": 1774420952806,
       "type": "file"
     },
     {
-      "path": "src/components/cavity-treatment/CasesSection.tsx",
+      "path": "src/app/seojeong/cavity-treatment/page.tsx",
       "accessCount": 5,
-      "lastAccessed": 1774197108362,
+      "lastAccessed": 1774421010942,
       "type": "file"
     },
     {
-      "path": "src/app/implant/page.tsx",
+      "path": "src/app/cavity-treatment/layout.tsx",
       "accessCount": 4,
-      "lastAccessed": 1774191358661,
+      "lastAccessed": 1774420883391,
+      "type": "file"
+    },
+    {
+      "path": "src/app/dongsak/cavity-treatment/page.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1774420998033,
+      "type": "file"
+    },
+    {
+      "path": "src/components/home/ZeroFailureSection.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1774423075657,
       "type": "directory"
     },
     {
-      "path": "src/app/denture/page.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1774191366758,
+      "path": "src/app/en/page.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1774429325719,
       "type": "file"
     },
     {
-      "path": "src/app/whitening/page.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1774191370242,
+      "path": "src/components/home/FAQSection.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1774434157765,
       "type": "file"
     },
     {
-      "path": "src/app/cavity-treatment/page.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1774191374213,
+      "path": "src/components/cn/TreatmentSection.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1774434351894,
       "type": "file"
     },
     {
-      "path": "src/app/gum-care/page.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1774191377473,
-      "type": "file"
-    },
-    {
-      "path": "src/lib/schema.ts",
-      "accessCount": 2,
-      "lastAccessed": 1774191378698,
-      "type": "file"
-    },
-    {
-      "path": "src/components/cavity-treatment/BeforeAfterSection.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1774191728150,
-      "type": "file"
-    },
-    {
-      "path": "src/components/gum-care/CaseStudiesSection.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1774191728785,
-      "type": "file"
-    },
-    {
-      "path": "src/lib/intent-analyzer.ts",
-      "accessCount": 2,
-      "lastAccessed": 1774194731600,
+      "path": "src/components/th",
+      "accessCount": 4,
+      "lastAccessed": 1774503101734,
       "type": "directory"
     },
     {
-      "path": "src/components/implant/RealPatientResultsSection.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1774191574882,
+      "path": "src/components/uz",
+      "accessCount": 4,
+      "lastAccessed": 1774513461147,
+      "type": "directory"
+    },
+    {
+      "path": "src/app/ichung/page.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1774420960030,
       "type": "file"
     },
     {
-      "path": "src/components/denture/RealPatientResultsSection.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1774191575258,
+      "path": "src/app/api/analyze-intent/route.ts",
+      "accessCount": 3,
+      "lastAccessed": 1774421010027,
       "type": "file"
     },
     {
-      "path": "public/임상사진/이영주_임플란트/이영주_20250520_120032.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191612518,
+      "path": "src/components/cn",
+      "accessCount": 3,
+      "lastAccessed": 1774421016199,
+      "type": "directory"
+    },
+    {
+      "path": "src/components/en",
+      "accessCount": 3,
+      "lastAccessed": 1774421017041,
+      "type": "directory"
+    },
+    {
+      "path": "src/components/home/TreatmentSection.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1774423156066,
       "type": "file"
     },
     {
-      "path": "public/임상사진/이영주_임플란트/이영주_20251028_110154.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191612570,
+      "path": "src/components/home",
+      "accessCount": 3,
+      "lastAccessed": 1774423156635,
+      "type": "directory"
+    },
+    {
+      "path": "src/app/page.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1774429325171,
       "type": "file"
     },
     {
-      "path": "public/임상사진/이영주_임플란트/이영주_20251028_110155.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191613383,
+      "path": "src/components/vi/TreatmentSection.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1774434193264,
       "type": "file"
     },
     {
-      "path": "public/임상사진/이영주_임플란트/이영주_20251028_110156.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191613692,
+      "path": "src/components/ru/TreatmentSection.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1774434207481,
       "type": "file"
     },
     {
-      "path": "public/임상사진/이영주_임플란트/이영주_20251028_110157.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191614524,
+      "path": "src/components/sections/TreatmentCards.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1774420854251,
       "type": "file"
     },
     {
-      "path": "public/임상사진/이영주_임플란트/이영주_20260311_101017.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191614996,
+      "path": "src/app/jije/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1774420928863,
       "type": "file"
     },
     {
-      "path": "public/임상사진/이영주_임플란트/이영주_20260311_101018.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191615435,
+      "path": "src/app/dongsak/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1774420990271,
       "type": "file"
     },
     {
-      "path": "public/임상사진/이영주_임플란트/이영주_20260311_101019.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191615926,
+      "path": "src/app/seojeong/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1774420999820,
       "type": "file"
     },
     {
-      "path": "public/임상사진/이영주_임플란트/이영주_20260311_101021.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191616358,
+      "path": "src/components/vi",
+      "accessCount": 2,
+      "lastAccessed": 1774421002216,
+      "type": "directory"
+    },
+    {
+      "path": "src/app/jangdang/cavity-treatment/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1774421015014,
       "type": "file"
     },
     {
-      "path": "public/임상사진/지종환_임플란트/지종환_20240208_100445.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191650243,
+      "path": "src/components/mn/cavity-treatment/TreatmentMethodsSection.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1774421081658,
       "type": "file"
     },
     {
-      "path": "public/임상사진/지종환_임플란트/지종환_20240208_102140.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191650677,
-      "type": "file"
+      "path": "src",
+      "accessCount": 2,
+      "lastAccessed": 1774422620602,
+      "type": "directory"
     },
     {
-      "path": "public/임상사진/지종환_임플란트/지종환_20250305_160724.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191651593,
-      "type": "file"
+      "path": "src/components/en/cavity-treatment",
+      "accessCount": 2,
+      "lastAccessed": 1774433727277,
+      "type": "directory"
     },
     {
-      "path": "public/임상사진/지종환_임플란트/지종환_20260127_115507.jpg",
+      "path": "src/components/jp",
       "accessCount": 1,
-      "lastAccessed": 1774191651913,
-      "type": "file"
+      "lastAccessed": 1774420982889,
+      "type": "directory"
     },
     {
-      "path": "public/임상사진/지종환_임플란트/지종환_20260309_142302.jpg",
+      "path": "src/components/ru",
       "accessCount": 1,
-      "lastAccessed": 1774191652345,
-      "type": "file"
+      "lastAccessed": 1774420985958,
+      "type": "directory"
     },
     {
-      "path": "public/임상사진/지종환_임플란트/지종환_20260309_142303.jpg",
+      "path": "src/components/mn",
       "accessCount": 1,
-      "lastAccessed": 1774191652829,
-      "type": "file"
+      "lastAccessed": 1774420986865,
+      "type": "directory"
     },
     {
-      "path": "public/임상사진/지종환_임플란트/지종환_20260309_142304.jpg",
+      "path": "src/components/cn/cavity-treatment",
       "accessCount": 1,
-      "lastAccessed": 1774191653511,
-      "type": "file"
+      "lastAccessed": 1774421014253,
+      "type": "directory"
     },
     {
-      "path": "public/임상사진/지종환_임플란트/지종환_20260309_142306.jpg",
+      "path": "src/app",
       "accessCount": 1,
-      "lastAccessed": 1774191653940,
-      "type": "file"
-    },
-    {
-      "path": "public/임상사진/박균조_전악임플란트/박균조_20240823_152751.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191664446,
-      "type": "file"
-    },
-    {
-      "path": "public/임상사진/박균조_전악임플란트/박균조_20240904_140351.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191665395,
-      "type": "file"
-    },
-    {
-      "path": "public/임상사진/박균조_전악임플란트/박균조_20240910_152727.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191666294,
-      "type": "file"
-    },
-    {
-      "path": "public/임상사진/박균조_전악임플란트/박균조_20240910_182133.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191666674,
-      "type": "file"
-    },
-    {
-      "path": "public/임상사진/박균조_전악임플란트/박균조_20251201_161954.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191667649,
-      "type": "file"
-    },
-    {
-      "path": "public/임상사진/박균조_전악임플란트/박균조_20251201_161955.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191668118,
-      "type": "file"
-    },
-    {
-      "path": "public/임상사진/박균조_전악임플란트/박균조_20251201_162001.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191669034,
-      "type": "file"
-    },
-    {
-      "path": "public/임상사진/박균조_전악임플란트/박균조_20251201_162003.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191669306,
-      "type": "file"
-    },
-    {
-      "path": "public/임상사진/미백/양해영_20250811_182537.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191685484,
-      "type": "file"
-    },
-    {
-      "path": "public/임상사진/미백/양해영_20250811_192233.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191685944,
-      "type": "file"
-    },
-    {
-      "path": "public/임상사진/안동건_미백/안동건_20240517_175931.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191687335,
-      "type": "file"
-    },
-    {
-      "path": "public/임상사진/안동건_미백/안동건_20240531_115036.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191688256,
-      "type": "file"
-    },
-    {
-      "path": "public/임상사진/충치/김효연_20260126_154927.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191689861,
-      "type": "file"
-    },
-    {
-      "path": "public/임상사진/충치/김효연_20260126_161421.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191690290,
-      "type": "file"
-    },
-    {
-      "path": "public/임상사진/충치-1/방준영_20251129_111700.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191690342,
-      "type": "file"
-    },
-    {
-      "path": "public/임상사진/충치-1/방준영_20251203_113343.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191690608,
-      "type": "file"
-    },
-    {
-      "path": "public/임상사진/크랙/김고운_20250917_153132.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191690949,
-      "type": "file"
-    },
-    {
-      "path": "public/임상사진/크랙/김고운_20251222_175117.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1774191691536,
-      "type": "file"
+      "lastAccessed": 1774421021309,
+      "type": "directory"
     }
   ],
   "userDirectives": []

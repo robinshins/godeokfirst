@@ -1,21 +1,22 @@
-import { Metadata } from 'next';
-import ConsultationForm from '@/components/cn/ConsultationForm';
-import GNB from '@/components/cn/GNB';
-import DoctorIntroSection from '@/components/cn/consultation/DoctorIntroSection';
+'use client';
 
-export const metadata: Metadata = {
-  title: '咨询申请 - 庆星美迪斯牙科',
-  description: '向经验丰富的专家申请免费AI牙科咨询。获得个性化的治疗建议。',
-  keywords: '牙科咨询, 免费咨询, AI咨询, 韩国牙科, 釜山牙医, 牙科专家',
-  openGraph: {
-    title: '咨询申请 - 庆星美迪斯牙科',
-    description: '向经验丰富的专家申请免费AI牙科咨询。',
-    type: 'website',
-    locale: 'zh_CN',
-  }
-};
+import { useEffect } from 'react';
+import ConsultationForm from '@/components/ConsultationForm';
+import GNB from '@/components/cn/GNB';
+import DoctorIntroSection from '@/components/consultation/DoctorIntroSection';
 
 export default function ConsultationPage() {
+  useEffect(() => {
+    // Meta Pixel event
+    if (typeof window !== 'undefined') {
+      const fbq = (window as { fbq?: (...args: unknown[]) => void }).fbq;
+      if (fbq) {
+        fbq('trackCustom', 'ViewCheckoutPage');
+        console.log('✅ Meta Pixel: ViewCheckoutPage 커스텀 이벤트 전송');
+      }
+    }
+  }, []);
+
   return (
     <div className="min-h-screen">
       <GNB />

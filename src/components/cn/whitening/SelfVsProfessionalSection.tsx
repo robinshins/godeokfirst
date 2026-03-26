@@ -23,30 +23,30 @@ export default function SelfVsProfessionalSection() {
           <div className="flex flex-col gap-4 items-center justify-center w-full">
             <div className="flex flex-col gap-3 items-center justify-center text-center w-full">
               <h2 className="font-bold text-[32px] leading-[1.35] tracking-[-0.64px] text-black w-full">
-                在家自助美白与<br />
-                牙科专业美白的区别
+                在家做的自助美白和<br />
+                牙科专家美白的区别
               </h2>
               <div className="font-semibold text-base leading-[1.4] tracking-[-0.32px] text-[#727582] w-full">
                 <p className="mb-0">
-                  牙科使用的美白剂是<span className="text-[#006aff]">作为药品分类的</span>
+                  牙科使用的美白剂属于<span className="text-[#008095]">医药品分类</span>
                 </p>
                 <p className="mb-0">
-                  <span className="text-[#006aff]">高浓度过氧化氢</span>
+                  使用<span className="text-[#008095]">高浓度过氧化氢</span>。
                 </p>
                 <p className="mb-0">
-                  接触牙龈可能会损伤，因此<span className="text-[#006aff]">由专业人士</span>
+                  接触牙龈可能造成损伤，因此由<span className="text-[#008095]">专家</span>
                 </p>
                 <p className="mb-0">
-                  <span className="text-[#006aff]">完全保护后进行施术</span>，更加安全
+                  <span className="text-[#008095]">做好完美保护措施后进行治疗</span>，因此更加安全
                 </p>
-                <p>并且可以看到立即的效果</p>
+                <p>可以看到即时效果。</p>
               </div>
             </div>
           </div>
 
           {/* Cards */}
           <div className="flex flex-col gap-10 w-full">
-            {/* Card 1: 自助牙齿美白 */}
+            {/* Card 1: 셀프 牙齿美白 */}
             <div className="bg-white border border-[#f3f6fb] rounded-[20px] w-full">
               <div className="flex flex-col items-center justify-center overflow-hidden rounded-[inherit] w-full">
                 <div className="flex flex-col gap-4 items-center justify-center p-6 w-full">
@@ -57,10 +57,10 @@ export default function SelfVsProfessionalSection() {
                   </div>
                   <div className="bg-[#f3f6fb] rounded-[16px] p-5 flex flex-col gap-[14px] w-full">
                     {[
-                      { title: '低浓度美白剂', desc: '一般药品，效果有限' },
+                      { title: '低浓度美白剂', desc: '一般药品效果有限' },
                       { title: '效果缓慢', desc: '需要数周到数月' },
-                      { title: '安全风险', desc: '使用不当可能损伤牙龈' },
-                      { title: '结果不均匀', desc: '美白效果不均匀' }
+                      { title: '安全性风险', desc: '使用不当可能损伤牙龈' },
+                      { title: '不均匀的结果', desc: '美白效果不均匀' }
                     ].map((item, index) => (
                       <div key={index} className="flex items-start w-full">
                         <div className="shrink-0 w-6 h-6">
@@ -83,26 +83,26 @@ export default function SelfVsProfessionalSection() {
               </div>
             </div>
 
-            {/* Card 2: 牙科专业美白 */}
+            {/* Card 2: 牙科 专家 美白 */}
             <div className="bg-white border border-[#f3f6fb] rounded-[20px] w-full">
               <div className="flex flex-col items-center justify-center overflow-hidden rounded-[inherit] w-full">
                 <div className="flex flex-col gap-4 items-center justify-center p-6 w-full">
                   <div className="flex gap-2 items-center w-full justify-center">
                     <p className="font-bold text-[24px] leading-[1.35] tracking-[-0.48px] text-black text-center">
-                      牙科专业美白
+                      牙科 专家 美白
                     </p>
                   </div>
                   <div className="bg-[#f3f6fb] rounded-[16px] p-5 flex flex-col gap-[14px] w-full">
                     {[
-                      { title: '高浓度药品', desc: '专业过氧化氢，效果强力' },
-                      { title: '立即见效', desc: '1-3小时内确实变化' },
-                      { title: '完美安全性', desc: '牙龈保护措施防止损伤' },
-                      { title: '均匀美白', desc: '专业人士精密施术' }
+                      { title: '高浓度医药品', desc: '专业过氧化氢带来强力效果' },
+                      { title: '即时效果', desc: '1-3小时内确实的变化' },
+                      { title: '完美的安全性', desc: '通过牙龈保护措施防止损伤' },
+                      { title: '均匀美白', desc: '专家精密的治疗' }
                     ].map((item, index) => (
                       <div key={index} className="flex items-start w-full">
                         <div className="shrink-0 w-6 h-6">
                           <Image
-                            src="/icons/check-blue.svg"
+                            src="/icons/check-teal.svg"
                             alt=""
                             width={24}
                             height={24}

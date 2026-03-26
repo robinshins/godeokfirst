@@ -1,32 +1,63 @@
 export default function VideoSection() {
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full flex justify-center bg-white">
       <div className="py-[60px] px-4 w-full max-w-[430px]">
-        <div className="flex flex-col gap-10">
-          {/* Text Content */}
+        <div className="flex flex-col gap-8">
+          {/* Header */}
           <div className="flex flex-col gap-3 text-center">
-            <h2 className="text-[32px] font-bold leading-[1.35] tracking-[-0.02em] text-black">
-              蛀牙治疗的一切<br />
-              都在这个视频里
+            <p
+              className="text-[#008095] font-bold text-xs tracking-[0.12em] uppercase"
+              style={{ fontFamily: 'Pretendard, sans-serif' }}
+            >
+              YouTube
+            </p>
+            <h2
+              className="text-[28px] font-bold leading-[1.35] tracking-[-0.56px] text-[#151a24]"
+              style={{ fontFamily: 'Pretendard, sans-serif' }}
+            >
+              高德First牙科<br />
+              YouTube视频
             </h2>
-            <p className="text-base font-semibold leading-[1.4] tracking-[-0.02em] text-[#727582]">
-              裴仁惠 保存科专家<br />
-              亲自为您讲解
+            <p
+              className="text-[15px] font-semibold leading-[1.6] text-[#727582]"
+              style={{ fontFamily: 'Pretendard, sans-serif' }}
+            >
+              治疗过程和牙科信息<br />
+              通过视频确认
             </p>
           </div>
 
-          {/* YouTube Video */}
-          <div className="flex justify-center">
-            <div className="relative w-full aspect-video rounded-[20px] overflow-hidden shadow-lg">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/pSSexzE2wXY"
-                title="蛀牙治疗完全指南 - 裴仁惠保存科专家"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="absolute top-0 left-0 w-full h-full"
-              />
+          {/* Placeholder 1 */}
+          <div className="flex flex-col gap-3">
+            <div className="w-full aspect-video rounded-[20px] overflow-hidden bg-[#f3f6fb] flex flex-col items-center justify-center gap-3 border-2 border-dashed border-[#d1d6e0]">
+              <div className="w-14 h-14 rounded-full bg-[#e6f7f8] flex items-center justify-center">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M8 5L19 12L8 19V5Z" fill="#008095" />
+                </svg>
+              </div>
+              <p
+                className="text-[#9298a6] text-sm font-semibold text-center"
+                style={{ fontFamily: 'Pretendard, sans-serif' }}
+              >
+                视频准备中
+              </p>
+            </div>
+          </div>
+
+          {/* Placeholder 2 */}
+          <div className="flex flex-col gap-3">
+            <div className="w-full aspect-video rounded-[20px] overflow-hidden bg-[#f3f6fb] flex flex-col items-center justify-center gap-3 border-2 border-dashed border-[#d1d6e0]">
+              <div className="w-14 h-14 rounded-full bg-[#e6f7f8] flex items-center justify-center">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M8 5L19 12L8 19V5Z" fill="#008095" />
+                </svg>
+              </div>
+              <p
+                className="text-[#9298a6] text-sm font-semibold text-center"
+                style={{ fontFamily: 'Pretendard, sans-serif' }}
+              >
+                视频准备中
+              </p>
             </div>
           </div>
         </div>

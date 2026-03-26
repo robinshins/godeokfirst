@@ -1,179 +1,129 @@
 import Image from 'next/image';
 
 export default function WhyBestSection() {
-  const seminars = [
-    { image: '/images/seminar-3.png', title: 'Обучение имплантации для стоматологов' },
-    { image: '/images/seminar-1.png', title: 'Специальная лекция Ассоциации стоматологов Пусана' },
-    { image: '/images/seminar-4.png', title: 'Курс эксперта по цифровой имплантации' },
-    { image: '/images/seminar/digital-prosthetics-lecture.jpg', title: 'Клиническая лекция по цифровому протезированию' },
-    { image: '/images/seminar/megagen-digital-scan-seminar.jpg', title: 'Семинар Megagen по цифровому сканированию' },
-    { image: '/images/seminar/osstem-digital-guide-surgery-lecture.jpg', title: 'Лекция Osstem по цифровой хирургии' }
-  ];
-
   return (
     <div className="bg-white">
       <div className="max-w-[430px] mx-auto">
         {/* Section Header */}
         <div className="text-center py-[60px]">
           <div className="flex justify-center items-center mb-4">
-            <div className="w-[167.981px] h-[24px] relative">
+            <div className="h-11 relative shrink-0 overflow-hidden">
               <Image
-                src="/icons/Logo_black.svg"
-                alt="Medis Dental Clinic"
-                width={148}
-                height={24}
-                className="object-contain"
+                src="/고덕퍼스트치과-로고-(블랙).png"
+                alt="Godeok First Dental"
+                width={375}
+                height={84}
+                className="h-20 w-auto object-contain -mt-[18px]"
               />
             </div>
           </div>
           <h2 className="text-4xl font-bold text-black leading-[1.35]">
-            Почему Кёнсон Медис
+            Почему Godeok First Dental
             <br />
-            лучшие в Корее
+            лучшие
           </h2>
         </div>
 
-        {/* Reason 1: Official Designated Hospital */}
+        {/* Reason 1: Специалист комплексной стоматологии */}
         <div className="px-4 py-8 bg-white">
           <div className="text-center mb-10">
-            <p className="text-3xl font-bold text-[#006aff] mb-3">1</p>
-            <h3 className="text-3xl font-bold text-[#0b1727] mb-3 leading-[1.35]">
-              Официальная больница
+            <p className="text-3xl font-bold text-[#008095] mb-3">1</p>
+            <h3 className="text-3xl font-bold text-[#21314E] mb-3 leading-[1.35]">
+              Минздрав Кореи сертификация
               <br />
-              престижных университетов
+              Специалист комплексной стоматологии
             </h3>
             <p className="text-[14px] font-semibold text-[#727582]">
-              Доверенное партнерское медицинское учреждение, выбранное известными университетами и организациями
+              Главный врач лично консультация, операция, послеоперационный уход до ответственность
             </p>
           </div>
 
-          {/* Partner Institutions */}
-          <div className="flex flex-col gap-3 w-full">
-            <div className="relative w-full aspect-[343/120] rounded-xl overflow-hidden shadow-md">
-              <Image
-                src="/images/busan-univ-hospital.svg"
-                alt="Больница Пусанского национального университета"
-                fill
-                className="object-contain bg-white"
-              />
-            </div>
-            <div className="relative w-full aspect-[343/120] rounded-xl overflow-hidden shadow-md">
-              <Image
-                src="/images/dongguk-cm.jpg"
-                alt="Dongguk CM"
-                fill
-                className="object-contain bg-white"
-              />
-            </div>
-            <div className="relative w-full aspect-[343/120] rounded-xl overflow-hidden shadow-md">
-              <Image
-                src="/images/kyungsung-univ.png"
-                alt="Университет Кёнсон"
-                fill
-                className="object-contain bg-white"
-              />
-            </div>
-            <div className="relative w-full aspect-[343/120] rounded-xl overflow-hidden shadow-md">
-              <Image
-                src="/images/dongmyung-univ.svg"
-                alt="Университет Тонмён"
-                fill
-                className="object-contain bg-white"
-              />
-            </div>
-            <div className="relative w-full aspect-[343/120] rounded-xl overflow-hidden shadow-md">
-              <Image
-                src="/images/pukyong-univ.png"
-                alt="Пукёнский национальный университет"
-                fill
-                className="object-contain bg-white"
-              />
-            </div>
+          {/* Минздрав Кореи сертификация уже */}
+          <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-md">
+            <Image
+              src="/images/goduk_images/원장이력 등 걸려있는사진.jpg"
+              alt="Минздрав Кореи сертификация Специалист комплексной стоматологии и врач квалификация"
+              fill
+              className="object-cover"
+            />
           </div>
         </div>
 
-        {/* Reason 2: Excellence Certified Hospitals */}
+        {/* Reason 2: Имплант исследованиеконсультативный советвон */}
         <div className="px-4 py-8 bg-gradient-to-b from-[#331f0c] via-[#584025] to-[#866947]">
           <div className="text-center mb-10">
             <p className="text-3xl font-bold text-white mb-3">2</p>
             <h3 className="text-3xl font-bold text-[#f3f6fb] mb-3 leading-[1.35]">
-              Megagen/Osstem/Neo
+              Osstem, Point, Dentis
               <br />
-              Сертифицированная клиника
+              Имплант исследованиеконсультативный советвон
             </h3>
             <p className="text-[14px] font-semibold text-[#e9ebf1]">
-              Не только назначены сертифицированной хирургической клиникой,
+              Член консультативного совета ведущих имплантологических компаний Кореи 
               <br />
-              но и активно участвуем в исследованиях как клинические консультанты
+              мы используем новейшие технологии и оборудование
             </p>
           </div>
 
-          {/* Scrolling Certifications */}
-          <div className="overflow-x-auto flex gap-3 pb-4">
-            <div className="flex-none w-[280px] aspect-[280/380] rounded-xl overflow-hidden shadow-md relative bg-[#1a1a1a]">
-              <Image
-                src="/images_official/IMG_3909.jpg"
-                alt="Сертификат клиники превосходства в имплантации"
-                fill
-                className="object-contain"
-              />
-            </div>
-            <div className="flex-none w-[280px] aspect-[280/380] rounded-xl overflow-hidden shadow-md relative bg-[#1a1a1a]">
-              <Image
-                src="/images_official/IMG_3910.jpg"
-                alt="Сертификат клиники превосходства в имплантации"
-                fill
-                className="object-contain"
-              />
-            </div>
-            <div className="flex-none w-[280px] aspect-[280/380] rounded-xl overflow-hidden shadow-md relative bg-[#1a1a1a]">
-              <Image
-                src="/images_official/IMG_3911.jpg"
-                alt="Сертификат клиники превосходства в имплантации"
-                fill
-                className="object-contain"
-              />
-            </div>
-            <div className="flex-none w-[280px] aspect-[280/380] rounded-xl overflow-hidden shadow-md relative bg-[#1a1a1a]">
-              <Image
-                src="/images_official/IMG_3912.jpg"
-                alt="Сертификат клиники превосходства в имплантации"
-                fill
-                className="object-contain"
-              />
-            </div>
+          {/* Различные сертификаты */}
+          <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-md">
+            <Image
+              src="/images/goduk_images/각종인증서.png"
+              alt="Osstem·Point·Dentis Имплант исследованиеконсультативный советвон различные сертификаты"
+              fill
+              className="object-cover"
+            />
           </div>
         </div>
 
-        {/* Reason 3: Expert Lectures */}
-        <div className="px-4 py-8 bg-white">
+        {/* Reason 3: Новейшее цифровое оборудование */}
+        <div className="px-2 py-8 bg-white">
           <div className="text-center mb-10">
-            <p className="text-3xl font-bold text-[#006aff] mb-3">3</p>
-            <h3 className="text-3xl font-bold text-[#0b1727] mb-3 leading-[1.35]">
-              Лекции для стоматологов
-              <br />
-              по всей стране
+            <p className="text-3xl font-bold text-[#008095] mb-3">3</p>
+            <h3 className="text-3xl font-bold text-[#21314E] mb-3 leading-[1.35]">
+              Полное оснащение новейшим цифровым оборудованием
             </h3>
-            <p className="text-[14px] font-semibold text-[#727582]">
-              Делимся экспертизой и техниками на крупных семинарах и конференциях по имплантации
+            <p className="text-base font-semibold text-[#727582]">
+              3D КТ, цифровой сканер, система цифровой навигации и др.
+              <br />
+              Точное лечение с использованием передового оборудования
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-3">
-            {seminars.map((seminar, index) => (
-              <div key={index} className="relative aspect-[4/3] rounded-2xl overflow-hidden">
-                <Image
-                  src={seminar.image}
-                  alt={seminar.title}
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <p className="absolute bottom-3 left-3 right-3 text-white text-sm font-bold leading-tight">
-                  {seminar.title}
-                </p>
-              </div>
-            ))}
+          {/* Скролл оборудования */}
+          <div className="overflow-x-auto flex gap-3 pb-4">
+            <div className="flex-none w-[320px] aspect-[4/3] rounded-xl overflow-hidden relative shadow-md">
+              <Image
+                src="/images/goduk_images/스캐너사진.jpg"
+                alt="3D CT сканер оборудование"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="flex-none w-[320px] aspect-[4/3] rounded-xl overflow-hidden relative shadow-md">
+              <Image
+                src="/images/goduk_images/진료실사진.jpg"
+                alt="Лечебный кабинет с цифровым сканером и рентген-монитором"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="flex-none w-[320px] aspect-[4/3] rounded-xl overflow-hidden relative shadow-md">
+              <Image
+                src="/images/goduk_images/수술실.jpg"
+                alt="Операционная с новейшим оборудованием"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="flex-none w-[320px] aspect-[4/3] rounded-xl overflow-hidden relative shadow-md">
+              <Image
+                src="/images/goduk_images/진료실.jpg"
+                alt="Лечебный кабинет с оборудованием OSSTEM"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>

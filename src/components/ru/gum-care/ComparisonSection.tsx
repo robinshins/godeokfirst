@@ -1,266 +1,224 @@
 'use client';
 
-import Image from 'next/image';
+import Link from 'next/link';
+
+const levels = [
+  {
+    level: 'Step 1',
+    title: 'чистка зубовкачество',
+    badge: 'Ежедневно',
+ desc:'зуб поверхность и десналиния зубной налет·бактериимембрана удаление. Правильная чистка — первый шаг профилактики. Минимум 2 раза в день.',
+    point: 'Зубной камень в глубоких карманах невозможно удалить щёткой.',
+    insurance: null,
+    highlight: false,
+  },
+  {
+    level: 'Step 2',
+    title: 'чистка',
+    badge: 'год 1~2раз · здоровстраховое покрытие',
+    desc: 'Удаление затвердевшего камня и налёта ультразвуком. Одна чистка снижает риск сердечно-сосудистых заболеваний на 10-14%. Для пациентов от 19 лет — 1 раз в год по страховке.',
+    point: 'Глубокие карманы недоступны только чисткой.',
+    insurance: ' только 19лет и более · год 1раз · здоровстраховое покрытие (собственный нагрузка 20%)',
+    highlight: false,
+  },
+  {
+    level: 'Step 3',
+    title: 'десна лечение',
+    badge: 'необходимый  · здоровстраховое покрытие',
+ desc:'десна один пародонт внутри точное удаление камня и бактерий кюретой, полировка корня для предотвращения повторного прикрепления. При необходимости вводится мазь PerioClean. Покрывается страховкой, проводится по 1-4 зоны.',
+    point: 'десна После лечения 3~6месяцев неделя регулярный осмотр через рецидив профилактика.',
+    insurance: 'Мед. страховка · По зонам · Включая анестезию',
+    highlight: true,
+  },
+];
 
 export default function ComparisonSection() {
-  const treatments = [
-    {
-      icon: '/icons/tooth.svg',
-      title: 'Чистка зубов',
-      badge: 'Ежедневно',
-      items: [
-        { icon: '/icons/check-icon.svg', text: 'Поддерживает чистоту поверхности зубов' },
-        { icon: '/icons/x-icon.svg', text: 'Не удаляет зубной камень' },
-        { icon: '/icons/x-icon.svg', text: 'Не достает под линию десны' }
-      ]
-    },
-    {
-      icon: '/icons/tooth-shine.svg',
-      title: 'Скейлинг',
-      badge: 'Раз в год',
-      items: [
-        { icon: '/icons/check-icon.svg', text: 'Удаление наддесневого камня' },
-        { icon: '/icons/check-icon.svg', text: 'Профилактика и легкое лечение' },
-        { icon: '/icons/x-icon.svg', text: 'Ограничения для глубоких участков' }
-      ]
-    },
-    {
-      icon: '/icons/tooth-loosen.svg',
-      title: 'Лечение десен',
-      badge: 'При необходимости',
-      items: [
-        { icon: '/icons/check-icon.svg', text: 'Глубокое поддесневое лечение' },
-        { icon: '/icons/check-icon.svg', text: 'Сглаживание корней (кюретаж)' },
-        { icon: '/icons/check-icon.svg', text: 'Лечение прогрессирующих заболеваний' }
-      ]
-    }
-  ];
-
   return (
-    <div className="bg-gradient-to-b from-[#0b1727] to-white w-full px-4 py-[60px] relative">
-      {/* Background gradient */}
-      <div className="absolute h-[711px] left-[calc(50%+5.5px)] top-[217.35px] -translate-x-1/2 w-[480px] pointer-events-none">
-        <div className="absolute inset-[-56.26%_-83.33%]">
-          <Image
-            src="/images/stats-gradient.svg"
-            alt=""
-            fill
-            className="block max-w-none object-contain"
-          />
-        </div>
-      </div>
+    <div className="bg-[#f8f9fb] w-full py-[80px] px-5">
+      <div className="max-w-[430px] mx-auto flex flex-col gap-12">
 
-      <div className="max-w-[343px] mx-auto flex flex-col gap-[60px] items-start relative z-10">
         {/* Header */}
-        <div className="flex flex-col gap-4 items-center justify-center w-full">
-          <div className="flex flex-col gap-3 items-center justify-center text-center text-white w-full">
-            <div className="font-['Pretendard_JP'] font-bold leading-[1.35] text-[32px] tracking-[-0.64px] w-full">
-              <p className="mb-0">Достаточно ли чистки</p>
-              <p>и скейлинга?</p>
-            </div>
-            <div className="font-['Pretendard_JP'] font-semibold leading-[1.4] text-[#e9ebf1] text-base tracking-[-0.32px] w-full">
-              <p className="mb-0">Оба вида ухода очень важны,</p>
-              <p>но идеальный уход труднодостижим</p>
-            </div>
-          </div>
+        <div className="flex flex-col gap-4 text-center">
+          <p
+            className="text-[#008095] font-bold text-[13px] tracking-[0.2em] uppercase"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+            Care Levels
+          </p>
+          <h2
+            className="font-bold text-[30px] leading-[1.3] tracking-[-0.04em] text-black"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+            Когда одной чистки<br />недостаточно 
+          </h2>
+          <p
+            className="font-medium text-[#727582] text-[16px] leading-[1.7] tracking-[-0.02em]"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+            десна здоров этап уходдолжен .<br />
+            чистка и десна лечение, все здоровстраховка применение.
+          </p>
         </div>
 
-        {/* Treatment Cards */}
-        <div className="flex flex-col gap-6 items-start w-full">
-          {treatments.map((treatment, index) => (
-            <div key={index} className="bg-white border border-[#f3f6fb] box-border flex flex-col gap-4 items-center justify-center p-6 rounded-[20px] w-full">
-              {/* Header */}
-              <div className="flex items-center justify-between w-full">
-                <div className="flex gap-2 items-center">
-                  <div className="relative shrink-0 w-8 h-8">
-                    <Image
-                      src={treatment.icon}
-                      alt=""
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
-                  <p className="font-['Pretendard_JP'] font-bold leading-[1.35] text-2xl text-black tracking-[-0.48px]">
-                    {treatment.title}
-                  </p>
+        {/* Level Cards */}
+        <div className="flex flex-col gap-5">
+          {levels.map((c, i) => (
+            <div
+              key={i}
+              className={`rounded-[24px] p-6 flex flex-col gap-5 relative overflow-hidden ${
+                c.highlight
+                  ? 'bg-white border-2 border-[#008095] shadow-[0_8px_32px_-8px_rgba(0,128,149,0.2)]'
+                  : 'bg-white border border-[#e9ebf1] shadow-[0_4px_20px_-4px_rgba(21,26,36,0.06)]'
+              }`}
+            >
+              {c.highlight && (
+                <div className="absolute top-0 right-0 bg-[#008095] text-white text-[10px] font-bold px-3 py-1.5 rounded-bl-[14px] rounded-tr-[22px]">
+                  самый важно
                 </div>
-                <div className="bg-[#e8f8f0] box-border flex items-center justify-center px-2.5 py-1.5 rounded-lg">
-                  <p className="font-['Pretendard_JP'] font-bold leading-[1.4] text-[#15bd66] text-sm tracking-[-0.28px]">
-                    {treatment.badge}
-                  </p>
-                </div>
+              )}
+
+              {/* Level + Badge */}
+              <div className="flex items-center gap-2 flex-wrap">
+                <span
+                  className="text-[11px] font-black text-[#008095] tracking-[0.1em]"
+                  style={{ fontFamily: 'Pretendard, sans-serif' }}
+                >
+                  {c.level}
+                </span>
+                <span
+                  className={`font-bold text-[11px] px-2.5 py-1 rounded-full ${
+                    c.highlight
+                      ? 'bg-[#008095] text-white'
+                      : 'bg-[#f0f7fa] text-[#008095]'
+                  }`}
+                >
+                  {c.badge}
+                </span>
               </div>
 
-              {/* Items */}
-              <div className="bg-[#f3f6fb] box-border flex flex-col gap-3.5 items-start p-5 rounded-2xl w-full">
-                {treatment.items.map((item, itemIndex) => (
-                  <div key={itemIndex} className="flex items-center gap-2 w-full">
-                    <div className="shrink-0 w-6 h-6 flex items-center justify-center">
-                      <Image
-                        src={item.icon}
-                        alt=""
-                        width={20}
-                        height={20}
-                      />
-                    </div>
-                    <p className="font-['Pretendard_JP'] font-bold text-[17px] text-black tracking-[-0.34px] leading-[1.5]">
-                      {item.text}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
-
-          {/* Comparison Table */}
-          <div className="bg-white border border-[#f3f6fb] box-border flex flex-col gap-4 items-center justify-center p-6 rounded-[20px] w-full">
-            {/* Title */}
-            <div className="flex gap-3 items-center justify-center w-full">
-              <p className="font-['Pretendard_JP'] font-bold leading-[1.35] text-2xl text-black tracking-[-0.48px]">
-                Скейлинг
-              </p>
-              <div className="bg-[#f3f6fb] box-border flex items-center justify-center px-2 py-1 rounded-lg">
-                <p className="font-['Pretendard_JP'] font-bold leading-[1.4] text-[#9298a6] text-[15px] tracking-[-0.3px]">
-                  vs
+              {/* Title */}
+              <div className="flex flex-col gap-2">
+                <h3
+                  className="font-bold text-[22px] text-[#2d3340] tracking-[-0.03em]"
+                  style={{ fontFamily: 'Pretendard, sans-serif' }}
+                >
+                  {c.title}
+                </h3>
+                <p
+                  className="font-medium text-[15px] text-[#4a4f5e] leading-[1.7]"
+                  style={{ fontFamily: 'Pretendard, sans-serif' }}
+                >
+                  {c.desc}
                 </p>
               </div>
-              <p className="font-['Pretendard_JP'] font-bold leading-[1.35] text-2xl text-black tracking-[-0.48px]">
-                Лечение десен
-              </p>
-            </div>
 
-            {/* Table */}
-            <div className="bg-white border border-[#006aff] box-border rounded-2xl overflow-hidden w-full">
-              <table className="w-full">
-                <tbody>
-                  <tr className="border-b border-[#e9ebf1]">
-                    <td className="px-2 py-2 w-[52px]"></td>
-                    <td className="px-2 py-2 font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-sm text-center tracking-[-0.28px] leading-[1.4]">
-                      Скейлинг
-                    </td>
-                    <td className="px-2 py-2 font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-sm text-center tracking-[-0.28px] leading-[1.4]">
-                      Лечение десен
-                    </td>
-                  </tr>
-                  <tr className="border-b border-[#e9ebf1]">
-                    <td className="px-2 py-2 font-['Pretendard_JP'] font-semibold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                      Область
-                    </td>
-                    <td className="px-2 py-2 text-center">
-                      <div className="flex flex-col gap-0.5">
-                        <p className="font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                          Наддесневая
-                        </p>
-                        <p className="font-['Pretendard_JP'] font-medium text-[#5d5f6d] text-sm tracking-[-0.28px] leading-[1.4]">
-                          (над десной)
-                        </p>
-                      </div>
-                    </td>
-                    <td className="px-2 py-2 text-center">
-                      <div className="flex flex-col gap-0.5">
-                        <p className="font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                          Поддесневая
-                        </p>
-                        <p className="font-['Pretendard_JP'] font-medium text-[#006aff] text-sm tracking-[-0.28px] leading-[1.4]">
-                          (под десной)
-                        </p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-[#e9ebf1]">
-                    <td className="px-2 py-2 font-['Pretendard_JP'] font-semibold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                      Метод
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0">Удаление</p>
-                        <p>камня и налета</p>
-                      </div>
-                    </td>
-                    <td className="px-2 py-2 text-center">
-                      <div className="flex flex-col gap-0.5">
-                        <p className="font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                          Кюретаж
-                        </p>
-                        <p className="font-['Pretendard_JP'] font-medium text-[#006aff] text-sm tracking-[-0.28px] leading-[1.4]">
-                          Антибиотики
-                        </p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-[#e9ebf1]">
-                    <td className="px-2 py-2 font-['Pretendard_JP'] font-semibold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                      Цель
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0">Профилактика и</p>
-                        <p>легкое лечение</p>
-                      </div>
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0 text-[#5d5f6d]">Профилактика и</p>
-                        <p className="text-[#006aff]">средние/тяжелые</p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-[#e9ebf1]">
-                    <td className="px-2 py-2 font-['Pretendard_JP'] font-semibold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                      Анестезия
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0">Обычно</p>
-                        <p>не требуется</p>
-                      </div>
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[#006aff] text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0">Местная</p>
-                        <p>анестезия</p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-[#e9ebf1]">
-                    <td className="px-2 py-2 font-['Pretendard_JP'] font-semibold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                      Частота
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0">1 раз в год</p>
-                        <p>от 19 лет</p>
-                      </div>
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[#006aff] text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0">При необходимости</p>
-                        <p>поэтапно</p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="px-2 py-2 font-['Pretendard_JP'] font-semibold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                      Кому
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0">Все взрослые</p>
-                        <p>обязательно</p>
-                      </div>
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[#006aff] text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0">При заболеваниях</p>
-                        <p>десен</p>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              {/* Point */}
+              <div className="flex items-start gap-2 bg-[#f8f9fb] rounded-2xl p-4">
+                <div className="shrink-0 mt-[3px]">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <circle cx="7" cy="7" r="6" stroke="#008095" strokeWidth="1.5" />
+                    <path d="M7 4.5V7.5M7 9.5V9.8" stroke="#008095" strokeWidth="1.5" strokeLinecap="round" />
+                  </svg>
+                </div>
+                <p
+                  className="text-[13.5px] font-semibold text-[#008095] leading-[1.5]"
+                  style={{ fontFamily: 'Pretendard, sans-serif' }}
+                >
+                  {c.point}
+                </p>
+              </div>
+
+              {/* Insurance Badge */}
+              {c.insurance && (
+                <div className="flex items-center gap-2 pt-1">
+                  <span className="shrink-0">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M8 1.5L2 4V8C2 11.3 4.6 14.4 8 15C11.4 14.4 14 11.3 14 8V4L8 1.5Z" stroke="#008095" strokeWidth="1.5" strokeLinejoin="round" />
+                      <path d="M5.5 8L7 9.5L10.5 6" stroke="#008095" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
+                  <p
+                    className="text-[#008095] font-bold text-[13px]"
+                    style={{ fontFamily: 'Pretendard, sans-serif' }}
+                  >
+                    {c.insurance}
+                  </p>
+                </div>
+              )}
             </div>
-          </div>
+          ))}
         </div>
+
+        {/* Баннер о страховке */}
+        <div className="bg-[#21314E] rounded-[24px] p-7 flex flex-col gap-5">
+          <div className="flex flex-col gap-2">
+            <p
+              className="text-[#4DC8D8] font-bold text-[13px] tracking-[0.15em] uppercase"
+              style={{ fontFamily: 'Pretendard, sans-serif' }}
+            >
+              здоровстраховка информирование
+            </p>
+            <h4
+              className="text-white font-bold text-[20px] leading-[1.35]"
+              style={{ fontFamily: 'Pretendard, sans-serif' }}
+            >
+              чистка и десна лечение,<br />все здоровстраховка 
+            </h4>
+            <p
+              className="text-white/60 text-[14px] leading-[1.7] mt-1"
+              style={{ fontFamily: 'Pretendard, sans-serif' }}
+            >
+              Расходы невелики — делайте чистку 1 раз в год. Чем раньше обнаружить — тем проще и дешевле лечение.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-3">
+            {[
+              {
+                label: 'чистка',
+                detail: 'От 19 лет · 1 раз в год · Доплата ~20%',
+              },
+              {
+                label: 'пародонт лечение (десна лечение)',
+                detail: 'При пародонтите · По зонам по страховке · С анестезией',
+              },
+              {
+                label: 'PerioClean лечение',
+                detail: 'Покрытие страховкой в зависимости от глубины карманов',
+              },
+            ].map((item, i) => (
+              <div key={i} className="flex flex-col gap-1 bg-white/5 border border-white/10 rounded-2xl px-4 py-3">
+                <p
+                  className="text-white font-bold text-[14px]"
+                  style={{ fontFamily: 'Pretendard, sans-serif' }}
+                >
+                  {item.label}
+                </p>
+                <p
+                  className="text-[#4DC8D8] font-medium text-[13px]"
+                  style={{ fontFamily: 'Pretendard, sans-serif' }}
+                >
+                  {item.detail}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <Link href="/ru/consultation">
+            <div className="bg-[#008095] rounded-[16px] py-4 px-6 flex items-center justify-center gap-2 hover:bg-[#006d80] transition-colors">
+              <p
+                className="text-white font-bold text-[15px]"
+                style={{ fontFamily: 'Pretendard, sans-serif' }}
+              >
+                десна состояние консультация запись
+              </p>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </div>
+          </Link>
+        </div>
+
       </div>
     </div>
   );

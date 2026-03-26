@@ -4,17 +4,16 @@ import Image from 'next/image';
 
 export default function DoctorProfileSection() {
   return (
-    <div className="w-full py-[60px] px-4" style={{ background: 'linear-gradient(161deg, #021847 13.86%, #0B255C 19.07%, #000 28.55%)' }}>
+    <div className="w-full py-[60px] px-4 bg-[#21314E]">
       <div className="max-w-[375px] mx-auto">
         <div className="flex flex-col gap-10 items-start w-full">
           {/* Title */}
           <div className="flex flex-col gap-3 items-start text-center text-white w-full">
             <h2 className="font-['Pretendard_JP'] font-bold text-[36px] leading-[1.35] tracking-[-0.72px] w-full">
-              Шүд авах уу?<br />
-              Эрт байна!
+ Нийлмэл шүдний мэргэжилтэн <br /> 
             </h2>
-            <p className="font-['Pretendard_JP'] font-semibold text-[24px] leading-[1.6] tracking-[-0.48px] w-full">
-              Шүд хадгалах мэргэжилтэн эцэс хүртэл эмчилнэ
+            <p className="font-['Pretendard_JP'] font-semibold text-[20px] leading-[1.6] tracking-[-0.4px] w-full text-[#4DC8D8]">
+              Godeok First Dental Ерөнхий эмч
             </p>
           </div>
 
@@ -25,7 +24,7 @@ export default function DoctorProfileSection() {
               <div className="h-[280px] w-full relative overflow-hidden">
                 <Image
                   src="/images/cavity-doctor-profile.png"
-                  alt="Шүд хадгалах мэргэжилтэн Бэ Ин Хё эмч"
+                  alt="Ли Донхён Ерөнхий эмч"
                   fill
                   className="object-cover"
                   style={{ objectPosition: 'center center' }}
@@ -39,53 +38,49 @@ export default function DoctorProfileSection() {
               <div className="flex flex-col gap-5 items-start w-full">
                 <div className="flex gap-[10px] items-center text-center w-full">
                   <h3 className="font-['Pretendard_JP'] font-bold text-[32px] leading-[1.35] tracking-[-0.64px] whitespace-nowrap">
-                    Бэ Ин Хё эмч
+                    Ли Донхён
                   </h3>
-                  <div className="flex flex-col h-full justify-end w-[120px]">
+                  <div className="flex flex-col h-full justify-end w-[77px]">
                     <p className="font-['Pretendard_JP'] font-bold text-[18px] leading-[1.5] tracking-[-0.36px]">
-                      Шүд хадгалах мэргэжилтэн
+                      Ерөнхий эмч
                     </p>
                   </div>
                 </div>
                 <div className="font-['Pretendard_JP'] font-bold text-[24px] leading-[1.6] tracking-[-0.48px] whitespace-nowrap">
-                  <p>Шүдний эмч, эм зүйчийн тусгай зөвшөөрөлтэй</p>
-                  <p>ЭМНЗЯ-аас баталгаажуулсан шүд хадгалах мэргэжилтэн</p>
+                  <p>Эрүүл мэндийн яам баталгаажуулалт Нийлмэл шүдний мэргэжилтэн</p>
+                  <p>Чосон их сургуулийн шүдний эмнэлгийн зочин профессор</p>
                 </div>
               </div>
 
               {/* Credentials List */}
               <ul className="font-['Pretendard_JP'] font-medium text-[15px] leading-[1.4] tracking-[-0.3px] opacity-80 w-full space-y-[10px] list-disc pl-[22.5px]">
-                <li>Пусан Үндэсний Их Сургуулийн Шүдний Эмнэлэгт шүд хадгалах сургалт дүүргэсэн</li>
-                <li>Пусан Үндэсний Их Сургуулийн Шүдний дээд сургуулийн докторын сургалт дүүргэсэн<br />(Шүд хадгалах чиглэл)</li>
-                <li>Шүдний их эмч хамгийн өндөр үнэлгээтэй төгссөн</li>
-                <li>Их сургуулийн шүд хадгалах нийгэмлэгийн гишүүн</li>
-                <li>Солонгосын сувгийн эмчилгээний нийгэмлэгийн гишүүн</li>
-                <li>Солонгосын шүдний наалдах нийгэмлэгийн гишүүн</li>
-                <li>Солонгосын шүдний материалын нийгэмлэгийн гишүүн</li>
-                <li>Солонгосын шүдний гоо сайхны нийгэмлэгийн гишүүн</li>
-                <li>Өмнө нь Гүүд Смайл Шүдний Эмнэлгийн захирал</li>
-                <li>Өмнө нь Плант Шүдний Эмнэлгийн захирал</li>
+ <li>Чосоны их сургуулийн шүдний эмнэлэг </li>
+ <li>Чосоны их сургуулийн шүдний эмнэлэгэмнэлэг төгссөн</li>
+ <li> удаа удаавон</li>
+ <li> амны хөндий Имплант удаа удаавон</li>
+ <li>дижитал Имплант мэргэжилтэн</li>
+ <li>Имплант·хиймэл шүд·мэдрэлэмчилгээ цогц </li>
               </ul>
 
-              {/* 보존과 전문 진료 소개 */}
+ {/* мэргэжилтэн */}
               <div className="flex flex-col gap-6 items-start w-full">
                 <div className="flex flex-col gap-3 items-start w-full">
                   <h4 className="font-['Pretendard_JP'] font-bold text-[24px] leading-[1.35] tracking-[-0.48px]">
-                    Төрөлх шүдийг хадгалах<br />онцгой эмчилгээ
+ байгалийншүд <br /> эмчилгээ
                   </h4>
                   <p className="font-['Pretendard_JP'] font-medium text-[15px] leading-[1.6] tracking-[-0.3px] opacity-80">
-                    Төрөлх шүдийг хадгалах нь шүдний эмчийн үүрэг гэж итгэдэг тул төрөлх шүдийг аль болох хадгалж, эмчилж хичээдэг
+ байгалийншүд шүдний эмнэлэг байгалийншүд.
                   </p>
                 </div>
 
                 <div className="bg-white/10 backdrop-blur-sm p-5 rounded-2xl w-full">
                   <div className="flex flex-col gap-4 items-start w-full">
-                    {/* 진료 항목들 */}
+ {/* */}
                     <div className="flex flex-col gap-3 items-start w-full">
                       <div className="flex items-start gap-2 w-full">
                         <div className="shrink-0 w-5 h-5 mt-0.5">
                           <Image
-                            src="/icons/check-blue.svg"
+                            src="/icons/check-teal.svg"
                             alt=""
                             width={20}
                             height={20}
@@ -93,10 +88,10 @@ export default function DoctorProfileSection() {
                         </div>
                         <div className="flex flex-col gap-1">
                           <p className="font-['Pretendard_JP'] font-bold text-[16px] leading-[1.5] tracking-[-0.32px]">
-                            Сувгийн эмчилгээ, дахин сувгийн эмчилгээ
+                            мэдрэлэмчилгээ, дахинмэдрэлэмчилгээ
                           </p>
                           <p className="font-['Pretendard_JP'] font-medium text-[14px] leading-[1.5] tracking-[-0.28px] opacity-80">
-                            Өндөр нарийвчлал шаарддаг сувгийн эмчилгээ нь шүд хадгалах мэргэжлийн онцлог чиглэл юм
+ нас мэдрэлэмчилгээ шүдний эмнэлэг мэргэжилтэн.
                           </p>
                         </div>
                       </div>
@@ -104,7 +99,7 @@ export default function DoctorProfileSection() {
                       <div className="flex items-start gap-2 w-full">
                         <div className="shrink-0 w-5 h-5 mt-0.5">
                           <Image
-                            src="/icons/check-blue.svg"
+                            src="/icons/check-teal.svg"
                             alt=""
                             width={20}
                             height={20}
@@ -112,10 +107,10 @@ export default function DoctorProfileSection() {
                         </div>
                         <div className="flex flex-col gap-1">
                           <p className="font-['Pretendard_JP'] font-bold text-[16px] leading-[1.5] tracking-[-0.32px]">
-                            Хонхорцог сэргээх
+ дахин 
                           </p>
                           <p className="font-['Pretendard_JP'] font-medium text-[14px] leading-[1.5] tracking-[-0.28px] opacity-80">
-                            Хүүхдийн сувгийн эмчилгээ гэж нэрлэгддэг эмчилгээ бөгөөд байнгын шүдний зогссон мэдрэлийг дахин ургуулж, шүдний үндэс хөгжихэд туслана
+ мэдрэлэмчилгээ дахин мэдрэл шүд.
                           </p>
                         </div>
                       </div>
@@ -123,7 +118,7 @@ export default function DoctorProfileSection() {
                       <div className="flex items-start gap-2 w-full">
                         <div className="shrink-0 w-5 h-5 mt-0.5">
                           <Image
-                            src="/icons/check-blue.svg"
+                            src="/icons/check-teal.svg"
                             alt=""
                             width={20}
                             height={20}
@@ -131,10 +126,10 @@ export default function DoctorProfileSection() {
                         </div>
                         <div className="flex flex-col gap-1">
                           <p className="font-['Pretendard_JP'] font-bold text-[16px] leading-[1.5] tracking-[-0.32px]">
-                            Гэмтсэн шүдний эмчилгээ
+ шүд 
                           </p>
                           <p className="font-['Pretendard_JP'] font-medium text-[14px] leading-[1.5] tracking-[-0.28px] opacity-80">
-                            Олон төрлийн клиникийн туршлагаар гэмтсэн шүдийг хурдан оношлож, арга хэмжээ авна
+ шүд.
                           </p>
                         </div>
                       </div>
@@ -142,7 +137,7 @@ export default function DoctorProfileSection() {
                       <div className="flex items-start gap-2 w-full">
                         <div className="shrink-0 w-5 h-5 mt-0.5">
                           <Image
-                            src="/icons/check-blue.svg"
+                            src="/icons/check-teal.svg"
                             alt=""
                             width={20}
                             height={20}
@@ -150,10 +145,10 @@ export default function DoctorProfileSection() {
                         </div>
                         <div className="flex flex-col gap-1">
                           <p className="font-['Pretendard_JP'] font-bold text-[16px] leading-[1.5] tracking-[-0.32px]">
-                            Үндэсний үзүүр огтлох мэс засал
+ 
                           </p>
                           <p className="font-['Pretendard_JP'] font-medium text-[14px] leading-[1.5] tracking-[-0.28px] opacity-80">
-                            Өмнө нь авах шаардлагатай байсан үндэсний үрэвсэлийг микроскопоор арилгаж шүдийг хадгалах эмчилгээ
+ одоогийн шүд авах шүд үрэвсэл арилгах эмчилгээ.
                           </p>
                         </div>
                       </div>
@@ -161,7 +156,7 @@ export default function DoctorProfileSection() {
                       <div className="flex items-start gap-2 w-full">
                         <div className="shrink-0 w-5 h-5 mt-0.5">
                           <Image
-                            src="/icons/check-blue.svg"
+                            src="/icons/check-teal.svg"
                             alt=""
                             width={20}
                             height={20}
@@ -169,19 +164,19 @@ export default function DoctorProfileSection() {
                         </div>
                         <div className="flex flex-col gap-1">
                           <p className="font-['Pretendard_JP'] font-bold text-[16px] leading-[1.5] tracking-[-0.32px]">
-                            Шүд дахин суулгах
+ шүд дахин 
                           </p>
                           <p className="font-['Pretendard_JP'] font-medium text-[14px] leading-[1.5] tracking-[-0.28px] opacity-80">
-                            Шүдийг авч, үрэвслийн шалтгааныг арилгаж, дахин суулгах эмчилгээ
+ шүд шүд авах үрэвсэл шалтгаан минут арилгах эмчилгээ.
                           </p>
                         </div>
                       </div>
                     </div>
 
-                    {/* 환자 맞춤 상담 강조 */}
-                    <div className="bg-[#006aff]/20 backdrop-blur-sm px-4 py-3 rounded-xl w-full border border-[#006aff]/30">
+ {/* өвчтөн */}
+                    <div className="bg-[#008095]/20 backdrop-blur-sm px-4 py-3 rounded-xl w-full border border-[#008095]/30">
                       <p className="font-['Pretendard_JP'] font-semibold text-[14px] leading-[1.5] tracking-[-0.28px] text-white">
-                        💡 Шүд хадгалах мэргэжилтний хувьд өвчтөн бүрт нарийн зөвлөгөө өгч, баялаг туршлагаас хамгийн шаардлагатай эмчилгээг санал болгоно
+ 💡 мэргэжлийн эмч, өвчтөнминут минут шаардлагатай эмчилгээ явуулах.
                       </p>
                     </div>
                   </div>
@@ -190,24 +185,23 @@ export default function DoctorProfileSection() {
             </div>
           </div>
 
-          {/* Microscope Treatment Photo */}
-          <div className="bg-white rounded-[20px] shadow-[0px_13px_19px_0px_rgba(0,0,0,0.07)] w-full overflow-hidden">
-            <div className="h-[280px] w-full relative overflow-hidden">
-              <Image
-                src="/images/microscope-treatment-photo.jpg"
-                alt="Бэ Ин Хё эмч микроскопоор эмчилж байна"
-                fill
-                className="object-cover"
-                style={{ objectPosition: 'center center' }}
-              />
-            </div>
-            <div className="px-5 py-4 bg-gradient-to-r from-blue-50 to-purple-50">
-              <p className="font-['Pretendard_JP'] font-bold text-[16px] leading-[1.5] tracking-[-0.32px] text-[#006aff] text-center">
-                Төрөлх шүдийг хадгалах сонголт
-              </p>
-              <p className="font-['Pretendard_JP'] font-medium text-[14px] leading-[1.5] tracking-[-0.28px] text-[#5d5f6d] text-center mt-1">
-                Шүд авахгүйгээр хадгалахын тулд<br />их сургуулийн түвшний микроскопоор нарийн эмчилнэ
-              </p>
+ {/* Trios5 + мэргэжлийн эмч */}
+          <div className="bg-gradient-to-br from-[#008095] to-[#006d80] rounded-[20px] p-6 w-full">
+            <p className="font-['Pretendard_JP'] text-[12px] font-bold text-white/60 uppercase tracking-[2px] mb-3">WHY GODUK FIRST</p>
+            <p className="font-['Pretendard_JP'] font-bold text-[18px] leading-[1.5] text-white mb-4">
+ Нийлмэл шүдний мэргэжилтэн <br />цооронхой мэдрэлэмчилгээ 
+            </p>
+            <div className="flex flex-col gap-2">
+              {[
+                'Чосоны их сургуулийн шүдний эмнэлэгэмнэлэг Зочин профессор байсан',
+'Trios5 амны хөндий сканнер — нарийвчилсан дижитал',
+'цооронхой·инлей·мэдрэлэмчилгээ',
+              ].map((item, i) => (
+                <div key={i} className="flex items-center gap-2">
+                  <span className="text-[#4DC8D8] text-[13px]">✓</span>
+                  <span className="text-white/90 text-[13px] font-semibold">{item}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import GNB from '@/components/vi/GNB';
 import FixedCTAButton from '@/components/vi/FixedCTAButton';
 import FooterSection from '@/components/vi/FooterSection';
@@ -11,6 +11,8 @@ import OneDayInlaySection from '@/components/vi/cavity-treatment/OneDayInlaySect
 // import SedationSection from '@/components/vi/cavity-treatment/SedationSection';
 import DoctorProfileSection from '@/components/vi/cavity-treatment/DoctorProfileSection';
 import ComparisonSection from '@/components/vi/cavity-treatment/ComparisonSection';
+import CasesSection from '@/components/vi/cavity-treatment/CasesSection';
+import BlogColumnSection from '@/components/vi/cavity-treatment/BlogColumnSection';
 import DoctorSection from '@/components/vi/DoctorSection';
 import WhyBestSection from '@/components/vi/WhyBestSection';
 import LocationSection from '@/components/vi/LocationSection';
@@ -18,29 +20,18 @@ import FAQSection from '@/components/vi/FAQSection';
 import VideoSection from '@/components/vi/cavity-treatment/VideoSection';
 
 export const metadata: Metadata = {
-  title: 'Nha khoa Điều trị sâu răng Busan Hàn Quốc | Kyungsung Medis Dental',
-  description: 'Điều trị sâu răng và chữa tủy tiên tiến. Số 1 quận Nam Busan. Bác sĩ trưởng trực tiếp điều trị với kính hiển vi và thiết bị kỹ thuật số cấp bệnh viện đại học.',
-  keywords: [
-    'điều trị sâu răng Hàn Quốc',
-    'điều trị sâu răng Busan',
-    'chữa tủy Hàn Quốc',
-    'inlay nha khoa Busan',
-    'nội nha Hàn Quốc',
-    'trám răng Busan',
-    'nha khoa kính hiển vi Busan',
-    'du lịch nha khoa Hàn Quốc',
-    'điều trị sâu răng tiếng Việt Busan'
-  ],
+  title: 'Cavity Treatment Godeok | Godeok First Dental',
+  description: 'Pyeongtaek Godeok Cavity treatment specialist. Comprehensive Dentistry Specialist treats directly. Resin, inlay, root canal, TRIOS5 digital scan.',
   alternates: {
     canonical: 'https://gdfirstdent.com/vi/cavity-treatment',
   },
   openGraph: {
-    title: 'Nha khoa Điều trị sâu răng Busan Hàn Quốc | Kyungsung Medis Dental',
-    description: 'Điều trị sâu răng và chữa tủy tiên tiến. Số 1 quận Nam Busan. Bác sĩ trưởng trực tiếp điều trị với kính hiển vi.',
+    title: 'Cavity Treatment Godeok | Godeok First Dental',
+    description: 'Pyeongtaek Godeok Cavity treatment specialist. Comprehensive Dentistry Specialist treats directly.',
     url: 'https://gdfirstdent.com/vi/cavity-treatment',
+    siteName: 'Godeok First Dental',
     type: 'website',
-    locale: 'vi_VN',
-  }
+  },
 };
 
 export default function CavityTreatmentPage() {
@@ -58,8 +49,13 @@ export default function CavityTreatmentPage() {
       {/* Video Section */}
       <VideoSection />
 
-      {/* Before/After Section */}
-      <BeforeAfterSection />
+      {/* Cases Section */}
+      <CasesSection />
+
+
+      {/* Blog Column Section */}
+      <BlogColumnSection />
+
 
       {/* Question Section */}
       <QuestionSection />
@@ -70,14 +66,9 @@ export default function CavityTreatmentPage() {
       {/* One Day Inlay Section */}
       <OneDayInlaySection />
 
+
       {/* Sedation Section */}
       {/* <SedationSection /> */}
-
-      {/* Doctor Profile Section */}
-      <DoctorProfileSection />
-
-      {/* Comparison Section */}
-      <ComparisonSection />
 
       <DoctorSection />
       <WhyBestSection />

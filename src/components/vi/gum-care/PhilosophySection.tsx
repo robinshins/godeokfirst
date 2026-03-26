@@ -1,177 +1,173 @@
 'use client';
 
-import Image from 'next/image';
-
 export default function PhilosophySection() {
   return (
-    <div className="bg-white w-full px-4 py-[60px] relative">
-      {/* Background gradient */}
-      <div className="absolute h-[636px] left-[calc(50%+5.5px)] top-[149px] -translate-x-1/2 w-[480px] pointer-events-none">
-        <div className="absolute inset-[-62.89%_-83.33%]">
-          <Image
-            src="/images/ellipse-gradient.svg"
-            alt=""
-            fill
-            className="block max-w-none object-contain"
-          />
-        </div>
-      </div>
+    <div className="bg-white w-full py-[80px] px-5 relative overflow-hidden">
 
-      <div className="max-w-[343px] mx-auto flex flex-col gap-10 items-start relative z-10">
-        {/* Header */}
-        <div className="flex flex-col gap-4 items-center justify-center w-full">
-          <div className="flex flex-col gap-3 items-center justify-center text-center w-full">
-            <p className="font-['Pretendard_JP'] font-bold leading-[1.35] text-[32px] text-black tracking-[-0.64px] w-full">
-              Tiêu chuẩn của một nha khoa tốt
-            </p>
-            <div className="font-['Pretendard_JP'] font-semibold leading-[1.4] text-[#727582] text-base tracking-[-0.32px] w-full">
-              <p className="mb-0">Một nha khoa tốt là nha khoa</p>
-              <p>tích cực điều trị nướu</p>
+      {/* Background Decor */}
+      <div className="absolute top-0 right-[-100px] w-[300px] h-[300px] bg-[#008095]/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-[-100px] left-[-100px] w-[300px] h-[300px] bg-[#008095]/5 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="max-w-[430px] mx-auto flex flex-col gap-[60px] relative z-10">
+
+        {/* Main Philosophy Header */}
+        <div className="flex flex-col gap-5 text-center">
+          <p
+            className="text-[#008095] font-bold text-[13px] tracking-[0.2em] uppercase"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+            Our Philosophy
+          </p>
+          <h2
+            className="font-bold text-[32px] leading-[1.3] tracking-[-0.04em] text-black"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+            Nha khoa tích cực<br />khuyến nghị Điều trị nướu<br />
+            là <span className="text-[#008095]">nha khoa chân thành</span>
+          </h2>
+          <p
+            className="font-medium text-[#727582] text-[16px] leading-[1.7] tracking-[-0.02em]"
+            style={{ fontFamily: 'Pretendard, sans-serif' }}
+          >
+            Dù Implant tốt đến đâu cũng không thể thắng răng tự nhiên.<br />
+            Bảo vệ răng tự nhiên là phương pháp điều trị tốt nhất.
+          </p>
+        </div>
+
+        {/* Story Flow */}
+        <div className="flex flex-col gap-8">
+
+          {/* Box 1: Tại sao ngại Điều trị nướu */}
+          <div className="flex flex-col gap-4">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="bg-[#2d3340]/5 text-[#2d3340]/50 font-bold text-[11px] px-2.5 py-1 rounded-full uppercase tracking-wider whitespace-nowrap">
+                Problem
+              </span>
+              <p className="font-bold text-[15px] text-[#2d3340]">
+                Tại sao nhiều bệnh viện ngại Điều trị nướu?
+              </p>
+            </div>
+            <div className="bg-[#f8f9fb] rounded-[24px] p-6 flex flex-col gap-5 border border-[#e9ebf1]">
+              {[
+                {
+                  n: '1',
+                  text: 'Implant sau nhổ răng có lợi nhuận cao hơn nhiều',
+                  sub: 'Dù cứu răng bằng Điều trị nướu cũng không thu được phí Implant.',
+                },
+                {
+                  n: '2',
+                  text: 'Thu nhập bảo hiểm y tế thấp so với thời gian·công sức',
+                  sub: 'Điều trị nướu tỉ mỉ và tốn thời gian nhưng lợi nhuận thấp nên bệnh viện ngại.',
+                },
+                {
+                  n: '3',
+                  text: 'Cần chăm sóc sau điều trị nên kết quả không chắc chắn',
+                  sub: 'Không có sự hợp tác kiên trì của bệnh nhân dễ tái phát, gánh nặng về kết quả điều trị lớn.',
+                },
+              ].map((item) => (
+                <div key={item.n} className="flex items-start gap-3">
+                  <span className="w-6 h-6 rounded-full bg-white flex items-center justify-center border border-[#e9ebf1] shrink-0 mt-[2px]">
+                    <span className="text-[11px] text-[#2d3340]/40 font-bold">{item.n}</span>
+                  </span>
+                  <div className="flex flex-col gap-1">
+                    <p
+                      className="text-[15px] font-bold text-[#2d3340] leading-[1.4]"
+                      style={{ fontFamily: 'Pretendard, sans-serif' }}
+                    >
+                      {item.text}
+                    </p>
+                    <p
+                      className="text-[13px] font-medium text-[#2d3340]/50 leading-[1.5]"
+                      style={{ fontFamily: 'Pretendard, sans-serif' }}
+                    >
+                      {item.sub}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
-        </div>
 
-        {/* Content Cards */}
-        <div className="flex flex-col gap-10 items-start w-full">
-          <div className="flex flex-col gap-6 items-start w-full">
-            {/* Bad Reasons Card */}
-            <div className="bg-white box-border flex flex-col gap-5 items-center justify-center p-6 rounded-[24px] shadow-[0px_24px_50px_-12px_rgba(45,54,67,0.12)] w-full">
-              <div className="font-['Pretendard_JP'] font-bold leading-[1.35] text-2xl text-black text-center tracking-[-0.48px] w-full">
-                <p className="mb-0">Lý do nhiều bệnh viện</p>
-                <p>e ngại điều trị nướu</p>
-              </div>
-              <div className="bg-[#f3f6fb] box-border flex flex-col gap-3.5 items-start p-5 rounded-2xl w-full">
-                <div className="flex items-center gap-2 w-full">
-                  <div className="shrink-0 w-6 h-6 flex items-center justify-center">
-                    <Image
-                      src="/icons/x-icon.svg"
-                      alt=""
-                      width={20}
-                      height={20}
-                    />
-                  </div>
-                  <p className="font-['Pretendard_JP'] font-bold text-[16px] text-black tracking-[-0.34px] leading-[1.5]">
-                    Cấy ghép implant sau khi nhổ răng mang lại lợi nhuận cao hơn
-                  </p>
-                </div>
-                <div className="flex items-center gap-2 w-full">
-                  <div className="shrink-0 w-6 h-6 flex items-center justify-center">
-                    <Image
-                      src="/icons/x-icon.svg"
-                      alt=""
-                      width={20}
-                      height={20}
-                    />
-                  </div>
-                  <p className="font-['Pretendard_JP'] font-bold text-[16px] text-black tracking-[-0.34px] leading-[1.5]">
-                    Bệnh nhân không thích cảm giác đau khi điều trị nướu
-                  </p>
-                </div>
-                <div className="flex items-center gap-2 w-full">
-                  <div className="shrink-0 w-6 h-6 flex items-center justify-center">
-                    <Image
-                      src="/icons/x-icon.svg"
-                      alt=""
-                      width={20}
-                      height={20}
-                    />
-                  </div>
-                  <p className="font-['Pretendard_JP'] font-bold text-[16px] text-black tracking-[-0.34px] leading-[1.5]">
-                    Lo ngại khiếu nại nếu cuối cùng vẫn phải nhổ răng
-                  </p>
-                </div>
-                <div className="flex items-center gap-2 w-full">
-                  <div className="shrink-0 w-6 h-6 flex items-center justify-center">
-                    <Image
-                      src="/icons/x-icon.svg"
-                      alt=""
-                      width={20}
-                      height={20}
-                    />
-                  </div>
-                  <p className="font-['Pretendard_JP'] font-bold text-[16px] text-black tracking-[-0.34px] leading-[1.5]">
-                    Lợi nhuận thấp so với thời gian và công sức bỏ ra
-                  </p>
-                </div>
-              </div>
+          {/* Arrow Divider */}
+          <div className="flex flex-col items-center gap-1 py-2">
+            <div className="w-0.5 h-8 bg-gradient-to-b from-[#e9ebf1] to-[#008095]/50" />
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M9 3V15M9 15L4 10M9 15L14 10" stroke="#008095" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
+
+          {/* Box 2: Lý do chúng tôi kiên trì */}
+          <div className="flex flex-col gap-4">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="bg-[#008095]/10 text-[#008095] font-bold text-[11px] px-2.5 py-1 rounded-full uppercase tracking-wider whitespace-nowrap">
+                Identity
+              </span>
+              <p className="font-bold text-[15px] text-[#008095]">
+                Lý do Godeok First Dental kiên trì Điều trị nướu
+              </p>
             </div>
-
-            {/* Good Reasons Card */}
-            <div className="bg-white box-border flex flex-col gap-5 items-center justify-center p-6 rounded-[24px] shadow-[0px_24px_50px_-12px_rgba(45,54,67,0.12)] w-full">
-              <div className="font-['Pretendard_JP'] font-bold leading-[1.35] text-2xl text-black text-center tracking-[-0.48px] w-full">
-                <p className="mb-0">Lý do bệnh viện chúng tôi</p>
-                <p>kiên trì điều trị nướu</p>
+            <div className="bg-[#008095] rounded-[24px] p-7 flex flex-col gap-6 shadow-xl shadow-[#008095]/20">
+              <div className="flex flex-col gap-2">
+                <p
+                  className="text-white font-bold text-[22px] leading-[1.35]"
+                  style={{ fontFamily: 'Pretendard, sans-serif' }}
+                >
+                  Bảo tồn răng tự nhiên<br />luôn phải là ưu tiên số 1
+                </p>
+                <div className="h-0.5 w-14 bg-white/30 mt-1 mb-2" />
+                <p
+                  className="text-white/80 text-[14px] leading-[1.7]"
+                  style={{ fontFamily: 'Pretendard, sans-serif' }}
+                >
+                  Dù hơi bất tiện và phiền, bảo vệ răng cho bệnh nhân cũng là,
+                  điều trị tốt nhất cho chúng tôi. Nhận Điều trị nướu và giữ răng
+                  được lâu, đó là niềm vui lớn nhất.
+                </p>
               </div>
-              <div className="bg-[#f3f6fb] box-border flex flex-col gap-3.5 items-start p-5 rounded-2xl w-full">
-                <div className="flex items-center gap-2 w-full">
-                  <Image
-                    src="/icons/check-icon.svg"
-                    alt=""
-                    width={24}
-                    height={24}
-                    className="shrink-0"
-                  />
-                  <p className="font-['Pretendard_JP'] font-bold text-[16px] text-black tracking-[-0.34px] leading-[1.5]">
-                    <span className="text-[#006aff]">Bảo tồn răng thật</span>
-                    <span> luôn là ưu tiên </span>số 1
-                  </p>
-                </div>
-                <div className="flex items-center gap-2 w-full">
-                  <Image
-                    src="/icons/check-icon.svg"
-                    alt=""
-                    width={24}
-                    height={24}
-                    className="shrink-0"
-                  />
-                  <p className="font-['Pretendard_JP'] font-bold text-[16px] text-black tracking-[-0.34px] leading-[1.5]">
-                    Điều trị thoải mái với <span className="text-[#006aff]">gây tê giảm đau 4 giai đoạn</span>
-                  </p>
-                </div>
-                <div className="flex items-center gap-2 w-full">
-                  <Image
-                    src="/icons/check-icon.svg"
-                    alt=""
-                    width={24}
-                    height={24}
-                    className="shrink-0"
-                  />
-                  <p className="font-['Pretendard_JP'] font-bold text-[16px] text-black tracking-[-0.34px] leading-[1.5]">
-                    Tỷ lệ thành công cao nhờ <span className="text-[#006aff]">hợp tác với bác sĩ chuyên khoa bảo tồn</span>
-                  </p>
-                </div>
-                <div className="flex items-center gap-2 w-full">
-                  <Image
-                    src="/icons/check-icon.svg"
-                    alt=""
-                    width={24}
-                    height={24}
-                    className="shrink-0"
-                  />
-                  <p className="font-['Pretendard_JP'] font-bold text-[16px] text-black tracking-[-0.34px] leading-[1.5]">
-                    <span>Ưu tiên </span>
-                    <span className="text-[#006aff]">sức khỏe răng miệng trọn đời</span> của bệnh nhân
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Blue Conclusion Card */}
-            <div className="bg-[#006aff] box-border flex flex-col font-['Pretendard_JP'] font-bold gap-5 items-center justify-center leading-[0] p-6 rounded-[24px] text-center text-white w-full">
-              <div className="leading-[1.35] text-2xl tracking-[-0.48px] w-full">
-                <p className="mb-0">Cứu răng thật là</p>
-                <p>phương pháp điều trị tốt nhất</p>
-              </div>
-              <div className="leading-[1.5] opacity-80 text-[17px] tracking-[-0.34px] w-full">
-                <p className="mb-0">Dù có chút bất tiện, việc bảo vệ răng thật</p>
-                <p className="mb-0">bằng cách điều trị nướu định kỳ</p>
-                <p>là lựa chọn giá trị hơn nhiều so với implant</p>
-              </div>
+              <ul className="flex flex-col gap-4">
+                {[
+                  {
+                    title: 'Chuyên gia Nha khoa Tổng hợp trực tiếp khám',
+                    desc: 'Chẩn đoán chính xác tình trạng nướu, trực tiếp phụ trách từ kế hoạch điều trị đến hoàn thành.',
+                  },
+                  {
+                    title: 'Hệ thống gây tê giảm đau 4 bước',
+                    desc: 'Gây tê súc miệng → Gây tê bôi → Máy gây tê điện tử → Máy gây tê thần kinh. Giảm tối đa sự khó chịu của Điều trị nướu.',
+                  },
+                  {
+                    title: 'Chương trình chăm sóc định kỳ',
+                    desc: 'Kiểm tra định kỳ 3~6 tháng sau điều trị để ngăn ngừa tái phát và kéo dài tuổi thọ răng.',
+                  },
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <div className="shrink-0 mt-[2px]">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="10" cy="10" r="9" stroke="rgba(255,255,255,0.3)" strokeWidth="1.5" />
+                        <path d="M6 10L9 13L14 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </div>
+                    <div className="flex flex-col gap-0.5">
+                      <p
+                        className="text-white font-bold text-[15px] leading-[1.4]"
+                        style={{ fontFamily: 'Pretendard, sans-serif' }}
+                      >
+                        {item.title}
+                      </p>
+                      <p
+                        className="text-white/70 text-[13px] leading-[1.5]"
+                        style={{ fontFamily: 'Pretendard, sans-serif' }}
+                      >
+                        {item.desc}
+                      </p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
+
         </div>
       </div>
     </div>
   );
 }
-

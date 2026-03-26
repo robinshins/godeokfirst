@@ -39,9 +39,9 @@ export default function TreatmentSection() {
       subtitle: '자연치아 보존 전문',
       description: '발치 대신 살리는 치료\n통합치의학전문의의 정밀 치료',
       features: [
-        '미세현미경 정밀 진단',
-        '큐레이 충치 발견',
+        '정밀 충치 진단',
         '통증 완화 신경치료',
+        '자연치아 보존',
         '보험 적용'
       ],
       link: '/cavity-treatment'
@@ -108,13 +108,13 @@ export default function TreatmentSection() {
       <div className="max-w-[375px] mx-auto px-4 py-12">
         {/* Section Header */}
         <div className="flex flex-col gap-5 items-center justify-center relative shrink-0 w-full mb-10">
-          <div className="h-8 relative shrink-0">
+          <div className="h-11 relative shrink-0 overflow-hidden">
             <Image
-              src="/images/goduk_images/고덕퍼스트치과로고 1.svg"
+              src="/고덕퍼스트치과-로고-(블랙).png"
               alt="고덕퍼스트치과"
-              width={160}
-              height={32}
-              className="h-full w-auto object-contain"
+              width={375}
+              height={84}
+              className="h-20 w-auto object-contain -mt-[18px]"
             />
           </div>
           <h2 className="font-bold leading-[1.35] not-italic text-[36px] text-black text-center tracking-[-0.72px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
@@ -141,7 +141,7 @@ export default function TreatmentSection() {
                       alt={treatment.title}
                       width={64}
                       height={64}
-                      className="w-full h-full object-contain"
+                      className="h-20 w-auto object-contain -mt-[18px]"
                     />
                   </div>
 
@@ -169,7 +169,7 @@ export default function TreatmentSection() {
                       src="/icons/arrow-right.svg"
                       alt="자세히 보기"
                       width={32}
-                      height={32}
+                      height={84}
                     />
                   </Link>
                 ) : (
@@ -181,7 +181,7 @@ export default function TreatmentSection() {
                       src="/icons/arrow-right.svg"
                       alt="자세히 보기"
                       width={32}
-                      height={32}
+                      height={84}
                     />
                   </button>
                 )}

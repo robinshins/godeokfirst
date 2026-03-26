@@ -2,71 +2,52 @@ import type { Metadata } from 'next';
 import GNB from '@/components/mn/GNB';
 import FixedCTAButton from '@/components/mn/FixedCTAButton';
 import FooterSection from '@/components/mn/FooterSection';
-
 import WhiteningHero from '@/components/mn/whitening/WhiteningHero';
 import WhiteningStats from '@/components/mn/whitening/WhiteningStats';
 import ToothDiscolorationSection from '@/components/mn/whitening/ToothDiscolorationSection';
-import WhiteningVideoSection from '@/components/mn/whitening/WhiteningVideoSection';
-import WhiteningLaminateSection from '@/components/mn/whitening/WhiteningLaminateSection';
 import WhiteningPeroxideSection from '@/components/mn/whitening/WhiteningPeroxideSection';
 import SelfVsProfessionalSection from '@/components/mn/whitening/SelfVsProfessionalSection';
-import WhiteningComparisonSection from '@/components/mn/whitening/WhiteningComparisonSection';
 import CaseStudySection from '@/components/mn/whitening/CaseStudySection';
 import PromotionSection from '@/components/mn/whitening/PromotionSection';
-import FAQSection from '@/components/mn/FAQSection';
-import CTASection from '@/components/mn/CTASection';
+import DoctorSection from '@/components/mn/DoctorSection';
+import WhyBestSection from '@/components/mn/WhyBestSection';
+import LocationSection from '@/components/mn/LocationSection';
 
 export const metadata: Metadata = {
-  title: 'Солонгос Пусан Шүд Цайруулах Шүдний Эмнэлэг | Кёнсон Мэдиш',
-  description: '1,000+ цайруулах үйлчилгээ 0 гаж нөлөөгүй. Пусан Нам-гу 1-рт. Эрхлэгч эмч мэргэжлийн цайруулах ба дижитал ламинатаар шууд эмчилнэ.',
-  keywords: [
-    'Солонгос шүд цайруулах',
-    'Пусан шүд цайруулах',
-    'Солонгос ламинат',
-    'Солонгос винир',
-    'Мэргэжлийн цайруулах Пусан',
-    'Солонгос шүдний цайруулах',
-    'Монгол цайруулах Пусан',
-    'Солонгос шүдний аялал'
-  ],
+  title: 'Teeth Whitening Godeok | Godeok First Dental',
+  description: 'Pyeongtaek Godeok Teeth whitening specialist. Safe with Osstem Beautis system. Comprehensive Dentistry Specialist treats directly.',
   alternates: {
     canonical: 'https://gdfirstdent.com/mn/whitening',
   },
   openGraph: {
-    title: 'Солонгос Пусан Шүд Цайруулах Шүдний Эмнэлэг | Кёнсон Мэдиш',
-    description: '1,000+ цайруулах үйлчилгээ 0 гаж нөлөөгүй. Пусан Нам-гу 1-рт.',
+    title: 'Teeth Whitening Godeok | Godeok First Dental',
+    description: 'Pyeongtaek Godeok Teeth whitening specialist. Safe with Osstem Beautis system.',
     url: 'https://gdfirstdent.com/mn/whitening',
+    siteName: 'Godeok First Dental',
     type: 'website',
-    locale: 'mn_MN',
-  }
+  },
 };
 
 export default function WhiteningPage() {
   return (
-    <main className="min-h-screen overflow-x-hidden">
+    <main className="min-h-screen overflow-x-hidden bg-white">
       <GNB />
       <FixedCTAButton />
 
-      {/* Spacing for fixed GNB */}
       <div className="h-[52px]" />
 
       <WhiteningHero />
-      <WhiteningStats />
       <ToothDiscolorationSection />
-      <WhiteningVideoSection />
-      <WhiteningLaminateSection />
       <WhiteningPeroxideSection />
       <SelfVsProfessionalSection />
-      <WhiteningComparisonSection />
       <CaseStudySection />
       <PromotionSection />
-      <FAQSection page="home" />
-      <CTASection />
-      <FooterSection />
 
-      {/* Spacing for fixed bottom button */}
+      <DoctorSection />
+      <WhyBestSection />
+      <LocationSection />
+      <FooterSection />
       <div className="h-[88px]" />
     </main>
   );
 }
-

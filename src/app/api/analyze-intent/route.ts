@@ -54,7 +54,7 @@ const INTENT_ANALYSIS_PROMPT = `
 2. **추천 치료 (recommendedTreatments)**: 증상에 가장 적합한 치료 1-2개
    - "digital_implant": 디지털 내비게이션 임플란트
    - "all_on_x": 전체 임플란트(All-on-4/6)
-   - "nerve_treatment": 미세현미경 신경치료
+   - "nerve_treatment": 정밀 신경치료
    - "crown_bridge": 크라운/브릿지
    - "wisdom_tooth": 사랑니 발치
    - "laminate": 라미네이트

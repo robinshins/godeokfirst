@@ -1,93 +1,60 @@
 export default function VideoSection() {
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full flex justify-center bg-[#f8fbfd] -mt-1">
       <div className="py-[60px] px-4 w-full max-w-[430px]">
         <div className="flex flex-col gap-10">
           {/* Text Content */}
           <div className="flex flex-col gap-3 text-center">
-            <h2 className="text-[32px] font-bold leading-[1.35] tracking-[-0.02em] text-black">
+            <p className="text-[15px] font-bold text-[#4DC8D8] tracking-[3px] uppercase">
+              VIDEO
+            </p>
+            <h2 className="text-[32px] font-bold leading-[1.35] tracking-[-0.02em] text-[#008095]">
               Tất cả về Implant<br />
-              chúng tôi sẽ cho bạn biết trong video này
+              Hãy xem qua video
             </h2>
-            <p className="text-base font-semibold leading-[1.4] tracking-[-0.02em] text-[#727582]">
-              Chúng tôi giải thích tất cả các phương pháp điều trị từ hàm giả, implant, implant toàn hàm, implant full arch đến implant kỹ thuật số
+            <p className="text-base font-medium leading-[1.4] tracking-[-0.02em] text-[#3e3a3a]">
+              Godeok First Dental Bác sĩ trưởng<br />
+              Bác sĩ trực tiếp giải thích
             </p>
           </div>
 
-          {/* YouTube Video */}
-          <div className="flex justify-center">
-            <div className="relative w-full aspect-video rounded-[20px] overflow-hidden shadow-lg">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/9kP02X04THc"
-                title="Video hướng dẫn hoàn hảo về Implant"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="absolute top-0 left-0 w-full h-full"
-              />
+          {/* YouTube Placeholder - 메인 영상 */}
+          <div className="flex flex-col gap-3">
+            <div className="relative w-full aspect-video rounded-[20px] overflow-hidden bg-[#e9ebf1] flex items-center justify-center">
+              <div className="flex flex-col items-center gap-3 text-center px-6">
+                <div className="w-16 h-16 rounded-full bg-[#008095]/20 flex items-center justify-center">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#008095" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polygon points="5 3 19 12 5 21 5 3" fill="#008095" />
+                  </svg>
+                </div>
+                <p className="text-[#008095] font-bold text-[15px]">Đang chuẩn bị video</p>
+                <p className="text-[#727582] text-[13px] leading-[1.5]">Godeok First Dental Implant video<br />sẽ sớm được tải lên</p>
+              </div>
             </div>
           </div>
 
-          {/* Real Patient Results Video Section */}
-          <div className="flex flex-col gap-6 pt-10">
-            <div className="flex flex-col gap-3 text-center">
-              <h2 className="text-[32px] font-bold leading-[1.35] tracking-[-0.02em] text-black">
-                Kết quả được chứng minh<br />
-                bởi các bệnh nhân thực tế
-              </h2>
-              <p className="text-base font-semibold leading-[1.4] tracking-[-0.02em] text-[#727582]">
-                Hãy tự mình kiểm tra tại sao họ chọn Nha khoa Medis<br />
-                và tự tin giới thiệu cho những người xung quanh
-              </p>
-            </div>
-
-            {/* Patient Results YouTube Video */}
-            <div className="flex flex-col gap-4">
-              <div className="flex justify-center">
-                <div className="relative w-full aspect-video rounded-[20px] overflow-hidden shadow-lg">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/GyzFVUfRqmk"
-                    title="Video kết quả điều trị bệnh nhân thực tế"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                    className="absolute top-0 left-0 w-full h-full"
-                  />
+          {/* Shorts Placeholder */}
+          <div className="grid grid-cols-2 gap-4">
+            {['Phẫu thuật cấy ghép Implant quy trình', 'Implant cách chăm sóc'].map((title, i) => (
+              <div key={i} className="flex flex-col gap-2">
+                <div className="relative w-full aspect-[9/16] rounded-[16px] overflow-hidden bg-[#e9ebf1] flex items-center justify-center">
+                  <div className="flex flex-col items-center gap-2 text-center px-3">
+                    <div className="w-10 h-10 rounded-full bg-[#008095]/20 flex items-center justify-center">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#008095" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <polygon points="5 3 19 12 5 21 5 3" fill="#008095" />
+                      </svg>
+                    </div>
+                    <p className="text-[#727582] text-[11px]">Đang chuẩn bị</p>
+                  </div>
                 </div>
+                <p className="text-[13px] font-semibold text-[#3e3a3a] text-center leading-[1.3]">
+                  {title}
+                </p>
               </div>
-              <div className="flex justify-center">
-                <div className="relative w-full aspect-video rounded-[20px] overflow-hidden shadow-lg">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/O4pDF0w17iE"
-                    title="실제 환자 후기 영상 2"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                    className="absolute top-0 left-0 w-full h-full"
-                  />
-                </div>
-              </div>
-              <div className="flex justify-center">
-                <div className="relative w-full aspect-video rounded-[20px] overflow-hidden shadow-lg">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/wZYlF4IJYd4"
-                    title="실제 환자 후기 영상 3"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                    className="absolute top-0 left-0 w-full h-full"
-                  />
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
     </div>
   );
 }
-

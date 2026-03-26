@@ -8,13 +8,12 @@ export default function FixedCTAButton() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Show button after hero section (after ~700px)
       const heroSectionHeight = 700;
       setIsVisible(window.scrollY > heroSectionHeight);
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Set initial state
+    handleScroll();
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -26,11 +25,22 @@ export default function FixedCTAButton() {
       }`}
     >
       <div className="max-w-[430px] mx-auto px-4 py-3">
-        <Link href="/cn/consultation" className="block w-full">
-          <button className="w-full bg-[#006aff] text-white text-lg font-bold py-4 rounded-[18px] hover:bg-[#0050c0] transition-colors shadow-lg">
-            快速咨询预约
-          </button>
-        </Link>
+        <div className="flex gap-3 w-full">
+          <Link href="/cn/consultation" className="flex-1">
+            <button className="w-full h-14 bg-[#008095] text-white text-lg font-bold rounded-[18px] hover:bg-[#006B7A] transition-colors shadow-lg">
+              AI咨询预约
+            </button>
+          </Link>
+          <a
+            href="https://naver.me/GSD1OqoS"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="h-14 bg-[#03C75A] text-white text-base font-bold px-4 rounded-[18px] hover:bg-[#02b351] transition-colors shadow-lg">
+              N 预约
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   );

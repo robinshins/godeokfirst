@@ -6,18 +6,18 @@ export default function OneDayInlaySection() {
   const benefits = [
     {
       icon: '/icons/clock-fast.svg',
-      title: 'รักษาเสร็จเร็ว',
-      description: 'รักษาเสร็จในครั้งเดียว\nไม่รบกวนชีวิตประจำวัน'
+      title: 'ไม่ต้องพิมพ์ปากอีกต่อไป',
+      description: 'สแกน 3D ความเร็วสูงแทนวัสดุพิมพ์ปากที่เหนียว\nบันทึกรูปทรงฟันได้อย่างสบาย'
     },
     {
       icon: '/icons/shield.svg',
-      title: 'ชิ้นงานที่แม่นยำ',
-      description: 'ผลิตด้วยเครื่องสแกนดิจิทัล\nและเครื่องกัดอัตโนมัติ'
+      title: 'ครอบฟันสั่งทำที่แม่นยำ',
+      description: 'ผลิตอินเลย์ที่ลดความคลาดเคลื่อน\nให้น้อยที่สุดด้วยข้อมูลดิจิทัล'
     },
     {
       icon: '/icons/smile.svg',
-      title: 'ใช้งานได้ทันที',
-      description: 'ไม่ต้องใช้ฟันชั่วคราว\nทานอาหารได้ปกติทันที'
+      title: 'ห้องปฏิบัติการเฉพาะทางที่ผ่านการรับรอง',
+      description: 'ผลิตชิ้นงานเซรามิกคุณภาพสูง\nจากห้องปฏิบัติการที่ผู้อำนวยการคัดเลือกเอง'
     }
   ];
 
@@ -27,82 +27,57 @@ export default function OneDayInlaySection() {
       {/* Header */}
       <div className="flex flex-col gap-3 items-center justify-center leading-[0] not-italic relative shrink-0 text-center w-full">
         <h2 className="font-bold leading-[1.35] text-[32px] text-black tracking-[-0.64px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-          เสร็จใน 24 ชั่วโมง<br />
-          ระบบอินเลย์ดิจิทัล
+          สแกนดิจิทัล Trios 5<br />
+          แม่นยำยิ่งขึ้น
         </h2>
         <p className="font-semibold leading-[1.4] text-[#727582] text-base tracking-[-0.32px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-        ด้วยสแกนดิจิทัลและห้องปฏิบัติการในคลินิก<br />
-        มุ่งมั่นรักษาให้เสร็จเร็ว
+          สั่งทำอินเลย์และครอบฟันด้วยสแกน 3D<br />
+          โดยไม่ต้องพิมพ์ปากที่ไม่สะดวก
         </p>
       </div>
 
       {/* Content Cards */}
       <div className="flex flex-col gap-6 items-start relative shrink-0 w-full">
-        {/* 디지털 스캔 */}
+        {/* 트리오스5 디지털 스캔 */}
         <div className="flex flex-col items-center overflow-clip relative rounded-[24px] shrink-0 w-full">
           <div className="h-[192px] relative shrink-0 w-full">
             <Image
-              src="/images/lab-1.png"
-              alt="สแกนดิจิทัล"
+              src="/images/트리오스5.jpg"
+              alt="เครื่องสแกนช่องปาก Trios 5"
               fill
               className="object-cover"
             />
           </div>
-          <div className="bg-[#0b1727] box-border flex flex-col gap-6 items-start not-italic p-6 relative shrink-0 text-center w-full">
+          <div className="bg-[#21314E] box-border flex flex-col gap-6 items-start not-italic p-6 relative shrink-0 text-center w-full">
             <p className="font-bold leading-[1.35] text-2xl text-white tracking-[-0.48px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-              สแกนดิจิทัลที่แม่นยำ
+              เครื่องสแกนช่องปาก Trios 5
             </p>
             <p className="font-semibold leading-[1.4] opacity-80 text-[#e9ebf1] text-[15px] tracking-[-0.3px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-              สแกน 3 มิติด้วยเครื่องสแกนในช่องปากเพื่อเก็บข้อมูลรูปทรงฟันอย่างสมบูรณ์<br />
+              เครื่องสแกนช่องปากรุ่นล่าสุดจาก 3Shape สามารถสแกน 3D ความเร็วสูงโดยไม่ต้องใช้วัสดุพิมพ์ปากที่เหนียว<br />
               <br />
-              ไม่ต้องพิมพ์ปากที่ไม่สะดวก รักษาได้แม่นยำและสบายมากขึ้น ข้อมูลดิจิทัลนำไปผลิตชิ้นงานได้ทันที
+              บันทึกรูปทรงฟันได้อย่างแม่นยำแม้ในสภาพแวดล้อมช่องปากที่มีความชื้น เพื่อผลิตอินเลย์ที่พอดียิ่งขึ้น
             </p>
           </div>
         </div>
 
-        {/* 밀링머신 제작 */}
-        <div className="flex flex-col items-center overflow-clip relative rounded-[24px] shrink-0 w-full">
-          <div className="h-[192px] relative shrink-0 w-full overflow-hidden">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="absolute inset-0 w-full h-full object-cover"
-            >
-              <source src="/videos/milling-machine.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div className="bg-[#0b1727] box-border flex flex-col gap-6 items-start not-italic p-6 relative shrink-0 text-center w-full">
-            <p className="font-bold leading-[1.35] text-2xl text-white tracking-[-0.48px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-              ผลิตด้วยเครื่องกัดในคลินิก
-            </p>
-            <p className="font-semibold leading-[1.4] opacity-80 text-[#e9ebf1] text-[15px] tracking-[-0.3px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-              กัดบล็อกเซรามิกคุณภาพสูงด้วยเครื่องกัดในคลินิกจากข้อมูลสแกนดิจิทัล<br />
-              <br />
-              ไม่ต้องส่งไปห้องปฏิบัติการภายนอกจึงรวดเร็ว รักษาเสร็จใน 24 ชั่วโมง
-            </p>
-          </div>
-        </div>
-
-        {/* 원내기공소가 없다면? */}
+        {/* 실제 케이스 - 스캐너 사용 */}
         <div className="flex flex-col items-center overflow-clip relative rounded-[24px] shrink-0 w-full">
           <div className="h-[192px] relative shrink-0 w-full">
             <Image
-              src="/images/lab-2.png"
-              alt="ถ้าไม่มีห้องปฏิบัติการในคลินิก?"
+              src="/cases/충치치료/인레이제거후스캔채득.jpg"
+              alt="สแกนหลังถอดอินเลย์ออก"
               fill
               className="object-cover"
             />
           </div>
-          <div className="bg-[#0b1727] box-border flex flex-col gap-6 items-start not-italic p-6 relative shrink-0 text-center w-full">
+          <div className="bg-[#21314E] box-border flex flex-col gap-6 items-start not-italic p-6 relative shrink-0 text-center w-full">
             <p className="font-bold leading-[1.35] text-2xl text-white tracking-[-0.48px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-              ถ้าไม่มีห้องปฏิบัติการในคลินิก?
+              สแกนทันทีหลังการรักษา
             </p>
             <p className="font-semibold leading-[1.4] opacity-80 text-[#e9ebf1] text-[15px] tracking-[-0.3px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-              ต้องส่งผลิตชิ้นงานที่ห้องปฏิบัติการภายนอก ใช้เวลาอย่างน้อย 5-7 วัน<br />
+              เมื่อกำจัดฟันผุและขึ้นรูปเสร็จแล้ว จะทำการสแกนช่องปากทันที<br />
               <br />
-              ต้องมาหลายครั้ง ไม่สะดวกที่ต้องใช้ฟันชั่วคราว และปรับละเอียดได้ยาก
+              ส่งข้อมูลสแกนไปยังห้องปฏิบัติการเฉพาะทางเพื่อผลิตอินเลย์สั่งทำที่แม่นยำ
             </p>
           </div>
         </div>
@@ -110,7 +85,7 @@ export default function OneDayInlaySection() {
         {/* Benefits */}
         {benefits.map((benefit, index) => (
           <div key={index} className="bg-white box-border flex flex-col gap-5 items-center justify-center p-6 relative rounded-[24px] shadow-[0px_24px_50px_-12px_rgba(45,54,67,0.12)] shrink-0 w-full">
-            <div className="relative shrink-0 size-[80px] bg-[#f0f7ff] rounded-2xl flex items-center justify-center">
+            <div className="relative shrink-0 size-[80px] bg-[#e6f7f8] rounded-2xl flex items-center justify-center">
               <Image
                 src={benefit.icon}
                 alt={benefit.title}

@@ -12,63 +12,74 @@ export default function HeroSection() {
   };
 
   return (
-    <div className="bg-[#0b1727] w-full relative overflow-hidden">
-      {/* Background gradient effect - full width */}
-      <div className="absolute h-[610px] left-1/2 top-[calc(50%-53.5px)] -translate-x-1/2 -translate-y-1/2 w-[343px] pointer-events-none">
-        <div className="absolute inset-[-31.15%_-55.39%]">
-          <Image
-            src="/images/hero-gradient.svg"
-            alt=""
-            fill
-            className="block max-w-none object-contain"
-          />
-        </div>
+    <div className="bg-[#21314E] w-full relative overflow-hidden min-h-[600px] flex flex-col justify-end">
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/goduk_images/수술하는모습.jpeg"
+          alt="高德First牙科 诊疗场景"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#21314E] via-[#21314E]/60 to-transparent" />
       </div>
 
-      {/* Content container with max-width */}
-      <div className="w-full flex justify-center">
-        <div className="box-border flex flex-col gap-[50px] items-start px-4 py-[60px] relative w-full max-w-[375px] z-10">
+      {/* Content container */}
+      <div className="w-full flex justify-center relative z-10">
+        <div className="box-border flex flex-col gap-10 items-start px-4 pb-12 pt-20 w-full max-w-[375px]">
           {/* Logo and Text Content */}
-          <div className="flex flex-col gap-8 items-center justify-center relative shrink-0 w-full">
+          <div className="flex flex-col gap-6 items-start justify-center relative shrink-0 w-full">
             {/* Logo */}
-            <div className="h-6 overflow-clip relative shrink-0 w-[168px]">
-              <Image
-                src="/icons/Logo.svg"
-                alt="Kyungsung Medis Dental Clinic"
-                width={168}
-                height={24}
-                className="w-full h-full"
+            <div className="h-11 relative shrink-0 overflow-hidden">
+              <img
+                src="/고덕퍼스트치과-로고-(화이트).png"
+                alt="高德First牙科"
+                className="h-20 w-auto object-contain -mt-[18px]"
               />
             </div>
 
             {/* Main Text */}
-            <div className="flex flex-col gap-4 items-start leading-[0] not-italic relative shrink-0 text-center text-white w-full">
+            <div className="flex flex-col gap-3 items-start leading-[0] not-italic relative shrink-0 text-left text-white w-full">
               <p className="font-semibold leading-[1.5] relative shrink-0 text-lg tracking-[-0.36px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-                不止釜山最好，更是韩国最好的牙科诊所
+                大学医院客座教授专家亲自诊疗
               </p>
-              <h1 className="font-extrabold leading-[1.35] relative shrink-0 text-4xl tracking-[-2.16px] w-full" style={{ fontFamily: 'Nanum Myeongjo, serif' }}>
-                10年零返修记录<br />
-                庆星美迪斯牙科
+              <h1 className="font-extrabold leading-[1.2] relative shrink-0 text-[37px] tracking-[-2px] w-full" style={{ fontFamily: 'Nanum Myeongjo, serif' }}>
+                高德最好的牙科,<br />First牙科
               </h1>
             </div>
           </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col gap-4 items-start justify-center relative shrink-0 w-full">
-            <Link href="/cn/consultation" className="w-full">
-              <button className="bg-[#006aff] box-border flex h-16 items-center justify-center px-6 py-4 relative rounded-[18px] shrink-0 w-full">
-                <span className="font-bold leading-[1.5] not-italic relative shrink-0 text-white text-xl text-nowrap tracking-[-0.4px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-                  快速咨询预约
-                </span>
-              </button>
-            </Link>
+            <div className="flex gap-3 w-full">
+              <Link href="/cn/consultation" className="flex-1">
+                <button className="bg-[#008095] box-border flex h-16 items-center justify-center px-6 py-4 relative rounded-[18px] shrink-0 w-full shadow-lg">
+                  <span className="font-bold leading-[1.5] not-italic relative shrink-0 text-white text-xl text-nowrap tracking-[-0.4px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                    AI咨询预约
+                  </span>
+                </button>
+              </Link>
+
+              <a
+                href="https://naver.me/GSD1OqoS"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="bg-[#03C75A] box-border flex h-16 items-center justify-center px-4 py-4 relative rounded-[18px] shrink-0 shadow-lg">
+                  <span className="font-bold leading-[1.5] not-italic relative shrink-0 text-white text-base text-nowrap tracking-[-0.32px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                    N 预约
+                  </span>
+                </button>
+              </a>
+            </div>
 
             <button
               onClick={scrollToDoctor}
-              className="bg-white border border-[#e9ebf1] border-solid box-border flex h-16 items-center justify-center px-6 py-4 relative rounded-[18px] shrink-0 w-full"
+              className="bg-white/90 backdrop-blur-sm border border-[#e9ebf1] border-solid box-border flex h-16 items-center justify-center px-6 py-4 relative rounded-[18px] shrink-0 w-full shadow-md"
             >
-              <span className="font-bold leading-[1.5] not-italic relative shrink-0 text-[#006aff] text-xl text-nowrap tracking-[-0.4px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-                查看医生介绍
+              <span className="font-bold leading-[1.5] not-italic relative shrink-0 text-[#008095] text-xl text-nowrap tracking-[-0.4px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                查看医疗团队
               </span>
             </button>
           </div>

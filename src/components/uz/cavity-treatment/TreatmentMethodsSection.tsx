@@ -23,31 +23,31 @@ export default function TreatmentMethodsSection() {
           <div className="flex flex-col gap-4 items-center justify-center w-full">
             <div className="flex flex-col gap-3 items-center justify-center text-center w-full">
               <h2 className="font-['Pretendard_JP'] font-bold text-[32px] leading-[1.35] tracking-[-0.64px] text-black w-full">
-                Biz saqlaydigan davolash
-              </h2>
-              <p className="font-['Pretendard_JP'] font-semibold text-base leading-[1.4] tracking-[-0.32px] text-[#727582] w-full">
-                Faqat bemor va tish saqlash uchun<br />
-                davolash jarayoni va uskunalar tayyor
-              </p>
+                  Davolash usullari va jihozlar
+                </h2>
+                <p className="font-['Pretendard_JP'] font-semibold text-base leading-[1.4] tracking-[-0.32px] text-[#727582] w-full">
+                  Holatga mos davolash usulini tanlab,<br />
+                  aniq jihozlar bilan sifatni oshiramiz
+                </p>
             </div>
           </div>
 
           {/* Treatment Cards */}
           <div className="flex flex-col gap-10 items-start w-full">
             <div className="flex flex-col gap-6 items-start w-full">
-              {/* Karies davolash Card */}
+              {/* 충치 치료 Card */}
               <div className="bg-white p-6 rounded-[24px] shadow-[0px_24px_50px_-12px_rgba(45,54,67,0.12)] w-full">
                 <div className="flex flex-col gap-5 items-center justify-center w-full">
                   <h3 className="font-['Pretendard_JP'] font-bold text-[24px] leading-[1.35] tracking-[-0.48px] text-black text-center w-full">
-                    Karies davolash
+                    Kariyes davolash
                   </h3>
                   <div className="bg-[#f3f6fb] p-5 rounded-2xl w-full">
                     <div className="flex flex-col gap-[14px] items-start w-full">
-                      {/* Boshlang'ich karies davolash */}
+                      {/* 초기 충치 치료 */}
                       <div className="flex items-start gap-0 w-full">
                         <div className="shrink-0 w-6 h-6">
                           <Image
-                            src="/icons/check-blue.svg"
+                            src="/icons/check-teal.svg"
                             alt=""
                             width={24}
                             height={24}
@@ -55,15 +55,15 @@ export default function TreatmentMethodsSection() {
                         </div>
                         <div className="flex flex-col gap-1 items-start justify-center">
                           <p className="font-['Pretendard_JP'] font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black whitespace-nowrap">
-                            Boshlang'ich karies davolash
+                            Boshlangʼich kariyes davolash
                           </p>
                           <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582] whitespace-nowrap">
-                            Q-ray diagnostikasi bilan yashirin kariesni aniqlash
+                            Aniq diagnostika bilan yashirin kariyesni aniqlash
                           </p>
                         </div>
                       </div>
 
-                      {/* Rezin davolash */}
+                      {/* 레진 치료 */}
                       <div className="flex items-start gap-0 w-full">
                         <div className="shrink-0 w-6 h-6">
                           <Image
@@ -78,12 +78,12 @@ export default function TreatmentMethodsSection() {
                             Rezin davolash
                           </p>
                           <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582] whitespace-nowrap">
-                            Tabiiy tish rangi bilan bir xil estetik tiklash
+                            Tabiiy tish rangida estetik tiklash
                           </p>
                         </div>
                       </div>
 
-                      {/* Inley / Onley */}
+                      {/* 인레이 · 온레이 */}
                       <div className="flex items-start gap-0 w-full">
                         <div className="shrink-0 w-6 h-6">
                           <Image
@@ -95,10 +95,10 @@ export default function TreatmentMethodsSection() {
                         </div>
                         <div className="flex flex-col gap-1 items-start justify-center">
                           <p className="font-['Pretendard_JP'] font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black whitespace-nowrap">
-                            Inley / Onley
+                            Inley · Onley
                           </p>
                           <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582] whitespace-nowrap">
-                            Katta kariesni ham sug'urmasdan aniq saqlash
+                            Katta kariyesni ham tishni sug`urmasdan aniq saqlash
                           </p>
                         </div>
                       </div>
@@ -107,19 +107,19 @@ export default function TreatmentMethodsSection() {
                 </div>
               </div>
 
-              {/* Nerv davolash Card */}
+              {/* 신경 치료 Card */}
               <div className="bg-white p-6 rounded-[24px] shadow-[0px_24px_50px_-12px_rgba(45,54,67,0.12)] w-full">
                 <div className="flex flex-col gap-5 items-center justify-center w-full">
                   <h3 className="font-['Pretendard_JP'] font-bold text-[24px] leading-[1.35] tracking-[-0.48px] text-black text-center w-full">
-                    Nerv davolash
+                    Asab davolash
                   </h3>
                   <div className="bg-[#f3f6fb] p-5 rounded-2xl w-full">
                     <div className="flex flex-col gap-[14px] items-start w-full">
-                      {/* Og'riqni bartaraf etish */}
+                      {/* 통증 완화 */}
                       <div className="flex items-start gap-0 w-full">
                         <div className="shrink-0 w-6 h-6">
                           <Image
-                            src="/icons/check-blue.svg"
+                            src="/icons/check-teal.svg"
                             alt=""
                             width={24}
                             height={24}
@@ -127,15 +127,15 @@ export default function TreatmentMethodsSection() {
                         </div>
                         <div className="flex flex-col gap-1 items-start justify-center flex-1">
                           <p className="font-['Pretendard_JP'] font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black whitespace-nowrap">
-                            Og'riqni bartaraf etish
+                            {"Og\u02BCriqni kamaytirish"}
                           </p>
                           <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582] whitespace-nowrap">
-                            Kuchli tish og'rig'ini yo'qotib, kundalik hayotni tiklash
+                            {"Kuchli tish og\u02BCrig\u02BCini bartaraf etib qulay kundalik hayotni tiklash"}
                           </p>
                         </div>
                       </div>
 
-                      {/* Tish saqlash */}
+                      {/* 치아 보존 */}
                       <div className="flex items-start gap-0 w-full">
                         <div className="shrink-0 w-6 h-6">
                           <Image
@@ -147,15 +147,15 @@ export default function TreatmentMethodsSection() {
                         </div>
                         <div className="flex flex-col gap-1 items-start justify-center flex-1">
                           <p className="font-['Pretendard_JP'] font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black whitespace-nowrap">
-                            Tish saqlash
+                            Tishni saqlash
                           </p>
                           <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582] whitespace-nowrap">
-                            Sug'urmasdan tabiiy tishni saqlash
+                            {"Sug\u02BCurmasdan tabiiy tishni saqlash"}
                           </p>
                         </div>
                       </div>
 
-                      {/* Mikroskop yordamida davolash */}
+                      {/* 정밀 신경 치료 */}
                       <div className="flex items-start gap-0 w-full">
                         <div className="shrink-0 w-6 h-6">
                           <Image
@@ -167,10 +167,10 @@ export default function TreatmentMethodsSection() {
                         </div>
                         <div className="flex flex-col gap-1 items-start justify-center flex-1">
                           <p className="font-['Pretendard_JP'] font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black whitespace-nowrap">
-                            Mikroskop yordamida davolash
+                            Aniq asab davolash
                           </p>
                           <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582] whitespace-nowrap">
-                            Konservativ mutaxassisning aniq davolashi
+                            Integratsion stomatologiya mutaxassisi bevosita davolaydi
                           </p>
                         </div>
                       </div>
@@ -180,174 +180,76 @@ export default function TreatmentMethodsSection() {
                 </div>
               </div>
 
-              {/* Professional uskunalar Card */}
+              {/* 장비와 혜택 Card */}
               <div className="bg-white p-6 rounded-[24px] shadow-[0px_24px_50px_-12px_rgba(45,54,67,0.12)] w-full">
                 <div className="flex flex-col gap-5 items-center justify-center w-full">
                   <h3 className="font-['Pretendard_JP'] font-bold text-[24px] leading-[1.35] tracking-[-0.48px] text-black text-center w-full">
-                    Professional uskunalar
+                    Professional jihozlar
                   </h3>
 
-                  {/* Q-ray diagnostika uskunasi */}
-                  <div className="flex gap-[22px] items-center w-full">
-                    <div className="bg-white border border-[#e9ebf1] rounded-2xl shrink-0 w-[110px] h-[110px] overflow-hidden relative">
-                      <div className="">
+                  {/* 트리오스5 구강 스캐너 - 강조 섹션 */}
+                  <div className="flex flex-col gap-5 items-start w-full">
+                    <div className="flex gap-[22px] items-center w-full">
+                      <div className="bg-white border border-[#e9ebf1] rounded-2xl shrink-0 w-[110px] h-[110px] overflow-hidden relative">
                         <Image
-                          src="/images/qray-photo2.jpg"
-                          alt="Q-ray diagnostika uskunasi"
+                          src="/images/트리오스5.jpg"
+                          alt="TRIOS 5 ogʼiz skaneri"
                           fill
-                          className="object-contain"
+                          className="object-cover"
                         />
                       </div>
-                    </div>
-                    <div className="flex flex-col gap-2 items-start flex-1">
-                      <p className="font-['Pretendard_JP'] font-bold text-[20px] leading-[1.5] tracking-[-0.4px] text-[#006aff] w-full">
-                        Q-ray diagnostika uskunasi
-                      </p>
-                      <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-black w-full">
-                        Zararsiz ko'rinadigan yorug'lik bilan<br />
-                        yashirin kariesni aniqlash
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Mikroskop - Emphasis Section */}
-                  <div className="flex flex-col gap-5 items-start w-full">
-                    {/* Header */}
-                    <div className="flex flex-col gap-3 items-start w-full">
-                      <div className="flex gap-[22px] items-center w-full">
-                        <div className="bg-white border border-[#e9ebf1] rounded-2xl shrink-0 w-[110px] h-[110px] overflow-hidden relative">
-                          <Image
-                            src="/images/microscope.jpg"
-                            alt="Mikroskop"
-                            fill
-                            className="object-cover"
-                          />
-                        </div>
-                        <div className="flex flex-col gap-2 items-start flex-1">
-                          <p className="font-['Pretendard_JP'] font-bold text-[20px] leading-[1.5] tracking-[-0.4px] text-[#006aff] w-full">
-                            Mikroskop yordamida davolash
-                          </p>
-                          <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-black w-full">
-                            Stomatolog ko'zi bilan ko'ra olmaydigan<br />
-                            kichik qismlarni ham o'tkazib yubormaymiz
-                          </p>
-                        </div>
+                      <div className="flex flex-col gap-2 items-start flex-1">
+                        <p className="font-['Pretendard_JP'] font-bold text-[20px] leading-[1.5] tracking-[-0.4px] text-[#008095] w-full">
+                          {"TRIOS 5 og\u02BCiz skaneri"}
+                        </p>
+                        <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-black w-full">
+                          {"Eng zamonaviy raqamli skaner bilan"}<br />
+                          {"noqulay qolip olmasdan aniq o\u02BClchash"}
+                        </p>
                       </div>
                     </div>
 
-                    {/* Feature List */}
+                    {/* 특장점 리스트 */}
                     <div className="bg-[#f3f6fb] p-5 rounded-2xl w-full">
                       <div className="flex flex-col gap-3 items-start w-full">
                         <div className="flex items-start gap-2 w-full">
                           <div className="shrink-0 w-5 h-5 mt-0.5">
-                            <Image
-                              src="/icons/check-blue.svg"
-                              alt=""
-                              width={20}
-                              height={20}
-                            />
+                            <Image src="/icons/check-teal.svg" alt="" width={20} height={20} />
                           </div>
                           <p className="font-['Pretendard_JP'] font-medium text-[15px] leading-[1.5] tracking-[-0.3px] text-[#2d3643]">
-                            Karies/tish yorig'i va boshqalarni aniq tashxislaydi
+                            {"Yopishqoq qolip materialisiz o\u02BCta tezkor 3D skan"}
                           </p>
                         </div>
                         <div className="flex items-start gap-2 w-full">
                           <div className="shrink-0 w-5 h-5 mt-0.5">
-                            <Image
-                              src="/icons/check-blue.svg"
-                              alt=""
-                              width={20}
-                              height={20}
-                            />
+                            <Image src="/icons/check-teal.svg" alt="" width={20} height={20} />
                           </div>
                           <p className="font-['Pretendard_JP'] font-medium text-[15px] leading-[1.5] tracking-[-0.3px] text-[#2d3643]">
-                            Tishni 25 baravargacha kattalashtirib aniq davolaydi
+                            Raqamli maʼlumotlar bilan yanada aniq protez tayyorlash
                           </p>
                         </div>
                         <div className="flex items-start gap-2 w-full">
                           <div className="shrink-0 w-5 h-5 mt-0.5">
-                            <Image
-                              src="/icons/check-blue.svg"
-                              alt=""
-                              width={20}
-                              height={20}
-                            />
+                            <Image src="/icons/check-teal.svg" alt="" width={20} height={20} />
                           </div>
                           <p className="font-['Pretendard_JP'] font-medium text-[15px] leading-[1.5] tracking-[-0.3px] text-[#2d3643]">
-                            Davolangan tishning qayta kasallanishi va asoratlarini minimallashtiradi
+                            {"Kariyesni olib tashlagandan so\u02BCng darhol skanlab maxsus tayyorlash"}
                           </p>
                         </div>
                         <div className="flex items-start gap-2 w-full">
                           <div className="shrink-0 w-5 h-5 mt-0.5">
-                            <Image
-                              src="/icons/check-blue.svg"
-                              alt=""
-                              width={20}
-                              height={20}
-                            />
+                            <Image src="/icons/check-teal.svg" alt="" width={20} height={20} />
                           </div>
                           <p className="font-['Pretendard_JP'] font-medium text-[15px] leading-[1.5] tracking-[-0.3px] text-[#2d3643]">
-                            Aniq davolash bilan atrofdagi to'qimalar shikastlanishini minimallashtiradi
+                            Qulay davolash tajribasi, xatolikni minimallashtirish
                           </p>
                         </div>
                       </div>
                     </div>
 
-                    {/* Description Box */}
-                    <div className="bg-gradient-to-r from-[#006aff]/10 to-[#0099ff]/10 p-4 rounded-xl w-full border border-[#006aff]/20">
+                    <div className="bg-gradient-to-r from-[#008095]/10 to-[#00aabb]/10 p-4 rounded-xl w-full border border-[#008095]/20">
                       <p className="font-['Pretendard_JP'] font-medium text-[14px] leading-[1.6] tracking-[-0.28px] text-[#2d3643]">
-                        Faqat ba'zi universitet shifoxonalari va stomatologiya klinikalarida mavjud mikroskop stomatologning ko'zi bilan ko'ra olmaydigan kichik qismlarni ham ko'rsatib, murakkab konservativ davolashni samarali amalga oshirishga yordam beradi.
-                      </p>
-                    </div>
-
-                    {/* Actual Treatment Case Images */}
-                    <div className="flex flex-col gap-3 items-start w-full">
-                      <h5 className="font-['Pretendard_JP'] font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black">
-                        Mikroskop bilan ko'rinadigan narsalar
-                      </h5>
-                      <div className="grid grid-cols-3 gap-2 w-full">
-                        <div className="aspect-square rounded-xl overflow-hidden relative border border-[#e9ebf1]">
-                          <Image
-                            src="/images/microscope-nerve-canal.webp"
-                            alt="Nerv kanalini ta'minlash"
-                            fill
-                            className="object-cover"
-                          />
-                        </div>
-                        <div className="aspect-square rounded-xl overflow-hidden relative border border-[#e9ebf1]">
-                          <Image
-                            src="/images/microscope-root-inflammation.webp"
-                            alt="Tish ildizi yallig'lanish sababini aniqlash"
-                            fill
-                            className="object-cover"
-                          />
-                        </div>
-                        <div className="aspect-square rounded-xl overflow-hidden relative border border-[#e9ebf1]">
-                          <Image
-                            src="/images/microscope-crack-found.webp"
-                            alt="Yoriq aniqlash"
-                            fill
-                            className="object-cover"
-                          />
-                        </div>
-                      </div>
-                      <div className="grid grid-cols-3 gap-2 w-full">
-                        <p className="font-['Pretendard_JP'] font-medium text-[12px] leading-[1.4] tracking-[-0.24px] text-[#727582] text-center">
-                          Nerv kanalini ta'minlash
-                        </p>
-                        <p className="font-['Pretendard_JP'] font-medium text-[12px] leading-[1.4] tracking-[-0.24px] text-[#727582] text-center">
-                          Tish ildizi<br />yallig'lanish sababini aniqlash
-                        </p>
-                        <p className="font-['Pretendard_JP'] font-medium text-[12px] leading-[1.4] tracking-[-0.24px] text-[#727582] text-center">
-                          Yoriq aniqlash
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* Emphasis Message */}
-                    <div className="bg-[#f0f7ff] px-4 py-3 rounded-xl w-full">
-                      <p className="font-['Pretendard_JP'] font-semibold text-[14px] leading-[1.5] tracking-[-0.28px] text-[#006aff]">
-                        Boshqa stomatologiyalarda qiyin nerv davolashlarni ham qabul qilib davolaymiz
+                        {"TRIOS 5 — 3Shape kompaniyasining eng yangi og\u02BCiz skaneri bo\u02BClib, namlik mavjud muhitda ham tish shaklini aniq o\u02BClchay oladi. Inley, onley va toj davolashda ancha aniqroq va qulayroq davolash imkonini beradi."}
                       </p>
                     </div>
                   </div>

@@ -82,6 +82,17 @@ export const TREATMENT_CASE_IMAGES = {
         jp: { title: '前歯再補綴', description: '既存前歯補綴物の再治療前後比較' },
         cn: { title: '前牙再修复', description: '原有前牙修复体再治疗前后对比' }
       }
+    },
+    {
+      beforeImage: '/임상사진/정민아B_앞니 보철/정민아B_앞니심미보철크라운_before.jpg',
+      afterImage: '/임상사진/정민아B_앞니 보철/정민아B_앞니심미보철크라운_after.jpg',
+      title: '앞니 심미보철 크라운',
+      description: '앞니 심미보철 크라운 전후 비교',
+      translations: {
+        en: { title: 'Front tooth aesthetic crown', description: 'Before and after front tooth aesthetic crown restoration' },
+        jp: { title: '前歯審美クラウン', description: '前歯審美クラウン修復の前後比較' },
+        cn: { title: '前牙美学冠', description: '前牙美学冠修复前后对比' }
+      }
     }
   ],
 
@@ -140,6 +151,17 @@ export const TREATMENT_CASE_IMAGES = {
         en: { title: 'Front tooth re-prosthetic', description: 'Before and after retreatment of existing front tooth prosthetic' },
         jp: { title: '前歯再補綴', description: '既存前歯補綴物の再治療前後比較' },
         cn: { title: '前牙再修复', description: '原有前牙修复体再治疗前后对比' }
+      }
+    },
+    {
+      beforeImage: '/임상사진/정민아B_앞니 보철/정민아B_앞니심미보철크라운_before.jpg',
+      afterImage: '/임상사진/정민아B_앞니 보철/정민아B_앞니심미보철크라운_after.jpg',
+      title: '앞니 심미보철 크라운',
+      description: '앞니 심미보철 크라운 전후 비교',
+      translations: {
+        en: { title: 'Front tooth aesthetic crown', description: 'Before and after front tooth aesthetic crown restoration' },
+        jp: { title: '前歯審美クラウン', description: '前歯審美クラウン修復の前後比較' },
+        cn: { title: '前牙美学冠', description: '前牙美学冠修复前后对比' }
       }
     }
   ],
@@ -200,6 +222,17 @@ export const TREATMENT_CASE_IMAGES = {
         jp: { title: '前歯再補綴', description: '既存前歯補綴物の再治療前後比較' },
         cn: { title: '前牙再修复', description: '原有前牙修复体再治疗前后对比' }
       }
+    },
+    {
+      beforeImage: '/임상사진/정민아B_앞니 보철/정민아B_앞니심미보철크라운_before.jpg',
+      afterImage: '/임상사진/정민아B_앞니 보철/정민아B_앞니심미보철크라운_after.jpg',
+      title: '앞니 심미보철 크라운',
+      description: '앞니 심미보철 크라운 전후 비교',
+      translations: {
+        en: { title: 'Front tooth aesthetic crown', description: 'Before and after front tooth aesthetic crown restoration' },
+        jp: { title: '前歯審美クラウン', description: '前歯審美クラウン修復の前後比較' },
+        cn: { title: '前牙美学冠', description: '前牙美学冠修复前后对比' }
+      }
     }
   ],
 
@@ -259,6 +292,17 @@ export const TREATMENT_CASE_IMAGES = {
         jp: { title: '前歯再補綴', description: '既存前歯補綴物の再治療前後比較' },
         cn: { title: '前牙再修复', description: '原有前牙修复体再治疗前后对比' }
       }
+    },
+    {
+      beforeImage: '/임상사진/정민아B_앞니 보철/정민아B_앞니심미보철크라운_before.jpg',
+      afterImage: '/임상사진/정민아B_앞니 보철/정민아B_앞니심미보철크라운_after.jpg',
+      title: '앞니 심미보철 크라운',
+      description: '앞니 심미보철 크라운 전후 비교',
+      translations: {
+        en: { title: 'Front tooth aesthetic crown', description: 'Before and after front tooth aesthetic crown restoration' },
+        jp: { title: '前歯審美クラウン', description: '前歯審美クラウン修復の前後比較' },
+        cn: { title: '前牙美学冠', description: '前牙美学冠修复前后对比' }
+      }
     }
   ],
 
@@ -317,6 +361,17 @@ export const TREATMENT_CASE_IMAGES = {
         en: { title: 'Front tooth re-prosthetic', description: 'Before and after retreatment of existing front tooth prosthetic' },
         jp: { title: '前歯再補綴', description: '既存前歯補綴物の再治療前後比較' },
         cn: { title: '前牙再修复', description: '原有前牙修复体再治疗前后对比' }
+      }
+    },
+    {
+      beforeImage: '/임상사진/정민아B_앞니 보철/정민아B_앞니심미보철크라운_before.jpg',
+      afterImage: '/임상사진/정민아B_앞니 보철/정민아B_앞니심미보철크라운_after.jpg',
+      title: '앞니 심미보철 크라운',
+      description: '앞니 심미보철 크라운 전후 비교',
+      translations: {
+        en: { title: 'Front tooth aesthetic crown', description: 'Before and after front tooth aesthetic crown restoration' },
+        jp: { title: '前歯審美クラウン', description: '前歯審美クラウン修復の前後比較' },
+        cn: { title: '前牙美学冠', description: '前牙美学冠修复前后对比' }
       }
     }
   ],
@@ -571,6 +626,17 @@ export const TREATMENT_CASE_IMAGES = {
         jp: { title: '奥歯インプラント（実際写真）', description: '奥歯インプラント補綴装着前後の比較' },
         cn: { title: '磨牙种植体（实拍照片）', description: '磨牙种植体修复体安装前后对比' }
       }
+    },
+    {
+      beforeImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_before.jpg',
+      afterImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_after.jpg',
+      title: '임플란트 (실제사진)',
+      description: '임플란트 식립 및 보철 전후 비교',
+      translations: {
+        en: { title: 'Implant (clinical photo)', description: 'Before and after implant placement and prosthetic' },
+        jp: { title: 'インプラント（実際写真）', description: 'インプラント埋入および補綴前後の比較' },
+        cn: { title: '种植体（实拍照片）', description: '种植体植入及修复前后对比' }
+      }
     }
   ],
 
@@ -597,6 +663,17 @@ export const TREATMENT_CASE_IMAGES = {
         jp: { title: '奥歯インプラント（実際写真）', description: '奥歯インプラント補綴装着前後の比較' },
         cn: { title: '磨牙种植体（实拍照片）', description: '磨牙种植体修复体安装前后对比' }
       }
+    },
+    {
+      beforeImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_before.jpg',
+      afterImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_after.jpg',
+      title: '임플란트 (실제사진)',
+      description: '임플란트 식립 및 보철 전후 비교',
+      translations: {
+        en: { title: 'Implant (clinical photo)', description: 'Before and after implant placement and prosthetic' },
+        jp: { title: 'インプラント（実際写真）', description: 'インプラント埋入および補綴前後の比較' },
+        cn: { title: '种植体（实拍照片）', description: '种植体植入及修复前后对比' }
+      }
     }
   ],
 
@@ -622,6 +699,17 @@ export const TREATMENT_CASE_IMAGES = {
         en: { title: 'Molar implant (clinical photo)', description: 'Before and after molar implant prosthetic placement' },
         jp: { title: '奥歯インプラント（実際写真）', description: '奥歯インプラント補綴装着前後の比較' },
         cn: { title: '磨牙种植体（实拍照片）', description: '磨牙种植体修复体安装前后对比' }
+      }
+    },
+    {
+      beforeImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_before.jpg',
+      afterImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_after.jpg',
+      title: '임플란트 (실제사진)',
+      description: '임플란트 식립 및 보철 전후 비교',
+      translations: {
+        en: { title: 'Implant (clinical photo)', description: 'Before and after implant placement and prosthetic' },
+        jp: { title: 'インプラント（実際写真）', description: 'インプラント埋入および補綴前後の比較' },
+        cn: { title: '种植体（实拍照片）', description: '种植体植入及修复前后对比' }
       }
     }
   ],
@@ -655,25 +743,25 @@ export const TREATMENT_CASE_IMAGES = {
   // 사랑니 케이스 - 기본 (위+아래 혼합)
   wisdom_tooth: [
     {
-      beforeImage: '/images/cases/wisdom-tooth/answer1-upper/food-impaction-overeruption/before.jpg',
-      afterImage: '/images/cases/wisdom-tooth/answer1-upper/food-impaction-overeruption/after.jpg',
-      title: '위 사랑니 발치',
-      description: '음식물 끼임, 씹을 때 불편함, 정출로 인한 위 사랑니 발치. 간단한 시술로 빠른 회복',
+      beforeImage: '/임상사진/사랑니/왼쪽아래사랑니_before.jpeg',
+      afterImage: '/임상사진/사랑니/왼쪽아래사랑니_after.jpeg',
+      title: '왼쪽 아래 사랑니 발치',
+      description: '매복된 왼쪽 아래 사랑니를 안전하게 발치 완료',
       translations: {
-        en: { title: 'Upper wisdom tooth extraction', description: 'Upper wisdom tooth extraction due to food impaction, chewing discomfort, and overeruption. Quick recovery with simple procedure' },
-        jp: { title: '上の親知らず抜歯', description: '食べ物の詰まり、噛む不快感、挺出による上の親知らず抜歯。簡単な施術で早い回復' },
-        cn: { title: '上颌智齿拔除', description: '因食物嵌塞、咀嚼不适、过长拔除上颌智齿。简单手术快速恢复' }
+        en: { title: 'Left lower wisdom tooth extraction', description: 'Safe extraction of impacted left lower wisdom tooth' },
+        jp: { title: '左下親知らず抜歯', description: '埋伏した左下の親知らずを安全に抜歯完了' },
+        cn: { title: '左下智齿拔除', description: '安全拔除阻生左下智齿' }
       }
     },
     {
-      beforeImage: '/images/cases/wisdom-tooth/answer2-lower/high-difficulty/horizontal-impaction/before.jpg',
-      afterImage: '/images/cases/wisdom-tooth/answer2-lower/high-difficulty/horizontal-impaction/after.jpg',
-      title: '아래 사랑니 고난이도 발치',
-      description: '수평매복 아래 사랑니 고난이도 발치. 대학병원급 숙련된 전문의 시술로 안전하게 제거',
+      beforeImage: '/임상사진/사랑니/우측아래사랑니_before.jpeg',
+      afterImage: '/임상사진/사랑니/우측아래사랑니_after.jpeg',
+      title: '우측 아래 사랑니 발치',
+      description: '우측 아래 사랑니 발치 후 잇몸 깔끔하게 회복',
       translations: {
-        en: { title: 'Lower wisdom tooth high-difficulty extraction', description: 'High-difficulty extraction of horizontally impacted lower wisdom tooth. Safely removed by university hospital-level specialist' },
-        jp: { title: '下の親知らず高難度抜歯', description: '水平埋伏の下の親知らず高難度抜歯。大学病院レベルの熟練専門医で安全に除去' },
-        cn: { title: '下颌智齿高难度拔除', description: '水平阻生下颌智齿高难度拔除。大学医院级专家安全操作' }
+        en: { title: 'Right lower wisdom tooth extraction', description: 'Clean gum recovery after right lower wisdom tooth extraction' },
+        jp: { title: '右下親知らず抜歯', description: '右下の親知らず抜歯後、歯茎がきれいに回復' },
+        cn: { title: '右下智齿拔除', description: '右下智齿拔除后牙龈恢复良好' }
       }
     }
   ],
@@ -681,14 +769,14 @@ export const TREATMENT_CASE_IMAGES = {
   // 사랑니 케이스 - 위 사랑니 (답안1)
   wisdom_tooth_upper: [
     {
-      beforeImage: '/images/cases/wisdom-tooth/answer1-upper/food-impaction-overeruption/before.jpg',
-      afterImage: '/images/cases/wisdom-tooth/answer1-upper/food-impaction-overeruption/after.jpg',
-      title: '위 사랑니 발치 - 음식물끼임/정출',
-      description: '음식물 끼임, 씹을 때 불편함, 정출로 인한 위 사랑니 발치. 간단한 시술로 빠른 회복',
+      beforeImage: '/임상사진/사랑니/왼쪽아래사랑니_before.jpeg',
+      afterImage: '/임상사진/사랑니/왼쪽아래사랑니_after.jpeg',
+      title: '사랑니 발치',
+      description: '매복된 사랑니를 안전하게 발치 완료. 통합치의학과 전문의가 직접 시술',
       translations: {
-        en: { title: 'Upper wisdom tooth - Food impaction/Overeruption', description: 'Upper wisdom tooth extraction due to food impaction, chewing discomfort, and overeruption. Quick recovery' },
-        jp: { title: '上の親知らず - 食べ物詰まり/挺出', description: '食べ物の詰まり、噛む不快感、挺出による上の親知らず抜歯。早い回復' },
-        cn: { title: '上颌智齿 - 食物嵌塞/过长', description: '因食物嵌塞、咀嚼不适、过长拔除上颌智齿。快速恢复' }
+        en: { title: 'Wisdom tooth extraction', description: 'Safe extraction of impacted wisdom tooth by specialist' },
+        jp: { title: '親知らず抜歯', description: '埋伏した親知らずを専門医が安全に抜歯完了' },
+        cn: { title: '智齿拔除', description: '专家安全拔除阻生智齿' }
       }
     }
   ],
@@ -696,47 +784,36 @@ export const TREATMENT_CASE_IMAGES = {
   // 사랑니 케이스 - 아래 사랑니 (답안2)
   wisdom_tooth_lower: [
     {
-      beforeImage: '/images/cases/wisdom-tooth/answer2-lower/high-difficulty/horizontal-impaction/before.jpg',
-      afterImage: '/images/cases/wisdom-tooth/answer2-lower/high-difficulty/horizontal-impaction/after.jpg',
-      title: '아래 사랑니 고난이도 발치 - 수평매복',
-      description: '수평매복 아래 사랑니 고난이도 발치. 대학병원급 숙련된 전문의 시술로 안전하게 제거',
+      beforeImage: '/임상사진/사랑니/왼쪽아래사랑니_before.jpeg',
+      afterImage: '/임상사진/사랑니/왼쪽아래사랑니_after.jpeg',
+      title: '왼쪽 아래 사랑니 발치',
+      description: '매복된 왼쪽 아래 사랑니를 안전하게 발치 완료',
       translations: {
-        en: { title: 'Lower wisdom tooth - Horizontal impaction', description: 'High-difficulty extraction of horizontally impacted lower wisdom tooth. Safely removed by university hospital-level specialist' },
-        jp: { title: '下の親知らず - 水平埋伏', description: '水平埋伏の下の親知らず高難度抜歯。大学病院レベルの熟練専門医で安全に除去' },
-        cn: { title: '下颌智齿 - 水平阻生', description: '水平阻生下颌智齿高难度拔除。大学医院级专家安全操作' }
+        en: { title: 'Left lower wisdom tooth extraction', description: 'Safe extraction of impacted left lower wisdom tooth' },
+        jp: { title: '左下親知らず抜歯', description: '埋伏した左下の親知らずを安全に抜歯完了' },
+        cn: { title: '左下智齿拔除', description: '安全拔除阻生左下智齿' }
       }
     },
     {
-      beforeImage: '/images/cases/wisdom-tooth/answer2-lower/high-difficulty/nerve-adjacent/before.jpg',
-      afterImage: '/images/cases/wisdom-tooth/answer2-lower/high-difficulty/nerve-adjacent/after.jpg',
-      title: '아래 사랑니 고난이도 발치 - 신경관 근접',
-      description: '신경관에 근접한 고난이도 아래 사랑니. 숙련된 전문의가 신경 손상 없이 안전하게 발치',
+      beforeImage: '/임상사진/사랑니/우측아래사랑니_before.jpeg',
+      afterImage: '/임상사진/사랑니/우측아래사랑니_after.jpeg',
+      title: '우측 아래 사랑니 발치',
+      description: '우측 아래 사랑니 발치 후 잇몸 깔끔하게 회복',
       translations: {
-        en: { title: 'Lower wisdom tooth - Near nerve canal', description: 'High-difficulty lower wisdom tooth near nerve canal. Safely extracted without nerve damage by experienced specialist' },
-        jp: { title: '下の親知らず - 神経管近接', description: '神経管に近接した高難度下の親知らず。熟練専門医が神経損傷なく安全に抜歯' },
-        cn: { title: '下颌智齿 - 靠近神经管', description: '靠近神经管的高难度下颌智齿。资深专家无神经损伤安全拔除' }
+        en: { title: 'Right lower wisdom tooth extraction', description: 'Clean gum recovery after right lower wisdom tooth extraction' },
+        jp: { title: '右下親知らず抜歯', description: '右下の親知らず抜歯後、歯茎がきれいに回復' },
+        cn: { title: '右下智齿拔除', description: '右下智齿拔除后牙龈恢复良好' }
       }
     },
     {
-      beforeImage: '/images/cases/wisdom-tooth/answer2-lower/adjacent-tooth-damage/before-2.jpg',
-      afterImage: '/images/cases/wisdom-tooth/answer2-lower/adjacent-tooth-damage/after-2.jpg',
-      title: '사랑니 방치로 인접치까지 충치',
-      description: '사랑니를 오래 방치하여 양쪽 인접 어금니(7번)까지 심한 충치 발생. 사랑니 발치 후 손상된 인접치는 크라운으로 치료 완료',
+      beforeImage: '/임상사진/사랑니/임플란트식립하면서사랑니발치_before.jpeg',
+      afterImage: '/임상사진/사랑니/임플란트하면서발치_after.jpeg',
+      title: '임플란트 식립 + 사랑니 동시 발치',
+      description: '임플란트 식립과 사랑니 발치를 동시에 진행하여 내원 횟수 최소화',
       translations: {
-        en: { title: 'Adjacent tooth decay from neglected wisdom tooth', description: 'Long-neglected wisdom teeth caused severe decay in adjacent molars (#7) on both sides. After wisdom tooth extraction, damaged adjacent teeth restored with crowns' },
-        jp: { title: '親知らず放置で隣接歯まで虫歯', description: '親知らずを長期間放置し両側の隣接大臼歯(7番)まで重度の虫歯が発生。親知らず抜歯後、損傷した隣接歯はクラウンで治療完了' },
-        cn: { title: '智齿拖延导致邻牙龋齿', description: '长期拖延智齿导致两侧邻近磨牙(7号)严重龋齿。智齿拔除后，受损邻牙用牙冠修复完成' }
-      }
-    },
-    {
-      beforeImage: '/images/cases/wisdom-tooth/answer2-lower/neglected-severe-cavity/before.jpg',
-      afterImage: '/images/cases/wisdom-tooth/answer2-lower/neglected-severe-cavity/after.jpg',
-      title: '아래 사랑니 - 방치로 심한 충치',
-      description: '발치 시기를 놓쳐 심한 충치가 발생한 아래 사랑니. 조기 발치의 중요성을 보여주는 케이스',
-      translations: {
-        en: { title: 'Lower wisdom tooth - Severe decay from neglect', description: 'Lower wisdom tooth with severe decay from delayed extraction. Case showing importance of early extraction' },
-        jp: { title: '下の親知らず - 放置による深刻な虫歯', description: '抜歯時期を逃し深刻な虫歯が発生した下の親知らず。早期抜歯の重要性を示すケース' },
-        cn: { title: '下颌智齿 - 拖延导致严重龋齿', description: '因延迟拔除导致严重龋齿的下颌智齿。展示早期拔除重要性的案例' }
+        en: { title: 'Implant placement + wisdom tooth extraction', description: 'Simultaneous implant placement and wisdom tooth extraction to minimize visits' },
+        jp: { title: 'インプラント埋入＋親知らず同時抜歯', description: 'インプラント埋入と親知らず抜歯を同時に行い来院回数を最小化' },
+        cn: { title: '种植体植入+智齿同时拔除', description: '同时进行种植体植入和智齿拔除，最大限度减少就诊次数' }
       }
     }
   ],
@@ -744,25 +821,14 @@ export const TREATMENT_CASE_IMAGES = {
   // 사랑니 케이스 - 검진/예방 (답안3)
   wisdom_tooth_checkup: [
     {
-      beforeImage: '/images/cases/wisdom-tooth/answer3-checkup/buried-in-bone/checkup.jpg',
-      afterImage: '/images/cases/wisdom-tooth/answer3-checkup/buried-in-bone/checkup.jpg',
-      title: '뼈 안에 묻힌 사랑니 - 정기검진',
-      description: '뼈 안에 완전히 묻혀있어 현재 증상은 없지만 정기 검진으로 관리. 고난이도 사랑니 경험 풍부한 대표원장님이 직접 진단',
+      beforeImage: '/임상사진/사랑니/우측아래사랑니_before.jpeg',
+      afterImage: '/임상사진/사랑니/우측아래사랑니_after.jpeg',
+      title: '사랑니 검진 후 발치',
+      description: '정기 검진에서 발견된 사랑니를 적절한 시기에 안전하게 발치. 통합치의학과 전문의가 직접 진단',
       translations: {
-        en: { title: 'Buried wisdom tooth - Regular checkup', description: 'Completely buried in bone with no current symptoms, managed with regular checkups. Diagnosed by chief director experienced in difficult wisdom teeth' },
-        jp: { title: '骨内埋伏親知らず - 定期検診', description: '骨内に完全に埋まり現在症状なし、定期検診で管理。高難度親知らず経験豊富な院長が直接診断' },
-        cn: { title: '骨内埋伏智齿 - 定期检查', description: '完全埋于骨内暂无症状，定期检查管理。经验丰富的院长亲自诊断高难度智齿' }
-      }
-    },
-    {
-      beforeImage: '/images/cases/wisdom-tooth/answer3-checkup/preventive-extraction/before.jpg',
-      afterImage: '/images/cases/wisdom-tooth/answer3-checkup/preventive-extraction/after.jpg',
-      title: '예방적 사랑니 발치 - 양치 불량',
-      description: '현재 아프지 않지만 양치가 어려워 인접치 보호를 위해 예방적 발치. 자연치아 보존주의 고덕퍼스트치과',
-      translations: {
-        en: { title: 'Preventive wisdom tooth extraction - Poor hygiene', description: 'Preventive extraction to protect adjacent teeth due to difficulty brushing. Natural tooth preservation philosophy' },
-        jp: { title: '予防的親知らず抜歯 - 清掃不良', description: '現在痛くないが歯磨きが難しく隣接歯保護のため予防的抜歯。自然歯保存主義' },
-        cn: { title: '预防性智齿拔除 - 清洁困难', description: '目前不痛但因难以清洁，预防性拔除保护邻牙。自然牙保存理念' }
+        en: { title: 'Wisdom tooth extraction after checkup', description: 'Wisdom tooth discovered during regular checkup, safely extracted at optimal timing by specialist' },
+        jp: { title: '検診後の親知らず抜歯', description: '定期検診で発見された親知らずを適切な時期に安全に抜歯。専門医が直接診断' },
+        cn: { title: '检查后智齿拔除', description: '定期检查中发现的智齿在最佳时机安全拔除。专家亲自诊断' }
       }
     }
   ],

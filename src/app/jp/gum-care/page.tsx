@@ -1,8 +1,9 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import GNB from '@/components/jp/GNB';
 import FixedCTAButton from '@/components/jp/FixedCTAButton';
 import FooterSection from '@/components/jp/FooterSection';
 import HeroSection from '@/components/jp/gum-care/HeroSection';
+import DoctorMessageSection from '@/components/jp/gum-care/DoctorMessageSection';
 import StatsSection from '@/components/jp/gum-care/StatsSection';
 import VideoSection from '@/components/jp/gum-care/VideoSection';
 import RiskSection from '@/components/jp/gum-care/RiskSection';
@@ -14,45 +15,33 @@ import DoctorSection from '@/components/jp/DoctorSection';
 import WhyBestSection from '@/components/jp/WhyBestSection';
 import LocationSection from '@/components/jp/LocationSection';
 import FAQSection from '@/components/jp/FAQSection';
-import YouTubeSection from '@/components/jp/YouTubeSection';
 
 export const metadata: Metadata = {
-  title: '韓国釜山歯周病治療歯科 | 慶星メディス歯科',
-  description: '専門的な歯周病治療と歯肉ケア。釜山南区No.1。院長が直接治療するスケーリング、ディープクリーニング、最新デジタル設備完備。',
-  keywords: [
-    '韓国歯周病治療',
-    '釜山歯肉治療',
-    '韓国歯周病',
-    '韓国スケーリング',
-    '韓国歯肉手術',
-    '歯周炎治療韓国',
-    '日本語対応歯周病韓国',
-    '韓国デンタルツーリズム'
-  ],
+  title: '高徳歯周病治療・スケーリング | コドクファースト歯科',
+  description: '平沢・高徳 歯周病治療・スケーリング専門歯科. 統合歯科専門医が直接治療します. 歯周病、歯周炎、スケーリング.',
   alternates: {
     canonical: 'https://gdfirstdent.com/jp/gum-care',
   },
   openGraph: {
-    title: '韓国釜山歯周病治療歯科 | 慶星メディス歯科',
-    description: '専門的な歯周病治療と歯肉ケア。釜山南区No.1。',
+    title: '高徳歯周病治療・スケーリング | コドクファースト歯科',
+    description: '平沢・高徳 歯周病治療・スケーリング専門歯科. 統合歯科専門医が直接治療します.',
     url: 'https://gdfirstdent.com/jp/gum-care',
+    siteName: 'コドクファースト歯科',
     type: 'website',
-    locale: 'ja_JP',
-  }
+  },
 };
 
 export default function GumCarePage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-950 to-slate-900 overflow-x-hidden">
+    <main className="min-h-screen overflow-x-hidden">
       <GNB />
       <FixedCTAButton />
 
-      {/* Add spacing for fixed GNB */}
       <div className="h-[52px]" />
 
       <HeroSection />
+      <DoctorMessageSection />
       <StatsSection />
-      <VideoSection />
       <RiskSection />
       <PhilosophySection />
       <ComparisonSection />
@@ -62,11 +51,10 @@ export default function GumCarePage() {
       <DoctorSection />
       <WhyBestSection />
       <LocationSection />
-      <YouTubeSection />
       <FAQSection page="gum-care" />
 
-      {/* Footer */}
       <FooterSection />
+      <div className="h-[88px]" />
     </main>
   );
 }

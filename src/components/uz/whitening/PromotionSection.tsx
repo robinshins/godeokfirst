@@ -1,42 +1,106 @@
-import Link from 'next/link';
+'use client';
+
 import Image from 'next/image';
 
 export default function PromotionSection() {
   return (
-    <div className="bg-white w-full">
-      <div className="max-w-[430px] mx-auto px-4 py-16">
-        <div className="bg-gradient-to-br from-[#db2777] to-[#9d174d] rounded-[40px] p-10 relative overflow-hidden shadow-xl">
-          <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 blur-[50px] rounded-full -translate-y-1/2 translate-x-1/2" />
-          
-          <div className="flex flex-col gap-8 relative z-10 text-center items-center">
-            <div className="flex flex-col gap-2">
-              <span className="text-white/80 font-bold text-sm">Maxsus taklif</span>
-              <h2 className="text-3xl font-bold text-white leading-[1.3]">
-                Scaling (Tozalash) +<br />Professional oqartirish
-              </h2>
+    <div className="bg-[#21314E] w-full py-[70px] relative overflow-hidden">
+      {/* Background Gradient */}
+      <div className="absolute h-[711px] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[375px] pointer-events-none">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/hero-gradient.svg"
+            alt=""
+            fill
+            className="object-contain"
+          />
+        </div>
+      </div>
+
+      <div className="max-w-[375px] mx-auto px-5 relative z-10">
+        <div className="flex flex-col gap-[70px] w-full">
+          {/* Title */}
+          <div className="flex flex-col gap-6 items-start w-full text-center">
+            <h2 className="font-bold text-[36px] leading-[1.35] tracking-[-0.72px] text-[#f2f2f2] w-full">
+              Bu yil hali tozalash<br />
+              qildirmadingizmi?
+            </h2>
+            <div className="font-bold text-base leading-[2] tracking-[1.92px] uppercase text-[#4DC8D8] w-full">
+              <p className="mb-0">Davlat tekshiruvi tozalashini olganingizda</p>
+              <p>Oqartirish olsangiz 50% chegirma!</p>
             </div>
-            
-            <div className="flex flex-col items-center">
-              <span className="text-white/60 line-through text-lg">400,000₩</span>
-              <div className="flex items-baseline gap-2">
-                <span className="text-white text-5xl font-black">200,000</span>
-                <span className="text-white text-2xl font-bold">₩</span>
+          </div>
+
+          {/* Cards */}
+          <div className="flex flex-col gap-6 w-full">
+            {/* Card 1: Standart oqartirish */}
+            <div className="bg-[#21314E] border border-[#ffdb59] rounded-[12px] p-6 flex flex-col gap-4 w-full">
+              <div className="flex items-start justify-between w-full">
+                <div className="flex flex-col gap-[6px] items-start justify-center text-white">
+                  <p className="font-bold text-[24px] leading-[normal] tracking-[-0.96px] w-full">
+                    Standart oqartirish
+                  </p>
+                  <p className="font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] opacity-70 w-full">
+                    Bir kunda 1 seans oʼtkazish
+                  </p>
+                </div>
+                <div className="bg-[#ffc53d] rounded-[8px] px-2.5 py-[5px]">
+                  <p className="font-bold text-[14px] leading-[23px] tracking-[-0.56px] text-black whitespace-nowrap">
+                    50% OFF
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-start w-full">
+                <p className="font-medium text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] line-through w-full">
+                  Oddiy narx
+                </p>
+                <div className="flex gap-1 items-end w-full">
+                  <p className="font-bold text-[60px] leading-none tracking-[-1.2px] text-white whitespace-nowrap">
+                    50%
+                  </p>
+                  <div className="pb-[5px]">
+                    <p className="font-bold text-[24px] leading-[normal] tracking-[-0.96px] text-white whitespace-nowrap">
+                      chegirma
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-2.5 items-start justify-center w-full">
+                <div className="flex gap-3 items-center w-full">
+                  <div className="w-6 h-6 opacity-50">
+                    <Image
+                      src="/icons/thumbs-up.svg"
+                      alt=""
+                      width={24}
+                      height={24}
+                    />
+                  </div>
+                  <p className="font-semibold text-[18px] leading-[1.5] tracking-[-0.36px] text-white">
+                    Tez tugallash
+                  </p>
+                </div>
+                <div className="flex gap-3 items-center w-full">
+                  <div className="w-6 h-6">
+                    <Image
+                      src="/icons/lightning.svg"
+                      alt=""
+                      width={24}
+                      height={24}
+                    />
+                  </div>
+                  <p className="font-semibold text-[18px] leading-[1.5] tracking-[-0.36px] text-white">
+                    Muolajadan keyingi parvarishgacha
+                  </p>
+                </div>
               </div>
             </div>
 
-            <Link href="/uz/consultation" className="w-full">
-              <button className="w-full h-16 bg-white text-[#db2777] rounded-[20px] font-bold text-xl hover:bg-gray-100 transition-colors">
-                AI Konsultatsiya olish
-              </button>
-            </Link>
-            
-            <p className="text-white/60 text-xs">
-              * Ushbu taklif cheklangan vaqt davomida amal qiladi.
-            </p>
+
           </div>
         </div>
       </div>
     </div>
   );
 }
-

@@ -1,45 +1,24 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: {
-    default: 'Kyungsung Medis Stomatologiya | Pusan Implant',
-    template: '%s | Kyungsung Medis Stomatologiya',
+  "title": {
+    "default": "Godeok First Dental | Pyeongtaek",
+    "template": "%s | Godeok First Dental"
   },
-  description: "Pusandagi professional stomatologiya. To'liq implantatsiya, raqamli implantlar, aql tishlari olish, tishlarni oqartirish. 10 yil qayta operatsiyasiz.",
-  keywords: [
-    'Pusan stomatologiya',
-    'Koreya implant',
-    'stomatologik turizm Koreya',
-    'aql tishi olish Koreya',
-  ],
-  alternates: {
-    canonical: 'https://gdfirstdent.com/uz',
+  "description": "Godeok Edu Town first dental clinic.",
+  "alternates": {
+    "canonical": "https://gdfirstdent.com/uz"
   },
-  openGraph: {
-    type: 'website',
-    locale: 'uz_UZ',
-    url: 'https://gdfirstdent.com/uz',
-    siteName: 'Kyungsung Medis Stomatologiya',
-    title: 'Kyungsung Medis Stomatologiya | Pusan Implant',
-    images: [{ url: '/고덕og이미지.png', width: 1200, height: 630 }],
-  },
+  "openGraph": {
+    "siteName": "Godeok First Dental",
+    "title": "Godeok First Dental | Pyeongtaek",
+    "description": "Godeok Edu Town first dental clinic.",
+    "url": "https://gdfirstdent.com/uz",
+    "locale": "uz_UZ",
+    "type": "website"
+  }
 };
 
-const jsonLdUz = {
-  '@context': 'https://schema.org',
-  '@type': 'Dentist',
-  name: 'Kyungsung Medis Stomatologiya',
-  url: 'https://gdfirstdent.com/uz',
-  telephone: '+82-51-628-2879',
-  address: { '@type': 'PostalAddress', addressLocality: 'Busan', addressCountry: 'KR' },
-  availableLanguage: ['Korean', 'Uzbek', 'English'],
-};
-
-export default function UzLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdUz) }} />
-      {children}
-    </>
-  );
+export default function Layout({ children }: { children: React.ReactNode }) {
+  return <>{children}</>;
 }

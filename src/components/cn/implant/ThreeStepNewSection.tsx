@@ -6,27 +6,27 @@ export default function ThreeStepNewSection() {
   const steps = [
     {
       icon: '/icons/tooth.svg',
-      label: '第1次临时牙',
+      label: '第1阶段临时牙',
       title: '即刻恢复',
-      description: '手术后立即安装\n即刻恢复日常生活'
+      description: '手术后立即安装\n可即刻恢复日常生活'
     },
     {
       icon: '/icons/crown.svg',
-      label: '第2次咬合稳定',
+      label: '第2阶段咬合稳定',
       title: '精密咬合调整',
-      description: '2周后进行量身定制的\n咬合状态精密调整'
+      description: '2周后根据个人情况\n精细调整咬合状态'
     },
     {
       icon: '/icons/implant-group.svg',
-      label: '第3次最终临时牙',
-      title: '完美咬合验证',
-      description: '制作最终假牙前\n再次验证完美咬合状态'
+      label: '第3阶段最终临时',
+      title: '完美咬合确认',
+      description: '最终修复体制作前\n再次确认完美咬合'
     },
     {
       icon: '/icons/tooth-shine.svg',
-      label: '最终假牙',
-      title: '终身的牙齿',
-      description: '安装所有调整完成的\n完美个性化最终假牙'
+      label: '最终修复',
+      title: '终身我的牙齿',
+      description: '安装所有调整完成后\n完美个性化的最终修复体'
     }
   ];
 
@@ -50,10 +50,10 @@ export default function ThreeStepNewSection() {
         {/* Logo */}
         <div className="h-6 overflow-clip relative shrink-0 w-[168px]">
           <Image
-            src="/icons/Logo_black.svg"
-            alt="Kyungsung Medis Dental Clinic"
-            width={168}
-            height={24}
+            src="/고덕퍼스트치과-로고-(블랙).png"
+            alt="高德First牙科"
+            width={375}
+            height={84}
             className="w-full h-full"
           />
         </div>
@@ -61,13 +61,13 @@ export default function ThreeStepNewSection() {
         {/* Title */}
         <div className="flex flex-col gap-3 items-center justify-center leading-[0] not-italic relative shrink-0 text-center w-full">
           <h2 className="font-bold leading-[1.35] text-[32px] text-black tracking-[-0.64px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-            庆星美迪斯独有的<br />
-            三阶段临时牙
+            高德First牙科独有的<br />
+            3阶段临时牙
           </h2>
           <p className="font-semibold leading-[1.4] text-[#727582] text-base tracking-[-0.32px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-            不只是简单地装一次临时牙，<br />
-            而是通过3阶段精密调整<br />
-            打造如同自己牙齿般舒适的感觉
+            不是一次临时牙就结束<br />
+            通过3个阶段的精密调整<br />
+            打造如同自己牙齿般的舒适感
           </p>
         </div>
       </div>
@@ -89,7 +89,7 @@ export default function ThreeStepNewSection() {
               </div>
 
               {/* Label */}
-              <p className="font-bold leading-[1.5] not-italic text-[#006aff] text-[17px] text-center tracking-[-0.34px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+              <p className="font-bold leading-[1.5] not-italic text-[#008095] text-[17px] text-center tracking-[-0.34px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
                 {step.label}
               </p>
 

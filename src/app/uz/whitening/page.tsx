@@ -2,69 +2,52 @@ import type { Metadata } from 'next';
 import GNB from '@/components/uz/GNB';
 import FixedCTAButton from '@/components/uz/FixedCTAButton';
 import FooterSection from '@/components/uz/FooterSection';
-
 import WhiteningHero from '@/components/uz/whitening/WhiteningHero';
 import WhiteningStats from '@/components/uz/whitening/WhiteningStats';
 import ToothDiscolorationSection from '@/components/uz/whitening/ToothDiscolorationSection';
-import WhiteningVideoSection from '@/components/uz/whitening/WhiteningVideoSection';
-import WhiteningLaminateSection from '@/components/uz/whitening/WhiteningLaminateSection';
 import WhiteningPeroxideSection from '@/components/uz/whitening/WhiteningPeroxideSection';
 import SelfVsProfessionalSection from '@/components/uz/whitening/SelfVsProfessionalSection';
-import WhiteningComparisonSection from '@/components/uz/whitening/WhiteningComparisonSection';
 import CaseStudySection from '@/components/uz/whitening/CaseStudySection';
 import PromotionSection from '@/components/uz/whitening/PromotionSection';
-import FAQSection from '@/components/uz/FAQSection';
-import CTASection from '@/components/uz/CTASection';
+import DoctorSection from '@/components/uz/DoctorSection';
+import WhyBestSection from '@/components/uz/WhyBestSection';
+import LocationSection from '@/components/uz/LocationSection';
 
 export const metadata: Metadata = {
-  title: 'Koreya Pusan Tish Oqartirish Stomatologiya | Kyungsung Medis Dental',
-  description: '1,000+ oqartirish operatsiyasi 0 ta yon ta\'sir bilan. Pusan Nam-gu 1-o\'rin. Bosh shifokor bevosita professional oqartirish va raqamli laminat qiladi.',
-  keywords: [
-    'Koreya tish oqartirish',
-    'Pusan tish oqartirish',
-    'Koreya laminat',
-    'Koreya vinir',
-    'Professional oqartirish Pusan',
-    'Koreya stomatologiya oqartirish',
-    'O\'zbek oqartirish Pusan',
-    'Koreya stomatologiya turizmi'
-  ],
+  title: 'Teeth Whitening Godeok | Godeok First Dental',
+  description: 'Pyeongtaek Godeok Teeth whitening specialist. Safe with Osstem Beautis system. Comprehensive Dentistry Specialist treats directly.',
   alternates: {
     canonical: 'https://gdfirstdent.com/uz/whitening',
   },
   openGraph: {
-    title: 'Koreya Pusan Tish Oqartirish Stomatologiya | Kyungsung Medis Dental',
-    description: '1,000+ oqartirish operatsiyasi 0 ta yon ta\'sir bilan. Pusan Nam-gu 1-o\'rin.',
+    title: 'Teeth Whitening Godeok | Godeok First Dental',
+    description: 'Pyeongtaek Godeok Teeth whitening specialist. Safe with Osstem Beautis system.',
     url: 'https://gdfirstdent.com/uz/whitening',
+    siteName: 'Godeok First Dental',
     type: 'website',
-    locale: 'uz_UZ',
-  }
+  },
 };
 
 export default function WhiteningPage() {
   return (
-    <main className="min-h-screen overflow-x-hidden">
+    <main className="min-h-screen overflow-x-hidden bg-white">
       <GNB />
       <FixedCTAButton />
 
       <div className="h-[52px]" />
 
       <WhiteningHero />
-      <WhiteningStats />
       <ToothDiscolorationSection />
-      <WhiteningVideoSection />
-      <WhiteningLaminateSection />
       <WhiteningPeroxideSection />
       <SelfVsProfessionalSection />
-      <WhiteningComparisonSection />
       <CaseStudySection />
       <PromotionSection />
-      <FAQSection page="home" />
-      <CTASection />
-      <FooterSection />
 
+      <DoctorSection />
+      <WhyBestSection />
+      <LocationSection />
+      <FooterSection />
       <div className="h-[88px]" />
     </main>
   );
 }
-

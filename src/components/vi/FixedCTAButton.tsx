@@ -8,13 +8,12 @@ export default function FixedCTAButton() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Hien nut sau khi cuon qua hero section (khoang 700px)
       const heroSectionHeight = 700;
       setIsVisible(window.scrollY > heroSectionHeight);
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Thiet lap trang thai ban dau
+    handleScroll();
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -28,8 +27,8 @@ export default function FixedCTAButton() {
       <div className="max-w-[430px] mx-auto px-4 py-3">
         <div className="flex gap-3 w-full">
           <Link href="/vi/consultation" className="flex-1">
-            <button className="w-full h-14 bg-[#006aff] text-white text-lg font-bold rounded-[18px] hover:bg-[#0050c0] transition-colors shadow-lg">
-              Dat lich tu van AI
+            <button className="w-full h-14 bg-[#008095] text-white text-lg font-bold rounded-[18px] hover:bg-[#006B7A] transition-colors shadow-lg">
+              Đặt lịch tư vấn AI
             </button>
           </Link>
           <a
@@ -38,7 +37,7 @@ export default function FixedCTAButton() {
             rel="noopener noreferrer"
           >
             <button className="h-14 bg-[#03C75A] text-white text-base font-bold px-4 rounded-[18px] hover:bg-[#02b351] transition-colors shadow-lg">
-              N Dat lich
+              Đặt N
             </button>
           </a>
         </div>

@@ -21,11 +21,11 @@ export default function StatsSection() {
           {/* Logo */}
           <div className="h-8 overflow-clip relative shrink-0 w-[180px]">
             <Image
-              src="/images/goduk_images/고덕퍼스트치과_Logo_white.svg"
+              src="/고덕퍼스트치과-로고-(화이트).png"
               alt="고덕퍼스트치과"
-              width={180}
-              height={32}
-              className="w-full h-full object-contain"
+              width={375}
+              height={84}
+              className="h-20 w-auto object-contain -mt-[18px]"
             />
           </div>
 

@@ -6,21 +6,21 @@ export default function TreatmentSystemSection() {
   const systems = [
     {
       image: '/images/nsk970.png',
-      title: 'NSK varios 970 Specialized Equipment',
-      description: 'The latest ultrasonic scaler from NSK Japan for precise removal of bacteria deep in the gums',
+      title: 'NSK Varios 970 Specialized Equipment',
+      description: 'Japan\'s NSK latest ultrasonic scaler precisely removes bacteria deep within the gums',
       features: [
-        { label: 'iPiezo Engine', text: 'Automatic frequency adjustment for stable output' },
-        { label: 'Ultra-Precision Tip', text: 'Can access deep periodontal pockets' }
+        { label: 'iPiezo Engine', text: 'Automatic frequency adjustment ensures stable output' },
+        { label: 'Ultra-precision Tip', text: 'Reaches deep into periodontal pockets' }
       ]
     },
     {
       image: '/images/perioclean2.jpg',
-      title: 'Periocline Antibiotic Ointment Treatment',
-      description: 'Direct injection of minocycline-based local antibiotic deep into the gums for treatment',
+      title: 'Perioclean Antibiotic Ointment Treatment',
+      description: 'A minocycline-based topical antibiotic applied directly deep into the gums for treatment',
       features: [
-        { label: 'Clinical Validation', text: 'Proven effective through multiple domestic and international clinical trials' },
-        { label: 'One Week Duration', text: 'Single injection maintains efficacy for one week' },
-        { label: 'Bacterial Reduction', text: 'Red Complex bacteria reduced from 87.5% to 12.5%' }
+        { label: 'Clinically Proven', text: 'Effectiveness verified through multiple domestic and international clinical trials' },
+        { label: 'Lasts One Week', text: 'A single application maintains effectiveness for one week' },
+        { label: 'Bacteria Reduction', text: 'Red Complex bacteria reduced from 87.5% to 12.5%' }
       ]
     },
     {
@@ -31,10 +31,10 @@ export default function TreatmentSystemSection() {
         'A step-by-step pain blocking system that surprises many patients'
       ],
       features: [
-        { label: 'Gargle Anesthesia', text: 'First desensitization by gargling entire mouth with anesthetic' },
-        { label: 'Topical Anesthesia', text: 'Second blocking by applying anesthetic ointment to injection site' },
-        { label: 'Computer-Controlled Injection', text: 'Pain relief injection at constant speed via computer control' },
-        { label: 'Nerve Block Anesthesia', text: 'Complete pain blocking for deep areas' }
+        { label: 'Gargle Anesthesia', text: 'First desensitization by gargling with anesthetic solution' },
+        { label: 'Topical Anesthesia', text: 'Second block by applying anesthetic ointment to the injection site' },
+        { label: 'Electric Anesthesia Device', text: 'Computer-controlled injection at a consistent, pain-free speed' },
+        { label: 'Nerve Block Anesthesia', text: 'Complete pain block for deep areas' }
       ]
     }
   ];
@@ -44,8 +44,8 @@ export default function TreatmentSystemSection() {
       <div className="max-w-[343px] mx-auto flex flex-col gap-[60px] items-start">
         {/* Header */}
         <div className="flex flex-col gap-3 items-center justify-center w-full">
-          <div className="font-['Pretendard'] font-bold leading-[1.35] text-[32px] text-black text-center tracking-[-0.64px] w-full">
-            <p className="mb-0">Kyungsung University Medis</p>
+          <div className="font-['Pretendard_JP'] font-bold leading-[1.35] text-[32px] text-black text-center tracking-[-0.64px] w-full">
+            <p className="mb-0">Godeok First Dental&apos;s</p>
             <p>Gum Treatment System</p>
           </div>
         </div>
@@ -65,18 +65,18 @@ export default function TreatmentSystemSection() {
               </div>
 
               {/* Content */}
-              <div className="bg-[#0b1727] box-border flex flex-col gap-6 items-start p-6 w-full">
-                <p className="font-['Pretendard'] font-bold leading-[1.35] text-2xl text-center text-white tracking-[-0.48px] w-full">
+              <div className="bg-[#21314E] box-border flex flex-col gap-6 items-start p-6 w-full">
+                <p className="font-['Pretendard_JP'] font-bold leading-[1.35] text-2xl text-center text-white tracking-[-0.48px] w-full">
                   {system.title}
                 </p>
 
                 {Array.isArray(system.description) ? (
-                  <div className="font-['Pretendard'] font-semibold leading-[1.4] opacity-80 text-[#e9ebf1] text-[15px] text-center tracking-[-0.3px] w-full">
+                  <div className="font-['Pretendard_JP'] font-semibold leading-[1.4] opacity-80 text-[#e9ebf1] text-[15px] text-center tracking-[-0.3px] w-full">
                     <p className="mb-0">{system.description[0]}</p>
                     <p>{system.description[1]}</p>
                   </div>
                 ) : (
-                  <p className="font-['Pretendard'] font-semibold leading-[1.4] opacity-80 text-[#e9ebf1] text-[15px] text-center tracking-[-0.3px] w-full">
+                  <p className="font-['Pretendard_JP'] font-semibold leading-[1.4] opacity-80 text-[#e9ebf1] text-[15px] text-center tracking-[-0.3px] w-full">
                     {system.description}
                   </p>
                 )}

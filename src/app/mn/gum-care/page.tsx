@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import GNB from '@/components/mn/GNB';
 import FixedCTAButton from '@/components/mn/FixedCTAButton';
 import FooterSection from '@/components/mn/FooterSection';
-
 import HeroSection from '@/components/mn/gum-care/HeroSection';
+import DoctorMessageSection from '@/components/mn/gum-care/DoctorMessageSection';
 import StatsSection from '@/components/mn/gum-care/StatsSection';
 import VideoSection from '@/components/mn/gum-care/VideoSection';
 import RiskSection from '@/components/mn/gum-care/RiskSection';
@@ -11,32 +11,24 @@ import PhilosophySection from '@/components/mn/gum-care/PhilosophySection';
 import ComparisonSection from '@/components/mn/gum-care/ComparisonSection';
 import TreatmentSystemSection from '@/components/mn/gum-care/TreatmentSystemSection';
 import CaseStudiesSection from '@/components/mn/gum-care/CaseStudiesSection';
+import DoctorSection from '@/components/mn/DoctorSection';
+import WhyBestSection from '@/components/mn/WhyBestSection';
+import LocationSection from '@/components/mn/LocationSection';
 import FAQSection from '@/components/mn/FAQSection';
-import CTASection from '@/components/mn/CTASection';
 
 export const metadata: Metadata = {
-  title: 'Солонгос Пусан Буйлны Эмчилгээ Шүдний Эмнэлэг | Кёнсон Мэдиш',
-  description: 'Мэргэжлийн буйлны өвчин ба парадонтын эмчилгээ. Пусан Нам-гу 1-рт. Эрхлэгч эмч орчин үеийн дижитал тоног төхөөрөмжөөр шууд эмчилнэ.',
-  keywords: [
-    'Солонгос буйлны эмчилгээ',
-    'Пусан буйлны эмчилгээ',
-    'Солонгос парадонт',
-    'Шүдний чулуу цэвэрлэгээ Солонгос',
-    'Буйлны хагалгаа Солонгос',
-    'Солонгос шүдний буйл',
-    'Монгол буйл Пусан',
-    'Солонгос шүдний аялал'
-  ],
+  title: 'Gum Care & Scaling Godeok | Godeok First Dental',
+  description: 'Pyeongtaek Godeok Gum care & scaling specialist. Comprehensive Dentistry Specialist treats directly. Gum disease, periodontitis, scaling.',
   alternates: {
     canonical: 'https://gdfirstdent.com/mn/gum-care',
   },
   openGraph: {
-    title: 'Солонгос Пусан Буйлны Эмчилгээ Шүдний Эмнэлэг | Кёнсон Мэдиш',
-    description: 'Мэргэжлийн буйлны өвчин ба парадонтын эмчилгээ. Пусан Нам-гу 1-рт.',
+    title: 'Gum Care & Scaling Godeok | Godeok First Dental',
+    description: 'Pyeongtaek Godeok Gum care & scaling specialist. Comprehensive Dentistry Specialist treats directly.',
     url: 'https://gdfirstdent.com/mn/gum-care',
+    siteName: 'Godeok First Dental',
     type: 'website',
-    locale: 'mn_MN',
-  }
+  },
 };
 
 export default function GumCarePage() {
@@ -45,24 +37,24 @@ export default function GumCarePage() {
       <GNB />
       <FixedCTAButton />
 
-      {/* Spacing for fixed GNB */}
       <div className="h-[52px]" />
 
       <HeroSection />
+      <DoctorMessageSection />
       <StatsSection />
-      <VideoSection />
       <RiskSection />
       <PhilosophySection />
       <ComparisonSection />
       <TreatmentSystemSection />
       <CaseStudiesSection />
-      <FAQSection page="gum" />
-      <CTASection />
-      <FooterSection />
 
-      {/* Spacing for fixed bottom button */}
+      <DoctorSection />
+      <WhyBestSection />
+      <LocationSection />
+      <FAQSection page="gum-care" />
+
+      <FooterSection />
       <div className="h-[88px]" />
     </main>
   );
 }
-

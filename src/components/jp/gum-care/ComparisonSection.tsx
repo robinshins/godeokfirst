@@ -1,265 +1,107 @@
 'use client';
 
-import Image from 'next/image';
+import Link from 'next/link';
+
+const levels = [
+  {
+    level: 'Step 1', title: '歯磨き', badge: '毎日必須',
+    desc: '歯の表面と歯茎線の上の歯垢・細菌膜を除去します。正しいブラッシングは歯周病予防の第一段階であり、1日2回以上実践すれば効果的です。',
+    point: '歯肉縁下（歯茎の奥深く）の歯石はブラッシングでは除去できません。',
+    insurance: null, highlight: false,
+  },
+  {
+    level: 'Step 2', title: 'スケーリング', badge: '年1〜2回・健康保険適用',
+    desc: '歯肉縁上（歯茎の上）に固まった歯石と歯垢を超音波設備で除去します。スケーリング1回で心血管疾患リスクを10〜14%下げられるという研究結果があります。満19歳以上なら年1回健康保険が適用されます。',
+    point: '歯肉縁下（歯茎の奥深く）まではスケーリングだけでは届きにくいです。',
+    insurance: '満19歳以上・年1回・健康保険適用（自己負担20%）',
+    highlight: false,
+  },
+  {
+    level: 'Step 3', title: '歯周病治療', badge: '必要時・健康保険適用',
+    desc: '歯茎の奥深くの歯周ポケット内に位置する歯石と細菌をキュレット（歯周治療器具）で精密に除去し、歯根表面を滑らかに整え細菌が再付着しないようにします。必要に応じてペリオクリン抗生軟膏を歯周ポケットに直接注入し細菌を追加除去します。この過程は健康保険が適用され、進行度により1〜4区域に分けて進行します。',
+    point: '歯周病治療後3〜6ヶ月周期の定期検診で再発を予防します。',
+    insurance: '健康保険適用・区域別進行・麻酔含む',
+    highlight: true,
+  },
+];
 
 export default function ComparisonSection() {
-  const treatments = [
-    {
-      icon: '/icons/tooth.svg',
-      title: '歯磨き',
-      badge: '毎日必須',
-      items: [
-        { icon: '/icons/check-icon.svg', text: '歯の表面を清潔に保つことが可能' },
-        { icon: '/icons/x-icon.svg', text: '歯石の除去は不可能' },
-        { icon: '/icons/x-icon.svg', text: '歯肉縁下には届かない' }
-      ]
-    },
-    {
-      icon: '/icons/tooth-shine.svg',
-      title: 'スケーリング',
-      badge: '年1回必須',
-      items: [
-        { icon: '/icons/check-icon.svg', text: '歯肉縁上の歯石除去' },
-        { icon: '/icons/check-icon.svg', text: '予防および軽度の治療' },
-        { icon: '/icons/x-icon.svg', text: '深い部位には限界がある' }
-      ]
-    },
-    {
-      icon: '/icons/tooth-loosen.svg',
-      title: '歯肉治療',
-      badge: '必要時追加',
-      items: [
-        { icon: '/icons/check-icon.svg', text: '歯肉縁下の深部治療' },
-        { icon: '/icons/check-icon.svg', text: 'ルートプレーニングで根を滑らかに' },
-        { icon: '/icons/check-icon.svg', text: '進行した疾患の治療' }
-      ]
-    }
-  ];
-
   return (
-    <div className="bg-gradient-to-b from-[#0b1727] to-white w-full px-4 py-[60px] relative">
-      {/* Background gradient */}
-      <div className="absolute h-[711px] left-[calc(50%+5.5px)] top-[217.35px] -translate-x-1/2 w-[480px] pointer-events-none">
-        <div className="absolute inset-[-56.26%_-83.33%]">
-          <Image
-            src="/images/stats-gradient.svg"
-            alt=""
-            fill
-            className="block max-w-none object-contain"
-          />
-        </div>
-      </div>
-
-      <div className="max-w-[343px] mx-auto flex flex-col gap-[60px] items-start relative z-10">
-        {/* Header */}
-        <div className="flex flex-col gap-4 items-center justify-center w-full">
-          <div className="flex flex-col gap-3 items-center justify-center text-center text-white w-full">
-            <div className="font-['Pretendard_JP'] font-bold leading-[1.35] text-[32px] tracking-[-0.64px] w-full">
-              <p className="mb-0">歯磨きとスケーリングだけで</p>
-              <p>十分ではないですか?</p>
-            </div>
-            <div className="font-['Pretendard_JP'] font-semibold leading-[1.4] text-[#e9ebf1] text-base tracking-[-0.32px] w-full">
-              <p className="mb-0">両方のケアとも非常に重要です</p>
-              <p>しかし完璧なケアは難しいです</p>
-            </div>
-          </div>
+    <div className="bg-[#f8f9fb] w-full py-[80px] px-5">
+      <div className="max-w-[430px] mx-auto flex flex-col gap-12">
+        <div className="flex flex-col gap-4 text-center">
+          <p className="text-[#008095] font-bold text-[13px] tracking-[0.2em] uppercase" style={{ fontFamily: 'Pretendard, sans-serif' }}>Care Levels</p>
+          <h2 className="font-bold text-[30px] leading-[1.3] tracking-[-0.04em] text-black" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+            歯磨きだけでは<br />足りない時があります
+          </h2>
+          <p className="font-medium text-[#727582] text-[16px] leading-[1.7] tracking-[-0.02em]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+            歯茎の健康は段階別に管理すべきです。<br />
+            スケーリングと歯周病治療、どちらも健康保険が適用されます。
+          </p>
         </div>
 
-        {/* Treatment Cards */}
-        <div className="flex flex-col gap-6 items-start w-full">
-          {treatments.map((treatment, index) => (
-            <div key={index} className="bg-white border border-[#f3f6fb] box-border flex flex-col gap-4 items-center justify-center p-6 rounded-[20px] w-full">
-              {/* Header */}
-              <div className="flex items-center justify-between w-full">
-                <div className="flex gap-2 items-center">
-                  <div className="relative shrink-0 w-8 h-8">
-                    <Image
-                      src={treatment.icon}
-                      alt=""
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
-                  <p className="font-['Pretendard_JP'] font-bold leading-[1.35] text-2xl text-black tracking-[-0.48px]">
-                    {treatment.title}
-                  </p>
+        <div className="flex flex-col gap-5">
+          {levels.map((c, i) => (
+            <div key={i} className={`rounded-[24px] p-6 flex flex-col gap-5 relative overflow-hidden ${c.highlight ? 'bg-white border-2 border-[#008095] shadow-[0_8px_32px_-8px_rgba(0,128,149,0.2)]' : 'bg-white border border-[#e9ebf1] shadow-[0_4px_20px_-4px_rgba(21,26,36,0.06)]'}`}>
+              {c.highlight && (
+                <div className="absolute top-0 right-0 bg-[#008095] text-white text-[10px] font-bold px-3 py-1.5 rounded-bl-[14px] rounded-tr-[22px]">
+                  最も重要
                 </div>
-                <div className="bg-[#e8f8f0] box-border flex items-center justify-center px-2.5 py-1.5 rounded-lg">
-                  <p className="font-['Pretendard_JP'] font-bold leading-[1.4] text-[#15bd66] text-sm tracking-[-0.28px]">
-                    {treatment.badge}
-                  </p>
+              )}
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className="text-[11px] font-black text-[#008095] tracking-[0.1em]" style={{ fontFamily: 'Pretendard, sans-serif' }}>{c.level}</span>
+                <span className={`font-bold text-[11px] px-2.5 py-1 rounded-full ${c.highlight ? 'bg-[#008095] text-white' : 'bg-[#f0f7fa] text-[#008095]'}`}>{c.badge}</span>
+              </div>
+              <div className="flex flex-col gap-2">
+                <h3 className="font-bold text-[22px] text-[#2d3340] tracking-[-0.03em]" style={{ fontFamily: 'Pretendard, sans-serif' }}>{c.title}</h3>
+                <p className="font-medium text-[15px] text-[#4a4f5e] leading-[1.7]" style={{ fontFamily: 'Pretendard, sans-serif' }}>{c.desc}</p>
+              </div>
+              <div className="flex items-start gap-2 bg-[#f8f9fb] rounded-2xl p-4">
+                <div className="shrink-0 mt-[3px]">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="#008095" strokeWidth="1.5" /><path d="M7 4.5V7.5M7 9.5V9.8" stroke="#008095" strokeWidth="1.5" strokeLinecap="round" /></svg>
                 </div>
+                <p className="text-[13.5px] font-semibold text-[#008095] leading-[1.5]" style={{ fontFamily: 'Pretendard, sans-serif' }}>{c.point}</p>
               </div>
-
-              {/* Items */}
-              <div className="bg-[#f3f6fb] box-border flex flex-col gap-3.5 items-start p-5 rounded-2xl w-full">
-                {treatment.items.map((item, itemIndex) => (
-                  <div key={itemIndex} className="flex items-center gap-2 w-full">
-                    <div className="shrink-0 w-6 h-6 flex items-center justify-center">
-                      <Image
-                        src={item.icon}
-                        alt=""
-                        width={20}
-                        height={20}
-                      />
-                    </div>
-                    <p className="font-['Pretendard_JP'] font-bold text-[17px] text-black tracking-[-0.34px] leading-[1.5]">
-                      {item.text}
-                    </p>
-                  </div>
-                ))}
-              </div>
+              {c.insurance && (
+                <div className="flex items-center gap-2 pt-1">
+                  <span className="shrink-0">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1.5L2 4V8C2 11.3 4.6 14.4 8 15C11.4 14.4 14 11.3 14 8V4L8 1.5Z" stroke="#008095" strokeWidth="1.5" strokeLinejoin="round" /><path d="M5.5 8L7 9.5L10.5 6" stroke="#008095" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                  </span>
+                  <p className="text-[#008095] font-bold text-[13px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>{c.insurance}</p>
+                </div>
+              )}
             </div>
           ))}
+        </div>
 
-          {/* Comparison Table */}
-          <div className="bg-white border border-[#f3f6fb] box-border flex flex-col gap-4 items-center justify-center p-6 rounded-[20px] w-full">
-            {/* Title */}
-            <div className="flex gap-3 items-center justify-center w-full">
-              <p className="font-['Pretendard_JP'] font-bold leading-[1.35] text-2xl text-black tracking-[-0.48px]">
-                スケーリング
-              </p>
-              <div className="bg-[#f3f6fb] box-border flex items-center justify-center px-2 py-1 rounded-lg">
-                <p className="font-['Pretendard_JP'] font-bold leading-[1.4] text-[#9298a6] text-[15px] tracking-[-0.3px]">
-                  vs
-                </p>
-              </div>
-              <p className="font-['Pretendard_JP'] font-bold leading-[1.35] text-2xl text-black tracking-[-0.48px]">
-                歯肉治療
-              </p>
-            </div>
-
-            {/* Table */}
-            <div className="bg-white border border-[#006aff] box-border rounded-2xl overflow-hidden w-full">
-              <table className="w-full">
-                <tbody>
-                  <tr className="border-b border-[#e9ebf1]">
-                    <td className="px-2 py-2 w-[52px]"></td>
-                    <td className="px-2 py-2 font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-sm text-center tracking-[-0.28px] leading-[1.4]">
-                      スケーリング
-                    </td>
-                    <td className="px-2 py-2 font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-sm text-center tracking-[-0.28px] leading-[1.4]">
-                      歯肉治療
-                    </td>
-                  </tr>
-                  <tr className="border-b border-[#e9ebf1]">
-                    <td className="px-2 py-2 font-['Pretendard_JP'] font-semibold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                      範囲
-                    </td>
-                    <td className="px-2 py-2 text-center">
-                      <div className="flex flex-col gap-0.5">
-                        <p className="font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                          歯肉縁上
-                        </p>
-                        <p className="font-['Pretendard_JP'] font-medium text-[#5d5f6d] text-sm tracking-[-0.28px] leading-[1.4]">
-                          (歯肉の上)
-                        </p>
-                      </div>
-                    </td>
-                    <td className="px-2 py-2 text-center">
-                      <div className="flex flex-col gap-0.5">
-                        <p className="font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                          歯肉縁下
-                        </p>
-                        <p className="font-['Pretendard_JP'] font-medium text-[#006aff] text-sm tracking-[-0.28px] leading-[1.4]">
-                          (歯肉の下)
-                        </p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-[#e9ebf1]">
-                    <td className="px-2 py-2 font-['Pretendard_JP'] font-semibold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                      内容
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0">歯石およびプラーク</p>
-                        <p>除去</p>
-                      </div>
-                    </td>
-                    <td className="px-2 py-2 text-center">
-                      <div className="flex flex-col gap-0.5">
-                        <p className="font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                          キュレット使用
-                        </p>
-                        <p className="font-['Pretendard_JP'] font-medium text-[#006aff] text-sm tracking-[-0.28px] leading-[1.4]">
-                          抗生剤軟膏
-                        </p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-[#e9ebf1]">
-                    <td className="px-2 py-2 font-['Pretendard_JP'] font-semibold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                      目的
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0">予防および</p>
-                        <p>軽度の治療</p>
-                      </div>
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0 text-[#5d5f6d]">予防および</p>
-                        <p className="text-[#006aff]">中等度以上</p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-[#e9ebf1]">
-                    <td className="px-2 py-2 font-['Pretendard_JP'] font-semibold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                      必要性
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0">一般的に</p>
-                        <p>不要</p>
-                      </div>
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[#006aff] text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0">局所麻酔</p>
-                        <p>必要</p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-[#e9ebf1]">
-                    <td className="px-2 py-2 font-['Pretendard_JP'] font-semibold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                      適用
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0">年1回</p>
-                        <p>満19歳以上</p>
-                      </div>
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[#006aff] text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0">治療が必要な時</p>
-                        <p>分けて進行</p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="px-2 py-2 font-['Pretendard_JP'] font-semibold text-[#5d5f6d] text-[15px] tracking-[-0.3px] leading-[1.4]">
-                      対象
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[#5d5f6d] text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0">すべての成人</p>
-                        <p>必須ケア</p>
-                      </div>
-                    </td>
-                    <td className="px-2 py-2">
-                      <div className="font-['Pretendard_JP'] font-bold text-[#006aff] text-[15px] text-center tracking-[-0.3px] leading-[1.4]">
-                        <p className="mb-0">歯肉疾患が</p>
-                        <p>ある場合</p>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+        <div className="bg-[#21314E] rounded-[24px] p-7 flex flex-col gap-5">
+          <div className="flex flex-col gap-2">
+            <p className="text-[#4DC8D8] font-bold text-[13px] tracking-[0.15em] uppercase" style={{ fontFamily: 'Pretendard, sans-serif' }}>健康保険のご案内</p>
+            <h4 className="text-white font-bold text-[20px] leading-[1.35]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+              スケーリングと歯周病治療、<br />どちらも健康保険が適用されます
+            </h4>
+            <p className="text-white/60 text-[14px] leading-[1.7] mt-1" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+              費用負担が大きくないので、症状がなくても年に1回はスケーリングを受けて歯茎の状態を検査してください。早期に発見するほど治療がはるかに簡単で費用も少なくすみます。
+            </p>
           </div>
+          <div className="flex flex-col gap-3">
+            {[
+              { label: 'スケーリング', detail: '満19歳以上・年1回・自己負担約20%' },
+              { label: '歯周治療（歯周病治療）', detail: '歯周炎診断時・区域別保険適用・麻酔含む' },
+              { label: 'ペリオクリン治療', detail: '歯周ポケットの深さにより保険適用可能' },
+            ].map((item, i) => (
+              <div key={i} className="flex flex-col gap-1 bg-white/5 border border-white/10 rounded-2xl px-4 py-3">
+                <p className="text-white font-bold text-[14px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>{item.label}</p>
+                <p className="text-[#4DC8D8] font-medium text-[13px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>{item.detail}</p>
+              </div>
+            ))}
+          </div>
+          <Link href="/jp/consultation">
+            <div className="bg-[#008095] rounded-[16px] py-4 px-6 flex items-center justify-center gap-2 hover:bg-[#006d80] transition-colors">
+              <p className="text-white font-bold text-[15px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>歯茎の状態を相談予約する</p>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
+            </div>
+          </Link>
         </div>
       </div>
     </div>

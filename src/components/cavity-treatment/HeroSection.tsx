@@ -18,15 +18,15 @@ export default function HeroSection() {
         <div className="box-border flex flex-col gap-[50px] items-start px-4 py-[60px] relative w-full max-w-[430px] z-10">
 
           {/* Logo and Text Content */}
-          <FadeInSection className="flex flex-col gap-8 items-center justify-center relative shrink-0 w-full">
+          <FadeInSection className="flex flex-col gap-3 items-center justify-center relative shrink-0 w-full">
             {/* Logo */}
-            <div className="h-10 overflow-clip relative shrink-0 w-[200px]">
+            <div className="h-11 overflow-hidden relative shrink-0">
               <Image
-                src="/images/goduk_images/고덕퍼스트치과로고 1.svg"
+                src="/고덕퍼스트치과-로고-(블랙).png"
                 alt="고덕퍼스트치과"
                 width={200}
                 height={40}
-                className="w-full h-full object-contain"
+                className="h-20 w-auto object-contain -mt-[18px]"
               />
             </div>
 

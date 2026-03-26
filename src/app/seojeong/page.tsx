@@ -24,7 +24,7 @@ const regionData: RegionData = {
       type: 'cavity-treatment',
       title: '충치치료',
       description: '초기 충치부터 신경치료까지, 치아 보존을 최우선으로 하는 맞춤 충치치료를 제공합니다.',
-      features: ['미세현미경 활용', '최소 삭제 원칙', '심미 보철 재료', '통증 최소화 치료'],
+      features: ['정밀 충치 진단', '최소 삭제 원칙', '심미 보철 재료', '통증 최소화 치료'],
     },
     {
       type: 'wisdom-tooth',

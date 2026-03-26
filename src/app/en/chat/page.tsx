@@ -13,17 +13,28 @@ export default function ChatPage() {
   useEffect(() => {
     const data = localStorage.getItem('consultationData');
     if (!data) {
-      router.push('/en');
+      router.push('/');
       return;
     }
 
     try {
       const parsedData: ConsultationData = JSON.parse(data);
+      console.log('📋 Chat page - consultationData loaded:', parsedData);
+      console.log('📋 Chat page - consultation content:', parsedData.consultationContent);
       setConsultationData(parsedData);
     } catch (error) {
-      console.error('데이터 파싱 오류:', error);
-      router.push('/en');
+      console.error('❌ Data parsing error:', error);
+      router.push('/');
       return;
+    }
+
+    // Meta Pixel: ViewPurchasePage custom event
+    if (typeof window !== 'undefined') {
+      const fbq = (window as { fbq?: (...args: unknown[]) => void }).fbq;
+      if (fbq) {
+        fbq('trackCustom', 'ViewPurchasePage');
+        console.log('✅ Meta Pixel: ViewPurchasePage custom event sent');
+      }
     }
 
     setIsLoading(false);
@@ -43,7 +54,7 @@ export default function ChatPage() {
         {/* Loading content */}
         <div className="flex-1 flex items-center justify-center">
           <div className="text-center">
-            {/* AI 아이콘 애니메이션 */}
+            {/* AI icon animation */}
             <div className="mb-6 flex justify-center">
               <div className="relative">
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 30 30" fill="none" className="animate-pulse">
@@ -60,18 +71,18 @@ export default function ChatPage() {
               </div>
             </div>
 
-            <p className="font-['Pretendard'] font-semibold text-[16px] text-[#292a2f] tracking-[-0.32px] mb-2">
-              Preparing AI Consultant
+            <p className="font-['Pretendard_JP'] font-semibold text-[16px] text-[#292a2f] tracking-[-0.32px] mb-2">
+              AI Consultant Loading
             </p>
-            <p className="font-['Pretendard'] font-normal text-[14px] text-[#727582] tracking-[-0.28px]">
+            <p className="font-['Pretendard_JP'] font-normal text-[14px] text-[#727582] tracking-[-0.28px]">
               Please wait a moment...
             </p>
 
             {/* Dots animation */}
             <div className="flex justify-center gap-1 mt-4">
-              <div className="w-2 h-2 bg-[#006aff] rounded-full animate-bounce"></div>
-              <div className="w-2 h-2 bg-[#006aff] rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
-              <div className="w-2 h-2 bg-[#006aff] rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+              <div className="w-2 h-2 bg-[#008095] rounded-full animate-bounce"></div>
+              <div className="w-2 h-2 bg-[#008095] rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
+              <div className="w-2 h-2 bg-[#008095] rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
             </div>
           </div>
         </div>
@@ -84,9 +95,8 @@ export default function ChatPage() {
   }
 
   return (
-    <ChatInterface
+    <ChatInterface 
       initialMessage={consultationData.consultationContent}
-      language="en"
     />
   );
 }

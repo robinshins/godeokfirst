@@ -1,58 +1,60 @@
-import Image from 'next/image';
-
 export default function VideoSection() {
   return (
-    <div className="bg-[#f8f9fa] w-full">
-      <div className="max-w-[430px] mx-auto px-4 py-16">
-        <div className="flex flex-col gap-8">
+    <div className="w-full flex justify-center bg-[#f8fbfd] -mt-1">
+      <div className="py-[60px] px-4 w-full max-w-[430px]">
+        <div className="flex flex-col gap-10">
+          {/* Text Content */}
+          <div className="flex flex-col gap-3 text-center">
+            <p className="text-[15px] font-bold text-[#4DC8D8] tracking-[3px] uppercase">
+              VIDEO
+            </p>
+            <h2 className="text-[32px] font-bold leading-[1.35] tracking-[-0.02em] text-[#008095]">
+              Implant hammasi<br />
+              videoda tekshiring
+            </h2>
+            <p className="text-base font-medium leading-[1.4] tracking-[-0.02em] text-[#3e3a3a]">
+              Godeok First Dental Bosh shifokor<br />
+              shaxsan tushuntiramiz
+            </p>
+          </div>
+
+          {/* YouTube Placeholder - asosiy video */}
           <div className="flex flex-col gap-3">
-            <h2 className="text-[28px] font-bold text-[#111827] leading-[1.3]">Implantatsiya haqida</h2>
-            <p className="text-[#6b7280]">Raqamli navigatsiya operatsiyasi qanday amalga oshiriladi?</p>
-          </div>
-
-          <div className="relative w-full aspect-video rounded-[24px] overflow-hidden bg-black shadow-lg">
-            <Image
-              src="/images/implant-video-thumb.jpg"
-              alt="Video"
-              fill
-              className="object-cover opacity-80"
-            />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-20 h-20 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30 cursor-pointer hover:scale-110 transition-transform">
-                <div className="w-0 h-0 border-t-[12px] border-t-transparent border-l-[20px] border-l-white border-b-[12px] border-b-transparent ml-1" />
+            <div className="relative w-full aspect-video rounded-[20px] overflow-hidden bg-[#e9ebf1] flex items-center justify-center">
+              <div className="flex flex-col items-center gap-3 text-center px-6">
+                <div className="w-16 h-16 rounded-full bg-[#008095]/20 flex items-center justify-center">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#008095" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polygon points="5 3 19 12 5 21 5 3" fill="#008095" />
+                  </svg>
+                </div>
+                <p className="text-[#008095] font-bold text-[15px]">Video tayyorlanmoqda</p>
+                <p className="text-[#727582] text-[13px] leading-[1.5]">Godeok First Dental implant videosi<br />tez orada yuklanadi</p>
               </div>
             </div>
           </div>
 
-          <div className="flex flex-col gap-4 bg-white p-6 rounded-[24px]">
-            <div className="flex gap-4">
-              <div className="w-10 h-10 bg-[#006aff]/10 rounded-full flex items-center justify-center shrink-0">
-                <span className="text-[#006aff] font-bold">01</span>
+          {/* Shorts Placeholder */}
+          <div className="grid grid-cols-2 gap-4">
+            {['Implant operatsiya jarayoni', 'Implant parvarish usuli'].map((title, i) => (
+              <div key={i} className="flex flex-col gap-2">
+                <div className="relative w-full aspect-[9/16] rounded-[16px] overflow-hidden bg-[#e9ebf1] flex items-center justify-center">
+                  <div className="flex flex-col items-center gap-2 text-center px-3">
+                    <div className="w-10 h-10 rounded-full bg-[#008095]/20 flex items-center justify-center">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#008095" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <polygon points="5 3 19 12 5 21 5 3" fill="#008095" />
+                      </svg>
+                    </div>
+                    <p className="text-[#727582] text-[11px]">Tayyorlanmoqda</p>
+                  </div>
+                </div>
+                <p className="text-[13px] font-semibold text-[#3e3a3a] text-center leading-[1.3]">
+                  {title}
+                </p>
               </div>
-              <p className="text-[#374151] leading-[1.5]">
-                Kompyuter tahlili orqali asab tolalari va jag' suyagi tuzilishi aniq belgilanadi.
-              </p>
-            </div>
-            <div className="flex gap-4">
-              <div className="w-10 h-10 bg-[#006aff]/10 rounded-full flex items-center justify-center shrink-0">
-                <span className="text-[#006aff] font-bold">02</span>
-              </div>
-              <p className="text-[#374151] leading-[1.5]">
-                Virtual operatsiya o'tkazilib, eng mos joylashuv tanlanadi.
-              </p>
-            </div>
-            <div className="flex gap-4">
-              <div className="w-10 h-10 bg-[#006aff]/10 rounded-full flex items-center justify-center shrink-0">
-                <span className="text-[#006aff] font-bold">03</span>
-              </div>
-              <p className="text-[#374151] leading-[1.5]">
-                Navigatsiya (yo'riqnoma) yordamida kesmalarsiz yoki minimal kesma bilan operatsiya tez yakunlanadi.
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </div>
     </div>
   );
 }
-

@@ -27,26 +27,22 @@ export default function ImportantMomentsSection() {
   ];
 
   return (
-    <div className="bg-[#0b1727] w-full py-[60px]">
+    <div className="bg-white w-full py-[60px]">
       <div className="max-w-[375px] mx-auto px-4">
         <div className="flex flex-col gap-[26px] items-center justify-center w-full">
-          {/* Title with quotes */}
+          {/* Title */}
           <div className="flex flex-col gap-3 items-center justify-center w-full">
-            <div className="flex flex-col gap-3 items-center justify-center text-center text-white w-full">
-              <p className="font-['Nanum_Myeongjo'] font-extrabold text-[60px] leading-[0.2] tracking-[-3.6px]">
-                &#x201C;
-              </p>
-              <h2 className="font-bold text-[32px] leading-[1.35] tracking-[-0.64px] whitespace-pre-line">
-                {'예고없이 찾아왔어요\n사랑니 통증...'}
+            <div className="flex flex-col gap-3 items-center justify-center text-center w-full">
+              <p className="text-[13px] font-bold text-[#008095] tracking-[3px] uppercase">DON&apos;T WAIT</p>
+              <h2 className="font-bold text-[32px] leading-[1.35] tracking-[-0.64px] text-[#292a2f]">
+                예고없이 찾아와요<br />
+                <span className="text-[#008095]">사랑니 통증...</span>
               </h2>
             </div>
-            <p className="font-semibold text-[14px] leading-[1.4] tracking-[-0.32px] text-[#d2d6e1] text-center w-full">
+            <p className="font-semibold text-[14px] leading-[1.4] tracking-[-0.32px] text-[#727582] text-center w-full">
               평온할 때 미리 해결하면 중요한 순간을 지킬 수 있습니다
             </p>
           </div>
-
-          {/* White divider */}
-          <div className="h-10 w-0.5 bg-white opacity-50" />
 
           {/* Cards Grid */}
           <div className="flex flex-col gap-3 w-full">
@@ -54,7 +50,7 @@ export default function ImportantMomentsSection() {
               {moments.slice(0, 2).map((moment, index) => (
                 <div
                   key={index}
-                  className="flex-1 bg-white border border-[#f3f6fb] rounded-[24px] p-6 flex flex-col gap-12 items-center justify-center"
+                  className="flex-1 bg-[#f3f6fb] rounded-[24px] p-6 flex flex-col gap-12 items-center justify-center"
                 >
                   <div className="flex flex-col gap-[6px] items-center justify-center w-full">
                     <div className="w-20 h-20 relative">
@@ -82,7 +78,7 @@ export default function ImportantMomentsSection() {
               {moments.slice(2, 4).map((moment, index) => (
                 <div
                   key={index + 2}
-                  className="flex-1 bg-white border border-[#f3f6fb] rounded-[24px] p-6 flex flex-col gap-12 items-center justify-center"
+                  className="flex-1 bg-[#f3f6fb] rounded-[24px] p-6 flex flex-col gap-12 items-center justify-center"
                 >
                   <div className="flex flex-col gap-[6px] items-center justify-center w-full">
                     <div className="w-20 h-20 relative">

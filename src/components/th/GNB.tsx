@@ -15,8 +15,8 @@ export default function GNB() {
   const pathname = usePathname();
 
   useEffect(() => {
-    // onAuthStateChange만 사용 (getUser 호출 제거로 egress 절약)
-    // INITIAL_SESSION 이벤트가 현재 세션 상태를 제공
+    // ใช้เฉพาะ onAuthStateChange (ประหยัด egress โดยลบ getUser)
+    // เหตุการณ์ INITIAL_SESSION ให้สถานะเซสชันปัจจุบัน
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
       setUser(session?.user ?? null);
     });
@@ -37,7 +37,7 @@ export default function GNB() {
   };
 
   const languages = [
-    { code: 'kr', name: 'Korean', flag: '/icons/flags-kr.svg', href: getCurrentPage() === '/' ? '/' : getCurrentPage() },
+    { code: 'kr', name: 'ภาษาเกาหลี', flag: '/icons/flags-kr.svg', href: getCurrentPage() === '/' ? '/' : getCurrentPage() },
     { code: 'us', name: 'English', flag: '/icons/flags-us.svg', href: `/en${getCurrentPage()}` },
     { code: 'jp', name: 'Japanese', flag: '/icons/flags-jp.svg', href: `/jp${getCurrentPage()}` },
     { code: 'cn', name: 'Chinese', flag: '/icons/flags-cn.svg', href: `/cn${getCurrentPage()}` },
@@ -49,20 +49,26 @@ export default function GNB() {
   ];
 
   const menuItems = [
-    { name: 'หน้าแรก', href: '/th' },
-    { name: 'รากเทียม', href: '/th/implant' },
-    { name: 'ฟอกสีฟัน · ลามิเนต', href: '/th/whitening' },
-    { name: 'การถอนฟันคุด', href: '/th/wisdom-tooth' },
-    { name: 'รักษาฟันผุ · รักษารากฟัน', href: '/th/cavity-treatment' },
-    { name: 'รักษาโรคเหงือก · ขูดหินปูน', href: '/th/gum-care' }
+    { name: 'หน้าแรก', href: '/' },
+    { name: 'รากฟันเทียม', href: '/implant' },
+    { name: 'ฟันปลอม · รากฟันเทียมทั้งปาก', href: '/denture' },
+    { name: 'ฟันผุ · รักษารากฟัน', href: '/cavity-treatment' },
+    { name: 'ถอนฟันคุด', href: '/wisdom-tooth' },
+    { name: 'รักษาเหงือก · ขูดหินปูน', href: '/gum-care' },
+    { name: 'รักษาข้อต่อขากรรไกร', href: '/tmj' },
+    { name: 'ฟอกสีฟัน', href: '/whitening' },
   ];
 
   // Detect current language from pathname
   const getCurrentLanguage = () => {
-    const lang = pathname.split('/')[1];
-    const found = languages.find(l => l.code === lang);
-    if (found) return found;
-    if (lang === 'en') return languages[1];
+    if (pathname.startsWith('/en')) return languages[1];
+    if (pathname.startsWith('/jp')) return languages[2];
+    if (pathname.startsWith('/cn')) return languages[3];
+    if (pathname.startsWith('/vi')) return languages[4];
+    if (pathname.startsWith('/th')) return languages[5];
+    if (pathname.startsWith('/ru')) return languages[6];
+    if (pathname.startsWith('/mn')) return languages[7];
+    if (pathname.startsWith('/uz')) return languages[8];
     return languages[0]; // Default to Korean
   };
 
@@ -84,15 +90,14 @@ export default function GNB() {
         style={{ height: '52px' }}
       >
         {/* Logo */}
-        <Link href="/th" className="flex items-center" style={{ height: '32px' }}>
-          <svg width="168" height="32" viewBox="0 0 168 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clipPath="url(#clip0_1_4305)">
-              <path d="M24 16C24 9.37234 18.6271 4 12 4C7.5641 4 3.69091 6.40734 1.61377 9.98645L5.2815 13.0158C5.67266 13.407 6.30709 13.407 6.69881 13.0158L13.445 7.44365C14.3921 6.49652 16.0109 7.16764 16.0109 8.50649V27.3125C20.6659 25.6621 24 21.2211 24 16.0006V16Z" fill="#398BFF"/>
-              <path d="M7.40715 18.3193C6.62427 19.1021 5.35541 19.1021 4.57253 18.3193L0.0462841 14.9496C0.0163688 15.2956 0 15.6461 0 16C0 22.6271 5.37234 28 12 28C12.0011 28 12.0017 28 12.0028 28V14.8982L7.40715 18.3198V18.3193Z" fill="#398BFF"/>
-              <path d="M13.4451 7.44319L6.69888 13.0153C6.30772 13.4065 5.67329 13.4065 5.28157 13.0153L1.61384 9.98655C0.75363 11.4688 0.202172 13.1525 0.0463867 14.9497L4.5732 18.3199C5.35608 19.1028 6.62494 19.1028 7.40782 18.3199L12.0035 14.8983V28.0001C13.4095 28.0001 14.7585 27.7568 16.0121 27.3126V8.50603C16.0121 7.16661 14.3933 6.49605 13.4462 7.44319H13.4451Z" fill="white"/>
-              {/* Text paths omitted for brevity as they are medical dental text in logo */}
-            </g>
-          </svg>
+        <Link href="/th" className="flex items-center" style={{ height: '60px' }}>
+          <Image
+            src="/고덕퍼스트치과-로고-(블랙).png"
+            alt="Godeok First Dental"
+            width={375}
+            height={84}
+            className="h-14 w-auto object-contain"
+          />
         </Link>
 
         {/* Right Side Controls */}
@@ -128,7 +133,7 @@ export default function GNB() {
 
               {/* Dropdown Menu */}
               <div
-                className="absolute bg-white border border-[#f3f6fb] rounded-[20px] flex flex-col shadow-lg overflow-y-auto max-h-[400px]"
+                className="absolute bg-white border border-[#f3f6fb] rounded-[20px] flex flex-col shadow-lg"
                 style={{ zIndex: 9999, padding: '24px 20px', width: '343px', gap: '20px', top: '40px', right: '0' }}
               >
                 {languages.map((lang) => (
@@ -246,13 +251,13 @@ export default function GNB() {
               {/* Action Buttons */}
               <div className="flex flex-col gap-4 px-5 pb-[30px] pt-4">
                 <Link href="/th/consultation" className="w-full">
-                  <button className="w-full bg-[#006aff] text-white font-['Pretendard_JP'] font-bold text-[20px] leading-[1.5] tracking-[-0.4px] rounded-[18px] h-16 flex items-center justify-center">
-                    จองปรึกษา AI
+                  <button className="w-full bg-[#008095] text-white font-['Pretendard_JP'] font-bold text-[20px] leading-[1.5] tracking-[-0.4px] rounded-[18px] h-16 flex items-center justify-center">
+                    นัดปรึกษา AI
                   </button>
                 </Link>
-                <a href="tel:0507-1315-7475" className="w-full">
-                  <button className="w-full bg-white border border-[#e9ebf1] text-[#006aff] font-['Pretendard_JP'] font-bold text-[20px] leading-[1.5] tracking-[-0.4px] rounded-[18px] h-16 flex items-center justify-center">
-                    ติดต่อสอบถามทางโทรศัพท์
+                <a href="tel:031-611-3222" className="w-full">
+                  <button className="w-full bg-white border border-[#e9ebf1] text-[#008095] font-['Pretendard_JP'] font-bold text-[20px] leading-[1.5] tracking-[-0.4px] rounded-[18px] h-16 flex items-center justify-center">
+                    ติดต่อทางโทรศัพท์
                   </button>
                 </a>
               </div>

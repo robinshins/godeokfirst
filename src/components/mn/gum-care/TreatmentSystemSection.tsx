@@ -6,35 +6,35 @@ export default function TreatmentSystemSection() {
   const systems = [
     {
       image: '/images/nsk970.png',
-      title: 'NSK varios 970 тусгай төхөөрөмж',
-      description: 'Японы NSK компанийн хамгийн сүүлийн үеийн хэт авианы скейлерээр буйлны гүн дэх нянг нарийн арилгана',
+ title:'NSK varios 970',
+ description:'NSK буйл бактери нарийвчилсан арилгах',
       features: [
-        { label: 'iPiezo хөдөлгүүр', text: 'Автомат давтамж тохируулалтаар тогтвортой гаралт' },
-        { label: 'Өндөр нарийвчлалтай үзүүр', text: 'Буйлны хөндийн гүнд хүрэх боломжтой' }
+ { label:'iPiezo', text:''},
+ { label:'нарийвчилсан', text:'буйлны боломжтой'}
       ]
     },
     {
       image: '/images/perioclean2.jpg',
-      title: 'Периоклин антибиотик тосон эмчилгээ',
-      description: 'Миноциклин найрлагатай орон нутгийн антибиотикийг буйлны гүнд шууд тарьж эмчилнэ',
+ title:'эмчилгээ',
+ description:'минут буйл тарилга эмчилгээ',
       features: [
-        { label: 'Клиник батлагдсан', text: 'Дотоод гадаадын олон судалгааны багийн туршилтаар үр нөлөө батлагдсан' },
-        { label: '7 хоног үргэлжилнэ', text: 'Нэг удаагийн тариалалтаар эмийн үйлчлэл 7 хоног үргэлжилнэ' },
-        { label: 'Нян багасна', text: 'Red Complex нян 87.5% → 12.5% болж буурна' }
+ { label:'', text:'баталгаажуулалт'},
+ { label:'', text:'тарилга хадгалах'},
+ { label:'бактери', text:'Red Complex бактери 87.5% → 12.5%'}
       ]
     },
     {
       image: '/images/painless2.png',
-      title: '4 шатлалт өвдөлт намдаах систем',
+      title: '4шатлал өвдөлт намдаах систем',
       description: [
-        '"Шүдний эмчилгээ ийм тав тухтай байж болдог юм байна"',
-        'Олон өвчтөнүүд гайхдаг шаталсан өвдөлт хаах систем'
+'"шүдний эмнэлэг эмчилгээ"',
+'олон өвчтөнминут шатлал өвдөлт зөрүү систем'
       ],
       features: [
-        { label: 'Зайлах мэдээгүйжүүлэлт', text: 'Амыг бүхэлд нь мэдээгүйжүүлэгч шингэнээр зайлж 1-р мэдрэмжийг бууруулна' },
-        { label: 'Түрхэх мэдээгүйжүүлэлт', text: 'Тарилгын хэсэгт мэдээгүйжүүлэгч тос түрхэж 2-р хаалт' },
-        { label: 'Өвдөлт намдаах цахилгаан мэдээгүйжүүлэгч', text: 'Компьютерийн удирдлагаар тогтмол хурдаар өвдөлтгүй тарина' },
-        { label: 'Мэдрэлийн сувгийн мэдээгүйжүүлэгч', text: 'Гүн хэсгийг бүрэн өвдөлт хаалт' }
+ { label:'зайлах мэдээ алдуулалт', text:'бүрэн мэдээ алдуулалт зайлах 1зөрүү'},
+ { label:'түрхэлт мэдээ алдуулалт', text:'хэсэг мэдээ алдуулалт түрхэлт 2зөрүү зөрүү'},
+ { label:'өвдөлт намдаах мэдээ алдуулалт', text:'хурд өвдөлт намдаах тарилга'},
+ { label:'мэдрэл мэдээ алдуулалт', text:'хэсэг төгс өвдөлт зөрүү'}
       ]
     }
   ];
@@ -45,8 +45,8 @@ export default function TreatmentSystemSection() {
         {/* Header */}
         <div className="flex flex-col gap-3 items-center justify-center w-full">
           <div className="font-['Pretendard_JP'] font-bold leading-[1.35] text-[32px] text-black text-center tracking-[-0.64px] w-full">
-            <p className="mb-0">Кёнсон Мэдишийн</p>
-            <p>буйлны эмчилгээний систем</p>
+            <p className="mb-0">Godeok First Dental</p>
+            <p>буйл эмчилгээ систем</p>
           </div>
         </div>
 
@@ -65,7 +65,7 @@ export default function TreatmentSystemSection() {
               </div>
 
               {/* Content */}
-              <div className="bg-[#0b1727] box-border flex flex-col gap-6 items-start p-6 w-full">
+              <div className="bg-[#21314E] box-border flex flex-col gap-6 items-start p-6 w-full">
                 <p className="font-['Pretendard_JP'] font-bold leading-[1.35] text-2xl text-center text-white tracking-[-0.48px] w-full">
                   {system.title}
                 </p>

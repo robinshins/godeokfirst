@@ -4,10 +4,10 @@ import Image from 'next/image';
 
 export default function SpecialTechSection() {
   const features = [
-    'Technology developed by Sweden&apos;s Karolinska Medical University',
+    'Technology developed at Karolinska Institute, Sweden',
     'Probiotics that attach directly to teeth and gums',
-    'Powerful strains that survive in toothpaste and mouthwash',
-    'Safe strains that do not produce sugar or tooth decay acids'
+    'Powerful strains that survive even in toothpaste and mouthwash',
+    'Safe strains with no acid production or tooth decay risk'
   ];
 
   return (
@@ -30,7 +30,7 @@ export default function SpecialTechSection() {
         <div className="flex flex-col gap-4 items-center justify-center relative shrink-0 w-full">
           <div className="flex flex-col gap-3 items-center justify-center relative shrink-0 w-full">
             <h2 className="font-bold leading-[1.35] not-italic text-[32px] text-black text-center tracking-[-0.64px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-              Kyungsung Medis&apos; Unique<br />
+              Godeok First Dental&apos;s<br />
               Special Technology
             </h2>
           </div>
@@ -42,7 +42,7 @@ export default function SpecialTechSection() {
             {/* Features Card */}
             <div className="bg-white box-border flex flex-col gap-5 items-center justify-center p-6 relative rounded-[24px] shadow-[0px_24px_50px_-12px_rgba(45,54,67,0.12)] shrink-0 w-full">
               <p className="font-bold leading-[1.35] not-italic text-2xl text-black text-center tracking-[-0.48px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-                Our Clinic Takes Pride In
+                We take pride in our clinic
               </p>
               <div className="bg-[#f3f6fb] box-border flex flex-col gap-[14px] items-start p-5 relative rounded-2xl shrink-0 w-full">
                 {features.map((feature, index) => (
@@ -84,13 +84,13 @@ export default function SpecialTechSection() {
                   Oral Bacteria Therapy
                 </p>
                 <p className="font-medium leading-[1.5] not-italic text-[15px] text-[#5d5f6d] tracking-[-0.3px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-                  Keep your implants healthy for a long time with probiotics developed by Sweden&apos;s Karolinska Medical University
+                  Maintains your implant healthy for a long time with probiotics developed at Karolinska Institute in Sweden
                 </p>
               </div>
             </div>
 
             {/* Waterpik Gift Card */}
-            <div className="bg-[#006aff] box-border flex flex-col gap-6 items-start justify-center p-6 relative rounded-[24px] shrink-0 w-full">
+            <div className="bg-[#008095] box-border flex flex-col gap-6 items-start justify-center p-6 relative rounded-[24px] shrink-0 w-full">
               <div className="bg-white h-[245px] overflow-hidden relative rounded-[20px] shrink-0 w-full">
                 <Image
                   src="/images/waterpik.jpeg"
@@ -102,15 +102,15 @@ export default function SpecialTechSection() {
               <div className="flex flex-col gap-6 items-start relative shrink-0 w-full">
                 <div className="flex flex-col gap-2 items-start leading-[1.35] not-italic relative shrink-0 text-center text-white w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
                   <p className="font-bold relative shrink-0 text-2xl tracking-[-0.48px] w-full">
-                    Worth $90
+                    Worth 90,000 KRW
                   </p>
                   <p className="font-bold relative shrink-0 text-[32px] tracking-[-0.64px] w-full">
-                    Waterpik Gift
+                    Waterpik Support
                   </p>
                 </div>
                 <div className="bg-[rgba(255,255,255,0.2)] box-border flex flex-col gap-6 items-start p-6 relative rounded-[20px] shrink-0 w-full">
                   <p className="font-bold leading-[1.5] not-italic text-[17px] text-center text-white tracking-[-0.34px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-                    When participating in full implant review event!
+                    When you participate in the full implant review event!
                   </p>
                   <div className="h-0 relative shrink-0 w-full">
                     <Image
@@ -122,10 +122,10 @@ export default function SpecialTechSection() {
                     />
                   </div>
                   <div className="font-bold leading-[1.5] not-italic text-lg text-center text-white tracking-[-0.36px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-                    Effective for removing food around implants<br />
-                    and gum massage!<br />
-                    We gift you a Waterpik<br />
-                    essential for oral care
+                    Effective for removing food debris<br />
+                    around implants and gum massage!<br />
+                    We gift you an essential<br />
+                    Waterpik for oral care
                   </div>
                 </div>
               </div>

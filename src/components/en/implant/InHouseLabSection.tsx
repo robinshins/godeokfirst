@@ -7,17 +7,17 @@ export default function InHouseLabSection() {
     {
       icon: '/icons/shield.svg',
       title: 'Maximum Strength Temporary Teeth',
-      description: 'With exclusive partnership special materials\nyou can eat regular meals right after surgery'
+      description: 'Made with special materials through an exclusive partnership\nAllowing normal meals right after surgery'
     },
     {
       icon: '/icons/tooth-xray-spot.svg',
-      title: 'Instant Replacement If Damaged',
-      description: 'No worries about potential damage\nOur in-house lab replaces it immediately'
+      title: 'Immediate Replacement if Damaged',
+      description: 'No worries even if damage occurs\nOur in-house dental lab replaces it immediately'
     },
     {
       icon: '/icons/smile.svg',
       title: 'Zero Days Without Teeth',
-      description: 'From right after surgery until final prosthesis installation\nnot a single day without teeth'
+      description: 'From right after surgery to the final prosthetics placement\nThere is not a single day without teeth'
     }
   ];
 
@@ -27,12 +27,12 @@ export default function InHouseLabSection() {
       {/* Header */}
       <div className="flex flex-col gap-3 items-center justify-center leading-[0] not-italic relative shrink-0 text-center w-full">
         <h2 className="font-bold leading-[1.35] text-[32px] text-black tracking-[-0.64px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-          Immediate Prosthesis<br />
+          Immediate Prosthetics<br />
           Implant System
         </h2>
         <p className="font-semibold leading-[1.4] text-[#727582] text-base tracking-[-0.32px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-        Aiming for rapid prosthesis production <br />
-        with digital process and in-house digital lab.<br />
+        With digital processes and in-house dental lab, <br />
+        we aim for fast prosthetics production.<br />
         </p>
       </div>
 
@@ -43,19 +43,19 @@ export default function InHouseLabSection() {
           <div className="h-[192px] relative shrink-0 w-full">
             <Image
               src="/images/lab-1.png"
-              alt="Fast and Precise Prosthesis Production"
+              alt="Fast and Precise Prosthetics Production"
               fill
               className="object-cover"
             />
           </div>
           <div className="bg-[#0b1727] box-border flex flex-col gap-6 items-start not-italic p-6 relative shrink-0 text-center w-full">
             <p className="font-bold leading-[1.35] text-2xl text-white tracking-[-0.48px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-              Fast and Precise Prosthesis Production
+              Fast and Precise Prosthetics Production
             </p>
             <p className="font-semibold leading-[1.4] opacity-80 text-[#e9ebf1] text-[15px] tracking-[-0.3px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-              The head doctor provides comfortable treatment based on extensive clinical experience and directly produces prostheses using a milling machine<br />
+              Our Head Doctor provides comfortable treatment based on extensive clinical experience and directly produces prosthetics using a milling machine<br />
               <br />
-              After production, we double-check for discomfort or side effects and continue management even after treatment, doing our best to increase patient satisfaction
+              After production, we double-check for any discomfort or side effects, and continue to provide ongoing care after treatment, doing our best to maximize patient satisfaction
             </p>
           </div>
         </div>
@@ -65,19 +65,19 @@ export default function InHouseLabSection() {
           <div className="h-[192px] relative shrink-0 w-full">
             <Image
               src="/images/lab-2.png"
-              alt="Without an In-House Lab?"
+              alt="What if there is no in-house dental lab?"
               fill
               className="object-cover"
             />
           </div>
           <div className="bg-[#0b1727] box-border flex flex-col gap-6 items-start not-italic p-6 relative shrink-0 text-center w-full">
             <p className="font-bold leading-[1.35] text-2xl text-white tracking-[-0.48px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-              Without an In-House Lab?
+              What if there is no in-house dental lab?
             </p>
             <p className="font-semibold leading-[1.4] opacity-80 text-[#e9ebf1] text-[15px] tracking-[-0.3px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-              Without an in-house lab, prosthesis production must be outsourced to external labs, which takes longer<br />
+              Without an in-house dental lab, prosthetics production must be outsourced to an external lab, which takes much longer<br />
               <br />
-              There is the inconvenience of re-outsourcing for production and revision processes, and difficulty with minor modifications
+              The process of sending back for production and modifications is inconvenient, and making fine adjustments becomes difficult
             </p>
           </div>
         </div>

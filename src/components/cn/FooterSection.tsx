@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 
 type ModalType = 'privacy' | 'terms' | 'rights' | 'prices' | null;
 
@@ -9,41 +10,73 @@ export default function FooterSection() {
 
   return (
     <footer className="bg-white border-t border-[#e9ebf1]">
+      {/* 의료법 준수 면책조항 */}
+      <div className="bg-gray-100 py-4 px-4">
+        <div className="max-w-[430px] mx-auto">
+          <p className="text-[10px] text-gray-500 leading-relaxed text-center">
+            本网站的治疗案例及后记为个人经验，治疗效果因人而异。
+            所有医疗行为可能出现出血、感染、肿胀等副作用，确切的诊断和治疗计划请务必咨询专家后决定。
+          </p>
+        </div>
+      </div>
+
       <div className="max-w-[430px] mx-auto px-4 py-10">
         <div className="space-y-20">
           {/* Footer Links */}
           <div className="flex justify-between text-[13px] font-semibold text-[#37373e]">
             <button onClick={() => setOpenModal('privacy')} className="hover:text-gray-900">隐私政策</button>
-            <button onClick={() => setOpenModal('terms')} className="hover:text-gray-900">服务条款</button>
-            <button onClick={() => setOpenModal('rights')} className="hover:text-gray-900">患者权利</button>
-            <button onClick={() => setOpenModal('prices')} className="hover:text-gray-900">价格</button>
+            <button onClick={() => setOpenModal('terms')} className="hover:text-gray-900">会员条款</button>
+            <button onClick={() => setOpenModal('rights')} className="hover:text-gray-900">患者权利与义务</button>
+            <button onClick={() => setOpenModal('prices')} className="hover:text-gray-900">非保险项目</button>
           </div>
 
           {/* Company Info */}
           <div className="space-y-8">
             <div className="space-y-3.5">
-              <div className="text-xl font-bold text-gray-900">美迪斯牙科</div>
+              <div className="text-xl font-bold text-gray-900">高德First牙科</div>
               <p className="text-[15px] font-semibold text-[#292a2f]">
-                庆星美迪斯牙科
+                高德First牙科医院
               </p>
             </div>
 
             <div className="space-y-2 text-[15px] text-[#292a2f]">
               <p>
-                院长 : <span className="font-semibold">金东锡</span>
+                代表：<span className="font-semibold">李东贤</span>
               </p>
               <p>
-                营业执照 : <span className="font-semibold">484-31-00750</span>
+                营业执照号：<span className="font-semibold">210-49-03603</span>
               </p>
               <p>
-                地址 : <span className="font-semibold">釜山市南区水营路295号Seoung大厦4楼</span>
+                地址：<span className="font-semibold">京畿道平泽市高德面高德路250号 EduSky 4楼 401,402号</span>
               </p>
               <p>
-                电话 : <span className="font-semibold">0507-1315-7475</span>
+                代表电话：<span className="font-semibold">031-611-3222</span>
               </p>
-              <p>
-                邮箱 : <span className="font-semibold">gdfst111@naver.com</span>
-              </p>
+            </div>
+          </div>
+
+          {/* 지역별 진료 안내 */}
+          <div className="pt-6 border-t border-gray-200">
+            <p className="text-[11px] text-gray-400 mb-2">各地区诊疗指南</p>
+            <div className="flex flex-wrap gap-x-3 gap-y-1">
+              {[
+                { name: '高德洞', slug: 'godeok' },
+                { name: '高德面', slug: 'godeok-myeon' },
+                { name: '西井洞', slug: 'seojeong' },
+                { name: '二忠洞', slug: 'ichung' },
+                { name: '长堂洞', slug: 'jangdang' },
+                { name: '东朔洞', slug: 'dongsak' },
+                { name: '芝制洞', slug: 'jije' },
+                { name: '世桥洞', slug: 'segyo' },
+              ].map((region) => (
+                <Link
+                  key={region.slug}
+                  href={`/${region.slug}`}
+                  className="text-[11px] text-gray-400 hover:text-gray-600"
+                >
+                  {region.name}
+                </Link>
+              ))}
             </div>
           </div>
         </div>
@@ -55,12 +88,12 @@ export default function FooterSection() {
           <div className="bg-white rounded-2xl max-w-[430px] w-full max-h-[80vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
             <div className="sticky top-0 bg-white border-b border-gray-200 p-4 flex justify-between items-center">
               <h2 className="text-xl font-bold">
-                {openModal === 'privacy' && 'Privacy Policy'}
-                {openModal === 'terms' && 'Terms of Service'}
-                {openModal === 'rights' && 'Patient Rights & Responsibilities'}
-                {openModal === 'prices' && 'Non-Insurance Pricing'}
+                {openModal === 'privacy' && '隐私政策'}
+                {openModal === 'terms' && '会员条款'}
+                {openModal === 'rights' && '患者权利与义务'}
+                {openModal === 'prices' && '非保险诊疗费用'}
               </h2>
-              <button onClick={() => setOpenModal(null)} className="text-2xl text-gray-500 hover:text-gray-900">×</button>
+              <button onClick={() => setOpenModal(null)} className="text-2xl text-gray-500 hover:text-gray-900">&times;</button>
             </div>
 
             <div className="p-6">
@@ -81,80 +114,79 @@ function PrivacyPolicy() {
   return (
     <div className="space-y-6 text-sm text-gray-700 leading-relaxed">
       <section>
-        <h3 className="font-bold text-base text-black mb-3">1. 개인정보의 수집 및 이용목적</h3>
-        <p>고덕퍼스트치과의원(이하 &apos;병원&apos;)은 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며, 이용 목적이 변경되는 경우에는 개인정보 보호법 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.</p>
+        <h3 className="font-bold text-base text-black mb-3">1. 个人信息收集及使用目的</h3>
+        <p>高德First牙科医院（以下简称&apos;医院&apos;）为以下目的处理个人信息。所处理的个人信息不会用于以下目的以外的用途，如使用目的发生变更，将根据个人信息保护法第18条采取另行同意等必要措施。</p>
         <ul className="list-disc pl-5 mt-2 space-y-1">
-          <li>진료 예약 및 상담</li>
-          <li>진료기록 관리 및 의료서비스 제공</li>
-          <li>진료비 청구 및 수납</li>
-          <li>병원 이용 및 치료에 대한 안내</li>
+          <li>诊疗预约及咨询</li>
+          <li>诊疗记录管理及医疗服务提供</li>
+          <li>诊疗费结算及收费</li>
+          <li>医院使用及治疗指南</li>
         </ul>
       </section>
 
       <section>
-        <h3 className="font-bold text-base text-black mb-3">2. 수집하는 개인정보의 항목</h3>
-        <p className="mb-2">병원은 진료 및 상담 등을 위해 아래와 같은 개인정보를 수집하고 있습니다.</p>
+        <h3 className="font-bold text-base text-black mb-3">2. 收集的个人信息项目</h3>
+        <p className="mb-2">医院为诊疗及咨询等目的收集以下个人信息。</p>
         <ul className="list-disc pl-5 space-y-1">
-          <li>필수항목: 성명, 생년월일, 연락처(전화번호), 주소</li>
-          <li>진료정보: 진료기록, 검사결과, 치료내역</li>
-          <li>자동수집: 접속 IP, 쿠키, 접속 로그, 서비스 이용 기록</li>
+          <li>必填项目：姓名、出生日期、联系方式（电话号码）、地址</li>
+          <li>诊疗信息：诊疗记录、检查结果、治疗详情</li>
+          <li>自动收集：访问IP、Cookie、访问日志、服务使用记录</li>
         </ul>
       </section>
 
       <section>
-        <h3 className="font-bold text-base text-black mb-3">3. 개인정보의 보유 및 이용기간</h3>
-        <p>병원은 법령에 따른 개인정보 보유·이용기간 또는 정보주체로부터 개인정보를 수집 시에 동의 받은 개인정보 보유·이용기간 내에서 개인정보를 처리·보유합니다.</p>
+        <h3 className="font-bold text-base text-black mb-3">3. 个人信息的保留及使用期限</h3>
+        <p>医院在法令规定的个人信息保留及使用期限内或收集个人信息时获得同意的保留及使用期限内处理和保留个人信息。</p>
         <ul className="list-disc pl-5 mt-2 space-y-1">
-          <li>진료기록: 의료법에 따라 10년</li>
-          <li>환자 명부: 5년</li>
-          <li>처방전: 2년</li>
-          <li>진료비 납입 관련 기록: 5년</li>
+          <li>诊疗记录：根据医疗法保留10年</li>
+          <li>患者名册：5年</li>
+          <li>处方单：2年</li>
+          <li>诊疗费缴纳相关记录：5年</li>
         </ul>
       </section>
 
       <section>
-        <h3 className="font-bold text-base text-black mb-3">4. 개인정보의 제3자 제공</h3>
-        <p>병원은 원칙적으로 정보주체의 개인정보를 수집·이용 목적으로 명시한 범위 내에서 처리하며, 다음의 경우를 제외하고는 정보주체의 사전 동의 없이는 본래의 목적 범위를 초과하여 처리하거나 제3자에게 제공하지 않습니다.</p>
+        <h3 className="font-bold text-base text-black mb-3">4. 个人信息向第三方提供</h3>
+        <p>医院原则上在收集和使用目的范围内处理个人信息，除以下情况外，未经信息主体事先同意不会超出原有目的范围处理或向第三方提供。</p>
         <ul className="list-disc pl-5 mt-2 space-y-1">
-          <li>정보주체로부터 별도의 동의를 받은 경우</li>
-          <li>법률에 특별한 규정이 있는 경우</li>
-          <li>정보주체 또는 법정대리인이 의사표시를 할 수 없는 상태이거나 주소불명 등으로 사전 동의를 받을 수 없는 경우로서 명백히 정보주체 또는 제3자의 급박한 생명, 신체, 재산의 이익을 위하여 필요하다고 인정되는 경우</li>
+          <li>获得信息主体另行同意的情况</li>
+          <li>法律有特别规定的情况</li>
+          <li>信息主体或法定代理人无法表达意思，或因地址不明等无法获得事先同意，且明显认为是为信息主体或第三方的紧急生命、身体、财产利益所必需的情况</li>
         </ul>
       </section>
 
       <section>
-        <h3 className="font-bold text-base text-black mb-3">5. 정보주체의 권리·의무 및 행사방법</h3>
-        <p>정보주체는 병원에 대해 언제든지 다음 각 호의 개인정보 보호 관련 권리를 행사할 수 있습니다.</p>
+        <h3 className="font-bold text-base text-black mb-3">5. 信息主体的权利、义务及行使方法</h3>
+        <p>信息主体可随时向医院行使以下个人信息保护相关权利。</p>
         <ul className="list-disc pl-5 mt-2 space-y-1">
-          <li>개인정보 열람 요구</li>
-          <li>오류 등이 있을 경우 정정 요구</li>
-          <li>삭제 요구</li>
-          <li>처리정지 요구</li>
+          <li>要求查阅个人信息</li>
+          <li>有错误时要求更正</li>
+          <li>要求删除</li>
+          <li>要求停止处理</li>
         </ul>
       </section>
 
       <section>
-        <h3 className="font-bold text-base text-black mb-3">6. 개인정보의 안전성 확보조치</h3>
-        <p>병원은 개인정보의 안전성 확보를 위해 다음과 같은 조치를 취하고 있습니다.</p>
+        <h3 className="font-bold text-base text-black mb-3">6. 个人信息安全保障措施</h3>
+        <p>医院为确保个人信息安全采取以下措施。</p>
         <ul className="list-disc pl-5 mt-2 space-y-1">
-          <li>관리적 조치: 내부관리계획 수립·시행, 정기적 직원 교육 등</li>
-          <li>기술적 조치: 개인정보처리시스템 등의 접근권한 관리, 접근통제시스템 설치, 고유식별정보 등의 암호화, 보안프로그램 설치</li>
-          <li>물리적 조치: 전산실, 자료보관실 등의 접근통제</li>
+          <li>管理措施：制定并实施内部管理计划、定期员工培训等</li>
+          <li>技术措施：个人信息处理系统等的访问权限管理、安装访问控制系统、唯一识别信息等的加密、安装安全程序</li>
+          <li>物理措施：计算机室、资料保管室等的访问控制</li>
         </ul>
       </section>
 
       <section>
-        <h3 className="font-bold text-base text-black mb-3">7. 개인정보 보호책임자</h3>
+        <h3 className="font-bold text-base text-black mb-3">7. 个人信息保护负责人</h3>
         <div className="bg-gray-50 p-4 rounded-lg mt-2">
-          <p><strong>성명:</strong> 김동석</p>
-          <p><strong>직책:</strong> 대표원장</p>
-          <p><strong>연락처:</strong> 0507-1315-7475</p>
-          <p><strong>이메일:</strong> gdfst111@naver.com</p>
+          <p><strong>姓名：</strong>李东贤</p>
+          <p><strong>职务：</strong>代表院长</p>
+          <p><strong>联系方式：</strong>031-611-3222</p>
         </div>
       </section>
 
       <section className="text-xs text-gray-500 pt-4 border-t">
-        <p>본 개인정보처리방침은 2024년 1월 1일부터 적용됩니다.</p>
+        <p>本隐私政策自2024年1月1日起适用。</p>
       </section>
     </div>
   );
@@ -165,75 +197,75 @@ function TermsOfService() {
   return (
     <div className="space-y-6 text-sm text-gray-700 leading-relaxed">
       <section>
-        <h3 className="font-bold text-base text-black mb-3">제1조 (목적)</h3>
-        <p>이 약관은 고덕퍼스트치과의원(이하 &quot;병원&quot;)이 제공하는 의료서비스 및 부가서비스의 이용과 관련하여 병원과 이용자의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.</p>
+        <h3 className="font-bold text-base text-black mb-3">第1条（目的）</h3>
+        <p>本条款旨在规定高德First牙科医院（以下简称&quot;医院&quot;）提供的医疗服务及附加服务的使用，以及医院与用户之间的权利、义务和责任事项。</p>
       </section>
 
       <section>
-        <h3 className="font-bold text-base text-black mb-3">제2조 (서비스의 내용)</h3>
-        <p>병원이 제공하는 서비스는 다음 각 호와 같습니다.</p>
+        <h3 className="font-bold text-base text-black mb-3">第2条（服务内容）</h3>
+        <p>医院提供的服务如下。</p>
         <ul className="list-disc pl-5 mt-2 space-y-1">
-          <li>치과 진료 서비스 (일반진료, 임플란트, 치아교정, 심미치료 등)</li>
-          <li>진료 예약 및 상담 서비스</li>
-          <li>온라인 AI 상담 서비스</li>
-          <li>진료 관련 정보 제공 서비스</li>
+          <li>牙科诊疗服务（一般诊疗、种植牙、美容牙科等）</li>
+          <li>诊疗预约及咨询服务</li>
+          <li>在线AI咨询服务</li>
+          <li>诊疗相关信息提供服务</li>
         </ul>
       </section>
 
       <section>
-        <h3 className="font-bold text-base text-black mb-3">제3조 (예약 및 취소)</h3>
+        <h3 className="font-bold text-base text-black mb-3">第3条（预约及取消）</h3>
         <ol className="list-decimal pl-5 space-y-2">
-          <li>진료 예약은 전화, 방문, 온라인 상담을 통해 가능합니다.</li>
-          <li>예약 취소 또는 변경은 예약 시간 24시간 전까지 가능합니다.</li>
-          <li>정당한 사유 없이 예약 시간에 내원하지 않거나, 24시간 이내 취소가 반복될 경우 향후 예약이 제한될 수 있습니다.</li>
+          <li>诊疗预约可通过电话、来院、在线咨询进行。</li>
+          <li>预约取消或变更需在预约时间24小时前进行。</li>
+          <li>无正当理由未在预约时间来院或24小时内反复取消，今后预约可能受到限制。</li>
         </ol>
       </section>
 
       <section>
-        <h3 className="font-bold text-base text-black mb-3">제4조 (진료비 및 결제)</h3>
+        <h3 className="font-bold text-base text-black mb-3">第4条（诊疗费及结算）</h3>
         <ol className="list-decimal pl-5 space-y-2">
-          <li>진료비는 건강보험 요양급여 기준 및 비급여 진료비용 고시에 따라 산정됩니다.</li>
-          <li>진료비는 진료 후 즉시 수납을 원칙으로 하며, 현금, 신용카드, 계좌이체 등의 방법으로 납부할 수 있습니다.</li>
-          <li>보험청구가 필요한 경우, 환자는 필요한 서류를 제출해야 합니다.</li>
+          <li>诊疗费按健康保险诊疗报酬标准及非保险诊疗费用公告计算。</li>
+          <li>诊疗费原则上在诊疗后即时缴纳，可通过现金、信用卡、转账等方式支付。</li>
+          <li>如需保险理赔，患者需提交所需文件。</li>
         </ol>
       </section>
 
       <section>
-        <h3 className="font-bold text-base text-black mb-3">제5조 (환자의 의무)</h3>
+        <h3 className="font-bold text-base text-black mb-3">第5条（患者义务）</h3>
         <ol className="list-decimal pl-5 space-y-2">
-          <li>환자는 정확한 개인정보 및 병력을 제공해야 합니다.</li>
-          <li>환자는 의료진의 치료 지시를 준수해야 합니다.</li>
-          <li>환자는 다른 환자 및 의료진의 진료 환경을 존중해야 합니다.</li>
-          <li>환자는 병원 시설 및 기물을 파손하지 않도록 주의해야 합니다.</li>
+          <li>患者需提供准确的个人信息和病史。</li>
+          <li>患者需遵守医疗团队的治疗指示。</li>
+          <li>患者需尊重其他患者及医疗团队的诊疗环境。</li>
+          <li>患者需注意不损坏医院设施和设备。</li>
         </ol>
       </section>
 
       <section>
-        <h3 className="font-bold text-base text-black mb-3">제6조 (병원의 의무)</h3>
+        <h3 className="font-bold text-base text-black mb-3">第6条（医院义务）</h3>
         <ol className="list-decimal pl-5 space-y-2">
-          <li>병원은 환자에게 양질의 의료서비스를 제공하기 위해 노력합니다.</li>
-          <li>병원은 환자의 개인정보를 관련 법령에 따라 안전하게 관리합니다.</li>
-          <li>병원은 진료 전 충분한 설명과 동의 절차를 거칩니다.</li>
-          <li>병원은 환자의 권리를 존중하고 보호합니다.</li>
+          <li>医院努力为患者提供优质医疗服务。</li>
+          <li>医院根据相关法律安全管理患者个人信息。</li>
+          <li>医院在诊疗前进行充分的说明和同意程序。</li>
+          <li>医院尊重和保护患者权利。</li>
         </ol>
       </section>
 
       <section>
-        <h3 className="font-bold text-base text-black mb-3">제7조 (책임의 제한)</h3>
+        <h3 className="font-bold text-base text-black mb-3">第7条（责任限制）</h3>
         <ol className="list-decimal pl-5 space-y-2">
-          <li>병원은 환자가 제공한 부정확한 정보로 인한 문제에 대해 책임을 지지 않습니다.</li>
-          <li>병원은 환자의 귀책사유로 인한 치료 지연 또는 실패에 대해 책임을 지지 않습니다.</li>
-          <li>불가항력적인 사유로 서비스 제공이 불가능한 경우 병원은 책임을 지지 않습니다.</li>
+          <li>医院对因患者提供不准确信息导致的问题不承担责任。</li>
+          <li>医院对因患者过错导致的治疗延误或失败不承担责任。</li>
+          <li>因不可抗力无法提供服务时，医院不承担责任。</li>
         </ol>
       </section>
 
       <section>
-        <h3 className="font-bold text-base text-black mb-3">제8조 (분쟁 해결)</h3>
-        <p>본 약관과 관련하여 분쟁이 발생한 경우, 병원과 환자는 상호 협의를 통해 해결하도록 노력하며, 협의가 이루어지지 않을 경우 관할 법원의 판결에 따릅니다.</p>
+        <h3 className="font-bold text-base text-black mb-3">第8条（纠纷解决）</h3>
+        <p>与本条款相关的纠纷，医院和患者应通过协商解决，协商不成时依管辖法院判决处理。</p>
       </section>
 
       <section className="text-xs text-gray-500 pt-4 border-t">
-        <p>본 약관은 2024년 1월 1일부터 시행됩니다.</p>
+        <p>本条款自2024年1月1日起施行。</p>
       </section>
     </div>
   );
@@ -244,91 +276,91 @@ function PatientRights() {
   return (
     <div className="space-y-6 text-sm text-gray-700 leading-relaxed">
       <section>
-        <h3 className="font-bold text-base text-black mb-3">환자의 권리</h3>
+        <h3 className="font-bold text-base text-black mb-3">患者权利</h3>
 
         <div className="space-y-4">
           <div>
-            <h4 className="font-semibold text-black mb-2">1. 진료받을 권리</h4>
-            <p>환자는 자신의 건강보호를 위하여 적절한 보건의료서비스를 받을 권리가 있습니다.</p>
+            <h4 className="font-semibold text-black mb-2">1. 接受诊疗的权利</h4>
+            <p>患者有权为保护自身健康接受适当的保健医疗服务。</p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-black mb-2">2. 알 권리</h4>
+            <h4 className="font-semibold text-black mb-2">2. 知情权</h4>
             <ul className="list-disc pl-5 space-y-1">
-              <li>담당 의사, 간호사 등 자신의 진료에 직접 종사하는 의료인의 성명을 알 권리</li>
-              <li>현재의 건강상태, 치료 방법, 의학적 연구대상 여부, 장기이식 여부, 부작용 등 예상 결과 및 진료 비용에 관하여 충분한 설명을 들을 권리</li>
-              <li>진료기록 열람 및 사본 교부를 요청할 권리</li>
+              <li>有权知道主治医生、护士等直接参与诊疗的医疗人员的姓名</li>
+              <li>有权获得关于当前健康状态、治疗方法、是否为医学研究对象、是否需要器官移植、副作用等预期结果及诊疗费用的充分说明</li>
+              <li>有权要求查阅诊疗记录及获取副本</li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-black mb-2">3. 자기결정권</h4>
+            <h4 className="font-semibold text-black mb-2">3. 自主决定权</h4>
             <ul className="list-disc pl-5 space-y-1">
-              <li>치료 방법을 선택하고 동의하거나 거부할 권리</li>
-              <li>의학적 연구 대상이 되는 것에 대한 동의 또는 거부 권리</li>
-              <li>다른 의사의 의견(세컨드 오피니언)을 구할 권리</li>
+              <li>有权选择、同意或拒绝治疗方法</li>
+              <li>有权同意或拒绝成为医学研究对象</li>
+              <li>有权征求其他医生的意见（第二意见）</li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-black mb-2">4. 비밀을 보호받을 권리</h4>
-            <p>진료와 관련된 신체상·건강상의 비밀과 사생활의 비밀을 침해받지 아니할 권리가 있습니다.</p>
+            <h4 className="font-semibold text-black mb-2">4. 隐私保护权</h4>
+            <p>有权不受侵犯与诊疗相关的身体、健康秘密和个人隐私。</p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-black mb-2">5. 상담·조정 신청권</h4>
-            <p>의료서비스 과정에서 발생한 분쟁에 대해 한국의료분쟁조정중재원에 상담 및 조정을 신청할 권리가 있습니다.</p>
+            <h4 className="font-semibold text-black mb-2">5. 咨询·调解申请权</h4>
+            <p>有权就医疗服务过程中发生的纠纷向韩国医疗纠纷调解仲裁院申请咨询和调解。</p>
           </div>
         </div>
       </section>
 
       <section>
-        <h3 className="font-bold text-base text-black mb-3 pt-6 border-t">환자의 의무</h3>
+        <h3 className="font-bold text-base text-black mb-3 pt-6 border-t">患者义务</h3>
 
         <div className="space-y-4">
           <div>
-            <h4 className="font-semibold text-black mb-2">1. 정보 제공의 의무</h4>
+            <h4 className="font-semibold text-black mb-2">1. 提供信息的义务</h4>
             <ul className="list-disc pl-5 space-y-1">
-              <li>자신의 건강 관련 정보를 의료진에게 정확하게 제공해야 합니다.</li>
-              <li>과거 병력, 현재 복용 중인 약물, 알레르기 등을 성실히 알려야 합니다.</li>
+              <li>需向医疗团队准确提供自身健康相关信息。</li>
+              <li>需如实告知过往病史、目前服用药物、过敏等信息。</li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-black mb-2">2. 의료진 지시 준수</h4>
+            <h4 className="font-semibold text-black mb-2">2. 遵守医嘱</h4>
             <ul className="list-disc pl-5 space-y-1">
-              <li>의료진의 치료 지시와 처방을 성실히 따라야 합니다.</li>
-              <li>예약 시간을 준수하고, 부득이한 경우 사전에 연락해야 합니다.</li>
+              <li>需认真遵循医疗团队的治疗指示和处方。</li>
+              <li>需遵守预约时间，不得已时需提前联系。</li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-black mb-2">3. 진료비 납부 의무</h4>
-            <p>제공받은 의료서비스에 대한 진료비를 정당하게 납부해야 합니다.</p>
+            <h4 className="font-semibold text-black mb-2">3. 缴纳诊疗费的义务</h4>
+            <p>需正当缴纳所接受医疗服务的诊疗费。</p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-black mb-2">4. 타인 배려의 의무</h4>
+            <h4 className="font-semibold text-black mb-2">4. 尊重他人的义务</h4>
             <ul className="list-disc pl-5 space-y-1">
-              <li>다른 환자의 진료와 치료에 방해가 되는 행위를 하지 않아야 합니다.</li>
-              <li>병원 내에서 정숙을 유지하고 질서를 지켜야 합니다.</li>
-              <li>의료진 및 병원 직원을 존중하고 예의를 지켜야 합니다.</li>
+              <li>不得进行妨碍其他患者诊疗和治疗的行为。</li>
+              <li>需在医院内保持安静和秩序。</li>
+              <li>需尊重医疗团队及医院工作人员，保持礼貌。</li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-black mb-2">5. 시설 보호 의무</h4>
-            <p>병원 시설 및 의료 기기를 소중히 다루고, 고의 또는 과실로 파손하지 않도록 주의해야 합니다.</p>
+            <h4 className="font-semibold text-black mb-2">5. 保护设施的义务</h4>
+            <p>需爱护医院设施和医疗器械，注意不因故意或过失造成损坏。</p>
           </div>
         </div>
       </section>
 
       <section className="bg-blue-50 p-4 rounded-lg mt-6">
-        <h4 className="font-semibold text-black mb-2">문의 및 상담</h4>
-        <p className="text-sm">환자의 권리 보호 및 의료분쟁과 관련한 문의사항이 있으신 경우</p>
+        <h4 className="font-semibold text-black mb-2">咨询及商谈</h4>
+        <p className="text-sm">如有关于患者权利保护及医疗纠纷的咨询</p>
         <div className="mt-2 space-y-1">
-          <p><strong>병원 대표번호:</strong> 0507-1315-7475</p>
-          <p><strong>한국의료분쟁조정중재원:</strong> 1670-2545</p>
+          <p><strong>医院代表电话：</strong>031-611-3222</p>
+          <p><strong>韩国医疗纠纷调解仲裁院：</strong>1670-2545</p>
         </div>
       </section>
     </div>
@@ -338,52 +370,41 @@ function PatientRights() {
 // 비급여 진료비용
 function NonInsurancePrices() {
   const prices = [
-    { code: 'UW3021017', item: '치과 처치: 수술료/치석제거/1/3악당', classification: '치석제거 1/3', price: '10,000', minPrice: '', maxPrice: '', note: '', updated: '2021-11-18' },
-    { code: 'UW3021027', item: '치과 처치: 수술료/치석제거/상악', classification: '치석제거 상악', price: '25,000', minPrice: '', maxPrice: '', note: '', updated: '2021-11-19' },
-    { code: 'UW3021037', item: '치과 처치: 수술료/치석제거/하악', classification: '치석제거 하악', price: '25,000', minPrice: '', maxPrice: '', note: '', updated: '2021-11-20' },
-    { code: 'UW3021047', item: '치과 처치: 수술료/치석제거/전악', classification: '치석제거 전악', price: '70,000', minPrice: '', maxPrice: '', note: '', updated: '2021-11-21' },
-    { code: 'UZ0040014', item: '치과 처치: 수술료/인레이(Inlay) 및 온레이(Onlay) 간접충전(금 등을 사용한 충전치료)-인레이', classification: 'ceramic inlay', price: '300,000', minPrice: '', maxPrice: '', note: '', updated: '2021-11-24' },
-    { code: 'U02390000', item: '치과 처치: 수술료/광중합형 복합레진 충전/우식-1면', classification: '레진 우식1면', price: '100,000', minPrice: '', maxPrice: '', note: '', updated: '2021-11-25' },
-    { code: 'U02400000', item: '치과 처치: 수술료/광중합형 복합레진 충전/우식-2면', classification: '레진 2면', price: '100,000', minPrice: '', maxPrice: '', note: '', updated: '2021-11-26' },
-    { code: 'U02410000', item: '치과 처치: 수술료/광중합형 복합레진 충전/우식-3면 이상', classification: '레진 3면이상', price: '150,000', minPrice: '', maxPrice: '', note: '', updated: '2021-11-27' },
-    { code: 'UZ0050001', item: '치과 처치: 수술료/광중합형 복합레진 충전/파모', classification: '레진충전(치경부)', price: '80,000', minPrice: '', maxPrice: '', note: '', updated: '2021-11-28' },
-    { code: 'UB0010051', item: '치관의 보철료/치과임플란트(1치당)/Zirconia', classification: '임플란트 zir', price: '', minPrice: '890,000', maxPrice: '1,290,000', note: '', updated: '2021-12-01' },
-    { code: 'UW609F350', item: '치관의 보철료/크라운/Zirconia', classification: 'zirconia', price: '500,000', minPrice: '', maxPrice: '', note: 'core별도', updated: '2021-12-04' },
-    { code: 'PDZ010000', item: '제증명수수료/진단서/일반', classification: '일반진단서', price: '20,000', minPrice: '', maxPrice: '', note: '', updated: '2021-12-05' },
-    { code: 'PDZ070003', item: '제증명수수료/후유장애진단서', classification: '후유장애진단서', price: '100,000', minPrice: '', maxPrice: '', note: '', updated: '2021-12-06' },
-    { code: 'PDZ020001', item: '제증명수수료/상해진단서/3주미만', classification: '상해진단서 3주미만', price: '100,000', minPrice: '', maxPrice: '', note: '', updated: '2021-12-07' },
-    { code: 'PDZ020002', item: '제증명수수료/상해진단서/3주이상', classification: '상해진단서 3주이상', price: '150,000', minPrice: '', maxPrice: '', note: '', updated: '2021-12-08' },
-    { code: 'PDZ090007', item: '제증명수수료/확인서/진료', classification: '진료확인서', price: '3,000', minPrice: '', maxPrice: '', note: '', updated: '2021-12-09' },
-    { code: 'PDZ140001', item: '제증명수수료/향후진료비추정서/천만원미만', classification: '천만원미만', price: '50,000', minPrice: '', maxPrice: '', note: '', updated: '2021-12-10' },
-    { code: 'PDZ140002', item: '제증명수수료/향후진료비추정서/천만원이상', classification: '천만원이상', price: '100,000', minPrice: '', maxPrice: '', note: '', updated: '2021-12-11' },
-    { code: 'PDZ110101', item: '제증명수수료/진료기록사본/1~5매', classification: '1-5매', price: '1,000', minPrice: '', maxPrice: '', note: '', updated: '2021-12-12' },
-    { code: 'PDZ110003', item: '제증명수수료/진료기록(영상)/필름', classification: '필름', price: '5,000', minPrice: '', maxPrice: '', note: '', updated: '2021-12-13' },
-    { code: 'PDZ110004', item: '제증명수수료/진료기록(영상)/CD', classification: 'CD', price: '10,000', minPrice: '', maxPrice: '', note: '', updated: '2021-12-14' },
-    { code: 'PDZ160000', item: '제증명수수료/제증명서 사본', classification: '제증명사본', price: '1,000', minPrice: '', maxPrice: '', note: '', updated: '2021-12-15' },
+    { code: 'UW3021017', item: '牙科处置：手术费/牙结石清除/1/3颌', classification: '牙结石清除 1/3', price: '10,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
+    { code: 'UW3021027', item: '牙科处置：手术费/牙结石清除/上颌', classification: '牙结石清除 上颌', price: '25,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
+    { code: 'UW3021037', item: '牙科处置：手术费/牙结石清除/下颌', classification: '牙结石清除 下颌', price: '25,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
+    { code: 'UW3021047', item: '牙科处置：手术费/牙结石清除/全颌', classification: '牙结石清除 全颌', price: '70,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
+    { code: 'UZ0040014', item: '牙科处置：手术费/嵌体(Inlay)及高嵌体(Onlay)', classification: 'ceramic inlay', price: '300,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
+    { code: 'U02390000', item: '牙科处置：手术费/光固化复合树脂充填/龋齿-1面', classification: '树脂 龋齿1面', price: '100,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
+    { code: 'U02400000', item: '牙科处置：手术费/光固化复合树脂充填/龋齿-2面', classification: '树脂 2面', price: '100,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
+    { code: 'U02410000', item: '牙科处置：手术费/光固化复合树脂充填/龋齿-3面以上', classification: '树脂 3面以上', price: '150,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
+    { code: 'UB0010051', item: '牙冠修复费/牙科种植体(每颗)/Zirconia', classification: '种植牙 zir', price: '', minPrice: '890,000', maxPrice: '1,290,000', note: '', updated: '2024-01-01' },
+    { code: 'UW609F350', item: '牙冠修复费/牙冠/Zirconia', classification: 'zirconia', price: '500,000', minPrice: '', maxPrice: '', note: 'core另算', updated: '2024-01-01' },
+    { code: 'PDZ010000', item: '各类证明手续费/诊断书/一般', classification: '一般诊断书', price: '20,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
+    { code: 'PDZ090007', item: '各类证明手续费/确认书/诊疗', classification: '诊疗确认书', price: '3,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
   ];
 
   return (
     <div className="space-y-4">
       <div className="bg-blue-50 p-4 rounded-lg text-sm text-gray-700">
-        <p className="font-semibold mb-2">비급여 진료비용 안내</p>
+        <p className="font-semibold mb-2">非保险诊疗费用说明</p>
         <p className="text-xs leading-relaxed">
-          본 비급여 진료비용은 2021년 11월 기준으로 작성되었으며, 환자의 구강 상태 및 사용 재료에 따라 변동될 수 있습니다.
-          정확한 진료비용은 내원 시 상담을 통해 안내드립니다.
+          本非保险诊疗费用以2024年标准编制，根据患者口腔状态及使用材料可能有所变动。
+          确切的诊疗费用请来院咨询时告知。
         </p>
       </div>
 
       <div className="overflow-x-auto -mx-6 px-6">
         <table className="w-full text-xs border-collapse">
           <thead>
-            <tr className="bg-[#6b8cce] text-white">
-              <th className="border border-gray-300 px-2 py-2 text-left min-w-[100px]">코드</th>
-              <th className="border border-gray-300 px-2 py-2 text-left min-w-[200px]">중분류 / 소분류 / 상세분류</th>
-              <th className="border border-gray-300 px-2 py-2 text-left min-w-[120px]">의료기관 사용명칭</th>
-              <th className="border border-gray-300 px-2 py-2 text-right min-w-[80px]">비용</th>
-              <th className="border border-gray-300 px-2 py-2 text-right min-w-[80px]">최저비용</th>
-              <th className="border border-gray-300 px-2 py-2 text-right min-w-[80px]">최고비용</th>
-              <th className="border border-gray-300 px-2 py-2 text-left min-w-[150px]">특이사항</th>
-              <th className="border border-gray-300 px-2 py-2 text-center min-w-[90px]">최종변경일</th>
+            <tr className="bg-[#008095] text-white">
+              <th className="border border-gray-300 px-2 py-2 text-left min-w-[100px]">代码</th>
+              <th className="border border-gray-300 px-2 py-2 text-left min-w-[200px]">中分类 / 小分类</th>
+              <th className="border border-gray-300 px-2 py-2 text-left min-w-[120px]">使用名称</th>
+              <th className="border border-gray-300 px-2 py-2 text-right min-w-[80px]">费用</th>
+              <th className="border border-gray-300 px-2 py-2 text-right min-w-[80px]">最低费用</th>
+              <th className="border border-gray-300 px-2 py-2 text-right min-w-[80px]">最高费用</th>
+              <th className="border border-gray-300 px-2 py-2 text-left min-w-[80px]">备注</th>
             </tr>
           </thead>
           <tbody>
@@ -393,16 +414,15 @@ function NonInsurancePrices() {
                 <td className="border border-gray-300 px-2 py-2">{item.item}</td>
                 <td className="border border-gray-300 px-2 py-2">{item.classification}</td>
                 <td className="border border-gray-300 px-2 py-2 text-right font-semibold">
-                  {item.price ? `${item.price}원` : '-'}
+                  {item.price ? `${item.price}韩元` : '-'}
                 </td>
                 <td className="border border-gray-300 px-2 py-2 text-right">
-                  {item.minPrice ? `${item.minPrice}원` : '-'}
+                  {item.minPrice ? `${item.minPrice}韩元` : '-'}
                 </td>
                 <td className="border border-gray-300 px-2 py-2 text-right">
-                  {item.maxPrice ? `${item.maxPrice}원` : '-'}
+                  {item.maxPrice ? `${item.maxPrice}韩元` : '-'}
                 </td>
                 <td className="border border-gray-300 px-2 py-2 text-xs text-gray-600">{item.note}</td>
-                <td className="border border-gray-300 px-2 py-2 text-center text-gray-500">{item.updated}</td>
               </tr>
             ))}
           </tbody>
@@ -410,9 +430,9 @@ function NonInsurancePrices() {
       </div>
 
       <div className="text-xs text-gray-500 space-y-1 pt-4">
-        <p>※ 본 비용은 건강보험이 적용되지 않는 비급여 항목입니다.</p>
-        <p>※ 진료 내용 및 사용 재료에 따라 실제 비용은 달라질 수 있습니다.</p>
-        <p>※ 정확한 비용은 진료 상담 시 안내해 드립니다.</p>
+        <p>※ 本费用为不适用健康保险的非保险项目。</p>
+        <p>※ 根据诊疗内容及使用材料，实际费用可能有所不同。</p>
+        <p>※ 确切费用将在诊疗咨询时告知。</p>
       </div>
     </div>
   );

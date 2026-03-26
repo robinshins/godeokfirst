@@ -6,72 +6,100 @@ export default function TreatmentSection() {
     {
       icon: '/images/implant-icon.png',
       iconBg: 'bg-blue-50',
-      title: 'Бүрэн имплант ба имплант',
-      subtitle: 'Пусан Нам-гу дүүрэгт хамгийн их имплант суурилуулсан',
-      description: 'Компьютер шинжилгээгээр нарийн төвөгтэй дижитал гайд хагалгааг 10 жилийн хариуцлагатайгаар гүйцэтгэнэ.',
+      title: 'Имплант',
+      subtitle: 'Дижитал чиглүүлэгчтэй имплант мэс засал',
+      description: 'Компьютерийн шинжилгээгээр өндөр түвшний дижитал чиглүүлэгчтэй мэс заслаар аюулгүй, тав тухтай, эцэс хүртэл хариуцлага хүлээнэ.',
       features: [
-        'Нарийн төвөгтэй дижитал гайд хагалгаа',
-        'Ухамсрын тайвшруулах нойрсуулах хагалгаа',
-        'Хагалгааны дараа шууд түр шүд суурилуулах',
-        'Ерөнхий эмч биечлэн хагалгаа хийнэ',
-        'Дотоодын хамгийн том дижитал тоног төхөөрөмжтэй'
+        'Өндөр түвшний дижитал чиглүүлэгчтэй мэс засал',
+        'Ухаан алдуулах аргаар унтуулгын мэс засал',
+        'Мэс заслын дараа шууд түр шүд суулгах',
+        'Ерөнхий эмч шууд мэс засал хийнэ',
+        'Дижитал тоног төхөөрөмж бүрэн хангагдсан'
       ],
-      link: '/mn/implant'
+      link: '/implant'
     },
     {
-      icon: '/icons/whitening.svg',
-      iconBg: 'bg-purple-50',
-      title: 'Шүд цайруулах ба Ламинат',
-      subtitle: 'Хамгийн дээд зэрэглэлийн тоног төхөөрөмжтэй',
-      description: 'Аюулгүй бөгөөд үр дүнтэй шүд цайруулах үйлчилгээ\nШүдний чулуу цэвэрлэгээтэй хамт хийвэл 50% хямдарна.',
+      icon: '/icons/gum.svg',
+      iconBg: 'bg-indigo-50',
+      title: 'Хиймэл шүд / Бүх имплант',
+      subtitle: 'Хувийн нарийвчилсан сэргээн засал',
+      description: 'Тав тухтай, байгалийн хиймэл шүднээс\nбүх имплант хүртэл хувийн загвар',
       features: [
-        'Нэг удаагийн эмчилгээгээр шууд үр дүн',
-        'Шүдэнд гэмтэл багатай',
-        'Боломжийн үнэ',
-        'Мэргэжлийн цайруулалт ба Ламинат боломжтой'
+        'Нарийвчилсан хувийн хиймэл шүд хийх',
+        'Бүх имплант (All-on-4/6)',
+        'Имплант хиймэл шүд (овердентур)',
+        'Даатгалд хамрагдах хиймэл шүд боломжтой'
       ],
-      link: '/mn/whitening'
-    },
-    {
-      icon: '/icons/extraction.svg',
-      iconBg: 'bg-green-50',
-      title: 'Агшин зуурын шүд авалт',
-      subtitle: 'Аюулгүй бөгөөд хурдан шүд авалт',
-      description: '3D CT-ээр нарийн оношилгоо хийнэ\nМэдрэлийн судсыг гэмтээхгүйгээр аюулгүй авна.',
-      features: [
-        'Өвдөлт багатай мэдээ алдуулалт',
-        'Хурдан эдгэрэлт',
-        'Дараах нарийн хяналт'
-      ],
-      link: '/mn/wisdom-tooth'
+      link: '/denture'
     },
     {
       icon: '/icons/cavity.svg',
       iconBg: 'bg-orange-50',
-      title: 'Цоорол ба Сувгийн эмчилгээ',
-      subtitle: 'Төрөлх шүдийг хадгалах мэргэжилтэн',
-      description: 'Шүдийг авахаас илүү хадгалах эмчилгээ\nМэргэжлийн эмчийн нарийн эмчилгээ',
+      title: 'Цоорол эмчилгээ & Мэдрэлийн эмчилгээ',
+      subtitle: 'Байгалийн шүд хадгалах мэргэжилтэн',
+      description: 'Авахын оронд аврах эмчилгээ\nНэгдсэн шүдний мэргэжилтний нарийвчилсан эмчилгээ',
       features: [
-        'Микроскопоор нарийн оношилгоо',
-        'Q-ray ашиглан цоорлыг илрүүлэх',
-        'Өвдөлт багатай сувгийн эмчилгээ',
+        'Нарийвчилсан цоорол оношлогоо',
+        'Өвдөлт намдаах мэдрэлийн эмчилгээ',
+        'Байгалийн шүд хадгалах',
         'Даатгалд хамрагдана'
       ],
-      link: '/mn/cavity-treatment'
+      link: '/cavity-treatment'
+    },
+    {
+      icon: '/icons/extraction.svg',
+      iconBg: 'bg-green-50',
+      title: 'Сойз шүд авах',
+      subtitle: 'Аюулгүй, шуурхай авалт',
+      description: '3D CT нарийвчилсан оношлогоогоор\nмэдрэл гэмтээхгүйгээр аюулгүй авалт',
+      features: [
+        'Өвдөлт намдаах мэдээгүйжүүлэг хийх',
+        'Хурдан сэргэх',
+        'Нягт нямбай дараа арчилгаа'
+      ],
+      link: '/wisdom-tooth'
     },
     {
       icon: '/icons/gum.svg',
       iconBg: 'bg-pink-50',
-      title: 'Буйлны эмчилгээ ба Чулуу цэвэрлэгээ',
-      subtitle: 'Биеийн эрүүл мэндийн эхлэл',
-      description: 'Насанд хүрэгчдийн 80% нь буйлны өвчтэй байдаг\nНасан туршдаа эрүүл шүдтэй байх арчилгаа',
+      title: 'Буйлны эмчилгээ & Скейлинг',
+      subtitle: 'Бие бүхлийн эрүүл мэндийн эхлэл',
+      description: 'Насанд хүрэгчдийн 80% өвчилдөг буйлны өвчин\nТогтмол арчилгаагаар насан туршдаа эрүүл шүд',
       features: [
-        'NSK varios 970 тусгай төхөөрөмж',
-        'Perioclean арчилгаа',
-        'Өвдөлт багатай эмчилгээ',
+        'Тусгай тоног төхөөрөмжийн эмчилгээ',
+        'Периоклин арчилгаа',
+        'Өвдөлт намдаах эмчилгээ',
         'Жилд 1 удаа даатгалд хамрагдана'
       ],
-      link: '/mn/gum-care'
+      link: '/gum-care'
+    },
+    {
+      icon: '/icons/gum.svg',
+      iconBg: 'bg-indigo-50',
+      title: 'Эрүү үений эмчилгээ',
+      subtitle: 'Эрүү үений өвдөлт · Амаа нээх бэрхшээл',
+      description: 'Эрүүнээс чимээ гарч байна уу?\nНарийвчилсан оношлогооны дараа хувийн эмчилгээ хийнэ',
+      features: [
+        'Эрүү үений нарийвчилсан оношлогоо',
+        'Зуурлын тогтворжуулагч (сплинт)',
+        'Физик эмчилгээ · Эмийн эмчилгээ',
+        'Нэгдсэн шүдний мэргэжилтэн шууд эмчилнэ'
+      ],
+      link: '/tmj'
+    },
+    {
+      icon: '/icons/whitening.svg',
+      iconBg: 'bg-purple-50',
+      title: 'Шүд цайруулга',
+      subtitle: 'Дээд зэргийн тоног төхөөрөмжтэй',
+      description: 'Аюулгүй, үр дүнтэй цайруулга\nСкейлингтэй хамт хөнгөлөлттэй',
+      features: [
+        '1 удаагийн эмчилгээгээр шууд үр дүн',
+        'Шүд гэмтээхгүй',
+        'Боломжийн үнэ',
+        'Osstem Beautis систем'
+      ],
+      link: '/whitening'
     }
   ];
 
@@ -80,17 +108,17 @@ export default function TreatmentSection() {
       <div className="max-w-[375px] mx-auto px-4 py-12">
         {/* Section Header */}
         <div className="flex flex-col gap-5 items-center justify-center relative shrink-0 w-full mb-10">
-          <div className="h-8 relative shrink-0 w-40">
+          <div className="h-11 relative shrink-0 overflow-hidden">
             <Image
-              src="/icons/Logo_black.svg"
-              alt="Kyungsung Medis Dental Clinic"
-              width={160}
-              height={32}
-              className="w-full h-full"
+              src="/고덕퍼스트치과-로고-(블랙).png"
+              alt="고덕퍼스트치과"
+              width={375}
+              height={84}
+              className="h-20 w-auto object-contain -mt-[18px]"
             />
           </div>
-          <h2 className="font-bold leading-[1.35] not-italic text-[36px] text-black text-center tracking-[-0.72px] w-full" style={{ fontFamily: 'Noto Sans, sans-serif' }}>
-            Мэргэжлийн эмчилгээ
+          <h2 className="font-bold leading-[1.35] not-italic text-[36px] text-black text-center tracking-[-0.72px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+            Мэргэжлийн эмчилгээний чиглэл
           </h2>
         </div>
 
@@ -106,14 +134,14 @@ export default function TreatmentSection() {
               {/* Card Header - Icon + Title */}
               <div className="relative mb-12 pt-10">
                 <div className="flex flex-col gap-4">
-                  {/* Icon Box */}
+                  {/* Icon Box - 80x80 */}
                   <div className="w-20 h-20 rounded-2xl flex items-center justify-center p-2">
                     <Image
                       src={treatment.icon}
                       alt={treatment.title}
                       width={64}
                       height={64}
-                      className="w-full h-full object-contain"
+                      className="h-20 w-auto object-contain -mt-[18px]"
                     />
                   </div>
 
@@ -126,16 +154,11 @@ export default function TreatmentSection() {
                       <p className="text-[17px] font-bold text-[#727582] leading-[1.5] tracking-[-0.36px]">
                         {treatment.subtitle}
                       </p>
-                      {index === 0 && (
-                        <p className="text-[13px] text-[#9a9ca8] leading-[1.5] tracking-[-0.28px]">
-                          *Компьютер шинжилгээнд суурилсан дижитал гайд хагалгаанд үндэслэв
-                        </p>
-                      )}
                     </div>
                   </div>
                 </div>
 
-                {/* Arrow Button */}
+                {/* Arrow Button - 64x64 - Absolute positioned */}
                 {treatment.link ? (
                   <Link
                     href={treatment.link}
@@ -146,7 +169,7 @@ export default function TreatmentSection() {
                       src="/icons/arrow-right.svg"
                       alt="Дэлгэрэнгүй"
                       width={32}
-                      height={32}
+                      height={84}
                     />
                   </Link>
                 ) : (
@@ -158,7 +181,7 @@ export default function TreatmentSection() {
                       src="/icons/arrow-right.svg"
                       alt="Дэлгэрэнгүй"
                       width={32}
-                      height={32}
+                      height={84}
                     />
                   </button>
                 )}
@@ -190,7 +213,7 @@ export default function TreatmentSection() {
                 </div>
               </div>
 
-              {/* Bottom padding */}
+              {/* Bottom padding for card */}
               <div className="pb-10"></div>
             </div>
           ))}
@@ -199,4 +222,3 @@ export default function TreatmentSection() {
     </div>
   );
 }
-

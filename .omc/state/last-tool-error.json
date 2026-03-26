@@ -1,7 +1,7 @@
 {
   "tool_name": "Read",
-  "tool_input_preview": "{\"file_path\":\"/Users/singyuseob/Dev/dentist_goduk/src/lib/treatment-images.ts\"}",
-  "error": "File content (20591 tokens) exceeds maximum allowed tokens (10000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole file.",
-  "timestamp": "2026-03-22T16:30:40.761Z",
+  "tool_input_preview": "{\"file_path\":\"/Users/singyuseob/.claude/projects/-Users-singyuseob-Dev-dentist-goduk/8a327224-e93f-4337-8eaf-b605485d16af/tool-results/toolu_01XmyC3HR9tnmrDyLRrPzcU7.txt\"}",
+  "error": "File content (11554 tokens) exceeds maximum allowed tokens (10000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole file.",
+  "timestamp": "2026-03-26T05:37:17.406Z",
   "retry_count": 1
 }

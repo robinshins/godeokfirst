@@ -23,12 +23,12 @@ export default function TreatmentMethodsSection() {
           <div className="flex flex-col gap-4 items-center justify-center w-full">
             <div className="flex flex-col gap-3 items-center justify-center text-center w-full">
               <h2 className="font-['Pretendard_JP'] font-bold text-[32px] leading-[1.35] tracking-[-0.64px] text-black w-full">
-                การรักษาที่เรารักษาฟันไว้
-              </h2>
-              <p className="font-['Pretendard_JP'] font-semibold text-base leading-[1.4] tracking-[-0.32px] text-[#727582] w-full">
-                มีขั้นตอนและอุปกรณ์รักษา<br />
-                เพื่อผู้ป่วยและการรักษาฟันธรรมชาติ
-              </p>
+                  วิธีการรักษาและอุปกรณ์
+                </h2>
+                <p className="font-['Pretendard_JP'] font-semibold text-base leading-[1.4] tracking-[-0.32px] text-[#727582] w-full">
+                  เลือกวิธีรักษาที่เหมาะกับสภาพ<br />
+                  และเพิ่มความสมบูรณ์แบบด้วยอุปกรณ์ที่แม่นยำ
+                </p>
             </div>
           </div>
 
@@ -47,7 +47,7 @@ export default function TreatmentMethodsSection() {
                       <div className="flex items-start gap-0 w-full">
                         <div className="shrink-0 w-6 h-6">
                           <Image
-                            src="/icons/check-blue.svg"
+                            src="/icons/check-teal.svg"
                             alt=""
                             width={24}
                             height={24}
@@ -55,10 +55,10 @@ export default function TreatmentMethodsSection() {
                         </div>
                         <div className="flex flex-col gap-1 items-start justify-center">
                           <p className="font-['Pretendard_JP'] font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black whitespace-nowrap">
-                            รักษาฟันผุระยะแรก
+                            รักษาฟันผุระยะเริ่มต้น
                           </p>
                           <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582] whitespace-nowrap">
-                            วินิจฉัยด้วย Qray ค้นหาฟันผุที่ซ่อนอยู่
+                            วินิจฉัยอย่างแม่นยำค้นพบแม้ฟันผุที่ซ่อนอยู่
                           </p>
                         </div>
                       </div>
@@ -75,10 +75,10 @@ export default function TreatmentMethodsSection() {
                         </div>
                         <div className="flex flex-col gap-1 items-start justify-center">
                           <p className="font-['Pretendard_JP'] font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black whitespace-nowrap">
-                            อุดฟันด้วยเรซิน
+                            อุดเรซิน
                           </p>
                           <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582] whitespace-nowrap">
-                            บูรณะให้สวยงามเหมือนฟันจริง
+                            บูรณะเพื่อความสวยงามด้วยสีเดียวกับฟันธรรมชาติ
                           </p>
                         </div>
                       </div>
@@ -98,7 +98,7 @@ export default function TreatmentMethodsSection() {
                             อินเลย์ · ออนเลย์
                           </p>
                           <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582] whitespace-nowrap">
-                            รักษาฟันผุขนาดใหญ่โดยไม่ต้องถอน
+                            รักษาอนุรักษ์ฟันอย่างแม่นยำแม้ฟันผุขนาดใหญ่โดยไม่ต้องถอนฟัน
                           </p>
                         </div>
                       </div>
@@ -119,7 +119,7 @@ export default function TreatmentMethodsSection() {
                       <div className="flex items-start gap-0 w-full">
                         <div className="shrink-0 w-6 h-6">
                           <Image
-                            src="/icons/check-blue.svg"
+                            src="/icons/check-teal.svg"
                             alt=""
                             width={24}
                             height={24}
@@ -130,7 +130,7 @@ export default function TreatmentMethodsSection() {
                             บรรเทาอาการปวด
                           </p>
                           <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582] whitespace-nowrap">
-                            กำจัดอาการปวดฟันรุนแรง กลับสู่ชีวิตปกติ
+                            กำจัดอาการปวดฟันรุนแรงเพื่อกลับสู่ชีวิตประจำวันอย่างสบาย
                           </p>
                         </div>
                       </div>
@@ -147,15 +147,15 @@ export default function TreatmentMethodsSection() {
                         </div>
                         <div className="flex flex-col gap-1 items-start justify-center flex-1">
                           <p className="font-['Pretendard_JP'] font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black whitespace-nowrap">
-                            รักษาฟันธรรมชาติ
+                            อนุรักษ์ฟัน
                           </p>
                           <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582] whitespace-nowrap">
-                            รักษาฟันธรรมชาติโดยไม่ต้องถอน
+                            รักษาฟันธรรมชาติโดยไม่ต้องถอนฟัน
                           </p>
                         </div>
                       </div>
 
-                      {/* 미세 현미경 시술 */}
+                      {/* 정밀 신경 치료 */}
                       <div className="flex items-start gap-0 w-full">
                         <div className="shrink-0 w-6 h-6">
                           <Image
@@ -167,10 +167,10 @@ export default function TreatmentMethodsSection() {
                         </div>
                         <div className="flex flex-col gap-1 items-start justify-center flex-1">
                           <p className="font-['Pretendard_JP'] font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black whitespace-nowrap">
-                            รักษาด้วยกล้องไมโครสโคป
+                            รักษารากฟันอย่างแม่นยำ
                           </p>
                           <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582] whitespace-nowrap">
-                            รักษาอย่างแม่นยำโดยผู้เชี่ยวชาญ
+                            ทันตแพทย์เฉพาะทางทันตกรรมบูรณาการรักษาด้วยตนเอง
                           </p>
                         </div>
                       </div>
@@ -187,51 +187,25 @@ export default function TreatmentMethodsSection() {
                     อุปกรณ์เฉพาะทาง
                   </h3>
 
-                  {/* 큐레이 진단 장비 */}
-                  <div className="flex gap-[22px] items-center w-full">
-                    <div className="bg-white border border-[#e9ebf1] rounded-2xl shrink-0 w-[110px] h-[110px] overflow-hidden relative">
-                      <div className="">
+                  {/* 트리오스5 구강 스캐너 - 강조 섹션 */}
+                  <div className="flex flex-col gap-5 items-start w-full">
+                    <div className="flex gap-[22px] items-center w-full">
+                      <div className="bg-white border border-[#e9ebf1] rounded-2xl shrink-0 w-[110px] h-[110px] overflow-hidden relative">
                         <Image
-                          src="/images/qray-photo2.jpg"
-                          alt="เครื่อง Qray"
+                          src="/images/트리오스5.jpg"
+                          alt="เครื่องสแกนช่องปาก Trios 5"
                           fill
-                          className="object-contain"
+                          className="object-cover"
                         />
                       </div>
-                    </div>
-                    <div className="flex flex-col gap-2 items-start flex-1">
-                      <p className="font-['Pretendard_JP'] font-bold text-[20px] leading-[1.5] tracking-[-0.4px] text-[#006aff] w-full">
-                        เครื่อง Qray
-                      </p>
-                      <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-black w-full">
-                        ใช้แสงที่ปลอดภัย<br />
-                        ค้นหาฟันผุที่ซ่อนอยู่
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* 미세 현미경 - 강조 섹션 */}
-                  <div className="flex flex-col gap-5 items-start w-full">
-                    {/* 헤더 */}
-                    <div className="flex flex-col gap-3 items-start w-full">
-                      <div className="flex gap-[22px] items-center w-full">
-                        <div className="bg-white border border-[#e9ebf1] rounded-2xl shrink-0 w-[110px] h-[110px] overflow-hidden relative">
-                          <Image
-                            src="/images/microscope.jpg"
-                            alt="กล้องไมโครสโคป"
-                            fill
-                            className="object-cover"
-                          />
-                        </div>
-                        <div className="flex flex-col gap-2 items-start flex-1">
-                          <p className="font-['Pretendard_JP'] font-bold text-[20px] leading-[1.5] tracking-[-0.4px] text-[#006aff] w-full">
-                            รักษาด้วยกล้องไมโครสโคป
-                          </p>
-                          <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-black w-full">
-                            มองเห็นรายละเอียดเล็กๆ<br />
-                            ที่ตาเปล่าไม่สามารถเห็นได้
-                          </p>
-                        </div>
+                      <div className="flex flex-col gap-2 items-start flex-1">
+                        <p className="font-['Pretendard_JP'] font-bold text-[20px] leading-[1.5] tracking-[-0.4px] text-[#008095] w-full">
+                          เครื่องสแกนช่องปาก Trios 5
+                        </p>
+                        <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-black w-full">
+                          เก็บข้อมูลอย่างแม่นยำด้วยเครื่องสแกนดิจิทัลรุ่นล่าสุด<br />
+                          โดยไม่ต้องพิมพ์ปากที่ไม่สะดวก
+                        </p>
                       </div>
                     </div>
 
@@ -240,114 +214,42 @@ export default function TreatmentMethodsSection() {
                       <div className="flex flex-col gap-3 items-start w-full">
                         <div className="flex items-start gap-2 w-full">
                           <div className="shrink-0 w-5 h-5 mt-0.5">
-                            <Image
-                              src="/icons/check-blue.svg"
-                              alt=""
-                              width={20}
-                              height={20}
-                            />
+                            <Image src="/icons/check-teal.svg" alt="" width={20} height={20} />
                           </div>
                           <p className="font-['Pretendard_JP'] font-medium text-[15px] leading-[1.5] tracking-[-0.3px] text-[#2d3643]">
-                            วินิจฉัยฟันผุ/ฟันแตกได้อย่างแม่นยำ
+                            สแกน 3D ความเร็วสูงโดยไม่ต้องใช้วัสดุพิมพ์ปากเหนียว
                           </p>
                         </div>
                         <div className="flex items-start gap-2 w-full">
                           <div className="shrink-0 w-5 h-5 mt-0.5">
-                            <Image
-                              src="/icons/check-blue.svg"
-                              alt=""
-                              width={20}
-                              height={20}
-                            />
+                            <Image src="/icons/check-teal.svg" alt="" width={20} height={20} />
                           </div>
                           <p className="font-['Pretendard_JP'] font-medium text-[15px] leading-[1.5] tracking-[-0.3px] text-[#2d3643]">
-                            ขยายฟันได้ถึง 25 เท่าเพื่อรักษาอย่างแม่นยำ
+                            ผลิตชิ้นงานครอบฟันที่แม่นยำยิ่งขึ้นด้วยข้อมูลดิจิทัล
                           </p>
                         </div>
                         <div className="flex items-start gap-2 w-full">
                           <div className="shrink-0 w-5 h-5 mt-0.5">
-                            <Image
-                              src="/icons/check-blue.svg"
-                              alt=""
-                              width={20}
-                              height={20}
-                            />
+                            <Image src="/icons/check-teal.svg" alt="" width={20} height={20} />
                           </div>
                           <p className="font-['Pretendard_JP'] font-medium text-[15px] leading-[1.5] tracking-[-0.3px] text-[#2d3643]">
-                            ลดการกลับมาเป็นซ้ำและผลข้างเคียง
+                            สแกนทันทีหลังกำจัดฟันผุเพื่อผลิตชิ้นงานเฉพาะบุคคล
                           </p>
                         </div>
                         <div className="flex items-start gap-2 w-full">
                           <div className="shrink-0 w-5 h-5 mt-0.5">
-                            <Image
-                              src="/icons/check-blue.svg"
-                              alt=""
-                              width={20}
-                              height={20}
-                            />
+                            <Image src="/icons/check-teal.svg" alt="" width={20} height={20} />
                           </div>
                           <p className="font-['Pretendard_JP'] font-medium text-[15px] leading-[1.5] tracking-[-0.3px] text-[#2d3643]">
-                            ลดความเสียหายต่อเนื้อเยื่อโดยรอบ
+                            ประสบการณ์การรักษาที่สบาย ลดความคลาดเคลื่อนให้น้อยที่สุด
                           </p>
                         </div>
                       </div>
                     </div>
 
-                    {/* 설명 박스 */}
-                    <div className="bg-gradient-to-r from-[#006aff]/10 to-[#0099ff]/10 p-4 rounded-xl w-full border border-[#006aff]/20">
+                    <div className="bg-gradient-to-r from-[#008095]/10 to-[#00aabb]/10 p-4 rounded-xl w-full border border-[#008095]/20">
                       <p className="font-['Pretendard_JP'] font-medium text-[14px] leading-[1.6] tracking-[-0.28px] text-[#2d3643]">
-                        กล้องไมโครสโคปมีเฉพาะในโรงพยาบาลมหาวิทยาลัยและคลินิกบางแห่งเท่านั้น ช่วยให้สามารถทำการรักษาที่ซับซ้อนได้อย่างมีประสิทธิภาพโดยแสดงรายละเอียดที่ตาเปล่ามองไม่เห็น
-                      </p>
-                    </div>
-
-                    {/* 실제 치료 사례 이미지 */}
-                    <div className="flex flex-col gap-3 items-start w-full">
-                      <h5 className="font-['Pretendard_JP'] font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black">
-                        สิ่งที่เห็นผ่านกล้องไมโครสโคป
-                      </h5>
-                      <div className="grid grid-cols-3 gap-2 w-full">
-                        <div className="aspect-square rounded-xl overflow-hidden relative border border-[#e9ebf1]">
-                          <Image
-                            src="/images/microscope-nerve-canal.webp"
-                            alt="พบคลองรากฟัน"
-                            fill
-                            className="object-cover"
-                          />
-                        </div>
-                        <div className="aspect-square rounded-xl overflow-hidden relative border border-[#e9ebf1]">
-                          <Image
-                            src="/images/microscope-root-inflammation.webp"
-                            alt="พบสาเหตุการอักเสบที่รากฟัน"
-                            fill
-                            className="object-cover"
-                          />
-                        </div>
-                        <div className="aspect-square rounded-xl overflow-hidden relative border border-[#e9ebf1]">
-                          <Image
-                            src="/images/microscope-crack-found.webp"
-                            alt="พบรอยร้าว"
-                            fill
-                            className="object-cover"
-                          />
-                        </div>
-                      </div>
-                      <div className="grid grid-cols-3 gap-2 w-full">
-                        <p className="font-['Pretendard_JP'] font-medium text-[12px] leading-[1.4] tracking-[-0.24px] text-[#727582] text-center">
-                          พบคลองรากฟัน
-                        </p>
-                        <p className="font-['Pretendard_JP'] font-medium text-[12px] leading-[1.4] tracking-[-0.24px] text-[#727582] text-center">
-                          พบสาเหตุการอักเสบ<br />ที่รากฟัน
-                        </p>
-                        <p className="font-['Pretendard_JP'] font-medium text-[12px] leading-[1.4] tracking-[-0.24px] text-[#727582] text-center">
-                          พบรอยร้าว
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* 강조 메시지 */}
-                    <div className="bg-[#f0f7ff] px-4 py-3 rounded-xl w-full">
-                      <p className="font-['Pretendard_JP'] font-semibold text-[14px] leading-[1.5] tracking-[-0.28px] text-[#006aff]">
-                        💡 รับส่งต่อเคสรักษารากฟันที่ยากจากคลินิกอื่น
+                        Trios 5 เป็นเครื่องสแกนช่องปากรุ่นล่าสุดของ 3Shape ที่สามารถเก็บข้อมูลรูปทรงฟันได้อย่างแม่นยำแม้ในสภาพแวดล้อมที่มีความชื้น ทำให้การรักษาอินเลย์ ออนเลย์ และครราวน์มีความแม่นยำและสะดวกสบายมากยิ่งขึ้น
                       </p>
                     </div>
                   </div>

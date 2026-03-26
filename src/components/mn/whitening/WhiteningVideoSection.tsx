@@ -5,8 +5,8 @@ export default function WhiteningVideoSection() {
         <div className="flex flex-col gap-10 items-center w-full">
           {/* Title */}
           <h2 className="font-bold text-[32px] leading-[1.35] tracking-[-0.02em] text-black text-center w-full">
-            Шүдний цайруулалтын бүх зүйл<br />
-            Энэ видеонд бүгдийг хэлж өгнө
+            шүдний эмнэлэг цайруулах бүгд<br />
+ 
           </h2>
 
           {/* YouTube Video */}
@@ -15,7 +15,7 @@ export default function WhiteningVideoSection() {
               width="100%"
               height="100%"
               src="https://www.youtube.com/embed/4hJI8OteG3Q"
-              title="Шүдний цайруулалтын видео"
+ title="шүдний эмнэлэг цайруулах"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
               className="absolute top-0 left-0 w-full h-full"

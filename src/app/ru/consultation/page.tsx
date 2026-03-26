@@ -1,21 +1,22 @@
-import { Metadata } from 'next';
-import ConsultationForm from '@/components/ru/ConsultationForm';
-import GNB from '@/components/ru/GNB';
-import DoctorIntroSection from '@/components/ru/consultation/DoctorIntroSection';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'Запись на консультацию - Стоматология Кёнсон Медис',
-  description: 'Бесплатная AI-консультация стоматолога с опытными специалистами. Получите персональные рекомендации по лечению.',
-  keywords: 'стоматологическая консультация, бесплатная консультация, AI консультация, корейская стоматология, стоматолог Пусан, эксперт стоматолог',
-  openGraph: {
-    title: 'Запись на консультацию - Стоматология Кёнсон Медис',
-    description: 'Бесплатная AI-консультация стоматолога с опытными специалистами.',
-    type: 'website',
-    locale: 'ru_RU',
-  }
-};
+import { useEffect } from 'react';
+import ConsultationForm from '@/components/ConsultationForm';
+import GNB from '@/components/ru/GNB';
+import DoctorIntroSection from '@/components/consultation/DoctorIntroSection';
 
 export default function ConsultationPage() {
+  useEffect(() => {
+    // Meta Pixel event
+    if (typeof window !== 'undefined') {
+      const fbq = (window as { fbq?: (...args: unknown[]) => void }).fbq;
+      if (fbq) {
+        fbq('trackCustom', 'ViewCheckoutPage');
+        console.log('✅ Meta Pixel: ViewCheckoutPage 커스텀 이벤트 전송');
+      }
+    }
+  }, []);
+
   return (
     <div className="min-h-screen">
       <GNB />

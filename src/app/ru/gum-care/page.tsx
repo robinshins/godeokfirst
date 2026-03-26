@@ -3,6 +3,7 @@ import GNB from '@/components/ru/GNB';
 import FixedCTAButton from '@/components/ru/FixedCTAButton';
 import FooterSection from '@/components/ru/FooterSection';
 import HeroSection from '@/components/ru/gum-care/HeroSection';
+import DoctorMessageSection from '@/components/ru/gum-care/DoctorMessageSection';
 import StatsSection from '@/components/ru/gum-care/StatsSection';
 import VideoSection from '@/components/ru/gum-care/VideoSection';
 import RiskSection from '@/components/ru/gum-care/RiskSection';
@@ -14,45 +15,33 @@ import DoctorSection from '@/components/ru/DoctorSection';
 import WhyBestSection from '@/components/ru/WhyBestSection';
 import LocationSection from '@/components/ru/LocationSection';
 import FAQSection from '@/components/ru/FAQSection';
-import YouTubeSection from '@/components/ru/YouTubeSection';
 
 export const metadata: Metadata = {
-  title: 'Корея Пусан Лечение Десен Стоматология | Кёнсон Медис',
-  description: 'Профессиональное лечение пародонтита и десен. №1 в Намгу Пусан. Главный врач проводит скейлинг, глубокую чистку, современное цифровое оборудование.',
-  keywords: [
-    'лечение десен Корея',
-    'лечение десен Пусан',
-    'пародонтит Корея',
-    'скейлинг Корея',
-    'лечение пародонтоза Корея',
-    'гингивит лечение Корея',
-    'русскоговорящий стоматолог Корея',
-    'стоматологический туризм Корея'
-  ],
+  title: 'Gum Care & Scaling Godeok | Godeok First Dental',
+  description: 'Pyeongtaek Godeok Gum care & scaling specialist. Comprehensive Dentistry Specialist treats directly. Gum disease, periodontitis, scaling.',
   alternates: {
     canonical: 'https://gdfirstdent.com/ru/gum-care',
   },
   openGraph: {
-    title: 'Корея Пусан Лечение Десен Стоматология | Кёнсон Медис',
-    description: 'Профессиональное лечение пародонтита и десен. №1 в Намгу Пусан.',
+    title: 'Gum Care & Scaling Godeok | Godeok First Dental',
+    description: 'Pyeongtaek Godeok Gum care & scaling specialist. Comprehensive Dentistry Specialist treats directly.',
     url: 'https://gdfirstdent.com/ru/gum-care',
+    siteName: 'Godeok First Dental',
     type: 'website',
-    locale: 'ru_RU',
   },
 };
 
 export default function GumCarePage() {
   return (
-    <main className="min-h-screen bg-white overflow-x-hidden">
+    <main className="min-h-screen overflow-x-hidden">
       <GNB />
       <FixedCTAButton />
 
-      {/* Add spacing for fixed GNB */}
       <div className="h-[52px]" />
 
       <HeroSection />
+      <DoctorMessageSection />
       <StatsSection />
-      <VideoSection />
       <RiskSection />
       <PhilosophySection />
       <ComparisonSection />
@@ -62,12 +51,10 @@ export default function GumCarePage() {
       <DoctorSection />
       <WhyBestSection />
       <LocationSection />
-      <YouTubeSection />
       <FAQSection page="gum-care" />
 
-      {/* Footer */}
       <FooterSection />
+      <div className="h-[88px]" />
     </main>
   );
 }
-

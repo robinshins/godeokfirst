@@ -3,38 +3,74 @@ import Image from 'next/image';
 export default function ToothDiscolorationSection() {
   const causes = [
     {
-      title: 'กาแฟและเครื่องดื่ม',
-      description: 'สารแทนนินในชา กาแฟ และไวน์แดง ซึมเข้าสู่เนื้อฟัน',
-      image: '/images/cause-coffee.jpg'
+      image: '/icons/coffee.svg',
+      title: 'กาแฟ',
+      description: 'กาแฟที่ดื่มทุกวัน\nทำให้ฟันเหลือง'
     },
     {
-      title: 'การสูบบุหรี่',
-      description: 'คราบน้ำมันและนิโคตินทำให้ฟันเหลืองและหมองคล้ำ',
-      image: '/images/cause-smoking.jpg'
+      image: '/icons/smoking.svg',
+      title: 'สูบบุหรี่',
+      description: 'นิโคตินและทาร์\nเป็นตัวการหลักทำฟันเปลี่ยนสีค่ะ'
     },
     {
-      title: 'อายุที่มากขึ้น',
-      description: 'เคลือบฟันบางลงทำให้เห็นเนื้อฟันสีเหลืองด้านในชัดขึ้น',
-      image: '/images/cause-aging.jpg'
+      image: '/icons/wine.svg',
+      title: 'ไวน์',
+      description: 'แทนนินในไวน์แดง\nทำให้เกิดคราบสีที่ฟัน'
     }
   ];
 
   return (
-    <div className="bg-[#f8f9fa] w-full">
-      <div className="box-border flex flex-col gap-10 items-start px-4 py-[60px] relative w-full max-w-[430px] mx-auto">
-        <h2 className="font-bold leading-[1.35] text-[32px] text-black tracking-[-0.64px] text-center w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-          สาเหตุที่ทำให้<br />ฟันของคุณเปลี่ยนสี
-        </h2>
+    <div className="bg-[#21314E] w-full">
+      <div className="max-w-[375px] mx-auto px-4 py-[60px]">
+        {/* Section Header */}
+        <div className="flex flex-col gap-3 mb-[26px]">
+          <div className="flex flex-col gap-4 items-center justify-center w-full">
+            <div className="flex flex-col gap-3 items-center justify-center text-center text-white w-full">
+              <p className="font-['Nanum_Myeongjo'] font-extrabold text-[60px] leading-[0.2] tracking-[-3.6px] w-full">
+                &#x201C;
+              </p>
+              <h2 className="font-['Pretendard_JP'] font-bold text-[32px] leading-[1.35] tracking-[-0.64px] w-full">
+                สีฟันของคุณ<br />
+                สบายดีไหมคะ?
+              </h2>
+            </div>
+          </div>
+          <p className="font-['Pretendard_JP'] font-semibold text-[#e9ebf1] text-base leading-[1.4] tracking-[-0.32px] text-center">
+            หากมีนิสัยเหล่านี้ต่อเนื่อง<br />
+            ฟันอาจเปลี่ยนเป็นสีเหลืองได้ค่ะ
+          </p>
+        </div>
 
-        <div className="flex flex-col gap-8 w-full">
+        {/* Divider Line */}
+        <div className="bg-white/50 h-10 w-0.5 mx-auto mb-[26px]" />
+
+        {/* Causes Cards */}
+        <div className="flex flex-col gap-3 w-full">
           {causes.map((cause, index) => (
-            <div key={index} className="flex gap-4 p-4 rounded-2xl bg-white items-center shadow-sm">
-              <div className="w-24 h-24 shrink-0 rounded-xl overflow-hidden">
-                <Image src={cause.image} alt={cause.title} width={96} height={96} className="object-cover h-full" />
-              </div>
-              <div className="flex flex-col gap-1">
-                <h3 className="font-bold text-lg text-[#292a2f]" style={{ fontFamily: 'Pretendard, sans-serif' }}>{cause.title}</h3>
-                <p className="text-sm text-[#5d5f6d] leading-[1.4]" style={{ fontFamily: 'Pretendard, sans-serif' }}>{cause.description}</p>
+            <div
+              key={index}
+              className="bg-white border border-[#f3f6fb] rounded-[24px] p-6 w-full"
+            >
+              <div className="flex gap-[30px] items-center justify-center w-full">
+                {/* Image */}
+                <div className="relative shrink-0 w-20 h-20">
+                  <Image
+                    src={cause.image}
+                    alt={cause.title}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+
+                {/* Text Content */}
+                <div className="flex-1 flex flex-col gap-2">
+                  <h3 className="font-['Pretendard_JP'] font-bold text-[#37373e] text-[22px] leading-[1.4] tracking-[-0.44px]">
+                    {cause.title}
+                  </h3>
+                  <p className="font-['Pretendard_JP'] font-semibold text-[#5d5f6d] text-base leading-[1.4] tracking-[-0.32px] whitespace-pre-line">
+                    {cause.description}
+                  </p>
+                </div>
               </div>
             </div>
           ))}
@@ -43,4 +79,3 @@ export default function ToothDiscolorationSection() {
     </div>
   );
 }
-

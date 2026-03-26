@@ -1,21 +1,22 @@
-import { Metadata } from 'next';
-import ConsultationForm from '@/components/uz/ConsultationForm';
-import GNB from '@/components/uz/GNB';
-import DoctorIntroSection from '@/components/uz/consultation/DoctorIntroSection';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'Maslahat so\'rovi - Kyungsung Medis Stomatologiya',
-  description: 'Tajribali mutaxassislar bilan bepul AI stomatologik maslahat so\'rang. Shaxsiy davolash tavsiyalarini oling.',
-  keywords: 'stomatologik maslahat, bepul maslahat, AI maslahat, Koreya stomatologiyasi, Busan stomatologi, stomatologiya mutaxassisi',
-  openGraph: {
-    title: 'Maslahat so\'rovi - Kyungsung Medis Stomatologiya',
-    description: 'Tajribali mutaxassislar bilan bepul AI stomatologik maslahat so\'rang.',
-    type: 'website',
-    locale: 'uz_UZ',
-  }
-};
+import { useEffect } from 'react';
+import ConsultationForm from '@/components/ConsultationForm';
+import GNB from '@/components/uz/GNB';
+import DoctorIntroSection from '@/components/consultation/DoctorIntroSection';
 
 export default function ConsultationPage() {
+  useEffect(() => {
+    // Meta Pixel event
+    if (typeof window !== 'undefined') {
+      const fbq = (window as { fbq?: (...args: unknown[]) => void }).fbq;
+      if (fbq) {
+        fbq('trackCustom', 'ViewCheckoutPage');
+        console.log('✅ Meta Pixel: ViewCheckoutPage 커스텀 이벤트 전송');
+      }
+    }
+  }, []);
+
   return (
     <div className="min-h-screen">
       <GNB />

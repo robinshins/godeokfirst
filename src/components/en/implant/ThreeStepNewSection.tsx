@@ -7,26 +7,26 @@ export default function ThreeStepNewSection() {
     {
       icon: '/icons/tooth.svg',
       label: '1st Temporary',
-      title: 'Immediate Recovery',
-      description: 'Immediately after surgery, installed right away\nfor instant return to daily life'
+      title: 'Immediate Restoration',
+      description: 'Placed immediately after surgery\nso you can resume daily life right away'
     },
     {
       icon: '/icons/crown.svg',
-      label: '2nd Occlusion Stabilization',
-      title: 'Precision Occlusion Adjustment',
-      description: 'After 2 weeks, customized\nfine-tuning of occlusion state'
+      label: '2nd Bite Stabilization',
+      title: 'Precise Bite Adjustment',
+      description: 'After 2 weeks, customized\nfine-tuning of your bite'
     },
     {
       icon: '/icons/implant-group.svg',
       label: '3rd Final Temporary',
-      title: 'Perfect Occlusion Verification',
-      description: 'Before final prosthesis production\nverify perfect occlusion once again'
+      title: 'Perfect Bite Verification',
+      description: 'Before final prosthetics production\nverifying perfect bite one more time'
     },
     {
       icon: '/icons/tooth-shine.svg',
-      label: 'Final Prosthesis',
-      title: 'Lifetime Your Teeth',
-      description: 'Install perfectly personalized\nfinal prosthesis with all adjustments completed'
+      label: 'Final Prosthetics',
+      title: 'Your Lifetime Teeth',
+      description: 'Perfectly personalized final prosthetics\nplaced after all adjustments are complete'
     }
   ];
 
@@ -50,10 +50,10 @@ export default function ThreeStepNewSection() {
         {/* Logo */}
         <div className="h-6 overflow-clip relative shrink-0 w-[168px]">
           <Image
-            src="/icons/Logo_black.svg"
-            alt="Kyungsung Medis Dental Clinic"
-            width={168}
-            height={24}
+            src="/고덕퍼스트치과-로고-(블랙).png"
+            alt="Godeok First Dental"
+            width={375}
+            height={84}
             className="w-full h-full"
           />
         </div>
@@ -61,13 +61,13 @@ export default function ThreeStepNewSection() {
         {/* Title */}
         <div className="flex flex-col gap-3 items-center justify-center leading-[0] not-italic relative shrink-0 text-center w-full">
           <h2 className="font-bold leading-[1.35] text-[32px] text-black tracking-[-0.64px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-            Kyungsung Medis&apos; Unique<br />
-            3-Stage Temporary Teeth
+            Godeok First Dental&apos;s exclusive<br />
+            3-Step Temporary Teeth
           </h2>
           <p className="font-semibold leading-[1.4] text-[#727582] text-base tracking-[-0.32px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-            Not just finishing with one temporary teeth,<br />
-            but creating comfort like your own teeth<br />
-            through 3-stage precision adjustments
+            Not just one temporary tooth and done —<br />
+            through 3 stages of precise adjustment,<br />
+            we create comfort like your own teeth
           </p>
         </div>
       </div>
@@ -89,7 +89,7 @@ export default function ThreeStepNewSection() {
               </div>
 
               {/* Label */}
-              <p className="font-bold leading-[1.5] not-italic text-[#006aff] text-[17px] text-center tracking-[-0.34px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+              <p className="font-bold leading-[1.5] not-italic text-[#008095] text-[17px] text-center tracking-[-0.34px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
                 {step.label}
               </p>
 

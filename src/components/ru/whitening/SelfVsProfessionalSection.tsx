@@ -23,30 +23,30 @@ export default function SelfVsProfessionalSection() {
           <div className="flex flex-col gap-4 items-center justify-center w-full">
             <div className="flex flex-col gap-3 items-center justify-center text-center w-full">
               <h2 className="font-bold text-[32px] leading-[1.35] tracking-[-0.64px] text-black w-full">
-                Разница между домашним<br />
-                и профессиональным отбеливанием
+ домашний отбеливание <br />
+ стоматология и специалист отбеливание разница 
               </h2>
               <div className="font-semibold text-base leading-[1.4] tracking-[-0.32px] text-[#727582] w-full">
                 <p className="mb-0">
-                  В клинике используется <span className="text-[#006aff]">медицинский препарат</span>
+ стоматология и отбеливание <span className="text-[#008095]"> минут </span>
                 </p>
                 <p className="mb-0">
-                  <span className="text-[#006aff]">с высокой концентрацией перекиси водорода</span>
+ <span className="text-[#008095]">высококонцентрированный тоже перекись водорода</span> 
                 </p>
                 <p className="mb-0">
-                  При попадании на десны возможно повреждение, поэтому <span className="text-[#006aff]">специалист</span>
+ десна повреждение <span className="text-[#008095]">специалист</span>
                 </p>
                 <p className="mb-0">
-                  <span className="text-[#006aff]">обеспечивает полную защиту перед процедурой</span>
+ <span className="text-[#008095]">идеальный защита мераодин после процедура</span> безопасность 
                 </p>
-                <p>это гарантирует безопасность и мгновенный результат</p>
+ <p> эффект и может</p>
               </div>
             </div>
           </div>
 
           {/* Cards */}
           <div className="flex flex-col gap-10 w-full">
-            {/* Card 1: Self Whitening */}
+            {/* Card 1: Домашнее отбеливание */}
             <div className="bg-white border border-[#f3f6fb] rounded-[20px] w-full">
               <div className="flex flex-col items-center justify-center overflow-hidden rounded-[inherit] w-full">
                 <div className="flex flex-col gap-4 items-center justify-center p-6 w-full">
@@ -57,10 +57,10 @@ export default function SelfVsProfessionalSection() {
                   </div>
                   <div className="bg-[#f3f6fb] rounded-[16px] p-5 flex flex-col gap-[14px] w-full">
                     {[
-                      { title: 'Низкая концентрация', desc: 'Ограниченная эффективность' },
-                      { title: 'Медленный эффект', desc: 'Требуются недели или месяцы' },
-                      { title: 'Риски безопасности', desc: 'Возможно повреждение десен' },
-                      { title: 'Неравномерный результат', desc: 'Непредсказуемый эффект' }
+ { title:'низкоконцентрированный тоже отбеливание', desc:'обычный эффект и ограничение'},
+ { title:'эффект', desc:'неделя месяцев'},
+ { title:'безопасность риск', desc:'хорошо десна повреждение возможно'},
+ { title:'один результат', desc:'один отбеливание эффект'}
                     ].map((item, index) => (
                       <div key={index} className="flex items-start w-full">
                         <div className="shrink-0 w-6 h-6">
@@ -83,26 +83,26 @@ export default function SelfVsProfessionalSection() {
               </div>
             </div>
 
-            {/* Card 2: Professional Whitening */}
+            {/* Card 2: стоматология и специалист отбеливание */}
             <div className="bg-white border border-[#f3f6fb] rounded-[20px] w-full">
               <div className="flex flex-col items-center justify-center overflow-hidden rounded-[inherit] w-full">
                 <div className="flex flex-col gap-4 items-center justify-center p-6 w-full">
                   <div className="flex gap-2 items-center w-full justify-center">
                     <p className="font-bold text-[24px] leading-[1.35] tracking-[-0.48px] text-black text-center">
-                      Профессиональное отбеливание
+                      стоматология и специалист отбеливание
                     </p>
                   </div>
                   <div className="bg-[#f3f6fb] rounded-[16px] p-5 flex flex-col gap-[14px] w-full">
                     {[
-                      { title: 'Медицинский препарат', desc: 'Высококонцентрированная перекись' },
-                      { title: 'Мгновенный эффект', desc: 'Результат за 1-3 часа' },
-                      { title: 'Полная безопасность', desc: 'Защита десен специалистом' },
-                      { title: 'Равномерное отбеливание', desc: 'Точная процедура профессионала' }
+ { title:'высококонцентрированный тоже', desc:'специалист перекись водорода один эффект'},
+ { title:'Мгновенный эффект', desc:'1-3время внутри один'},
+                      { title: 'идеальный безопасность', desc: 'десна защита мера повреждение предотвращение' },
+ { title:'один отбеливание', desc:'специалист точный процедура'}
                     ].map((item, index) => (
                       <div key={index} className="flex items-start w-full">
                         <div className="shrink-0 w-6 h-6">
                           <Image
-                            src="/icons/check-blue.svg"
+                            src="/icons/check-teal.svg"
                             alt=""
                             width={24}
                             height={24}

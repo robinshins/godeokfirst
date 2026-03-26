@@ -5,24 +5,24 @@ import Image from 'next/image';
 export default function BestReasonSection() {
   const reasons = [
     {
-      image: '/images/implant-reason-seminar-1.png',
-      title: 'Butun mamlakat stomatologlariga',
-      subtitle: 'Ilmiy ma\'ruzalar'
+      image: '/images/goduk_images/원장이력 등 걸려있는사진.jpg',
+      title: 'Choson universiteti stomatologiya shifoxonasi',
+      subtitle: 'Tashqi professor'
     },
     {
-      image: '/images/implant-reason-seminar-2.png',
-      title: 'Megagen Implant',
-      subtitle: 'Asosiy maslahatchi'
+      image: '/images/goduk_images/각종인증서.png',
+      title: 'Osstem·Point·Dentis',
+      subtitle: 'Implant maslahatchi'
     },
     {
-      image: '/images/implant-reason-seminar-3.png',
-      title: 'Pusan va Kyungsung universitetlari',
-      subtitle: 'Belgilangan shifoxona'
+      image: '/images/goduk_images/수술실.jpg',
+      title: 'Raqamli yoʼnaltirish',
+      subtitle: 'Aniq operatsiya tizimi'
     },
     {
-      image: '/images/implant-reason-seminar-4.png',
-      title: '10 yil davomida bir joyda',
-      subtitle: 'Bosh shifokor shaxsan qabul qiladi'
+      image: '/images/goduk_images/스캐너사진.jpg',
+      title: '3D CT · Ogʼiz skaneri',
+      subtitle: 'Eng zamonaviy jihozlar'
     }
   ];
 
@@ -31,8 +31,8 @@ export default function BestReasonSection() {
       <div className="flex flex-col gap-10">
         {/* Title */}
         <h2 className="text-[28px] font-extrabold text-center leading-[1.4] tracking-[-0.03em]">
-          Pusandan tashqari <span className="text-[#006aff]">butun mamlakatda tan olingan</span><br />
-          implant qilish sabablari
+          Godeokda <span className="text-[#008095]">eng yaxshi implant</span><br />
+          qildirishning sababi
         </h2>
 
         {/* Grid */}
@@ -51,7 +51,7 @@ export default function BestReasonSection() {
                 <p className="text-sm font-bold text-[#0b1727] leading-[1.4]">
                   {reason.title}
                 </p>
-                <p className="text-lg font-extrabold text-[#0b1727] leading-[1.3]">
+                <p className="text-lg font-extrabold text-[#008095] leading-[1.3]">
                   {reason.subtitle}
                 </p>
               </div>

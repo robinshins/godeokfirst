@@ -24,13 +24,13 @@ export default function StatsSection() {
           <div className="flex flex-col gap-4 items-center justify-center relative shrink-0 w-full z-10">
             <div className="flex flex-col gap-3 items-center justify-center relative shrink-0 w-full">
               {/* Logo */}
-              <div className="h-8 overflow-clip relative shrink-0">
+              <div className="h-11 overflow-hidden relative shrink-0">
                 <Image
-                  src="/images/goduk_images/고덕퍼스트치과_Logo_white.svg"
+                  src="/고덕퍼스트치과-로고-(화이트).png"
                   alt="고덕퍼스트치과"
-                  width={180}
-                  height={32}
-                  className="h-full w-auto object-contain"
+                  width={375}
+                  height={84}
+                  className="h-20 w-auto object-contain -mt-[18px]"
                 />
               </div>
 

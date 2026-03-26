@@ -24,7 +24,7 @@ const regionData: RegionData = {
       type: 'cavity-treatment',
       title: '충치치료',
       description: '동삭지구 가족 단위 환자분들을 위한 보존 중심 충치치료. 초기 충치부터 심한 충치까지 치아를 최대한 살리는 치료를 합니다.',
-      features: ['미세현미경 정밀 치료', '최소 삭제 보존 원칙', '자연치아색 심미 재료', '소아·성인 맞춤 치료'],
+      features: ['정밀 충치 진단', '최소 삭제 보존 원칙', '자연치아색 심미 재료', '소아·성인 맞춤 치료'],
     },
     {
       type: 'wisdom-tooth',

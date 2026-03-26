@@ -6,7 +6,7 @@ export default function WhiteningComparisonSection() {
           {/* Title */}
           <div className="flex flex-col gap-3 items-center justify-center w-full">
             <h2 className="font-bold text-[32px] leading-[1.35] tracking-[-0.64px] text-black text-center w-full">
-              บริการไหน<br />
+              วิธีไหน<br />
               เหมาะกับคุณ?
             </h2>
             <p className="font-semibold text-base leading-[1.4] tracking-[-0.32px] text-[#727582] text-center w-full">
@@ -22,45 +22,45 @@ export default function WhiteningComparisonSection() {
                   เปรียบเทียบตัวเลือกฟอกสีฟัน
                 </p>
 
-                <div className="bg-white border border-[#006aff] rounded-[10.671px] overflow-hidden w-full">
+                <div className="bg-white border border-[#008095] rounded-[10.671px] overflow-hidden w-full">
                   <table className="w-full border-collapse">
                     <thead>
                       <tr className="border-b border-[#e9ebf1]">
                         <th className="font-bold text-[14px] leading-[1.4] tracking-[-0.28px] text-[#5d5f6d] px-2 py-[12px] w-[70px] text-left">&nbsp;</th>
-                        <th className="font-bold text-[14px] leading-[1.4] tracking-[-0.56px] text-[#5d5f6d] text-center px-2 py-[12px] w-[45%]">ฟอกสีฟัน<br />ไฮโดรเจนเปอร์ออกไซด์</th>
-                        <th className="font-bold text-[14px] leading-[1.4] tracking-[-0.28px] text-[#5d5f6d] text-center px-2 py-[12px]">วีเนียร์</th>
+                        <th className="font-bold text-[14px] leading-[1.4] tracking-[-0.56px] text-[#5d5f6d] text-center px-2 py-[12px] w-[45%]">ฟอกสีฟัน<br />เปอร์ออกไซด์</th>
+                        <th className="font-bold text-[14px] leading-[1.4] tracking-[-0.28px] text-[#5d5f6d] text-center px-2 py-[12px]">ลามิเนต</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr className="border-b border-[#e9ebf1]">
-                        <td className="font-semibold text-[15px] leading-[1.5] tracking-[-0.3px] text-[#5d5f6d] px-2 py-[8.536px] align-middle">ระยะเวลา</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">1-2 ชม.<br />(เสร็จในวัน)</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">2-3 ครั้ง<br />(1-2 สัปดาห์)</td>
+                        <td className="font-semibold text-[15px] leading-[1.5] tracking-[-0.3px] text-[#5d5f6d] px-2 py-[8.536px] align-middle">เวลา</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">1-2 ชม.<br />(เสร็จวันเดียว)</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">มา 2-3 ครั้ง<br />(1-2 สัปดาห์)</td>
                       </tr>
                       <tr className="border-b border-[#e9ebf1]">
-                        <td className="font-semibold text-[15px] leading-[1.5] tracking-[-0.3px] text-[#5d5f6d] px-2 py-[8.536px] align-middle">ความคงทน</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">1-2 ปี<br />(ดูแลดีอยู่นานขึ้น)</td>
+                        <td className="font-semibold text-[15px] leading-[1.5] tracking-[-0.3px] text-[#5d5f6d] px-2 py-[8.536px] align-middle">คงทน</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">1-2 ปี<br />(ดูแลยืดได้)</td>
                         <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">10-15 ปี<br />(กึ่งถาวร)</td>
                       </tr>
                       <tr className="border-b border-[#e9ebf1]">
-                        <td className="font-semibold text-[15px] leading-[1.5] tracking-[-0.3px] text-[#5d5f6d] px-2 py-[8.536px] align-middle">การกรอฟัน</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">ไม่มี<br />(0 มม.)</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">กรอน้อยสุด<br />(0.3 มม.)</td>
+                        <td className="font-semibold text-[15px] leading-[1.5] tracking-[-0.3px] text-[#5d5f6d] px-2 py-[8.536px] align-middle">กรอฟัน</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">ไม่กรอ<br />(0mm)</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">กรอน้อย<br />(0.3mm)</td>
                       </tr>
                       <tr className="border-b border-[#e9ebf1]">
                         <td className="font-semibold text-[15px] leading-[1.5] tracking-[-0.3px] text-[#5d5f6d] px-2 py-[8.536px] align-middle">ราคา</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">200,000-300,000<br />(ทั้งปาก)</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">ซี่ละ<br />500,000-800,000</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">200-300K<br />(ทั้งปาก)</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">ซี่ละ<br />500-800K</td>
                       </tr>
                       <tr className="border-b border-[#e9ebf1]">
                         <td className="font-semibold text-[15px] leading-[1.5] tracking-[-0.3px] text-[#5d5f6d] px-2 py-[8.536px] align-middle">แนะนำ</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">ผู้ที่ต้องการ<br />ฟอกสีธรรมชาติ</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">ผู้ที่ต้องการ<br />ฟันสมบูรณ์แบบ</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">ต้องการ<br />ฟันขาวธรรมชาติ</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">ต้องการ<br />ฟันสมบูรณ์แบบ</td>
                       </tr>
                       <tr>
                         <td className="font-semibold text-[15px] leading-[1.5] tracking-[-0.3px] text-[#5d5f6d] px-2 py-[8.536px] align-middle">ข้อควรระวัง</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">ระวังอาหาร<br />ที่มีสี 24 ชม.</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">ระวังอาหาร<br />แข็ง</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">24 ชม.<br />ระวังอาหารย้อมสี</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">ระวัง<br />อาหารแข็ง</td>
                       </tr>
                     </tbody>
                   </table>

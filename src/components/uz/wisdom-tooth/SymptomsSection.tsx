@@ -1,38 +1,35 @@
+'use client';
+
 import Image from 'next/image';
 
 export default function SymptomsSection() {
-  return (
-    <div className="bg-[#f0fdf4] w-full">
-      <div className="max-w-[430px] mx-auto px-4 py-16">
-        <div className="flex flex-col gap-10">
-          <div className="flex flex-col gap-4 text-center">
-            <h2 className="text-[28px] font-bold text-[#111827]">Olib tashlamasa nima bo'ladi?</h2>
-            <p className="text-[#6b7280]">Donolik tishidan kelib chiqadigan muammolar</p>
-          </div>
+  const symptoms = [
+    { icon: '/icons/tooth.svg', title: 'Yotgan aql tishi', description: 'Yon tomonga oʼsib\nyondagi tishni bosadi' },
+    { icon: '/icons/tooth-loosen.svg', title: 'Yalligʼlanish', description: 'Eʼtiborsiz qoldirilgan aql tishidan\nmilk shishishi va yalligʼlanishi mumkin' }
+  ];
 
-          <div className="grid grid-cols-1 gap-4">
-            <div className="bg-white p-8 rounded-[32px] flex flex-col gap-4 shadow-sm border border-[#dcfce7]">
-              <h3 className="text-xl font-bold text-[#16a34a]">Milk yallig'lanishi</h3>
-              <p className="text-[#6b7280] leading-[1.6]">
-                Tozalash qiyin bo'lgani uchun bakteriyalar ko'payib, milk shishishi va yiringlashi xavfi bor.
-              </p>
+  return (
+    <div className="bg-[#f3f6fb] w-full py-[60px] relative">
+      <div className="max-w-[375px] mx-auto px-4 relative z-10">
+        <div className="flex flex-col gap-[60px] items-start w-full">
+          <div className="flex flex-col gap-4 items-center justify-center w-full">
+            <div className="flex flex-col gap-3 items-center justify-center text-center w-full">
+              <p className="text-[13px] font-bold text-[#008095] tracking-[3px] uppercase">SYMPTOMS</p>
+              <h2 className="font-bold text-[32px] leading-[1.35] tracking-[-0.64px] text-[#292a2f]">Aql tishidan<br /><span className="text-[#008095]">kelib chiqishi mumkin boʼlgan alomatlar</span></h2>
+              <p className="font-semibold text-base leading-[1.4] tracking-[-0.32px] text-[#727582]">Aql tishining oʼsish shakli va joyiga qarab<br />turli alomatlar paydo boʼlishi mumkin</p>
             </div>
-            <div className="bg-white p-8 rounded-[32px] flex flex-col gap-4 shadow-sm border border-[#dcfce7]">
-              <h3 className="text-xl font-bold text-[#16a34a]">Yon tishning kariesi</h3>
-              <p className="text-[#6b7280] leading-[1.6]">
-                Donolik tishi va uning yonidagi asosiy tish orasida karies paydo bo'lib, ikkala tishni ham yo'qotish xavfi tug'iladi.
-              </p>
-            </div>
-            <div className="bg-white p-8 rounded-[32px] flex flex-col gap-4 shadow-sm border border-[#dcfce7]">
-              <h3 className="text-xl font-bold text-[#16a34a]">Tish kistasi</h3>
-              <p className="text-[#6b7280] leading-[1.6]">
-                Tish atrofida kista paydo bo'lib, jag' suyagini yemirilishiga olib kelishi mumkin.
-              </p>
-            </div>
+          </div>
+          <div className="flex flex-col gap-6 items-start w-full">
+            {symptoms.map((s, i) => (
+              <div key={i} className="bg-white rounded-[24px] shadow-[0px_24px_50px_-12px_rgba(45,54,67,0.08)] p-6 flex flex-col gap-5 items-center justify-center w-full">
+                <div className="w-20 h-20 relative"><Image src={s.icon} alt={s.title} width={80} height={80} className="w-full h-full" /></div>
+                <p className="font-bold text-[24px] leading-[1.35] tracking-[-0.48px] text-black text-center w-full">{s.title}</p>
+                <p className="font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-[#5d5f6d] text-center whitespace-pre-line w-full">{s.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
     </div>
   );
 }
-

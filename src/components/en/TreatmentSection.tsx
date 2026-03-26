@@ -6,72 +6,100 @@ export default function TreatmentSection() {
     {
       icon: '/images/implant-icon.png',
       iconBg: 'bg-blue-50',
-      title: 'Full & Single Dental Implants',
-      subtitle: 'Highest number of implant surgeries in Busan Nam-gu',
-      description: 'Safe and comfortable high-difficulty digital guide surgery with computer analysis. 10-year guarantee.',
+      title: 'Implants',
+      subtitle: 'Digital Guide Implant Surgery',
+      description: 'Safe and comfortable with computer-analyzed digital guide surgery. We take responsibility to the end.',
       features: [
         'Advanced digital guide surgery',
-        'Conscious sedation sleep anesthesia',
-        'Temporary teeth provided immediately after surgery',
-        'Surgery performed directly by head dentist',
-        'Largest digital equipment inventory in Korea'
+        'Sedation (sleep anesthesia) available',
+        'Temporary teeth right after surgery',
+        'Head doctor performs all surgeries',
+        'Full digital equipment'
       ],
       link: '/en/implant'
     },
     {
-      icon: '/icons/whitening.svg',
-      iconBg: 'bg-purple-50',
-      title: 'Whitening & Laminate',
-      subtitle: 'Premium equipment',
-      description: 'Safe and effective whitening treatment\n50% discount when combined with scaling',
+      icon: '/icons/gum.svg',
+      iconBg: 'bg-indigo-50',
+      title: 'Dentures / Full-Arch Implants',
+      subtitle: 'Custom Precision Prosthetics',
+      description: 'From comfortable natural dentures\nto full-arch implants, custom designed',
       features: [
-        'Immediate results in 1 session',
-        'No damage to teeth',
-        'Reasonable pricing',
-        'Both professional whitening and laminate available'
+        'Precision custom denture fabrication',
+        'Full-arch implants (All-on-4/6)',
+        'Implant-supported dentures (overdenture)',
+        'Insurance-covered dentures available'
       ],
-      link: '/en/whitening'
-    },
-    {
-      icon: '/icons/extraction.svg',
-      iconBg: 'bg-green-50',
-      title: 'Wisdom Tooth Extraction',
-      subtitle: 'Safe and rapid extraction',
-      description: '3D CT precision diagnosis\nSafe extraction without nerve damage',
-      features: [
-        'Pain relief anesthesia',
-        'Quick recovery',
-        'Thorough post-care'
-      ],
-      link: '/en/wisdom-tooth'
+      link: '/en/denture'
     },
     {
       icon: '/icons/cavity.svg',
       iconBg: 'bg-orange-50',
       title: 'Cavity & Root Canal Treatment',
-      subtitle: 'Natural tooth preservation specialist',
-      description: 'Treatment that saves rather than extracts\nPrecision treatment by conservation specialist',
+      subtitle: 'Natural Tooth Preservation',
+      description: 'Saving teeth instead of extracting\nPrecise treatment by a specialist',
       features: [
-        'Microscopic precision diagnosis',
-        'Curay cavity detection',
-        'Pain relief nerve treatment',
-        'Insurance applicable'
+        'Precise cavity diagnosis',
+        'Pain-minimized root canal',
+        'Natural tooth preservation',
+        'Insurance covered'
       ],
       link: '/en/cavity-treatment'
+    },
+    {
+      icon: '/icons/extraction.svg',
+      iconBg: 'bg-green-50',
+      title: 'Wisdom Tooth Extraction',
+      subtitle: 'Safe and Quick Extraction',
+      description: '3D CT precise diagnosis for\nsafe extraction without nerve damage',
+      features: [
+        'Pain-minimized anesthesia',
+        'Quick recovery',
+        'Thorough aftercare'
+      ],
+      link: '/en/wisdom-tooth'
     },
     {
       icon: '/icons/gum.svg',
       iconBg: 'bg-pink-50',
       title: 'Gum Care & Scaling',
-      subtitle: 'Foundation of overall health',
-      description: 'Gum disease affecting 80% of adults\nLifelong healthy teeth through regular care',
+      subtitle: 'Foundation of Overall Health',
+      description: '80% of adults suffer from gum disease\nLifelong healthy teeth with regular care',
       features: [
-        'NSK varios 970 specialized equipment',
+        'Specialized equipment treatment',
         'Perioclean management',
-        'Pain relief treatment',
-        'Insurance applicable once per year'
+        'Pain-minimized treatment',
+        'Insurance covered once a year'
       ],
       link: '/en/gum-care'
+    },
+    {
+      icon: '/icons/gum.svg',
+      iconBg: 'bg-indigo-50',
+      title: 'TMJ Treatment',
+      subtitle: 'TMJ Pain & Jaw Disorders',
+      description: 'Clicking or pain in your jaw?\nCustom treatment after precise diagnosis',
+      features: [
+        'Precise TMJ diagnosis',
+        'Occlusal stabilization splint',
+        'Physical therapy & medication',
+        'Treated by comprehensive dentistry specialist'
+      ],
+      link: '/en/tmj'
+    },
+    {
+      icon: '/icons/whitening.svg',
+      iconBg: 'bg-purple-50',
+      title: 'Teeth Whitening',
+      subtitle: 'Premium Equipment',
+      description: 'Safe and effective whitening\nDiscount with scaling',
+      features: [
+        'Immediate results in 1 session',
+        'No tooth damage',
+        'Affordable pricing',
+        'Osstem Beautis System'
+      ],
+      link: '/en/whitening'
     }
   ];
 
@@ -80,17 +108,17 @@ export default function TreatmentSection() {
       <div className="max-w-[375px] mx-auto px-4 py-12">
         {/* Section Header */}
         <div className="flex flex-col gap-5 items-center justify-center relative shrink-0 w-full mb-10">
-          <div className="h-8 relative shrink-0 w-40">
+          <div className="h-11 relative shrink-0 overflow-hidden">
             <Image
-              src="/icons/Logo_black.svg"
-              alt="Kyungsung Medis Dental Clinic"
-              width={160}
-              height={32}
-              className="w-full h-full"
+              src="/고덕퍼스트치과-로고-(블랙).png"
+              alt="Godeok First Dental"
+              width={375}
+              height={84}
+              className="h-20 w-auto object-contain -mt-[18px]"
             />
           </div>
           <h2 className="font-bold leading-[1.35] not-italic text-[36px] text-black text-center tracking-[-0.72px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-            Specialized Treatments
+            Our Specialties
           </h2>
         </div>
 
@@ -113,7 +141,7 @@ export default function TreatmentSection() {
                       alt={treatment.title}
                       width={64}
                       height={64}
-                      className="w-full h-full object-contain"
+                      className="h-20 w-auto object-contain -mt-[18px]"
                     />
                   </div>
 
@@ -126,11 +154,6 @@ export default function TreatmentSection() {
                       <p className="text-[17px] font-bold text-[#727582] leading-[1.5] tracking-[-0.36px]">
                         {treatment.subtitle}
                       </p>
-                      {index === 0 && (
-                        <p className="text-[13px] text-[#9a9ca8] leading-[1.5] tracking-[-0.28px]">
-                          *Based on computer-guided digital guide surgery
-                        </p>
-                      )}
                     </div>
                   </div>
                 </div>
@@ -146,7 +169,7 @@ export default function TreatmentSection() {
                       src="/icons/arrow-right.svg"
                       alt="Learn more"
                       width={32}
-                      height={32}
+                      height={84}
                     />
                   </Link>
                 ) : (
@@ -158,7 +181,7 @@ export default function TreatmentSection() {
                       src="/icons/arrow-right.svg"
                       alt="Learn more"
                       width={32}
-                      height={32}
+                      height={84}
                     />
                   </button>
                 )}

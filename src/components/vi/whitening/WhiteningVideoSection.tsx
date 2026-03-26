@@ -5,8 +5,8 @@ export default function WhiteningVideoSection() {
         <div className="flex flex-col gap-10 items-center w-full">
           {/* Title */}
           <h2 className="font-bold text-[32px] leading-[1.35] tracking-[-0.02em] text-black text-center w-full">
-            Tất cả về tẩy trắng răng tại nha khoa<br />
-            Chúng tôi sẽ giải đáp trong video này
+            Tất cả về tẩy trắng nha khoa<br />
+            Chúng tôi sẽ cho bạn biết tất cả trong video này
           </h2>
 
           {/* YouTube Video */}
@@ -15,7 +15,7 @@ export default function WhiteningVideoSection() {
               width="100%"
               height="100%"
               src="https://www.youtube.com/embed/4hJI8OteG3Q"
-              title="Video tẩy trắng răng tại nha khoa"
+              title="Video tẩy trắng nha khoa"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
               className="absolute top-0 left-0 w-full h-full"
@@ -26,4 +26,3 @@ export default function WhiteningVideoSection() {
     </div>
   );
 }
-

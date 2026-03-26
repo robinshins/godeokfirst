@@ -1,51 +1,130 @@
 import Image from 'next/image';
 
 export default function CaseStudySection() {
-  const cases = [
-    {
-      title: 'To\'y oldidan tayyorgarlik',
-      before: '/images/whitening-before-01.jpg',
-      after: '/images/whitening-after-01.jpg',
-      desc: 'Muhim kundan oldin 1 soat ichida tishlarini oqartirib, o\'ziga bo\'lgan ishonchi ortgan bemor.'
-    },
-    {
-      title: 'Nikotin dog\'larini yo\'qotish',
-      before: '/images/whitening-before-02.jpg',
-      after: '/images/whitening-after-02.jpg',
-      desc: 'Chekish natijasida hosil bo\'lgan sarg\'ish dog\'larni professional oqartirish bilan bartaraf etilgan holat.'
-    }
-  ];
-
   return (
-    <div className="bg-[#fffafb] w-full">
-      <div className="max-w-[430px] mx-auto px-4 py-16">
-        <div className="flex flex-col gap-10">
-          <div className="flex flex-col gap-3 text-center">
-            <h2 className="text-[28px] font-bold text-[#111827]">Real natijalar</h2>
-            <p className="text-[#6b7280]">Oqartirishdan keyingi o'zgarish</p>
+    <div className="bg-[#f8f9fb] w-full py-[60px]">
+      <div className="max-w-[430px] mx-auto px-4">
+        <div className="flex flex-col gap-8 items-center w-full">
+
+          {/* Title */}
+          <div className="flex flex-col gap-3 items-center text-center w-full">
+            <p className="text-[#008095] font-bold text-[13px] tracking-[0.2em] uppercase" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+              Clinical Case
+            </p>
+            <h2 className="font-bold text-[32px] leading-[1.35] tracking-[-0.64px] text-black w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+              Haqiqiy oqartirish holatlari
+            </h2>
+            <p className="font-semibold text-base leading-[1.4] tracking-[-0.32px] text-[#727582] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+              Osstem Beautis tizimi bilan muolaja qilingan Godeok First Dental haqiqiy holatlari
+            </p>
           </div>
 
-          <div className="flex flex-col gap-12">
-            {cases.map((item, index) => (
-              <div key={index} className="flex flex-col gap-6">
-                <h3 className="text-xl font-bold text-[#374151] px-2">{item.title}</h3>
-                <div className="grid grid-cols-2 gap-2">
-                  <div className="relative aspect-square rounded-2xl overflow-hidden">
-                    <Image src={item.before} alt="Oldin" fill className="object-cover" />
-                    <div className="absolute top-2 left-2 bg-black/50 text-white text-xs px-2 py-1 rounded">Oldin</div>
-                  </div>
-                  <div className="relative aspect-square rounded-2xl overflow-hidden">
-                    <Image src={item.after} alt="Keyin" fill className="object-cover" />
-                    <div className="absolute top-2 left-2 bg-[#db2777]/80 text-white text-xs px-2 py-1 rounded">Keyin</div>
-                  </div>
+          {/* Case Card 1 */}
+          <div
+            className="bg-white rounded-[24px] w-full overflow-hidden"
+            style={{ boxShadow: '0 4px 20px -4px rgba(21,26,36,0.08)' }}
+          >
+            <div className="p-5 flex flex-col gap-4">
+              {/* Before */}
+              <div className="relative w-full">
+                <div className="bg-[#f3f6fb] h-[220px] overflow-hidden relative rounded-[20px] w-full">
+                  <Image
+                    src="/임상사진/미백/양해영_미백_before.jpg"
+                    alt="Oqartirishdan oldin"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-                <p className="text-[#6b7280] leading-[1.6] px-2 text-sm">{item.desc}</p>
+                <div className="absolute left-3 top-3 bg-[#292a2f] px-2.5 py-[5px] rounded-[10px] z-10">
+                  <p className="font-semibold text-[13px] leading-[1.4] text-white tracking-[-0.26px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                    Before
+                  </p>
+                </div>
               </div>
-            ))}
+
+              {/* After */}
+              <div className="relative w-full">
+                <div className="bg-[#f3f6fb] h-[220px] overflow-hidden relative rounded-[20px] w-full">
+                  <Image
+                    src="/임상사진/미백/양해영_미백_after.jpg"
+                    alt="Oqartirishdan keyin"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="absolute left-3 top-3 bg-[#008095] px-2.5 py-[5px] rounded-[10px] z-10">
+                  <p className="font-semibold text-[13px] leading-[1.4] text-white tracking-[-0.26px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                    After
+                  </p>
+                </div>
+              </div>
+
+              {/* Description */}
+              <div className="flex flex-col gap-1.5 pt-2">
+                <p className="font-bold text-[16px] text-black tracking-[-0.32px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                  Osstem Beautis mutaxassis oqartirish · Yang●●
+                </p>
+                <p className="font-semibold text-[14px] text-[#727582] leading-[1.5]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                  Muolaja kuni 1~2 soatda tugallash · Sezuvchanlik oldini olish vositasi kiritilgan · Shirilash minimallashtirilgan
+                </p>
+              </div>
+            </div>
           </div>
+
+          {/* Case Card 2 */}
+          <div
+            className="bg-white rounded-[24px] w-full overflow-hidden"
+            style={{ boxShadow: '0 4px 20px -4px rgba(21,26,36,0.08)' }}
+          >
+            <div className="p-5 flex flex-col gap-4">
+              {/* Before */}
+              <div className="relative w-full">
+                <div className="bg-[#f3f6fb] h-[220px] overflow-hidden relative rounded-[20px] w-full">
+                  <Image
+                    src="/임상사진/안동현_미백/안동현_미백_before.jpg"
+                    alt="Oqartirishdan oldin"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="absolute left-3 top-3 bg-[#292a2f] px-2.5 py-[5px] rounded-[10px] z-10">
+                  <p className="font-semibold text-[13px] leading-[1.4] text-white tracking-[-0.26px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                    Before
+                  </p>
+                </div>
+              </div>
+
+              {/* After */}
+              <div className="relative w-full">
+                <div className="bg-[#f3f6fb] h-[220px] overflow-hidden relative rounded-[20px] w-full">
+                  <Image
+                    src="/임상사진/안동현_미백/안동현_미백_after.jpg"
+                    alt="Oqartirishdan keyin"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="absolute left-3 top-3 bg-[#008095] px-2.5 py-[5px] rounded-[10px] z-10">
+                  <p className="font-semibold text-[13px] leading-[1.4] text-white tracking-[-0.26px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                    After
+                  </p>
+                </div>
+              </div>
+
+              {/* Description */}
+              <div className="flex flex-col gap-1.5 pt-2">
+                <p className="font-bold text-[16px] text-black tracking-[-0.32px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                  Mutaxassis oqartirish · An●●
+                </p>
+                <p className="font-semibold text-[14px] text-[#727582] leading-[1.5]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                  2 haftalik mutaxassis oqartirish oʼtkazildi · Tabiiy va yorqin ohang oʼzgarishi
+                </p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
   );
 }
-

@@ -4,53 +4,61 @@ import FixedCTAButton from '@/components/th/FixedCTAButton';
 import FooterSection from '@/components/th/FooterSection';
 
 import ImplantHero from '@/components/th/implant/ImplantHero';
-import StatsSection from '@/components/th/implant/StatsSection';
-import VideoSection from '@/components/th/implant/VideoSection';
-import ThreeStepNewSection from '@/components/th/implant/ThreeStepNewSection';
-import WhyBestNewSection from '@/components/th/implant/WhyBestNewSection';
-import InHouseLabSection from '@/components/th/implant/InHouseLabSection';
-import AfterCareSection from '@/components/th/implant/AfterCareSection';
-import SpecialTechSection from '@/components/th/implant/SpecialTechSection';
-import SpeedSection from '@/components/th/implant/SpeedSection';
-import DigitalGuideSection from '@/components/th/implant/DigitalGuideSection';
-import BeforeAfterSection from '@/components/th/implant/BeforeAfterSection';
-import RealPatientResultsSection from '@/components/th/implant/RealPatientResultsSection';
-import SkillDifferenceSection from '@/components/th/implant/SkillDifferenceSection';
-// import SedationSection from '@/components/th/cavity-treatment/SedationSection';
-import WarrantySection from '@/components/th/implant/WarrantySection';
-import DoctorSection from '@/components/th/DoctorSection';
-import WhyBestSection from '@/components/th/WhyBestSection';
-import LocationSection from '@/components/th/LocationSection';
-import YouTubeSection from '@/components/th/YouTubeSection';
-import FAQSection from '@/components/th/FAQSection';
+import { faqData } from '@/lib/faqData';
+import { generateFAQSchema, generateBreadcrumbSchema, generateMedicalServiceSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'รากฟันเทียมปูซาน | Kyungsung Medis Dental',
-  description: 'นวัตกรรมรากฟันเทียมดิจิทัล 0 เคสผ่าตัดซ้ำใน 10 ปี อันดับ 1 ด้านรากฟันเทียมในปูซานนัมกู ประสบการณ์ 1,500+ เคส',
-  keywords: [
-    'รากฟันเทียมปูซาน',
-    'รากฟันเทียมเกาหลี',
-    'รากฟันเทียมดิจิทัล',
-    'ทันตกรรมปูซาน',
-    'หมอฟันปูซาน',
-    'คลินิกทันตกรรมปูซาน'
-  ],
+  title: 'Dental Implant Pyeongtaek | Godeok First Dental',
+  description: 'Dental Implant Pyeongtaek. 대학병원 외래교수 출신 원장이 직접 수술하는 대학병원급 임플란트. 디지털 정밀 진단 시스템',
+  keywords: '고덕임플란트, 평택임플란트, 고덕동임플란트, 평택임플란트잘하는곳, 고덕임플란트잘하는곳, 임플란트전문, Godeok First Dental, 평택치과, 고덕치과, 고덕동치과',
   alternates: {
     canonical: 'https://gdfirstdent.com/th/implant',
   },
   openGraph: {
-    title: 'รากฟันเทียมปูซาน | Kyungsung Medis Dental',
-    description: 'นวัตกรรมรากฟันเทียมดิจิทัล 0 เคสผ่าตัดซ้ำใน 10 ปี',
+    title: 'Dental Implant Pyeongtaek | Godeok First Dental',
+    description: '대학병원 외래교수 출신 원장이 직접 수술하는 대학병원급 임플란트. 1,200회 이상 식립 경험.',
     url: 'https://gdfirstdent.com/th/implant',
-    siteName: 'Kyungsung Medis Dental Clinic',
-    locale: 'th_TH',
+    siteName: 'Godeok First Dental',
     type: 'website',
   },
 };
 
+// FAQ Schema
+const faqSchema = generateFAQSchema(faqData.implant);
+
+// Breadcrumb Schema
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: '홈', url: 'https://gdfirstdent.com/th' },
+  { name: '임플란트', url: 'https://gdfirstdent.com/th/implant' }
+]);
+
+// Medical Service Schema
+const medicalServiceSchema = generateMedicalServiceSchema({
+  name: '임플란트',
+  description: '조선대학교 치과병원 외래교수 출신 원장이 직접 수술하는 대학병원급 임플란트. 디지털 가이드 시스템으로 정밀하고 안전한 시술.',
+  url: 'https://gdfirstdent.com/th/implant'
+});
+import VideoSection from '@/components/th/implant/VideoSection';
+import StatsSection from '@/components/th/implant/StatsSection';
+import WhyBestNewSection from '@/components/th/implant/WhyBestNewSection';
+import AfterCareSection from '@/components/th/denture/AfterCareSection';
+import BeforeAfterSection from '@/components/th/implant/BeforeAfterSection';
+import SkillDifferenceSection from '@/components/th/implant/SkillDifferenceSection';
+// import SedationSection from '@/components/th/cavity-treatment/SedationSection';
+import DoctorSection from '@/components/th/DoctorSection';
+import WhyBestSection from '@/components/th/WhyBestSection';
+import LocationSection from '@/components/th/LocationSection';
+// import YouTubeSection from '@/components/th/YouTubeSection';
+import MobileColumnSection from '@/components/th/MobileColumnSection';
+import FAQSection from '@/components/th/FAQSection';
+import SloganSection from '@/components/th/SloganSection';
+
 export default function ImplantPage() {
   return (
     <main className="min-h-screen overflow-x-hidden">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalServiceSchema) }} />
       <GNB />
       <FixedCTAButton />
 
@@ -65,47 +73,34 @@ export default function ImplantPage() {
 
       {/* Video Section */}
       <VideoSection />
+      <MobileColumnSection page="implant" />
 
       {/* Why Best Section */}
       <WhyBestNewSection />
 
-      {/* Sedation Section - Will be created later under cavity-treatment */}
+      {/* Sedation Section */}
       {/* <SedationSection /> */}
 
-      {/* Three Step Section */}
-      <ThreeStepNewSection />
-
-      {/* Speed Section */}
-      <SpeedSection />
-      
-      {/* In-House Lab Section */}
-      <InHouseLabSection />
-
-      {/* After Care Section */}
       <AfterCareSection />
 
-      {/* Special Tech Section */}
-      <SpecialTechSection />
 
       {/* Digital Guide Section */}
-      <DigitalGuideSection />
+      {/* <DigitalGuideSection /> */}
 
       {/* Before/After Section */}
       <BeforeAfterSection />
-
-      {/* Real Patient Results Section */}
-      <RealPatientResultsSection />
 
       {/* Skill Difference Section */}
       <SkillDifferenceSection />
 
       {/* Warranty Section */}
-      <WarrantySection />
+      {/* <WarrantySection /> */}
 
       <DoctorSection />
+      <SloganSection />
       <WhyBestSection />
       <LocationSection />
-      <YouTubeSection />
+      {/* <YouTubeSection /> */}
       <FAQSection page="implant" />
 
       {/* Footer */}
@@ -116,4 +111,3 @@ export default function ImplantPage() {
     </main>
   );
 }
-

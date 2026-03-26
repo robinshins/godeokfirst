@@ -35,27 +35,26 @@ export default function SpeedSection() {
           {/* Logo */}
           <div className="h-6 overflow-clip relative shrink-0 w-[168px]">
             <Image
-              src="/icons/Logo.svg"
-              alt="Nha khoa Medis Kyungsungdae"
+              src="/고덕퍼스트치과-로고-(화트).png"
+              alt="Godeok First Dental"
               width={168}
               height={24}
-              className="w-full h-full"
+              className="h-20 w-auto object-contain -mt-[18px]"
             />
           </div>
 
           {/* Title */}
           <h2 className="font-bold leading-[1.35] not-italic text-[#fefeff] text-[32px] text-center tracking-[-0.64px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-            Tốc độ và sự khác biệt mà<br />
-            không nha khoa nào có thể theo kịp
+            Tốc độ và sự khác biệt<br />
+            không nha khoa nào sánh được
           </h2>
 
           {/* Subtitle */}
           <p className="font-bold leading-[32px] not-italic text-[#51aefe] text-base text-center tracking-[1.92px] uppercase w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-            Chỉ có thể trải nghiệm tại Nha khoa Medis
+            chỉ có thể trải nghiệm tại Godeok First Dental
           </p>
         </div>
       </div>
     </div>
   );
 }
-

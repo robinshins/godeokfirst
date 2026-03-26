@@ -18,8 +18,8 @@ export default function SedationAppealCard({ sedationCard }: SedationAppealCardP
         {/* 상단 라벨 */}
         <div className="px-5 pt-5 pb-2">
           <div className="flex items-center gap-1.5 mb-1.5">
-            <div className="w-1 h-3 bg-[#006aff] rounded-full"></div>
-            <span className="text-[#006aff] text-[12px] font-bold tracking-tight uppercase">무통/수면 치료</span>
+            <div className="w-1 h-3 bg-[#008095] rounded-full"></div>
+            <span className="text-[#008095] text-[12px] font-bold tracking-tight uppercase">무통/수면 치료</span>
           </div>
           <h3 className="text-[#1a1c21] font-bold text-[20px] tracking-[-0.5px] leading-[1.3]">
             {headerText}
@@ -65,7 +65,7 @@ export default function SedationAppealCard({ sedationCard }: SedationAppealCardP
                 className="mt-1 flex-shrink-0" 
                 width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
               >
-                <path d="M20 6L9 17L4 12" stroke="#006aff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M20 6L9 17L4 12" stroke="#008095" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
               <p className="text-[#374151] text-[15px] font-medium leading-[1.45] tracking-[-0.2px]">
                 {text}

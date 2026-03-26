@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function PromotionSection() {
   return (
-    <div className="bg-[#0a1628] w-full py-[70px] relative overflow-hidden">
+    <div className="bg-[#21314E] w-full py-[70px] relative overflow-hidden">
       {/* Background Gradient */}
       <div className="absolute h-[711px] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[375px] pointer-events-none">
         <div className="absolute inset-0">
@@ -22,26 +22,26 @@ export default function PromotionSection() {
           {/* Title */}
           <div className="flex flex-col gap-6 items-start w-full text-center">
             <h2 className="font-bold text-[36px] leading-[1.35] tracking-[-0.72px] text-[#f2f2f2] w-full">
-              Еще не делали<br />
-              профессиональную чистку?
+ чистка<br />
+ получить?
             </h2>
-            <div className="font-bold text-base leading-[2] tracking-[1.92px] uppercase text-[#51aefe] w-full">
-              <p className="mb-0">При чистке зубов</p>
-              <p>отбеливание со скидкой 50%!</p>
+            <div className="font-bold text-base leading-[2] tracking-[1.92px] uppercase text-[#4DC8D8] w-full">
+ <p className="mb-0"> чистка </p>
+              <p>отбеливание получить 50% скидка!</p>
             </div>
           </div>
 
           {/* Cards */}
           <div className="flex flex-col gap-6 w-full">
-            {/* Card 1: Standard Whitening */}
-            <div className="bg-[#0b1727] border border-[#ffdb59] rounded-[12px] p-6 flex flex-col gap-4 w-full">
+            {/* Card 1: Стандартное отбеливание */}
+            <div className="bg-[#21314E] border border-[#ffdb59] rounded-[12px] p-6 flex flex-col gap-4 w-full">
               <div className="flex items-start justify-between w-full">
                 <div className="flex flex-col gap-[6px] items-start justify-center text-white">
                   <p className="font-bold text-[24px] leading-[normal] tracking-[-0.96px] w-full">
                     Стандартное отбеливание
                   </p>
                   <p className="font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] opacity-70 w-full">
-                    1 цикл за один визит
+ день 1 проведение
                   </p>
                 </div>
                 <div className="bg-[#ffc53d] rounded-[8px] px-2.5 py-[5px]">
@@ -53,7 +53,7 @@ export default function PromotionSection() {
 
               <div className="flex flex-col items-start w-full">
                 <p className="font-medium text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] line-through w-full">
-                  Обычная цена
+ примерно 
                 </p>
                 <div className="flex gap-1 items-end w-full">
                   <p className="font-bold text-[60px] leading-none tracking-[-1.2px] text-white whitespace-nowrap">
@@ -78,7 +78,7 @@ export default function PromotionSection() {
                     />
                   </div>
                   <p className="font-semibold text-[18px] leading-[1.5] tracking-[-0.36px] text-white">
-                    Быстрый результат
+                    быстрый завершение
                   </p>
                 </div>
                 <div className="flex gap-3 items-center w-full">
@@ -91,13 +91,13 @@ export default function PromotionSection() {
                     />
                   </div>
                   <p className="font-semibold text-[18px] leading-[1.5] tracking-[-0.36px] text-white">
-                    Уход после процедуры
+                    операция после до уход
                   </p>
                 </div>
               </div>
             </div>
 
-
+   
           </div>
         </div>
       </div>
