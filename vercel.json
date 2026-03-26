@@ -7,6 +7,10 @@
     {
       "path": "/api/cron/blog-tracking",
       "schedule": "20 15 * * *"
+    },
+    {
+      "path": "/api/indexnow?secret=e2f6aa489f8d517ab9f290e254b5952d",
+      "schedule": "0 0 * * *"
     }
   ]
 }
