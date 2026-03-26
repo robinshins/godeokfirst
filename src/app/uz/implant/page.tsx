@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   description: 'Dental Implant Pyeongtaek. 대학병원 외래교수 출신 원장이 직접 수술하는 대학병원급 임플란트. 디지털 정밀 진단 시스템',
   keywords: '고덕임플란트, 평택임플란트, 고덕동임플란트, 평택임플란트잘하는곳, 고덕임플란트잘하는곳, 임플란트전문, Godeok First Dental, 평택치과, 고덕치과, 고덕동치과',
   alternates: {
-    canonical: 'https://gdfirstdent.com/uz/implant',
+    canonical: 'https://gdfirstdent.co.kr/uz/implant',
   },
   openGraph: {
     title: 'Dental Implant Pyeongtaek | Godeok First Dental',
     description: '대학병원 외래교수 출신 원장이 직접 수술하는 대학병원급 임플란트. 1,200회 이상 식립 경험.',
-    url: 'https://gdfirstdent.com/uz/implant',
+    url: 'https://gdfirstdent.co.kr/uz/implant',
     siteName: 'Godeok First Dental',
     type: 'website',
   },
@@ -28,15 +28,15 @@ const faqSchema = generateFAQSchema(faqData.implant);
 
 // Breadcrumb Schema
 const breadcrumbSchema = generateBreadcrumbSchema([
-  { name: '홈', url: 'https://gdfirstdent.com/uz' },
-  { name: '임플란트', url: 'https://gdfirstdent.com/uz/implant' }
+  { name: '홈', url: 'https://gdfirstdent.co.kr/uz' },
+  { name: '임플란트', url: 'https://gdfirstdent.co.kr/uz/implant' }
 ]);
 
 // Medical Service Schema
 const medicalServiceSchema = generateMedicalServiceSchema({
   name: '임플란트',
   description: '조선대학교 치과병원 외래교수 출신 원장이 직접 수술하는 대학병원급 임플란트. 디지털 가이드 시스템으로 정밀하고 안전한 시술.',
-  url: 'https://gdfirstdent.com/uz/implant'
+  url: 'https://gdfirstdent.co.kr/uz/implant'
 });
 import VideoSection from '@/components/uz/implant/VideoSection';
 import StatsSection from '@/components/uz/implant/StatsSection';

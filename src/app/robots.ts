@@ -5,8 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: ['/admin', '/api/'],
     },
-    sitemap: 'https://gdfirstdent.com/sitemap.xml',
+    sitemap: 'https://gdfirstdent.co.kr/sitemap.xml',
   }
 }

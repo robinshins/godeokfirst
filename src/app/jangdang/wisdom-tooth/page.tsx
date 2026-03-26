@@ -90,12 +90,12 @@ export const metadata: Metadata = {
   description: '장당동에서 차로 15분. 통합치의학전문의의 CT 기반 정밀 사랑니 발치. 매복 사랑니, 수평 매복 전문. 건강보험 적용. 고덕퍼스트치과 031-611-3222.',
   keywords: ['장당동 사랑니', '장당동 사랑니 발치', '평택 사랑니', '매복 사랑니', '고덕퍼스트치과', '장당동 치과'],
   alternates: {
-    canonical: 'https://gdfirstdent.com/jangdang/wisdom-tooth'
+    canonical: 'https://gdfirstdent.co.kr/jangdang/wisdom-tooth'
   },
   openGraph: {
     title: '장당동 사랑니 발치 | 매복 사랑니 전문 | 고덕퍼스트치과',
     description: '장당동에서 차로 15분. CT 기반 정밀 진단, 통합치의학전문의의 안전한 사랑니 발치.',
-    url: 'https://gdfirstdent.com/jangdang/wisdom-tooth',
+    url: 'https://gdfirstdent.co.kr/jangdang/wisdom-tooth',
     siteName: '고덕퍼스트치과',
     type: 'article',
     locale: 'ko_KR'
@@ -124,19 +124,19 @@ export default function JangdangWisdomToothPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://gdfirstdent.com'
+        item: 'https://gdfirstdent.co.kr'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '장당동',
-        item: 'https://gdfirstdent.com/jangdang'
+        item: 'https://gdfirstdent.co.kr/jangdang'
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: '사랑니 발치',
-        item: 'https://gdfirstdent.com/jangdang/wisdom-tooth'
+        item: 'https://gdfirstdent.co.kr/jangdang/wisdom-tooth'
       }
     ]
   };

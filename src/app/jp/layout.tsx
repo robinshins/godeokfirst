@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   },
   "description": "高徳エデュタウン初の歯科。統合歯科専門医が直接治療。",
   "alternates": {
-    "canonical": "https://gdfirstdent.com/jp"
+    "canonical": "https://gdfirstdent.co.kr/jp"
   },
   "openGraph": {
     "siteName": "コドクファースト歯科",
     "title": "コドクファースト歯科 | 平沢・高徳エデュタウン",
     "description": "高徳エデュタウン初の歯科。統合歯科専門医が直接治療。",
-    "url": "https://gdfirstdent.com/jp",
+    "url": "https://gdfirstdent.co.kr/jp",
     "locale": "ja_JP",
     "type": "website"
   }

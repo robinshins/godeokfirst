@@ -20,12 +20,12 @@ export const metadata: Metadata = {
   title: '高德牙周治疗·洁牙 | 高德First牙科',
   description: '平泽·高德 Gum care & scaling specialist. 综合牙科专家亲自治疗. Gum disease, periodontitis, scaling.',
   alternates: {
-    canonical: 'https://gdfirstdent.com/cn/gum-care',
+    canonical: 'https://gdfirstdent.co.kr/cn/gum-care',
   },
   openGraph: {
     title: '高德牙周治疗·洁牙 | 高德First牙科',
     description: '平泽·高德 Gum care & scaling specialist. 综合牙科专家亲自治疗.',
-    url: 'https://gdfirstdent.com/cn/gum-care',
+    url: 'https://gdfirstdent.co.kr/cn/gum-care',
     siteName: '高德First牙科',
     type: 'website',
   },

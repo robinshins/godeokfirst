@@ -17,12 +17,12 @@ export const metadata: Metadata = {
   title: '高徳ホワイトニング | コドクファースト歯科',
   description: '平沢・高徳 ホワイトニング専門歯科. オステムBeautisシステムで知覚過敏なく安全に. 統合歯科専門医が直接治療します.',
   alternates: {
-    canonical: 'https://gdfirstdent.com/jp/whitening',
+    canonical: 'https://gdfirstdent.co.kr/jp/whitening',
   },
   openGraph: {
     title: '高徳ホワイトニング | コドクファースト歯科',
     description: '平沢・高徳 ホワイトニング専門歯科. オステムBeautisシステムで知覚過敏なく安全に.',
-    url: 'https://gdfirstdent.com/jp/whitening',
+    url: 'https://gdfirstdent.co.kr/jp/whitening',
     siteName: 'コドクファースト歯科',
     type: 'website',
   },

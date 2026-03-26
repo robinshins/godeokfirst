@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   description: '平沢・高徳インプラント. 대학병원 외래교수 출신 원장이 직접 수술하는 대학병원급 임플란트. 디지털 정밀 진단 시스템',
   keywords: '고덕임플란트, 평택임플란트, 고덕동임플란트, 평택임플란트잘하는곳, 고덕임플란트잘하는곳, 임플란트전문, コドクファースト歯科, 평택치과, 고덕치과, 고덕동치과',
   alternates: {
-    canonical: 'https://gdfirstdent.com/jp/implant',
+    canonical: 'https://gdfirstdent.co.kr/jp/implant',
   },
   openGraph: {
     title: '平沢・高徳インプラント | コドクファースト歯科',
     description: '대학병원 외래교수 출신 원장이 직접 수술하는 대학병원급 임플란트. 1,200회 이상 식립 경험.',
-    url: 'https://gdfirstdent.com/jp/implant',
+    url: 'https://gdfirstdent.co.kr/jp/implant',
     siteName: 'コドクファースト歯科',
     type: 'website',
   },
@@ -28,15 +28,15 @@ const faqSchema = generateFAQSchema(faqData.implant);
 
 // Breadcrumb Schema
 const breadcrumbSchema = generateBreadcrumbSchema([
-  { name: '홈', url: 'https://gdfirstdent.com/jp' },
-  { name: '임플란트', url: 'https://gdfirstdent.com/jp/implant' }
+  { name: '홈', url: 'https://gdfirstdent.co.kr/jp' },
+  { name: '임플란트', url: 'https://gdfirstdent.co.kr/jp/implant' }
 ]);
 
 // Medical Service Schema
 const medicalServiceSchema = generateMedicalServiceSchema({
   name: '임플란트',
   description: '조선대학교 치과병원 외래교수 출신 원장이 직접 수술하는 대학병원급 임플란트. 디지털 가이드 시스템으로 정밀하고 안전한 시술.',
-  url: 'https://gdfirstdent.com/jp/implant'
+  url: 'https://gdfirstdent.co.kr/jp/implant'
 });
 import VideoSection from '@/components/jp/implant/VideoSection';
 import StatsSection from '@/components/jp/implant/StatsSection';

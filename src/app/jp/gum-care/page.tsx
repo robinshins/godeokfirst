@@ -20,12 +20,12 @@ export const metadata: Metadata = {
   title: '高徳歯周病治療・スケーリング | コドクファースト歯科',
   description: '平沢・高徳 歯周病治療・スケーリング専門歯科. 統合歯科専門医が直接治療します. 歯周病、歯周炎、スケーリング.',
   alternates: {
-    canonical: 'https://gdfirstdent.com/jp/gum-care',
+    canonical: 'https://gdfirstdent.co.kr/jp/gum-care',
   },
   openGraph: {
     title: '高徳歯周病治療・スケーリング | コドクファースト歯科',
     description: '平沢・高徳 歯周病治療・スケーリング専門歯科. 統合歯科専門医が直接治療します.',
-    url: 'https://gdfirstdent.com/jp/gum-care',
+    url: 'https://gdfirstdent.co.kr/jp/gum-care',
     siteName: 'コドクファースト歯科',
     type: 'website',
   },

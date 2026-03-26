@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   description: 'Digital guide implant surgery by a university hospital professor. 1,200+ implant cases. Comprehensive Dentistry Specialist performs all procedures directly.',
   keywords: 'dental implant Korea, dental implant Pyeongtaek, Godeok implant, digital guide implant, implant specialist Korea',
   alternates: {
-    canonical: 'https://gdfirstdent.com/en/implant',
+    canonical: 'https://gdfirstdent.co.kr/en/implant',
   },
   openGraph: {
     title: 'Dental Implant Pyeongtaek | Godeok First Dental',
     description: 'Digital guide implant surgery by a university hospital professor. 1,200+ implant cases.',
-    url: 'https://gdfirstdent.com/en/implant',
+    url: 'https://gdfirstdent.co.kr/en/implant',
     siteName: 'Godeok First Dental',
     type: 'website',
   },
@@ -28,15 +28,15 @@ const faqSchema = generateFAQSchema(faqData.implant);
 
 // Breadcrumb Schema
 const breadcrumbSchema = generateBreadcrumbSchema([
-  { name: 'Home', url: 'https://gdfirstdent.com/en' },
-  { name: 'Implant', url: 'https://gdfirstdent.com/en/implant' }
+  { name: 'Home', url: 'https://gdfirstdent.co.kr/en' },
+  { name: 'Implant', url: 'https://gdfirstdent.co.kr/en/implant' }
 ]);
 
 // Medical Service Schema
 const medicalServiceSchema = generateMedicalServiceSchema({
   name: 'Dental Implant',
   description: 'University hospital professor-level implant surgery with digital guide system for precise and safe procedures.',
-  url: 'https://gdfirstdent.com/en/implant'
+  url: 'https://gdfirstdent.co.kr/en/implant'
 });
 import VideoSection from '@/components/en/implant/VideoSection';
 import StatsSection from '@/components/en/implant/StatsSection';

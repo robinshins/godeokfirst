@@ -23,12 +23,12 @@ export const metadata: Metadata = {
   title: 'Cavity Treatment Godeok | Godeok First Dental',
   description: 'Pyeongtaek Godeok Cavity treatment specialist. Comprehensive Dentistry Specialist treats directly. Resin, inlay, root canal, TRIOS5 digital scan.',
   alternates: {
-    canonical: 'https://gdfirstdent.com/uz/cavity-treatment',
+    canonical: 'https://gdfirstdent.co.kr/uz/cavity-treatment',
   },
   openGraph: {
     title: 'Cavity Treatment Godeok | Godeok First Dental',
     description: 'Pyeongtaek Godeok Cavity treatment specialist. Comprehensive Dentistry Specialist treats directly.',
-    url: 'https://gdfirstdent.com/uz/cavity-treatment',
+    url: 'https://gdfirstdent.co.kr/uz/cavity-treatment',
     siteName: 'Godeok First Dental',
     type: 'website',
   },

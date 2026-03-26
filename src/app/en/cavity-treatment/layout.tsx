@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   description: '고덕동cavity treatment 평택cavity treatment 전문. Comprehensive Dentistry Specialist, 정밀 진단, 자연치아 보존 치료. 발치 대신 살리는 치료.',
   keywords: ['고덕동cavity treatment', '평택cavity treatment', 'Godeok First Dental충치', '고덕동신경치료', '평택신경치료'],
   alternates: {
-    canonical: 'https://gdfirstdent.com/cavity-treatment',
+    canonical: 'https://gdfirstdent.co.kr/cavity-treatment',
   },
   openGraph: {
     title: '고덕동cavity treatment 평택cavity treatment | Godeok First Dental',
     description: '고덕동cavity treatment 평택cavity treatment 전문. Comprehensive Dentistry Specialist, 정밀 진단, 자연치아 보존 치료.',
-    url: 'https://gdfirstdent.com/cavity-treatment',
+    url: 'https://gdfirstdent.co.kr/cavity-treatment',
     siteName: 'Godeok First Dental',
     type: 'website',
     images: [{ url: '/icons/cavity.png', width: 200, height: 200 }],
@@ -23,11 +23,11 @@ const cavityJsonLd = {
   '@graph': [
     {
       '@type': 'MedicalProcedure',
-      '@id': 'https://gdfirstdent.com/cavity-treatment#service',
+      '@id': 'https://gdfirstdent.co.kr/cavity-treatment#service',
       name: '고덕동cavity treatment 평택cavity treatment',
       description: '고덕동cavity treatment 평택cavity treatment 전문. 발치 대신 살리는 치료, Comprehensive Dentistry Specialist의 정밀 치료.',
-      image: 'https://gdfirstdent.com/icons/cavity.png',
-      url: 'https://gdfirstdent.com/cavity-treatment',
+      image: 'https://gdfirstdent.co.kr/icons/cavity.png',
+      url: 'https://gdfirstdent.co.kr/cavity-treatment',
       procedureType: 'Noninvasive',
       bodyLocation: 'Teeth',
       provider: {
@@ -37,7 +37,7 @@ const cavityJsonLd = {
     },
     {
       '@type': 'FAQPage',
-      '@id': 'https://gdfirstdent.com/cavity-treatment#faq',
+      '@id': 'https://gdfirstdent.co.kr/cavity-treatment#faq',
       mainEntity: [
         {
           '@type': 'Question',

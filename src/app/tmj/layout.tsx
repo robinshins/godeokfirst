@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   description: '평택 고덕 턱관절 치료 전문 치과. 턱관절 통증, 개구장애, 턱소리 정밀 진단. 통합치의학과 전문의가 직접 진료합니다.',
   keywords: ['고덕턱관절', '평택턱관절치료', '턱관절통증', '개구장애', '고덕퍼스트치과턱관절'],
   alternates: {
-    canonical: 'https://gdfirstdent.com/tmj',
+    canonical: 'https://gdfirstdent.co.kr/tmj',
   },
   openGraph: {
     title: '고덕턱관절치료 | 고덕퍼스트치과',
     description: '평택 고덕 턱관절 치료 전문 치과. 통합치의학과 전문의가 직접 진료합니다.',
-    url: 'https://gdfirstdent.com/tmj',
+    url: 'https://gdfirstdent.co.kr/tmj',
     siteName: '고덕퍼스트치과',
     type: 'website',
   },
@@ -21,10 +21,10 @@ const tmjJsonLd = {
   '@graph': [
     {
       '@type': 'MedicalProcedure',
-      '@id': 'https://gdfirstdent.com/tmj#service',
+      '@id': 'https://gdfirstdent.co.kr/tmj#service',
       name: '턱관절 치료',
       description: '턱관절 통증, 개구장애, 턱소리 등 턱관절 장애 정밀 진단 및 맞춤 치료',
-      url: 'https://gdfirstdent.com/tmj',
+      url: 'https://gdfirstdent.co.kr/tmj',
       procedureType: 'Noninvasive',
       bodyLocation: 'Temporomandibular Joint',
       provider: {
@@ -34,7 +34,7 @@ const tmjJsonLd = {
     },
     {
       '@type': 'FAQPage',
-      '@id': 'https://gdfirstdent.com/tmj#faq',
+      '@id': 'https://gdfirstdent.co.kr/tmj#faq',
       mainEntity: [
         {
           '@type': 'Question',

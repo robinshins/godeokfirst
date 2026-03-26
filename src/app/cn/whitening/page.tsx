@@ -17,12 +17,12 @@ export const metadata: Metadata = {
   title: '高德牙齿美白 | 高德First牙科',
   description: '平泽·高德 Teeth whitening specialist. Safe with Osstem Beautis system. 综合牙科专家亲自治疗.',
   alternates: {
-    canonical: 'https://gdfirstdent.com/cn/whitening',
+    canonical: 'https://gdfirstdent.co.kr/cn/whitening',
   },
   openGraph: {
     title: '高德牙齿美白 | 高德First牙科',
     description: '平泽·高德 Teeth whitening specialist. Safe with Osstem Beautis system.',
-    url: 'https://gdfirstdent.com/cn/whitening',
+    url: 'https://gdfirstdent.co.kr/cn/whitening',
     siteName: '高德First牙科',
     type: 'website',
   },

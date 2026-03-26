@@ -105,13 +105,13 @@ export const metadata: Metadata = {
     '고덕동 치과',
   ],
   alternates: {
-    canonical: 'https://gdfirstdent.com/godeok/wisdom-tooth',
+    canonical: 'https://gdfirstdent.co.kr/godeok/wisdom-tooth',
   },
   openGraph: {
     title: '고덕동 사랑니 발치 | 고덕퍼스트치과',
     description:
       '에듀타운 도보 5분. 대학병원 외래교수 출신 원장의 CT 기반 정밀 사랑니 발치. 매복 사랑니 전문.',
-    url: 'https://gdfirstdent.com/godeok/wisdom-tooth',
+    url: 'https://gdfirstdent.co.kr/godeok/wisdom-tooth',
     siteName: '고덕퍼스트치과',
     type: 'article',
   },
@@ -139,19 +139,19 @@ export default function GodeokWisdomToothPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://gdfirstdent.com',
+        item: 'https://gdfirstdent.co.kr',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '고덕동',
-        item: 'https://gdfirstdent.com/godeok',
+        item: 'https://gdfirstdent.co.kr/godeok',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: '사랑니 발치',
-        item: 'https://gdfirstdent.com/godeok/wisdom-tooth',
+        item: 'https://gdfirstdent.co.kr/godeok/wisdom-tooth',
       },
     ],
   };

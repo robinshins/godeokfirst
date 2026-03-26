@@ -105,13 +105,13 @@ export const metadata: Metadata = {
     '고덕퍼스트치과',
   ],
   alternates: {
-    canonical: 'https://gdfirstdent.com/segyo/cavity-treatment',
+    canonical: 'https://gdfirstdent.co.kr/segyo/cavity-treatment',
   },
   openGraph: {
     title: '세교동 충치 치료 | 고덕퍼스트치과',
     description:
       '세교신도시 가족을 위한 충치 치료. 통합치의학전문의의 자연치아 보존, 소아 충치 전문 진료.',
-    url: 'https://gdfirstdent.com/segyo/cavity-treatment',
+    url: 'https://gdfirstdent.co.kr/segyo/cavity-treatment',
     siteName: '고덕퍼스트치과',
     type: 'article',
   },
@@ -139,19 +139,19 @@ export default function SegyoCavityTreatmentPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://gdfirstdent.com',
+        item: 'https://gdfirstdent.co.kr',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '세교동',
-        item: 'https://gdfirstdent.com/segyo',
+        item: 'https://gdfirstdent.co.kr/segyo',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: '충치 치료',
-        item: 'https://gdfirstdent.com/segyo/cavity-treatment',
+        item: 'https://gdfirstdent.co.kr/segyo/cavity-treatment',
       },
     ],
   };

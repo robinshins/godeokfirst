@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   description: '고덕동 teeth whitening dental specialist. 오스템 뷰티스 시스템, 스케일링과 함께 할인. 1회 시술로 즉시 효과.',
   keywords: ['고덕동미백', '평택teeth whitening', 'Godeok First Dental미백', 'teeth whitening'],
   alternates: {
-    canonical: 'https://gdfirstdent.com/whitening',
+    canonical: 'https://gdfirstdent.co.kr/whitening',
   },
   openGraph: {
     title: '고덕동미백 teeth whitening | Godeok First Dental',
     description: '고덕동 teeth whitening dental specialist. 오스템 뷰티스 시스템, 스케일링과 함께 할인.',
-    url: 'https://gdfirstdent.com/whitening',
+    url: 'https://gdfirstdent.co.kr/whitening',
     siteName: 'Godeok First Dental',
     type: 'website',
     images: [{ url: '/icons/whitening.png', width: 200, height: 200 }],
@@ -23,11 +23,11 @@ const whiteningJsonLd = {
   '@graph': [
     {
       '@type': 'MedicalProcedure',
-      '@id': 'https://gdfirstdent.com/whitening#service',
+      '@id': 'https://gdfirstdent.co.kr/whitening#service',
       name: '치아 미백',
       description: '안전하고 효과적인 치아 미백 시술, 스케일링과 함께 50% 할인',
-      image: 'https://gdfirstdent.com/icons/whitening.png',
-      url: 'https://gdfirstdent.com/whitening',
+      image: 'https://gdfirstdent.co.kr/icons/whitening.png',
+      url: 'https://gdfirstdent.co.kr/whitening',
       procedureType: 'Noninvasive',
       bodyLocation: 'Teeth',
       provider: {
@@ -37,7 +37,7 @@ const whiteningJsonLd = {
     },
     {
       '@type': 'FAQPage',
-      '@id': 'https://gdfirstdent.com/whitening#faq',
+      '@id': 'https://gdfirstdent.co.kr/whitening#faq',
       mainEntity: [
         {
           '@type': 'Question',

@@ -20,12 +20,12 @@ export const metadata: Metadata = {
   title: 'Gum Care & Scaling Godeok | Godeok First Dental',
   description: 'Pyeongtaek Godeok Gum care & scaling specialist. Comprehensive Dentistry Specialist treats directly. Gum disease, periodontitis, scaling.',
   alternates: {
-    canonical: 'https://gdfirstdent.com/th/gum-care',
+    canonical: 'https://gdfirstdent.co.kr/th/gum-care',
   },
   openGraph: {
     title: 'Gum Care & Scaling Godeok | Godeok First Dental',
     description: 'Pyeongtaek Godeok Gum care & scaling specialist. Comprehensive Dentistry Specialist treats directly.',
-    url: 'https://gdfirstdent.com/th/gum-care',
+    url: 'https://gdfirstdent.co.kr/th/gum-care',
     siteName: 'Godeok First Dental',
     type: 'website',
   },

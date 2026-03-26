@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   description: '平沢・高徳동 전체임플란트, 틀니. 조선대학교 치과병원 외래교수 역임, 서울대 치의학대학원 임플란트 우수상 수료 원장이 직접 진료합니다.',
   keywords: '평택틀니, 고덕틀니, 고덕동틀니, 평택전체임플란트, 고덕전체임플란트, 무치악임플란트, 올온포임플란트, 알론식스, 임플란트틀니, 오버덴처, コドクファースト歯科, 고덕치과, 평택치과',
   alternates: {
-    canonical: 'https://gdfirstdent.com/jp/denture',
+    canonical: 'https://gdfirstdent.co.kr/jp/denture',
   },
   openGraph: {
     title: '平沢・高徳 全顎インプラント・入れ歯 | コドクファースト歯科',
     description: '대학 치과병원 외래교수 역임 원장이 직접 진료하는 전체임플란트, 틀니 전문. 임플란트 1,200회+, 재수술 0건.',
-    url: 'https://gdfirstdent.com/jp/denture',
+    url: 'https://gdfirstdent.co.kr/jp/denture',
     siteName: 'コドクファースト歯科',
     type: 'website',
   },
@@ -28,15 +28,15 @@ const faqSchema = generateFAQSchema(faqData.denture);
 
 // Breadcrumb Schema
 const breadcrumbSchema = generateBreadcrumbSchema([
-  { name: '홈', url: 'https://gdfirstdent.com/jp' },
-  { name: '전체임플란트·틀니', url: 'https://gdfirstdent.com/jp/denture' }
+  { name: '홈', url: 'https://gdfirstdent.co.kr/jp' },
+  { name: '전체임플란트·틀니', url: 'https://gdfirstdent.co.kr/jp/denture' }
 ]);
 
 // Medical Service Schema
 const medicalServiceSchema = generateMedicalServiceSchema({
   name: '전체임플란트·틀니',
   description: '대학 치과병원 외래교수 역임 원장이 직접 진료하는 전체임플란트, 틀니 전문. 평생 씹는 즐거움을 되찾아드립니다.',
-  url: 'https://gdfirstdent.com/jp/denture'
+  url: 'https://gdfirstdent.co.kr/jp/denture'
 });
 import StatsSection from '@/components/jp/denture/StatsSection';
 import TreatmentOptionsSection from '@/components/jp/denture/TreatmentOptionsSection';

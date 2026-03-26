@@ -20,12 +20,12 @@ export const metadata: Metadata = {
   title: '고덕잇몸치료 스케일링 | 고덕퍼스트치과',
   description: '평택 고덕 잇몸치료·스케일링 전문 치과. 통합치의학과 전문의가 직접 진료합니다. 잇몸질환, 치주염, 스케일링.',
   alternates: {
-    canonical: 'https://godukfirst.com/gum-care',
+    canonical: 'https://gdfirstdent.co.kr/gum-care',
   },
   openGraph: {
     title: '고덕잇몸치료 스케일링 | 고덕퍼스트치과',
     description: '평택 고덕 잇몸치료·스케일링 전문 치과. 통합치의학과 전문의가 직접 진료합니다.',
-    url: 'https://godukfirst.com/gum-care',
+    url: 'https://gdfirstdent.co.kr/gum-care',
     siteName: '고덕퍼스트치과',
     type: 'website',
   },

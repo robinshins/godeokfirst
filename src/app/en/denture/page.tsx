@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   description: 'Full-arch implants and dentures. University hospital professor operates directly at Godeok First Dental.',
   keywords: 'denture Korea, full arch implant, All-on-4, All-on-6, overdenture, Godeok dental',
   alternates: {
-    canonical: 'https://gdfirstdent.com/en/denture',
+    canonical: 'https://gdfirstdent.co.kr/en/denture',
   },
   openGraph: {
     title: 'Dentures & Full-Arch Implants | Godeok First Dental',
     description: 'Full-arch implants and dentures by a university hospital professor. 1,200+ implant cases.',
-    url: 'https://gdfirstdent.com/en/denture',
+    url: 'https://gdfirstdent.co.kr/en/denture',
     siteName: 'Godeok First Dental',
     type: 'website',
   },
@@ -28,15 +28,15 @@ const faqSchema = generateFAQSchema(faqData.denture);
 
 // Breadcrumb Schema
 const breadcrumbSchema = generateBreadcrumbSchema([
-  { name: 'Home', url: 'https://gdfirstdent.com/en' },
-  { name: 'Dentures & Full-Arch Implants', url: 'https://gdfirstdent.com/en/denture' }
+  { name: 'Home', url: 'https://gdfirstdent.co.kr/en' },
+  { name: 'Dentures & Full-Arch Implants', url: 'https://gdfirstdent.co.kr/en/denture' }
 ]);
 
 // Medical Service Schema
 const medicalServiceSchema = generateMedicalServiceSchema({
   name: 'Dentures & Full-Arch Implants',
   description: 'Full-arch implants and dentures by a university hospital professor.',
-  url: 'https://gdfirstdent.com/en/denture'
+  url: 'https://gdfirstdent.co.kr/en/denture'
 });
 import StatsSection from '@/components/en/denture/StatsSection';
 import TreatmentOptionsSection from '@/components/en/denture/TreatmentOptionsSection';

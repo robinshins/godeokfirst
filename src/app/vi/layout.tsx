@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   },
   "description": "Phong kham nha khoa dau tien tai Godeok Edu Town.",
   "alternates": {
-    "canonical": "https://gdfirstdent.com/vi"
+    "canonical": "https://gdfirstdent.co.kr/vi"
   },
   "openGraph": {
     "siteName": "Godeok First Dental",
     "title": "Godeok First Dental | Pyeongtaek",
     "description": "Phong kham nha khoa dau tien tai Godeok Edu Town.",
-    "url": "https://gdfirstdent.com/vi",
+    "url": "https://gdfirstdent.co.kr/vi",
     "locale": "vi_VN",
     "type": "website"
   }

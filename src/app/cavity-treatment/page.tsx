@@ -23,12 +23,12 @@ export const metadata: Metadata = {
   title: '고덕충치치료 | 고덕퍼스트치과',
   description: '평택 고덕 충치치료 전문 치과. 통합치의학과 전문의가 직접 진료합니다. 레진, 인레이, 신경치료, 트리오스5 디지털 스캔.',
   alternates: {
-    canonical: 'https://godukfirst.com/cavity-treatment',
+    canonical: 'https://gdfirstdent.co.kr/cavity-treatment',
   },
   openGraph: {
     title: '고덕충치치료 | 고덕퍼스트치과',
     description: '평택 고덕 충치치료 전문 치과. 통합치의학과 전문의가 직접 진료합니다.',
-    url: 'https://godukfirst.com/cavity-treatment',
+    url: 'https://gdfirstdent.co.kr/cavity-treatment',
     siteName: '고덕퍼스트치과',
     type: 'website',
   },

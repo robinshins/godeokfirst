@@ -23,12 +23,12 @@ export const metadata: Metadata = {
   title: '高德龋齿治疗 | 高德First牙科',
   description: '平泽·高德 龋齿治疗专业牙科. 综合牙科专家亲自治疗. 树脂、嵌体、根管治疗、TRIOS5数字扫描.',
   alternates: {
-    canonical: 'https://gdfirstdent.com/cn/cavity-treatment',
+    canonical: 'https://gdfirstdent.co.kr/cn/cavity-treatment',
   },
   openGraph: {
     title: '高德龋齿治疗 | 高德First牙科',
     description: '平泽·高德 龋齿治疗专业牙科. 综合牙科专家亲自治疗.',
-    url: 'https://gdfirstdent.com/cn/cavity-treatment',
+    url: 'https://gdfirstdent.co.kr/cn/cavity-treatment',
     siteName: '高德First牙科',
     type: 'website',
   },

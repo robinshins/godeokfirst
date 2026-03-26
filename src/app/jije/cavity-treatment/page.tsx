@@ -90,12 +90,12 @@ export const metadata: Metadata = {
   description: '지제동 충치치료 전문 고덕퍼스트치과. 정밀 진단, 최소 삭제 보존 원칙. 직장인 효율 진료. 통합치의학과 전문의 직접 진료. 031-611-3222',
   keywords: '지제동 충치치료, 지제역 치과, 지제동 치과, 평택 충치치료, 직장인 치과, 보존치료, 고덕퍼스트치과',
   alternates: {
-    canonical: 'https://gdfirstdent.com/jije/cavity-treatment',
+    canonical: 'https://gdfirstdent.co.kr/jije/cavity-treatment',
   },
   openGraph: {
     title: '지제동 충치치료 | 고덕퍼스트치과',
     description: '지제동 직장인을 위한 효율적 보존 충치치료. 정밀 진단과 최소 삭제 원칙, 최소 내원 진료 설계.',
-    url: 'https://gdfirstdent.com/jije/cavity-treatment',
+    url: 'https://gdfirstdent.co.kr/jije/cavity-treatment',
     siteName: '고덕퍼스트치과',
     locale: 'ko_KR',
     type: 'article',
@@ -124,19 +124,19 @@ export default function JijeCavityTreatmentPage() {
         '@type': 'ListItem',
         position: 1,
         name: '홈',
-        item: 'https://gdfirstdent.com',
+        item: 'https://gdfirstdent.co.kr',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '지제동 치과',
-        item: 'https://gdfirstdent.com/jije',
+        item: 'https://gdfirstdent.co.kr/jije',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: '지제동 충치치료',
-        item: 'https://gdfirstdent.com/jije/cavity-treatment',
+        item: 'https://gdfirstdent.co.kr/jije/cavity-treatment',
       },
     ],
   };

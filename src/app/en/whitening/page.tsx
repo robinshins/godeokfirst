@@ -17,12 +17,12 @@ export const metadata: Metadata = {
   title: 'Teeth Whitening | Godeok First Dental',
   description: 'Safe teeth whitening with Osstem Beautis System. No sensitivity. Specialist performs directly.',
   alternates: {
-    canonical: 'https://gdfirstdent.com/en/whitening',
+    canonical: 'https://gdfirstdent.co.kr/en/whitening',
   },
   openGraph: {
     title: 'Teeth Whitening | Godeok First Dental',
     description: 'Safe teeth whitening with Osstem Beautis System at Godeok First Dental.',
-    url: 'https://gdfirstdent.com/en/whitening',
+    url: 'https://gdfirstdent.co.kr/en/whitening',
     siteName: 'Godeok First Dental',
     type: 'website',
   },

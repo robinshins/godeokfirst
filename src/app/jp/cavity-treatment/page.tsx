@@ -23,12 +23,12 @@ export const metadata: Metadata = {
   title: '高徳虫歯治療 | コドクファースト歯科',
   description: '平沢・高徳 虫歯治療専門歯科. 統合歯科専門医が直接治療します. レジン、インレー、根管治療、TRIOS5デジタルスキャン.',
   alternates: {
-    canonical: 'https://gdfirstdent.com/jp/cavity-treatment',
+    canonical: 'https://gdfirstdent.co.kr/jp/cavity-treatment',
   },
   openGraph: {
     title: '高徳虫歯治療 | コドクファースト歯科',
     description: '平沢・高徳 虫歯治療専門歯科. 統合歯科専門医が直接治療します.',
-    url: 'https://gdfirstdent.com/jp/cavity-treatment',
+    url: 'https://gdfirstdent.co.kr/jp/cavity-treatment',
     siteName: 'コドクファースト歯科',
     type: 'website',
   },

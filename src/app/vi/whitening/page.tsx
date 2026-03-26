@@ -17,12 +17,12 @@ export const metadata: Metadata = {
   title: 'Teeth Whitening Godeok | Godeok First Dental',
   description: 'Pyeongtaek Godeok Teeth whitening specialist. Safe with Osstem Beautis system. Comprehensive Dentistry Specialist treats directly.',
   alternates: {
-    canonical: 'https://gdfirstdent.com/vi/whitening',
+    canonical: 'https://gdfirstdent.co.kr/vi/whitening',
   },
   openGraph: {
     title: 'Teeth Whitening Godeok | Godeok First Dental',
     description: 'Pyeongtaek Godeok Teeth whitening specialist. Safe with Osstem Beautis system.',
-    url: 'https://gdfirstdent.com/vi/whitening',
+    url: 'https://gdfirstdent.co.kr/vi/whitening',
     siteName: 'Godeok First Dental',
     type: 'website',
   },

@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   },
   "description": "Godeok Edu Town first dental clinic.",
   "alternates": {
-    "canonical": "https://gdfirstdent.com/uz"
+    "canonical": "https://gdfirstdent.co.kr/uz"
   },
   "openGraph": {
     "siteName": "Godeok First Dental",
     "title": "Godeok First Dental | Pyeongtaek",
     "description": "Godeok Edu Town first dental clinic.",
-    "url": "https://gdfirstdent.com/uz",
+    "url": "https://gdfirstdent.co.kr/uz",
     "locale": "uz_UZ",
     "type": "website"
   }

@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   description: '고덕동사랑니 평택사랑니발치 전문. 3D CT precise diagnosis, 대학병원급 난이도 발치 가능. 통증 완화 마취 시스템.',
   keywords: ['고덕동사랑니', '평택사랑니발치', '高德First牙科사랑니', '평택사랑니', '사랑니발치'],
   alternates: {
-    canonical: 'https://gdfirstdent.com/wisdom-tooth',
+    canonical: 'https://gdfirstdent.co.kr/wisdom-tooth',
   },
   openGraph: {
     title: '고덕동사랑니 평택사랑니발치 | 高德First牙科',
     description: '고덕동사랑니 평택사랑니발치 전문. 3D CT precise diagnosis, 대학병원급 난이도 발치 가능.',
-    url: 'https://gdfirstdent.com/wisdom-tooth',
+    url: 'https://gdfirstdent.co.kr/wisdom-tooth',
     siteName: '高德First牙科',
     type: 'website',
     images: [{ url: '/icons/extraction.png', width: 200, height: 200 }],
@@ -23,11 +23,11 @@ const wisdomToothJsonLd = {
   '@graph': [
     {
       '@type': 'MedicalProcedure',
-      '@id': 'https://gdfirstdent.com/wisdom-tooth#service',
+      '@id': 'https://gdfirstdent.co.kr/wisdom-tooth#service',
       name: '고덕동사랑니 평택사랑니발치',
       description: '고덕동사랑니 평택사랑니발치 전문. 3D CT precise diagnosis으로 신경 손상없이 안전하게 발치. 대학병원급 난이도 발치.',
-      image: 'https://gdfirstdent.com/icons/extraction.png',
-      url: 'https://gdfirstdent.com/wisdom-tooth',
+      image: 'https://gdfirstdent.co.kr/icons/extraction.png',
+      url: 'https://gdfirstdent.co.kr/wisdom-tooth',
       procedureType: 'Surgical',
       bodyLocation: 'Mouth',
       provider: {
@@ -37,7 +37,7 @@ const wisdomToothJsonLd = {
     },
     {
       '@type': 'FAQPage',
-      '@id': 'https://gdfirstdent.com/wisdom-tooth#faq',
+      '@id': 'https://gdfirstdent.co.kr/wisdom-tooth#faq',
       mainEntity: [
         {
           '@type': 'Question',
