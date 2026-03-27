@@ -1,7 +1,7 @@
 {
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"ls -la /Users/singyuseob/Dev/dentist_goduk/src/app/favicon* /Users/singyuseob/Dev/dentist_goduk/src/app/icon* 2>&1\",\"description\":\"Check for favicon in app directory\"}",
-  "error": "Exit code 1\n(eval):1: no matches found: /Users/singyuseob/Dev/dentist_goduk/src/app/icon*",
-  "timestamp": "2026-03-26T09:46:43.115Z",
-  "retry_count": 2
+  "tool_name": "Read",
+  "tool_input_preview": "{\"file_path\":\"/Users/singyuseob/Dev/dentist_goduk/src/app/admin/page.tsx\"}",
+  "error": "File content (29477 tokens) exceeds maximum allowed tokens (10000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole file.",
+  "timestamp": "2026-03-27T06:28:32.098Z",
+  "retry_count": 1
 }

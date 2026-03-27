@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1774420183239,
+  "lastScanned": 1774592891041,
   "projectRoot": "/Users/singyuseob/Dev/dentist_goduk",
   "techStack": {
     "languages": [
@@ -76,7 +76,7 @@
       "path": "docs",
       "purpose": "Documentation",
       "fileCount": 1,
-      "lastAccessed": 1774420183162,
+      "lastAccessed": 1774592890905,
       "keyFiles": [
         "TRACKING_SYSTEM_GUIDE.md"
       ]
@@ -84,21 +84,21 @@
     "public": {
       "path": "public",
       "purpose": "Public files",
-      "fileCount": 8,
-      "lastAccessed": 1774420183165,
+      "fileCount": 12,
+      "lastAccessed": 1774592890905,
       "keyFiles": [
         "Vector3.png",
+        "e2f6aa489f8d517ab9f290e254b5952d.txt",
+        "favicon.ico",
         "file.svg",
-        "globe.svg",
-        "logo_oneword.svg",
-        "window.svg"
+        "globe.svg"
       ]
     },
     "scripts": {
       "path": "scripts",
       "purpose": "Build/utility scripts",
       "fileCount": 7,
-      "lastAccessed": 1774420183199,
+      "lastAccessed": 1774592890970,
       "keyFiles": [
         "apply-rename.js",
         "korean-to-english-mapping.json",
@@ -111,7 +111,7 @@
       "path": "src",
       "purpose": "Source code",
       "fileCount": 2,
-      "lastAccessed": 1774420183200,
+      "lastAccessed": 1774592890977,
       "keyFiles": [
         "middleware.ts"
       ]
@@ -119,19 +119,19 @@
     "src/app": {
       "path": "src/app",
       "purpose": "Application code",
-      "fileCount": 9,
-      "lastAccessed": 1774420183204,
+      "fileCount": 8,
+      "lastAccessed": 1774592890986,
       "keyFiles": [
-        "favicon.ico",
         "globals.css",
-        "layout.tsx"
+        "layout.tsx",
+        "opengraph-image.png"
       ]
     },
     "src/components": {
       "path": "src/components",
       "purpose": "UI components",
       "fileCount": 14,
-      "lastAccessed": 1774420183205,
+      "lastAccessed": 1774592890994,
       "keyFiles": [
         "ChatInterface.tsx",
         "ConsultationForm.tsx",
@@ -142,7 +142,7 @@
       "path": "src/lib",
       "purpose": "Library code",
       "fileCount": 12,
-      "lastAccessed": 1774420183207,
+      "lastAccessed": 1774592890995,
       "keyFiles": [
         "faqData.ts",
         "intent-analyzer.ts",
@@ -153,7 +153,7 @@
       "path": "src/types",
       "purpose": "Type definitions",
       "fileCount": 1,
-      "lastAccessed": 1774420183208,
+      "lastAccessed": 1774592890995,
       "keyFiles": [
         "dom-to-image-more.d.ts"
       ]
@@ -162,309 +162,15 @@
       "path": "src/utils",
       "purpose": "Utility functions",
       "fileCount": 0,
-      "lastAccessed": 1774420183209,
+      "lastAccessed": 1774592890995,
       "keyFiles": []
     }
   },
   "hotPaths": [
     {
-      "path": "src/components/th/cavity-treatment/TreatmentMethodsSection.tsx",
-      "accessCount": 32,
-      "lastAccessed": 1774502883649,
-      "type": "file"
-    },
-    {
-      "path": "src/components/cn/cavity-treatment/TreatmentMethodsSection.tsx",
-      "accessCount": 19,
-      "lastAccessed": 1774496315402,
-      "type": "file"
-    },
-    {
-      "path": "src/components/th/TreatmentSection.tsx",
-      "accessCount": 16,
-      "lastAccessed": 1774496637251,
-      "type": "file"
-    },
-    {
-      "path": "src/components/uz/TreatmentSection.tsx",
-      "accessCount": 15,
-      "lastAccessed": 1774513536629,
-      "type": "file"
-    },
-    {
-      "path": "src/components",
-      "accessCount": 14,
-      "lastAccessed": 1774424443651,
-      "type": "directory"
-    },
-    {
-      "path": "src/components/en/HeroSection.tsx",
-      "accessCount": 13,
-      "lastAccessed": 1774429859163,
-      "type": "file"
-    },
-    {
-      "path": "src/components/home/HeroSection.tsx",
-      "accessCount": 13,
-      "lastAccessed": 1774433367612,
-      "type": "file"
-    },
-    {
-      "path": "src/components/en/FAQSection.tsx",
-      "accessCount": 12,
-      "lastAccessed": 1774430467249,
-      "type": "file"
-    },
-    {
-      "path": "src/components/en/TreatmentSection.tsx",
-      "accessCount": 11,
-      "lastAccessed": 1774430029094,
-      "type": "file"
-    },
-    {
-      "path": "src/app/api/chat/route.ts",
-      "accessCount": 10,
-      "lastAccessed": 1774421009519,
-      "type": "directory"
-    },
-    {
-      "path": "src/components/uz/cavity-treatment/TreatmentMethodsSection.tsx",
-      "accessCount": 10,
-      "lastAccessed": 1774503480955,
-      "type": "file"
-    },
-    {
-      "path": "src/app/ichung/cavity-treatment/page.tsx",
-      "accessCount": 9,
-      "lastAccessed": 1774420988096,
-      "type": "file"
-    },
-    {
-      "path": "src/components/en/cavity-treatment/TreatmentMethodsSection.tsx",
-      "accessCount": 9,
-      "lastAccessed": 1774433024346,
-      "type": "file"
-    },
-    {
-      "path": "src/components/cn/FAQSection.tsx",
-      "accessCount": 8,
-      "lastAccessed": 1774434537827,
-      "type": "file"
-    },
-    {
-      "path": "src/components/cavity-treatment/TreatmentMethodsSection.tsx",
-      "accessCount": 6,
-      "lastAccessed": 1774420876136,
-      "type": "file"
-    },
-    {
-      "path": "src/components/vi/cavity-treatment/TreatmentMethodsSection.tsx",
-      "accessCount": 6,
-      "lastAccessed": 1774420994892,
-      "type": "file"
-    },
-    {
-      "path": "src/components/jp/cavity-treatment/TreatmentMethodsSection.tsx",
-      "accessCount": 6,
-      "lastAccessed": 1774435904454,
-      "type": "file"
-    },
-    {
-      "path": "src/app/jije/cavity-treatment/page.tsx",
-      "accessCount": 5,
-      "lastAccessed": 1774420952806,
-      "type": "file"
-    },
-    {
-      "path": "src/app/seojeong/cavity-treatment/page.tsx",
-      "accessCount": 5,
-      "lastAccessed": 1774421010942,
-      "type": "file"
-    },
-    {
-      "path": "src/app/cavity-treatment/layout.tsx",
+      "path": "src/app/admin/page.tsx",
       "accessCount": 4,
-      "lastAccessed": 1774420883391,
-      "type": "file"
-    },
-    {
-      "path": "src/app/dongsak/cavity-treatment/page.tsx",
-      "accessCount": 4,
-      "lastAccessed": 1774420998033,
-      "type": "file"
-    },
-    {
-      "path": "src/components/home/ZeroFailureSection.tsx",
-      "accessCount": 4,
-      "lastAccessed": 1774423075657,
-      "type": "directory"
-    },
-    {
-      "path": "src/app/en/page.tsx",
-      "accessCount": 4,
-      "lastAccessed": 1774429325719,
-      "type": "file"
-    },
-    {
-      "path": "src/components/home/FAQSection.tsx",
-      "accessCount": 4,
-      "lastAccessed": 1774434157765,
-      "type": "file"
-    },
-    {
-      "path": "src/components/cn/TreatmentSection.tsx",
-      "accessCount": 4,
-      "lastAccessed": 1774434351894,
-      "type": "file"
-    },
-    {
-      "path": "src/components/th",
-      "accessCount": 4,
-      "lastAccessed": 1774503101734,
-      "type": "directory"
-    },
-    {
-      "path": "src/components/uz",
-      "accessCount": 4,
-      "lastAccessed": 1774513461147,
-      "type": "directory"
-    },
-    {
-      "path": "src",
-      "accessCount": 4,
-      "lastAccessed": 1774518853039,
-      "type": "directory"
-    },
-    {
-      "path": "src/app/ichung/page.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1774420960030,
-      "type": "file"
-    },
-    {
-      "path": "src/app/api/analyze-intent/route.ts",
-      "accessCount": 3,
-      "lastAccessed": 1774421010027,
-      "type": "file"
-    },
-    {
-      "path": "src/components/cn",
-      "accessCount": 3,
-      "lastAccessed": 1774421016199,
-      "type": "directory"
-    },
-    {
-      "path": "src/components/en",
-      "accessCount": 3,
-      "lastAccessed": 1774421017041,
-      "type": "directory"
-    },
-    {
-      "path": "src/components/home/TreatmentSection.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1774423156066,
-      "type": "file"
-    },
-    {
-      "path": "src/components/home",
-      "accessCount": 3,
-      "lastAccessed": 1774423156635,
-      "type": "directory"
-    },
-    {
-      "path": "src/app/page.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1774429325171,
-      "type": "file"
-    },
-    {
-      "path": "src/components/vi/TreatmentSection.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1774434193264,
-      "type": "file"
-    },
-    {
-      "path": "src/components/ru/TreatmentSection.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1774434207481,
-      "type": "file"
-    },
-    {
-      "path": "src/components/sections/TreatmentCards.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1774420854251,
-      "type": "file"
-    },
-    {
-      "path": "src/app/jije/page.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1774420928863,
-      "type": "file"
-    },
-    {
-      "path": "src/app/dongsak/page.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1774420990271,
-      "type": "file"
-    },
-    {
-      "path": "src/app/seojeong/page.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1774420999820,
-      "type": "file"
-    },
-    {
-      "path": "src/components/vi",
-      "accessCount": 2,
-      "lastAccessed": 1774421002216,
-      "type": "directory"
-    },
-    {
-      "path": "src/app/jangdang/cavity-treatment/page.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1774421015014,
-      "type": "file"
-    },
-    {
-      "path": "src/components/mn/cavity-treatment/TreatmentMethodsSection.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1774421081658,
-      "type": "file"
-    },
-    {
-      "path": "src/components/en/cavity-treatment",
-      "accessCount": 2,
-      "lastAccessed": 1774433727277,
-      "type": "directory"
-    },
-    {
-      "path": "src/app",
-      "accessCount": 2,
-      "lastAccessed": 1774518361840,
-      "type": "directory"
-    },
-    {
-      "path": "src/components/jp",
-      "accessCount": 1,
-      "lastAccessed": 1774420982889,
-      "type": "directory"
-    },
-    {
-      "path": "src/components/ru",
-      "accessCount": 1,
-      "lastAccessed": 1774420985958,
-      "type": "directory"
-    },
-    {
-      "path": "src/components/mn",
-      "accessCount": 1,
-      "lastAccessed": 1774420986865,
-      "type": "directory"
-    },
-    {
-      "path": "src/components/cn/cavity-treatment",
-      "accessCount": 1,
-      "lastAccessed": 1774421014253,
+      "lastAccessed": 1774592990981,
       "type": "directory"
     }
   ],

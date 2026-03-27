@@ -379,13 +379,13 @@ export default function AdminPage() {
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    if (password === '!!medis2019!') {
+    if (password === 'ascasc112') {
       localStorage.setItem('admin_auth', 'medis_admin_2019');
       setIsAuthenticated(true);
       setIsLimitedAccess(false);
       setAuthError('');
       setPassword('');
-    } else if (password === 'medis123!') {
+    } else if (password === 'ascasc112!') {
       // 외부 업체용 제한된 접근 (목록 탭만 접근 가능)
       localStorage.setItem('admin_auth', 'medis_limited_2019');
       setIsAuthenticated(true);
