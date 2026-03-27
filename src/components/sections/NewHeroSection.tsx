@@ -45,7 +45,7 @@ export default function NewHeroSection() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
               </svg>
             </div>
-            <span className="text-white text-base font-light">10년간 같은 자리 책임진료</span>
+            <span className="text-white text-base font-light">고덕에듀타운 1호 치과 책임진료</span>
           </div>
           <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm px-4 py-3 rounded-lg border border-white/10">
             <div className="w-8 h-8 bg-emerald-400/20 border-2 border-emerald-400 rounded-lg flex items-center justify-center flex-shrink-0">

@@ -25,12 +25,12 @@ function AlarmOption({ id, icon, title, description, defaultChecked }: {
   defaultChecked: boolean;
 }) {
   return (
-    <label htmlFor={id} className="flex items-start gap-3 p-4 border-2 border-gray-200 rounded-lg cursor-pointer hover:border-blue-300 hover:bg-blue-50 transition-all">
+    <label htmlFor={id} className="flex items-start gap-3 p-4 border-2 border-gray-200 rounded-lg cursor-pointer hover:border-[#4DC8D8] hover:bg-[#f0fafb] transition-all">
       <input
         type="checkbox"
         id={id}
         defaultChecked={defaultChecked}
-        className="mt-1 w-5 h-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+        className="mt-1 w-5 h-5 text-[#008095] border-gray-300 rounded focus:ring-[#008095]"
       />
       <div className="flex-1">
         <div className="flex items-center gap-2 mb-1">
@@ -761,7 +761,7 @@ export default function AdminPage() {
                 id="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#008095] focus:border-[#008095]"
                 placeholder="비밀번호를 입력하세요"
                 autoFocus
               />
@@ -771,7 +771,7 @@ export default function AdminPage() {
             </div>
             <button
               type="submit"
-              className="w-full px-4 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+              className="w-full px-4 py-3 bg-[#008095] text-white rounded-lg hover:bg-[#006B7A] transition-colors font-medium"
             >
               로그인
             </button>
@@ -813,7 +813,7 @@ export default function AdminPage() {
                   onClick={toggleBrowserNotification}
                   className={`flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
                     browserNotificationEnabled
-                      ? 'bg-blue-100 text-blue-700 hover:bg-blue-200'
+                      ? 'bg-[#e6f4f6] text-[#008095] hover:bg-[#d0eef2]'
                       : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
                   title={browserNotificationEnabled ? '브라우저 알림 켜짐' : '브라우저 알림 꺼짐'}
@@ -858,7 +858,7 @@ export default function AdminPage() {
                 onClick={() => setActiveTab('list')}
                 className={`py-4 px-1 border-b-2 font-medium text-sm transition-colors ${
                   activeTab === 'list'
-                    ? 'border-blue-600 text-blue-600'
+                    ? 'border-[#008095] text-[#008095]'
                     : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                 }`}
               >
@@ -870,7 +870,7 @@ export default function AdminPage() {
                     onClick={() => setActiveTab('stats')}
                     className={`py-4 px-1 border-b-2 font-medium text-sm transition-colors ${
                       activeTab === 'stats'
-                        ? 'border-blue-600 text-blue-600'
+                        ? 'border-[#008095] text-[#008095]'
                         : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                     }`}
                   >
@@ -880,7 +880,7 @@ export default function AdminPage() {
                     onClick={() => setActiveTab('intake')}
                     className={`py-4 px-1 border-b-2 font-medium text-sm transition-colors ${
                       activeTab === 'intake'
-                        ? 'border-blue-600 text-blue-600'
+                        ? 'border-[#008095] text-[#008095]'
                         : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                     }`}
                   >
@@ -890,32 +890,13 @@ export default function AdminPage() {
                     onClick={() => setActiveTab('popup')}
                     className={`py-4 px-1 border-b-2 font-medium text-sm transition-colors ${
                       activeTab === 'popup'
-                        ? 'border-blue-600 text-blue-600'
+                        ? 'border-[#008095] text-[#008095]'
                         : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                     }`}
                   >
                     팝업 관리
                   </button>
-                  <button
-                    onClick={() => setActiveTab('rank')}
-                    className={`py-4 px-1 border-b-2 font-medium text-sm transition-colors ${
-                      activeTab === 'rank'
-                        ? 'border-blue-600 text-blue-600'
-                        : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
-                    }`}
-                  >
-                    플레이스 순위추적
-                  </button>
-                  <button
-                    onClick={() => setActiveTab('blog')}
-                    className={`py-4 px-1 border-b-2 font-medium text-sm transition-colors ${
-                      activeTab === 'blog'
-                        ? 'border-blue-600 text-blue-600'
-                        : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
-                    }`}
-                  >
-                    블로그 노출추적
-                  </button>
+                  {/* 플레이스 순위추적, 블로그 노출추적 탭 숨김 */}
                 </>
               )}
             </nav>
@@ -933,7 +914,7 @@ export default function AdminPage() {
                 onClick={() => setDateRange(range)}
                 className={`px-3 sm:px-4 py-2 rounded-lg font-medium transition-colors text-sm sm:text-base ${
                   dateRange === range
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-[#008095] text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -956,7 +937,7 @@ export default function AdminPage() {
                   type="date"
                   value={startDate}
                   onChange={(e) => setStartDate(e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#008095] focus:border-[#008095]"
                 />
               </div>
               <div className="flex-1">
@@ -965,7 +946,7 @@ export default function AdminPage() {
                   type="date"
                   value={endDate}
                   onChange={(e) => setEndDate(e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#008095] focus:border-[#008095]"
                 />
               </div>
             </div>
@@ -987,7 +968,7 @@ export default function AdminPage() {
                   onClick={() => setSelectedSource('all')}
                   className={`px-3 sm:px-4 py-2 rounded-lg font-medium transition-colors text-sm sm:text-base ${
                     selectedSource === 'all'
-                      ? 'bg-blue-600 text-white'
+                      ? 'bg-[#008095] text-white'
                       : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
                 >
@@ -999,7 +980,7 @@ export default function AdminPage() {
                     onClick={() => setSelectedSource(stat.source)}
                     className={`px-3 sm:px-4 py-2 rounded-lg font-medium transition-colors text-sm sm:text-base ${
                       selectedSource === stat.source
-                        ? 'bg-blue-600 text-white'
+                        ? 'bg-[#008095] text-white'
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                     }`}
                   >
@@ -1017,7 +998,7 @@ export default function AdminPage() {
                     onClick={() => setSelectedStatus(status)}
                     className={`px-3 sm:px-4 py-2 rounded-lg font-medium transition-colors text-sm sm:text-base ${
                       selectedStatus === status
-                        ? 'bg-blue-600 text-white'
+                        ? 'bg-[#008095] text-white'
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                     }`}
                   >
@@ -1125,7 +1106,7 @@ export default function AdminPage() {
                                 </span>
                               )}
                               {log.booking_type === 'phone_consultation' && (
-                                <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                                <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-[#e6f4f6] text-[#006B7A]">
                                   📞 전화{log.preferred_call_time && ` (${log.preferred_call_time})`}
                                 </span>
                               )}
@@ -1134,7 +1115,7 @@ export default function AdminPage() {
                               )}
                             </td>
                             <td className="px-3 py-3 whitespace-nowrap text-sm">
-                              <span className="px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                              <span className="px-2 py-0.5 rounded-full text-xs font-medium bg-[#e6f4f6] text-[#006B7A]">
                                 {getReferrerSourceLabel(log.referrer_source)}
                               </span>
                             </td>
@@ -1164,7 +1145,7 @@ export default function AdminPage() {
                               <div className="flex items-center gap-2">
                                 <button
                                   onClick={() => setSelectedLog(log)}
-                                  className="text-blue-600 hover:text-blue-800 font-medium"
+                                  className="text-[#008095] hover:text-[#006B7A] font-medium"
                                 >
                                   보기
                                 </button>
@@ -1257,8 +1238,8 @@ export default function AdminPage() {
         <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-lg max-w-md w-full p-6 shadow-xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                <svg className="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+              <div className="w-12 h-12 bg-[#e6f4f6] rounded-full flex items-center justify-center">
+                <svg className="w-6 h-6 text-[#008095]" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
                 </svg>
               </div>
@@ -1270,7 +1251,7 @@ export default function AdminPage() {
 
             <div className="mb-6 space-y-4">
               {/* 설명 */}
-              <div className="p-4 bg-blue-50 rounded-lg">
+              <div className="p-4 bg-[#f0fafb] rounded-lg">
                 <p className="text-sm text-gray-700 mb-2">
                   ✓ 1분마다 새로운 상담 내역을 자동으로 확인합니다
                 </p>
@@ -1311,7 +1292,7 @@ export default function AdminPage() {
                   const browserNotif = (document.getElementById('browserNotification') as HTMLInputElement)?.checked || false;
                   handleAlarmSettings(soundAlarm, browserNotif);
                 }}
-                className="flex-1 px-4 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+                className="flex-1 px-4 py-3 bg-[#008095] text-white rounded-lg hover:bg-[#006B7A] transition-colors font-medium"
               >
                 설정 저장
               </button>
@@ -1337,7 +1318,7 @@ export default function AdminPage() {
                   className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
                     isDownloadingChat
                       ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-                      : 'bg-blue-50 text-blue-600 hover:bg-blue-100'
+                      : 'bg-[#f0fafb] text-[#008095] hover:bg-[#e6f4f6]'
                   }`}
                 >
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1396,7 +1377,7 @@ export default function AdminPage() {
                         </span>
                       )}
                       {selectedLog.booking_type === 'phone_consultation' && (
-                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#e6f4f6] text-[#006B7A]">
                           📞 전화 상담
                         </span>
                       )}
@@ -1429,13 +1410,13 @@ export default function AdminPage() {
                   {selectedLog.search_query && (
                     <div>
                       <p className="text-sm text-gray-600">검색어</p>
-                      <p className="font-medium text-blue-600">{selectedLog.search_query}</p>
+                      <p className="font-medium text-[#008095]">{selectedLog.search_query}</p>
                     </div>
                   )}
                   {selectedLog.referrer_url && (
                     <div className="col-span-2">
                       <p className="text-sm text-gray-600">참조 URL</p>
-                      <p className="font-medium text-xs break-all text-blue-600">{selectedLog.referrer_url}</p>
+                      <p className="font-medium text-xs break-all text-[#008095]">{selectedLog.referrer_url}</p>
                     </div>
                   )}
                   {selectedLog.utm_source && (

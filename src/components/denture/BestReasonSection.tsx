@@ -21,7 +21,7 @@ export default function BestReasonSection() {
     },
     {
       image: '/images/implant-reason-seminar-4.png',
-      title: '10년 간',
+      title: '수년간',
       subtitle: '재수술 0건'
     }
   ];

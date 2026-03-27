@@ -522,6 +522,17 @@ export const TREATMENT_CASE_IMAGES = {
         jp: { title: '奥歯インプラント（実際写真）', description: '奥歯インプラント補綴装着前後の比較' },
         cn: { title: '磨牙种植体（实拍照片）', description: '磨牙种植体修复体安装前后对比' }
       }
+    },
+    {
+      beforeImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_before.jpg',
+      afterImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_after.jpg',
+      title: '임플란트 (실제사진)',
+      description: '임플란트 식립 및 보철 전후 비교',
+      translations: {
+        en: { title: 'Implant (clinical photo)', description: 'Before and after implant placement and prosthetic' },
+        jp: { title: 'インプラント（実際写真）', description: 'インプラント埋入および補綴前後の比較' },
+        cn: { title: '种植体（实拍照片）', description: '种植体植入及修复前后对比' }
+      }
     }
   ],
 
@@ -547,6 +558,17 @@ export const TREATMENT_CASE_IMAGES = {
         en: { title: 'Molar implant (clinical photo)', description: 'Before and after molar implant prosthetic placement' },
         jp: { title: '奥歯インプラント（実際写真）', description: '奥歯インプラント補綴装着前後の比較' },
         cn: { title: '磨牙种植体（实拍照片）', description: '磨牙种植体修复体安装前后对比' }
+      }
+    },
+    {
+      beforeImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_before.jpg',
+      afterImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_after.jpg',
+      title: '임플란트 (실제사진)',
+      description: '임플란트 식립 및 보철 전후 비교',
+      translations: {
+        en: { title: 'Implant (clinical photo)', description: 'Before and after implant placement and prosthetic' },
+        jp: { title: 'インプラント（実際写真）', description: 'インプラント埋入および補綴前後の比較' },
+        cn: { title: '种植体（实拍照片）', description: '种植体植入及修复前后对比' }
       }
     }
   ],
@@ -574,6 +596,17 @@ export const TREATMENT_CASE_IMAGES = {
         jp: { title: '全顎インプラント（実際写真）', description: '全顎インプラント補綴装着前後の比較' },
         cn: { title: '全口种植（实拍照片）', description: '全口种植修复体安装前后对比' }
       }
+    },
+    {
+      beforeImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_before.jpg',
+      afterImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_after.jpg',
+      title: '임플란트 실사 전후',
+      description: '임플란트 치료 전후 실제 사진 비교',
+      translations: {
+        en: { title: 'Implant clinical photo', description: 'Before and after real photo comparison of implant treatment' },
+        jp: { title: 'インプラント実写前後', description: 'インプラント治療前後の実際写真比較' },
+        cn: { title: '种植牙实拍前后', description: '种植牙治疗前后实拍对比' }
+      }
     }
   ],
 
@@ -599,6 +632,17 @@ export const TREATMENT_CASE_IMAGES = {
         en: { title: 'Full mouth implant (clinical photo)', description: 'Before and after full mouth implant prosthetic placement' },
         jp: { title: '全顎インプラント（実際写真）', description: '全顎インプラント補綴装着前後の比較' },
         cn: { title: '全口种植（实拍照片）', description: '全口种植修复体安装前后对比' }
+      }
+    },
+    {
+      beforeImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_before.jpg',
+      afterImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_after.jpg',
+      title: '임플란트 실사 전후',
+      description: '임플란트 치료 전후 실제 사진 비교',
+      translations: {
+        en: { title: 'Implant clinical photo', description: 'Before and after real photo comparison of implant treatment' },
+        jp: { title: 'インプラント実写前後', description: 'インプラント治療前後の実際写真比較' },
+        cn: { title: '种植牙实拍前后', description: '种植牙治疗前后实拍对比' }
       }
     }
   ],
@@ -711,6 +755,17 @@ export const TREATMENT_CASE_IMAGES = {
         jp: { title: 'インプラント（実際写真）', description: 'インプラント埋入および補綴前後の比較' },
         cn: { title: '种植体（实拍照片）', description: '种植体植入及修复前后对比' }
       }
+    },
+    {
+      beforeImage: '/임상사진/앞니 재보철/앞니재보철_실사_before.jpg',
+      afterImage: '/임상사진/앞니 재보철/앞니재보철_실사_after.jpg',
+      title: '앞니 재보철 (실제사진)',
+      description: '기존 앞니 보철물 재치료 전후 실제 사진 비교',
+      translations: {
+        en: { title: 'Front tooth re-prosthesis (clinical photo)', description: 'Before and after re-treatment of existing front tooth prosthesis' },
+        jp: { title: '前歯再補綴（実際写真）', description: '既存の前歯補綴物の再治療前後の実際写真比較' },
+        cn: { title: '前牙再修复（实拍照片）', description: '现有前牙修复体再治疗前后实拍对比' }
+      }
     }
   ],
 
@@ -736,6 +791,17 @@ export const TREATMENT_CASE_IMAGES = {
         en: { title: 'Full mouth implant (clinical photo)', description: 'Before and after full mouth implant prosthetic placement' },
         jp: { title: '全顎インプラント（実際写真）', description: '全顎インプラント補綴装着前後の比較' },
         cn: { title: '全口种植（实拍照片）', description: '全口种植修复体安装前后对比' }
+      }
+    },
+    {
+      beforeImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_before.jpg',
+      afterImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_after.jpg',
+      title: '임플란트 실사 전후',
+      description: '임플란트 치료 전후 실제 사진 비교',
+      translations: {
+        en: { title: 'Implant clinical photo', description: 'Before and after real photo comparison of implant treatment' },
+        jp: { title: 'インプラント実写前後', description: 'インプラント治療前後の実際写真比較' },
+        cn: { title: '种植牙实拍前后', description: '种植牙治疗前后实拍对比' }
       }
     }
   ],

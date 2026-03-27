@@ -70,7 +70,7 @@ export default function SmartPricing() {
               <div className="flex items-start gap-3">
                 <span className="text-blue-500 font-bold">✓</span>
                 <div>
-                  <p className="font-medium text-slate-700">10년간 같은 자리 책임진료</p>
+                  <p className="font-medium text-slate-700">고덕에듀타운 1호 치과 책임진료</p>
                   <p className="text-sm text-blue-600">대표원장이 직접 상담, 수술, 사후관리까지</p>
                 </div>
               </div>

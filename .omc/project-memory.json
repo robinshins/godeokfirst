@@ -169,9 +169,123 @@
   "hotPaths": [
     {
       "path": "src/app/admin/page.tsx",
-      "accessCount": 4,
-      "lastAccessed": 1774592990981,
+      "accessCount": 26,
+      "lastAccessed": 1774595107182,
       "type": "directory"
+    },
+    {
+      "path": "src/lib/treatment-images.ts",
+      "accessCount": 12,
+      "lastAccessed": 1774595729594,
+      "type": "directory"
+    },
+    {
+      "path": "src/app/api/chat/route.ts",
+      "accessCount": 6,
+      "lastAccessed": 1774595411670,
+      "type": "file"
+    },
+    {
+      "path": "src/app/chat/page.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1774595142065,
+      "type": "file"
+    },
+    {
+      "path": "src/components/sections/HeroSection.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1774595285813,
+      "type": "file"
+    },
+    {
+      "path": "src/components/sections/TreatmentCards.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1774595289709,
+      "type": "file"
+    },
+    {
+      "path": "src/components/sections/BusanNo1Proof.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1774595292506,
+      "type": "file"
+    },
+    {
+      "path": "src/components/sections/SmartPricing.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1774595293588,
+      "type": "file"
+    },
+    {
+      "path": "src/components/sections/NewHeroSection.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1774595303070,
+      "type": "file"
+    },
+    {
+      "path": "src/components/denture/BestReasonSection.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1774595304572,
+      "type": "file"
+    },
+    {
+      "path": "src",
+      "accessCount": 2,
+      "lastAccessed": 1774595419528,
+      "type": "directory"
+    },
+    {
+      "path": "src/app/api/consultations",
+      "accessCount": 1,
+      "lastAccessed": 1774594825879,
+      "type": "directory"
+    },
+    {
+      "path": "src/lib",
+      "accessCount": 1,
+      "lastAccessed": 1774594826855,
+      "type": "directory"
+    },
+    {
+      "path": "src/app/api/consultations/route.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774594832724,
+      "type": "file"
+    },
+    {
+      "path": "src/lib/supabase/client.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774594833147,
+      "type": "file"
+    },
+    {
+      "path": "src/lib/supabase/server.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774594833466,
+      "type": "file"
+    },
+    {
+      "path": "src/app/chat",
+      "accessCount": 1,
+      "lastAccessed": 1774595062529,
+      "type": "directory"
+    },
+    {
+      "path": "src/components/ConsultationForm.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774595135910,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/이영주_임플란트/이영주_임플란트_실사_before.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774595555211,
+      "type": "file"
+    },
+    {
+      "path": "public/임상사진/이영주_임플란트/이영주_임플란트_실사_after.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1774595555283,
+      "type": "file"
     }
   ],
   "userDirectives": []

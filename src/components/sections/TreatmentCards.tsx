@@ -11,7 +11,7 @@ export default function TreatmentCards() {
       title: '전체 임플란트',
       subtitle: '디지털 전체 임플란트 전문',
       description: '전국 유일 3단계 임시치아 시스템으로\n최고의 교합과 편안함을 보장합니다',
-      features: ['즉시 임시치아 제공', '10년간 책임진료', '원장 직접 집도', '디지털 가이드 수술'],
+      features: ['즉시 임시치아 제공', '고덕에듀타운 1호 치과', '원장 직접 집도', '디지털 가이드 수술'],
       icon: '🦷',
       color: 'blue',
       link: '/implant',

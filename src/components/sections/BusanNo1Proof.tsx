@@ -17,7 +17,7 @@ export default function BusanNo1Proof() {
     {
       icon: '🎯',
       title: '완벽한 결과',
-      subtitle: '10년간 같은 자리 책임진료',
+      subtitle: '고덕에듀타운 1호 치과 책임진료',
       description: '대표원장이 직접 상담, 수술, 사후관리까지 책임집니다. 처음부터 끝까지 한 분의 원장이 책임지는 진료.',
       color: 'green'
     }

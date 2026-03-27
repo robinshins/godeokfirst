@@ -29,7 +29,7 @@ export default function HeroSection() {
         <div className={`flex flex-wrap justify-center gap-2 mb-8 sm:mb-12 transition-all duration-1000 ease-out ${isMounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
           {[
             { icon: '', text: '세계 구강임플란트학회 이사', shortText: '세계구강임플란트학회 이사' },
-            { icon: '', text: '10년간 책임진료', shortText: '10년간 같은자리 책임진료' },
+            { icon: '', text: '고덕에듀타운 1호 치과', shortText: '고덕에듀타운 1호 치과 책임진료' },
             { icon: '', text: '메가젠 VIP 파트너', shortText: '메가젠/오스템/네오 자문의' },
             { icon: '', text: '메가젠 VIP 파트너', shortText: '텍사스 A&M 치과대학 보철연구회 회원' },
             { icon: '', text: '메가젠 VIP 파트너', shortText: '최첨단 임플란트 장비보유' },
@@ -67,7 +67,7 @@ export default function HeroSection() {
         </h1>
         
         <p className={`text-lg sm:text-xl lg:text-2xl mb-8 sm:mb-12 font-light text-slate-200 max-w-2xl mx-auto leading-relaxed transition-all duration-1000 ease-out ${isMounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`} style={{ transitionDelay: '200ms' }}>
-          <span className="text-cyan-400 font-semibold">10년간 같은 자리 책임진료</span> ·
+          <span className="text-cyan-400 font-semibold">고덕에듀타운 1호 치과 책임진료</span> ·
           <span className="text-cyan-400 font-semibold">3단계 정밀 교합으로 완벽</span>
           <br />
           <span className="text-sm sm:text-base text-slate-300 block mt-2">전체임플란트 전문 대표원장 직접 진료</span>

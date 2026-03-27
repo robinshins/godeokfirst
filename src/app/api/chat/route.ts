@@ -793,7 +793,7 @@ ${ex.notes}`;
           if (questionCount === 4) {
             if (lastAnswerText.includes('비용')) {
               requiredResponseGuide = `\n\n🚨🚨🚨 **필수 포함 내용 (자연스럽게 다듬어서 작성):**
-- 과잉진료 없이 양심진료를 해왔기에 10년간 같은 자리에서 좋은 평판 유지
+- 고덕에듀타운 1호 치과로서, 과잉진료 없이 양심진료를 해왔기에 수년간 같은 자리에서 좋은 평판 유지
 - 원내기공소 운영 + 원장님이 직접 기공하여 덤핑치과 제외 정상적인 치과 중에서는 정말 저렴한 편
 - 메가젠, 오스템 등 유명 브랜드의 자문의이자 협업 파트너로서 브랜드 정품도 합리적인 가격으로 사용 가능
 - 환자분 상황에 맞게 가장 합리적인 비용으로 최고의 효율을 낼 수 있는 치료 추천
@@ -825,7 +825,7 @@ ${ex.notes}`;
             if (lastAnswerText.includes('비용')) {
               requiredResponseGuide = `\n\n🚨🚨🚨 **필수 포함 내용 (자연스럽게 다듬어서 작성):**
 - 비용 부담에 대한 공감
-- 과잉진료 없이 양심진료를 해왔기에 10년간 같은 자리에서 좋은 평판 유지
+- 고덕에듀타운 1호 치과로서, 과잉진료 없이 양심진료를 해왔기에 수년간 같은 자리에서 좋은 평판 유지
 - 원내기공소 운영 + 원장님이 직접 기공하여 덤핑치과 제외 정상적인 치과 중에서는 정말 저렴한 편
 - 메가젠, 오스템 등 유명 브랜드의 자문의이자 협업 파트너로서 브랜드 정품도 합리적인 가격으로 사용 가능
 - 환자분 상황에 맞게 가장 합리적인 비용으로 최고의 효율을 낼 수 있는 치료 추천
@@ -1915,15 +1915,15 @@ ${sameDayCTA}
 
       if (isCostSelectedForMessage && questionCount >= 4 && questionCount <= 6) {
         const conscientiousCareMsg: Record<string, string> = {
-          ko: '\n\n💚 **비용이 걱정되시죠.** 저희가 10년간 같은 자리에서 좋은 평판을 유지할 수 있었던 건, **과잉진료 없이 양심진료**를 해왔기 때문이에요. 꼭 필요한 치료만 정직하게 권해드리니 안심하세요.',
-          en: '\n\n💚 **Worried about costs?** We\'ve maintained a great reputation in the same location for 10 years because we practice **conscientious care without over-treatment**. We honestly recommend only the treatments you truly need, so please rest assured.',
-          jp: '\n\n💚 **費用が心配ですね。** 10年間同じ場所で良い評判を維持できたのは、**過剰診療なしで良心的な診療**を行ってきたからです。本当に必要な治療だけを正直におすすめしますので、ご安心ください。',
-          cn: '\n\n💚 **担心费用吗？** 我们能在同一个地方保持10年的良好声誉，是因为我们一直**不过度治疗，良心诊疗**。我们只诚实地推荐您真正需要的治疗，请放心。',
-          vi: '\n\n💚 **Lo lắng về chi phí?** Chúng tôi đã duy trì danh tiếng tốt tại cùng một địa điểm trong 10 năm vì chúng tôi thực hành **điều trị lương tâm không quá mức**. Chúng tôi chỉ thành thật đề xuất những điều trị bạn thực sự cần, vì vậy hãy yên tâm.',
-          th: '\n\n💚 **กังวลเรื่องค่าใช้จ่ายใช่ไหม?** เรารักษาชื่อเสียงที่ดีในที่เดิมมา 10 ปีเพราะเราปฏิบัติ**การรักษาอย่างมีจิตสำนึกโดยไม่รักษาเกินจำเป็น** เราแนะนำเฉพาะการรักษาที่คุณต้องการจริงๆ อย่างซื่อสัตย์ โปรดวางใจ',
-          ru: '\n\n💚 **Беспокоитесь о стоимости?** Мы поддерживаем хорошую репутацию на одном месте 10 лет, потому что практикуем **добросовестное лечение без избыточных процедур**. Мы честно рекомендуем только те процедуры, которые вам действительно нужны, так что будьте спокойны.',
-          mn: '\n\n💚 **Зардлын талаар санаа зовж байна у|?** Бид 10 жилийн турш нэг газарт сайн нэр хүндтэй байсан нь **шаардлагагүй эмчилгээгүйгээр шударга эмчилгээ** хийсэнтэй холбоотой. Бид зөвхөн танд үнэхээр хэрэгтэй эмчилгээг шударгаар санал болгодог тул санаа зовох хэрэггүй.',
-          uz: '\n\n💚 **Xarajatlar haqida xavotirdamisiz?** Biz 10 yil davomida bir joyda yaxshi obro\'ni saqlab qoldik, chunki biz **ortiqcha davolanmasdan vijdonli davolash**ni amalda qo\'llaymiz. Biz faqat sizga haqiqatan ham kerak bo\'lgan davolashlarni halol tavsiya qilamiz, shuning uchun xotirjam bo\'ling.'
+          ko: '\n\n💚 **비용이 걱정되시죠.** 고덕에듀타운 1호 치과로서 수년간 같은 자리에서 좋은 평판을 유지할 수 있었던 건, **과잉진료 없이 양심진료**를 해왔기 때문이에요. 꼭 필요한 치료만 정직하게 권해드리니 안심하세요.',
+          en: '\n\n💚 **Worried about costs?** As the first dental clinic in Godeok Edu Town, we\'ve maintained a great reputation because we practice **conscientious care without over-treatment**. We honestly recommend only the treatments you truly need, so please rest assured.',
+          jp: '\n\n💚 **費用が心配ですね。** 高徳エデュタウン1号歯科として、数年間同じ場所で良い評判を維持できたのは、**過剰診療なしで良心的な診療**を行ってきたからです。本当に必要な治療だけを正直におすすめしますので、ご安心ください。',
+          cn: '\n\n💚 **担心费用吗？** 作为高德教育城1号牙科，我们能在同一个地方保持良好声誉，是因为我们一直**不过度治疗，良心诊疗**。我们只诚实地推荐您真正需要的治疗，请放心。',
+          vi: '\n\n💚 **Lo lắng về chi phí?** Là phòng nha khoa đầu tiên tại Godeok Edu Town, chúng tôi đã duy trì danh tiếng tốt vì chúng tôi thực hành **điều trị lương tâm không quá mức**. Chúng tôi chỉ thành thật đề xuất những điều trị bạn thực sự cần, vì vậy hãy yên tâm.',
+          th: '\n\n💚 **กังวลเรื่องค่าใช้จ่ายใช่ไหม?** ในฐานะคลินิกทันตกรรมแห่งแรกใน Godeok Edu Town เรารักษาชื่อเสียงที่ดีเพราะเราปฏิบัติ**การรักษาอย่างมีจิตสำนึกโดยไม่รักษาเกินจำเป็น** เราแนะนำเฉพาะการรักษาที่คุณต้องการจริงๆ อย่างซื่อสัตย์ โปรดวางใจ',
+          ru: '\n\n💚 **Беспокоитесь о стоимости?** Как первая стоматологическая клиника в Годок Эду Таун, мы поддерживаем хорошую репутацию, потому что практикуем **добросовестное лечение без избыточных процедур**. Мы честно рекомендуем только те процедуры, которые вам действительно нужны, так что будьте спокойны.',
+          mn: '\n\n💚 **Зардлын талаар санаа зовж байна уу?** Годок Эду Таун-ын анхны шүдний эмнэлгийн хувьд бид сайн нэр хүндтэй байсан нь **шаардлагагүй эмчилгээгүйгээр шударга эмчилгээ** хийсэнтэй холбоотой. Бид зөвхөн танд үнэхээр хэрэгтэй эмчилгээг шударгаар санал болгодог тул санаа зовох хэрэггүй.',
+          uz: '\n\n💚 **Xarajatlar haqida xavotirdamisiz?** Godeok Edu Town\'dagi birinchi stomatologiya klinikasi sifatida biz yaxshi obro\'ni saqlab qoldik, chunki biz **ortiqcha davolanmasdan vijdonli davolash**ni amalda qo\'llaymiz. Biz faqat sizga haqiqatan ham kerak bo\'lgan davolashlarni halol tavsiya qilamiz, shuning uchun xotirjam bo\'ling.'
         };
 
         const msgToAppend = conscientiousCareMsg[language] || conscientiousCareMsg.en;
@@ -1933,8 +1933,8 @@ ${sameDayCTA}
                                    displayMessage.includes('conscientious') ||
                                    displayMessage.includes('過剰診療') ||
                                    displayMessage.includes('过度治疗') ||
-                                   displayMessage.includes('10년간') ||
-                                   displayMessage.includes('10 years');
+                                   displayMessage.includes('고덕에듀타운') ||
+                                   displayMessage.includes('Godeok Edu Town');
 
         if (!alreadyHasMessage) {
           displayMessage = displayMessage + msgToAppend;
