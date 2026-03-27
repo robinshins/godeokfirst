@@ -169,20 +169,20 @@
   "hotPaths": [
     {
       "path": "src/app/admin/page.tsx",
-      "accessCount": 26,
-      "lastAccessed": 1774595107182,
+      "accessCount": 31,
+      "lastAccessed": 1774597978227,
       "type": "directory"
     },
     {
       "path": "src/lib/treatment-images.ts",
-      "accessCount": 12,
-      "lastAccessed": 1774595729594,
+      "accessCount": 15,
+      "lastAccessed": 1774597931143,
       "type": "directory"
     },
     {
       "path": "src/app/api/chat/route.ts",
-      "accessCount": 6,
-      "lastAccessed": 1774595411670,
+      "accessCount": 9,
+      "lastAccessed": 1774597931868,
       "type": "file"
     },
     {
@@ -234,15 +234,15 @@
       "type": "directory"
     },
     {
-      "path": "src/app/api/consultations",
-      "accessCount": 1,
-      "lastAccessed": 1774594825879,
+      "path": "src/lib",
+      "accessCount": 2,
+      "lastAccessed": 1774597909761,
       "type": "directory"
     },
     {
-      "path": "src/lib",
+      "path": "src/app/api/consultations",
       "accessCount": 1,
-      "lastAccessed": 1774594826855,
+      "lastAccessed": 1774594825879,
       "type": "directory"
     },
     {
@@ -286,6 +286,12 @@
       "accessCount": 1,
       "lastAccessed": 1774595555283,
       "type": "file"
+    },
+    {
+      "path": "src/app/api",
+      "accessCount": 1,
+      "lastAccessed": 1774597911066,
+      "type": "directory"
     }
   ],
   "userDirectives": []
