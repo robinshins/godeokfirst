@@ -1626,8 +1626,8 @@ export default function ChatInterface({ initialMessage, language = 'ko' }: ChatI
                         <p className="font-semibold text-sm text-[#292a2f]">{texts.caseStudiesTitle}</p>
                       </div>
 
-                      {/* 첫 2개 케이스: 세로 전체 너비 표시 */}
-                      {message.caseImages.slice(0, 2).map((caseImg, idx) => (
+                      {/* 모든 케이스: 세로 전체 너비 표시 */}
+                      {message.caseImages.map((caseImg, idx) => (
                         <div key={idx} className="bg-white border border-[#f3f6fb] rounded-[20px] overflow-hidden">
                           <div className="flex flex-col gap-3 p-4">
                             {/* 케이스 제목 */}
@@ -1781,65 +1781,6 @@ export default function ChatInterface({ initialMessage, language = 'ko' }: ChatI
                         </div>
                       ))}
 
-                      {/* 3번째 케이스부터: 가로 스크롤 */}
-                      {message.caseImages.length > 2 && (
-                        <div className="overflow-x-auto -mx-4 px-4 pb-2">
-                          <div className="flex gap-3" style={{ width: 'max-content' }}>
-                            {message.caseImages.slice(2).map((caseImg, idx) => (
-                              <div key={idx + 2} className="bg-white border border-[#f3f6fb] rounded-[16px] overflow-hidden" style={{ width: '280px', flexShrink: 0 }}>
-                                <div className="flex flex-col gap-2 p-3">
-                                  {/* 케이스 제목 */}
-                                  <p className="font-bold text-[13px] text-black tracking-[-0.26px] line-clamp-2">
-                                    {caseImg.title}
-                                  </p>
-
-                                  {/* Before/After 이미지 (간소화) */}
-                                  <div className="flex gap-2">
-                                    {/* Before */}
-                                    <div className="relative flex-1">
-                                      <div className="h-[100px] w-full rounded-[12px] overflow-hidden relative bg-[#f3f6fb]">
-                                        <Image
-                                          src={caseImg.beforeImage}
-                                          alt={texts.beforeImageAlt}
-                                          fill
-                                          className="object-contain"
-                                        />
-                                      </div>
-                                      <div className="absolute top-1 left-1 bg-[#292a2f] px-1.5 py-0.5 rounded-md z-10">
-                                        <p className="font-semibold text-[9px] text-white tracking-[-0.18px]">
-                                          {texts.beforeLabel}
-                                        </p>
-                                      </div>
-                                    </div>
-
-                                    {/* After */}
-                                    <div className="relative flex-1">
-                                      <div className="h-[100px] w-full rounded-[12px] overflow-hidden relative bg-[#f3f6fb]">
-                                        <Image
-                                          src={caseImg.afterImage}
-                                          alt={texts.afterImageAlt}
-                                          fill
-                                          className="object-contain"
-                                        />
-                                      </div>
-                                      <div className="absolute top-1 left-1 bg-[#008095] px-1.5 py-0.5 rounded-md z-10">
-                                        <p className="font-semibold text-[9px] text-white tracking-[-0.18px]">
-                                          {texts.afterLabel}
-                                        </p>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                  {/* 결과 설명 */}
-                                  <p className="text-[11px] text-[#5d5f6d] tracking-[-0.22px] leading-[1.3] line-clamp-2">
-                                    {caseImg.description}
-                                  </p>
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      )}
                     </div>
                   )}
 

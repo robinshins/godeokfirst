@@ -168,21 +168,33 @@
   },
   "hotPaths": [
     {
+      "path": "src/lib/treatment-images.ts",
+      "accessCount": 38,
+      "lastAccessed": 1774664943739,
+      "type": "directory"
+    },
+    {
       "path": "src/app/admin/page.tsx",
       "accessCount": 31,
       "lastAccessed": 1774597978227,
       "type": "directory"
     },
     {
-      "path": "src/lib/treatment-images.ts",
-      "accessCount": 15,
-      "lastAccessed": 1774597931143,
+      "path": "src/app/api/chat/route.ts",
+      "accessCount": 26,
+      "lastAccessed": 1774598621700,
+      "type": "file"
+    },
+    {
+      "path": "src/components/ChatInterface.tsx",
+      "accessCount": 7,
+      "lastAccessed": 1774664813872,
       "type": "directory"
     },
     {
-      "path": "src/app/api/chat/route.ts",
-      "accessCount": 9,
-      "lastAccessed": 1774597931868,
+      "path": "src/components/home/FAQSection.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1774598679775,
       "type": "file"
     },
     {
@@ -196,6 +208,18 @@
       "accessCount": 3,
       "lastAccessed": 1774595285813,
       "type": "file"
+    },
+    {
+      "path": "src/lib",
+      "accessCount": 3,
+      "lastAccessed": 1774598465366,
+      "type": "directory"
+    },
+    {
+      "path": "src",
+      "accessCount": 3,
+      "lastAccessed": 1774598651811,
+      "type": "directory"
     },
     {
       "path": "src/components/sections/TreatmentCards.tsx",
@@ -228,16 +252,16 @@
       "type": "file"
     },
     {
-      "path": "src",
+      "path": "src/lib/faqData.ts",
       "accessCount": 2,
-      "lastAccessed": 1774595419528,
-      "type": "directory"
+      "lastAccessed": 1774598637665,
+      "type": "file"
     },
     {
-      "path": "src/lib",
+      "path": "src/components/home/TreatmentSection.tsx",
       "accessCount": 2,
-      "lastAccessed": 1774597909761,
-      "type": "directory"
+      "lastAccessed": 1774598680932,
+      "type": "file"
     },
     {
       "path": "src/app/api/consultations",

@@ -702,11 +702,11 @@ export async function POST(request: NextRequest) {
      • 골다공증 주사/약 복용 → "골다공증 치료 중이시군요. 스케줄 조정이 필요할 수 있어서, 하루라도 빨리 내원해서 상담받으시는 게 좋아요."
      • 이갈이/이악물기/턱관절장애 → "턱관절 문제가 있으시군요. 수술 후 예후에 영향을 줄 수 있어서, 턱관절 치료에 집중하시는 이동현 대표원장님께서 꼼꼼히 확인해드릴 거예요."
      • 빠른회복/일상복귀 → "빠른 회복을 원하시는군요! 저희는 디지털 시스템으로 수술 당일 즉시 임시치아 장착이 가능해요."
-     • 통증 → "통증이 걱정되시는군요. 저희는 통증완화시스템(가글마취, 무통마취, 수면마취)과 디지털 가이드 무절개 수술 80% 이상으로 통증 때문에 치료 못 받고 가신 분은 없어요."
+     • 통증 → "통증이 걱정되시는군요. 저희는 통증완화시스템(가글마취, 무통마취)과 디지털 가이드 무절개 수술 80% 이상으로 통증 때문에 치료 못 받고 가신 분은 없어요."
      • 비용 → ${topic === '임플란트' ? '아래 내용을 **자연스러운 말투로 어미가 반복되지 않게** 조합하여 작성: (1) 과잉진료 없이 양심진료 원칙 (2) 통합치의학과 전문의 직접 진료로 합리적 비용 (3) 메가젠/오스템 등 유명 브랜드 정품 사용 (4) 내원해서 상담받아보시면 환자분 상황에 맞게 가장 합리적 비용으로 최고 효율 치료 추천해드림 (5) 무이자 할부 가능하니 비용 걱정 말고 내원 상담 권유' : '아래 내용을 **자연스러운 말투로 어미가 반복되지 않게** 조합하여 작성: (1) 과잉진료 없이 양심진료 원칙 (2) 내원해서 상담받아보시면 환자분 상황에 맞게 합리적 비용으로 최고 효율 치료 추천해드림 (3) 무이자 할부 가능하니 비용 걱정 말고 내원 상담 권유'}
      • 수술의 안전성/정밀함 → "안전하고 정밀한 수술을 원하시는군요. 저희는 3D 가상 임플란트 수술과 디지털 가이드 수술로 정밀하게 진행해드려요."
      • 비용부담 최소화 → "비용 부담을 줄이고 싶으시군요. 전체 임플란트의 경우 최소 4개 식립 + 뼈이식 포함 비용으로 진행해서 훨씬 부담이 적어요."
-     • 치과공포증 → "치과공포증이 있으시군요. 저희는 통증완화시스템으로 가글마취, 무통마취, 의식하 수면요법을 통한 수면마취 임플란트가 가능해서 공포 때문에 치료 못 받고 가신 분은 없어요."
+     • 치과공포증 → "치과공포증이 있으시군요. 저희는 통증완화시스템(가글마취, 무통마취)과 디지털 가이드 무절개 수술로 공포 때문에 치료 못 받고 가신 분은 없어요."
      • 심미적 모습/대인관계 → "심미적인 부분이 중요하시군요. 즉시 임시치아와 디지털 최종보철로 자연스러운 모습을 만들어드려요. 환자분이 만족하실 때까지 다시 만들어드립니다."
      • 편안한 식사 → "편안한 식사가 중요하시군요. 100세 시대, 충분한 영양섭취를 위해 튼튼한 치아가 필수예요."
      • 적절한 치과 선택 고민 → "좋은 치과를 찾고 계시는군요. 저희는 8년간 한자리를 지키며 사후관리까지 철저히 해드리고 있어요."` : lang === 'en' ? `
@@ -715,32 +715,32 @@ export async function POST(request: NextRequest) {
      • Osteoporosis medication → "You're receiving osteoporosis treatment. Schedule adjustments may be needed, so it's best to visit us as soon as possible for a consultation."
      • Teeth grinding/TMJ issues → "I see you have jaw joint issues. This can affect post-surgery outcomes, so Dr. Kim, who specializes in TMJ and prosthetics, will carefully review your case."
      • Quick recovery → "You want a quick recovery! We have an in-house dental lab, so same-day temporary teeth are possible."
-     • Pain concerns → "You're worried about pain. With our pain relief system (topical anesthesia, painless injection, sedation) and 80%+ non-incision digital guide surgery, no one has ever left without treatment due to pain."
+     • Pain concerns → "You're worried about pain. With our pain relief system (topical anesthesia, painless injection) and 80%+ non-incision digital guide surgery, no one has ever left without treatment due to pain."
      • Cost → ${topic === '임플란트' ? '"Cost is important to you. We have maintained a good reputation for 10 years through honest treatment without overcharging. We operate an in-house dental lab and Dr. Kim does the dental work directly, so we are very affordable among regular clinics (excluding discount clinics). As consultants and partners of famous brands like Megagen and Osstem, we can offer genuine products at reasonable prices. We recommend treatments optimized for your situation at the most reasonable cost, and interest-free installments are available. Please visit us for a consultation without worrying about costs!"' : '"Cost is important to you. The exact cost will be determined after the doctor\'s diagnosis. We offer interest-free installment plans."'}
      • Safety and precision → "You want a safe and precise surgery. We use 3D virtual implant surgery and digital guide surgery for precision."
      • Cost concerns → "You want to minimize costs. For full-arch implants, we include bone grafting with minimum 4 implants, making it much more affordable."
-     • Dental anxiety → "You have dental anxiety. We have a pain relief system with topical anesthesia, painless injection, and sedation implants through conscious sedation - no one has ever left without treatment due to fear."
+     • Dental anxiety → "You have dental anxiety. With our pain relief system (topical anesthesia, painless injection) and non-incision digital guide surgery, no one has ever left without treatment due to fear."
      • Aesthetics/social concerns → "Aesthetics are important to you. We provide immediate temporary teeth and digital final prosthetics for natural results. We'll remake them until you're satisfied."` : lang === 'jp' ? `
      • 高血圧 → "高血圧があるのですね。抗凝固剤の服用について来院時に確認させていただきます。お薬手帳をお持ちいただければ、より正確なご相談が可能です。"
      • 糖尿病 → "糖尿病があるのですね。HbA1c値によっては主治医との連携が必要な場合があります。来院時に詳しく確認させていただきます。"
      • 骨粗鬆症治療中 → "骨粗鬆症の治療中なのですね。スケジュール調整が必要な場合がありますので、できるだけ早めにご来院いただくことをお勧めします。"
      • 歯ぎしり/顎関節障害 → "顎関節に問題があるのですね。術後の予後に影響する可能性がありますので、顎関節治療と補綴に精通した金院長が丁寧に確認いたします。"
      • 早期回復 → "早い回復をご希望なのですね！当院には院内技工所があり、手術当日に即時仮歯の装着が可能です。"
-     • 痛み → "痛みが心配なのですね。当院では痛み緩和システム（表面麻酔、無痛麻酔、睡眠麻酔）とデジタルガイド無切開手術80%以上で、痛みで治療を受けられなかった方はいません。"
+     • 痛み → "痛みが心配なのですね。当院では痛み緩和システム（表面麻酔、無痛麻酔）とデジタルガイド無切開手術80%以上で、痛みで治療を受けられなかった方はいません。"
      • 費用 → ${topic === '임플란트' ? '"費用が重要なのですね。当院は過剰診療なしの良心的な治療で10年間同じ場所で良い評判を維持してきました。院内技工所を運営し、院長が直接技工を行うため、ダンピング歯科を除く一般的な歯科の中ではかなりリーズナブルです。また、メガジェン、オステムなど有名ブランドの諮問医・協力パートナーとして、正規品を合理的な価格でご提供できます。患者様の状況に合わせて最も合理的な費用で最高の効率を出せる治療をお勧めします。無利子分割払いも可能ですので、費用を心配せずにお気軽にご相談にお越しください！"' : '"費用が重要なのですね。正確な費用は院長が診断後にご案内します。無利子分割払いもご利用いただけます。"'}
      • 安全性・精密さ → "安全で精密な手術をご希望なのですね。当院では3D仮想インプラント手術とデジタルガイド手術で精密に行います。"
      • 費用負担軽減 → "費用を抑えたいのですね。全顎インプラントの場合、最小4本埋入＋骨移植込みの費用で、かなりご負担が軽くなります。"
-     • 歯科恐怖症 → "歯科恐怖症があるのですね。当院では痛み緩和システムとして表面麻酔、無痛麻酔、意識下鎮静法による睡眠麻酔インプラントが可能で、恐怖で治療を受けられなかった方はいません。"` : `
+     • 歯科恐怖症 → "歯科恐怖症があるのですね。当院では痛み緩和システム（表面麻酔、無痛麻酔）とデジタルガイド無切開手術で、恐怖で治療を受けられなかった方はいません。"` : `
      • 高血压 → "您有高血压。我们会在您就诊时确认抗凝药物情况。请带上药袋以便更准确地咨询。"
      • 糖尿病 → "您有糖尿病。根据糖化血红蛋白水平，可能需要会诊。我们会在您就诊时详细确认。"
      • 骨质疏松治疗中 → "您正在接受骨质疏松治疗。可能需要调整时间安排，建议尽快来院咨询。"
      • 磨牙/颞下颌关节问题 → "您有颞下颌关节问题。这可能影响术后效果，金院长专精于颞下颌关节治疗和修复，会仔细为您检查。"
      • 快速恢复 → "您希望快速恢复！我们有院内技工室，手术当天即可安装临时牙。"
-     • 疼痛 → "您担心疼痛。我们有疼痛缓解系统（表面麻醉、无痛麻醉、睡眠麻醉）和80%以上数字导板无切口手术，从来没有人因为疼痛而无法接受治疗。"
+     • 疼痛 → "您担心疼痛。我们有疼痛缓解系统（表面麻醉、无痛麻醉）和80%以上数字导板无切口手术，从来没有人因为疼痛而无法接受治疗。"
      • 费用 → ${topic === '임플란트' ? '"费用对您很重要。我们凭借10年来诚实治疗、不过度医疗，在同一位置保持着良好的口碑。我们运营院内技工室，院长亲自做技工，因此在正规牙科中（不含低价牙科）价格非常实惠。作为Megagen、Osstem等知名品牌的顾问和合作伙伴，我们能以合理的价格提供正品。我们会根据您的情况推荐最具性价比的治疗方案，还支持免息分期付款。请不用担心费用，随时来咨询吧！"' : '"费用对您很重要。准确费用需要院长诊断后确定，还支持免息分期付款。"'}
      • 安全精准 → "您希望安全精准的手术。我们使用3D虚拟种植手术和数字导板手术来确保精准度。"
      • 减轻费用负担 → "您希望减轻费用负担。全口种植的情况下，我们以最少4颗植入+骨移植的费用进行，负担会小很多。"
-     • 牙科恐惧症 → "您有牙科恐惧症。我们有疼痛缓解系统，包括表面麻醉、无痛麻醉和清醒镇静睡眠种植，从来没有人因为恐惧而无法接受治疗。"`}
+     • 牙科恐惧症 → "您有牙科恐惧症。我们有疼痛缓解系统（表面麻醉、无痛麻醉）和数字导板无切口手术，从来没有人因为恐惧而无法接受治疗。"`}
 
 **${texts.importantFormat}**:
 ${texts.mustFollowJson}
@@ -801,7 +801,7 @@ ${ex.notes}`;
 위 내용을 자연스러운 말투로 포함하여 작성하세요. (구체적인 금액 언급 금지)`;
             } else if (lastAnswerText.includes('통증')) {
               requiredResponseGuide = `\n\n🚨🚨🚨 **필수 응답 (반드시 이 문구 포함!):**
-"통증완화시스템(가글마취, 무통마취, 수면마취)과 디지털 가이드 무절개 수술 80% 이상으로 **공포 때문에 치료 못 받고 가신 분이 없습니다!**"`;
+"통증완화시스템(가글마취, 무통마취)과 디지털 가이드 무절개 수술 80% 이상으로 **공포 때문에 치료 못 받고 가신 분이 없습니다!**"`;
             } else if (lastAnswerText.includes('식사')) {
               if (isFullArchCase) {
                 requiredResponseGuide = `\n\n🚨🚨🚨 **필수 응답 (반드시 이 문구 포함!):**
@@ -833,7 +833,7 @@ ${ex.notes}`;
 위 내용을 자연스러운 말투로 포함하여 작성하세요. (구체적인 금액 언급 금지)`;
             } else if (lastAnswerText.includes('통증') || lastAnswerText.includes('공포')) {
               requiredResponseGuide = `\n\n🚨🚨🚨 **필수 응답 (반드시 이 문구 포함!):**
-"치과 공포가 있으시군요. 저희 통증완화시스템(가글마취, 무통마취, 수면마취)으로 **공포 때문에 치료 못 받고 가신 분이 없습니다!**"`;
+"치과 공포가 있으시군요. 저희 통증완화시스템(가글마취, 무통마취)과 디지털 가이드 무절개 수술로 **공포 때문에 치료 못 받고 가신 분이 없습니다!**"`;
             } else if (lastAnswerText.includes('치과 선택') || lastAnswerText.includes('적절한')) {
               requiredResponseGuide = `\n\n🚨🚨🚨 **필수 응답 (반드시 이 문구 포함!):**
 "좋은 치과 선택이 고민되시죠. 이동현 대표원장은 통합치의학과 전문의이자 조선대학교 치과병원 외래교수 출신으로, **디지털 내비게이션 임플란트 전문, 네이버 지도 환자 만족도 최상위**입니다. 과잉진료 없는 양심진료로 사후관리까지 책임집니다!"`;
@@ -918,7 +918,7 @@ message maydonida yuqoridagi 'Javobga mos javob qo'llanmasi'ga murojaat qiling v
 대신 다음을 강조하세요:
 - ✅ 디지털 가이드 무절개 수술 80% (통증/출혈 최소화)
 - ✅ 3D CT + 디지털 시뮬레이션 (정밀하고 안전한 수술)
-- ✅ 통증완화시스템 (가글마취, 무통마취, 수면마취)
+- ✅ 통증완화시스템 (가글마취, 무통마취)
 `;
     }
 
@@ -1489,8 +1489,7 @@ ${symptomExplanation}
 
 **혹시, 시리거나 치과공포증 때문에 두려우신가요?**
 
-통증완화시스템과 필요 시 의식하진정요법을 통한 수면마취치료도 가능하니 주저하지 마시고 내원해주세요.
-- 가글마취 → 전동무통마취 → 수면마취
+통증완화시스템(가글마취, 무통마취)으로 편안하게 치료받으실 수 있으니 주저하지 마시고 내원해주세요.
 
 > 💬 **원장 한마디**: 잇몸 문제는 방치하면 치아를 잃을 수 있습니다. 지금 불편하시다면, 가능한 빨리 한번 봐드리고 싶습니다. 정확한 상태 확인 후 치료가 필요한지, 어느 정도 치료가 필요한지 솔직하게 말씀드리겠습니다.`;
 

@@ -499,7 +499,7 @@ export const TREATMENT_CASE_IMAGES = {
     }
   ],
 
-  // 일반 임플란트 케이스 (2개) - 실제 임상사진
+  // 일반 임플란트 케이스 - 실제 임상사진
   implant: [
     {
       beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_before.jpg',
@@ -526,12 +526,12 @@ export const TREATMENT_CASE_IMAGES = {
     {
       beforeImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_before.jpg',
       afterImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_after.jpg',
-      title: '임플란트 (실제사진)',
-      description: '임플란트 식립 및 보철 전후 비교',
+      title: '임플란트 수술전후 사진',
+      description: '임플란트 치료 전후 실제 사진 비교',
       translations: {
-        en: { title: 'Implant (clinical photo)', description: 'Before and after implant placement and prosthetic' },
-        jp: { title: 'インプラント（実際写真）', description: 'インプラント埋入および補綴前後の比較' },
-        cn: { title: '种植体（实拍照片）', description: '种植体植入及修复前后对比' }
+        en: { title: 'Implant clinical photo', description: 'Before and after real photo comparison of implant treatment' },
+        jp: { title: 'インプラント実写前後', description: 'インプラント治療前後の実際写真比較' },
+        cn: { title: '种植牙实拍前后', description: '种植牙治疗前后实拍对比' }
       }
     }
   ],
@@ -563,12 +563,12 @@ export const TREATMENT_CASE_IMAGES = {
     {
       beforeImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_before.jpg',
       afterImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_after.jpg',
-      title: '임플란트 (실제사진)',
-      description: '임플란트 식립 및 보철 전후 비교',
+      title: '임플란트 수술전후 사진',
+      description: '임플란트 치료 전후 실제 사진 비교',
       translations: {
-        en: { title: 'Implant (clinical photo)', description: 'Before and after implant placement and prosthetic' },
-        jp: { title: 'インプラント（実際写真）', description: 'インプラント埋入および補綴前後の比較' },
-        cn: { title: '种植体（实拍照片）', description: '种植体植入及修复前后对比' }
+        en: { title: 'Implant clinical photo', description: 'Before and after real photo comparison of implant treatment' },
+        jp: { title: 'インプラント実写前後', description: 'インプラント治療前後の実際写真比較' },
+        cn: { title: '种植牙实拍前后', description: '种植牙治疗前后实拍对比' }
       }
     }
   ],
@@ -600,7 +600,7 @@ export const TREATMENT_CASE_IMAGES = {
     {
       beforeImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_before.jpg',
       afterImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_after.jpg',
-      title: '임플란트 실사 전후',
+      title: '임플란트 수술전후 사진',
       description: '임플란트 치료 전후 실제 사진 비교',
       translations: {
         en: { title: 'Implant clinical photo', description: 'Before and after real photo comparison of implant treatment' },
@@ -637,7 +637,7 @@ export const TREATMENT_CASE_IMAGES = {
     {
       beforeImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_before.jpg',
       afterImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_after.jpg',
-      title: '임플란트 실사 전후',
+      title: '임플란트 수술전후 사진',
       description: '임플란트 치료 전후 실제 사진 비교',
       translations: {
         en: { title: 'Implant clinical photo', description: 'Before and after real photo comparison of implant treatment' },
@@ -796,7 +796,7 @@ export const TREATMENT_CASE_IMAGES = {
     {
       beforeImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_before.jpg',
       afterImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_after.jpg',
-      title: '임플란트 실사 전후',
+      title: '임플란트 수술전후 사진',
       description: '임플란트 치료 전후 실제 사진 비교',
       translations: {
         en: { title: 'Implant clinical photo', description: 'Before and after real photo comparison of implant treatment' },
