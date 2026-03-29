@@ -54,12 +54,13 @@ export default function DoctorSection() {
         {/* Doctor Card */}
         <div className="flex flex-col gap-8 mt-[60px]">
           {/* Doctor Image */}
-          <div className="bg-white rounded-[20px] overflow-hidden shadow-lg h-[350px] relative">
+          <div className="bg-white rounded-[20px] overflow-hidden shadow-lg h-[480px] relative">
             <Image
               src={doctor.image}
               alt={`${doctor.name} ${doctor.position}`}
               fill
-              className="object-cover object-top"
+              className="object-cover"
+              style={{ objectPosition: 'center 15%' }}
             />
           </div>
 

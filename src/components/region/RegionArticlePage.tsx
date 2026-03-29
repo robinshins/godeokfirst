@@ -106,7 +106,7 @@ export default function RegionArticlePage({ data }: { data: RegionArticleData })
           <div className="mt-8 bg-white rounded-2xl p-5 shadow-sm border border-[#f1f5f9]">
             <div className="flex items-center gap-3">
               <div className="w-11 h-11 rounded-full overflow-hidden relative flex-shrink-0 bg-[#f1f5f9]">
-                <Image src="/images/goduk_images/이동현원장사진.jpg" alt="이동현 대표원장" fill className="object-cover" />
+                <Image src="/images/goduk_images/이동현원장님.jpeg" alt="이동현 대표원장" fill className="object-cover" style={{ objectPosition: 'center 15%' }} />
               </div>
               <div>
                 <p className="text-[14px] font-bold text-[#0f172a]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
@@ -166,6 +166,28 @@ export default function RegionArticlePage({ data }: { data: RegionArticleData })
             ))}
           </ul>
         </div>
+      </div>
+
+      {/* Treatment Detail Page Link */}
+      <div className="max-w-[430px] mx-auto px-4 pb-10">
+        <Link href={`/${data.treatmentType}`}>
+          <div
+            className="rounded-2xl p-6 relative overflow-hidden"
+            style={{ background: `linear-gradient(135deg, ${config.gradientFrom}, ${config.gradientTo})` }}
+          >
+            <p className="text-[12px] font-bold text-white/60 uppercase tracking-[2px] mb-2">상세 진료 안내</p>
+            <h3 className="text-[20px] font-bold text-white leading-[1.4] mb-3" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+              {config.label} 치료,<br />더 자세히 알아보기
+            </h3>
+            <p className="text-[14px] text-white/80 leading-[1.6] mb-5" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+              고덕퍼스트치과의 {config.label} 진료 과정, 비용, 사례를 확인해보세요.
+            </p>
+            <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2.5 rounded-xl">
+              <span className="text-[14px] font-bold text-white">{config.label} 상세페이지 보기</span>
+              <span className="text-white">→</span>
+            </div>
+          </div>
+        </Link>
       </div>
 
       {/* Conclusion */}
