@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1774791976798,
+  "lastScanned": 1775497775277,
   "projectRoot": "/Users/singyuseob/Dev/dentist_goduk",
   "techStack": {
     "languages": [
@@ -76,7 +76,7 @@
       "path": "docs",
       "purpose": "Documentation",
       "fileCount": 1,
-      "lastAccessed": 1774791976760,
+      "lastAccessed": 1775497775205,
       "keyFiles": [
         "TRACKING_SYSTEM_GUIDE.md"
       ]
@@ -85,7 +85,7 @@
       "path": "public",
       "purpose": "Public files",
       "fileCount": 12,
-      "lastAccessed": 1774791976761,
+      "lastAccessed": 1775497775244,
       "keyFiles": [
         "Vector3.png",
         "e2f6aa489f8d517ab9f290e254b5952d.txt",
@@ -98,7 +98,7 @@
       "path": "scripts",
       "purpose": "Build/utility scripts",
       "fileCount": 7,
-      "lastAccessed": 1774791976782,
+      "lastAccessed": 1775497775248,
       "keyFiles": [
         "apply-rename.js",
         "korean-to-english-mapping.json",
@@ -111,7 +111,7 @@
       "path": "src",
       "purpose": "Source code",
       "fileCount": 2,
-      "lastAccessed": 1774791976782,
+      "lastAccessed": 1775497775249,
       "keyFiles": [
         "middleware.ts"
       ]
@@ -120,7 +120,7 @@
       "path": "src/app",
       "purpose": "Application code",
       "fileCount": 8,
-      "lastAccessed": 1774791976784,
+      "lastAccessed": 1775497775251,
       "keyFiles": [
         "globals.css",
         "layout.tsx",
@@ -131,7 +131,7 @@
       "path": "src/components",
       "purpose": "UI components",
       "fileCount": 14,
-      "lastAccessed": 1774791976784,
+      "lastAccessed": 1775497775256,
       "keyFiles": [
         "ChatInterface.tsx",
         "ConsultationForm.tsx",
@@ -142,7 +142,7 @@
       "path": "src/lib",
       "purpose": "Library code",
       "fileCount": 12,
-      "lastAccessed": 1774791976785,
+      "lastAccessed": 1775497775256,
       "keyFiles": [
         "faqData.ts",
         "intent-analyzer.ts",
@@ -153,7 +153,7 @@
       "path": "src/types",
       "purpose": "Type definitions",
       "fileCount": 1,
-      "lastAccessed": 1774791976785,
+      "lastAccessed": 1775497775256,
       "keyFiles": [
         "dom-to-image-more.d.ts"
       ]
@@ -162,51 +162,15 @@
       "path": "src/utils",
       "purpose": "Utility functions",
       "fileCount": 0,
-      "lastAccessed": 1774791976785,
+      "lastAccessed": 1775497775256,
       "keyFiles": []
     }
   },
   "hotPaths": [
     {
-      "path": "src/components/home/DoctorSection.tsx",
-      "accessCount": 4,
-      "lastAccessed": 1774792195936,
-      "type": "file"
-    },
-    {
-      "path": "src/components/region/RegionArticlePage.tsx",
-      "accessCount": 4,
-      "lastAccessed": 1774792367445,
-      "type": "file"
-    },
-    {
-      "path": "src/app/segyo/page.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1774792066893,
-      "type": "file"
-    },
-    {
-      "path": "src/components/region/RegionLandingPage.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1774792074807,
-      "type": "file"
-    },
-    {
-      "path": "public/images/goduk_images/이동현원장님.jpeg",
-      "accessCount": 1,
-      "lastAccessed": 1774792100336,
-      "type": "file"
-    },
-    {
-      "path": "src/components/cavity-treatment/DoctorProfileSection.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1774792140313,
-      "type": "file"
-    },
-    {
-      "path": "public/images/cavity-doctor-profile.png",
-      "accessCount": 1,
-      "lastAccessed": 1774792148083,
+      "path": "src/app/layout.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1775497897757,
       "type": "file"
     }
   ],

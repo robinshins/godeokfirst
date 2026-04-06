@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '고덕동충치치료 평택충치치료 | 고덕퍼스트치과',
+  title: '평택고덕충치치료 평택충치치료 | 고덕퍼스트치과',
   description: '고덕동충치치료 평택충치치료 전문. 통합치의학과 전문의, 정밀 진단, 자연치아 보존 치료. 발치 대신 살리는 치료.',
   keywords: ['고덕동충치치료', '평택충치치료', '고덕퍼스트치과충치', '고덕동신경치료', '평택신경치료'],
   alternates: {

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '고덕동잇몸치료 평택잇몸치료 | 고덕퍼스트치과',
+  title: '평택고덕잇몸치료 평택잇몸치료 | 고덕퍼스트치과',
   description: '고덕동잇몸치료 평택잇몸치료 전문. NSK varios 970 특수장비, 페리오클린 관리, 4단계 통증완화 시스템. 연 1회 스케일링 보험 적용.',
   keywords: ['고덕동잇몸치료', '평택잇몸치료', '고덕동스케일링', '평택스케일링', '고덕퍼스트치과잇몸치료'],
   alternates: {

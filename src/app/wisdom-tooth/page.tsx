@@ -21,7 +21,7 @@ import SloganSection from '@/components/home/SloganSection';
 import { generateBreadcrumbSchema, generateMedicalServiceSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: '평택 고덕 사랑니 발치 | 고덕퍼스트치과',
+  title: '평택사랑니, 평택고덕 사랑니발치 | 고덕퍼스트치과',
   description: '평택 고덕 사랑니 발치. 통합치의학과 전문의가 직접 시술하는 안전한 사랑니 발치. 고난이도 매복 사랑니도 안심.',
   keywords: '고덕사랑니, 평택사랑니, 고덕동사랑니발치, 사랑니발치잘하는곳, 매복사랑니, 고덕퍼스트치과, 평택치과, 고덕치과',
   alternates: {

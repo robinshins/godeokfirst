@@ -26,8 +26,8 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://gdfirstdent.co.kr'),
   title: {
-    default: '고덕퍼스트치과 | 평택임플란트 고덕동치과',
-    template: '%s | 고덕퍼스트치과',
+    default: '평택임플란트 평택고덕치과 | 고덕퍼스트치과',
+    template: '%s',
   },
   description: '평택 고덕동 전문 치과. 전체임플란트, 디지털임플란트, 충치치료, 사랑니발치, 치아미백 전문. 고덕동치과, 평택치과, 고덕국제신도시치과.',
   keywords: [
