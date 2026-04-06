@@ -5,7 +5,7 @@ import FooterSection from '@/components/jp/FooterSection';
 import HeroSection from '@/components/jp/gum-care/HeroSection';
 import DoctorMessageSection from '@/components/jp/gum-care/DoctorMessageSection';
 import StatsSection from '@/components/jp/gum-care/StatsSection';
-import VideoSection from '@/components/jp/gum-care/VideoSection';
+// import VideoSection from '@/components/jp/gum-care/VideoSection';
 import RiskSection from '@/components/jp/gum-care/RiskSection';
 import PhilosophySection from '@/components/jp/gum-care/PhilosophySection';
 import ComparisonSection from '@/components/jp/gum-care/ComparisonSection';

@@ -17,7 +17,7 @@ import DoctorSection from '@/components/mn/DoctorSection';
 import WhyBestSection from '@/components/mn/WhyBestSection';
 import LocationSection from '@/components/mn/LocationSection';
 import FAQSection from '@/components/mn/FAQSection';
-import VideoSection from '@/components/mn/cavity-treatment/VideoSection';
+// import VideoSection from '@/components/mn/cavity-treatment/VideoSection';
 
 export const metadata: Metadata = {
   title: 'Cavity Treatment Godeok | Godeok First Dental',
@@ -47,7 +47,7 @@ export default function CavityTreatmentPage() {
       <HeroSection />
 
       {/* Video Section */}
-      <VideoSection />
+      {/* <VideoSection /> */}
 
       {/* Cases Section */}
       <CasesSection />

@@ -17,7 +17,7 @@ import DoctorSection from '@/components/jp/DoctorSection';
 import WhyBestSection from '@/components/jp/WhyBestSection';
 import LocationSection from '@/components/jp/LocationSection';
 import FAQSection from '@/components/jp/FAQSection';
-import VideoSection from '@/components/jp/cavity-treatment/VideoSection';
+// import VideoSection from '@/components/jp/cavity-treatment/VideoSection';
 
 export const metadata: Metadata = {
   title: '高徳虫歯治療 | コドクファースト歯科',
@@ -47,7 +47,7 @@ export default function CavityTreatmentPage() {
       <HeroSection />
 
       {/* Video Section */}
-      <VideoSection />
+      {/* <VideoSection /> */}
 
       {/* Cases Section */}
       <CasesSection />

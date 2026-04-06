@@ -38,7 +38,7 @@ const medicalServiceSchema = generateMedicalServiceSchema({
   description: 'University hospital professor-level implant surgery with digital guide system for precise and safe procedures.',
   url: 'https://gdfirstdent.co.kr/en/implant'
 });
-import VideoSection from '@/components/en/implant/VideoSection';
+// import VideoSection from '@/components/en/implant/VideoSection';
 import StatsSection from '@/components/en/implant/StatsSection';
 import WhyBestNewSection from '@/components/en/implant/WhyBestNewSection';
 import AfterCareSection from '@/components/en/denture/AfterCareSection';
@@ -72,7 +72,7 @@ export default function ImplantPage() {
       <StatsSection />
 
       {/* Video Section */}
-      <VideoSection />
+      {/* <VideoSection /> */}
       <MobileColumnSection page="implant" />
 
       {/* Why Best Section */}

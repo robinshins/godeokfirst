@@ -40,7 +40,7 @@ const medicalServiceSchema = generateMedicalServiceSchema({
 });
 import StatsSection from '@/components/jp/denture/StatsSection';
 import TreatmentOptionsSection from '@/components/jp/denture/TreatmentOptionsSection';
-import VideoSection from '@/components/jp/denture/VideoSection';
+// import VideoSection from '@/components/jp/denture/VideoSection';
 import WhyBestNewSection from '@/components/jp/denture/WhyBestNewSection';
 import InHouseLabSection from '@/components/jp/denture/InHouseLabSection';
 import AfterCareSection from '@/components/jp/denture/AfterCareSection';
@@ -80,7 +80,7 @@ export default function DenturePage() {
       <TreatmentOptionsSection />
 
       {/* Video Section */}
-      <VideoSection />
+      {/* <VideoSection /> */}
       <MobileColumnSection page="denture" />
 
       {/* Why Best Section */}

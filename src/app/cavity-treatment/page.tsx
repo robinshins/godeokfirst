@@ -17,7 +17,7 @@ import DoctorSection from '@/components/home/DoctorSection';
 import WhyBestSection from '@/components/home/WhyBestSection';
 import LocationSection from '@/components/home/LocationSection';
 import FAQSection from '@/components/home/FAQSection';
-import VideoSection from '@/components/cavity-treatment/VideoSection';
+// import VideoSection from '@/components/cavity-treatment/VideoSection';
 
 export const metadata: Metadata = {
   title: '고덕충치치료 | 고덕퍼스트치과',
@@ -47,7 +47,7 @@ export default function CavityTreatmentPage() {
       <HeroSection />
 
       {/* Video Section */}
-      <VideoSection />
+      {/* <VideoSection /> */}
 
       {/* Cases Section */}
       <CasesSection />

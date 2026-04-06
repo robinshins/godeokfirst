@@ -172,6 +172,36 @@
       "accessCount": 2,
       "lastAccessed": 1775497897757,
       "type": "file"
+    },
+    {
+      "path": "src/components/home/YouTubeSection.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1775498140962,
+      "type": "file"
+    },
+    {
+      "path": "src/components/implant/VideoSection.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1775498141496,
+      "type": "file"
+    },
+    {
+      "path": "src/components/cavity-treatment/VideoSection.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1775498142263,
+      "type": "file"
+    },
+    {
+      "path": "src/components/whitening/WhiteningVideoSection.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1775498142366,
+      "type": "file"
+    },
+    {
+      "path": "src/components/sections/RealReviews.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1775498142428,
+      "type": "file"
     }
   ],
   "userDirectives": []

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '고덕동미백 치아미백 | 고덕퍼스트치과',
+  title: '평택미백 평택고덕 치아미백 | 고덕퍼스트치과',
   description: '고덕동 치아미백 전문 치과. 오스템 뷰티스 시스템, 스케일링과 함께 할인. 1회 시술로 즉시 효과.',
   keywords: ['고덕동미백', '평택치아미백', '고덕퍼스트치과미백', '치아미백'],
   alternates: {

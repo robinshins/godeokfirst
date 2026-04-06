@@ -38,7 +38,7 @@ const medicalServiceSchema = generateMedicalServiceSchema({
   description: '조선대학교 치과병원 외래교수 출신 원장이 직접 수술하는 대학병원급 임플란트. 디지털 가이드 시스템으로 정밀하고 안전한 시술.',
   url: 'https://gdfirstdent.co.kr/cn/implant'
 });
-import VideoSection from '@/components/cn/implant/VideoSection';
+// import VideoSection from '@/components/cn/implant/VideoSection';
 import StatsSection from '@/components/cn/implant/StatsSection';
 import WhyBestNewSection from '@/components/cn/implant/WhyBestNewSection';
 import AfterCareSection from '@/components/cn/denture/AfterCareSection';
@@ -72,7 +72,7 @@ export default function ImplantPage() {
       <StatsSection />
 
       {/* Video Section */}
-      <VideoSection />
+      {/* <VideoSection /> */}
       <MobileColumnSection page="implant" />
 
       {/* Why Best Section */}

@@ -17,7 +17,7 @@ import DoctorSection from '@/components/cn/DoctorSection';
 import WhyBestSection from '@/components/cn/WhyBestSection';
 import LocationSection from '@/components/cn/LocationSection';
 import FAQSection from '@/components/cn/FAQSection';
-import VideoSection from '@/components/cn/cavity-treatment/VideoSection';
+// import VideoSection from '@/components/cn/cavity-treatment/VideoSection';
 
 export const metadata: Metadata = {
   title: '高德龋齿治疗 | 高德First牙科',
@@ -47,7 +47,7 @@ export default function CavityTreatmentPage() {
       <HeroSection />
 
       {/* Video Section */}
-      <VideoSection />
+      {/* <VideoSection /> */}
 
       {/* Cases Section */}
       <CasesSection />
