@@ -66,12 +66,12 @@ export async function POST(request: NextRequest) {
       no_smoking_drinking: data.noSmokingDrinking,
 
       // 보험
-      has_dental_insurance: data.hasDentalInsurance,
+      has_dental_insurance: data.hasDentalInsurance === '있다' ? true : data.hasDentalInsurance === '없다' ? false : null,
       insurance_company: data.insuranceCompany || null,
       insurance_year: data.insuranceYear || null,
 
       // 증상
-      symptoms: data.symptoms,
+      symptoms: Array.isArray(data.symptoms) ? data.symptoms : [data.symptoms],
       pain_level: data.painLevel,
 
       // 동의

@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1775497775277,
+  "lastScanned": 1775711489076,
   "projectRoot": "/Users/singyuseob/Dev/dentist_goduk",
   "techStack": {
     "languages": [
@@ -76,7 +76,7 @@
       "path": "docs",
       "purpose": "Documentation",
       "fileCount": 1,
-      "lastAccessed": 1775497775205,
+      "lastAccessed": 1775711488803,
       "keyFiles": [
         "TRACKING_SYSTEM_GUIDE.md"
       ]
@@ -85,7 +85,7 @@
       "path": "public",
       "purpose": "Public files",
       "fileCount": 12,
-      "lastAccessed": 1775497775244,
+      "lastAccessed": 1775711488803,
       "keyFiles": [
         "Vector3.png",
         "e2f6aa489f8d517ab9f290e254b5952d.txt",
@@ -98,7 +98,7 @@
       "path": "scripts",
       "purpose": "Build/utility scripts",
       "fileCount": 7,
-      "lastAccessed": 1775497775248,
+      "lastAccessed": 1775711488947,
       "keyFiles": [
         "apply-rename.js",
         "korean-to-english-mapping.json",
@@ -111,7 +111,7 @@
       "path": "src",
       "purpose": "Source code",
       "fileCount": 2,
-      "lastAccessed": 1775497775249,
+      "lastAccessed": 1775711488947,
       "keyFiles": [
         "middleware.ts"
       ]
@@ -120,7 +120,7 @@
       "path": "src/app",
       "purpose": "Application code",
       "fileCount": 8,
-      "lastAccessed": 1775497775251,
+      "lastAccessed": 1775711489073,
       "keyFiles": [
         "globals.css",
         "layout.tsx",
@@ -131,7 +131,7 @@
       "path": "src/components",
       "purpose": "UI components",
       "fileCount": 14,
-      "lastAccessed": 1775497775256,
+      "lastAccessed": 1775711489073,
       "keyFiles": [
         "ChatInterface.tsx",
         "ConsultationForm.tsx",
@@ -142,7 +142,7 @@
       "path": "src/lib",
       "purpose": "Library code",
       "fileCount": 12,
-      "lastAccessed": 1775497775256,
+      "lastAccessed": 1775711489074,
       "keyFiles": [
         "faqData.ts",
         "intent-analyzer.ts",
@@ -153,7 +153,7 @@
       "path": "src/types",
       "purpose": "Type definitions",
       "fileCount": 1,
-      "lastAccessed": 1775497775256,
+      "lastAccessed": 1775711489074,
       "keyFiles": [
         "dom-to-image-more.d.ts"
       ]
@@ -162,46 +162,28 @@
       "path": "src/utils",
       "purpose": "Utility functions",
       "fileCount": 0,
-      "lastAccessed": 1775497775256,
+      "lastAccessed": 1775711489075,
       "keyFiles": []
     }
   },
   "hotPaths": [
     {
-      "path": "src/app/layout.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1775497897757,
+      "path": "src/app/patient-intake/page.tsx",
+      "accessCount": 12,
+      "lastAccessed": 1775711773489,
+      "type": "directory"
+    },
+    {
+      "path": "src/app/api/patient-intake/route.ts",
+      "accessCount": 3,
+      "lastAccessed": 1775711686717,
       "type": "file"
     },
     {
-      "path": "src/components/home/YouTubeSection.tsx",
+      "path": "src/app",
       "accessCount": 1,
-      "lastAccessed": 1775498140962,
-      "type": "file"
-    },
-    {
-      "path": "src/components/implant/VideoSection.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1775498141496,
-      "type": "file"
-    },
-    {
-      "path": "src/components/cavity-treatment/VideoSection.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1775498142263,
-      "type": "file"
-    },
-    {
-      "path": "src/components/whitening/WhiteningVideoSection.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1775498142366,
-      "type": "file"
-    },
-    {
-      "path": "src/components/sections/RealReviews.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1775498142428,
-      "type": "file"
+      "lastAccessed": 1775711611000,
+      "type": "directory"
     }
   ],
   "userDirectives": []
