@@ -98,6 +98,14 @@ export const metadata: Metadata = {
     url: 'https://gdfirstdent.co.kr/jangdang/cavity-treatment',
     siteName: '고덕퍼스트치과',
     type: 'article',
+    images: [
+      {
+        url: '/고덕og이미지.png',
+        width: 1200,
+        height: 630,
+        alt: '고덕퍼스트치과 - 장당동 충치치료',
+      },
+    ],
     locale: 'ko_KR'
   }
 };

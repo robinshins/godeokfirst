@@ -13,6 +13,14 @@ export const metadata: Metadata = {
     url: 'https://gdfirstdent.co.kr/tmj',
     siteName: '高德First牙科',
     type: 'website',
+    images: [
+      {
+        url: '/고덕og이미지.png',
+        width: 1200,
+        height: 630,
+        alt: '高德First牙科 - 颞下颌关节治疗',
+      },
+    ],
   },
 };
 

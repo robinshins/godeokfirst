@@ -25,6 +25,14 @@ export const metadata: Metadata = {
     url: 'https://gdfirstdent.co.kr/ru/whitening',
     siteName: 'Godeok First Dental',
     type: 'website',
+    images: [
+      {
+        url: '/고덕og이미지.png',
+        width: 1200,
+        height: 630,
+        alt: 'Godeok First Dental - Teeth Whitening',
+      },
+    ],
   },
 };
 

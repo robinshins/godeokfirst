@@ -13,6 +13,14 @@ export const metadata: Metadata = {
     url: 'https://gdfirstdent.co.kr/tmj',
     siteName: '고덕퍼스트치과',
     type: 'website',
+    images: [
+      {
+        url: '/고덕og이미지.png',
+        width: 1200,
+        height: 630,
+        alt: '고덕퍼스트치과 - 턱관절 치료',
+      },
+    ],
   },
 };
 

@@ -31,6 +31,14 @@ export const metadata: Metadata = {
     url: 'https://gdfirstdent.co.kr/cavity-treatment',
     siteName: '고덕퍼스트치과',
     type: 'website',
+    images: [
+      {
+        url: '/고덕og이미지.png',
+        width: 1200,
+        height: 630,
+        alt: '고덕퍼스트치과 - 충치·신경치료',
+      },
+    ],
   },
 };
 

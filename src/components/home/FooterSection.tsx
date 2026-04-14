@@ -68,6 +68,9 @@ export default function FooterSection() {
                 { name: '동삭동', slug: 'dongsak' },
                 { name: '지제동', slug: 'jije' },
                 { name: '세교동', slug: 'segyo' },
+                { name: '포승읍', slug: 'poseung' },
+                { name: '안중읍', slug: 'anjung' },
+                { name: '평택 화양', slug: 'hwayang' },
               ].map((region) => (
                 <Link
                   key={region.slug}

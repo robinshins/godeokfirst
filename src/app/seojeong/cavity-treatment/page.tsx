@@ -80,6 +80,14 @@ export const metadata: Metadata = {
     siteName: '고덕퍼스트치과',
     locale: 'ko_KR',
     type: 'article',
+    images: [
+      {
+        url: '/고덕og이미지.png',
+        width: 1200,
+        height: 630,
+        alt: '고덕퍼스트치과 - 서정동 충치치료',
+      },
+    ],
   },
 };
 

@@ -28,6 +28,14 @@ export const metadata: Metadata = {
     url: 'https://gdfirstdent.co.kr/jp/gum-care',
     siteName: 'コドクファースト歯科',
     type: 'website',
+    images: [
+      {
+        url: '/고덕og이미지.png',
+        width: 1200,
+        height: 630,
+        alt: 'コドクファースト歯科 - 歯周病治療',
+      },
+    ],
   },
 };
 

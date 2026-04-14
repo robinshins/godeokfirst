@@ -283,6 +283,85 @@ export default function RegionLandingPage({ data }: { data: RegionData }) {
         </div>
       </div>
 
+      {/* Medical Knowledge Blog Section */}
+      <div className="bg-white">
+        <div className="max-w-[430px] mx-auto px-4 py-[60px]">
+          <h2 className="text-[28px] font-bold text-[#292a2f] text-center mb-3" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+            {data.name} 의학 지식 블로그
+          </h2>
+          <p className="text-[15px] text-[#5d5f6d] text-center mb-10" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+            통합치의학전문의가 직접 정리한 치과 의학 정보
+          </p>
+
+          <div className="flex flex-col gap-4">
+            {[
+              {
+                slug: 'implant-guide',
+                label: '임플란트',
+                color: '#008095',
+                bgColor: '#e6f7fa',
+                title: '임플란트 완벽 가이드',
+                summary: '수술 과정, 재료 선택, 성공률, 뼈이식, 사후관리까지 의학적 근거 기반 총정리',
+              },
+              {
+                slug: 'wisdom-tooth-guide',
+                label: '사랑니',
+                color: '#8b5cf6',
+                bgColor: '#f5f3ff',
+                title: '사랑니 발치 완벽 가이드',
+                summary: '매복 분류, 신경 손상 위험, 건조소켓, 발치 후 회복까지 임상 근거로 정리',
+              },
+              {
+                slug: 'cavity-resin',
+                label: '레진',
+                color: '#10b981',
+                bgColor: '#ecfdf5',
+                title: '레진 충치치료 가이드',
+                summary: '복합레진의 적응증, 수명, 아말감과의 차이, 시술 과정과 주의사항',
+              },
+              {
+                slug: 'cavity-inlay',
+                label: '인레이',
+                color: '#10b981',
+                bgColor: '#ecfdf5',
+                title: '인레이·온레이 가이드',
+                summary: '세라믹·골드·지르코니아 인레이의 차이, 적응증, 수명, 재료별 특성',
+              },
+              {
+                slug: 'cavity-crown',
+                label: '크라운',
+                color: '#10b981',
+                bgColor: '#ecfdf5',
+                title: '크라운·신경치료 가이드',
+                summary: '신경치료가 필요한 이유, 크라운 재료 비교, 수명과 재치료 가능성',
+              },
+            ].map((post) => (
+              <Link key={post.slug} href={`/${data.slug}/blog/${post.slug}`}>
+                <div className="bg-white rounded-2xl p-5 shadow-sm border border-[#e9ebf1] hover:shadow-md transition-shadow">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span
+                      className="text-[12px] font-bold px-2 py-0.5 rounded-md"
+                      style={{ backgroundColor: post.bgColor, color: post.color }}
+                    >
+                      {post.label}
+                    </span>
+                  </div>
+                  <h3 className="text-[16px] font-bold text-[#292a2f] mb-2 leading-[1.4]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                    {data.name} {post.title}
+                  </h3>
+                  <p className="text-[13px] text-[#5d5f6d] leading-[1.6] mb-3 line-clamp-2" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                    {post.summary}
+                  </p>
+                  <span className="text-[13px] font-semibold" style={{ color: post.color }}>
+                    더 읽기 →
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+
       {/* FAQ Section */}
       <div className="bg-white">
         <div className="max-w-[430px] mx-auto px-4 py-[60px]">
