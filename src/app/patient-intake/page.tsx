@@ -7,10 +7,7 @@ import * as z from 'zod';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import {
-  ConsultationType,
-  MedicalCondition,
-} from '@/lib/patient-intake-types';
+import { ConsultationType } from '@/lib/patient-intake-types';
 import { KR, US, JP, CN, VN, MN, UZ, RU, TH } from 'country-flag-icons/react/3x2';
 
 // Validation schema (age field removed since it's calculated from resident number)
@@ -30,21 +27,17 @@ const patientIntakeSchema = z.object({
   whyVisitOther: z.string().optional(),
   consultationTypes: z.array(z.string()).min(1, '최소 하나의 상담과목을 선택해주세요'),
   otherConsultation: z.string().optional(),
-  lastDentalVisit: z.enum(['1년 이내', '2년 이내', '2년 이상', '받은 적 없다']),
-  drugAllergy: z.boolean(),
+  lastDentalVisit: z.enum(['1년 이내', '1년 이상', '받은 적 없다']),
+  drugAllergy: z.boolean().optional(),
   drugAllergyDetails: z.string().optional(),
   medicalConditions: z.array(z.string()),
   otherCondition: z.string().optional(),
-  hasDentalHistory: z.boolean(),
+  hasDentalHistory: z.boolean().optional(),
   dentalHistoryDetails: z.string().optional(),
-  smokingAmount: z.number().optional().or(z.nan()).transform((val) => (isNaN(val as number) ? undefined : val)),
-  drinkingFrequency: z.number().optional().or(z.nan()).transform((val) => (isNaN(val as number) ? undefined : val)),
-  noSmokingDrinking: z.boolean(),
   hasDentalInsurance: z.enum(['없다', '있다', '모른다'], { required_error: '치과 보험 가입 유무를 선택해주세요' }),
   insuranceCompany: z.string().optional(),
   insuranceYear: z.number().optional().or(z.nan()).transform((val) => (isNaN(val as number) ? undefined : val)),
   symptoms: z.string().min(1, '증상을 입력해주세요'),
-  painLevel: z.number().min(0).max(10),
   privacyConsent: z.boolean().refine((val) => val === true, {
     message: '개인정보 수집·활용에 동의해주세요',
   }),
@@ -76,6 +69,13 @@ export default function PatientIntakePage() {
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isLangOpen, setIsLangOpen] = useState(false);
+
+  // Step 4 sub-option state (not part of form schema; serialized into medicalConditions on submit)
+  const [hypertensionMed, setHypertensionMed] = useState<'유' | '무' | null>(null);
+  const [diabetesMed, setDiabetesMed] = useState<'유' | '무' | null>(null);
+  const [osteoporosisType, setOsteoporosisType] = useState<'주사' | '약' | null>(null);
+  const [hepatitisType, setHepatitisType] = useState<'B' | 'C' | null>(null);
+  const [smokingDetails, setSmokingDetails] = useState('');
 
   // Auto-redirect based on browser language
   useEffect(() => {
@@ -124,11 +124,7 @@ export default function PatientIntakePage() {
     defaultValues: {
       consultationTypes: [],
       medicalConditions: [],
-      drugAllergy: false,
-      hasDentalHistory: false,
-      noSmokingDrinking: false,
       privacyConsent: false,
-      painLevel: 0,
     },
   });
 
@@ -136,9 +132,6 @@ export default function PatientIntakePage() {
   const watchedValues = {
     consultationTypes: watch('consultationTypes') || [],
     medicalConditions: watch('medicalConditions') || [],
-    drugAllergy: watch('drugAllergy'),
-    hasDentalHistory: watch('hasDentalHistory'),
-    noSmokingDrinking: watch('noSmokingDrinking'),
     hasDentalInsurance: watch('hasDentalInsurance'),
     residentNumber: watch('residentNumber'),
     howDidYouKnow: watch('howDidYouKnow'),
@@ -232,11 +225,29 @@ export default function PatientIntakePage() {
     console.log('폼 제출 시작:', data);
     setIsSubmitting(true);
     try {
+      // Serialize sub-options into medicalConditions strings
+      const serializedConditions = (data.medicalConditions || []).map((c) => {
+        if (c === '고혈압' && hypertensionMed) return `고혈압(약복용 ${hypertensionMed})`;
+        if (c === '당뇨' && diabetesMed) return `당뇨(약복용 ${diabetesMed})`;
+        if (c === '골다공증' && osteoporosisType) return `골다공증(${osteoporosisType})`;
+        if (c === '간염' && hepatitisType) return `간염(${hepatitisType}형)`;
+        return c;
+      });
+
+      // Derive boolean flags from text details + pack smoking into otherCondition
+      const derivedDrugAllergy = !!(data.drugAllergyDetails && data.drugAllergyDetails.trim());
+      const derivedHasDentalHistory = !!(data.dentalHistoryDetails && data.dentalHistoryDetails.trim());
+      const smokingPayload = smokingDetails.trim() ? `흡연: ${smokingDetails.trim()}` : '';
+
       const response = await fetch('/api/patient-intake', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ...data,
+          medicalConditions: serializedConditions,
+          drugAllergy: derivedDrugAllergy,
+          hasDentalHistory: derivedHasDentalHistory,
+          otherCondition: smokingPayload || data.otherCondition || '',
           age: calculateAge(data.residentNumber),
           consentDate: new Date().toISOString(),
         }),
@@ -282,14 +293,10 @@ export default function PatientIntakePage() {
           values.hasDentalInsurance !== undefined
         );
       case 4:
-        return !!(
-          values.drugAllergy !== undefined &&
-          values.medicalConditions &&
-          values.hasDentalHistory !== undefined &&
-          values.noSmokingDrinking !== undefined
-        );
+        // 모든 항목이 선택사항(특이사항 없음일 수 있음)
+        return true;
       case 5:
-        return !!(values.symptoms && values.painLevel !== undefined);
+        return !!values.symptoms;
       case 6:
         const basicConsent = !!(values.privacyConsent && values.signature);
         // 만 14세 미만이면 법정대리인 정보도 필수
@@ -462,14 +469,13 @@ export default function PatientIntakePage() {
                 </label>
                 <div className="space-y-2">
                   {[
-                    '네이버에 검색해서',
+                    '네이버/네이버지도에서 검색해서',
                     '카카오맵에 검색해서',
-                    '네이버지도에 검색해서',
                     '유튜브/인스타그램을 보고',
-                    '지나가다가 간판(지하철광고)을 보고',
+                    '지나가다가 간판을 보고',
+                    '전단지/칫솔 등을 보고',
                     'AI(챗GPT, 제미니 등)에서 추천받아서',
-                    '주변 추천(지인, 이웃 등)',
-                    '지인 추천 (직원, 원장님 포함)',
+                    '지인/주변 추천 (지인, 이웃, 직원, 원장님 등)',
                     '기타',
                   ].map((option) => (
                     <div key={option}>
@@ -484,7 +490,7 @@ export default function PatientIntakePage() {
                       >
                         {option}
                       </button>
-                      {watchedValues.howDidYouKnow === option && option === '네이버에 검색해서' && (
+                      {watchedValues.howDidYouKnow === option && option === '네이버/네이버지도에서 검색해서' && (
                         <input
                           {...register('howDidYouKnowSearch')}
                           type="text"
@@ -492,11 +498,11 @@ export default function PatientIntakePage() {
                           className="step-input mt-3"
                         />
                       )}
-                      {watchedValues.howDidYouKnow === option && option === '주변 추천(지인, 이웃 등)' && (
+                      {watchedValues.howDidYouKnow === option && option === '지인/주변 추천 (지인, 이웃, 직원, 원장님 등)' && (
                         <input
-                          {...register('howDidYouKnowPartner')}
+                          {...register('referrerName')}
                           type="text"
-                          placeholder="추천인 또는 경로를 입력해주세요 (선택사항)"
+                          placeholder="추천인 성함 또는 경로를 입력해주세요 (선택사항)"
                           className="step-input mt-3"
                         />
                       )}
@@ -507,19 +513,6 @@ export default function PatientIntakePage() {
                           placeholder="기타 경로를 입력해주세요"
                           className="step-input mt-3"
                         />
-                      )}
-                      {watchedValues.howDidYouKnow === option && option === '지인 추천 (직원, 원장님 포함)' && (
-                        <div className="mt-3">
-                          <input
-                            {...register('referrerName')}
-                            type="text"
-                            placeholder="지인의 성함을 입력해주세요 (선택사항)"
-                            className="step-input"
-                          />
-                          <p className="text-sm text-gray-500 mt-2">
-                            * 선택사항입니다.
-                          </p>
-                        </div>
                       )}
                     </div>
                   ))}
@@ -541,8 +534,7 @@ export default function PatientIntakePage() {
                     '블로그글을 봤더니 설명이 잘 되어 있어서',
                     '유튜브/인스타그램 영상을 보고 신뢰가 가서',
                     'AI(챗GPT, 제미니 등)에 추천이라 신뢰가 가서',
-                    '지인소개라 신뢰가 가서',
-                    '주변 추천(지인, 이웃 등)라서',
+                    '지인/주변 추천이라 신뢰가 가서',
                     '집이랑 가까워서',
                     '기타',
                   ].map((option) => (
@@ -593,6 +585,7 @@ export default function PatientIntakePage() {
                       '구강건강검진',
                       '라미네이트',
                       '스케일링',
+                      '턱관절',
                       '기타',
                     ] as ConsultationType[]
                   ).map((type) => (
@@ -626,10 +619,10 @@ export default function PatientIntakePage() {
               {/* 최근 치과 진료 */}
               <div>
                 <label className="block text-lg font-semibold text-gray-800 mb-3">
-                  최근 치과 진료는 언제 받으셨나요? <span className="text-red-600">*</span>
+                  최근 치과 진료(스케일링 포함)는 언제 받으셨나요? <span className="text-red-600">*</span>
                 </label>
                 <div className="space-y-2">
-                  {(['1년 이내', '2년 이내', '2년 이상', '받은 적 없다'] as const).map((option) => (
+                  {(['1년 이내', '1년 이상', '받은 적 없다'] as const).map((option) => (
                     <button
                       key={option}
                       type="button"
@@ -713,195 +706,144 @@ export default function PatientIntakePage() {
         );
 
       case 4:
-        // 건강 상태 및 약물
+        // 건강 상태
         return (
-          <StepContainer title="건강 상태를 알려주세요">
+          <StepContainer title="건강 상태를 알려주세요" subtitle="해당되는 항목만 선택해주세요 (없으면 건너뛰셔도 됩니다)">
             <div className="space-y-6">
-              {/* 약 부작용 */}
-              <div>
-                <label className="block text-lg font-semibold text-gray-800 mb-3">
-                  약에 대한 부작용이 있나요? <span className="text-red-600">*</span>
-                </label>
-                <div className="flex gap-3 mb-3">
-                  <button
-                    type="button"
-                    onClick={() => setValue('drugAllergy', false)}
-                    className={`flex-1 py-4 rounded-xl text-lg font-bold transition-all ${
-                      !watchedValues.drugAllergy
-                        ? 'bg-[#008095] text-white'
-                        : 'bg-gray-100 text-gray-700'
-                    }`}
-                  >
-                    없다
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setValue('drugAllergy', true)}
-                    className={`flex-1 py-4 rounded-xl text-lg font-bold transition-all ${
-                      watchedValues.drugAllergy
-                        ? 'bg-[#008095] text-white'
-                        : 'bg-gray-100 text-gray-700'
-                    }`}
-                  >
-                    있다
-                  </button>
-                </div>
-                {watchedValues.drugAllergy && (
-                  <input
-                    {...register('drugAllergyDetails')}
-                    type="text"
-                    placeholder="구체적으로 입력해주세요"
-                    className="step-input"
-                  />
-                )}
-              </div>
-
               {/* 질환 */}
               <div>
                 <label className="block text-lg font-semibold text-gray-800 mb-3">
-                  앓았거나 앓고 있는 질환이 있나요? (중복 선택 가능) <span className="text-red-600">*</span>
+                  앓고 있는 질환 (중복 선택 가능)
                 </label>
-                <div className="grid grid-cols-2 gap-2 max-h-[50vh] overflow-y-auto p-1">
-                  {(
-                    [
-                      '없음',
-                      '고혈압',
-                      '당뇨',
-                      '아스피린 복용중',
-                      '출혈성 질환',
-                      '골다공증약 장기 복용',
-                      '리트케인 알러지',
-                      '만성신부전',
-                      '수유증',
-                      'B, C형 간염',
-                      '위장 장애',
-                      '신장 투석',
-                      '폐니실린 알러지',
-                      '만성간경화',
-                      '임신중, 임신가능성',
-                      '갑상선 기능 항진증',
-                      '만성 심장판막 질환',
-                      '혈심증, 심근, 뇌경색',
-                      '갑염성심내막염 위험환자',
-                      '고지혈증',
-                      '기타',
-                    ] as MedicalCondition[]
-                  ).map((condition) => (
-                    <button
-                      key={condition}
-                      type="button"
-                      onClick={() =>
-                        toggleArrayValue(watchedValues.medicalConditions, condition, 'medicalConditions')
-                      }
-                      className={`py-3 px-2 rounded-lg text-xs font-semibold transition-all ${
-                        watchedValues.medicalConditions.includes(condition)
-                          ? 'bg-[#008095] text-white'
-                          : 'bg-gray-100 text-gray-700'
-                      }`}
-                    >
-                      {condition}
-                    </button>
-                  ))}
+                <div className="space-y-3">
+                  {(['고혈압', '당뇨', '골다공증', '간염', '결핵', '심장질환', '신장질환', '갑상선질환'] as const).map((condition) => {
+                    const isSelected = watchedValues.medicalConditions.includes(condition);
+                    return (
+                      <div key={condition}>
+                        <button
+                          type="button"
+                          onClick={() =>
+                            toggleArrayValue(watchedValues.medicalConditions, condition, 'medicalConditions')
+                          }
+                          className={`w-full py-4 rounded-xl text-base font-semibold transition-all ${
+                            isSelected ? 'bg-[#008095] text-white' : 'bg-gray-100 text-gray-700'
+                          }`}
+                        >
+                          {condition}
+                        </button>
+
+                        {/* 고혈압 서브옵션 */}
+                        {isSelected && condition === '고혈압' && (
+                          <SubOptionRow label="약복용">
+                            {(['유', '무'] as const).map((opt) => (
+                              <SubOptionButton
+                                key={opt}
+                                active={hypertensionMed === opt}
+                                onClick={() => setHypertensionMed(opt)}
+                              >
+                                {opt}
+                              </SubOptionButton>
+                            ))}
+                          </SubOptionRow>
+                        )}
+
+                        {/* 당뇨 서브옵션 */}
+                        {isSelected && condition === '당뇨' && (
+                          <SubOptionRow label="약복용">
+                            {(['유', '무'] as const).map((opt) => (
+                              <SubOptionButton
+                                key={opt}
+                                active={diabetesMed === opt}
+                                onClick={() => setDiabetesMed(opt)}
+                              >
+                                {opt}
+                              </SubOptionButton>
+                            ))}
+                          </SubOptionRow>
+                        )}
+
+                        {/* 골다공증 서브옵션 */}
+                        {isSelected && condition === '골다공증' && (
+                          <SubOptionRow label="종류">
+                            {(['주사', '약'] as const).map((opt) => (
+                              <SubOptionButton
+                                key={opt}
+                                active={osteoporosisType === opt}
+                                onClick={() => setOsteoporosisType(opt)}
+                              >
+                                {opt}
+                              </SubOptionButton>
+                            ))}
+                          </SubOptionRow>
+                        )}
+
+                        {/* 간염 서브옵션 */}
+                        {isSelected && condition === '간염' && (
+                          <SubOptionRow label="종류">
+                            {(['B', 'C'] as const).map((opt) => (
+                              <SubOptionButton
+                                key={opt}
+                                active={hepatitisType === opt}
+                                onClick={() => setHepatitisType(opt)}
+                              >
+                                {opt}형
+                              </SubOptionButton>
+                            ))}
+                          </SubOptionRow>
+                        )}
+                      </div>
+                    );
+                  })}
                 </div>
-                {watchedValues.medicalConditions.includes('기타') && (
-                  <input
-                    {...register('otherCondition')}
-                    type="text"
-                    placeholder="기타 질환을 입력해주세요"
-                    className="step-input mt-3"
-                  />
-                )}
               </div>
 
-              {/* 치과 진료 이력 */}
+              {/* 약물 알러지 */}
               <div>
                 <label className="block text-lg font-semibold text-gray-800 mb-3">
-                  치과 진료 및 수술 이력이 있나요?
+                  약물 알러지
                 </label>
-                <div className="flex gap-3 mb-3">
-                  <button
-                    type="button"
-                    onClick={() => setValue('hasDentalHistory', false)}
-                    className={`flex-1 py-4 rounded-xl text-base font-bold transition-all ${
-                      !watchedValues.hasDentalHistory
-                        ? 'bg-[#008095] text-white'
-                        : 'bg-gray-100 text-gray-700'
-                    }`}
-                  >
-                    없음
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setValue('hasDentalHistory', true)}
-                    className={`flex-1 py-4 rounded-xl text-base font-bold transition-all ${
-                      watchedValues.hasDentalHistory
-                        ? 'bg-[#008095] text-white'
-                        : 'bg-gray-100 text-gray-700'
-                    }`}
-                  >
-                    있음
-                  </button>
-                </div>
-                {watchedValues.hasDentalHistory && (
-                  <textarea
-                    {...register('dentalHistoryDetails')}
-                    placeholder="구체적으로 입력해주세요"
-                    className="step-input min-h-[100px]"
-                  />
-                )}
+                <input
+                  {...register('drugAllergyDetails')}
+                  type="text"
+                  placeholder="예: 페니실린"
+                  className="step-input"
+                />
               </div>
 
-              {/* 흡연/음주 */}
+              {/* 수술(또는 시술) 받은 경력 */}
               <div>
                 <label className="block text-lg font-semibold text-gray-800 mb-3">
-                  흡연 및 음주 정도는 어떻게 되시나요?
+                  수술(또는 시술) 받은 경력
                 </label>
-                <div className="flex items-center gap-3 mb-3">
-                  <input
-                    id="no-smoking-drinking"
-                    type="checkbox"
-                    checked={watchedValues.noSmokingDrinking}
-                    onChange={(e) => setValue('noSmokingDrinking', e.target.checked)}
-                    className="w-5 h-5"
-                  />
-                  <label htmlFor="no-smoking-drinking" className="text-base font-semibold cursor-pointer">해당 없음</label>
-                </div>
-                {!watchedValues.noSmokingDrinking && (
-                  <div className="grid grid-cols-2 gap-3">
-                    <div>
-                      <label className="block text-sm text-gray-600 mb-2">흡연 (하루 갑수)</label>
-                      <input
-                        {...register('smokingAmount', { valueAsNumber: true })}
-                        type="number"
-                        inputMode="decimal"
-                        step="0.5"
-                        placeholder="0"
-                        className="step-input"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm text-gray-600 mb-2">음주 (주 횟수)</label>
-                      <input
-                        {...register('drinkingFrequency', { valueAsNumber: true })}
-                        type="number"
-                        inputMode="numeric"
-                        placeholder="0"
-                        className="step-input"
-                      />
-                    </div>
-                  </div>
-                )}
+                <textarea
+                  {...register('dentalHistoryDetails')}
+                  placeholder="구체적으로 입력해주세요"
+                  className="step-input min-h-[80px]"
+                />
+              </div>
+
+              {/* 흡연 */}
+              <div>
+                <label className="block text-lg font-semibold text-gray-800 mb-3">
+                  흡연
+                </label>
+                <input
+                  type="text"
+                  value={smokingDetails}
+                  onChange={(e) => setSmokingDetails(e.target.value)}
+                  placeholder="예: 하루 10개비"
+                  className="step-input"
+                />
               </div>
             </div>
           </StepContainer>
         );
 
       case 5:
-        // 증상 및 통증
+        // 증상
         return (
           <StepContainer title="불편하신 증상을 알려주세요">
             <div className="space-y-6">
-              {/* 증상 */}
               <div>
                 <label className="block text-lg font-semibold text-gray-800 mb-3">
                   치아의 증상을 자세히 적어주세요 <span className="text-red-600">*</span>
@@ -912,49 +854,6 @@ export default function PatientIntakePage() {
                   className="step-input min-h-[120px]"
                 />
                 {errors.symptoms && <ErrorMessage>{errors.symptoms.message}</ErrorMessage>}
-              </div>
-
-              {/* 통증 정도 */}
-              <div>
-                <label className="block text-lg font-semibold text-gray-800 mb-3">
-                  통증의 정도 (0-10) <span className="text-red-600">*</span>
-                </label>
-                <div className="space-y-3">
-                  <div className="bg-gray-50 p-6 rounded-xl text-center">
-                    <div className="text-5xl font-bold text-[#008095] mb-2">
-                      {watch('painLevel') || 0}
-                    </div>
-                    <div className="text-sm text-gray-600">
-                      {watch('painLevel') === 0 && '통증 없음'}
-                      {watch('painLevel') >= 1 && watch('painLevel') <= 2 && '약한 통증'}
-                      {watch('painLevel') >= 3 && watch('painLevel') <= 4 && '중등도 통증'}
-                      {watch('painLevel') >= 5 && watch('painLevel') <= 6 && '심한 통증'}
-                      {watch('painLevel') >= 7 && watch('painLevel') <= 8 && '극심한 통증'}
-                      {watch('painLevel') >= 9 && '참을 수 없는 통증'}
-                    </div>
-                  </div>
-                  <input
-                    type="range"
-                    min="0"
-                    max="10"
-                    value={watch('painLevel') || 0}
-                    onChange={(e) => setValue('painLevel', parseInt(e.target.value))}
-                    className="w-full h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#008095]"
-                  />
-                  <div className="flex justify-between text-xs text-gray-500">
-                    <span>0</span>
-                    <span>1</span>
-                    <span>2</span>
-                    <span>3</span>
-                    <span>4</span>
-                    <span>5</span>
-                    <span>6</span>
-                    <span>7</span>
-                    <span>8</span>
-                    <span>9</span>
-                    <span>10</span>
-                  </div>
-                </div>
               </div>
             </div>
           </StepContainer>
@@ -1348,4 +1247,35 @@ function StepContainer({
 
 function ErrorMessage({ children }: { children: React.ReactNode }) {
   return <p className="text-sm text-red-600 mt-2 font-semibold">{children}</p>;
+}
+
+function SubOptionRow({ label, children }: { label: string; children: React.ReactNode }) {
+  return (
+    <div className="flex items-center gap-3 mt-2 ml-3 pl-3 border-l-2 border-[#008095]/40">
+      <span className="text-sm font-semibold text-gray-600 shrink-0">{label}</span>
+      <div className="flex gap-2 flex-1">{children}</div>
+    </div>
+  );
+}
+
+function SubOptionButton({
+  active,
+  onClick,
+  children,
+}: {
+  active: boolean;
+  onClick: () => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`flex-1 py-2 rounded-lg text-sm font-semibold transition-all ${
+        active ? 'bg-[#008095] text-white' : 'bg-gray-100 text-gray-700'
+      }`}
+    >
+      {children}
+    </button>
+  );
 }

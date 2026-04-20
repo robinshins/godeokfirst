@@ -31,7 +31,7 @@ export interface PatientIntakeData {
   otherConsultation?: string;
 
   // 설문내용
-  lastDentalVisit: '1년 이내' | '2년 이내' | '2년 이상' | '받은 적 없다';
+  lastDentalVisit: '1년 이내' | '1년 이상' | '받은 적 없다';
   drugAllergy: boolean;
   drugAllergyDetails?: string;
 
@@ -66,7 +66,7 @@ export interface PatientIntakeData {
 
   // 증상
   symptoms: string;
-  painLevel: number; // 0-10
+  painLevel?: number; // 0-10 (deprecated, kept for legacy records)
 
   // 개인정보 동의
   privacyConsent: boolean;
@@ -99,6 +99,7 @@ export type ConsultationType =
   | '라미네이트'
   | '수면치료'
   | '스케일링'
+  | '턱관절'
   | '기타'
   // English
   | 'Implants'
