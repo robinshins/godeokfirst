@@ -170,27 +170,27 @@
   "hotPaths": [
     {
       "path": "src/app/patient-intake/page.tsx",
-      "accessCount": 32,
-      "lastAccessed": 1776737437241,
+      "accessCount": 44,
+      "lastAccessed": 1776739573711,
       "type": "file"
     },
     {
       "path": "src/app/admin/page.tsx",
-      "accessCount": 15,
-      "lastAccessed": 1776737111096,
+      "accessCount": 16,
+      "lastAccessed": 1776739272774,
       "type": "file"
+    },
+    {
+      "path": "src",
+      "accessCount": 6,
+      "lastAccessed": 1776737627452,
+      "type": "directory"
     },
     {
       "path": "src/lib/patient-intake-types.ts",
       "accessCount": 5,
       "lastAccessed": 1776702913663,
       "type": "file"
-    },
-    {
-      "path": "src",
-      "accessCount": 5,
-      "lastAccessed": 1776737436252,
-      "type": "directory"
     },
     {
       "path": "src/components/admin/PatientIntakeList.tsx",
@@ -203,6 +203,12 @@
       "accessCount": 2,
       "lastAccessed": 1776737224062,
       "type": "file"
+    },
+    {
+      "path": "src/app",
+      "accessCount": 2,
+      "lastAccessed": 1776737491962,
+      "type": "directory"
     },
     {
       "path": "src/app/api/patient-intake",
@@ -238,6 +244,72 @@
       "path": "src/lib/referrer-tracker.ts",
       "accessCount": 1,
       "lastAccessed": 1776737444533,
+      "type": "file"
+    },
+    {
+      "path": "next.config.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776737526721,
+      "type": "file"
+    },
+    {
+      "path": "src/lib/supabase/server.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776737547241,
+      "type": "file"
+    },
+    {
+      "path": "src/app/api/patient-intake/[id]/route.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776737558589,
+      "type": "file"
+    },
+    {
+      "path": "src/app/api",
+      "accessCount": 1,
+      "lastAccessed": 1776737563989,
+      "type": "directory"
+    },
+    {
+      "path": "src/app/api/rank-check/route.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776737568943,
+      "type": "file"
+    },
+    {
+      "path": "src/components/home",
+      "accessCount": 1,
+      "lastAccessed": 1776737628465,
+      "type": "directory"
+    },
+    {
+      "path": "src/components/home/HeroSection.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776737632318,
+      "type": "file"
+    },
+    {
+      "path": "src/app/api/consultations",
+      "accessCount": 1,
+      "lastAccessed": 1776739273580,
+      "type": "directory"
+    },
+    {
+      "path": "src/app/api/consultations/route.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776739277444,
+      "type": "file"
+    },
+    {
+      "path": "supabase-migration-add-status.sql",
+      "accessCount": 1,
+      "lastAccessed": 1776739281808,
+      "type": "file"
+    },
+    {
+      "path": "run-migration.js",
+      "accessCount": 1,
+      "lastAccessed": 1776739282468,
       "type": "file"
     }
   ],

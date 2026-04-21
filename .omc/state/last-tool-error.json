@@ -1,7 +1,7 @@
 {
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"ls /Users/singyuseob/Dev/dentist_goduk/src/middleware.ts /Users/singyuseob/Dev/dentist_goduk/middleware.ts 2>/dev/null\",\"description\":\"Check for middleware\"}",
-  "error": "Exit code 1\n/Users/singyuseob/Dev/dentist_goduk/src/middleware.ts",
-  "timestamp": "2026-04-21T02:08:05.308Z",
+  "tool_name": "Read",
+  "tool_input_preview": "{\"file_path\":\"/Users/singyuseob/Dev/dentist_goduk/src/app/admin/page.tsx\"}",
+  "error": "File content (37138 tokens) exceeds maximum allowed tokens (25000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole file.",
+  "timestamp": "2026-04-21T02:41:08.535Z",
   "retry_count": 1
 }

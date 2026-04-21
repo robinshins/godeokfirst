@@ -75,6 +75,7 @@ export default function PatientIntakePage() {
   const [diabetesMed, setDiabetesMed] = useState<'유' | '무' | null>(null);
   const [osteoporosisType, setOsteoporosisType] = useState<'주사' | '약' | null>(null);
   const [hepatitisType, setHepatitisType] = useState<'B' | 'C' | null>(null);
+  const [pregnancyStatus, setPregnancyStatus] = useState<'준비중' | '임신중' | '수유중' | null>(null);
   const [smokingDetails, setSmokingDetails] = useState('');
 
   // Auto-redirect based on browser language
@@ -183,6 +184,20 @@ export default function PatientIntakePage() {
     }, 100);
   }, [currentStep]);
 
+  // Sync browser back/forward with step navigation
+  useEffect(() => {
+    window.history.replaceState({ intakeStep: 1 }, '');
+
+    const handlePopState = (e: PopStateEvent) => {
+      if (e.state && typeof e.state.intakeStep === 'number') {
+        setCurrentStep(e.state.intakeStep);
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
   // Phone number formatting
   const formatPhoneNumber = (value: string): string => {
     const numbers = value.replace(/\D/g, '');
@@ -231,6 +246,7 @@ export default function PatientIntakePage() {
         if (c === '당뇨' && diabetesMed) return `당뇨(약복용 ${diabetesMed})`;
         if (c === '골다공증' && osteoporosisType) return `골다공증(${osteoporosisType})`;
         if (c === '간염' && hepatitisType) return `간염(${hepatitisType}형)`;
+        if (c === '임신 관련' && pregnancyStatus) return `임신 관련(${pregnancyStatus})`;
         return c;
       });
 
@@ -318,13 +334,15 @@ export default function PatientIntakePage() {
 
   const nextStep = () => {
     if (currentStep < TOTAL_STEPS && isCurrentStepValid) {
-      setCurrentStep(currentStep + 1);
+      const newStep = currentStep + 1;
+      window.history.pushState({ intakeStep: newStep }, '');
+      setCurrentStep(newStep);
     }
   };
 
   const prevStep = () => {
     if (currentStep > 1) {
-      setCurrentStep(currentStep - 1);
+      window.history.back();
     }
   };
 
@@ -716,7 +734,7 @@ export default function PatientIntakePage() {
                   앓고 있는 질환 (중복 선택 가능)
                 </label>
                 <div className="space-y-3">
-                  {(['고혈압', '당뇨', '골다공증', '간염', '결핵', '심장질환', '신장질환', '갑상선질환'] as const).map((condition) => {
+                  {(['고혈압', '당뇨', '골다공증', '간염', '결핵', '심장질환', '신장질환', '갑상선질환', '아스피린 혈전제 복용중', '뇌혈관 질환', '임신 관련'] as const).map((condition) => {
                     const isSelected = watchedValues.medicalConditions.includes(condition);
                     return (
                       <div key={condition}>
@@ -787,6 +805,21 @@ export default function PatientIntakePage() {
                                 onClick={() => setHepatitisType(opt)}
                               >
                                 {opt}형
+                              </SubOptionButton>
+                            ))}
+                          </SubOptionRow>
+                        )}
+
+                        {/* 임신 관련 서브옵션 */}
+                        {isSelected && condition === '임신 관련' && (
+                          <SubOptionRow label="상태">
+                            {(['준비중', '임신중', '수유중'] as const).map((opt) => (
+                              <SubOptionButton
+                                key={opt}
+                                active={pregnancyStatus === opt}
+                                onClick={() => setPregnancyStatus(opt)}
+                              >
+                                {opt}
                               </SubOptionButton>
                             ))}
                           </SubOptionRow>
