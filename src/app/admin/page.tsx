@@ -73,6 +73,11 @@ export default function AdminPage() {
   const [downloadTarget, setDownloadTarget] = useState<ConsultationLog | null>(null);
   // 문진표 전화번호 → 작성일 배열 Map (방문 배지 표시용)
   const [intakePhoneMap, setIntakePhoneMap] = useState<Map<string, string[]>>(new Map());
+  // 문진표 새 알림 관련
+  const [newIntakeBadge, setNewIntakeBadge] = useState<number>(0);
+  const [intakeAlertData, setIntakeAlertData] = useState<{ count: number; latestName?: string } | null>(null);
+  // 이미 확인한 문진표 중 가장 최신의 created_at (ms) - localStorage 로 페이지 새로고침 간 유지
+  const lastSeenIntakeTsRef = useRef<number | null>(null);
   const modalContentRef = useRef<HTMLDivElement>(null);
   const hiddenModalRef = useRef<HTMLDivElement>(null);
 
@@ -88,6 +93,9 @@ export default function AdminPage() {
     }
 
     if (authToken === 'medis_admin_2019' || authToken === 'medis_limited_2019') {
+      // 이미 확인한 최신 문진표 timestamp 불러오기
+      const storedIntakeTs = localStorage.getItem('last_seen_intake_ts');
+      lastSeenIntakeTsRef.current = storedIntakeTs ? parseInt(storedIntakeTs, 10) : null;
 
       // 브라우저 환경 확인
       console.log('🌐 브라우저 정보:', {
@@ -221,6 +229,39 @@ export default function AdminPage() {
       }
     } else {
       console.warn('⚠️ 알림 권한이 없습니다. 현재 상태:', Notification.permission);
+    }
+  }, [browserNotificationEnabled]);
+
+  // 새 문진표 브라우저 알림
+  const showIntakeNotification = useCallback((count: number, latestName?: string) => {
+    if (!browserNotificationEnabled) return;
+    if (!('Notification' in window)) return;
+
+    if (Notification.permission === 'granted') {
+      try {
+        const uniqueTag = `intake-${Date.now()}`;
+        const bodyText = latestName
+          ? `${latestName}님 외 ${count - 1}건의 새 문진표가 있습니다.\n클릭하여 확인하세요.`
+          : `${count}건의 새 문진표가 접수되었습니다.\n클릭하여 확인하세요.`;
+
+        const notification = new Notification('📋 새 문진표 접수', {
+          body: count === 1 && latestName ? `${latestName}님의 문진표가 접수되었습니다.\n클릭하여 확인하세요.` : bodyText,
+          icon: '/favicon.ico',
+          badge: '/favicon.ico',
+          tag: uniqueTag,
+          requireInteraction: true,
+          silent: false,
+        });
+
+        notification.onclick = () => {
+          window.focus();
+          notification.close();
+        };
+
+        setTimeout(() => notification.close(), 30000);
+      } catch (error) {
+        console.error('❌ 문진표 브라우저 알림 생성 실패:', error);
+      }
     }
   }, [browserNotificationEnabled]);
 
@@ -546,28 +587,73 @@ export default function AdminPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dateRange, startDate, endDate]);
 
-  // 문진표 데이터 가져오기 (방문 배지 표시용)
+  // 문진표 데이터 가져오기 (방문 배지 표시용 + 새 문진표 알림)
   const fetchIntakes = useCallback(async () => {
     try {
       const response = await fetch('/api/patient-intake');
       const data = await response.json();
-      if (data.success && data.data) {
-        const phoneMap = new Map<string, string[]>();
-        (data.data as PatientIntakeData[]).forEach((intake) => {
-          if (intake.phoneNumber && intake.created_at) {
-            // 전화번호 정규화 (숫자만 추출)
-            const normalizedPhone = intake.phoneNumber.replace(/\D/g, '');
-            const existing = phoneMap.get(normalizedPhone) || [];
-            existing.push(intake.created_at);
-            phoneMap.set(normalizedPhone, existing);
-          }
-        });
-        setIntakePhoneMap(phoneMap);
+      if (!data.success || !data.data) return;
+
+      const intakes = data.data as PatientIntakeData[];
+      const phoneMap = new Map<string, string[]>();
+      intakes.forEach((intake) => {
+        if (intake.phoneNumber && intake.created_at) {
+          // 전화번호 정규화 (숫자만 추출)
+          const normalizedPhone = intake.phoneNumber.replace(/\D/g, '');
+          const existing = phoneMap.get(normalizedPhone) || [];
+          existing.push(intake.created_at);
+          phoneMap.set(normalizedPhone, existing);
+        }
+      });
+      setIntakePhoneMap(phoneMap);
+
+      // 가장 최신 문진표의 timestamp 계산
+      const latestTs = intakes.reduce((max, i) => {
+        const t = i.created_at ? new Date(i.created_at).getTime() : 0;
+        return t > max ? t : max;
+      }, 0);
+      if (latestTs === 0) return;
+
+      const lastSeen = lastSeenIntakeTsRef.current;
+
+      // 최초 진입 (localStorage 에 기록 없음) → baseline 만 설정, 알림 없음
+      if (lastSeen === null) {
+        lastSeenIntakeTsRef.current = latestTs;
+        localStorage.setItem('last_seen_intake_ts', String(latestTs));
+        return;
+      }
+
+      // 이전 기록보다 최신 문진표가 있는 경우에만 알림
+      if (latestTs > lastSeen) {
+        const newIntakes = intakes
+          .filter((i) => {
+            const t = i.created_at ? new Date(i.created_at).getTime() : 0;
+            return t > lastSeen;
+          })
+          .sort((a, b) => {
+            const at = a.created_at ? new Date(a.created_at).getTime() : 0;
+            const bt = b.created_at ? new Date(b.created_at).getTime() : 0;
+            return bt - at;
+          });
+
+        if (newIntakes.length > 0) {
+          const latestName = newIntakes[0].name;
+          console.log('🔔 새 문진표 발견!', { 이전ts: lastSeen, 현재ts: latestTs, 건수: newIntakes.length, 최신: latestName });
+
+          playAlarmSound();
+          showIntakeNotification(newIntakes.length, latestName);
+          setNewIntakeBadge((prev) => prev + newIntakes.length);
+          setIntakeAlertData({ count: newIntakes.length, latestName });
+
+          // 즉시 기록 업데이트 → 동일 문진표에 대해 재알림 방지 (StrictMode / 새로고침 / 중복 호출)
+          lastSeenIntakeTsRef.current = latestTs;
+          localStorage.setItem('last_seen_intake_ts', String(latestTs));
+        }
       }
     } catch (error) {
       console.error('Failed to fetch intakes:', error);
     }
-  }, []);
+  }, [playAlarmSound, showIntakeNotification]);
 
   useEffect(() => {
     fetchLogs();
@@ -587,6 +673,25 @@ export default function AdminPage() {
 
     return () => clearInterval(pollingInterval);
   }, [isAuthenticated, fetchLogs]);
+
+  // 30초마다 새 문진표 체크 (인증된 상태에서만)
+  useEffect(() => {
+    if (!isAuthenticated) return;
+
+    const intakePollingInterval = setInterval(() => {
+      console.log('🔄 30초 주기 문진표 체크...');
+      fetchIntakes();
+    }, 30000); // 30초
+
+    return () => clearInterval(intakePollingInterval);
+  }, [isAuthenticated, fetchIntakes]);
+
+  // 문진표 탭으로 이동하면 뱃지 카운트 초기화
+  useEffect(() => {
+    if (activeTab === 'intake') {
+      setNewIntakeBadge(0);
+    }
+  }, [activeTab]);
 
   const updateStatus = async (id: string, newStatus: string) => {
     setUpdatingStatus(id);
@@ -878,13 +983,20 @@ export default function AdminPage() {
                   </button>
                   <button
                     onClick={() => setActiveTab('intake')}
-                    className={`py-4 px-1 border-b-2 font-medium text-sm transition-colors ${
+                    className={`relative py-4 px-1 border-b-2 font-medium text-sm transition-colors ${
                       activeTab === 'intake'
                         ? 'border-[#008095] text-[#008095]'
                         : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                     }`}
                   >
-                    문진표
+                    <span className="inline-flex items-center gap-2">
+                      문진표
+                      {newIntakeBadge > 0 && (
+                        <span className="inline-flex items-center justify-center min-w-[20px] h-5 px-1.5 rounded-full bg-red-500 text-white text-xs font-bold animate-pulse">
+                          {newIntakeBadge > 99 ? '99+' : newIntakeBadge}
+                        </span>
+                      )}
+                    </span>
                   </button>
                   <button
                     onClick={() => setActiveTab('popup')}
@@ -1230,6 +1342,45 @@ export default function AdminPage() {
             <li><strong>직접 접속:</strong> URL 직접 입력</li>
             <li><strong>기타:</strong> 위 분류에 해당하지 않는 경우</li>
           </ul>
+        </div>
+      )}
+
+      {/* 새 문진표 알림 팝업 */}
+      {intakeAlertData && (
+        <div className="fixed inset-0 bg-black/50 z-[60] flex items-center justify-center p-4">
+          <div className="bg-white rounded-lg max-w-md w-full p-6 shadow-xl animate-pulse-once">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <span className="text-3xl">📋</span>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg font-bold text-gray-900">새 문진표 도착!</h3>
+                <p className="text-sm text-gray-600">
+                  {intakeAlertData.count === 1 && intakeAlertData.latestName
+                    ? `${intakeAlertData.latestName}님의 문진표가 접수되었습니다.`
+                    : `${intakeAlertData.count}건의 새 문진표가 접수되었습니다.`}
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-2">
+              <button
+                onClick={() => setIntakeAlertData(null)}
+                className="flex-1 py-2.5 px-4 rounded-lg border border-gray-300 text-gray-700 font-medium hover:bg-gray-50 transition-colors"
+              >
+                나중에 확인
+              </button>
+              <button
+                onClick={() => {
+                  setActiveTab('intake');
+                  setIntakeAlertData(null);
+                }}
+                className="flex-1 py-2.5 px-4 rounded-lg bg-[#008095] text-white font-medium hover:bg-[#006B7A] transition-colors"
+              >
+                문진표 보기
+              </button>
+            </div>
+          </div>
         </div>
       )}
 

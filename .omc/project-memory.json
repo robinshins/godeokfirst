@@ -170,8 +170,14 @@
   "hotPaths": [
     {
       "path": "src/app/patient-intake/page.tsx",
-      "accessCount": 28,
-      "lastAccessed": 1776705467441,
+      "accessCount": 32,
+      "lastAccessed": 1776737437241,
+      "type": "file"
+    },
+    {
+      "path": "src/app/admin/page.tsx",
+      "accessCount": 15,
+      "lastAccessed": 1776737111096,
       "type": "file"
     },
     {
@@ -181,15 +187,57 @@
       "type": "file"
     },
     {
-      "path": "src/app/api/patient-intake/route.ts",
-      "accessCount": 1,
-      "lastAccessed": 1776655911719,
-      "type": "file"
+      "path": "src",
+      "accessCount": 5,
+      "lastAccessed": 1776737436252,
+      "type": "directory"
     },
     {
       "path": "src/components/admin/PatientIntakeList.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1776736221819,
+      "type": "file"
+    },
+    {
+      "path": "src/app/api/patient-intake/route.ts",
+      "accessCount": 2,
+      "lastAccessed": 1776737224062,
+      "type": "file"
+    },
+    {
+      "path": "src/app/api/patient-intake",
       "accessCount": 1,
-      "lastAccessed": 1776655912025,
+      "lastAccessed": 1776737241312,
+      "type": "directory"
+    },
+    {
+      "path": "src/middleware.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776737288565,
+      "type": "file"
+    },
+    {
+      "path": "src/lib/supabase/middleware.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776737305565,
+      "type": "file"
+    },
+    {
+      "path": "src/app/api/indexnow/route.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776737321567,
+      "type": "file"
+    },
+    {
+      "path": "src/app/api/page-views/route.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776737326536,
+      "type": "file"
+    },
+    {
+      "path": "src/lib/referrer-tracker.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776737444533,
       "type": "file"
     }
   ],

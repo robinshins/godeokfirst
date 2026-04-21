@@ -1,7 +1,7 @@
 {
   "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"lsof -i :3000 2>/dev/null\",\"description\":\"Check if port 3000 is in use\"}",
-  "error": "Exit code 1",
-  "timestamp": "2026-04-20T17:13:13.850Z",
+  "tool_input_preview": "{\"command\":\"ls /Users/singyuseob/Dev/dentist_goduk/src/middleware.ts /Users/singyuseob/Dev/dentist_goduk/middleware.ts 2>/dev/null\",\"description\":\"Check for middleware\"}",
+  "error": "Exit code 1\n/Users/singyuseob/Dev/dentist_goduk/src/middleware.ts",
+  "timestamp": "2026-04-21T02:08:05.308Z",
   "retry_count": 1
 }
