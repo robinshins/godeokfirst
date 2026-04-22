@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1776759135310,
+  "lastScanned": 1776876816626,
   "projectRoot": "/Users/singyuseob/Dev/dentist_goduk",
   "techStack": {
     "languages": [
@@ -76,7 +76,7 @@
       "path": "docs",
       "purpose": "Documentation",
       "fileCount": 2,
-      "lastAccessed": 1776759135150,
+      "lastAccessed": 1776876816603,
       "keyFiles": [
         "TRACKING_SYSTEM_GUIDE.md",
         "고덕퍼스트치과-장점.md"
@@ -86,7 +86,7 @@
       "path": "public",
       "purpose": "Public files",
       "fileCount": 12,
-      "lastAccessed": 1776759135152,
+      "lastAccessed": 1776876816605,
       "keyFiles": [
         "Vector3.png",
         "e2f6aa489f8d517ab9f290e254b5952d.txt",
@@ -99,7 +99,7 @@
       "path": "scripts",
       "purpose": "Build/utility scripts",
       "fileCount": 7,
-      "lastAccessed": 1776759135210,
+      "lastAccessed": 1776876816612,
       "keyFiles": [
         "apply-rename.js",
         "korean-to-english-mapping.json",
@@ -112,7 +112,7 @@
       "path": "src",
       "purpose": "Source code",
       "fileCount": 2,
-      "lastAccessed": 1776759135212,
+      "lastAccessed": 1776876816614,
       "keyFiles": [
         "middleware.ts"
       ]
@@ -121,7 +121,7 @@
       "path": "src/app",
       "purpose": "Application code",
       "fileCount": 8,
-      "lastAccessed": 1776759135223,
+      "lastAccessed": 1776876816616,
       "keyFiles": [
         "globals.css",
         "layout.tsx",
@@ -132,7 +132,7 @@
       "path": "src/components",
       "purpose": "UI components",
       "fileCount": 14,
-      "lastAccessed": 1776759135226,
+      "lastAccessed": 1776876816616,
       "keyFiles": [
         "ChatInterface.tsx",
         "ConsultationForm.tsx",
@@ -143,7 +143,7 @@
       "path": "src/lib",
       "purpose": "Library code",
       "fileCount": 13,
-      "lastAccessed": 1776759135229,
+      "lastAccessed": 1776876816617,
       "keyFiles": [
         "blog-posts.ts",
         "faqData.ts",
@@ -154,7 +154,7 @@
       "path": "src/types",
       "purpose": "Type definitions",
       "fileCount": 1,
-      "lastAccessed": 1776759135230,
+      "lastAccessed": 1776876816618,
       "keyFiles": [
         "dom-to-image-more.d.ts"
       ]
@@ -163,16 +163,34 @@
       "path": "src/utils",
       "purpose": "Utility functions",
       "fileCount": 0,
-      "lastAccessed": 1776759135230,
+      "lastAccessed": 1776876816618,
       "keyFiles": []
     }
   },
   "hotPaths": [
     {
-      "path": "src/app/en/patient-intake/page.tsx",
-      "accessCount": 5,
-      "lastAccessed": 1776762253246,
-      "type": "directory"
+      "path": "src/components/TrackingScripts.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1776876905959,
+      "type": "file"
+    },
+    {
+      "path": "src/app/consultation/page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776876866416,
+      "type": "file"
+    },
+    {
+      "path": "src/app/chat/page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776876866811,
+      "type": "file"
+    },
+    {
+      "path": "src/lib/meta-conversion.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776876955911,
+      "type": "file"
     }
   ],
   "userDirectives": []
