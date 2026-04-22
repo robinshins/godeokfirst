@@ -78,6 +78,30 @@ export default function ConsultationForm() {
       // sessionStorage에서 referrer 데이터 가져오기
       const referrerData = getReferrerFromSession();
 
+      // 클라이언트/서버 Pixel 이벤트 중복제거용 event_id
+      const eventId =
+        typeof crypto !== 'undefined' && 'randomUUID' in crypto
+          ? crypto.randomUUID()
+          : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+
+      const getCookie = (name: string): string | undefined => {
+        if (typeof document === 'undefined') return undefined;
+        const match = document.cookie.match(
+          new RegExp('(?:^|; )' + name.replace(/[-.$?*|{}()[\]\\/+^]/g, '\\$&') + '=([^;]*)')
+        );
+        return match ? decodeURIComponent(match[1]) : undefined;
+      };
+      const getParam = (name: string): string | undefined => {
+        if (typeof window === 'undefined') return undefined;
+        return new URLSearchParams(window.location.search).get(name) || undefined;
+      };
+      const fbclid = getParam('fbclid');
+      const fbp = getCookie('_fbp');
+      const fbc = getCookie('_fbc') || (fbclid ? `fb.1.${Date.now()}.${fbclid}` : undefined);
+      const ttp = getCookie('_ttp');
+      const ttclid = getParam('ttclid');
+      const eventSourceUrl = typeof window !== 'undefined' ? window.location.href : undefined;
+
       const consultationData: ConsultationData = {
         name: data.name,
         phone: data.phone,
@@ -124,16 +148,52 @@ export default function ConsultationForm() {
           if (logId) {
             localStorage.setItem('consultationLogId', logId);
             console.log('📝 로그 ID localStorage에 저장:', logId);
+          }
 
-            // TikTok Pixel: SubmitForm 이벤트 전송
-            if (typeof window !== 'undefined') {
-              const ttq = (window as { ttq?: { track: (eventName: string) => void } }).ttq;
-              if (ttq && typeof ttq.track === 'function') {
-                ttq.track('SubmitForm');
-                console.log('✅ TikTok Pixel: SubmitForm 이벤트 전송');
-              }
+          // 클라이언트 Pixel: Meta Lead (서버 CAPI Lead 이벤트와 eventID로 중복제거)
+          if (typeof window !== 'undefined') {
+            const fbq = (window as { fbq?: (...args: unknown[]) => void }).fbq;
+            if (fbq) {
+              fbq('track', 'Lead', {}, { eventID: eventId });
+              console.log('✅ Meta Pixel: Lead 이벤트 전송', { eventId });
             }
           }
+
+          // 클라이언트 Pixel: TikTok SubmitForm
+          if (typeof window !== 'undefined') {
+            const ttq = (window as {
+              ttq?: { track: (eventName: string, properties?: Record<string, unknown>, options?: Record<string, unknown>) => void };
+            }).ttq;
+            if (ttq && typeof ttq.track === 'function') {
+              ttq.track('SubmitForm', {}, { event_id: eventId });
+              console.log('✅ TikTok Pixel: SubmitForm 이벤트 전송', { eventId });
+            }
+          }
+
+          // 서버 전환 API (Meta CAPI + TikTok Events API) - fire-and-forget
+          const serverPayload = {
+            phone: data.phone,
+            name: data.name,
+            externalId: logId || undefined,
+            eventId,
+            eventSourceUrl,
+            fbp,
+            fbc,
+            ttclid,
+            ttp,
+          };
+          fetch('/api/meta-conversion', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(serverPayload),
+            keepalive: true,
+          }).catch((err) => console.error('Meta Conversion 전송 실패:', err));
+          fetch('/api/tiktok-events', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(serverPayload),
+            keepalive: true,
+          }).catch((err) => console.error('TikTok Events 전송 실패:', err));
         } else {
           console.error('❌ 상담 로그 생성 실패:', response.status, await response.text());
         }
@@ -142,12 +202,14 @@ export default function ConsultationForm() {
         // 저장 실패해도 채팅은 계속 진행
       }
 
-      // TikTok Pixel: CompleteRegistration 이벤트 전송
+      // TikTok Pixel: CompleteRegistration 이벤트 (eventId 동일 - 서버 이벤트와 중복제거)
       if (typeof window !== 'undefined') {
-        const ttq = (window as { ttq?: { track: (eventName: string) => void } }).ttq;
+        const ttq = (window as {
+          ttq?: { track: (eventName: string, properties?: Record<string, unknown>, options?: Record<string, unknown>) => void };
+        }).ttq;
         if (ttq && typeof ttq.track === 'function') {
-          ttq.track('CompleteRegistration');
-          console.log('✅ TikTok Pixel: CompleteRegistration 이벤트 전송');
+          ttq.track('CompleteRegistration', {}, { event_id: eventId });
+          console.log('✅ TikTok Pixel: CompleteRegistration 이벤트 전송', { eventId });
         }
       }
 

@@ -170,8 +170,26 @@
   "hotPaths": [
     {
       "path": "src/components/TrackingScripts.tsx",
+      "accessCount": 6,
+      "lastAccessed": 1776878508415,
+      "type": "file"
+    },
+    {
+      "path": "src/components/ConsultationForm.tsx",
       "accessCount": 3,
-      "lastAccessed": 1776876905959,
+      "lastAccessed": 1776878803521,
+      "type": "file"
+    },
+    {
+      "path": "src/lib/meta-conversion.ts",
+      "accessCount": 2,
+      "lastAccessed": 1776878569144,
+      "type": "file"
+    },
+    {
+      "path": ".env.local",
+      "accessCount": 2,
+      "lastAccessed": 1776878723546,
       "type": "file"
     },
     {
@@ -187,9 +205,27 @@
       "type": "file"
     },
     {
-      "path": "src/lib/meta-conversion.ts",
+      "path": "src/app/api/meta-conversion/route.ts",
       "accessCount": 1,
-      "lastAccessed": 1776876955911,
+      "lastAccessed": 1776878568783,
+      "type": "file"
+    },
+    {
+      "path": "src/lib/referrer-tracker.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776878629815,
+      "type": "file"
+    },
+    {
+      "path": "src/lib/tiktok-events.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776878715597,
+      "type": "file"
+    },
+    {
+      "path": "src/app/api/tiktok-events/route.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776878719282,
       "type": "file"
     }
   ],
