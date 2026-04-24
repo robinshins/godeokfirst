@@ -1,4 +1,6 @@
 import { MetadataRoute } from 'next'
+import fs from 'node:fs'
+import path from 'node:path'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://gdfirstdent.co.kr'
@@ -43,5 +45,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ])
 
-  return [...koreanPages, ...langPages, ...regionPages]
+  // Insights hub + articles (from data/insights-articles.json)
+  const insightPages: MetadataRoute.Sitemap = [
+    { url: `${baseUrl}/insights`, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  ]
+  try {
+    const file = path.join(process.cwd(), 'data', 'insights-articles.json')
+    if (fs.existsSync(file)) {
+      const parsed = JSON.parse(fs.readFileSync(file, 'utf-8'))
+      const articles = Array.isArray(parsed) ? parsed : parsed.articles
+      if (Array.isArray(articles)) {
+        for (const a of articles) {
+          if (!a?.slug) continue
+          insightPages.push({
+            url: `${baseUrl}/insights/${a.slug}`,
+            lastModified: a.updatedAt ? new Date(a.updatedAt) : new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.7,
+          })
+        }
+      }
+    }
+  } catch {
+    // swallow — sitemap should never break the build
+  }
+
+  return [...koreanPages, ...langPages, ...regionPages, ...insightPages]
 }

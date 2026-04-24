@@ -55,6 +55,17 @@ export default function FooterSection() {
             </div>
           </div>
 
+          {/* 의학정보 */}
+          <div className="pt-6 border-t border-gray-200">
+            <p className="text-[11px] text-gray-400 mb-2">의학정보</p>
+            <Link
+              href="/insights"
+              className="text-[12px] text-[#008095] font-medium hover:underline"
+            >
+              치과 의학정보 인사이트 보기 →
+            </Link>
+          </div>
+
           {/* 지역별 진료 안내 */}
           <div className="pt-6 border-t border-gray-200">
             <p className="text-[11px] text-gray-400 mb-2">지역별 진료 안내</p>
@@ -71,6 +82,7 @@ export default function FooterSection() {
                 { name: '포승읍', slug: 'poseung' },
                 { name: '안중읍', slug: 'anjung' },
                 { name: '평택 화양', slug: 'hwayang' },
+                { name: '인사이트', slug: 'insights' },
               ].map((region) => (
                 <Link
                   key={region.slug}

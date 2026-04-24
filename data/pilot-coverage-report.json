@@ -1,0 +1,75 @@
+{
+  "generatedAt": "2026-04-24T12:23:48.684Z",
+  "matchReport": [
+    {
+      "slug": "dongsak-gum-perioclin-009",
+      "pilotKeyword": "동삭동 잇몸치료 페리오클린 단계별 관리",
+      "bestMatch": "동삭동 잇몸치료 치과 추천",
+      "score": 0.2857142857142857,
+      "status": "WEAK"
+    },
+    {
+      "slug": "godeok-cavity-preservation-004",
+      "pilotKeyword": "고덕동 신경치료 자연치아 살리는 경계",
+      "bestMatch": "고덕동 치수염 신경치료",
+      "score": 0.3333333333333333,
+      "status": "WEAK"
+    },
+    {
+      "slug": "godeok-implant-digital-001",
+      "pilotKeyword": "고덕동 디지털 가이드 임플란트 수술 과정",
+      "bestMatch": "고덕동 임플란트 치과 추천",
+      "score": 0.25,
+      "status": "WEAK"
+    },
+    {
+      "slug": "godeok-implant-senior-insurance-002",
+      "pilotKeyword": "고덕동 65세 이상 임플란트 건강보험 적용",
+      "bestMatch": "고덕동 임플란트 보험 적용",
+      "score": 0.42857142857142855,
+      "status": "STRONG"
+    },
+    {
+      "slug": "godeok-intl-denture-allon4-006",
+      "pilotKeyword": "고덕국제신도시 전체 임플란트 올온포",
+      "bestMatch": "고덕국제신도시 임플란트 틀니",
+      "score": 0.4,
+      "status": "STRONG"
+    },
+    {
+      "slug": "godeok-intl-implant-specialist-005",
+      "pilotKeyword": "고덕국제신도시 통합치의학전문의 임플란트 진단",
+      "bestMatch": "고덕국제신도시 임플란트 추천",
+      "score": 0.4,
+      "status": "STRONG"
+    },
+    {
+      "slug": "godeok-whitening-beautise-010",
+      "pilotKeyword": "고덕동 전문가 치아 미백 뷰티스 시스템",
+      "bestMatch": "고덕동 치아 미백 비용",
+      "score": 0.42857142857142855,
+      "status": "STRONG"
+    },
+    {
+      "slug": "godeok-wisdom-impacted-003",
+      "pilotKeyword": "고덕동 매복 사랑니 발치 CT 정밀진단",
+      "bestMatch": "고덕동 사랑니 발치 치과",
+      "score": 0.42857142857142855,
+      "status": "STRONG"
+    },
+    {
+      "slug": "pyeongtaek-implant-day-one-temporary-007",
+      "pilotKeyword": "평택 디지털 임플란트 수술 당일 임시치아",
+      "bestMatch": "평택 디지털 임플란트",
+      "score": 0.5,
+      "status": "STRONG"
+    },
+    {
+      "slug": "pyeongtaek-wisdom-recovery-008",
+      "pilotKeyword": "평택 사랑니 발치 후 회복 기간 주의사항",
+      "bestMatch": "평택 사랑니 발치",
+      "score": 0.42857142857142855,
+      "status": "STRONG"
+    }
+  ]
+}

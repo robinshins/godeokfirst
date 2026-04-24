@@ -1,0 +1,4021 @@
+{
+  "generatedAt": "2026-04-24T12:23:41.537Z",
+  "elapsedSec": 186,
+  "count": 70,
+  "failed": 0,
+  "queries": 70,
+  "modelChain": [
+    "gpt-5.4-mini",
+    "gpt-5-mini",
+    "gpt-4o-mini"
+  ],
+  "results": [
+    {
+      "query": "평택 임플란트 추천",
+      "region": "평택",
+      "regionSlug": "pyeongtaek",
+      "treatment": "implant",
+      "topKeywords": [
+        "평택",
+        "임플란트",
+        "치과",
+        "추천",
+        "수면임플란트",
+        "디지털임플란트",
+        "원데이임플란트",
+        "비용",
+        "후기",
+        "잘하는곳"
+      ],
+      "longTailKeywords": [
+        "평택 임플란트 추천",
+        "평택 임플란트 잘하는 치과",
+        "평택역 임플란트 치과",
+        "평택 임플란트 비용",
+        "평택 수면 임플란트 추천",
+        "평택 원데이 임플란트",
+        "평택 어금니 임플란트",
+        "평택 앞니 임플란트",
+        "평택 임플란트 후기",
+        "평택 디지털 임플란트",
+        "평택 전체 임플란트",
+        "평택 임플란트 국산",
+        "평택 임플란트 뼈이식",
+        "평택 당일 임플란트",
+        "평택 송탄 임플란트"
+      ],
+      "titlePatterns": [
+        "[지역명] + 임플란트 + 추천/잘하는곳",
+        "[지역명] + 임플란트 + 비용/가격",
+        "[지역명] + 수면/원데이/디지털 임플란트",
+        "[지역명] + 치과 + 후기/리뷰",
+        "[지역명] + 전체/앞니/어금니 임플란트"
+      ],
+      "commonPhrases": [
+        "정밀 진단",
+        "3D CT",
+        "디지털 가이드",
+        "통증 완화",
+        "사후관리"
+      ],
+      "userIntent": "평택에서 임플란트를 받을 때 잘하는 치과를 후기, 비용, 진료 방식, 접근성까지 비교해 믿고 선택하려는 의도다.",
+      "competitorUrls": [
+        "https://www.google.com/search?q=%ED%8F%89%ED%83%9D+%EC%9E%84%ED%94%8C%EB%9E%80%ED%8A%B8+%EC%B6%94%EC%B2%9C",
+        "https://search.naver.com/search.naver?query=%ED%8F%89%ED%83%9D+%EC%9E%84%ED%94%8C%EB%9E%80%ED%8A%B8+%EC%B6%94%EC%B2%9C",
+        "https://www.google.com/search?tbm=lcl&q=%ED%8F%89%ED%83%9D+%EC%9E%84%ED%94%8C%EB%9E%80%ED%8A%B8",
+        "https://m.search.naver.com/search.naver?query=%ED%8F%89%ED%83%9D+%EC%9E%84%ED%94%8C%EB%9E%80%ED%8A%B8+%EC%B6%94%EC%B2%9C",
+        "https://www.google.com/maps/search/%ED%8F%89%ED%83%9D+%EC%9E%84%ED%94%8C%EB%9E%80%ED%8A%B8"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 틀니",
+      "region": "평택",
+      "regionSlug": "pyeongtaek",
+      "treatment": "denture",
+      "topKeywords": [
+        "틀니",
+        "평택",
+        "임플란트",
+        "부분틀니",
+        "완전틀니",
+        "노인",
+        "보철",
+        "구강건강",
+        "보험",
+        "치과"
+      ],
+      "longTailKeywords": [
+        "평택 틀니 잘하는 치과",
+        "평택 부분틀니 치과",
+        "평택 완전틀니 치과",
+        "평택 노인 틀니 보험",
+        "평택 틀니 가격",
+        "평택 지제역 틀니 치과",
+        "평택 소사벌 틀니 치과",
+        "평택 고덕동 틀니 치과",
+        "평택 임플란트 틀니",
+        "평택 틀니 상담",
+        "평택 틀니 후기",
+        "평택 틀니 진료",
+        "평택 보철 틀니",
+        "평택 틀니 관리법",
+        "평택 노인의치 지원"
+      ],
+      "titlePatterns": [
+        "평택 + [지역명] + 치과 + 틀니/임플란트",
+        "평택 치과 추천 + 진료과목/지역명",
+        "[지역명] 임플란트/틀니 가격 비교 + 잘하는 곳",
+        "병원명 + 평택 [동/역] 치과",
+        "평택 [동/역] 치과 | 임플란트 | 틀니 | 보철"
+      ],
+      "commonPhrases": [
+        "완전 틀니부터 부분 틀니까지",
+        "기능성과 착용감을 고려한 맞춤 진료",
+        "노인들을 위한 틀니 및 임플란트",
+        "구강기능 회복",
+        "틀니 관리법"
+      ],
+      "userIntent": "평택에서 틀니 진료를 잘하는 치과를 찾고, 부분틀니·완전틀니·보험 및 가격·후기까지 비교하려는 의도입니다.",
+      "competitorUrls": [
+        "https://atriumdental.co.kr/",
+        "https://www.ysplus.co.kr/",
+        "https://livelyearth.tistory.com/entry/%ED%8F%89%ED%83%9D-%EA%B3%A0%EB%8D%95%EB%8F%99-%EC%9E%84%ED%94%8C%EB%9E%80%ED%8A%B8-%EC%9E%98%ED%95%98%EB%8A%94-%EC%B9%98%EA%B3%BC-BEST3-%EC%82%AC%EB%9E%91%EB%8B%88-%ED%84%B1%EA%B4%80%EC%A0%88-%EC%8A%A4%EC%BC%80%EC%9D%BC%EB%A7%81",
+        "https://cashdoc.me/hospital/A2109135",
+        "https://www.daangn.com/kr/business-post/%EC%9D%B4%ED%84%B1%ED%8D%BC%EC%8A%A4%ED%8A%B8%EC%B9%98%EA%B3%BC-%ED%8F%89%ED%83%9D-%EC%9E%84%ED%94%8C%EB%9E%80%ED%8A%B8-%EA%B3%A0%EB%AF%BC%EC%A4%91%EC%9D%B4%EB%9D%BC%EB%A9%B4-63c113cc9b562b48cf8fa5a5/"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 충치 신경치료",
+      "region": "평택",
+      "regionSlug": "pyeongtaek",
+      "treatment": "cavity-treatment",
+      "topKeywords": [
+        "충치",
+        "신경치료",
+        "근관치료",
+        "크라운",
+        "레진",
+        "보존치료",
+        "치통",
+        "통증",
+        "치과",
+        "평택"
+      ],
+      "longTailKeywords": [
+        "평택 충치 신경치료 치과",
+        "평택 신경치료 잘하는 치과",
+        "평택 충치 치료 비용",
+        "평택 신경치료 크라운",
+        "평택 치통 신경치료",
+        "평택 어금니 충치 신경치료",
+        "평택 충치 레진 신경치료",
+        "평택 근관치료 치과",
+        "평택 야간 신경치료 치과",
+        "평택 소사벌 충치 신경치료",
+        "평택 비전동 신경치료 치과",
+        "평택 통증 적은 신경치료",
+        "평택 충치 단계 신경치료",
+        "평택 충치 방치 신경치료",
+        "평택 치과 충치 치료 상담"
+      ],
+      "titlePatterns": [
+        "[지역명] + 치과 + 진료과목/치료명",
+        "충치/신경 치료를 전면에 내세우는 구조",
+        "[지역]치과 | [세부지역]치과 | [시술명] 나열형",
+        "무통/통증 적음/두려움 완화 메시지 포함",
+        "비용·과정·보험까지 안내하는 정보형 제목"
+      ],
+      "commonPhrases": [
+        "충치/신경치료",
+        "근관치료(신경치료)",
+        "통증을 줄인 치료",
+        "정밀 진단",
+        "크라운/레진/인레이"
+      ],
+      "userIntent": "평택에서 충치가 심해 신경치료가 필요한 상황에 맞는 치과를 찾고, 치료 과정과 비용·통증·보험 여부를 함께 확인하려는 의도.",
+      "competitorUrls": [
+        "https://atriumdental.co.kr/",
+        "https://theeasydc.co.kr/",
+        "https://www.danaeuldental.com/",
+        "https://www.exto.kr/",
+        "https://www.blanche.kr/blog/cavity/%25EC%25B6%25A9%25EC%2595%2598-%25EC%25B9%2598%25EB%25A3%258C-%25EB%25B9%2584%25EC%259A%25A9"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 사랑니 발치",
+      "region": "평택",
+      "regionSlug": "pyeongtaek",
+      "treatment": "wisdom-tooth",
+      "topKeywords": [
+        "사랑니",
+        "발치",
+        "매복사랑니",
+        "충치",
+        "잇몸",
+        "통증",
+        "붓기",
+        "구강외과",
+        "당일",
+        "비용"
+      ],
+      "longTailKeywords": [
+        "평택 사랑니 발치",
+        "평택 매복사랑니 발치",
+        "평택 사랑니 발치 잘하는 치과",
+        "평택 사랑니 발치 비용",
+        "평택 사랑니 당일 발치",
+        "평택 매복 사랑니 발치 치과",
+        "평택 사랑니 뽑는 치과",
+        "평택 사랑니 발치 후기",
+        "평택 사랑니 염증 발치",
+        "평택 사랑니 붓기 치료",
+        "평택 사랑니 수면발치",
+        "평택 사랑니 대학병원",
+        "평택 구강외과 사랑니",
+        "평택 사랑니 CT 촬영",
+        "평택 사랑니 발치 시간"
+      ],
+      "titlePatterns": [
+        "[지역명] 사랑니 발치",
+        "[지역명] 매복사랑니 발치",
+        "[지역명] 사랑니 발치 잘하는 치과",
+        "[지역명] 사랑니 발치 비용/후기",
+        "[지역명] 구강외과/당일 발치"
+      ],
+      "commonPhrases": [
+        "매복 정도에 따라 난이도 상이",
+        "CT 촬영 후 정확한 진단",
+        "발치 후 붓기·통증 관리",
+        "구강외과 협진/진료",
+        "빠른 회복과 사후관리"
+      ],
+      "userIntent": "평택에서 사랑니 발치가 필요한 사용자가 통증이 적고 매복 사랑니까지 진료 가능한 치과를 찾고, 비용·후기·당일 발치 가능 여부를 비교하려는 의도다.",
+      "competitorUrls": [],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 치아 미백",
+      "region": "평택",
+      "regionSlug": "pyeongtaek",
+      "treatment": "whitening",
+      "topKeywords": [
+        "치아미백",
+        "미백",
+        "과산화수소",
+        "치과",
+        "미백제",
+        "시술",
+        "변색",
+        "효과",
+        "부작용",
+        "가격"
+      ],
+      "longTailKeywords": [
+        "평택 치아 미백",
+        "평택 치과 치아 미백",
+        "평택역 치아 미백",
+        "평택 미백 치료",
+        "평택 치아미백 가격",
+        "평택 치아 미백 후기",
+        "평택 치아 미백 잘하는 곳",
+        "평택 치과 미백 상담",
+        "평택 오피스 치아 미백",
+        "평택 앞니 미백",
+        "평택 즉시 치아 미백",
+        "평택 치아 변색 미백",
+        "평택 치아 미백 비용",
+        "평택 치아미백 시술"
+      ],
+      "titlePatterns": [
+        "[지역] + [치아 미백/미백] + [치과/병원]",
+        "[지역] + 치아미백 + 가격/비용/후기",
+        "[지역] + 미백 + 잘하는 곳",
+        "[치아 미백] + 효과/부작용/주의사항",
+        "[지역] + [역/동/읍] + 치과/미백"
+      ],
+      "commonPhrases": [
+        "밝고 환한 미소",
+        "치아 변색 개선",
+        "자연스러운 톤업",
+        "시술 전 상담",
+        "개인별 맞춤 치료"
+      ],
+      "userIntent": "평택에서 치아 미백 시술을 받을 수 있는 치과를 찾고, 가격·효과·후기·부작용까지 비교해 보려는 의도다.",
+      "competitorUrls": [
+        "https://patents.google.com/patent/WO2019107851A1/ko",
+        "https://patents.google.com/patent/WO2016111544A1/ko",
+        "https://patents.google.com/patent/WO2013172602A1/ko",
+        "https://patents.google.com/patent/KR20030031511A/ko",
+        "https://patents.google.com/patent/KR101813978B1/ko"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 잇몸치료 스케일링",
+      "region": "평택",
+      "regionSlug": "pyeongtaek",
+      "treatment": "gum-care",
+      "topKeywords": [
+        "잇몸치료",
+        "스케일링",
+        "치주염",
+        "치석제거",
+        "잇몸질환",
+        "평택치과",
+        "잇몸 염증",
+        "치주질환",
+        "정기검진",
+        "구강관리"
+      ],
+      "longTailKeywords": [
+        "평택 잇몸치료 스케일링",
+        "평택 스케일링 잇몸치료 치과",
+        "평택 치주염 잇몸치료",
+        "평택 잇몸 붓기 스케일링",
+        "평택 잇몸에서 피남 치과",
+        "평택 치석제거 잇몸치료",
+        "평택 고덕동 잇몸치료 스케일링",
+        "평택 지제역 스케일링 치과",
+        "평택 성인 잇몸질환 치료",
+        "평택 잇몸 염증 치료 치과",
+        "평택 스케일링 후 잇몸치료",
+        "평택 치주치료 정기검진",
+        "평택 잇몸치료 잘하는 치과",
+        "평택 잇몸치료 비용",
+        "평택 스케일링 주기"
+      ],
+      "titlePatterns": [
+        "[지역명/지점명] + 치과명 + 잇몸치료/스케일링",
+        "잇몸치료 & 스케일링",
+        "스케일링으로도 제거되지 않는 깊은 치석은 잇몸치료",
+        "[치과명]의 스케일링/잇몸치료",
+        "[지역명] 치과 + 치주염/잇몸질환 관리"
+      ],
+      "commonPhrases": [
+        "스케일링으로도 제거되지 않는 깊은 치석",
+        "잇몸질환의 원인인 치석 제거",
+        "치주염/치은염 예방",
+        "정기적인 관리와 유지관리",
+        "성인 80%가 앓는 잇몸질환"
+      ],
+      "userIntent": "평택에서 스케일링과 잇몸치료가 필요한 증상, 치료 과정, 그리고 가까운 치과를 찾고 비교하려는 의도다.",
+      "competitorUrls": [
+        "https://www.gdfirstdent.com/",
+        "https://www.artedental.kr/",
+        "https://elookdent.co.kr/",
+        "https://www.impline.com/",
+        "https://dentaldain.com/49"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 턱관절 치료",
+      "region": "평택",
+      "regionSlug": "pyeongtaek",
+      "treatment": "tmj",
+      "topKeywords": [
+        "턱관절",
+        "통증",
+        "교합",
+        "교정",
+        "이갈이",
+        "두통",
+        "입이 안 벌어짐",
+        "구강악안면외과",
+        "물리치료",
+        "스플린트"
+      ],
+      "longTailKeywords": [
+        "평택 턱관절 치료",
+        "평택 턱관절 통증 치료",
+        "평택 턱관절 교정치료",
+        "평택 턱관절장애 치료",
+        "평택 턱에서 소리 나는 치료",
+        "평택 입이 안 벌어질 때 치료",
+        "평택 턱 통증 병원",
+        "평택 턱관절 물리치료",
+        "평택 이갈이 턱관절 치료",
+        "평택 구강악안면외과 턱관절",
+        "평택 턱관절 스플린트",
+        "평택 턱관절 두통 치료"
+      ],
+      "titlePatterns": [
+        "[지역명] + 턱관절/턱관절 치료",
+        "턱관절장애 · 증상 · 치료안내",
+        "통증/소리/입벌어짐 + 치료",
+        "구강악안면외과/치과 + 턱관절",
+        "비수술/맞춤/정밀검사 + 치료"
+      ],
+      "commonPhrases": [
+        "턱관절 장애",
+        "턱에서 소리",
+        "입이 잘 안 벌어짐",
+        "두통·목통증 연관",
+        "맞춤형 치료"
+      ],
+      "userIntent": "평택에서 턱관절 통증, 소리, 개구 제한 같은 증상을 진단하고 실제로 치료받을 수 있는 치과·구강악안면외과를 찾으려는 의도다.",
+      "competitorUrls": [],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "고덕동 임플란트 추천",
+      "region": "고덕동",
+      "regionSlug": "godeok",
+      "treatment": "implant",
+      "topKeywords": [
+        "임플란트",
+        "치과",
+        "고덕동",
+        "추천",
+        "가격",
+        "잘하는 곳",
+        "후기",
+        "저렴한 곳",
+        "TOP",
+        "강동구"
+      ],
+      "longTailKeywords": [
+        "고덕동 임플란트 치과 추천",
+        "강동구 고덕동 임플란트 잘하는 곳",
+        "고덕역 임플란트 치과 추천",
+        "고덕동 임플란트 가격 비교",
+        "고덕동 임플란트 후기 좋은 치과",
+        "고덕동 전체 임플란트 추천",
+        "고덕동 앞니 임플란트 추천",
+        "고덕동 수면 임플란트 치과",
+        "고덕동 임플란트 뼈이식 비용",
+        "고덕동 일요일 진료 임플란트",
+        "고덕역 임플란트 잘하는 곳",
+        "고덕동 저렴한 임플란트 치과",
+        "강동구 고덕동 치과 추천 임플란트",
+        "고덕동 임플란트 보험 적용",
+        "고덕동 임플란트 통증 후기"
+      ],
+      "titlePatterns": [
+        "{지역} 임플란트 치과 추천 TOP N",
+        "{지역} 임플란트 잘하는 곳/가격/후기 총정리",
+        "{역명} 임플란트 치과 추천 TOP10 | 가격 비교 | 종류 | 비용",
+        "{지역} 임플란트 치과 최고 추천 TOP N곳 확인하세요",
+        "{지역} 임플란트 치과 추천 LIST N곳"
+      ],
+      "commonPhrases": [
+        "잘하는 곳과 가격이 싼/저렴한 곳",
+        "후기 및 만족도",
+        "합리적인 비용",
+        "최신 시설과 시스템",
+        "고난도/전체/수면 임플란트"
+      ],
+      "userIntent": "고덕동 또는 고덕역 인근에서 임플란트 잘하는 치과를 가격, 후기, 진료 조건까지 비교해 추천받고 싶은 의도이다.",
+      "competitorUrls": [
+        "https://bbmt365.com/%EA%B0%95%EB%8F%99%EA%B5%AC-%EA%B3%A0%EB%8D%95%EB%8F%99-%EC%9E%84%ED%94%8C%EB%9E%80%ED%8A%B8-%EC%B9%98%EA%B3%BC/",
+        "https://pirikkll331.tistory.com/481",
+        "https://signedinfo.com/entry/%EA%B3%A0%EB%8D%95%EB%8F%99-%EC%9E%84%ED%94%8C%EB%9E%80%ED%8A%B8-%EC%9E%98%ED%95%98%EB%8A%94%EA%B3%B3-%EA%B0%80%EA%B2%A9/",
+        "https://benefitview.co.kr/goduk-station-implant/",
+        "https://dentalcarekorea.com/%EA%B3%A0%EB%8D%95%EB%8F%99-%EC%9E%84%ED%94%8C%EB%9E%80%ED%8A%B8-%EC%B9%98%EA%B3%BC-%EC%B5%9C%EA%B3%A0-%EC%B6%94%EC%B2%9C-top-3%EA%B3%B3-%ED%99%95%EC%9D%B8%ED%95%98%EC%84%B8%EC%9A%94/"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "고덕동 틀니",
+      "region": "고덕동",
+      "regionSlug": "godeok",
+      "treatment": "denture",
+      "topKeywords": [
+        "틀니",
+        "임플란트 틀니",
+        "고덕동 치과",
+        "보철과",
+        "저작 기능",
+        "잇몸뼈",
+        "어르신 틀니",
+        "치아 결손",
+        "고정력",
+        "유지 관리"
+      ],
+      "longTailKeywords": [
+        "고덕동 틀니 잘하는 치과",
+        "고덕동 임플란트 틀니",
+        "고덕동 어르신 틀니",
+        "고덕동 부분틀니 치료",
+        "고덕동 전체틀니 상담",
+        "고덕동 틀니 비용",
+        "고덕동 틀니 제작 치과",
+        "고덕동 보철과 틀니",
+        "고덕동 틀니 추천",
+        "고덕동 틀니 유지관리",
+        "고덕동 틀니 불편함 개선",
+        "고덕동 임플란트 틀니 가격",
+        "강동구 고덕동 틀니 치과",
+        "고덕동 치과 틀니 상담",
+        "고덕동 노인 틀니 치료"
+      ],
+      "titlePatterns": [
+        "{지역명} 치과 | {숫자}개 병원 비교",
+        "{주제} {혜택/기능} 고려한 치과 치료…{주의사항}",
+        "{지역명} {시술명} 잘하는곳 가격 얼마까지 알아봤니?",
+        "{지역명}에서 {시술/치료} 받기 전 확인해야 할 {비용/조건}",
+        "{시술명} · {보철/임플란트} · {문제해결/기능회복}"
+      ],
+      "commonPhrases": [
+        "기능 회복",
+        "고정력 개선",
+        "저작 기능",
+        "잇몸뼈 상태",
+        "전신 건강",
+        "위생 관리",
+        "정기 검진",
+        "치아 결손",
+        "보철 치료",
+        "맞춤형 진단"
+      ],
+      "userIntent": "고덕동에서 틀니나 임플란트 틀니를 잘하는 치과를 찾고, 비용·치료 방식·진료 가능 여부를 비교하려는 의도이다.",
+      "competitorUrls": [
+        "https://my-doctor.io/hospital/deptHub/region/%EC%B9%98%EA%B3%BC-%EA%B2%BD%EA%B8%B0-%ED%8F%89%ED%83%9D%EC%8B%9C-%EA%B3%A0%EB%8D%95%EB%8F%99",
+        "https://signedinfo.com/entry/%EA%B3%A0%EB%8D%95%EB%8F%99-%EC%9E%84%ED%94%8C%EB%9E%80%ED%8A%B8-%EC%9E%98%ED%95%98%EB%8A%94%EA%B3%B3-%EA%B0%80%EA%B2%A9/",
+        "https://dgplant.co.kr/",
+        "https://www.vegannews.co.kr/news/article.html?no=381958",
+        "https://www.dailydental.co.kr/news/article.html?no=91600"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "고덕동 충치 신경치료",
+      "region": "고덕동",
+      "regionSlug": "godeok",
+      "treatment": "cavity-treatment",
+      "topKeywords": [
+        "충치",
+        "신경치료",
+        "치과",
+        "고덕동",
+        "어금니",
+        "통증",
+        "레진",
+        "치아보험",
+        "사랑니",
+        "치료"
+      ],
+      "longTailKeywords": [
+        "고덕동 충치 치료 치과",
+        "고덕동 신경치료 잘하는 치과",
+        "고덕동 어금니 충치 신경치료",
+        "고덕동 치아 신경치료 비용",
+        "고덕동 충치 통증 치과",
+        "고덕동 당일 신경치료 가능한 치과",
+        "고덕동 레진 치료 치과",
+        "고덕동 신경치료 후 통증",
+        "고덕동 충치 레진 신경치료",
+        "고덕동 어린이 충치 치료",
+        "고덕역 충치 신경치료 치과",
+        "강동구 고덕동 신경치료 치과",
+        "고덕동 어금니 통증 신경치료",
+        "고덕동 치과 충치 진료",
+        "고덕동 치수염 신경치료"
+      ],
+      "titlePatterns": [
+        "[지역명] + [치과/병원] + [치료명]",
+        "[치료명] + 잘하는 치과",
+        "[지역명] + 충치/신경치료 + 비용/통증",
+        "[어금니/사랑니] + 충치 + 신경치료",
+        "[질환/시술명] + 상담/진료 안내"
+      ],
+      "commonPhrases": [
+        "통증이 심해지기 전에",
+        "정확한 진단 후 치료",
+        "자연치아 보존",
+        "치수염 진행 시 신경치료",
+        "내원 전 상담 권장"
+      ],
+      "userIntent": "고덕동에서 충치나 치통 증상에 대해 신경치료를 포함한 적절한 치과를 찾고, 치료 가능 여부와 비용·통증·진료 편의성을 비교하려는 의도입니다.",
+      "competitorUrls": [
+        "https://play.google.com/store/apps/details?id=com.haho.rudentalhope",
+        "https://play.google.com/store/apps/details?hl=ko&id=com.rsupport.rvsrecorder",
+        "https://play.google.com/store/apps/details?hl=ko&id=com.rsupport.mobile.agent",
+        "https://play.google.com/store/apps/details?hl=ko&id=com.rsupport.rs.activity.rsupport",
+        "https://play.google.com/store/apps/details?hl=ko&id=com.hunesion.otp.hune_otp"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "고덕동 사랑니 발치",
+      "region": "고덕동",
+      "regionSlug": "godeok",
+      "treatment": "wisdom-tooth",
+      "topKeywords": [
+        "사랑니",
+        "발치",
+        "매복사랑니",
+        "고덕동",
+        "치과",
+        "구강외과",
+        "상일동역",
+        "야간진료",
+        "주말진료",
+        "당일발치"
+      ],
+      "longTailKeywords": [
+        "고덕동 사랑니 발치 치과",
+        "고덕동 매복사랑니 발치",
+        "고덕역 사랑니 발치 치과",
+        "상일동역 사랑니 발치",
+        "고덕동 구강외과 사랑니",
+        "고덕동 당일 사랑니 발치",
+        "고덕동 수면 사랑니 발치",
+        "고덕동 사랑니 발치 후기",
+        "고덕동 야간진료 사랑니 발치",
+        "고덕동 주말진료 치과",
+        "강동구 고덕동 사랑니 발치",
+        "고덕센트럴푸르지오 사랑니 발치",
+        "고덕동 대학병원급 사랑니 발치",
+        "고덕동 잇몸 붓기 사랑니 발치",
+        "고덕동 매복사랑니 잘하는 치과"
+      ],
+      "titlePatterns": [
+        "강동구 고덕동 + [치료] + 치과 추천/잘하는 곳",
+        "고덕동 + [치과명] + 사랑니 발치 전문/구강외과",
+        "고덕동 + [치과명] + 야간진료/주말진료",
+        "TOP 5/6/10 + 가격/후기/총정리",
+        "역세권(고덕역/상일동역) + 도보/출구 + 치과"
+      ],
+      "commonPhrases": [
+        "사랑니 발치 전문",
+        "매복 사랑니 발치",
+        "구강외과/구강악안면외과",
+        "야간진료·주말진료·공휴일진료",
+        "대학병원 수준의 진료"
+      ],
+      "userIntent": "고덕동 근처에서 매복 여부와 진료시간, 접근성, 후기까지 비교해 믿고 사랑니를 발치할 치과를 찾으려는 의도다.",
+      "competitorUrls": [
+        "https://centralcdc.co.kr/",
+        "https://elookdent.co.kr/",
+        "https://my-doctor.io/hospital/deptHub/region/%EC%86%8C%EC%95%84%EC%B9%98%EA%B3%BC-%EC%84%9C%EC%9A%B8-%EA%B0%95%EB%8F%99%EA%B5%AC-%EA%B3%A0%EB%8D%95%EB%8F%99",
+        "https://bbmt365.com/%EA%B0%95%EB%8F%99%EA%B5%AC-%EA%B3%A0%EB%8D%95%EB%8F%99-%EC%9E%84%ED%94%8C%EB%9E%80%ED%8A%B8-%EC%B9%98%EA%B3%BC/",
+        "https://www.modoodoc.com/hospitals/category-search?city=%EA%B2%BD%EA%B8%B0%EB%8F%84&major=%EC%B9%98%EA%B3%BC&new_dong=%EA%B3%A0%EB%8D%95%EB%8F%99&small_city=%ED%8F%89%ED%83%9D%EC%8B%9C&tc=%EC%82%AC%EB%9E%91%EB%8B%88%EB%B0%9C%EC%B9%98"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "고덕동 치아 미백",
+      "region": "고덕동",
+      "regionSlug": "godeok",
+      "treatment": "whitening",
+      "topKeywords": [
+        "치아미백",
+        "치아 미백",
+        "미백",
+        "화이트닝",
+        "변색",
+        "자연치아",
+        "미백 효과",
+        "미백 비용",
+        "시술",
+        "치과"
+      ],
+      "longTailKeywords": [
+        "고덕동 치아 미백 비용",
+        "고덕동 치과 치아 미백",
+        "고덕동 치아 미백 후기",
+        "고덕동 앞니 미백",
+        "고덕동 셀프 치아 미백",
+        "고덕동 자연치아 미백",
+        "고덕동 치아 변색 미백",
+        "고덕동 치아 미백 효과",
+        "고덕동 치아 미백 가격",
+        "고덕동 미백 잘하는 치과",
+        "강동구 고덕동 치아 미백",
+        "고덕동 치아 화이트닝",
+        "치과 치아 미백 통증",
+        "치아 미백 유지기간",
+        "앞니 착색 미백"
+      ],
+      "titlePatterns": [
+        "[지역명] + [시술명] + 비용/가격/후기",
+        "치아 미백/화이트닝 + 효과/과정/주의사항",
+        "[지역명] 치과 + 미백 잘하는/추천",
+        "치아 미백 + 셀프/자연/원데이",
+        "[질환/상황] + 미백 + 해결/상담"
+      ],
+      "commonPhrases": [
+        "미백 효과",
+        "치아 변색",
+        "자연스러운 화이트닝",
+        "시술 전 상담",
+        "시린 증상",
+        "안전한 미백",
+        "개인차가 있습니다",
+        "유지 관리",
+        "전후 비교",
+        "원데이 미백"
+      ],
+      "userIntent": "고덕동에서 치아 미백이 가능한 치과를 찾고, 비용·효과·후기·통증 같은 핵심 정보를 비교해 예약 여부를 결정하려는 의도다.",
+      "competitorUrls": [
+        "https://contents.premium.naver.com/epochkorea/epic/contents/220703120236679av",
+        "https://play.google.com/store/apps/details?hl=ko&id=com.aromega.smygroup.glo",
+        "https://contents.premium.naver.com/doublemoney/bohum/contents/260402185359139rv",
+        "https://contents.premium.naver.com/doublemoney/bohum/contents/260318135745865er",
+        "https://contents.premium.naver.com/golddongha/gold/contents/250416151532700vg"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "고덕동 잇몸치료 스케일링",
+      "region": "고덕동",
+      "regionSlug": "godeok",
+      "treatment": "gum-care",
+      "topKeywords": [
+        "고덕동",
+        "스케일링",
+        "잇몸치료",
+        "치주염",
+        "치은염",
+        "치과",
+        "구강검진",
+        "치석",
+        "치태",
+        "보험적용"
+      ],
+      "longTailKeywords": [
+        "고덕동 스케일링 잘하는 치과",
+        "고덕동 잇몸치료 전문 치과",
+        "고덕동 치주염 스케일링 치료",
+        "고덕동 스케일링 보험 적용 치과",
+        "고덕동 잇몸에서 피날때 치과",
+        "고덕동 잇몸 붓기 치료 치과",
+        "고덕동 치석 제거 잇몸치료",
+        "고덕동 연 1회 스케일링 치과",
+        "고덕동 치주과 스케일링 후기",
+        "고덕동 잇몸치료 루트플래닝",
+        "고덕동 스케일링 후 잇몸치료",
+        "고덕동 치과 구강검진 스케일링",
+        "고덕동 잇몸 통증 스케일링",
+        "평택 고덕동 잇몸치료 치과",
+        "평택 고덕동 스케일링 치과"
+      ],
+      "titlePatterns": [
+        "[지역명] + [치과/병원] + [진료명]",
+        "[지역명] + 스케일링/잇몸치료 + 전문/잘하는",
+        "[지역명] + [치과명] | [핵심진료] | [브랜드/슬로건]",
+        "[지역명] + [증상/치료] + 치과 추천",
+        "[진료명] + | + [병원명]"
+      ],
+      "commonPhrases": [
+        "스케일링으로 해결하기 힘든",
+        "치주관리는 단순한 스케일링을 넘어서",
+        "치석·치태 제거",
+        "치아 수명을 연장하고 구강 건강을 지키는",
+        "통증 완화를 위해 국소마취"
+      ],
+      "userIntent": "고덕동에서 잇몸치료와 스케일링을 함께 잘하는 치과를 찾고, 보험 적용·치료 범위·후기까지 비교해 보려는 의도입니다.",
+      "competitorUrls": [
+        "https://www.goappleclinic.co.kr/treatment/care/gum-treatment",
+        "https://gounidental.com/treatment3",
+        "https://cleardental.co.kr/periodontal-care",
+        "https://www.modoodoc.com/hospital/3754/%ED%99%A9%EC%8A%B9%ED%95%98%EC%B9%98%EA%B3%BC%EC%9D%98%EC%9B%90-%EC%84%9C%EC%9A%B8%EC%8B%9C-%EA%B0%95%EB%8F%99%EA%B5%AC-%EA%B3%A0%EB%8D%95%EB%8F%99/?tg=%EC%B9%98%EA%B3%BC+%EC%8A%A4%EC%BC%80%EC%9D%BC%EB%A7%81",
+        "https://cashdoc.me/hospital/A1121582/%EA%B3%A0%EB%8D%95%EB%A6%AC%EB%8D%94%EC%8A%A4%EC%B9%98%EA%B3%BC%EC%9B%90"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "고덕동 턱관절 치료",
+      "region": "고덕동",
+      "regionSlug": "godeok",
+      "treatment": "tmj",
+      "topKeywords": [
+        "턱관절",
+        "턱관절 치료",
+        "이갈이",
+        "교합장치",
+        "보톡스",
+        "턱 통증",
+        "정밀 진단",
+        "물리치료",
+        "3D CT",
+        "맞춤형 치료"
+      ],
+      "longTailKeywords": [
+        "고덕동 턱관절 치료",
+        "고덕동 턱관절 통증 치료",
+        "고덕동 이갈이 치료 치과",
+        "고덕동 턱관절 보톡스 치료",
+        "고덕동 턱관절 교합장치",
+        "고덕동 턱관절 물리치료",
+        "고덕동 턱관절 진단 3D CT",
+        "고덕동 턱관절 전문 클리닉",
+        "고덕동 턱관절 수술 상담",
+        "고덕동 이갈이·코골이 치료",
+        "고덕동 교합불균형 턱관절",
+        "고덕동 턱관절 맞춤 치료 예약"
+      ],
+      "titlePatterns": [
+        "[지역명] [치과명] | 턱관절 치료",
+        "턱관절 클리닉 - [치과명]",
+        "턱관절(이갈이) 통증 치료 안내",
+        "[치과명] 턱관절 전문센터",
+        "정밀 진단·맞춤형 턱관절 치료"
+      ],
+      "commonPhrases": [
+        "맞춤형 치료",
+        "정밀 진단",
+        "교합장치(스플린트)",
+        "비수술적 치료 우선",
+        "통증 완화 및 기능 회복"
+      ],
+      "userIntent": "고덕동 인근에서 턱관절(이갈이·턱 통증)을 정확히 진단하고 치료해 줄 수 있는 치과/클리닉을 찾으려는 지역 환자.",
+      "competitorUrls": [
+        "https://www.gdfirstdent.com/",
+        "https://www.goodoc.co.kr/hospitals/80608",
+        "https://www.seouljaw.co.kr/",
+        "https://levertool.tistory.com/756",
+        "https://ysplant-tmj.kr/"
+      ],
+      "_model": "gpt-5-mini"
+    },
+    {
+      "query": "고덕국제신도시 임플란트 추천",
+      "region": "고덕국제신도시",
+      "regionSlug": "godeok-intl",
+      "treatment": "implant",
+      "topKeywords": [
+        "임플란트",
+        "치과",
+        "추천",
+        "잘하는곳",
+        "비용",
+        "가격",
+        "고덕",
+        "평택",
+        "정밀진단",
+        "네비게이션 임플란트"
+      ],
+      "longTailKeywords": [
+        "고덕국제신도시 임플란트 추천",
+        "고덕동 임플란트 잘하는 치과",
+        "평택 고덕 임플란트 치과 추천",
+        "고덕신도시 임플란트 가격 비교",
+        "고덕국제신도시 치과 임플란트 후기",
+        "고덕국제신도시 네비게이션 임플란트",
+        "평택 고덕동 임플란트 싼곳",
+        "고덕국제신도시 3D CT 임플란트",
+        "고덕 신도시 어금니 임플란트",
+        "고덕국제신도시 국산 임플란트",
+        "고덕국제신도시 잇몸뼈 부족 임플란트",
+        "고덕국제신도시 임플란트 사후관리",
+        "평택 고덕 직장인 임플란트",
+        "고덕국제신도시 통합치의학과 치과",
+        "고덕국제신도시 야간진료 임플란트"
+      ],
+      "titlePatterns": [
+        "[지역명] 임플란트 치과 추천 [숫자]곳",
+        "[지역명] 임플란트 잘하는 치과 / 싼곳 / 저렴한곳",
+        "[지역명] 치과 추천｜어린이치과부터 임플란트·치아교정까지 가족진료",
+        "[지역명] 임플란트 비용·가격 비교·지원금 총정리",
+        "[지역명] 임플란트 완벽 가이드 / 최신 리뷰 기반"
+      ],
+      "commonPhrases": [
+        "정밀 진단",
+        "3D CT",
+        "네비게이션 임플란트",
+        "최신 기술과 장비",
+        "통합치의학과 전문의"
+      ],
+      "userIntent": "고덕국제신도시에서 임플란트를 잘하고 비용과 진료 신뢰도가 괜찮은 치과를 비교해 추천받고 싶다.",
+      "competitorUrls": [
+        "https://www.gdfirstdent.com/",
+        "https://contents.premium.naver.com/contentlog/contentarchive/contents/260416180150965jz",
+        "https://www.medicalguide.co.kr/ko/dental/gangnam-station-implant",
+        "https://www.peterspickpick.com/674",
+        "https://ddoddopet.com/"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "고덕국제신도시 틀니",
+      "region": "고덕국제신도시",
+      "regionSlug": "godeok-intl",
+      "treatment": "denture",
+      "topKeywords": [
+        "틀니",
+        "임플란트",
+        "치과",
+        "보철",
+        "의치",
+        "상담",
+        "비용",
+        "원데이",
+        "보험",
+        "노인"
+      ],
+      "longTailKeywords": [
+        "고덕국제신도시 틀니 잘하는 치과",
+        "고덕국제신도시 틀니 비용",
+        "고덕국제신도시 전체틀니",
+        "고덕국제신도시 부분틀니",
+        "고덕국제신도시 임플란트 틀니",
+        "고덕국제신도시 틀니 보험 적용",
+        "고덕국제신도시 어르신 틀니 상담",
+        "고덕국제신도시 틀니 재제작",
+        "평택 고덕국제신도시 틀니 치과",
+        "고덕국제신도시 보철치료 치과",
+        "고덕국제신도시 노인 틀니",
+        "고덕국제신도시 무치악 틀니",
+        "고덕국제신도시 틀니 수리",
+        "고덕국제신도시 틀니 추천",
+        "고덕국제신도시 치과 틀니 상담"
+      ],
+      "titlePatterns": [
+        "[지역명] + 틀니/보철치료 + 치과",
+        "틀니 비용/보험/상담 중심 정보형 제목",
+        "임플란트와 틀니를 함께 묶은 보철치료 제목",
+        "어르신/노인 틀니를 강조한 지역 치과 제목",
+        "잘하는/추천/상담을 포함한 지역 시술 키워드형 제목"
+      ],
+      "commonPhrases": [
+        "틀니는 치아를 상실한 경우 사용하는 보철치료입니다",
+        "부분틀니/전체틀니 상담 가능",
+        "보험 적용 여부 확인",
+        "임플란트 틀니와 일반 틀니 비교",
+        "어르신 맞춤 진료와 정밀 상담"
+      ],
+      "userIntent": "고덕국제신도시에서 틀니 치료를 받을 수 있는 치과를 찾으며, 비용·보험 적용·전체/부분틀니·임플란트 틀니까지 비교해 상담 가능한 곳을 알아보려는 의도다.",
+      "competitorUrls": [
+        "https://www.google.com/search?q=%EA%B3%A0%EB%8D%95%EA%B5%AD%EC%A0%9C%EC%8B%A0%EB%8F%84%EC%8B%9C+%ED%8B%80%EB%8B%88",
+        "https://search.naver.com/search.naver?query=%EA%B3%A0%EB%8D%95%EA%B5%AD%EC%A0%9C%EC%8B%A0%EB%8F%84%EC%8B%9C+%ED%8B%80%EB%8B%88",
+        "https://www.google.com/search?tbm=lcl&q=%EA%B3%A0%EB%8D%95%EA%B5%AD%EC%A0%9C%EC%8B%A0%EB%8F%84%EC%8B%9C+%ED%8B%80%EB%8B%88",
+        "https://map.naver.com/v5/search/%EA%B3%A0%EB%8D%95%EA%B5%AD%EC%A0%9C%EC%8B%A0%EB%8F%84%EC%8B%9C%20%ED%8B%80%EB%8B%88",
+        "https://www.google.com/maps/search/%EA%B3%A0%EB%8D%95%EA%B5%AD%EC%A0%9C%EC%8B%A0%EB%8F%84%EC%8B%9C+%ED%8B%80%EB%8B%88"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "고덕국제신도시 충치 신경치료",
+      "region": "고덕국제신도시",
+      "regionSlug": "godeok-intl",
+      "treatment": "cavity-treatment",
+      "topKeywords": [
+        "고덕국제신도시",
+        "충치",
+        "신경치료",
+        "치과",
+        "통증",
+        "어금니",
+        "레진",
+        "크라운",
+        "치료",
+        "야간진료"
+      ],
+      "longTailKeywords": [
+        "고덕국제신도시 충치 치료",
+        "고덕국제신도시 신경치료 치과",
+        "고덕국제신도시 어금니 충치 치료",
+        "고덕국제신도시 충치 신경치료 비용",
+        "고덕국제신도시 신경치료 잘하는 치과",
+        "고덕국제신도시 충치 통증 치과",
+        "고덕국제신도시 어금니 신경치료",
+        "고덕국제신도시 레진 치료 치과",
+        "고덕국제신도시 크라운 신경치료",
+        "고덕국제신도시 주말 진료 치과",
+        "고덕국제신도시 야간진료 치과",
+        "고덕국제신도시 충치 원인 치료",
+        "고덕국제신도시 신경치료 후기",
+        "고덕국제신도시 어린이 충치 치료",
+        "고덕국제신도시 급한 치통 치과"
+      ],
+      "titlePatterns": [
+        "[지역명] + 충치/신경치료 + 치과",
+        "[지역명] + 통증/급한 치통 + 당일/빠른 치료",
+        "[지역명] + 잘하는/추천 + 치과",
+        "충치가 심해졌을 때/신경치료가 필요한 경우 + 치과",
+        "어금니/레진/크라운 + 치료 항목 나열형"
+      ],
+      "commonPhrases": [
+        "정밀 진단",
+        "통증 최소화",
+        "빠른 치료",
+        "당일 진료",
+        "야간/주말 진료"
+      ],
+      "userIntent": "고덕국제신도시에서 충치가 심하거나 신경치료가 필요한 경우, 통증을 빨리 해결해 줄 가까운 치과와 진료 가능 시간, 비용, 치료 수준을 비교해 보려는 의도이다.",
+      "competitorUrls": [
+        "https://sites.google.com/jdentalgroup.com/jdental/about-us",
+        "https://play.google.com/store/apps/details?id=com.haho.rudentalhope",
+        "https://play.google.com/store/apps/details?hl=ko&id=com.haho.rudentalhope",
+        "https://play.google.com/store/apps/details?hl=en_ZA&id=com.digiray.scanMyPet",
+        "https://play.google.com/store/apps/details?hl=ko&id=com.animalsdentist.doctorgame"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "고덕국제신도시 사랑니 발치",
+      "region": "고덕국제신도시",
+      "regionSlug": "godeok-intl",
+      "treatment": "wisdom-tooth",
+      "topKeywords": [
+        "사랑니 발치",
+        "매복 사랑니",
+        "사랑니 통증",
+        "사랑니 발치 후 주의사항",
+        "CT 진단",
+        "안전한 발치",
+        "구강악안면외과",
+        "네이버 예약",
+        "발치 비용",
+        "후유증"
+      ],
+      "longTailKeywords": [
+        "고덕국제신도시 사랑니 발치",
+        "고덕국제신도시 매복 사랑니 발치",
+        "고덕국제신도시 사랑니 통증 치과",
+        "고덕국제신도시 사랑니 발치 비용",
+        "고덕국제신도시 사랑니 발치 후 주의사항",
+        "고덕국제신도시 CT 사랑니 진단",
+        "평택 고덕국제신도시 사랑니 발치",
+        "고덕국제신도시 하악 매복 사랑니",
+        "고덕국제신도시 상악 사랑니 발치",
+        "고덕국제신도시 당일 사랑니 발치",
+        "고덕국제신도시 수면 사랑니 발치",
+        "고덕국제신도시 사랑니 발치 잘하는 치과",
+        "고덕국제신도시 신경 가까운 사랑니 발치",
+        "고덕국제신도시 사랑니 붓기 통증",
+        "고덕국제신도시 사랑니 발치 예약"
+      ],
+      "titlePatterns": [
+        "사랑니 발치｜[치과명]",
+        "[지역명] 사랑니 발치",
+        "사랑니 발치, [부제/가이드형 제목]",
+        "[치과명] : 사랑니 발치",
+        "사랑니 발치 후 [주의사항/회복/과정]"
+      ],
+      "commonPhrases": [
+        "정밀 진단",
+        "CT 장비",
+        "매복된 위치·깊이·기울기",
+        "안전하고 신속한 발치",
+        "발치 후 붓기·통증·주의사항"
+      ],
+      "userIntent": "고덕국제신도시에서 사랑니 발치가 가능한 치과를 찾고, 매복 여부·통증·비용·안전성·후기/주의사항까지 비교해 빠르게 예약하려는 의도입니다.",
+      "competitorUrls": [
+        "https://rowondent.co.kr/wisdomtooth",
+        "https://wonjindental.com/magazine/wisdom-tooth-extraction-guide",
+        "https://gounidental.com/treatment4",
+        "https://www.goodfacedental.com/page/page139",
+        "https://comfortdental.co.kr/wisdom/"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "고덕국제신도시 치아 미백",
+      "region": "고덕국제신도시",
+      "regionSlug": "godeok-intl",
+      "treatment": "whitening",
+      "topKeywords": [
+        "치아미백",
+        "미백",
+        "치과",
+        "전문미백",
+        "오피스블리칭",
+        "가정용미백",
+        "잇몸",
+        "과산화수소",
+        "시림",
+        "변색"
+      ],
+      "longTailKeywords": [
+        "고덕국제신도시 치아 미백",
+        "고덕국제신도시 치과 치아 미백",
+        "고덕국제신도시 치아미백 가격",
+        "고덕국제신도시 오피스블리칭",
+        "고덕동 치아 미백 치과",
+        "평택 고덕 치아미백",
+        "고덕국제신도시 미백 치과 추천",
+        "고덕국제신도시 치아미백 후 주의사항",
+        "고덕국제신도시 치아 변색 미백",
+        "고덕국제신도시 시림 없는 치아미백",
+        "고덕국제신도시 결혼전 치아미백",
+        "고덕국제신도시 직장인 치아미백",
+        "고덕국제신도시 치아미백 후기",
+        "고덕국제신도시 치아미백 상담",
+        "고덕국제신도시 당일 치아미백"
+      ],
+      "titlePatterns": [
+        "[지역명] 치아 미백 / 자연스러운 색 개선",
+        "치아미백 가격과 시술 방법 총정리",
+        "치아 미백 후 주의사항 — 효과 유지를 위한 관리법",
+        "[치과명] 위치·진료과목·운영시간 총정리",
+        "치아 미백 원리/효과/부작용 총정리"
+      ],
+      "commonPhrases": [
+        "자연스러운 미소",
+        "밝고 하얀 치아",
+        "전문적인 치과 미백",
+        "치아와 잇몸에 안전한",
+        "빠른 효과",
+        "치아 시림",
+        "과민증",
+        "착색 음식",
+        "고농도 약제",
+        "가정용 미백제"
+      ],
+      "userIntent": "고덕국제신도시에서 치아 미백을 받을 수 있는 치과를 찾고, 가격·효과·안전성·후기까지 비교하려는 의도다.",
+      "competitorUrls": [
+        "https://www.ttecase.com/columns/precaution-whitening",
+        "https://cleardental.co.kr/teeth-whitening",
+        "https://levertool.tistory.com/756",
+        "https://www.blanche.kr/blog/tooth-whitening/%EC%B9%98%EC%95%84-%EB%AF%B8%EB%B0%B1-%EC%9B%90%EB%A6%AC/",
+        "https://m.health.chosun.com/svc/news_view.html?contid=2024090201757"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "고덕국제신도시 잇몸치료 스케일링",
+      "region": "고덕국제신도시",
+      "regionSlug": "godeok-intl",
+      "treatment": "gum-care",
+      "topKeywords": [
+        "스케일링",
+        "잇몸치료",
+        "치과",
+        "고덕",
+        "고덕국제신도시",
+        "정기검진",
+        "건강보험",
+        "임플란트",
+        "예약",
+        "통합치의학전문의"
+      ],
+      "longTailKeywords": [
+        "고덕국제신도시 스케일링 비용",
+        "고덕국제신도시 잇몸치료 잘하는 치과",
+        "고덕국제신도시 스케일링 예약",
+        "고덕동 스케일링 건강보험",
+        "평택 고덕 잇몸치료 전문의",
+        "고덕국제신도시 치주치료 후기",
+        "고덕국제신도시 통합치의학과 스케일링",
+        "고덕국제신도시 치과 진료시간",
+        "고덕국제신도시 스케일링 당일 치료",
+        "고덕국제신도시 잇몸 출혈 치료",
+        "고덕국제신도시 스케일링 비용 보험적용",
+        "고덕국제신도시 어린이 스케일링"
+      ],
+      "titlePatterns": [
+        "[치과명] | [지역][진료특징] 치과 (예: 고덕퍼스트치과 | 평택임플란트 고덕동치과)",
+        "잇몸치료 & 스케일링 - [치과명] / [진료안내형 제목]",
+        "[지역] [치과명] 위치·진료과목·운영시간 총정리",
+        "[서비스] 가격 & [보험·주기] 정리 | [매체명]",
+        "[치과명] - [전문의 소개/원장직접진료 강조]"
+      ],
+      "commonPhrases": [
+        "정기 검진",
+        "건강보험 적용",
+        "잇몸질환 예방",
+        "통증 완화",
+        "전문의 직접 진료"
+      ],
+      "userIntent": "고덕국제신도시 인근에서 잇몸치료(스케일링)를 받을 수 있는 치과와 비용·보험 적용 여부, 예약/진료정보를 찾으려는 의도.",
+      "competitorUrls": [
+        "https://www.gdfirstdent.com/",
+        "https://www.gdfirstdent.co.kr/godeok/cavity-treatment",
+        "https://www.impline.com/",
+        "https://wegive.co.kr/wezine/detail/1365",
+        "https://levertool.tistory.com/756"
+      ],
+      "_model": "gpt-5-mini"
+    },
+    {
+      "query": "고덕국제신도시 턱관절 치료",
+      "region": "고덕국제신도시",
+      "regionSlug": "godeok-intl",
+      "treatment": "tmj",
+      "topKeywords": [
+        "턱관절",
+        "치료",
+        "통증",
+        "이갈이",
+        "소리",
+        "입 벌리기",
+        "스플린트",
+        "물리치료",
+        "근본 원인",
+        "정밀 진단"
+      ],
+      "longTailKeywords": [
+        "고덕국제신도시 턱관절 치료",
+        "고덕동 턱관절 치료 치과",
+        "고덕국제신도시 턱관절 통증",
+        "고덕 턱관절 소리 치료",
+        "고덕국제신도시 입 벌릴 때 통증",
+        "고덕동 이갈이 턱관절 치료",
+        "평택 고덕 턱관절 장애 치료",
+        "고덕국제신도시 턱관절 스플린트",
+        "고덕국제신도시 구강악안면외과 턱관절",
+        "고덕 국제신도시 턱이 뻐근할 때",
+        "고덕국제신도시 턱관절 물리치료",
+        "고덕국제신도시 턱관절 엑스레이",
+        "고덕동 턱관절 병원 추천",
+        "고덕국제신도시 턱관절 주의사항",
+        "평택 고덕 턱관절 클리닉"
+      ],
+      "titlePatterns": [
+        "[지역] 턱관절 치료 | [병원명] | [증상/진료축]",
+        "[병원명] - 턱관절 치료",
+        "[지역/도시] 턱관절 치료, [핵심치료/진단]",
+        "[진료과목] · 턱관절 치료 · [기타진료]",
+        "턱관절 치료 중 [주제] — [가이드형 제목]"
+      ],
+      "commonPhrases": [
+        "정밀 3D CT 진단",
+        "맞춤 치료 프로그램",
+        "근본 원인 치료",
+        "스플린트 치료",
+        "물리치료 및 약물치료"
+      ],
+      "userIntent": "고덕국제신도시에서 턱관절 통증, 소리, 개구 제한, 이갈이 같은 증상을 진단하고 치료받을 수 있는 치과/병원을 찾으려는 의도이다.",
+      "competitorUrls": [
+        "https://ysplant-tmj.kr/",
+        "https://www.gdfirstdent.com/",
+        "https://www.seoul365dental.com/page/page225",
+        "https://www.ttecase.com/columns/precaution-tmj",
+        "https://levertool.tistory.com/756"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 동삭동 임플란트 추천",
+      "region": "동삭동",
+      "regionSlug": "dongsak",
+      "treatment": "implant",
+      "topKeywords": [
+        "평택",
+        "동삭동",
+        "임플란트",
+        "추천",
+        "잘하는 곳",
+        "가격",
+        "치과",
+        "후기",
+        "수면임플란트",
+        "뼈이식"
+      ],
+      "longTailKeywords": [
+        "평택 동삭동 임플란트 추천",
+        "동삭동 임플란트 잘하는 치과",
+        "평택 동삭동 임플란트 가격",
+        "평택 동삭동 임플란트 후기",
+        "동삭동 수면임플란트 치과",
+        "평택 동삭동 원데이 임플란트",
+        "평택 동삭동 오스템 임플란트",
+        "평택 동삭동 뼈이식 임플란트",
+        "동삭동 전체임플란트 치과",
+        "평택 지제동삭 임플란트 추천",
+        "평택 동삭동 임플란트 전문의",
+        "평택 동삭동 야간진료 치과",
+        "동삭동 임플란트 주차 편한 치과",
+        "평택 동삭동 저렴한 임플란트",
+        "평택 동삭동 디지털 임플란트"
+      ],
+      "titlePatterns": [
+        "[지역] 임플란트 [가격/비용], [형용사] [치과] 추천 Top N",
+        "[지역] 임플란트 잘하는 치과 추천 BEST N",
+        "[지역] 임플란트 [저렴한/싼] 곳 [브랜드/시술]",
+        "[치과명], [지역] 임플란트 고민중이라면?",
+        "[지역] [치과명]에서 임플란트 믿을 수 있는 치과를 찾는 방법"
+      ],
+      "commonPhrases": [
+        "임플란트 고민중이라면",
+        "잘하는 치과 추천",
+        "저렴한 가격",
+        "수면치료 / 의식하진정법",
+        "디지털 장비를 통한 정밀 진단"
+      ],
+      "userIntent": "동삭동에서 임플란트를 잘하고 가격·후기·접근성이 괜찮은 치과를 비교해 실제 방문할 곳을 정하려는 의도이다.",
+      "competitorUrls": [
+        "https://www.art-of-bella.com/",
+        "https://www.daangn.com/kr/business-post/%EC%9D%B4%ED%84%B1%ED%8D%BC%EC%8A%A4%ED%8A%B8%EC%B9%98%EA%B3%BC-%ED%8F%89%ED%83%9D-%EC%9E%84%ED%94%8C%EB%9E%80%ED%8A%B8-%EA%B3%A0%EB%AF%BC%EC%A4%91%EC%9D%B4%EB%9D%BC%EB%A9%B4-63c113cc9b562b48cf8fa5a5/",
+        "https://daoryo62.com/361",
+        "https://dosenior.com/%EA%B2%BD%EA%B8%B0%EB%8F%84-%ED%8F%89%ED%83%9D-%EC%9E%84%ED%94%8C%EB%9E%80%ED%8A%B8-%EC%B9%98%EA%B3%BC-%EC%9E%98%ED%95%98%EB%8A%94-%EA%B3%B3-%EB%B9%84%EC%9A%A9-%ED%9B%84%EA%B8%B0/",
+        "https://0ceanews.com/%ED%8F%89%ED%83%9D-%EC%9E%84%ED%94%8C%EB%9E%80%ED%8A%B8-28%EB%A7%8C%EC%9B%90-%EC%8B%BC%EA%B3%B3-%ED%8F%89%ED%83%9D%EC%97%AD-%EC%B9%98%EA%B3%BC-%EC%A0%80%EB%A0%B4%ED%95%9C-%EA%B0%80%EA%B2%A9-%EC%9B%90/"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 동삭동 틀니",
+      "region": "동삭동",
+      "regionSlug": "dongsak",
+      "treatment": "denture",
+      "topKeywords": [
+        "평택",
+        "동삭동",
+        "틀니",
+        "치과",
+        "임플란트",
+        "보철",
+        "치료",
+        "비용",
+        "상담",
+        "보험"
+      ],
+      "longTailKeywords": [
+        "평택 동삭동 틀니 치과",
+        "동삭동 틀니 잘하는 치과",
+        "평택 동삭동 보험틀니",
+        "평택 동삭동 부분틀니",
+        "평택 동삭동 전체틀니",
+        "동삭동 틀니 상담",
+        "평택 틀니 비용 치과",
+        "평택 동삭동 어르신 틀니",
+        "동삭동 노인 틀니 치과",
+        "평택 동삭동 틀니 가격",
+        "평택 동삭동 치과 틀니 치료",
+        "동삭동 틀니 재제작",
+        "평택 동삭동 보험적용 틀니",
+        "평택 동삭동 틀니 후기",
+        "동삭동 틀니 맞춤 상담"
+      ],
+      "titlePatterns": [
+        "[지역] [치과명] 틀니/보철 진료",
+        "[지역] 틀니 잘하는 치과",
+        "[지역] 보험틀니/부분틀니/전체틀니",
+        "[지역] 어르신 틀니 상담",
+        "[치과명] [지역] 틀니 비용·상담"
+      ],
+      "commonPhrases": [
+        "맞춤형 보철치료",
+        "보험틀니 상담",
+        "부분틀니·전체틀니",
+        "편안한 저작 기능",
+        "정밀 진단 후 치료"
+      ],
+      "userIntent": "평택 동삭동에서 틀니를 잘하는 치과를 찾고, 보험 적용 여부와 비용·상담 가능 여부를 비교하려는 의도이다.",
+      "competitorUrls": [
+        "https://books.google.com/books/about/%EC%A1%B4%EA%B7%80%ED%95%9C_%EA%B3%B5%EB%8F%99%EC%B2%B4_%EA%B5%90%ED%9A%8C_%EC%96%91%EC%9E%A5%EB%B3%B8_Har.html?id=LmCEMgAACAAJ",
+        "https://play.google.com/store/apps/details?id=com.scvz.ricometotal",
+        "https://books.google.com/books/about/%EC%9B%94%EA%B0%84_%ED%99%8D%EB%8F%99%EC%97%AC%EC%A7%80%EB%8F%84_vol1_%ED%8F%89%ED%83%9D.html?id=Ls14EQAAQBAJ",
+        "https://play.google.com/store/audiobooks/details/%EC%B5%9C%EC%A0%95%ED%99%94_%EB%8B%A8%ED%8E%B8_%ED%8B%80%EB%8B%88?id=AQAAAEAs7jGuDM",
+        "https://books.google.com/books/about/%ED%8F%89%ED%83%9D_%ED%96%A5%ED%86%A0%EC%82%AC.html?id=9dZrcgAACAAJ"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 동삭동 충치 신경치료",
+      "region": "동삭동",
+      "regionSlug": "dongsak",
+      "treatment": "cavity-treatment",
+      "topKeywords": [
+        "충치",
+        "신경치료",
+        "치과",
+        "평택",
+        "동삭동",
+        "평택치과",
+        "치아통증",
+        "크라운",
+        "레진",
+        "보철"
+      ],
+      "longTailKeywords": [
+        "평택 동삭동 충치 치료 치과",
+        "평택 동삭동 신경치료 치과",
+        "동삭동 치아 통증 신경치료",
+        "평택 동삭동 어금니 충치 치료",
+        "평택 동삭동 충치 레진 치료",
+        "평택 동삭동 신경치료 후 크라운",
+        "동삭동 야간진료 치과 충치",
+        "평택 동삭동 무통 신경치료",
+        "평택 지제역 근처 충치 치료",
+        "동삭동 치과 충치 검진",
+        "평택 동삭동 신경치료 잘하는 치과",
+        "동삭동 충치 치과 추천",
+        "평택 동삭동 치아 시림 치료",
+        "동삭동 어금니 신경치료",
+        "평택 동삭동 급한 치통 치과"
+      ],
+      "titlePatterns": [
+        "[지역명] + 치과 + [치료명] + [강점]",
+        "[지역명] + [증상] + 치료/진료 안내",
+        "[치료명] + 비용/과정/후기",
+        "[지역명] + 치과 추천 + 진료과목",
+        "[무통/정밀/야간] + 치료 키워드 + 치과"
+      ],
+      "commonPhrases": [
+        "정밀 진단",
+        "통증 최소화",
+        "당일 진료",
+        "충치 단계별 치료",
+        "신경치료 후 크라운"
+      ],
+      "userIntent": "평택 동삭동에서 충치나 신경치료가 가능한 치과를 찾고, 통증이 적고 가까우며 빠르게 진료받을 수 있는 곳과 치료 정보를 확인하려는 의도입니다.",
+      "competitorUrls": [
+        "https://contents.premium.naver.com/doublemoney/bohum/contents/260317153701778dv",
+        "https://contents.premium.naver.com/doublemoney/bohum/contents/260402185359139rv",
+        "https://fin.land.naver.com/articles/2531885542",
+        "https://contents.premium.naver.com/djbros/djbross/products/260213010840183wn",
+        "https://contents.premium.naver.com/kaptps/koreaapt/contents/250813165646658mr"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 동삭동 사랑니 발치",
+      "region": "동삭동",
+      "regionSlug": "dongsak",
+      "treatment": "wisdom-tooth",
+      "topKeywords": [
+        "사랑니",
+        "발치",
+        "치과",
+        "비용",
+        "매복사랑니",
+        "당일",
+        "통증",
+        "붓기",
+        "CT",
+        "검사"
+      ],
+      "longTailKeywords": [
+        "평택 동삭동 사랑니 발치",
+        "동삭동 사랑니 발치 잘하는 치과",
+        "평택 동삭동 매복사랑니 발치",
+        "동삭동 사랑니 발치 비용",
+        "평택 동삭동 사랑니 당일 발치",
+        "평택 동삭동 사랑니 CT 검사",
+        "동삭동 사랑니 붓기 통증",
+        "평택 사랑니 발치 후기",
+        "평택 동삭동 대학병원급 사랑니 발치",
+        "동삭동 잇몸 염증 사랑니 발치",
+        "평택 동삭동 난사랑니 발치",
+        "동삭동 수면 사랑니 발치",
+        "평택 동삭동 아래 사랑니 발치",
+        "평택 동삭동 위 사랑니 발치"
+      ],
+      "titlePatterns": [
+        "[지역] + 사랑니 발치 + [치과/잘하는 곳]",
+        "[지역] + 매복사랑니 + 발치 + [비용/후기]",
+        "사랑니 발치 + [당일/즉시] + [통증/붓기]",
+        "사랑니 발치 + [CT/정밀검사] + [안전]",
+        "[지역] + 치과 + 사랑니/매복사랑니 + [진료안내]"
+      ],
+      "commonPhrases": [
+        "정밀 CT 촬영 후 진단",
+        "매복사랑니도 발치 가능",
+        "통증과 붓기를 최소화",
+        "당일 발치 상담 가능",
+        "신경 손상 주의 및 정확한 진단"
+      ],
+      "userIntent": "평택 동삭동 인근에서 사랑니 발치가 가능한 치과를 찾고, 비용·통증·매복 여부·당일 진료 가능 여부를 비교하려는 의도입니다.",
+      "competitorUrls": [
+        "https://m.kin.naver.com/mobile/qna/detail.naver?answerNo=3&dirId=70205&docId=469925390&mobile=",
+        "https://play.google.com/store/apps/details?id=com.kor.eodentalinsmall",
+        "https://contents.premium.naver.com/doublemoney/bohum/contents/260317145201817bd",
+        "https://books.google.com/books/about/%EC%82%AC%EB%9E%91%EB%8B%88_5_5.html?id=cdu4CwAAQBAJ",
+        "https://books.google.com/books/about/%EC%82%AC%EB%9E%91%EB%8B%88.html?id=qhgsEQAAQBAJ"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 동삭동 치아 미백",
+      "region": "동삭동",
+      "regionSlug": "dongsak",
+      "treatment": "whitening",
+      "topKeywords": [
+        "치아미백",
+        "치과",
+        "평택",
+        "동삭동",
+        "미백",
+        "스케일링",
+        "심미치료",
+        "잇몸",
+        "과산화수소",
+        "자연스러운"
+      ],
+      "longTailKeywords": [
+        "평택 동삭동 치아 미백",
+        "동삭동 치과 치아미백",
+        "평택시 동삭동 미백치료",
+        "평택 동삭동 심미치과",
+        "동삭동 치아 미백 비용",
+        "평택 동삭동 치과 미백",
+        "평택 동삭동 미백 상담",
+        "동삭동 치아 변색 미백",
+        "평택 동삭동 앞니 미백",
+        "동삭동 치아 착색 제거",
+        "평택 동삭동 오피스텔 근처 치과 미백",
+        "평택 동삭동 스케일링 후 미백",
+        "평택 동삭동 치아 미백 후기",
+        "동삭동 치아미백 통증",
+        "평택 동삭동 즉시 미백"
+      ],
+      "titlePatterns": [
+        "[지역명] + [치과명] + 치아미백",
+        "[지역명] + 심미치과/미백치료",
+        "[치아미백] + 비용/효과/통증",
+        "[지역명] + 치과 + 상담/진료",
+        "[자연스러운/환한] + 미소 + 미백"
+      ],
+      "commonPhrases": [
+        "자연스럽고 환한 미소",
+        "치아 착색·변색 개선",
+        "심미적인 이미지 개선",
+        "치과의사 상담 후 진행",
+        "통증/시림 여부 안내"
+      ],
+      "userIntent": "평택 동삭동에서 치아 미백을 받을 수 있는 치과를 찾고, 비용·효과·통증·후기를 비교해 진료 여부를 결정하려는 의도다.",
+      "competitorUrls": [
+        "https://contents.premium.naver.com/epochkorea/epic/contents/220703120236679av",
+        "https://play.google.com/store/apps/details?hl=ko&id=to.pho.visagelab",
+        "https://play.google.com/store/apps/details?hl=ko&id=com.instabeauty.selfie_editor",
+        "https://play.google.com/store/apps/details?hl=ko&id=com.photowonder.perfectcam",
+        "https://support.google.com/merchants/answer/14374922?hl=ko"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 동삭동 잇몸치료 스케일링",
+      "region": "동삭동",
+      "regionSlug": "dongsak",
+      "treatment": "gum-care",
+      "topKeywords": [
+        "동삭동",
+        "평택",
+        "치과",
+        "스케일링",
+        "잇몸치료",
+        "치주질환",
+        "예방치과",
+        "치주치료",
+        "야간진료",
+        "정기검진"
+      ],
+      "longTailKeywords": [
+        "평택 동삭동 스케일링 잘하는 치과",
+        "동삭동 잇몸치료 치과 추천",
+        "평택 동삭동 치주질환 치료",
+        "동삭동 스케일링 가격 치과",
+        "평택 동삭동 잇몸이 붓는 증상 치과",
+        "동삭동 스케일링 후 잇몸관리",
+        "평택 동삭동 예방치과 스케일링",
+        "동삭동 잇몸 출혈 치료 치과",
+        "평택 동삭동 치주과 진료",
+        "동삭동 치과 야간진료 스케일링",
+        "평택 동삭동 정기 스케일링 치과",
+        "동삭동 잇몸 염증 치료",
+        "평택 동삭동 스케일링 예약",
+        "동삭동 치석 제거 치과"
+      ],
+      "titlePatterns": [
+        "[지역명] + 치과 + [진료과/치료명]",
+        "[지역명] + [상권/동네] + 치과",
+        "[지역명] + 스케일링/잇몸치료 + 추천/잘하는",
+        "예방치과·치과 | [비교/목록형]",
+        "[지역명] + 임플란트/보철 + 잇몸치료 포함"
+      ],
+      "commonPhrases": [
+        "치면세균막 제거",
+        "치주질환의 원인",
+        "정기적인 관리",
+        "스케일링 후 치아 관리",
+        "통합치의학전문의"
+      ],
+      "userIntent": "평택 동삭동에서 스케일링과 잇몸치료를 함께 받을 수 있는 가까운 치과를 찾고, 진료 가능 여부와 전문성까지 비교하려는 의도이다.",
+      "competitorUrls": [
+        "https://www.artedental.kr/",
+        "https://www.gdfirstdent.com/",
+        "https://my-doctor.io/hospital/deptHub/region/%EC%98%88%EB%B0%A9%EC%B9%98%EA%B3%BC-%EA%B2%BD%EA%B8%B0-%ED%8F%89%ED%83%9D%EC%8B%9C-%EB%8F%99%EC%82%AD%EB%8F%99",
+        "https://www.art-of-bella.com/",
+        "https://www.dasomdental.com/"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 동삭동 턱관절 치료",
+      "region": "동삭동",
+      "regionSlug": "dongsak",
+      "treatment": "tmj",
+      "topKeywords": [
+        "턱관절",
+        "턱관절장애",
+        "평택",
+        "동삭동",
+        "치과",
+        "구강악안면외과",
+        "스플린트",
+        "이갈이",
+        "정밀진단",
+        "통증"
+      ],
+      "longTailKeywords": [
+        "평택 동삭동 턱관절 치료",
+        "동삭동 턱관절 치과",
+        "평택 동삭동 턱관절장애 치료",
+        "평택 동삭동 이갈이 턱관절 치료",
+        "평택 동삭동 턱 아플때 치과",
+        "동삭동 턱관절 스플린트 치료",
+        "평택 동삭동 구강내과 턱관절",
+        "평택 동삭동 턱관절 통증 치료",
+        "평택 동삭동 입 벌릴때 턱 소리 치과",
+        "평택 동삭동 턱관절 정밀진단 치과",
+        "평택 턱관절 치료 치과",
+        "평택 턱관절장애 전문 치과",
+        "평택 동삭동 턱관절 물리치료",
+        "평택 동삭동 교합안정장치 치료"
+      ],
+      "titlePatterns": [
+        "[지역] [치과명] | [지역치과] | [시술/진료]",
+        "[지역] 턱관절치과 | [치료/전문]",
+        "[지역·동네명] 치과, [인접 지명] 치과",
+        "턱관절 때문에 대학병원 가세요? [진단/치료]",
+        "[병원명] - [지역] 치과, [지역] [주요진료]"
+      ],
+      "commonPhrases": [
+        "턱관절 질환의 원인을 찾아서 예방·관리",
+        "구강악안면외과 전문의",
+        "정밀진단(CT)",
+        "스플린트/교합안정장치",
+        "이갈이·이악물기"
+      ],
+      "userIntent": "평택 동삭동에서 턱관절 통증, 소리, 입벌림 불편 등의 증상을 진단하고 치료할 수 있는 가까운 치과/전문 진료병원을 찾으려는 의도입니다.",
+      "competitorUrls": [
+        "https://www.artedental.kr/",
+        "https://www.eteokfirst.com/",
+        "https://theeasydc.co.kr/",
+        "https://bonplant.co.kr/",
+        "https://elookdent.co.kr/"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 서정동 임플란트 추천",
+      "region": "서정동",
+      "regionSlug": "seojeong",
+      "treatment": "implant",
+      "topKeywords": [
+        "임플란트",
+        "치과",
+        "추천",
+        "평택",
+        "서정동",
+        "비용",
+        "후기",
+        "잘하는",
+        "통증",
+        "디지털"
+      ],
+      "longTailKeywords": [
+        "평택 서정동 임플란트 추천",
+        "서정동 임플란트 잘하는 치과",
+        "평택 서정동 치과 임플란트 후기",
+        "서정동 어금니 임플란트 추천",
+        "평택 송탄 임플란트 잘하는 곳",
+        "서정동 앞니 임플란트 상담",
+        "평택 서정동 임플란트 비용",
+        "서정동 임플란트 수면치료",
+        "평택 서정동 당일 임플란트",
+        "서정동 임플란트 보철 후기",
+        "평택 서정동 무절개 임플란트",
+        "서정동 고난도 임플란트 치과"
+      ],
+      "titlePatterns": [
+        "{지역명} + 임플란트 + 잘하는/추천 치과",
+        "{지역명} + 치과 + 임플란트 + 후기/비용",
+        "{지역명} + 디지털/무절개 + 임플란트",
+        "{지역명} + 당일/원데이 + 임플란트",
+        "{지역명} + 전문의/경험 + 임플란트"
+      ],
+      "commonPhrases": [
+        "정밀 진단 후 맞춤 치료",
+        "디지털 장비를 활용한 식립",
+        "통증과 부담을 줄인 진료",
+        "자연치아 보존을 우선하는 치료",
+        "사후관리까지 책임진 진료"
+      ],
+      "userIntent": "서정동 인근에서 임플란트를 잘하는 치과를 비교하고, 후기·비용·진료 방식까지 확인해 실제로 방문할 곳을 고르려는 의도이다.",
+      "competitorUrls": [
+        "https://developers.google.com/search-in-apps/android/reference/kotlin/com/google/android/libraries/searchinapps/SearchSuggestionsViewGenerator?hl=ko",
+        "https://developers.google.com/search-in-apps/android/reference/com/google/android/libraries/searchinapps/SearchSuggestionsViewGenerator?hl=ko",
+        "https://developers.google.com/search-in-apps/android/reference/com/google/android/libraries/searchinapps/SearchContentViewOptions?hl=ko",
+        "https://developers.google.com/search-in-apps/android/reference/com/google/android/libraries/searchinapps/SearchSuggestionsViewOptions?hl=ko",
+        "https://cue.search.naver.com/"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 서정동 틀니",
+      "region": "서정동",
+      "regionSlug": "seojeong",
+      "treatment": "denture",
+      "topKeywords": [
+        "틀니",
+        "임플란트",
+        "치과",
+        "평택",
+        "서정동",
+        "부분틀니",
+        "전체틀니",
+        "비용",
+        "상담",
+        "보험"
+      ],
+      "longTailKeywords": [
+        "평택 서정동 틀니 치과",
+        "서정동 틀니 잘하는 치과",
+        "평택 서정동 부분틀니",
+        "평택 서정동 전체틀니",
+        "서정동 노인 틀니 치과",
+        "평택 서정동 틀니 비용",
+        "평택 송탄역 근처 틀니",
+        "평택 서정동 보험 틀니",
+        "평택 서정동 어르신 틀니",
+        "평택 서정동 틀니 상담",
+        "평택 서정동 치과 틀니",
+        "평택 서정동 임플란트 틀니",
+        "서정동 부분틀니 비용",
+        "평택 서정동 틀니 가격",
+        "평택 서정동 틀니 수리"
+      ],
+      "titlePatterns": [
+        "[지역] [치료] 잘하는 치과",
+        "[지역] [치료] 비용/가격",
+        "[지역] [치과] 진료 안내",
+        "[지역] [치료] 상담/예약",
+        "[지역] [치료] 보험/임플란트 병행"
+      ],
+      "commonPhrases": [
+        "자연치아처럼",
+        "저작력 회복",
+        "정밀 진단 후",
+        "개인별 맞춤 제작",
+        "보험 적용 가능"
+      ],
+      "userIntent": "평택 서정동에서 틀니 진료를 잘하는 치과를 찾고, 부분틀니·전체틀니·보험 및 비용 정보를 비교해 상담 가능한 곳을 확인하려는 의도다.",
+      "competitorUrls": [
+        "https://www.google.com/search?q=%ED%8F%89%ED%83%9D+%EC%84%9C%EC%A0%95%EB%8F%99+%ED%8B%80%EB%8B%88",
+        "https://search.naver.com/search.naver?query=%ED%8F%89%ED%83%9D+%EC%84%9C%EC%A0%95%EB%8F%99+%ED%8B%80%EB%8B%88",
+        "https://map.naver.com/p/search/%ED%8F%89%ED%83%9D%20%EC%84%9C%EC%A0%95%EB%8F%99%20%ED%8B%80%EB%8B%88",
+        "https://www.google.com/maps/search/%ED%8F%89%ED%83%9D+%EC%84%9C%EC%A0%95%EB%8F%99+%ED%8B%80%EB%8B%88",
+        "https://place.map.kakao.com/search/%ED%8F%89%ED%83%9D%20%EC%84%9C%EC%A0%95%EB%8F%99%20%ED%8B%80%EB%8B%88"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 서정동 충치 신경치료",
+      "region": "서정동",
+      "regionSlug": "seojeong",
+      "treatment": "cavity-treatment",
+      "topKeywords": [
+        "충치치료",
+        "신경치료",
+        "치과",
+        "평택",
+        "서정동",
+        "크라운",
+        "레진",
+        "어금니",
+        "통증",
+        "엑스레이"
+      ],
+      "longTailKeywords": [
+        "평택 서정동 충치치료 잘하는 치과",
+        "평택 서정동 신경치료 치과",
+        "서정동 충치 신경치료 비용",
+        "평택 서정동 어금니 충치 치료",
+        "서정동 심한 충치 신경치료",
+        "평택 서정동 야간통 충치 치료",
+        "서정동 신경치료 후 크라운",
+        "평택 서정동 치과 추천 충치치료",
+        "서정동 충치 레진 신경치료",
+        "평택 서정동 치수염 신경치료",
+        "서정동 잇몸 통증 충치 치료",
+        "평택 서정동 디지털 엑스레이 치과",
+        "서정동 충치 치료 예약",
+        "평택 서정동 급한 치통 신경치료"
+      ],
+      "titlePatterns": [
+        "[지역명] [치료명] 치과/추천/잘하는 곳",
+        "[치과명] | [치료명]",
+        "[지역명] [시술] 추천 위치 N곳",
+        "[증상/상황] + [치료명] + 비용/과정",
+        "[치료명] 꼭 해야 하나? / 모든 것"
+      ],
+      "commonPhrases": [
+        "심한 충치",
+        "치아 내부 신경(치수)",
+        "정밀 진단 및 엑스레이 촬영",
+        "신경치료 후 크라운",
+        "충치 단계가 올라갈수록"
+      ],
+      "userIntent": "서정동(평택)에서 충치가 신경치료까지 필요한 상황에 대해, 가까운 치과의 진료 가능 여부·치료 과정·비용·후기 등을 비교해 예약할 곳을 찾으려는 의도이다.",
+      "competitorUrls": [
+        "https://daonna.com/view/492966/",
+        "https://semi55plant.com/caries",
+        "https://myeong-dong.imweb.me/rootcanaltherapy",
+        "https://www.blanche.kr/blog/cavity/%25EC%25B6%259A%25EC%259D%25B4-%25EC%25B9%2598%25EB%25A3%258C-%25EB%25B9%2584%25EC%259A%25A9",
+        "https://www.postincome.co.kr/archives/246589/"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 서정동 사랑니 발치",
+      "region": "서정동",
+      "regionSlug": "seojeong",
+      "treatment": "wisdom-tooth",
+      "topKeywords": [
+        "사랑니 발치",
+        "매복 사랑니",
+        "당일 발치",
+        "통증",
+        "붓기",
+        "CT",
+        "구강외과",
+        "근처 치과",
+        "비용",
+        "회복"
+      ],
+      "longTailKeywords": [
+        "평택 서정동 사랑니 발치",
+        "서정동 사랑니 발치 치과",
+        "평택 서정동 매복 사랑니 발치",
+        "서정동 당일 사랑니 발치",
+        "평택 서정동 사랑니 발치 비용",
+        "서정동 사랑니 CT 촬영 치과",
+        "평택 서정동 구강외과 사랑니",
+        "평택 서정동 사랑니 발치 후기",
+        "서정동 아래 사랑니 발치",
+        "서정동 위 사랑니 발치",
+        "평택 송탄 사랑니 발치",
+        "평택 서정동 사랑니 붓기",
+        "평택 서정동 사랑니 통증",
+        "서정동 대학병원 사랑니 발치",
+        "평택 서정동 잇몸절개 사랑니"
+      ],
+      "titlePatterns": [
+        "[지역명] [치료명] + 치과/의원",
+        "[지역명] [상황] 사랑니 발치",
+        "[치료명] 비용/후기/통증 안내",
+        "[지역명] 구강외과/치과 + 전문 진료",
+        "[치료명] 당일/빠른/정밀 진료"
+      ],
+      "commonPhrases": [
+        "CT 촬영 후 진단",
+        "난이도에 따른 발치",
+        "국소마취로 진행",
+        "붓기·통증 최소화",
+        "사후관리 및 주의사항 안내"
+      ],
+      "userIntent": "서정동 또는 평택 인근에서 사랑니 발치를 잘하는 치과를 찾고, 비용·통증·매복 여부·당일 발치 가능 여부를 비교하려는 의도이다.",
+      "competitorUrls": [
+        "https://www.google.com/search?q=%ED%8F%89%ED%83%9D+%EC%84%9C%EC%A0%95%EB%8F%99+%EC%82%AC%EB%9E%91%EB%8B%88+%EB%B0%9C%EC%B9%98",
+        "https://search.naver.com/search.naver?query=%ED%8F%89%ED%83%9D+%EC%84%9C%EC%A0%95%EB%8F%99+%EC%82%AC%EB%9E%91%EB%8B%88+%EB%B0%9C%EC%B9%98",
+        "https://www.google.com/search?q=%ED%8F%89%ED%83%9D+%EC%82%AC%EB%9E%91%EB%8B%88+%EB%B0%9C%EC%B9%98",
+        "https://search.naver.com/search.naver?query=%ED%8F%89%ED%83%9D+%EC%82%AC%EB%9E%91%EB%8B%88+%EB%B0%9C%EC%B9%98",
+        "https://www.google.com/search?q=%EC%84%9C%EC%A0%95%EB%8F%99+%EC%82%AC%EB%9E%91%EB%8B%88+%EB%B0%9C%EC%B9%98"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 서정동 치아 미백",
+      "region": "서정동",
+      "regionSlug": "seojeong",
+      "treatment": "whitening",
+      "topKeywords": [
+        "치아 미백",
+        "미백",
+        "과산화수소",
+        "미백 효과",
+        "시술",
+        "치아 변색",
+        "자극",
+        "전후",
+        "관리",
+        "구강"
+      ],
+      "longTailKeywords": [
+        "평택 서정동 치아 미백",
+        "서정동 치아 미백 시술",
+        "평택 서정동 치아 미백 가격",
+        "서정동 치과 치아 미백",
+        "평택역 치아 미백",
+        "서정동 미백 효과",
+        "치아 미백 전후 사진",
+        "치아 변색 미백 치료",
+        "과산화수소 치아 미백",
+        "민감한 치아 미백",
+        "치아 미백 유지 방법",
+        "치과 치아 미백 상담",
+        "서정동 화이트닝 치과",
+        "평택 서정동 미백 후기"
+      ],
+      "titlePatterns": [
+        "[지역명] [치료명] [키워드]",
+        "[치과명] | [치아 미백] [상담/가격/후기]",
+        "[치료명]에 관한 [조성물/방법/장치]",
+        "[증상/효과] + [치아 미백]",
+        "[브랜드/병원명] + [미백 효과/전후/시술]"
+      ],
+      "commonPhrases": [
+        "미백 효과가 우수",
+        "구강 내 자극이 경감",
+        "치아의 얼룩이나 변색",
+        "과산화수소 포함",
+        "치아 미백 방법"
+      ],
+      "userIntent": "평택 서정동에서 치아 미백을 받을 수 있는 치과를 찾고, 가격·효과·후기·시술 방식 같은 실제 진료 정보를 비교하려는 의도다.",
+      "competitorUrls": [
+        "https://patents.google.com/patent/WO2019107851A1/ko",
+        "https://patents.google.com/patent/WO2016111544A1/ko",
+        "https://patents.google.com/patent/WO2013172602A1/ko",
+        "https://patents.google.com/patent/KR20030031511A/ko",
+        "https://patents.google.com/patent/KR101453520B1/ko"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 서정동 잇몸치료 스케일링",
+      "region": "서정동",
+      "regionSlug": "seojeong",
+      "treatment": "gum-care",
+      "topKeywords": [
+        "잇몸치료",
+        "스케일링",
+        "치주염",
+        "치주질환",
+        "잇몸관리",
+        "치근면활택술",
+        "치은소파술",
+        "예방",
+        "구강관리",
+        "정기검진"
+      ],
+      "longTailKeywords": [
+        "평택 서정동 잇몸치료",
+        "평택 서정동 스케일링 치과",
+        "서정동 잇몸에서 피날때 치과",
+        "평택 서정동 치주염 치료",
+        "송탄 서정동 스케일링 치과",
+        "서정동 잇몸 붓기 치료",
+        "평택 서정동 치석 제거",
+        "서정동 치근면 활택술",
+        "평택 서정동 치은 소파술",
+        "서정동 잇몸관리 정기검진",
+        "평택 서정동 성인 스케일링",
+        "송탄역 근처 잇몸치료",
+        "평택 서정동 잇몸질환 치료",
+        "평택 서정동 치주관리",
+        "서정동 스케일링 보험"
+      ],
+      "titlePatterns": [
+        "[지역명] [치과명] | [지역/진료 키워드]",
+        "[진료명] | [설명형 제목]",
+        "[지역명] [진료명] 치과",
+        "[지역명] [동명] [치과/진료]",
+        "[진료명] 비용·효과·주의사항 정리"
+      ],
+      "commonPhrases": [
+        "잇몸에서 피가 나거나 붓는 증상",
+        "단순 스케일링을 넘어서",
+        "치근면 소파술/치근면 활택술",
+        "정기적인 관리로 예방",
+        "성인 잇몸질환"
+      ],
+      "userIntent": "서정동/평택 인근에서 잇몸치료와 스케일링을 받을 수 있는 치과를 찾고, 증상에 맞는 진료와 비용·후기·위치를 비교하려는 의도다.",
+      "competitorUrls": [
+        "https://www.modoodoc.com/hospital/18903/%EB%B6%80%EB%B6%80%EC%B9%98%EA%B3%BC%EC%9D%98%EC%9B%90-%EA%B2%BD%EA%B8%B0%EB%8F%84-%EC%84%9C%EC%A0%95%EB%8F%99",
+        "https://www.gdfirstdent.com/",
+        "https://www.regendc.co.kr/page.html?url=sub0504",
+        "https://nicesongtoyou.com/financial-portal/%EC%9E%87%EB%AA%B8%EC%B9%98%EB%A3%8C-%EB%B9%84%EC%9A%A9%EA%B3%BC-%ED%9A%A8%EA%B3%BC%EF%BD%9C%EC%B9%98%EC%A3%BC%EC%97%BC-%EC%B4%88%EA%B8%B0%EC%A6%9D%EC%83%81%EB%B6%80%ED%84%B0-%EC%9E%87%EB%AA%B8/",
+        "https://contents.premium.naver.com/doublemoney/bohum/contents/260406175448207tp"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 서정동 턱관절 치료",
+      "region": "서정동",
+      "regionSlug": "seojeong",
+      "treatment": "tmj",
+      "topKeywords": [
+        "턱관절",
+        "턱관절 치료",
+        "턱관절장애",
+        "통증",
+        "입벌림",
+        "교합",
+        "물리치료",
+        "스플린트",
+        "비수술",
+        "치과"
+      ],
+      "longTailKeywords": [
+        "평택 서정동 턱관절 치료",
+        "서정동 턱관절 통증 치료",
+        "평택 서정동 턱관절장애 치료",
+        "서정동 턱에서 소리 날 때 치료",
+        "평택 턱관절 입벌림 장애 치료",
+        "서정동 턱관절 교합 치료",
+        "평택 서정동 비수술 턱관절 치료",
+        "서정동 턱관절 스플린트 치료",
+        "평택 서정동 턱 통증 치과",
+        "서정동 턱관절 물리치료",
+        "평택 서정동 턱관절 교정",
+        "서정동 턱관절 MRI 검사",
+        "평택 서정동 턱관절 증상",
+        "서정동 아침에 턱 아플 때",
+        "평택 서정동 턱관절 전문 치과"
+      ],
+      "titlePatterns": [
+        "[지역명] + 턱관절 치료/치과",
+        "[지역명] + 턱관절장애 + 진료/치료",
+        "턱관절 통증/소리/입벌림 + 치료",
+        "비수술/보존치료 + 턱관절",
+        "턱관절 전문/치료 잘하는 + 치과"
+      ],
+      "commonPhrases": [
+        "정확한 원인 진단",
+        "비수술 보존적 치료",
+        "개인별 맞춤 치료",
+        "턱에서 소리/통증/입벌림 제한",
+        "스플린트(장치) 치료"
+      ],
+      "userIntent": "서정동 인근에서 턱관절 통증·소리·입벌림 불편을 진단하고 비수술 중심으로 치료해주는 치과를 찾고 있다.",
+      "competitorUrls": [
+        "https://play.google.com/store/apps/details?id=kr.sharenshare.apps.healtasis.android",
+        "https://play.google.com/store/apps/details?hl=ko&id=com.app.xedaq",
+        "https://play.google.com/store/apps/details?id=com.clicksoundmfds.clicksoundsikyak",
+        "https://cloud.google.com/medical-imaging?hl=ko",
+        "https://books.google.com/books/about/%EB%B0%95%EC%A7%80%EC%84%B1_%EC%8B%A0%EC%88%98%EC%A7%80%EC%9D%98_123_%EC%8A%A4%ED%8A%B8%EB%A0%88%EC%B9%AD.html?id=B5fMbwAACAAJ"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 송탄 임플란트 추천",
+      "region": "송탄",
+      "regionSlug": "songtan",
+      "treatment": "implant",
+      "topKeywords": [
+        "임플란트",
+        "평택",
+        "송탄",
+        "치과",
+        "추천",
+        "가격",
+        "잘하는",
+        "후기",
+        "최저가",
+        "수면"
+      ],
+      "longTailKeywords": [
+        "평택 송탄 임플란트 추천",
+        "송탄 임플란트 잘하는 치과",
+        "평택 송탄 임플란트 가격 비교",
+        "송탄 임플란트 후기 좋은 치과",
+        "평택 송탄 임플란트 싼 곳",
+        "송탄역 근처 임플란트 치과",
+        "평택시 송탄동 임플란트 치과",
+        "송탄 오스템 임플란트 추천",
+        "평택 송탄 수면 임플란트",
+        "송탄 디지털 임플란트 치과",
+        "평택 송탄 임플란트 Top 5",
+        "송탄 임플란트 비용 비교",
+        "평택 신장동 임플란트 치과",
+        "송탄 임플란트 후기 추천",
+        "평택 송탄 치과 추천 임플란트"
+      ],
+      "titlePatterns": [
+        "{지역} 임플란트 잘하는 치과 추천 Top N",
+        "{지역} 임플란트 가격 비교, 잘하는 치과 추천 Top N",
+        "{지역} 임플란트 가격 싸고/저렴하고 잘하는 치과 N곳 추천",
+        "{지역} 임플란트 후기 좋은/저렴한 치과 추천",
+        "{지역} 임플란트 {브랜드/옵션}(수면, 오스템, 디오) 포함 추천"
+      ],
+      "commonPhrases": [
+        "잘하는 치과 추천",
+        "가격 비교",
+        "후기 좋은",
+        "저렴한 가격",
+        "Top 5/Top 10"
+      ],
+      "userIntent": "송탄/평택 송탄 지역에서 임플란트 치료를 받을 만한 치과를 가격, 후기, 거리, 진료 옵션까지 비교해 신뢰할 곳을 찾으려는 의도이다.",
+      "competitorUrls": [
+        "https://adb2023.kr/%EC%86%A1%ED%83%84-%EC%9E%84%ED%94%8C%EB%9E%80%ED%8A%B8/",
+        "https://daoryo62.com/330?category=1104154",
+        "https://test.diana100.com/2025/03/Top-5-places-to-get-cheap-and-good-implants-in-Pyeongtaek.html",
+        "https://ozonj842.tistory.com/176",
+        "https://contents.premium.naver.com/findnstory/findstory/contents/260409141020404rc"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 송탄 틀니",
+      "region": "송탄",
+      "regionSlug": "songtan",
+      "treatment": "denture",
+      "topKeywords": [
+        "평택치과",
+        "송탄치과",
+        "틀니",
+        "임플란트",
+        "부분틀니",
+        "전체틀니",
+        "보험틀니",
+        "노인틀니",
+        "저렴한",
+        "상담"
+      ],
+      "longTailKeywords": [
+        "평택 송탄 틀니 잘하는 치과",
+        "송탄 보험틀니 치과",
+        "평택 송탄 노인틀니 상담",
+        "송탄 전체틀니 비용",
+        "평택 부분틀니 추천",
+        "송탄 임플란트 틀니 치과",
+        "평택 송탄 틀니 가격",
+        "송탄 65세 이상 틀니 보험",
+        "평택 송탄 틀니 전문 치과",
+        "송탄 어르신 틀니 치과",
+        "평택 송탄 치과 틀니 상담",
+        "송탄 부분틀니 보험 적용",
+        "평택 송탄 전체틀니 후기",
+        "송탄 틀니 잘하는 곳"
+      ],
+      "titlePatterns": [
+        "[지역]치과 + 시술명 + 신뢰/전문성",
+        "[지역]치과 | [세부지역] 치과",
+        "[시술명] + [지역] + [상담/비용/후기]",
+        "[지역] [질환/시술] 찾기 | [가이드형 제목]",
+        "[병원명] - 평택 치과 | 송탄 치과"
+      ],
+      "commonPhrases": [
+        "과잉진료 없는",
+        "전문의 직접 진료",
+        "노인 틀니",
+        "임플란트 틀니",
+        "상담 및 비용"
+      ],
+      "userIntent": "송탄/평택에서 보험 적용과 비용, 후기까지 비교하며 틀니 치료를 잘하는 치과를 찾으려는 의도입니다.",
+      "competitorUrls": [
+        "https://www.eplant.kr/",
+        "https://ddoddopet.com/",
+        "https://www.modoodoc.com/hospital/86113/%EC%9D%B4%ED%94%8C%EB%9E%80%ED%8A%B8%EC%B9%98%EA%B3%BC%EC%9D%98%EC%9B%90-%ED%8F%89%ED%83%9D-%EA%B2%BD%EA%B8%B0%EB%8F%84-%EC%8B%A0%EC%9E%A5%EB%8F%99",
+        "https://adeprio.com/%ED%8F%89%ED%83%9D-%EC%95%BC%EA%B0%84-%EC%B9%98%EA%B3%BC-%EC%B0%BE%EA%B8%B0-%EC%86%A1%ED%83%84-%ED%8F%89%ED%83%9D-%EB%B0%A4%EB%8A%A6%EA%B2%8C-%EC%B9%98%ED%86%B5-%EC%A7%84%EB%A3%8C-%EB%B3%91%EC%9B%90/",
+        "https://www.artedental.kr/"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 송탄 충치 신경치료",
+      "region": "송탄",
+      "regionSlug": "songtan",
+      "treatment": "cavity-treatment",
+      "topKeywords": [
+        "충치",
+        "신경치료",
+        "치료",
+        "치과",
+        "송탄",
+        "평택",
+        "통증",
+        "치아",
+        "치료법",
+        "예약"
+      ],
+      "longTailKeywords": [
+        "송탄 충치 신경치료 잘하는 치과",
+        "평택 송탄 충치 치료",
+        "송탄 신경치료 치과 추천",
+        "평택 송탄 치아 통증 신경치료",
+        "송탄 어금니 충치 신경치료",
+        "평택 충치 신경치료 비용",
+        "송탄 급성 통증 신경치료",
+        "평택 송탄 야간 진료 치과",
+        "송탄 어린이 충치 치료",
+        "평택 송탄 치아 신경치료 후기",
+        "송탄 치통 원인 충치 신경치료",
+        "평택 송탄 당일 신경치료",
+        "송탄 치과 충치 레진 신경치료",
+        "평택 송탄 치아 욱신거림 치과",
+        "송탄 충치 방치 신경치료"
+      ],
+      "titlePatterns": [
+        "[지역명] + 충치/신경치료 + 치과",
+        "[지역명] + 신경치료 + 잘하는/추천",
+        "충치 치료부터 신경치료까지",
+        "통증/야간/응급 진료 강조",
+        "[지역명] + 치과 + 진료 안내/후기/비용"
+      ],
+      "commonPhrases": [
+        "충치가 신경까지 진행된 경우",
+        "치아 신경을 보존하는 치료",
+        "통증을 줄이는 진료",
+        "빠른 내원과 정확한 진단",
+        "자연치아 보존"
+      ],
+      "userIntent": "송탄·평택에서 충치가 심해져 신경치료가 필요한 상황에 대해, 통증이 덜하고 잘하는 치과의 위치·진료 방식·비용·예약 정보를 찾으려는 의도다.",
+      "competitorUrls": [
+        "https://search.naver.com/search.naver?query=%ED%8F%89%ED%83%9D+%EC%86%A1%ED%83%84+%EC%B6%A9%EC%B9%98+%EC%8B%A0%EA%B2%BD%EC%B9%98%EB%A3%8C",
+        "https://www.google.com/search?q=%ED%8F%89%ED%83%9D+%EC%86%A1%ED%83%84+%EC%B6%A9%EC%B9%98+%EC%8B%A0%EA%B2%BD%EC%B9%98%EB%A3%8C",
+        "https://www.google.com/search?hl=ko&q=%ED%8F%89%ED%83%9D+%EC%86%A1%ED%83%84+%EC%B6%A9%EC%B9%98+%EC%8B%A0%EA%B2%BD%EC%B9%98%EB%A3%8C+%EC%B9%98%EA%B3%BC",
+        "https://search.naver.com/search.naver?query=%EC%86%A1%ED%83%84+%EC%8B%A0%EA%B2%BD%EC%B9%98%EB%A3%8C+%EC%B9%98%EA%B3%BC",
+        "https://www.google.com/search?q=%EC%86%A1%ED%83%84+%EC%B6%A9%EC%B9%98+%EC%8B%A0%EA%B2%BD%EC%B9%98%EB%A3%8C+%EB%B9%84%EC%9A%A9"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 송탄 사랑니 발치",
+      "region": "송탄",
+      "regionSlug": "songtan",
+      "treatment": "wisdom-tooth",
+      "topKeywords": [
+        "사랑니",
+        "발치",
+        "매복사랑니",
+        "송탄",
+        "평택",
+        "구강외과",
+        "붓기",
+        "통증",
+        "당일",
+        "CT"
+      ],
+      "longTailKeywords": [
+        "송탄 사랑니 발치 치과",
+        "평택 송탄 매복사랑니 발치",
+        "송탄 사랑니 발치 비용",
+        "평택 사랑니 발치 잘하는 치과",
+        "송탄 구강외과 사랑니 발치",
+        "평택 송탄 사랑니 발치 당일",
+        "송탄 사랑니 붓기 통증",
+        "평택 매복사랑니 CT 검사",
+        "송탄 사랑니 발치 후기",
+        "평택 송탄 사랑니 발치 보험"
+      ],
+      "titlePatterns": [
+        "[지역명] + 사랑니 발치 + 치과/잘하는 곳",
+        "매복사랑니 + 발치 + 당일/즉시",
+        "구강외과/CT/3D CT + 사랑니",
+        "사랑니 발치 비용/후기/통증 안내",
+        "[지역명] + [치과명] + 사랑니 발치"
+      ],
+      "commonPhrases": [
+        "사랑니 위치 확인",
+        "매복 정도에 따라",
+        "CT 촬영 후 진단",
+        "통증과 붓기 최소화",
+        "당일 발치 가능"
+      ],
+      "userIntent": "송탄/평택 인근에서 사랑니 발치를 잘하는 치과를 찾고, 매복 여부·통증·붓기·비용·당일 발치 가능 여부를 비교하려는 의도이다.",
+      "competitorUrls": [
+        "https://www.google.com/search?q=%ED%8F%89%ED%83%9D+%EC%86%A1%ED%83%84+%EC%82%AC%EB%9E%91%EB%8B%88+%EB%B0%9C%EC%B9%98",
+        "https://search.naver.com/search.naver?query=%ED%8F%89%ED%83%9D+%EC%86%A1%ED%83%84+%EC%82%AC%EB%9E%91%EB%8B%88+%EB%B0%9C%EC%B9%98",
+        "https://www.google.com/search?q=%EC%86%A1%ED%83%84+%EC%82%AC%EB%9E%91%EB%8B%88+%EB%B0%9C%EC%B9%98",
+        "https://search.naver.com/search.naver?query=%EC%86%A1%ED%83%84+%EC%82%AC%EB%9E%91%EB%8B%88+%EB%B0%9C%EC%B9%98",
+        "https://www.google.com/search?q=%ED%8F%89%ED%83%9D+%EB%A7%A4%EB%B3%B5%EC%82%AC%EB%9E%91%EB%8B%88+%EB%B0%9C%EC%B9%98"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 송탄 치아 미백",
+      "region": "송탄",
+      "regionSlug": "songtan",
+      "treatment": "whitening",
+      "topKeywords": [
+        "치아미백",
+        "미백",
+        "평택",
+        "송탄",
+        "치과",
+        "가격",
+        "비용",
+        "추천",
+        "후기",
+        "당일"
+      ],
+      "longTailKeywords": [
+        "평택 송탄 치아 미백 치과",
+        "송탄역 치아 미백 잘하는 곳",
+        "평택 송탄 치아 미백 가격",
+        "송탄 치아 미백 비용",
+        "평택 치아 미백 추천 치과",
+        "송탄역 근처 치아 미백",
+        "평택 송탄 전문 치아 미백",
+        "평택 송탄 치아 미백 후기",
+        "송탄 치아 미백 당일 가능",
+        "평택 송탄 치아 미백 상담",
+        "송탄 치과 치아 미백 이벤트",
+        "평택 송탄 미백 치과 추천",
+        "송탄역 치과 미백 가격",
+        "평택 송탄 치아 변색 미백",
+        "평택 송탄 치아 미백 예약"
+      ],
+      "titlePatterns": [
+        "지역명 + 치아미백 + 치과",
+        "지역명 + 치아미백 + 가격/비용",
+        "지역명 + 치아미백 + 추천/잘하는 곳",
+        "지역명 + 치과 + 이벤트/프로모션",
+        "지역명 + 증상/상황 + 치아미백"
+      ],
+      "commonPhrases": [
+        "밝고 깨끗한 치아",
+        "자연스러운 미백",
+        "치아 변색 개선",
+        "전문가 상담",
+        "통증/시림 최소화"
+      ],
+      "userIntent": "평택 송탄 지역에서 치아 미백을 받을 수 있는 치과를 찾고, 가격·후기·추천 여부를 비교해 빠르게 예약하려는 의도다.",
+      "competitorUrls": [
+        "https://common.health.kr/shared/healthkr/pharmreview/%EB%B0%9D%EA%B3%A0%20%EB%A7%91%EC%9D%80%20%EC%B9%98%EC%95%84%28%EC%B9%98%EC%95%84%EB%AF%B8%EB%B0%B1%29.pdf",
+        "https://www.postincome.co.kr/archives/227270/",
+        "https://sports.donga.com/economy/article/all/20211117/110292793/2",
+        "https://www.hotelscombined.co.kr/Hotel/M_Motel_Songtan.htm",
+        "https://msgtime.com/store/753"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 송탄 잇몸치료 스케일링",
+      "region": "송탄",
+      "regionSlug": "songtan",
+      "treatment": "gum-care",
+      "topKeywords": [
+        "송탄",
+        "평택",
+        "치과",
+        "스케일링",
+        "잇몸치료",
+        "잇몸관리",
+        "치주질환",
+        "치석제거",
+        "진료",
+        "주차"
+      ],
+      "longTailKeywords": [
+        "송탄 스케일링 잘하는 치과",
+        "평택 송탄 잇몸치료 치과",
+        "송탄 잇몸질환 치료 비용",
+        "평택 송탄 치주염 치료",
+        "송탄 치석제거 스케일링",
+        "평택 송탄 스케일링 보험",
+        "송탄 잇몸 붓기 치과",
+        "평택 송탄 잇몸에서 피날 때 치과",
+        "송탄 평일 야간 스케일링 치과",
+        "평택 송탄 주차 편한 치과",
+        "송탄 치과 스케일링 후기",
+        "평택 송탄 잇몸치료 잘하는 곳"
+      ],
+      "titlePatterns": [
+        "[지역명] + 치과 | [지역명] 치과",
+        "[지역명] + [치료명] + 치과",
+        "[치과명] - [지역명] 치과 | [지역명] 치과",
+        "[지역명] + [증상/상황] + 치과 찾기",
+        "[지역명] + [치료/상담] + [편의정보]"
+      ],
+      "commonPhrases": [
+        "정직한 진료",
+        "상담부터 치료까지",
+        "정밀 진단",
+        "사후 관리",
+        "주차 안내"
+      ],
+      "userIntent": "송탄에서 스케일링과 잇몸치료를 함께 받을 수 있고, 접근성·진료 신뢰도·편의성을 갖춘 치과를 찾으려는 의도이다.",
+      "competitorUrls": [
+        "https://www.eplant.kr/",
+        "https://adeprio.com/%ED%8F%89%ED%83%9D-%EC%95%BC%EA%B0%84-%EC%B9%98%EA%B3%BC-%EC%B0%BE%EA%B8%B0-%EC%86%A1%ED%83%84-%ED%8F%89%ED%83%9D-%EB%B0%A4%EB%8A%A6%EA%B2%8C-%EC%B9%98%ED%86%B5-%EC%A7%84%EB%A3%8C-%EB%B3%91%EC%9B%90/",
+        "https://60cm.tistory.com/entry/%EC%86%A1%ED%83%84-%EB%B0%98%EB%8F%84%EC%B2%B4-%EC%9E%84%ED%94%8C%EB%9E%80%ED%8A%B8-%EC%B9%98%EA%B3%BC-%EC%9C%84%EC%B9%98-%EC%A3%BC%EC%B0%A8%EC%9E%A5",
+        "https://www.eplant.kr/",
+        "https://adeprio.com/%ED%8F%89%ED%83%9D-%EC%95%BC%EA%B0%84-%EC%B9%98%EA%B3%BC-%EC%B0%BE%EA%B8%B0-%EC%86%A1%ED%83%84-%ED%8F%89%ED%83%9D-%EB%B0%A4%EB%8A%A6%EA%B2%8C-%EC%B9%98%ED%86%B5-%EC%A7%84%EB%A3%8C-%EB%B3%91%EC%9B%90/"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 송탄 턱관절 치료",
+      "region": "송탄",
+      "regionSlug": "songtan",
+      "treatment": "tmj",
+      "topKeywords": [
+        "턱관절",
+        "턱관절치료",
+        "평택",
+        "송탄",
+        "이갈이",
+        "이악물기",
+        "통증",
+        "스플린트",
+        "교정",
+        "물리치료"
+      ],
+      "longTailKeywords": [
+        "평택 송탄 턱관절 치료",
+        "송탄 턱관절 통증 치료",
+        "평택 송탄 턱관절 장애",
+        "송탄 이갈이 턱관절 치료",
+        "평택 턱관절 스플린트",
+        "송탄 턱관절 물리치료",
+        "평택 송탄 턱관절 소리",
+        "송탄 입 벌릴 때 통증",
+        "평택 송탄 턱관절 전문치과",
+        "송탄 턱관절 네이버예약",
+        "평택 턱관절 치료 잘하는 치과",
+        "송탄 턱관절 교정 치료",
+        "평택 송탄 턱관절 진단",
+        "송탄 턱관절 상담"
+      ],
+      "titlePatterns": [
+        "[지역] 턱관절 치료가 필요하다면?",
+        "[지역]+[치과명] | [지역]치과",
+        "턱관절치료 - [치과명]",
+        "[지역] [치과명] / [전문분야]",
+        "### 턱관절 치료"
+      ],
+      "commonPhrases": [
+        "이갈이, 이악물기 등 원인 설명",
+        "정확한 진단과 상담",
+        "스플린트/장치 치료",
+        "비수술적 치료",
+        "턱관절 통증·소리·개구장애"
+      ],
+      "userIntent": "송탄/평택에서 턱관절 통증, 소리, 개구장애, 이갈이 같은 증상을 진단하고 치료할 수 있는 치과를 찾으려는 의도다.",
+      "competitorUrls": [
+        "https://www.eteokfirst.com/tmj.php",
+        "https://www.eplant.kr/",
+        "https://www.xn--vb0br42bg7bhh33e0ew8mu7uzwhwa.kr/%EC%B2%B4%EC%99%B8%EC%B6%A9%EA%B2%A9%ED%8C%8C%EC%B9%98%EB%A3%8C",
+        "https://www.gdfirstdent.com/",
+        "https://www.bioka.net/%ED%84%B1%EA%B4%80%EC%A0%88%EC%B9%98%EB%A3%8C/"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 지제역 임플란트 추천",
+      "region": "지제역",
+      "regionSlug": "jije",
+      "treatment": "implant",
+      "topKeywords": [
+        "지제역",
+        "평택",
+        "임플란트",
+        "치과",
+        "추천",
+        "디지털",
+        "수면",
+        "오스템",
+        "원데이",
+        "뼈이식"
+      ],
+      "longTailKeywords": [
+        "평택 지제역 임플란트 추천",
+        "지제역 임플란트 잘하는 치과",
+        "평택 지제역 임플란트 비용",
+        "지제역 수면 임플란트 치과",
+        "평택 고덕 지제역 임플란트",
+        "지제역 원데이 임플란트",
+        "평택 지제역 어금니 임플란트",
+        "지제역 앞니 임플란트 치과",
+        "평택 지제역 뼈이식 임플란트",
+        "지제역 디지털 임플란트 추천",
+        "평택 지제역 임플란트 후기",
+        "지제역 임플란트 상담 치과",
+        "평택 지제역 무절개 임플란트",
+        "지제역 임플란트 가격 비교",
+        "평택 지제역 임플란트 통증"
+      ],
+      "titlePatterns": [
+        "지역명 + 임플란트 + 추천",
+        "지역명 + 치과 + 임플란트",
+        "임플란트 + 후기/잘하는 곳",
+        "디지털/수면/원데이 + 임플란트",
+        "임플란트 + 비용/가격/상담"
+      ],
+      "commonPhrases": [
+        "임상경험이 풍부한",
+        "정확한 진단",
+        "디지털 장비",
+        "통증 부담을 줄인",
+        "개인별 맞춤 치료"
+      ],
+      "userIntent": "지제역 인근에서 임플란트를 잘하는 치과를 후기, 비용, 치료 방식, 접근성까지 비교해 신뢰할 만한 병원을 찾으려는 의도다.",
+      "competitorUrls": [
+        "https://cloud.google.com/generative-ai-app-builder/docs/try-media-recommendations?hl=ko",
+        "https://cloud.google.com/bigquery/docs/information-schema-recommendations?hl=ko",
+        "https://cloud.google.com/run/docs/recommender?hl=ko",
+        "https://cloud.google.com/storage/docs/anywhere-cache-recommender?hl=ko",
+        "https://cue.search.naver.com/"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 지제역 틀니",
+      "region": "지제역",
+      "regionSlug": "jije",
+      "treatment": "denture",
+      "topKeywords": [
+        "틀니",
+        "지제역",
+        "평택",
+        "치과",
+        "보철",
+        "임플란트",
+        "잇몸",
+        "상실치아",
+        "보험",
+        "가철성"
+      ],
+      "longTailKeywords": [
+        "평택 지제역 틀니 치과",
+        "지제역 틀니 잘하는 치과",
+        "평택 지제역 부분틀니",
+        "평택 지제역 전체틀니",
+        "지제역 보험 틀니 치과",
+        "평택 지제역 노인 틀니",
+        "지제역 틀니 상담",
+        "평택 지제역 틀니 가격",
+        "지제역 임플란트 틀니",
+        "평택 지제역 치아 상실 틀니",
+        "평택 지제역 틀니 보철 치료",
+        "지제역 틀니 장착 치과",
+        "평택 지제역 틀니 유지관리",
+        "지제역 고정성 보철 틀니",
+        "평택 지제역 무치악 틀니"
+      ],
+      "titlePatterns": [
+        "[치과명]-[지제역/평택 동삭동/세교동] 치과",
+        "[지역] [치과명] | 틀니/임플란트/보철",
+        "평택 [지제역] [치료명] 치과",
+        "[브랜드명] [지역명] [치료군] 안내",
+        "지제역 [치과명] - [진료과목]"
+      ],
+      "commonPhrases": [
+        "틀니는 다수의 치아를 상실한 경우",
+        "가철성 보철물",
+        "보험 적용 가능",
+        "잇몸치료와 병행",
+        "꼼꼼한 진료와 정밀 진단"
+      ],
+      "userIntent": "지제역 인근에서 틀니 진료를 잘하는 치과를 찾고, 보험 적용과 진료 방식까지 비교해보려는 검색 의도다.",
+      "competitorUrls": [
+        "https://www.artedental.kr/",
+        "https://www.ysplus.co.kr/",
+        "https://r.yna.co.kr/www/imazine/201910/224.pdf",
+        "https://r.yna.co.kr/www/imazine/202012/250.pdf",
+        "https://www.fntimes.com/html/view.php?ud=2023112709383321575e6e69892f_18"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 지제역 충치 신경치료",
+      "region": "지제역",
+      "regionSlug": "jije",
+      "treatment": "cavity-treatment",
+      "topKeywords": [
+        "충치",
+        "신경치료",
+        "치과",
+        "지제역",
+        "평택",
+        "근관치료",
+        "레진",
+        "크라운",
+        "통증",
+        "과잉진료"
+      ],
+      "longTailKeywords": [
+        "평택 지제역 충치 치료",
+        "지제역 신경치료 치과",
+        "평택 지제역 근관치료",
+        "지제역 충치 레진 치료",
+        "평택 지제역 크라운 신경치료",
+        "지제역 치과 충치 치료 잘하는곳",
+        "평택 지제역 치아 통증 신경치료",
+        "지제역 어금니 충치 치료",
+        "평택 지제역 과잉진료 없는 치과",
+        "지제역 급한 충치 치료",
+        "평택 지제역 신경치료 비용",
+        "지제역 충치 신경치료 후기",
+        "평택 지제역 주말 진료 치과",
+        "지제역 야간진료 충치 치료"
+      ],
+      "titlePatterns": [
+        "[지역명] + [치과명] + 충치/신경치료",
+        "[지제역] + 치과 + [진료과목 나열]",
+        "충치·신경치료를 포함한 통합 진료형 타이틀",
+        "[치과명] | [지역명] 치과 | [세부 지역] 치과",
+        "후기/비용/잘하는곳을 결합한 정보형 타이틀"
+      ],
+      "commonPhrases": [
+        "자연치아 살리기",
+        "충치 치료부터 신경치료까지",
+        "과잉진료 없는",
+        "통증이 심한 경우",
+        "정확한 진단과 상담"
+      ],
+      "userIntent": "지제역 근처에서 충치나 신경치료가 가능한 치과를 찾고, 진료 범위·후기·비용·과잉진료 여부를 비교하려는 의도입니다.",
+      "competitorUrls": [
+        "https://www.ysplus.co.kr/",
+        "https://beautiplant.co.kr/",
+        "https://ys1dream.com/",
+        "https://www.hanspe.com/",
+        "https://hungrysteve.tistory.com/21"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 지제역 사랑니 발치",
+      "region": "지제역",
+      "regionSlug": "jije",
+      "treatment": "wisdom-tooth",
+      "topKeywords": [
+        "사랑니",
+        "발치",
+        "매복사랑니",
+        "지제역",
+        "평택",
+        "치과",
+        "구강외과",
+        "당일발치",
+        "CT",
+        "마취"
+      ],
+      "longTailKeywords": [
+        "지제역 사랑니 발치",
+        "평택 지제역 사랑니 발치",
+        "지제역 매복사랑니 발치",
+        "평택 매복사랑니 발치 치과",
+        "지제역 사랑니 당일 발치",
+        "평택 사랑니 발치 잘하는 치과",
+        "지제역 구강외과 사랑니",
+        "지제역 사랑니 CT 촬영",
+        "평택 지제역 매복 사랑니",
+        "지제역 사랑니 붓기 통증",
+        "평택 지제역 무통 사랑니 발치",
+        "지제역 대학병원 수준 사랑니 발치",
+        "평택 지제역 사랑니 발치 후기",
+        "지제역 사랑니 실비 보험",
+        "지제역 사랑니 뽑는 치과"
+      ],
+      "titlePatterns": [
+        "[지역] + 사랑니 발치 + [치과/잘하는/전문의]",
+        "[지역] + 매복사랑니 + [발치/치과]",
+        "[지역] + 사랑니 + CT/당일/통증",
+        "[평택·지제역] + 구강외과/전문의 + 사랑니",
+        "[사랑니 발치] + 후기/비용/보험/붓기"
+      ],
+      "commonPhrases": [
+        "매복사랑니",
+        "CT 촬영 후 진단",
+        "통증과 붓기",
+        "전문의 상담",
+        "당일 발치 가능"
+      ],
+      "userIntent": "지제역 인근에서 사랑니, 특히 매복사랑니를 통증과 부담을 줄여 안전하게 발치할 수 있는 치과와 관련 정보(진료 가능 여부, 전문성, 후기, 비용/보험)를 찾으려는 의도이다.",
+      "competitorUrls": [
+        "https://play.google.com/store/apps/details?id=com.srt.parking",
+        "https://play.google.com/store/apps/details?hl=en_US&id=com.srt.parking",
+        "https://play.google.com/store/apps/details?id=com.kor.eodentalinsmall",
+        "https://play.google.com/store/apps/details?id=com.kor.npinsusilbi",
+        "https://play.google.com/store/apps/details?id=com.watchmile.individualJJTSCP"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 지제역 치아 미백",
+      "region": "지제역",
+      "regionSlug": "jije",
+      "treatment": "whitening",
+      "topKeywords": [
+        "지제역",
+        "평택",
+        "치아미백",
+        "치과",
+        "세교동",
+        "심미치료",
+        "미백",
+        "자연치아",
+        "시린이",
+        "스케일링"
+      ],
+      "longTailKeywords": [
+        "평택 지제역 치아 미백",
+        "지제역 치과 치아미백",
+        "평택 세교동 치아 미백",
+        "지제역 앞 치과 미백",
+        "평택 지제역 미백치료",
+        "지제역 치아미백 비용",
+        "평택 지제역 심미치과",
+        "지제역 시린이 없는 미백",
+        "평택 세교동 미백치료",
+        "지제역 치과 추천 미백",
+        "평택 지제역 자연치아 미백",
+        "평택 지제역 치과 상담",
+        "지제역 치아 착색 미백",
+        "평택 지제역 스케일링 미백"
+      ],
+      "titlePatterns": [
+        "{지역} {역명} 치과",
+        "{지역} {역명} 치과, {세부동} 치과",
+        "{지역} {역명} 심미/보철/일반진료",
+        "{역명} 도보권/건너편/인근 치과",
+        "{지역} 치과 + 대표진료/전문의 강조"
+      ],
+      "commonPhrases": [
+        "15년 이상의 임상경험",
+        "통합치의학과 전문의",
+        "자연치아와 색과 질감",
+        "치아삭제는 최소로",
+        "시린 증상"
+      ],
+      "userIntent": "평택 지제역 근처에서 치아 미백을 잘하는 치과를 찾고, 시술 방식·안전성·비용·거리 정보를 비교하려는 의도입니다.",
+      "competitorUrls": [
+        "https://www.ysplus.co.kr/",
+        "https://www.artedental.kr/",
+        "https://www.fntimes.com/html/view.php?ud=2023112709383321575e6e69892f_18",
+        "https://sports.donga.com/economy/article/all/20160904/80130204/3",
+        "https://r.yna.co.kr/www/imazine/201910/224.pdf"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 지제역 잇몸치료 스케일링",
+      "region": "지제역",
+      "regionSlug": "jije",
+      "treatment": "gum-care",
+      "topKeywords": [
+        "지제역",
+        "평택",
+        "치과",
+        "스케일링",
+        "잇몸치료",
+        "치주치료",
+        "잇몸질환",
+        "예방",
+        "건강보험",
+        "정기검진"
+      ],
+      "longTailKeywords": [
+        "평택 지제역 스케일링 치과",
+        "지제역 잇몸치료 잘하는 치과",
+        "평택 지제역 치주치료 치과",
+        "지제역 스케일링 보험 적용",
+        "평택 지제역 잇몸질환 치료",
+        "지제역 정기 스케일링 치과",
+        "평택 지제동 잇몸치료 치과",
+        "평택 세교동 스케일링 치과",
+        "지제역 치과 잇몸관리",
+        "평택 지제역 예방치료 치과"
+      ],
+      "titlePatterns": [
+        "[지역/역명] + 치과 + [진료항목]",
+        "[지역명] 치과 | [세부 치료]",
+        "[지역명] + [역세권/동네] + 치과",
+        "[브랜드명] 치과 - [지역] 치과",
+        "[치료명] & [치료명] 형태의 병렬 타이틀"
+      ],
+      "commonPhrases": [
+        "스케일링과 별도로",
+        "치과의사의 판단하에",
+        "국민건강보험 적용",
+        "세밀한 스케일링 및 치주치료",
+        "정기적인 관리로 예방"
+      ],
+      "userIntent": "지제역 인근에서 잇몸치료와 스케일링을 받을 수 있는 치과를 찾고, 보험 적용 여부와 진료 접근성을 함께 확인하려는 의도이다.",
+      "competitorUrls": [
+        "https://www.ysplus.co.kr/",
+        "https://www.artedental.kr/",
+        "https://www.gdfirstdent.com/",
+        "https://www.ys-newdental.com/",
+        "https://www.clearplus.co.kr/"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 지제역 턱관절 치료",
+      "region": "지제역",
+      "regionSlug": "jije",
+      "treatment": "tmj",
+      "topKeywords": [
+        "턱관절",
+        "턱관절 치료",
+        "평택",
+        "지제역",
+        "치과",
+        "통증",
+        "스플린트",
+        "교합",
+        "보톡스",
+        "관절주사"
+      ],
+      "longTailKeywords": [
+        "평택 지제역 턱관절 치료",
+        "지제역 턱관절 전문치과",
+        "평택 지제역 턱관절 통증 치료",
+        "지제역 턱관절 스플린트 제작",
+        "평택 지제역 턱관절 보톡스",
+        "지제역 턱관절 교합 치료",
+        "평택 지제역 턱소리 딱 소리 치료",
+        "지제역 턱관절 물리치료 치과",
+        "평택 지제역 마우스가드 제작",
+        "지제역 턱관절 초기 진단 예약",
+        "평택 지제역 턱관절 관절주사",
+        "지제역 턱관절 수술 상담"
+      ],
+      "titlePatterns": [
+        "지역 + 치과명 | 지역치과 | 치료분야(임플란트·턱관절 등)",
+        "치과명-지역(지제역) 치과, 평택 지제역 치과",
+        "치과명 - 턱관절 치료 소개(증상·치료법 안내)",
+        "평택/지제역 + 턱관절·보톡스·수면진료(복합 진료 항목)",
+        "OO치과 | 임플란트 | 교정 | 턱관절 (진료항목 나열)"
+      ],
+      "commonPhrases": [
+        "통증 완화",
+        "정밀 진단",
+        "맞춤형 치료",
+        "스플린트(마우스가드) 장치치료",
+        "초진 상담·예약"
+      ],
+      "userIntent": "평택 지제역 인근에서 턱관절(통증·딱소리·교합 이상)을 정확히 진단하고 스플린트·보톡스·관절주사 등으로 치료해 줄 치과(위치·예약·비용)를 찾기 위함.",
+      "competitorUrls": [
+        "https://www.eteokfirst.com/",
+        "https://www.ysplus.co.kr/",
+        "https://www.artedental.kr/",
+        "https://www.ys-newdental.com/",
+        "https://www.tor-dental.com/"
+      ],
+      "_model": "gpt-5-mini"
+    },
+    {
+      "query": "평택 안중 임플란트 추천",
+      "region": "안중읍",
+      "regionSlug": "anjung",
+      "treatment": "implant",
+      "topKeywords": [
+        "임플란트",
+        "치과",
+        "안중읍",
+        "평택",
+        "가격",
+        "후기",
+        "추천",
+        "잘하는 곳",
+        "보험 적용",
+        "어금니"
+      ],
+      "longTailKeywords": [
+        "평택 안중읍 임플란트 잘하는 치과",
+        "안중읍 임플란트 치과 가격 후기",
+        "평택시 안중읍 임플란트 병원 추천",
+        "안중읍 어금니 임플란트 보험 적용",
+        "평택 안중읍 임플란트 비용 비교",
+        "안중읍 근처 임플란트 후기 좋은 치과",
+        "평택 안중 임플란트 잘하는 곳",
+        "평택 안중읍 앞니 임플란트 추천",
+        "안중읍 임플란트 치과 방문 후기",
+        "평택 안중읍 저렴한 임플란트 치과",
+        "안중읍 임플란트 뼈이식 비용",
+        "평택 안중읍 틀니 임플란트 비교",
+        "안중읍 임플란트 수술 잘하는 치과",
+        "평택 안중읍 네비게이션 임플란트",
+        "안중읍 치과 임플란트 가격 정보"
+      ],
+      "titlePatterns": [
+        "[지역명] 임플란트 잘하는 치과/병원 및 가격 추천",
+        "[지역명] 임플란트 치과 가격, 근처 잘하는 곳 후기 정보",
+        "[지역명] 임플란트 치과 추천 싼곳/저렴한곳/후기 총정리",
+        "[지역명] 임플란트 TOP 5 추천",
+        "[지역명] 치과 선택 가이드: 저렴하고 후기 좋은 곳"
+      ],
+      "commonPhrases": [
+        "잘하는 곳",
+        "저렴한 곳",
+        "후기 좋은",
+        "가격 비교",
+        "보험 적용"
+      ],
+      "userIntent": "안중읍에서 임플란트 치료를 받을 만한 치과를 가격, 후기, 보험 적용 여부까지 비교해 신뢰할 수 있는 추천 병원을 찾으려는 의도입니다.",
+      "competitorUrls": [
+        "https://loyalloadblog.co.kr/%ED%8F%89%ED%83%9D%EC%8B%9C-%EC%95%88%EC%A4%91%EC%9D%8D-%EC%9E%84%ED%94%8C%EB%9E%80%ED%8A%B8-%EC%9E%98%ED%95%98%EB%8A%94-%EC%B9%98%EA%B3%BC-%EB%B3%91%EC%9B%90-%EB%B0%8F-%EA%B0%80%EA%B2%A9-%EC%B6%94/",
+        "https://healstory.co.kr/%EC%95%88%EC%A4%91%EC%9D%8D-%EC%9E%84%ED%94%8C%EB%9E%80%ED%8A%B8-%EC%B9%98%EA%B3%BC-%EA%B0%80%EA%B2%A9-%EA%B7%BC%EC%B2%98-%EC%9E%98%ED%95%98%EB%8A%94-%EA%B3%B3-%ED%9B%84%EA%B8%B0-%EC%A0%95%EB%B3%B4/",
+        "https://ddoddopet.com/",
+        "https://chosearch.com/pyeongtaek-dentist/",
+        "https://insight835.tistory.com/3311"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 안중 틀니",
+      "region": "안중읍",
+      "regionSlug": "anjung",
+      "treatment": "denture",
+      "topKeywords": [
+        "틀니",
+        "임플란트",
+        "치과",
+        "안중",
+        "평택",
+        "치료",
+        "보험",
+        "상담",
+        "비용",
+        "의치"
+      ],
+      "longTailKeywords": [
+        "평택 안중 틀니 치과",
+        "안중읍 틀니 잘하는 치과",
+        "평택 안중 임플란트 틀니",
+        "안중역 근처 틀니 치과",
+        "평택 안중 전체 틀니",
+        "평택 안중 부분 틀니",
+        "안중읍 틀니 비용",
+        "평택 안중 틀니 상담",
+        "평택 안중 노인 틀니",
+        "안중읍 보험 틀니",
+        "평택 서부지역 틀니 치과",
+        "안중읍 치과 틀니 진료",
+        "평택 안중 의치 치료",
+        "평택 안중 틀니 추천",
+        "안중읍 틀니 가격"
+      ],
+      "titlePatterns": [
+        "[지역명] + [치과/의원] + [틀니]",
+        "[지역명] + [틀니] + [잘하는/추천]",
+        "[임플란트] + [틀니] + [지역명]",
+        "[보험/비용] + [틀니] + [상담]",
+        "[전체/부분] + [틀니] + [치료]"
+      ],
+      "commonPhrases": [
+        "틀니 잘하는 치과",
+        "임플란트 틀니",
+        "전체 틀니 부분 틀니",
+        "보험 적용 상담",
+        "편안한 저작 기능"
+      ],
+      "userIntent": "안중읍과 평택 서부권에서 틀니 진료를 제공하는 치과를 찾고, 비용·보험·종류·상담 가능 여부를 빠르게 비교하려는 의도입니다.",
+      "competitorUrls": [
+        "https://play.google.com/store/apps/details?id=com.scvz.ricometotal",
+        "https://sites.google.com/view/puricline/%EA%B2%BD%EA%B8%B0%EB%8F%84/%ED%8F%89%ED%83%9D",
+        "https://play.google.com/store/apps/details?hl=ko&id=com.pyeongtaek.pyeongtaek_app",
+        "https://play.google.com/store/details?id=com.gtrace.ptqr.wt.samsung.app",
+        "https://books.google.com/books/about/%ED%8F%89%ED%83%9D_%EC%95%88%EC%A4%91_%EC%84%B1%ED%95%B4%EB%A6%AC_%EC%82%B095%EC%9E%84_%EC%9D%BC%EC%9B%90.html?id=KRTEwQEACAAJ"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 안중 충치 신경치료",
+      "region": "안중읍",
+      "regionSlug": "anjung",
+      "treatment": "cavity-treatment",
+      "topKeywords": [
+        "충치",
+        "신경치료",
+        "치과",
+        "평택",
+        "안중",
+        "치아",
+        "통증",
+        "치료",
+        "보존치료",
+        "치아우식증"
+      ],
+      "longTailKeywords": [
+        "안중읍 충치 신경치료 치과",
+        "평택 안중 충치 치료 잘하는 치과",
+        "안중역 근처 신경치료 치과",
+        "평택 안중 어금니 충치 신경치료",
+        "안중읍 치아 통증 신경치료",
+        "평택 안중 야간 진료 치과 충치",
+        "안중 충치치료 비용",
+        "평택 안중 신경치료 후기",
+        "안중읍 치과 충치 레진 치료",
+        "평택 안중 치아 시림 신경치료",
+        "안중읍 어금니 신경치료 치과",
+        "평택 안중 급한 치통 치과",
+        "안중읍 보존치료 치과",
+        "평택 안중 충치 초기 치료",
+        "안중 충치 신경치료 가능한 치과"
+      ],
+      "titlePatterns": [
+        "[지역명] [치료명] 잘하는 치과",
+        "[지역명] 치과 | [치료] · [보존치료]",
+        "[지역명] [증상] [치료]",
+        "[지역명] [교정/임플란트 외] 일반진료 소개형",
+        "[지역명] + 치과명 + 진료과목 나열형"
+      ],
+      "commonPhrases": [
+        "충치가 신경까지 진행된 경우",
+        "치아 통증이 심할 때",
+        "자연치아를 살리는 치료",
+        "정확한 진단과 맞춤 치료",
+        "빠른 내원과 조기 치료가 중요"
+      ],
+      "userIntent": "안중읍·평택 안중에서 충치가 심해 신경치료가 필요한 상황에, 치료 가능한 치과의 위치·진료 여부·후기·비용·접근성을 확인하려는 의도다.",
+      "competitorUrls": [
+        "https://search.naver.com/search.naver?query=%ED%8F%89%ED%83%9D+%EC%95%88%EC%A4%91+%EC%B6%A9%EC%B9%98+%EC%8B%A0%EA%B2%BD%EC%B9%98%EB%A3%8C",
+        "https://www.google.com/search?q=%ED%8F%89%ED%83%9D+%EC%95%88%EC%A4%91+%EC%B6%A9%EC%B9%98+%EC%8B%A0%EA%B2%BD%EC%B9%98%EB%A3%8C",
+        "https://www.google.com/search?hl=ko&q=%ED%8F%89%ED%83%9D+%EC%95%88%EC%A4%91+%EC%B6%A9%EC%B9%98+%EC%8B%A0%EA%B2%BD%EC%B9%98%EB%A3%8C+%EC%B9%98%EA%B3%BC",
+        "https://search.naver.com/search.naver?query=%EC%95%88%EC%A4%91%EC%9D%8D+%EC%B6%A9%EC%B9%98%EC%B9%98%EB%A3%8C+%EC%8B%A0%EA%B2%BD%EC%B9%98%EB%A3%8C",
+        "https://www.google.com/search?q=%EC%95%88%EC%A4%91%EC%9D%8D+%EC%B6%A9%EC%B9%98%EC%B9%98%EB%A3%8C+%EC%8B%A0%EA%B2%BD%EC%B9%98%EB%A3%8C"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 안중 사랑니 발치",
+      "region": "안중읍",
+      "regionSlug": "anjung",
+      "treatment": "wisdom-tooth",
+      "topKeywords": [
+        "사랑니",
+        "발치",
+        "안중",
+        "평택",
+        "매복사랑니",
+        "치과",
+        "잇몸",
+        "통증",
+        "염증",
+        "턱관절"
+      ],
+      "longTailKeywords": [
+        "평택 안중 사랑니 발치",
+        "안중읍 사랑니 발치 치과",
+        "평택 안중 매복사랑니 발치",
+        "안중 사랑니 발치 잘하는 치과",
+        "평택 안중 사랑니 발치 비용",
+        "안중읍 매복 사랑니 발치",
+        "평택 서부권 사랑니 발치",
+        "안중 사랑니 염증 발치",
+        "평택 안중 사랑니 당일 발치",
+        "안중읍 사랑니 통증 치료",
+        "평택 안중 잇몸 붓기 사랑니",
+        "안중 사랑니 발치 후기",
+        "평택 안중 대학병원 사랑니 발치",
+        "평택 안중 치과 사랑니 상담",
+        "안중읍 사랑니 신경 위치 발치"
+      ],
+      "titlePatterns": [
+        "[지역명] + [치과/의원] + 사랑니 발치",
+        "[지역명] + 매복사랑니 + 발치/수술",
+        "[사랑니 발치] + 비용/통증/후기",
+        "[지역명] + 잘하는/전문 + 치과",
+        "[사랑니] + 염증/붓기/턱통증 + 치료"
+      ],
+      "commonPhrases": [
+        "매복사랑니",
+        "잇몸 절개",
+        "통증 완화",
+        "염증 및 붓기",
+        "신경과의 거리"
+      ],
+      "userIntent": "안중읍과 평택 서부권에서 사랑니 발치가 가능한 치과를 찾고, 매복 여부·통증·비용·진료 가능성까지 함께 비교하려는 의도다.",
+      "competitorUrls": [
+        "https://www.google.com/search?q=%ED%8F%89%ED%83%9D+%EC%95%88%EC%A4%91+%EC%82%AC%EB%9E%91%EB%8B%88+%EB%B0%9C%EC%B9%98",
+        "https://search.naver.com/search.naver?query=%ED%8F%89%ED%83%9D+%EC%95%88%EC%A4%91+%EC%82%AC%EB%9E%91%EB%8B%88+%EB%B0%9C%EC%B9%98",
+        "https://contents.premium.naver.com/doublemoney/bohum/contents/260318135745865er",
+        "https://contents.premium.naver.com/doublemoney/bohum/contents/260317145201817bd",
+        "https://play.google.com/store/apps/details?id=com.kor.npinsusilbi"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 안중 치아 미백",
+      "region": "안중읍",
+      "regionSlug": "anjung",
+      "treatment": "whitening",
+      "topKeywords": [
+        "치아미백",
+        "평택",
+        "안중읍",
+        "치과",
+        "심미치료",
+        "미백",
+        "앞니",
+        "자연치아",
+        "야간진료",
+        "전문의"
+      ],
+      "longTailKeywords": [
+        "평택 안중읍 치아 미백",
+        "안중읍 치과 치아미백",
+        "평택 안중 치과 미백",
+        "평택 안중읍 앞니 미백",
+        "안중읍 심미치료 치아미백",
+        "평택 치아미백 잘하는 치과",
+        "안중읍 치아미백 비용",
+        "평택 안중읍 야간진료 치과",
+        "안중읍 미백 상담 치과",
+        "평택 안중읍 자연치아 미백",
+        "평택 안중읍 치과 추천 미백",
+        "안중읍 앞니 변색 미백",
+        "평택 안중읍 심미보철 미백",
+        "평택 안중읍 치아 착색 미백",
+        "안중읍 치아미백 후기"
+      ],
+      "titlePatterns": [
+        "[지역] + 치과/치과의원 + 서비스 나열",
+        "[지역] + 추천/잘하는 곳 + 치료명",
+        "치과명 + 위치/진료정보 + 지역",
+        "브랜드/홍보형 제목 + 지역명 노출",
+        "시술명(치아미백) + 연관 심미치료(라미네이트/크라운)"
+      ],
+      "commonPhrases": [
+        "자연치아 보존",
+        "과잉진료 없는",
+        "대표원장 직접 진료",
+        "심미보철/심미치료",
+        "야간진료/주말진료"
+      ],
+      "userIntent": "안중읍·평택 인근에서 치아 미백을 받을 수 있는 치과의 위치, 진료 여부, 신뢰도와 함께 비교해 빠르게 예약 가능한 곳을 찾으려는 의도이다.",
+      "competitorUrls": [
+        "https://www.welfarehello.com/recommend-policy/situation/emergency/44116",
+        "https://www.daangn.com/kr/business-post/%EB%8B%B9%EC%8B%A0%EC%9D%B4-%EA%B7%B8%ED%86%A0%EB%A1%9D-%EB%B0%94%EB%9D%BC%EB%8D%98-%EC%B9%98%EA%B3%BC-z4ekdjauavnm/",
+        "https://www.life114.co.kr/?M_SEQ=567517",
+        "https://ddoddopet.com/",
+        "https://www.postincome.co.kr/archives/229165"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 안중 잇몸치료 스케일링",
+      "region": "안중읍",
+      "regionSlug": "anjung",
+      "treatment": "gum-care",
+      "topKeywords": [
+        "스케일링",
+        "잇몸치료",
+        "치주염",
+        "치주질환",
+        "치주낭",
+        "치근활택술",
+        "치석 제거",
+        "잇몸 붓기",
+        "잇몸 출혈",
+        "구강검진"
+      ],
+      "longTailKeywords": [
+        "평택 안중 스케일링 치과",
+        "안중읍 잇몸치료 잘하는 치과",
+        "평택 안중 치주염 치료",
+        "안중 스케일링 건강보험 적용",
+        "평택 안중 잇몸이 붓고 피날때",
+        "안중읍 치석 제거 치과",
+        "평택 안중 치근활택술 치과",
+        "안중 정기 스케일링 치과",
+        "평택 안중 잇몸 출혈 치료",
+        "안중읍 치주질환 치료 치과",
+        "평택 안중 스케일링 후기",
+        "안중 잇몸치료 비용",
+        "평택 안중 치주관리 치과",
+        "안중읍 잇몸 수술 치과",
+        "평택 안중 예방 스케일링"
+      ],
+      "titlePatterns": [
+        "[지역/동네] + 치과명 + 솔직 후기 / 스케일링, 정기검진…",
+        "[지역] 치과의원 + 잇몸치료/스케일링 안내",
+        "[지역] + 치과 + 잇몸치료 & 스케일링",
+        "잇몸치료 비용과 효과｜초기증상부터 주의사항까지",
+        "스케일링 건강보험/비용 총정리"
+      ],
+      "commonPhrases": [
+        "스케일링과 별도로",
+        "국민건강보험 적용",
+        "잇몸이 붓고 피가 나며",
+        "치근면 활택술/치은 소파술",
+        "초기에는 스케일링으로 관리 가능"
+      ],
+      "userIntent": "평택 안중읍에서 잇몸이 붓거나 피나는 증상에 대해 스케일링과 잇몸치료가 가능한 치과를 찾고, 비용·보험 적용·후기까지 비교하려는 의도입니다.",
+      "competitorUrls": [
+        "https://www.ysplus.co.kr/",
+        "https://www.regendc.co.kr/page.html?url=sub0504",
+        "https://bongbong2.tistory.com/58",
+        "https://www.gdfirstdent.com/",
+        "https://www.allbarundental.co.kr/"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 안중 턱관절 치료",
+      "region": "안중읍",
+      "regionSlug": "anjung",
+      "treatment": "tmj",
+      "topKeywords": [
+        "턱관절",
+        "턱관절 치료",
+        "평택",
+        "안중",
+        "통증",
+        "입이 안 벌어짐",
+        "딱딱 소리",
+        "교합",
+        "구강악안면외과",
+        "스플린트"
+      ],
+      "longTailKeywords": [
+        "평택 안중 턱관절 치료",
+        "안중읍 턱관절 통증 치료",
+        "평택 안중 입벌림 통증 치료",
+        "안중 턱관절 딱딱 소리 병원",
+        "평택 안중 턱관절장애 진료",
+        "안중역 턱관절 치료 치과",
+        "평택 안중 턱관절 스플린트",
+        "안중읍 턱관절 교합 치료",
+        "평택 안중 턱 통증 치과",
+        "안중 턱관절 물리치료",
+        "평택 안중 턱관절 MRI 진료",
+        "안중읍 턱관절 염증 치료",
+        "평택 안중 턱관절 전문 치과",
+        "안중 턱관절 한쪽 통증",
+        "평택 안중 턱관절 야간진료"
+      ],
+      "titlePatterns": [
+        "[지역명] + [증상/치료] + 치과/병원",
+        "턱관절 치료 | [지역명] [의료기관명]",
+        "[지역명] 턱관절장애/턱통증/입벌림 + 진료 안내",
+        "턱관절 스플린트/교합장치 + [지역명]",
+        "[지역명] + 구강악안면외과/치과 + 턱관절"
+      ],
+      "commonPhrases": [
+        "입을 벌릴 때 통증",
+        "딱딱 소리",
+        "한쪽으로 턱이 움직임",
+        "턱관절장애(TMJ/TMD)",
+        "스플린트(장치) 치료"
+      ],
+      "userIntent": "평택 안중읍에서 턱관절 통증, 입벌림 제한, 턱 소리 같은 증상을 진료할 수 있는 가까운 치과·병원을 찾고 치료 방법과 전문성을 비교하려는 의도입니다.",
+      "competitorUrls": [
+        "https://play.google.com/store/apps/details?hl=ko&id=com.app.xedaq",
+        "https://books.google.com/books/about/%ED%8F%89%ED%83%9D_%EC%95%88%EC%A4%91_%EC%84%B1%ED%95%B4%EB%A6%AC_%EC%82%B095%EC%9E%84_%EC%9D%BC%EC%9B%90.html?id=KRTEwQEACAAJ",
+        "https://patents.google.com/patent/KR102425662B1/ko",
+        "https://patents.google.com/patent/KR101643850B1/ko",
+        "https://patents.google.com/patent/KR102654204B1/en"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 청북 임플란트 추천",
+      "region": "청북읍",
+      "regionSlug": "cheongbuk",
+      "treatment": "implant",
+      "topKeywords": [
+        "임플란트",
+        "치과",
+        "추천",
+        "평택",
+        "청북",
+        "수면임플란트",
+        "오스템",
+        "디지털 임플란트",
+        "당일식립",
+        "보험"
+      ],
+      "longTailKeywords": [
+        "청북읍 임플란트 추천",
+        "평택 청북 임플란트 치과",
+        "청북읍 수면 임플란트",
+        "평택 청북 디지털 임플란트",
+        "청북 임플란트 잘하는 치과",
+        "평택 청북 오스템 임플란트",
+        "청북읍 당일 임플란트",
+        "평택 청북 임플란트 비용",
+        "청북읍 무절개 임플란트",
+        "평택 청북 어금니 임플란트",
+        "청북읍 앞니 임플란트",
+        "평택 청북 임플란트 후기",
+        "청북읍 치아보험 임플란트",
+        "평택 청북 노인 임플란트",
+        "청북읍 원데이 임플란트"
+      ],
+      "titlePatterns": [
+        "[지역명] [치료명] [추천/잘하는/후기] 치과",
+        "[지역명] [치과명] - [치료/비용/후기]",
+        "[치료명] [비용/가격] + [지역명]",
+        "[지역명] [수면/디지털/당일] [치료명]",
+        "[치과] [지역명]에서 [치료명] 잘하는 곳"
+      ],
+      "commonPhrases": [
+        "정밀 진단",
+        "개인 맞춤 치료",
+        "통증 부담 최소화",
+        "풍부한 임상 경험",
+        "사후관리"
+      ],
+      "userIntent": "청북읍(평택)에서 임플란트를 잘하고 후기가 좋은 치과를 찾고, 비용·통증·치료 방식까지 비교해 선택하려는 의도다.",
+      "competitorUrls": [
+        "https://search.google.com/",
+        "https://www.google.com/",
+        "https://www.naver.com/",
+        "https://m.place.naver.com/",
+        "https://www.google.co.kr/"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 청북 틀니",
+      "region": "청북읍",
+      "regionSlug": "cheongbuk",
+      "treatment": "denture",
+      "topKeywords": [
+        "틀니",
+        "평택치과",
+        "청북읍",
+        "임플란트",
+        "전체틀니",
+        "부분틀니",
+        "보험틀니",
+        "노인틀니",
+        "치과",
+        "의치"
+      ],
+      "longTailKeywords": [
+        "청북읍 틀니 치과",
+        "평택 청북 틀니 잘하는 곳",
+        "평택 청북읍 노인틀니",
+        "평택 청북 보험틀니",
+        "청북읍 전체틀니 치과",
+        "청북읍 부분틀니 상담",
+        "평택 청북 임플란트 틀니",
+        "평택 청북 틀니 가격",
+        "청북읍 틀니 유지관리",
+        "평택 청북 어르신 틀니",
+        "평택 청북 틀니 제작",
+        "청북읍 치과 틀니 상담"
+      ],
+      "titlePatterns": [
+        "[지역명] + 치과/의원 + 틀니 진료",
+        "[지역명] + 임플란트 + 틀니 병행 소개",
+        "[지역명] + 노인틀니/보험틀니 안내",
+        "[지역명] + 치과명 + 오시는 길/진료과목",
+        "[지역명] + 전체임플란트/부분틀니 비교"
+      ],
+      "commonPhrases": [
+        "보험 적용 가능",
+        "어르신 구강건강",
+        "전체틀니·부분틀니",
+        "통증과 부기 최소화",
+        "정밀 진단 후 맞춤 제작"
+      ],
+      "userIntent": "청북읍·평택 인근에서 틀니 진료를 하는 치과를 찾고, 보험 적용·가격·전체/부분틀니 상담 가능 여부를 확인하려는 의도입니다.",
+      "competitorUrls": [
+        "https://www.ysplus.co.kr/",
+        "https://atriumdental.co.kr/",
+        "https://ddoddopet.com/",
+        "https://www.medicalkoreaguide.com/ko/dental/pyeongtaek-full-implant",
+        "https://www.artedental.kr/"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 청북 충치 신경치료",
+      "region": "청북읍",
+      "regionSlug": "cheongbuk",
+      "treatment": "cavity-treatment",
+      "topKeywords": [
+        "충치",
+        "신경치료",
+        "치과",
+        "근관치료",
+        "치료",
+        "통증",
+        "크라운",
+        "레진",
+        "건강보험",
+        "예약"
+      ],
+      "longTailKeywords": [
+        "평택 청북 충치 치료",
+        "평택 청북 신경치료",
+        "청북읍 충치 신경치료 치과",
+        "평택 청북 근관치료",
+        "청북 치과 충치 치료 비용",
+        "평택 청북 치아가 시릴 때 치과",
+        "청북읍 신경치료 후 크라운",
+        "평택 청북 충치 단계별 치료",
+        "청북 충치 레진 신경치료",
+        "평택 청북 통증 있는 충치 치료",
+        "청북읍 야간 진료 치과 충치",
+        "평택 청북 주말 진료 신경치료",
+        "청북읍 건강보험 충치치료",
+        "평택 청북 신경치료 잘하는 치과"
+      ],
+      "titlePatterns": [
+        "지역명 + 치과 + 치료명(충치/신경치료)",
+        "충치치료 + 비용/단계별/가이드",
+        "신경치료 + 꼭/왜/언제 필요한가",
+        "지역명 + 치과 + 진료과목 나열형",
+        "증상형 제목 + 치료 해결형"
+      ],
+      "commonPhrases": [
+        "충치가 신경까지 진행",
+        "통증이 심해지기 전 조기 치료",
+        "자연치아를 살리는 치료",
+        "신경치료 후 크라운 필요",
+        "건강보험 적용 여부"
+      ],
+      "userIntent": "청북읍·평택에서 충치가 신경까지 진행됐거나 통증이 있는 경우, 가까운 치과의 신경치료 가능 여부와 비용·진료편의·치료설명을 비교해 바로 방문할 곳을 찾으려는 의도입니다.",
+      "competitorUrls": [
+        "https://www.allbarundental.co.kr/",
+        "https://www.ttecase.com/columns/root-canal-crown-why-needed",
+        "https://www.clearplus.co.kr/",
+        "https://m.health.chosun.com/svc/news_view.html?contid=2021060400912",
+        "https://medisksu.co.kr/gamman"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 청북 사랑니 발치",
+      "region": "청북읍",
+      "regionSlug": "cheongbuk",
+      "treatment": "wisdom-tooth",
+      "topKeywords": [
+        "사랑니",
+        "발치",
+        "치과",
+        "평택",
+        "청북",
+        "매복사랑니",
+        "통증",
+        "붓기",
+        "CT",
+        "당일"
+      ],
+      "longTailKeywords": [
+        "평택 청북 사랑니 발치",
+        "청북읍 사랑니 발치 치과",
+        "평택 청북 매복사랑니 발치",
+        "평택 청북 사랑니 발치 후기",
+        "청북 사랑니 발치 통증",
+        "평택 사랑니 발치 잘하는 치과",
+        "청북읍 매복 사랑니 CT 촬영",
+        "평택 청북 사랑니 발치 비용",
+        "평택 청북 당일 사랑니 발치",
+        "청북읍 사랑니 발치 가능한 치과",
+        "평택 청북 아래 사랑니 발치",
+        "평택 청북 위 사랑니 발치",
+        "청북읍 사랑니 발치 붓기",
+        "평택 청북 사랑니 발치 예약",
+        "평택 청북 대학생 사랑니 발치"
+      ],
+      "titlePatterns": [
+        "[지역명] [치료명] [치과/잘하는/후기]",
+        "[지역명] 사랑니 발치 비용/후기/잘하는 곳",
+        "매복사랑니/사랑니 발치 + 지역명",
+        "당일/빠른/예약 + 사랑니 발치",
+        "CT/3D/정밀진단 + 사랑니 발치"
+      ],
+      "commonPhrases": [
+        "정밀 진단 후 치료",
+        "매복사랑니도 발치 가능",
+        "CT 촬영을 통한 확인",
+        "통증과 붓기 최소화",
+        "당일 상담/예약 가능"
+      ],
+      "userIntent": "청북읍과 평택 인근에서 사랑니 발치를 잘하는 치과를 찾고, 통증·매복 여부·비용·당일 진료 가능성까지 비교하려는 의도이다.",
+      "competitorUrls": [
+        "https://play.google.com/store/apps/details?id=com.kor.eodentalinsmall",
+        "https://books.google.com/books/about/%EC%82%AC%EB%9E%91%EB%8B%88.html?id=kDjvAgAAQBAJ",
+        "https://books.google.com/books/about/%EC%82%AC%EB%9E%91%EB%8B%88.html?id=x4bHDwAAQBAJ",
+        "https://books.google.com/books/about/%EC%82%AC%EB%9E%91%EB%8B%88_2.html?id=JCE2DwAAQBAJ",
+        "https://books.google.com/books/about/%EC%82%AC%EB%9E%91%EB%8B%88_5_5.html?id=cdu4CwAAQBAJ"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 청북 치아 미백",
+      "region": "청북읍",
+      "regionSlug": "cheongbuk",
+      "treatment": "whitening",
+      "topKeywords": [
+        "치아미백",
+        "미백",
+        "치과",
+        "평택",
+        "청북",
+        "화이트닝",
+        "누런치아",
+        "자연치아",
+        "전문",
+        "시술"
+      ],
+      "longTailKeywords": [
+        "평택 청북 치아 미백",
+        "청북읍 치아 미백 치과",
+        "평택 청북 치과 미백 상담",
+        "청북역 근처 치아 미백",
+        "평택 서부 치아 미백",
+        "평택 청북 누런치아 미백",
+        "청북읍 앞니 미백 시술",
+        "평택 치아미백 가격",
+        "청북 치아미백 후기",
+        "평택 청북 화이트닝 치과",
+        "청북읍 치과 미백 비용",
+        "평택 청북 자연치아 미백",
+        "청북 근처 치아 미백 잘하는 곳",
+        "평택 치과 치아미백 추천"
+      ],
+      "titlePatterns": [
+        "지역명 + 치아미백 + 치과",
+        "치아미백 + 가격/비용",
+        "치아미백 + 후기/추천",
+        "지역명 + 치과 + 미백 상담",
+        "누런치아/변색 + 미백"
+      ],
+      "commonPhrases": [
+        "자연치아 손상 최소화",
+        "밝고 환한 미소",
+        "개인별 맞춤 상담",
+        "전문 장비/시술",
+        "미백 후 주의사항"
+      ],
+      "userIntent": "청북읍과 평택 청북 인근에서 치아 미백을 받을 수 있는 치과를 찾고, 비용·후기·시술 방식까지 비교해 보려는 의도이다.",
+      "competitorUrls": [
+        "https://www.dentalcare.ca/en-ca/patient-education/korean-articles/whitening",
+        "https://contents.premium.naver.com/epochkorea/epic/contents/220703120236679av",
+        "https://www.welfarehello.com/community/hometownNews/30ed3584-1706-4e96-9d37-dd24133e1a29",
+        "https://www.welfarehello.com/community/hometownNews/1739faaf-1893-4dbd-95fc-faaf63fcbc52/",
+        "https://www.kukinews.com/article/view/kuk201807200020"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 청북 잇몸치료 스케일링",
+      "region": "청북읍",
+      "regionSlug": "cheongbuk",
+      "treatment": "gum-care",
+      "topKeywords": [
+        "스케일링",
+        "잇몸치료",
+        "치주염",
+        "치은염",
+        "치주과",
+        "잇몸질환",
+        "치석제거",
+        "치근면활택술",
+        "잇몸수술",
+        "구강건강"
+      ],
+      "longTailKeywords": [
+        "평택 청북 잇몸치료",
+        "청북읍 스케일링 치과",
+        "평택 청북 치주염 치료",
+        "청북 잇몸에서 피날때 치과",
+        "평택 청북 치석제거 스케일링",
+        "청북읍 잇몸 붓기 치과",
+        "평택 청북 치은염 치료",
+        "청북 스케일링 보험 적용",
+        "평택 청북 치근면활택술",
+        "청북읍 잇몸질환 치료",
+        "평택 청북 주기적 스케일링",
+        "청북역 근처 잇몸치료 치과"
+      ],
+      "titlePatterns": [
+        "[지역명] + 치과명 + 치료 페이지",
+        "[질환/시술명] 비용과 효과｜증상부터 주의사항까지",
+        "[지역명] + [치료명] + 예방/관리",
+        "[지역명] + [치과명] + 치주 관리",
+        "[지역명] + [상세 지역] + 치과/의원명"
+      ],
+      "commonPhrases": [
+        "치석과 착색 제거",
+        "잇몸에서 피가 나거나 붓는 증상",
+        "치주염 초기증상",
+        "치근면 소파술·치은 소파술",
+        "치료 후 주의사항"
+      ],
+      "userIntent": "청북읍과 평택 청북 인근에서 잇몸치료와 스케일링을 받을 수 있는 치과를 찾고, 증상·비용·치료 필요성을 비교하려는 의도다.",
+      "competitorUrls": [
+        "https://www.regendc.co.kr/page.html?url=sub0504",
+        "https://cleardental.co.kr/periodontal-care",
+        "https://nicesongtoyou.com/financial-portal/%EC%9E%87%EB%AA%B8%EC%B9%98%EB%A3%8C-%EB%B9%84%EC%9A%A9%EA%B3%BC-%ED%9A%A8%EA%B3%BC%EF%BD%9C%EC%B9%98%EC%A3%BC%EC%97%BC-%EC%B4%88%EA%B8%B0%EC%A6%9D%EC%83%81%EB%B6%80%ED%84%B0-%EC%9E%87%EB%AA%B8/",
+        "https://contents.premium.naver.com/doublemoney/bohum/contents/260406175448207tp",
+        "https://www.artedental.kr/"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 청북 턱관절 치료",
+      "region": "청북읍",
+      "regionSlug": "cheongbuk",
+      "treatment": "tmj",
+      "topKeywords": [
+        "턱관절",
+        "치료",
+        "통증",
+        "이갈이",
+        "스플린트",
+        "물리치료",
+        "보톡스",
+        "주사",
+        "구강악안면외과",
+        "안면비대칭"
+      ],
+      "longTailKeywords": [
+        "평택 청북 턱관절 치료",
+        "청북읍 턱관절 치료",
+        "평택 청북 턱관절 통증",
+        "청북 턱관절 소리 치료",
+        "평택 턱관절 이갈이 치료",
+        "평택 청북 턱관절 보톡스",
+        "평택 청북 스플린트 치료",
+        "청북읍 턱관절 물리치료",
+        "평택 턱관절 전문치과",
+        "평택 청북 턱관절 병원",
+        "평택 청북 턱관절 증상",
+        "청북 턱관절 입 벌릴 때 통증",
+        "평택 턱관절 입이 안 벌어질 때",
+        "청북 턱관절 교합장치",
+        "평택 청북 턱관절 주사치료"
+      ],
+      "titlePatterns": [
+        "지역명 + 턱관절 치료",
+        "지역명 + 치과 | 증상명 + 병원",
+        "턱관절 치료 + 전문/원장/치과",
+        "임플란트/교정/사랑니 + 턱관절 치료 병행",
+        "통증·소리·이갈이 + 턱관절 치료"
+      ],
+      "commonPhrases": [
+        "턱관절의 근본 원인",
+        "맞춤 스플린트",
+        "통증 완화 및 기능 회복",
+        "이갈이·이악물기 습관",
+        "약물·주사·물리치료 병행"
+      ],
+      "userIntent": "평택 청북읍 인근에서 턱관절 통증, 소리, 입 벌림 불편, 이갈이 같은 증상을 진단하고 치료받을 수 있는 치과를 찾는 의도다.",
+      "competitorUrls": [
+        "https://ysplant-tmj.kr/",
+        "https://www.eteokfirst.com/",
+        "https://www.gdfirstdent.com/",
+        "https://www.365allcare.com/87",
+        "https://www.02-777-9393.com/page/page197"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 세교 임플란트 추천",
+      "region": "세교동",
+      "regionSlug": "segyo",
+      "treatment": "implant",
+      "topKeywords": [
+        "임플란트",
+        "치과",
+        "평택",
+        "세교동",
+        "잘하는 곳",
+        "추천",
+        "가격",
+        "후기",
+        "저렴한",
+        "수면임플란트"
+      ],
+      "longTailKeywords": [
+        "평택 세교동 임플란트 추천",
+        "세교동 임플란트 잘하는 치과",
+        "평택 세교 임플란트 후기",
+        "평택 세교동 임플란트 가격",
+        "세교동 임플란트 저렴한 치과",
+        "평택지제역 임플란트 추천",
+        "평택 세교동 수면 임플란트",
+        "평택 세교동 전체 임플란트",
+        "평택 세교동 앞니 임플란트",
+        "평택 세교동 원데이 임플란트"
+      ],
+      "titlePatterns": [
+        "[지역] 임플란트 잘하는 곳 TOP N",
+        "[지역] 임플란트 가격 + 후기 좋은 치과 추천",
+        "[역명/동명] 임플란트 치과 선택 가이드",
+        "[지역] 치과 추천 BEST N곳",
+        "[지역] 임플란트 저렴하고 잘하는 곳 총정리"
+      ],
+      "commonPhrases": [
+        "후기 좋은",
+        "저렴한 가격",
+        "잘하는 곳",
+        "합리적인 비용",
+        "정밀 진단"
+      ],
+      "userIntent": "세교동과 인근 평택 지역에서 임플란트를 잘하고 후기와 가격 조건이 괜찮은 치과를 비교해 신뢰할 만한 후보를 찾으려는 의도입니다.",
+      "competitorUrls": [
+        "https://daoryo62.com/361",
+        "https://test.diana100.com/2025/03/Top-5-places-to-get-cheap-and-good-implants-in-Pyeongtaek.html",
+        "https://insight835.tistory.com/3311",
+        "https://www.theeasydc.co.kr/index.asp?m=location",
+        "https://bbmt365.com/%ED%8F%89%ED%83%9D%EC%A7%80%EC%A0%9C%EC%97%AD-%EC%9E%84%ED%94%8C%EB%9E%80%ED%8A%B8-%EC%B9%98%EA%B3%BC/"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 세교 틀니",
+      "region": "세교동",
+      "regionSlug": "segyo",
+      "treatment": "denture",
+      "topKeywords": [
+        "틀니",
+        "임플란트",
+        "치과",
+        "평택",
+        "세교동",
+        "부분틀니",
+        "전체틀니",
+        "고정성",
+        "저작력",
+        "노인"
+      ],
+      "longTailKeywords": [
+        "평택 세교동 틀니 치과",
+        "세교동 부분틀니 잘하는 치과",
+        "평택 세교 틀니 가격",
+        "평택 세교동 전체틀니 상담",
+        "세교동 노인 틀니 치과",
+        "평택 틀니 수리 치과",
+        "세교동 틀니 잘하는 곳",
+        "평택 세교 임플란트 틀니",
+        "평택 세교동 틀니 비용",
+        "세교동 어르신 틀니",
+        "평택 부분틀니 추천",
+        "평택 전체틀니 상담",
+        "세교동 치과 틀니 진료",
+        "평택 틀니 후기",
+        "평택 세교동 틀니 전문"
+      ],
+      "titlePatterns": [
+        "[지역명] + [치료명] + [치과/잘하는/추천]",
+        "[지역명] + [치료명] + [가격/비용]",
+        "[지역명] + [치료명] + [상담/진료]",
+        "[치료명] + [전문] + [지역명]",
+        "[어르신/노인] + [치료명] + [지역명]"
+      ],
+      "commonPhrases": [
+        "저작력 회복",
+        "자연스러운 보철",
+        "맞춤 진단",
+        "편안한 착용감",
+        "부분틀니·전체틀니"
+      ],
+      "userIntent": "세교동에서 틀니 진료를 잘하는 평택 치과를 찾고, 가격·종류·상담 가능 여부를 비교하려는 의도이다.",
+      "competitorUrls": [
+        "https://play.google.com/store/apps/details?hl=ko&id=com.gtrace.ptqr.wt.samsung.app",
+        "https://play.google.com/store/apps/details?hl=ko&id=com.gtrace.ptqr.et.samsung.app",
+        "https://books.google.com/books/about/%ED%8F%89%ED%83%9D_%EC%84%B8%EA%B5%90%EB%8F%99_%EC%9C%A0%EC%A0%81.html?id=WCSfzwEACAAJ",
+        "https://play.google.com/store/books/details/%EC%9B%94%EA%B0%84_%ED%99%8D%EB%8F%99%EC%97%AC%EC%A7%80%EB%8F%84_vol1_%ED%8F%89%ED%83%9D_%EC%83%81%EA%B0%80%ED%88%AC%EC%9E%90_%EC%A0%84_%EB%B0%98%EB%93%9C%EC%8B%9C_%EC%9D%BD%EC%96%B4%EC%95%BC_%ED%95%A0_%ED%8F%89%ED%83%9D_%EB%A6%AC%EC%96%BC_%EB%A6%AC%ED%8F%AC%ED%8A%B8?hl=de&id=Ls14EQAAQBAJ",
+        "https://play.google.com/store/apps/details?hl=ko&id=com.pyeongtaek.pyeongtaek_app"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 세교 충치 신경치료",
+      "region": "세교동",
+      "regionSlug": "segyo",
+      "treatment": "cavity-treatment",
+      "topKeywords": [
+        "충치",
+        "신경치료",
+        "치과",
+        "세교동",
+        "평택",
+        "크라운",
+        "레진",
+        "근관치료",
+        "충치치료",
+        "통증"
+      ],
+      "longTailKeywords": [
+        "평택 세교동 충치 치료",
+        "세교동 신경치료 잘하는 치과",
+        "평택 세교동 신경치료 비용",
+        "평택 세교동 충치 신경치료",
+        "세교동 충치 레진 치료",
+        "평택 세교동 치아 통증 치료",
+        "평택 세교동 크라운 신경치료",
+        "평택 세교동 어금니 충치 치료",
+        "세교동 치통 신경치료 후기",
+        "평택 세교동 충치 단계별 치료",
+        "세교동 근관치료 치과",
+        "평택 세교동 충치 재발",
+        "세교동 신경치료 통증",
+        "평택 세교동 야간 치과 충치",
+        "세교동 어린이 충치 치료"
+      ],
+      "titlePatterns": [
+        "[지역명] 치과, [지역명] 치과",
+        "충치 치료 비용 / 단계별 정리",
+        "[지역명] 임플란트 가격 저렴한 곳",
+        "신경치료 꼭 해야하나? / 충치 치료의 모든 것",
+        "[지역명] [시술명] 잘하는 곳 / 가격 싼 곳"
+      ],
+      "commonPhrases": [
+        "충치가 신경까지 진행되면",
+        "조기에 치료받아야 합니다",
+        "신경치료와 크라운으로 이어질 수 있습니다",
+        "건강보험 적용 여부",
+        "통증이 느껴지지 않아도"
+      ],
+      "userIntent": "평택 세교동에서 충치가 신경까지 진행됐는지, 신경치료가 필요한지, 비용과 진료 가능한 치과를 찾으려는 의도다.",
+      "competitorUrls": [
+        "https://theeasydc.co.kr/",
+        "https://lemontreehouse.kr/cavity-treatment-cost/",
+        "https://www.artedental.kr/",
+        "https://www.blanche.kr/blog/cavity/%25EC%25B6%2595%25EC%259B%2590-%25EC%25B9%2598%25EB%25A3%258C-%25EB%25B9%2584%25EC%259A%25A9",
+        "https://benefitview.co.kr/implant-segyo-dong/"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 세교 사랑니 발치",
+      "region": "세교동",
+      "regionSlug": "segyo",
+      "treatment": "wisdom-tooth",
+      "topKeywords": [
+        "사랑니",
+        "발치",
+        "평택",
+        "세교동",
+        "매복",
+        "구강악안면외과",
+        "염증",
+        "통증",
+        "치과",
+        "보험"
+      ],
+      "longTailKeywords": [
+        "평택 세교동 사랑니 발치",
+        "세교동 사랑니 발치 치과",
+        "평택 세교 사랑니 발치 후기",
+        "세교동 매복 사랑니 발치",
+        "평택 사랑니 발치 잘하는 치과",
+        "평택 세교 사랑니 염증 치료",
+        "세교동 사랑니 통증 진료",
+        "평택 사랑니 발치 비용",
+        "평택 사랑니 발치 보험",
+        "평택 세교동 당일 사랑니 발치",
+        "평택 세교동 수면 사랑니 발치",
+        "평택 세교동 매복 사랑니 치과",
+        "세교동 사랑니 발치 후기",
+        "평택 사랑니 발치 후 주의사항",
+        "평택 세교동 사랑니 뽑는 치과"
+      ],
+      "titlePatterns": [
+        "평택 + [치과명] + 사랑니 발치",
+        "[치과명] 사랑니 발치가 필요하다면",
+        "평택 사랑니 발치 + 정보형 랜딩페이지",
+        "평택 + 사랑니 치과 + 진료/의료진 강조",
+        "사랑니 발치 + 후기/주의사항/비용 정보형"
+      ],
+      "commonPhrases": [
+        "안전한 사랑니 발치",
+        "구강악안면외과",
+        "매복 사랑니",
+        "잇몸 염증과 통증",
+        "발치 후 주의사항"
+      ],
+      "userIntent": "세교동 또는 평택에서 사랑니 발치를 잘하는 치과를 찾고, 통증·매복 여부·비용·진료 가능 여부를 비교하려는 의도이다.",
+      "competitorUrls": [
+        "https://www.eteokfirst.com/",
+        "https://www.eteokfirst.com/wisdom.php",
+        "https://cashdoc.me/hospital/A2119368",
+        "https://m.health.chosun.com/article/article.html?contid=2016101802468",
+        "https://www.doctalk.co.kr/counsel/view/c-1Ebw6cO8-5dQ8-4VFY-covU-hfpJwMjHgAVy"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 세교 치아 미백",
+      "region": "세교동",
+      "regionSlug": "segyo",
+      "treatment": "whitening",
+      "topKeywords": [
+        "치아 미백",
+        "미백",
+        "과산화수소",
+        "스케일링",
+        "치과",
+        "시린 증상",
+        "밝기",
+        "상담",
+        "효과",
+        "안전"
+      ],
+      "longTailKeywords": [
+        "평택 세교동 치아 미백",
+        "평택 세교 치과 미백",
+        "세교동 치아미백 잘하는 치과",
+        "평택 치아 미백 가격",
+        "평택 세교 미백 상담",
+        "평택 세교동 앞니 미백",
+        "평택 세교동 치아 착색 미백",
+        "평택 세교동 스케일링 후 미백",
+        "평택 치아 미백 시린 증상",
+        "평택 세교동 치과 미백 추천"
+      ],
+      "titlePatterns": [
+        "[지역명] 치아 미백",
+        "[치과명] | [지역명] [진료과목]",
+        "치아 미백, 이런 분들께 추천",
+        "치아 미백 효과 / 시술 안내",
+        "안전하고 효과적인 미백 시술"
+      ],
+      "commonPhrases": [
+        "미백 효과",
+        "치아 과민 증상",
+        "스케일링 먼저",
+        "과산화수소",
+        "상담 필요"
+      ],
+      "userIntent": "평택 세교동에서 치아 미백을 받을 수 있는 치과를 찾고, 효과·안전성·상담 가능 여부를 비교하려는 의도이다.",
+      "competitorUrls": [
+        "https://www.gdfirstdent.com/",
+        "https://www.seoul365dental.com/page/page217",
+        "https://griondental.imweb.me/whitening",
+        "https://m.health.chosun.com/article/article.html?contid=2014042201687",
+        "https://m.health.chosun.com/article/article.html?contid=2014082702447"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 세교 잇몸치료 스케일링",
+      "region": "세교동",
+      "regionSlug": "segyo",
+      "treatment": "gum-care",
+      "topKeywords": [
+        "스케일링",
+        "잇몸치료",
+        "치주염",
+        "치은염",
+        "치석제거",
+        "입냄새",
+        "구강건강",
+        "초음파",
+        "예방치료",
+        "통증"
+      ],
+      "longTailKeywords": [
+        "평택 세교동 잇몸치료",
+        "평택 세교동 스케일링",
+        "세교동 치주염 치료",
+        "세교동 치은염 스케일링",
+        "평택 세교 치석제거",
+        "평택 세교 잇몸 붓기 치료",
+        "평택 세교 잇몸 통증 치료",
+        "세교동 입냄새 스케일링",
+        "평택 세교 구강검진 스케일링",
+        "세교동 초음파 스케일링",
+        "평택 세교 잇몸관리 치과",
+        "세교동 잇몸 출혈 치료",
+        "평택 세교 예방치료 치과",
+        "세교동 치주질환 진료"
+      ],
+      "titlePatterns": [
+        "지역명 + 치과 + 치료명",
+        "지역명 + 잇몸치료/스케일링",
+        "스케일링 + 잇몸질환/치주질환",
+        "통증·출혈·붓기 등 증상형 제목",
+        "예방·정기검진·치석제거를 묶는 제목"
+      ],
+      "commonPhrases": [
+        "치주염·치은염 예방",
+        "치석 제거",
+        "입냄새 개선",
+        "잇몸 건강 관리",
+        "초음파 스케일링"
+      ],
+      "userIntent": "세교동 인근에서 잇몸이 붓거나 피가 나고 치석·입냄새가 걱정되어, 가까운 치과의 스케일링과 잇몸치료를 비교해 진료 가능한 곳을 찾으려는 의도다.",
+      "competitorUrls": [
+        "https://play.google.com/store/apps/details?id=com.mall.silbisilbiapp",
+        "https://books.google.com/books/about/%ED%8F%89%ED%83%9D_%EC%84%B8%EA%B5%90%EB%8F%99_%EC%9C%A0%EC%A0%81.html?id=WCSfzwEACAAJ",
+        "https://books.google.com/books/about/%EC%98%A4%EC%82%B0_%EC%B2%AD%ED%95%99%EB%8F%99_%EC%9C%A0%EC%A0%81.html?id=ZFnsjgEACAAJ",
+        "https://fin.land.naver.com/articles/2532679844",
+        "https://patents.google.com/patent/KR20160081476A/ko"
+      ],
+      "_model": "gpt-5.4-mini"
+    },
+    {
+      "query": "평택 세교 턱관절 치료",
+      "region": "세교동",
+      "regionSlug": "segyo",
+      "treatment": "tmj",
+      "topKeywords": [
+        "턱관절",
+        "턱관절 치료",
+        "턱관절장애",
+        "TMJ",
+        "평택",
+        "세교동",
+        "치과",
+        "구강외과",
+        "교합",
+        "통증"
+      ],
+      "longTailKeywords": [
+        "평택 세교동 턱관절 치료",
+        "세교동 턱관절장애 치과",
+        "평택 턱관절 소리 치료",
+        "턱이 아플때 평택 세교동 치과",
+        "평택 세교 턱관절 증상 치료",
+        "세교동 TMJ 치료 치과",
+        "평택 턱관절 통증 병원",
+        "평택 세교동 구강외과 턱관절",
+        "턱관절 두통 치료 평택 세교",
+        "평택 세교동 턱관절 물리치료",
+        "입 벌릴때 턱 아픔 평택 치과",
+        "평택 세교 턱관절 교합 치료",
+        "턱에서 소리나는 증상 평택",
+        "세교동 턱관절 전문 치과",
+        "평택 턱관절 장애 치료 병원"
+      ],
+      "titlePatterns": [
+        "{지역명} 치과, {지역명} 치과",
+        "{병원명} - 세교동 치과, 평택 치과",
+        "{지역명} {의료과목} 후기·진료시간·예약",
+        "{지역명} {진료과} 치료 가격 비교하기",
+        "{주제} | {지역명}"
+      ],
+      "commonPhrases": [
+        "턱관절장애",
+        "TMJ 치료",
+        "진료시간·예약",
+        "과잉치료 없이",
+        "치료 잘해주셔서"
+      ],
+      "userIntent": "평택 세교동에서 턱관절 통증, 소리, 개구 제한 같은 증상을 진료하는 가까운 치과나 구강외과를 찾고 치료 후기·예약·진료정보를 확인하려는 의도다.",
+      "competitorUrls": [
+        "https://theeasydc.co.kr/",
+        "https://cashdoc.me/hospital/A2117870/%EC%84%B8%EA%B5%90%ED%98%84%EB%8C%80%EC%B9%98%EA%B3%BC%EC%9D%98%EC%9B%90",
+        "https://www.modoodoc.com/hospital/74857/%25ED%258F%2589%25ED%2583%259D-%25EB%258D%2594%25EC%2584%25B8%25EC%259B%2580-%25EC%258B%25A0%25EA%25B2%25BD%25EC%2599%25B8%25EA%25B3%25BC%25EC%259D%2598%25EC%259B%2590-%25EA%25B2%25BD%25EA%25B8%25B0%25EB%258F%2584-%25EC%2584%25B8%25EA%25B5%2590%25EB%258F%2599",
+        "https://www.modoodoc.com/hospital/74857/%ED%8F%89%ED%83%9D-%EB%8D%94%EC%84%B8%EC%9B%80-%EC%8B%A0%EA%B2%BD%EC%99%B8%EA%B3%BC%EC%9D%98%EC%9B%90-%EA%B2%BD%EA%B8%B0%EB%8F%84-%EC%84%B8%EA%B5%90%EB%8F%99",
+        "https://www.crawled.example.com/"
+      ],
+      "_model": "gpt-5.4-mini"
+    }
+  ],
+  "errors": []
+}
