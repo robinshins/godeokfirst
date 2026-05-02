@@ -9,7 +9,7 @@ import { generateFAQSchema, generateBreadcrumbSchema, generateMedicalServiceSche
 
 export const metadata: Metadata = {
   title: '平沢・高徳インプラント | コドクファースト歯科',
-  description: '平沢・高徳インプラント. 대학병원 외래교수 출신 원장이 직접 수술하는 대학병원급 임플란트. 디지털 정밀 진단 시스템',
+  description: '平沢市高徳エデュタウンのインプラント専門歯科。統合歯科専門医が相談から手術、アフターケアまで直接診療。3D CT精密診断とデジタルガイドシステムによる安全な施術、痛み軽減麻酔システム完備。日本語通訳サポート、夜間·土曜日診療可能。電話：031-611-3222',
   keywords: '고덕임플란트, 평택임플란트, 고덕동임플란트, 평택임플란트잘하는곳, 고덕임플란트잘하는곳, 임플란트전문, コドクファースト歯科, 평택치과, 고덕치과, 고덕동치과',
   alternates: {
     canonical: 'https://gdfirstdent.co.kr/jp/implant',

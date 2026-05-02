@@ -1,7 +1,7 @@
 {
   "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"test -f .env.local && grep -E '^OPENAI_API_KEY=' .env.local | sed 's/=.*/=<set>/'; echo '---'; node -e \\\"console.log('openai pkg:', require('openai/package.json').version)\\\"\",\"description\"...",
-  "error": "Exit code 1\nOPENAI_API_KEY=<set>\n---\nnode:internal/modules/cjs/loader:643\n      throw e;\n      ^\n\nError [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './package.json' is not defined by \"exports\" in /Users/singyuseob/Dev/dentist_goduk/node_modules/openai/package.json\n    at exportsNotFound (node:internal/modules/esm/resolve:322:10)\n    at packageExportsResolve (node:internal/modules/esm/resolve:670:9)\n    at resolveExports (node:internal/modules/cjs/loader:636:36)\n    at Module._findPath (node...",
-  "timestamp": "2026-04-24T12:16:29.531Z",
+  "tool_input_preview": "{\"command\":\"ls /Users/singyuseob/Dev/dentist_goduk/src/app/godeok-myeon/blog/[slug]/ && grep -n \\\"description\\\\|metadata\\\" /Users/singyuseob/Dev/dentist_goduk/src/app/godeok-myeon/blog/[slug]/page.tsx...",
+  "error": "Exit code 1\n(eval):1: no matches found: /Users/singyuseob/Dev/dentist_goduk/src/app/godeok-myeon/blog/[slug]/",
+  "timestamp": "2026-05-02T10:12:26.495Z",
   "retry_count": 1
 }

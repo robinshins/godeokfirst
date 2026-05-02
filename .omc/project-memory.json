@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1777023493626,
+  "lastScanned": 1777716643098,
   "projectRoot": "/Users/singyuseob/Dev/dentist_goduk",
   "techStack": {
     "languages": [
@@ -72,11 +72,23 @@
   },
   "customNotes": [],
   "directoryMap": {
+    "data": {
+      "path": "data",
+      "purpose": "Data files",
+      "fileCount": 4,
+      "lastAccessed": 1777716643066,
+      "keyFiles": [
+        "insights-articles.json",
+        "insights-index.json",
+        "keyword-research.json",
+        "pilot-coverage-report.json"
+      ]
+    },
     "docs": {
       "path": "docs",
       "purpose": "Documentation",
       "fileCount": 2,
-      "lastAccessed": 1777023493571,
+      "lastAccessed": 1777716643067,
       "keyFiles": [
         "TRACKING_SYSTEM_GUIDE.md",
         "고덕퍼스트치과-장점.md"
@@ -86,7 +98,7 @@
       "path": "public",
       "purpose": "Public files",
       "fileCount": 12,
-      "lastAccessed": 1777023493571,
+      "lastAccessed": 1777716643068,
       "keyFiles": [
         "Vector3.png",
         "e2f6aa489f8d517ab9f290e254b5952d.txt",
@@ -98,21 +110,21 @@
     "scripts": {
       "path": "scripts",
       "purpose": "Build/utility scripts",
-      "fileCount": 7,
-      "lastAccessed": 1777023493572,
+      "fileCount": 14,
+      "lastAccessed": 1777716643078,
       "keyFiles": [
+        "analyze-pilot-coverage.mjs",
         "apply-rename.js",
-        "korean-to-english-mapping.json",
-        "path-mapping.txt",
-        "rename-all-korean-to-english.js",
-        "rename-korean-files.js"
+        "build-insights-index.mjs",
+        "generate-articles-api.mjs",
+        "keyword-research.mjs"
       ]
     },
     "src": {
       "path": "src",
       "purpose": "Source code",
       "fileCount": 2,
-      "lastAccessed": 1777023493599,
+      "lastAccessed": 1777716643079,
       "keyFiles": [
         "middleware.ts"
       ]
@@ -121,7 +133,7 @@
       "path": "src/app",
       "purpose": "Application code",
       "fileCount": 8,
-      "lastAccessed": 1777023493602,
+      "lastAccessed": 1777716643084,
       "keyFiles": [
         "globals.css",
         "layout.tsx",
@@ -132,7 +144,7 @@
       "path": "src/components",
       "purpose": "UI components",
       "fileCount": 14,
-      "lastAccessed": 1777023493604,
+      "lastAccessed": 1777716643085,
       "keyFiles": [
         "ChatInterface.tsx",
         "ConsultationForm.tsx",
@@ -142,19 +154,19 @@
     "src/lib": {
       "path": "src/lib",
       "purpose": "Library code",
-      "fileCount": 14,
-      "lastAccessed": 1777023493605,
+      "fileCount": 15,
+      "lastAccessed": 1777716643086,
       "keyFiles": [
         "blog-posts.ts",
         "faqData.ts",
-        "intent-analyzer.ts"
+        "insights.ts"
       ]
     },
     "src/types": {
       "path": "src/types",
       "purpose": "Type definitions",
       "fileCount": 1,
-      "lastAccessed": 1777023493606,
+      "lastAccessed": 1777716643086,
       "keyFiles": [
         "dom-to-image-more.d.ts"
       ]
@@ -163,123 +175,141 @@
       "path": "src/utils",
       "purpose": "Utility functions",
       "fileCount": 0,
-      "lastAccessed": 1777023493607,
+      "lastAccessed": 1777716643086,
       "keyFiles": []
     }
   },
   "hotPaths": [
     {
-      "path": "scripts/keyword-research.mjs",
-      "accessCount": 5,
-      "lastAccessed": 1777033207001,
+      "path": "src/app/mn/layout.tsx",
+      "accessCount": 6,
+      "lastAccessed": 1777717730179,
       "type": "file"
     },
     {
-      "path": "src/components/home/FooterSection.tsx",
+      "path": "src/app/en/whitening/layout.tsx",
+      "accessCount": 6,
+      "lastAccessed": 1777717735571,
+      "type": "file"
+    },
+    {
+      "path": "src/lib/blog-posts.ts",
       "accessCount": 4,
-      "lastAccessed": 1777040221355,
+      "lastAccessed": 1777717122859,
       "type": "file"
     },
     {
-      "path": "scripts/validate-insights-article.mjs",
+      "path": "src/app/segyo/cavity-treatment/page.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1777717347904,
+      "type": "file"
+    },
+    {
+      "path": "src/app/denture/page.tsx",
       "accessCount": 3,
-      "lastAccessed": 1777024630444,
+      "lastAccessed": 1777717004247,
       "type": "file"
     },
     {
-      "path": "src/app/insights/[slug]/page.tsx",
+      "path": "src/app/jije/cavity-treatment/page.tsx",
       "accessCount": 3,
-      "lastAccessed": 1777033153393,
+      "lastAccessed": 1777717101340,
       "type": "file"
     },
     {
-      "path": "src/lib/schema.ts",
+      "path": "src/app/implant/page.tsx",
       "accessCount": 2,
-      "lastAccessed": 1777023828428,
+      "lastAccessed": 1777717018999,
       "type": "file"
     },
     {
-      "path": "src/app/sitemap.ts",
+      "path": "src/app/cavity-treatment/layout.tsx",
       "accessCount": 2,
-      "lastAccessed": 1777024493557,
+      "lastAccessed": 1777717026573,
       "type": "file"
     },
     {
-      "path": "scripts/generate-articles-api.mjs",
+      "path": "src/app/wisdom-tooth/layout.tsx",
       "accessCount": 2,
-      "lastAccessed": 1777039260232,
+      "lastAccessed": 1777717033248,
+      "type": "file"
+    },
+    {
+      "path": "src/app/tmj/layout.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1777717041229,
+      "type": "file"
+    },
+    {
+      "path": "src/app/anjung/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1777717050461,
+      "type": "file"
+    },
+    {
+      "path": "src/app/segyo/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1777717056585,
+      "type": "file"
+    },
+    {
+      "path": "src/app/jangdang/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1777717063213,
+      "type": "file"
+    },
+    {
+      "path": "src/app/hwayang/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1777717068856,
+      "type": "file"
+    },
+    {
+      "path": "src/app/ichung/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1777717077447,
+      "type": "file"
+    },
+    {
+      "path": "src/app/seojeong/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1777717083565,
+      "type": "file"
+    },
+    {
+      "path": "src/app/jp/layout.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1777717150638,
+      "type": "file"
+    },
+    {
+      "path": "src/app/cn/layout.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1777717158613,
+      "type": "file"
+    },
+    {
+      "path": "src/app/jp/denture/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1777717175649,
+      "type": "file"
+    },
+    {
+      "path": "src/app/jp/implant/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1777717184038,
+      "type": "file"
+    },
+    {
+      "path": "src/app/godeok-myeon/blog/[slug]/page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1777716756730,
       "type": "file"
     },
     {
       "path": "docs/고덕퍼스트치과-장점.md",
       "accessCount": 1,
-      "lastAccessed": 1777023528043,
-      "type": "file"
-    },
-    {
-      "path": "src/app/layout.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1777023733968,
-      "type": "file"
-    },
-    {
-      "path": "src/app/godeok/page.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1777023734079,
-      "type": "file"
-    },
-    {
-      "path": "src/components/home/GNB.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1777023782114,
-      "type": "file"
-    },
-    {
-      "path": "src/lib/insights.ts",
-      "accessCount": 1,
-      "lastAccessed": 1777023814224,
-      "type": "file"
-    },
-    {
-      "path": "data/insights-index.json",
-      "accessCount": 1,
-      "lastAccessed": 1777023863283,
-      "type": "file"
-    },
-    {
-      "path": "data/insights-articles.json",
-      "accessCount": 1,
-      "lastAccessed": 1777023867801,
-      "type": "file"
-    },
-    {
-      "path": "src/components/LayoutWrapper.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1777023883134,
-      "type": "file"
-    },
-    {
-      "path": "src/app/insights/page.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1777023914801,
-      "type": "file"
-    },
-    {
-      "path": "scripts/merge-insights-articles.mjs",
-      "accessCount": 1,
-      "lastAccessed": 1777024049636,
-      "type": "file"
-    },
-    {
-      "path": "src/components/insights/ClinicProfile.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1777033127817,
-      "type": "file"
-    },
-    {
-      "path": "scripts/prep-agent-prompts.mjs",
-      "accessCount": 1,
-      "lastAccessed": 1777034133553,
+      "lastAccessed": 1777716945904,
       "type": "file"
     }
   ],

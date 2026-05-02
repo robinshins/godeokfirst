@@ -9,7 +9,7 @@ import { generateFAQSchema, generateBreadcrumbSchema, generateMedicalServiceSche
 
 export const metadata: Metadata = {
   title: '平沢・高徳 全顎インプラント・入れ歯 | コドクファースト歯科',
-  description: '平沢・高徳동 전체임플란트, 틀니. 조선대학교 치과병원 외래교수 역임, 서울대 치의학대학원 임플란트 우수상 수료 원장이 직접 진료합니다.',
+  description: '平沢市高徳エデュタウンの全顎インプラント·入れ歯専門歯科。統合歯科専門医が相談から手術、アフターケアまで直接診療。デジタルガイドシステム、3D CT精密診断、痛み軽減麻酔システム完備。日本語通訳サポート、夜間·土曜日診療可能。電話：031-611-3222',
   keywords: '평택틀니, 고덕틀니, 고덕동틀니, 평택전체임플란트, 고덕전체임플란트, 무치악임플란트, 올온포임플란트, 알론식스, 임플란트틀니, 오버덴처, コドクファースト歯科, 고덕치과, 평택치과',
   alternates: {
     canonical: 'https://gdfirstdent.co.kr/jp/denture',

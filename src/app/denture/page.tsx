@@ -9,7 +9,7 @@ import { generateFAQSchema, generateBreadcrumbSchema, generateMedicalServiceSche
 
 export const metadata: Metadata = {
   title: '평택 고덕 전체임플란트, 틀니 | 고덕퍼스트치과',
-  description: '평택 고덕동 전체임플란트, 틀니. 조선대학교 치과병원 외래교수 역임, 서울대 치의학대학원 임플란트 우수상 수료 원장이 직접 진료합니다.',
+  description: '평택 고덕동 전체임플란트·틀니 전문 치과. 조선대학교 치과병원 외래교수 역임 통합치의학과 전문의가 상담부터 수술, 사후관리까지 직접 진료합니다. 디지털 가이드 시스템, 3D CT 정밀 진단, 통증완화 마취로 평생 씹는 즐거움을 되찾아드립니다. 야간·토요일 진료. 031-611-3222',
   keywords: '평택틀니, 고덕틀니, 고덕동틀니, 평택전체임플란트, 고덕전체임플란트, 무치악임플란트, 올온포임플란트, 알론식스, 임플란트틀니, 오버덴처, 고덕퍼스트치과, 고덕치과, 평택치과',
   alternates: {
     canonical: 'https://gdfirstdent.co.kr/denture',

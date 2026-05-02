@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: '고덕동사랑니 평택사랑니발치 | 고덕퍼스트치과',
-  description: '고덕동사랑니 평택사랑니발치 전문. 3D CT 정밀 진단, 대학병원급 난이도 발치 가능. 통증 완화 마취 시스템.',
+  description: '평택 고덕동 사랑니 발치 전문 치과. 조선대학교 치과병원 외래교수 역임 통합치의학과 전문의가 직접 진료합니다. 3D CT 정밀 진단으로 매복·수평 사랑니까지 안전 발치, 통증완화 마취 시스템과 원스톱 진료 시스템 운영. 야간·토요일 진료. 031-611-3222',
   keywords: ['고덕동사랑니', '평택사랑니발치', '고덕퍼스트치과사랑니', '평택사랑니', '사랑니발치'],
   alternates: {
     canonical: 'https://gdfirstdent.co.kr/wisdom-tooth',

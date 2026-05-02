@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: '고덕턱관절치료 | 고덕퍼스트치과',
-  description: '평택 고덕 턱관절 치료 전문 치과. 턱관절 통증, 개구장애, 턱소리 정밀 진단. 통합치의학과 전문의가 직접 진료합니다.',
+  description: '평택 고덕 턱관절 치료 전문 치과. 턱관절 통증, 개구장애, 턱소리, 두통, 귀 통증 등을 정밀 진단합니다. 통합치의학과 전문의가 교합안정장치(스플린트), 물리·약물치료까지 직접 진료하며 상담부터 사후관리까지 책임집니다. 야간·토요일 진료. 031-611-3222',
   keywords: ['고덕턱관절', '평택턱관절치료', '턱관절통증', '개구장애', '고덕퍼스트치과턱관절'],
   alternates: {
     canonical: 'https://gdfirstdent.co.kr/tmj',

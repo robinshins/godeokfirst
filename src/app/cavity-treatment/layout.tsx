@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: '평택고덕충치치료 평택충치치료 | 고덕퍼스트치과',
-  description: '고덕동충치치료 평택충치치료 전문. 통합치의학과 전문의, 정밀 진단, 자연치아 보존 치료. 발치 대신 살리는 치료.',
+  description: '평택 고덕동 충치·신경치료 전문 치과. 보건복지부 인증 통합치의학과 전문의가 정밀 진단으로 자연치아 보존을 최우선으로 합니다. 발치 대신 살리는 치료, 통증완화 마취 시스템, 신경치료 후 보철까지 한 원장이 일관되게 진료합니다. 야간·토요일 진료. 031-611-3222',
   keywords: ['고덕동충치치료', '평택충치치료', '고덕퍼스트치과충치', '고덕동신경치료', '평택신경치료'],
   alternates: {
     canonical: 'https://gdfirstdent.co.kr/cavity-treatment',

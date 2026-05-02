@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: '고덕동미백 teeth whitening | Godeok First Dental',
-  description: '고덕동 teeth whitening dental specialist. 오스템 뷰티스 시스템, 스케일링과 함께 할인. 1회 시술로 즉시 효과.',
+  description: 'Professional teeth whitening at Godeok First Dental in Pyeongtaek Godeok-dong. Osstem Beautis system, integrated dentistry specialist care. Call: 031-611-3222',
   keywords: ['고덕동미백', '평택teeth whitening', 'Godeok First Dental미백', 'teeth whitening'],
   alternates: {
     canonical: 'https://gdfirstdent.co.kr/whitening',

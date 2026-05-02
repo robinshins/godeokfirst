@@ -9,7 +9,7 @@ import { generateFAQSchema, generateBreadcrumbSchema, generateMedicalServiceSche
 
 export const metadata: Metadata = {
   title: '평택 고덕 임플란트 | 고덕퍼스트치과',
-  description: '평택 고덕 임플란트. 대학병원 외래교수 출신 원장이 직접 수술하는 대학병원급 임플란트. 디지털 정밀 진단 시스템',
+  description: '평택 고덕 임플란트 전문 치과. 조선대학교 치과병원 외래교수 역임 통합치의학과 전문의가 상담부터 수술, 사후관리까지 직접 책임집니다. 3D CT 정밀 진단과 디지털 가이드 시스템으로 안전한 임플란트, 통증완화 마취 시스템 운영. 야간·토요일 진료 가능. 031-611-3222',
   keywords: '고덕임플란트, 평택임플란트, 고덕동임플란트, 평택임플란트잘하는곳, 고덕임플란트잘하는곳, 임플란트전문, 고덕퍼스트치과, 평택치과, 고덕치과, 고덕동치과',
   alternates: {
     canonical: 'https://gdfirstdent.co.kr/implant',

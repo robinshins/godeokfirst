@@ -87,7 +87,7 @@ const articleData: RegionArticleData = {
 
 export const metadata: Metadata = {
   title: '지제동 충치치료 | 보존 치료 전문 | 고덕퍼스트치과',
-  description: '지제동 충치치료 전문 고덕퍼스트치과. 정밀 진단, 최소 삭제 보존 원칙. 직장인 효율 진료. 통합치의학과 전문의 직접 진료. 031-611-3222',
+  description: '지제동 충치·신경치료 전문 고덕퍼스트치과. 조선대학교 치과병원 외래교수 역임 통합치의학과 전문의가 자연치아 보존을 최우선으로 최소 삭제 원칙으로 정밀 치료합니다. 통증완화 마취 시스템, 지제역에서 차로 15분, 야간·토요일 진료로 직장인 방문 편리. 031-611-3222',
   keywords: '지제동 충치치료, 지제역 치과, 지제동 치과, 평택 충치치료, 직장인 치과, 보존치료, 고덕퍼스트치과',
   alternates: {
     canonical: 'https://gdfirstdent.co.kr/jije/cavity-treatment',
