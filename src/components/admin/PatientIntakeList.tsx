@@ -516,34 +516,34 @@ export default function PatientIntakeList() {
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-gray-50">
                 <tr>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap">
                     제출일시
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap">
                     이름/성별/나이
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap">
                     상담과목
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap">
                     증상 (통증)
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap">
                     약물 알레르기
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap">
                     주요 질환
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap">
                     내원 경로
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap">
                     상세
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap">
                     다운로드
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap">
                     인쇄
                   </th>
                 </tr>
@@ -567,15 +567,12 @@ export default function PatientIntakeList() {
                         )}
                       </div>
                     </td>
-                    <td className="px-6 py-4 text-sm text-gray-500">
-                      <div className="max-w-xs truncate">
-                        {intake.consultationTypes?.slice(0, 2).join(', ') || '-'}
-                        {(intake.consultationTypes?.length || 0) > 2 && ' 외'}
-                      </div>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                      {intake.consultationTypes?.join(', ') || '-'}
                     </td>
-                    <td className="px-6 py-4 text-sm text-gray-900">
-                      <div className="max-w-xs truncate">{intake.symptoms || '-'}</div>
-                      <div className="text-xs text-gray-500">통증: {intake.painLevel}/10</div>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                      <span>{intake.symptoms || '-'}</span>
+                      <span className="text-xs text-gray-500 ml-2">(통증: {intake.painLevel}/10)</span>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm">
                       {intake.drugAllergy ? (
@@ -586,30 +583,26 @@ export default function PatientIntakeList() {
                         <span className="text-gray-500">없음</span>
                       )}
                     </td>
-                    <td className="px-6 py-4 text-sm text-gray-500">
-                      <div className="max-w-xs truncate">
-                        {intake.medicalConditions?.filter((c: string) => c !== '없음').slice(0, 2).join(', ') || '없음'}
-                      </div>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                      {intake.medicalConditions?.filter((c: string) => c !== '없음').join(', ') || '없음'}
                     </td>
-                    <td className="px-6 py-4 text-sm text-gray-500">
-                      <div>
-                        {intake.howDidYouKnow || '-'}
-                        {intake.howDidYouKnowSearch && (
-                          <div className="text-xs text-purple-600 mt-1">
-                            검색어: {intake.howDidYouKnowSearch}
-                          </div>
-                        )}
-                        {intake.howDidYouKnowPartner && (
-                          <div className="text-xs text-green-600 mt-1">
-                            제휴: {intake.howDidYouKnowPartner}
-                          </div>
-                        )}
-                        {intake.howDidYouKnow === '지인 추천 (직원, 원장님 포함)' && intake.referrerName && (
-                          <div className="text-xs text-blue-600 mt-1">
-                            ({intake.referrerName})
-                          </div>
-                        )}
-                      </div>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                      {intake.howDidYouKnow || '-'}
+                      {intake.howDidYouKnowSearch && (
+                        <span className="text-xs text-purple-600 ml-2">
+                          (검색어: {intake.howDidYouKnowSearch})
+                        </span>
+                      )}
+                      {intake.howDidYouKnowPartner && (
+                        <span className="text-xs text-green-600 ml-2">
+                          (제휴: {intake.howDidYouKnowPartner})
+                        </span>
+                      )}
+                      {intake.howDidYouKnow === '지인 추천 (직원, 원장님 포함)' && intake.referrerName && (
+                        <span className="text-xs text-blue-600 ml-2">
+                          ({intake.referrerName})
+                        </span>
+                      )}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm">
                       <button

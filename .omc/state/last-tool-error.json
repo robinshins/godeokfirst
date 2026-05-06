@@ -1,7 +1,7 @@
 {
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"ls /Users/singyuseob/Dev/dentist_goduk/src/app/godeok-myeon/blog/[slug]/ && grep -n \\\"description\\\\|metadata\\\" /Users/singyuseob/Dev/dentist_goduk/src/app/godeok-myeon/blog/[slug]/page.tsx...",
-  "error": "Exit code 1\n(eval):1: no matches found: /Users/singyuseob/Dev/dentist_goduk/src/app/godeok-myeon/blog/[slug]/",
-  "timestamp": "2026-05-02T10:12:26.495Z",
+  "tool_name": "Read",
+  "tool_input_preview": "{\"file_path\":\"/Users/singyuseob/Dev/dentist_goduk/src/app/admin/page.tsx\"}",
+  "error": "File content (37138 tokens) exceeds maximum allowed tokens (25000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole file.",
+  "timestamp": "2026-05-06T09:49:06.441Z",
   "retry_count": 1
 }
