@@ -543,14 +543,14 @@ export default function PatientIntakeList() {
                   <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap">
                     다운로드
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap sticky right-0 bg-gray-50 shadow-[-4px_0_6px_-2px_rgba(0,0,0,0.08)]">
                     인쇄
                   </th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
                 {filteredIntakes.map((intake) => (
-                  <tr key={intake.id} className="hover:bg-gray-50">
+                  <tr key={intake.id} className="group hover:bg-gray-50">
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
                       {new Date(intake.created_at || '').toLocaleDateString('ko-KR')}
                     </td>
@@ -634,7 +634,7 @@ export default function PatientIntakeList() {
                         {isDownloading ? '...' : 'JPG'}
                       </button>
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm sticky right-0 bg-white group-hover:bg-gray-50 shadow-[-4px_0_6px_-2px_rgba(0,0,0,0.08)]">
                       <button
                         onClick={() => printIntake(intake)}
                         className="flex items-center gap-1 text-blue-600 hover:text-blue-800 font-medium"

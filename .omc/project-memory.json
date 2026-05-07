@@ -182,8 +182,8 @@
   "hotPaths": [
     {
       "path": "src/components/admin/PatientIntakeList.tsx",
-      "accessCount": 5,
-      "lastAccessed": 1778061048438,
+      "accessCount": 10,
+      "lastAccessed": 1778140342608,
       "type": "file"
     }
   ],
