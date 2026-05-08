@@ -526,24 +526,15 @@ export default function PatientIntakeList() {
                     상담과목
                   </th>
                   <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap">
-                    증상 (통증)
-                  </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap">
-                    약물 알레르기
-                  </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap">
-                    주요 질환
-                  </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap">
                     내원 경로
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap sticky right-[220px] w-[110px] bg-gray-50 shadow-[-4px_0_6px_-2px_rgba(0,0,0,0.08)]">
                     상세
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap sticky right-[110px] w-[110px] bg-gray-50">
                     다운로드
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap sticky right-0 bg-gray-50 shadow-[-4px_0_6px_-2px_rgba(0,0,0,0.08)]">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap sticky right-0 w-[110px] bg-gray-50">
                     인쇄
                   </th>
                 </tr>
@@ -570,22 +561,6 @@ export default function PatientIntakeList() {
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                       {intake.consultationTypes?.join(', ') || '-'}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                      <span>{intake.symptoms || '-'}</span>
-                      <span className="text-xs text-gray-500 ml-2">(통증: {intake.painLevel}/10)</span>
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm">
-                      {intake.drugAllergy ? (
-                        <span className="text-red-600 font-medium">
-                          ⚠️ 있음
-                        </span>
-                      ) : (
-                        <span className="text-gray-500">없음</span>
-                      )}
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                      {intake.medicalConditions?.filter((c: string) => c !== '없음').join(', ') || '없음'}
-                    </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                       {intake.howDidYouKnow || '-'}
                       {intake.howDidYouKnowSearch && (
@@ -604,7 +579,7 @@ export default function PatientIntakeList() {
                         </span>
                       )}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm sticky right-[220px] w-[110px] bg-white group-hover:bg-gray-50 shadow-[-4px_0_6px_-2px_rgba(0,0,0,0.08)]">
                       <button
                         onClick={() => setSelectedIntake(intake)}
                         className="text-blue-600 hover:text-blue-800 font-medium"
@@ -612,7 +587,7 @@ export default function PatientIntakeList() {
                         상세보기
                       </button>
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm sticky right-[110px] w-[110px] bg-white group-hover:bg-gray-50">
                       <button
                         onClick={async () => {
                           setDownloadTarget(intake);
@@ -634,7 +609,7 @@ export default function PatientIntakeList() {
                         {isDownloading ? '...' : 'JPG'}
                       </button>
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm sticky right-0 bg-white group-hover:bg-gray-50 shadow-[-4px_0_6px_-2px_rgba(0,0,0,0.08)]">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm sticky right-0 w-[110px] bg-white group-hover:bg-gray-50">
                       <button
                         onClick={() => printIntake(intake)}
                         className="flex items-center gap-1 text-blue-600 hover:text-blue-800 font-medium"
