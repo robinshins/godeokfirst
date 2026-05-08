@@ -24,6 +24,23 @@ const columnData: Record<string, Column[]> = {
       description: '임플란트 치료에서 교합(씹는 힘의 균형)이 왜 중요한지, 잘못된 교합이 어떤 문제를 야기하는지 설명합니다.',
     },
   ],
+  denture: [
+    {
+      title: '평택 전체임플란트, 몇 개를 어디에 심어야 할까?',
+      url: 'https://blog.naver.com/gdfst111/224225784530',
+      description: '무치악 환자의 전체임플란트 식립 시 개수와 위치 결정의 기준을 원장이 직접 설명합니다.',
+    },
+    {
+      title: '평택 임플란트, 교합, 왜 중요한가?',
+      url: 'https://blog.naver.com/gdfst111/224184928593',
+      description: '오래 쓰는 임플란트의 핵심은 ‘물리는 방식’에 있습니다. 교합이 임플란트 수명에 미치는 영향을 다룹니다.',
+    },
+    {
+      title: '평택 전체임플란트, 디지털 스캔의 ‘정확도’',
+      url: 'https://blog.naver.com/gdfst111/224267389943',
+      description: '디지털 스캔의 정확도가 보철 성공을 좌우합니다. 정밀 보철을 위한 디지털 워크플로우를 설명합니다.',
+    },
+  ],
   home: [],
 };
 

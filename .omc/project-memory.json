@@ -185,6 +185,18 @@
       "accessCount": 8,
       "lastAccessed": 1778202307277,
       "type": "file"
+    },
+    {
+      "path": "src/components/home/MobileColumnSection.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1778211189190,
+      "type": "file"
+    },
+    {
+      "path": "src/app/denture/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1778211196215,
+      "type": "file"
     }
   ],
   "userDirectives": []

@@ -84,12 +84,14 @@ export default function DenturePage() {
       {/* Stats Section */}
       <StatsSection />
 
+      {/* Doctor's Column - 원장 의학 칼럼 */}
+      <MobileColumnSection page="denture" />
+
       {/* Treatment Options Section - 치료 선택 가이드 */}
       <TreatmentOptionsSection />
 
       {/* Video Section */}
       {/* <VideoSection /> */}
-      <MobileColumnSection page="denture" />
 
       {/* Why Best Section - 전국 1등인 이유 */}
       <WhyBestNewSection />
