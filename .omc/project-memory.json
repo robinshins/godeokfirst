@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1778202110510,
+  "lastScanned": 1779336928189,
   "projectRoot": "/Users/singyuseob/Dev/dentist_goduk",
   "techStack": {
     "languages": [
@@ -76,7 +76,7 @@
       "path": "data",
       "purpose": "Data files",
       "fileCount": 4,
-      "lastAccessed": 1778202110480,
+      "lastAccessed": 1779336928159,
       "keyFiles": [
         "insights-articles.json",
         "insights-index.json",
@@ -88,7 +88,7 @@
       "path": "docs",
       "purpose": "Documentation",
       "fileCount": 2,
-      "lastAccessed": 1778202110493,
+      "lastAccessed": 1779336928159,
       "keyFiles": [
         "TRACKING_SYSTEM_GUIDE.md",
         "고덕퍼스트치과-장점.md"
@@ -98,7 +98,7 @@
       "path": "public",
       "purpose": "Public files",
       "fileCount": 12,
-      "lastAccessed": 1778202110494,
+      "lastAccessed": 1779336928160,
       "keyFiles": [
         "Vector3.png",
         "e2f6aa489f8d517ab9f290e254b5952d.txt",
@@ -111,7 +111,7 @@
       "path": "scripts",
       "purpose": "Build/utility scripts",
       "fileCount": 14,
-      "lastAccessed": 1778202110495,
+      "lastAccessed": 1779336928162,
       "keyFiles": [
         "analyze-pilot-coverage.mjs",
         "apply-rename.js",
@@ -124,7 +124,7 @@
       "path": "src",
       "purpose": "Source code",
       "fileCount": 2,
-      "lastAccessed": 1778202110495,
+      "lastAccessed": 1779336928174,
       "keyFiles": [
         "middleware.ts"
       ]
@@ -133,7 +133,7 @@
       "path": "src/app",
       "purpose": "Application code",
       "fileCount": 8,
-      "lastAccessed": 1778202110496,
+      "lastAccessed": 1779336928177,
       "keyFiles": [
         "globals.css",
         "layout.tsx",
@@ -144,7 +144,7 @@
       "path": "src/components",
       "purpose": "UI components",
       "fileCount": 14,
-      "lastAccessed": 1778202110497,
+      "lastAccessed": 1779336928179,
       "keyFiles": [
         "ChatInterface.tsx",
         "ConsultationForm.tsx",
@@ -155,7 +155,7 @@
       "path": "src/lib",
       "purpose": "Library code",
       "fileCount": 15,
-      "lastAccessed": 1778202110498,
+      "lastAccessed": 1779336928180,
       "keyFiles": [
         "blog-posts.ts",
         "faqData.ts",
@@ -166,7 +166,7 @@
       "path": "src/types",
       "purpose": "Type definitions",
       "fileCount": 1,
-      "lastAccessed": 1778202110499,
+      "lastAccessed": 1779336928180,
       "keyFiles": [
         "dom-to-image-more.d.ts"
       ]
@@ -175,27 +175,15 @@
       "path": "src/utils",
       "purpose": "Utility functions",
       "fileCount": 0,
-      "lastAccessed": 1778202110500,
+      "lastAccessed": 1779336928180,
       "keyFiles": []
     }
   },
   "hotPaths": [
     {
-      "path": "src/components/admin/PatientIntakeList.tsx",
-      "accessCount": 8,
-      "lastAccessed": 1778202307277,
-      "type": "file"
-    },
-    {
-      "path": "src/components/home/MobileColumnSection.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1778211189190,
-      "type": "file"
-    },
-    {
-      "path": "src/app/denture/page.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1778211196215,
+      "path": "src/app/admin/page.tsx",
+      "accessCount": 7,
+      "lastAccessed": 1779337035665,
       "type": "file"
     }
   ],

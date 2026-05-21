@@ -426,7 +426,7 @@ export default function AdminPage() {
       setIsLimitedAccess(false);
       setAuthError('');
       setPassword('');
-    } else if (password === 'ascasc112!') {
+    } else if (password === 'ascasc112!' || password === 'dkffprfkqh1!') {
       // 외부 업체용 제한된 접근 (목록 탭만 접근 가능)
       localStorage.setItem('admin_auth', 'medis_limited_2019');
       setIsAuthenticated(true);
@@ -658,8 +658,9 @@ export default function AdminPage() {
   useEffect(() => {
     fetchLogs();
     fetchStats();
-    fetchIntakes();
-  }, [fetchLogs, fetchStats, fetchIntakes]);
+    // 제한 접근(외부 콜센터)은 문진표를 조회하지 않음 → 문진표 알림 미발생
+    if (!isLimitedAccess) fetchIntakes();
+  }, [fetchLogs, fetchStats, fetchIntakes, isLimitedAccess]);
 
   // 1분마다 새로운 상담 내역 체크 (인증된 상태에서만)
   useEffect(() => {
@@ -674,9 +675,9 @@ export default function AdminPage() {
     return () => clearInterval(pollingInterval);
   }, [isAuthenticated, fetchLogs]);
 
-  // 30초마다 새 문진표 체크 (인증된 상태에서만)
+  // 30초마다 새 문진표 체크 (인증된 상태에서만, 제한 접근 제외)
   useEffect(() => {
-    if (!isAuthenticated) return;
+    if (!isAuthenticated || isLimitedAccess) return;
 
     const intakePollingInterval = setInterval(() => {
       console.log('🔄 30초 주기 문진표 체크...');
@@ -684,7 +685,7 @@ export default function AdminPage() {
     }, 30000); // 30초
 
     return () => clearInterval(intakePollingInterval);
-  }, [isAuthenticated, fetchIntakes]);
+  }, [isAuthenticated, isLimitedAccess, fetchIntakes]);
 
   // 문진표 탭으로 이동하면 뱃지 카운트 초기화
   useEffect(() => {
