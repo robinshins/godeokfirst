@@ -656,11 +656,13 @@ export default function AdminPage() {
   }, [playAlarmSound, showIntakeNotification]);
 
   useEffect(() => {
+    // 인증 상태가 확정된 후에만 fetch (제한 접근 여부가 함께 반영된 상태 보장)
+    if (!isAuthenticated) return;
     fetchLogs();
     fetchStats();
     // 제한 접근(외부 콜센터)은 문진표를 조회하지 않음 → 문진표 알림 미발생
     if (!isLimitedAccess) fetchIntakes();
-  }, [fetchLogs, fetchStats, fetchIntakes, isLimitedAccess]);
+  }, [isAuthenticated, isLimitedAccess, fetchLogs, fetchStats, fetchIntakes]);
 
   // 1분마다 새로운 상담 내역 체크 (인증된 상태에서만)
   useEffect(() => {

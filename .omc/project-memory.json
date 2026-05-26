@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1779336928189,
+  "lastScanned": 1779778367643,
   "projectRoot": "/Users/singyuseob/Dev/dentist_goduk",
   "techStack": {
     "languages": [
@@ -76,7 +76,7 @@
       "path": "data",
       "purpose": "Data files",
       "fileCount": 4,
-      "lastAccessed": 1779336928159,
+      "lastAccessed": 1779778367622,
       "keyFiles": [
         "insights-articles.json",
         "insights-index.json",
@@ -88,7 +88,7 @@
       "path": "docs",
       "purpose": "Documentation",
       "fileCount": 2,
-      "lastAccessed": 1779336928159,
+      "lastAccessed": 1779778367623,
       "keyFiles": [
         "TRACKING_SYSTEM_GUIDE.md",
         "고덕퍼스트치과-장점.md"
@@ -98,7 +98,7 @@
       "path": "public",
       "purpose": "Public files",
       "fileCount": 12,
-      "lastAccessed": 1779336928160,
+      "lastAccessed": 1779778367637,
       "keyFiles": [
         "Vector3.png",
         "e2f6aa489f8d517ab9f290e254b5952d.txt",
@@ -111,7 +111,7 @@
       "path": "scripts",
       "purpose": "Build/utility scripts",
       "fileCount": 14,
-      "lastAccessed": 1779336928162,
+      "lastAccessed": 1779778367638,
       "keyFiles": [
         "analyze-pilot-coverage.mjs",
         "apply-rename.js",
@@ -124,7 +124,7 @@
       "path": "src",
       "purpose": "Source code",
       "fileCount": 2,
-      "lastAccessed": 1779336928174,
+      "lastAccessed": 1779778367638,
       "keyFiles": [
         "middleware.ts"
       ]
@@ -133,7 +133,7 @@
       "path": "src/app",
       "purpose": "Application code",
       "fileCount": 8,
-      "lastAccessed": 1779336928177,
+      "lastAccessed": 1779778367639,
       "keyFiles": [
         "globals.css",
         "layout.tsx",
@@ -144,7 +144,7 @@
       "path": "src/components",
       "purpose": "UI components",
       "fileCount": 14,
-      "lastAccessed": 1779336928179,
+      "lastAccessed": 1779778367639,
       "keyFiles": [
         "ChatInterface.tsx",
         "ConsultationForm.tsx",
@@ -155,7 +155,7 @@
       "path": "src/lib",
       "purpose": "Library code",
       "fileCount": 15,
-      "lastAccessed": 1779336928180,
+      "lastAccessed": 1779778367639,
       "keyFiles": [
         "blog-posts.ts",
         "faqData.ts",
@@ -166,7 +166,7 @@
       "path": "src/types",
       "purpose": "Type definitions",
       "fileCount": 1,
-      "lastAccessed": 1779336928180,
+      "lastAccessed": 1779778367640,
       "keyFiles": [
         "dom-to-image-more.d.ts"
       ]
@@ -175,15 +175,15 @@
       "path": "src/utils",
       "purpose": "Utility functions",
       "fileCount": 0,
-      "lastAccessed": 1779336928180,
+      "lastAccessed": 1779778367640,
       "keyFiles": []
     }
   },
   "hotPaths": [
     {
       "path": "src/app/admin/page.tsx",
-      "accessCount": 7,
-      "lastAccessed": 1779337035665,
+      "accessCount": 2,
+      "lastAccessed": 1779778660593,
       "type": "file"
     }
   ],
