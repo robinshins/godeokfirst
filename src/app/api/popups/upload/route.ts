@@ -47,7 +47,7 @@ export async function POST(request: NextRequest) {
     const buffer = Buffer.from(arrayBuffer);
 
     const webpBuffer = await sharp(buffer)
-      .webp({ quality: 85 }) // 85% 품질로 변환 (용량 대비 품질 최적)
+      .webp({ quality: 92 }) // 92% 품질 (next/image 재압축이 없으므로 원본 화질 유지)
       .toBuffer();
 
     console.log(`📸 이미지 변환: ${file.name} (${(file.size / 1024).toFixed(1)}KB) → ${fileName} (${(webpBuffer.length / 1024).toFixed(1)}KB)`);

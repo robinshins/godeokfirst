@@ -120,6 +120,7 @@ export default function ScheduleNotice() {
               alt={sidebarPopup.alt_text}
               fill
               className="object-contain"
+              unoptimized
             />
           </div>
         </div>
@@ -132,7 +133,7 @@ export default function ScheduleNotice() {
             key={currentPopup}
             className="fixed inset-0 bg-black/50 z-[100] flex items-center justify-center p-4 animate-fadeIn"
           >
-            <div className="relative w-[90vw] max-w-[400px] animate-fadeInUp" style={{ aspectRatio: desktopModalPopups[currentPopup].aspect_ratio }}>
+            <div className="relative w-[90vw] max-w-[600px] animate-fadeInUp" style={{ aspectRatio: desktopModalPopups[currentPopup].aspect_ratio }}>
               <button
                 onClick={() => handleClosePopup(false)}
                 className="absolute top-3 right-3 w-8 h-8 bg-white/90 rounded-full flex items-center justify-center z-10 shadow-lg hover:bg-white transition-colors"
@@ -147,6 +148,7 @@ export default function ScheduleNotice() {
                 fill
                 className="object-contain"
                 priority
+                unoptimized
               />
             </div>
           </div>
@@ -175,6 +177,7 @@ export default function ScheduleNotice() {
                 fill
                 className="object-contain"
                 priority
+                unoptimized
               />
             </div>
           </div>

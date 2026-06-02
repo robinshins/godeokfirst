@@ -398,6 +398,7 @@ export default function PopupManagement() {
                         alt="Preview"
                         fill
                         className="object-contain"
+                        unoptimized
                       />
                     </div>
                     <p className="text-xs text-green-600 mt-1">✓ 업로드 완료</p>

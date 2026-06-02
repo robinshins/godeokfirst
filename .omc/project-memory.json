@@ -181,15 +181,27 @@
   },
   "hotPaths": [
     {
+      "path": "src/components/ScheduleNotice.tsx",
+      "accessCount": 5,
+      "lastAccessed": 1780382206294,
+      "type": "file"
+    },
+    {
       "path": "src/app/api/popups/upload/route.ts",
-      "accessCount": 3,
-      "lastAccessed": 1780381408714,
+      "accessCount": 4,
+      "lastAccessed": 1780382034372,
       "type": "file"
     },
     {
       "path": "next.config.ts",
       "accessCount": 2,
       "lastAccessed": 1780381871513,
+      "type": "file"
+    },
+    {
+      "path": "src/components/admin/PopupManagement.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1780382060711,
       "type": "file"
     },
     {
