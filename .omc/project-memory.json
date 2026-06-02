@@ -181,6 +181,48 @@
   },
   "hotPaths": [
     {
+      "path": "src/app/jp/page.tsx",
+      "accessCount": 7,
+      "lastAccessed": 1780387083108,
+      "type": "file"
+    },
+    {
+      "path": "src/app/cn/page.tsx",
+      "accessCount": 7,
+      "lastAccessed": 1780387161819,
+      "type": "file"
+    },
+    {
+      "path": "src/app/vi/page.tsx",
+      "accessCount": 7,
+      "lastAccessed": 1780387193780,
+      "type": "file"
+    },
+    {
+      "path": "src/app/th/page.tsx",
+      "accessCount": 7,
+      "lastAccessed": 1780387222650,
+      "type": "file"
+    },
+    {
+      "path": "src/app/ru/page.tsx",
+      "accessCount": 7,
+      "lastAccessed": 1780387245809,
+      "type": "file"
+    },
+    {
+      "path": "src/app/mn/page.tsx",
+      "accessCount": 7,
+      "lastAccessed": 1780387280136,
+      "type": "file"
+    },
+    {
+      "path": "src/app/uz/page.tsx",
+      "accessCount": 7,
+      "lastAccessed": 1780387309988,
+      "type": "file"
+    },
+    {
       "path": "src/components/ScheduleNotice.tsx",
       "accessCount": 5,
       "lastAccessed": 1780382206294,
@@ -205,6 +247,48 @@
       "type": "file"
     },
     {
+      "path": "src/app/vi/layout.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1780387325579,
+      "type": "file"
+    },
+    {
+      "path": "src/app/th/layout.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1780387340242,
+      "type": "file"
+    },
+    {
+      "path": "src/app/ru/layout.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1780387350001,
+      "type": "file"
+    },
+    {
+      "path": "src/app/mn/layout.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1780387367965,
+      "type": "file"
+    },
+    {
+      "path": "src/app/uz/layout.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1780387381199,
+      "type": "file"
+    },
+    {
+      "path": "src/app/en/layout.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1780387390777,
+      "type": "file"
+    },
+    {
+      "path": "src/app/layout.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1780387399449,
+      "type": "file"
+    },
+    {
       "path": "src/lib/supabase/client.ts",
       "accessCount": 1,
       "lastAccessed": 1780381378252,
@@ -214,6 +298,24 @@
       "path": "src/lib/supabase/server.ts",
       "accessCount": 1,
       "lastAccessed": 1780381383210,
+      "type": "file"
+    },
+    {
+      "path": "src/app/jp/layout.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1780386756413,
+      "type": "file"
+    },
+    {
+      "path": "src/app/cn/layout.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1780386756889,
+      "type": "file"
+    },
+    {
+      "path": "src/app/en/page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1780386789323,
       "type": "file"
     }
   ],

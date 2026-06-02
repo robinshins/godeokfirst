@@ -2,17 +2,17 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   "title": {
-    "default": "Godeok First Dental | Pyeongtaek",
+    "default": "Стоматология Godeok First | Пхёнтхэк, Корея",
     "template": "%s | Godeok First Dental"
   },
-  "description": "Godeok Edu Town first dental clinic.",
+  "description": "Первая стоматологическая клиника в Godeok Edu Town, Пхёнтхэк. Лечение проводит специалист по интегрированной стоматологии: имплантация, протезы, кариес·лечение каналов, удаление зубов мудрости, лечение дёсен. Цифровая навигационная система и анестезия с уменьшением боли. Вечерний приём·суббота. Тел: 031-611-3222",
   "alternates": {
     "canonical": "https://gdfirstdent.co.kr/ru"
   },
   "openGraph": {
     "siteName": "Godeok First Dental",
-    "title": "Godeok First Dental | Pyeongtaek",
-    "description": "Godeok Edu Town first dental clinic.",
+    "title": "Стоматология Godeok First | Пхёнтхэк, Корея",
+    "description": "Первая стоматологическая клиника в Godeok Edu Town, Пхёнтхэк. Специалист по интегрированной стоматологии: имплантация, протезы, кариес, удаление зубов мудрости, лечение дёсен. Вечерний приём·суббота. Тел: 031-611-3222",
     "url": "https://gdfirstdent.co.kr/ru",
     "locale": "ru_RU",
     "type": "website"

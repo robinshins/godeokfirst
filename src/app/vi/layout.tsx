@@ -2,17 +2,17 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   "title": {
-    "default": "Godeok First Dental | Pyeongtaek",
-    "template": "%s | Godeok First Dental"
+    "default": "Nha khoa Godeok First | Pyeongtaek, Hàn Quốc",
+    "template": "%s | Nha khoa Godeok First"
   },
-  "description": "Phong kham nha khoa dau tien tai Godeok Edu Town.",
+  "description": "Phòng khám nha khoa đầu tiên tại Godeok Edu Town, Pyeongtaek. Bác sĩ chuyên khoa nha khoa tổng hợp trực tiếp điều trị: trồng răng implant, răng giả, sâu răng·tủy răng, nhổ răng khôn, điều trị nướu. Trang bị hệ thống định vị kỹ thuật số và gây tê giảm đau. Khám buổi tối·thứ Bảy. Điện thoại: 031-611-3222",
   "alternates": {
     "canonical": "https://gdfirstdent.co.kr/vi"
   },
   "openGraph": {
-    "siteName": "Godeok First Dental",
-    "title": "Godeok First Dental | Pyeongtaek",
-    "description": "Phong kham nha khoa dau tien tai Godeok Edu Town.",
+    "siteName": "Nha khoa Godeok First",
+    "title": "Nha khoa Godeok First | Pyeongtaek, Hàn Quốc",
+    "description": "Phòng khám nha khoa đầu tiên tại Godeok Edu Town, Pyeongtaek. Bác sĩ chuyên khoa nha khoa tổng hợp điều trị trồng răng implant, răng giả, sâu răng, nhổ răng khôn, điều trị nướu. Khám buổi tối·thứ Bảy. ĐT: 031-611-3222",
     "url": "https://gdfirstdent.co.kr/vi",
     "locale": "vi_VN",
     "type": "website"

@@ -68,6 +68,11 @@ export const metadata: Metadata = {
       'ja-JP': 'https://gdfirstdent.co.kr/jp',
       'zh-CN': 'https://gdfirstdent.co.kr/cn',
       'vi-VN': 'https://gdfirstdent.co.kr/vi',
+      'th-TH': 'https://gdfirstdent.co.kr/th',
+      'ru-RU': 'https://gdfirstdent.co.kr/ru',
+      'mn-MN': 'https://gdfirstdent.co.kr/mn',
+      'uz-UZ': 'https://gdfirstdent.co.kr/uz',
+      'x-default': 'https://gdfirstdent.co.kr',
     },
   },
   openGraph: {
