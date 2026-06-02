@@ -17,7 +17,7 @@
     "country-flag-icons": "^1.6.4",
     "html2canvas-pro": "^1.5.13",
     "lucide-react": "^0.552.0",
-    "next": "^15.4.8",
+    "next": "15.4.10",
     "nodemailer": "^7.0.12",
     "openai": "^5.12.0",
     "react": "^19.1.2",
