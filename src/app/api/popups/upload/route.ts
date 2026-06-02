@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createClient } from '@/lib/supabase/client';
+import { createServiceClient } from '@/lib/supabase/server';
 import sharp from 'sharp';
 
 /**
@@ -35,7 +35,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const supabase = createClient();
+    const supabase = createServiceClient();
 
     // 고유한 파일명 생성 (WebP로 변환)
     const timestamp = Date.now();
