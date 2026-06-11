@@ -11,10 +11,10 @@ export default function ClinicProfile() {
   return (
     <aside
       className="mt-10 border-t-2 border-gray-200 pt-8"
-      aria-label="감수 의료기관 안내"
+      aria-label="작성 의료기관·의료인 안내"
     >
       <p className="text-[10px] font-semibold text-gray-400 tracking-wider uppercase mb-3">
-        본 콘텐츠를 감수한 의료기관 안내
+        본 콘텐츠를 작성한 의료기관·의료인 안내
       </p>
 
       <section className="rounded-2xl border border-gray-100 bg-white overflow-hidden">
@@ -45,6 +45,10 @@ export default function ClinicProfile() {
             <li className="flex gap-1.5">
               <span className="text-gray-400">•</span>
               <span>치의학 석사</span>
+            </li>
+            <li className="flex gap-1.5">
+              <span className="text-gray-400">•</span>
+              <span>서울대학교 치의학대학원 고급치의학과정 수료</span>
             </li>
             <li className="flex gap-1.5">
               <span className="text-gray-400">•</span>
@@ -95,8 +99,8 @@ export default function ClinicProfile() {
             진료 분야
           </p>
           <p className="text-[12.5px] text-gray-700 leading-relaxed">
-            임플란트 · 틀니 / 전체 임플란트 · 충치 / 신경치료 · 사랑니 발치 ·
-            잇몸 치료 / 스케일링 · 치아 미백 · 턱관절 치료
+            임플란트 · 틀니 / 전체 임플란트 · 크라운 / 보철 · 충치 / 신경치료 ·
+            사랑니 발치 · 잇몸 치료 / 스케일링 · 치아 미백 · 턱관절 치료
           </p>
         </div>
 

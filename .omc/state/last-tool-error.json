@@ -1,7 +1,7 @@
 {
-  "tool_name": "Read",
-  "tool_input_preview": "{\"file_path\":\"/Users/singyuseob/Dev/dentist_goduk/src/app/admin/page.tsx\"}",
-  "error": "File content (37138 tokens) exceeds maximum allowed tokens (25000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole file.",
-  "timestamp": "2026-05-06T09:49:06.441Z",
-  "retry_count": 1
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"git status --short | head -20; ls _expand.js 2>/dev/null && head -5 _expand.js\",\"description\":\"Check working tree changes and stray files\"}",
+  "error": "Exit code 1\n M .omc/project-memory.json\n M .omc/state/idle-notif-cooldown.json\n M .omc/state/last-tool-error.json\n M .omc/state/subagent-tracking.json\n M data/insights-articles.json\n M firebase-debug.log\n M src/app/insights/[slug]/page.tsx\n M src/components/insights/ClinicProfile.tsx\n M src/lib/insights.ts\n M src/lib/schema.ts\n?? .omc/sessions/edfa92fe-a257-47ef-8beb-3d8279ec8221.json\n?? .omc/sessions/fb2bdb57-0fcc-467f-a2b4-6507c231e88d.json\n?? .omc/state/agent-replay-350015d0-4c02-4c70-b44a-4a...",
+  "timestamp": "2026-06-11T10:14:59.898Z",
+  "retry_count": 2
 }

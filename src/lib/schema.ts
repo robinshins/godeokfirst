@@ -63,7 +63,78 @@ export function generateInsightArticleSchema({
   faqs,
   breadcrumbs,
 }: InsightArticleSchemaInput) {
+  const doctor = {
+    '@type': 'Person',
+    '@id': 'https://gdfirstdent.co.kr/#dr-lee-donghyun',
+    name: '이동현',
+    jobTitle: '고덕퍼스트치과의원 대표원장 · 통합치의학과 전문의(보건복지부 인증)',
+    worksFor: { '@id': 'https://gdfirstdent.co.kr/#clinic' },
+    alumniOf: {
+      '@type': 'CollegeOrUniversity',
+      name: '서울대학교 치의학대학원',
+    },
+    affiliation: {
+      '@type': 'CollegeOrUniversity',
+      name: '조선대학교 치과병원',
+      description: '외래교수',
+    },
+    hasCredential: [
+      {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: '전문의 자격',
+        name: '보건복지부 인증 통합치의학과 전문의',
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: '학위',
+        name: '치의학 석사',
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: '수료',
+        name: '서울대학교 치의학대학원 고급치의학과정 수료',
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: '수료',
+        name: '서울대학교 치의학대학원 임플란트 치의학 우수상 수료',
+      },
+    ],
+    knowsAbout: [
+      '임플란트',
+      '크라운·보철',
+      '신경치료',
+      '사랑니 발치',
+      '잇몸치료',
+    ],
+  };
+
+  const clinic = {
+    '@type': ['Dentist', 'MedicalOrganization'],
+    '@id': 'https://gdfirstdent.co.kr/#clinic',
+    name: '고덕퍼스트치과의원',
+    alternateName: '고덕퍼스트치과',
+    url: 'https://gdfirstdent.co.kr',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://gdfirstdent.co.kr/favicon.svg',
+    },
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '고덕로 250 에듀스카이 4층 401·402호',
+      addressLocality: '평택시',
+      addressRegion: '경기도',
+      addressCountry: 'KR',
+    },
+    telephone: '+82-31-611-3222',
+    areaServed: '경기도 평택시',
+    sameAs: ['https://naver.me/GSD1OqoS'],
+    employee: { '@id': 'https://gdfirstdent.co.kr/#dr-lee-donghyun' },
+  };
+
   const graph: Record<string, unknown>[] = [
+    doctor,
+    clinic,
     {
       '@type': ['MedicalWebPage', 'Article'],
       '@id': `${url}#article`,
@@ -73,25 +144,9 @@ export function generateInsightArticleSchema({
       inLanguage: 'ko-KR',
       datePublished: publishedAt,
       dateModified: updatedAt,
-      author: {
-        '@type': 'MedicalBusiness',
-        name: '고덕퍼스트치과',
-        url: 'https://gdfirstdent.co.kr',
-      },
-      publisher: {
-        '@type': 'Organization',
-        name: '고덕퍼스트치과',
-        url: 'https://gdfirstdent.co.kr',
-        logo: {
-          '@type': 'ImageObject',
-          url: 'https://gdfirstdent.co.kr/favicon.svg',
-        },
-      },
-      reviewedBy: {
-        '@type': 'Person',
-        name: '통합치의학과 전문의',
-        jobTitle: '통합치의학과 전문의',
-      },
+      author: { '@id': 'https://gdfirstdent.co.kr/#dr-lee-donghyun' },
+      publisher: { '@id': 'https://gdfirstdent.co.kr/#clinic' },
+      reviewedBy: { '@id': 'https://gdfirstdent.co.kr/#dr-lee-donghyun' },
       about: {
         '@type': 'MedicalCondition',
         name: '치과 의학 정보',

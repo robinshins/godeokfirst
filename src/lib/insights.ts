@@ -20,7 +20,10 @@ export type InsightTreatment =
   | 'wisdom-tooth'
   | 'whitening'
   | 'gum-care'
-  | 'tmj';
+  | 'tmj'
+  | 'crown'
+  | 'full-implant'
+  | 'general';
 
 export type InsightAngle =
   | 'digital-guide'
@@ -78,6 +81,9 @@ const TREATMENT_LABEL: Record<InsightTreatment, string> = {
   whitening: '치아 미백',
   'gum-care': '잇몸치료·스케일링',
   tmj: '턱관절 치료',
+  crown: '크라운·보철',
+  'full-implant': '전체 임플란트',
+  general: '치과 진료 가이드',
 };
 
 export function regionLabel(slug: InsightRegionSlug): string {

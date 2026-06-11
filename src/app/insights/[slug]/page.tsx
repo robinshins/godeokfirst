@@ -30,12 +30,13 @@ export async function generateMetadata({
   const article = getInsightBySlug(slug);
   if (!article) return {};
 
-  const description = `고덕퍼스트치과 통합치의학과 전문의 감수 — ${article.heroDescription.slice(0, 150)}`;
+  const description = `평택 고덕퍼스트치과의원 대표원장 이동현(통합치의학과 전문의) 작성 — ${article.heroDescription.slice(0, 150)}`;
   const url = `https://gdfirstdent.co.kr/insights/${article.slug}`;
 
   return {
     title: `${article.title} | 고덕퍼스트치과 인사이트`,
     description,
+    authors: [{ name: '이동현', url: 'https://gdfirstdent.co.kr' }],
     alternates: { canonical: url },
     openGraph: {
       title: article.title,
@@ -81,7 +82,7 @@ export default async function InsightArticlePage({ params }: RouteParams) {
 
   const schema = generateInsightArticleSchema({
     title: article.title,
-    description: `고덕퍼스트치과 통합치의학과 전문의 감수 — ${article.heroDescription.slice(0, 150)}`,
+    description: `평택 고덕퍼스트치과의원 대표원장 이동현(통합치의학과 전문의) 작성 — ${article.heroDescription.slice(0, 150)}`,
     url,
     publishedAt: article.publishedAt,
     updatedAt: article.updatedAt,
@@ -147,7 +148,7 @@ export default async function InsightArticlePage({ params }: RouteParams) {
             <span className="h-3 w-px bg-gray-200" />
             <span>최종검토 {formatDate(article.updatedAt)}</span>
             <span className="h-3 w-px bg-gray-200" />
-            <span>통합치의학과 전문의 감수</span>
+            <span>작성 · 이동현 대표원장 (통합치의학과 전문의)</span>
           </div>
         </section>
 
@@ -269,8 +270,9 @@ export default async function InsightArticlePage({ params }: RouteParams) {
           <div className="rounded-xl bg-gray-100 px-4 py-4 text-[11px] text-gray-500 leading-relaxed">
             본 글은 진료를 대체하지 않는 일반 의학 정보이며, 개별 증상에 대한
             정확한 진단은 반드시 내원 상담을 통해 결정해야 합니다. 본 콘텐츠는
-            경기 평택시 고덕로 250 에듀스카이 4층에 소재한 고덕퍼스트치과
-            내부에서 통합치의학과 전문의 감수를 거쳐 공개되었습니다.
+            경기 평택시 고덕로 250 에듀스카이 4층에 소재한 고덕퍼스트치과의원
+            대표원장 이동현(통합치의학과 전문의)이 직접 작성·검토하여
+            공개하였습니다.
           </div>
         </section>
       </main>
