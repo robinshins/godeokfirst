@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import GNB from '@/components/home/GNB';
 import FooterSection from '@/components/home/FooterSection';
 import ClinicProfile from '@/components/insights/ClinicProfile';
+import ClinicPriceTable from '@/components/insights/ClinicPriceTable';
 import {
   loadAllInsights,
   getInsightBySlug,
@@ -11,6 +12,7 @@ import {
   regionLabel,
   treatmentLabel,
 } from '@/lib/insights';
+import { isCostArticle, getClinicOffers } from '@/lib/clinicPricing';
 import { generateInsightArticleSchema } from '@/lib/schema';
 
 interface RouteParams {
@@ -79,6 +81,8 @@ export default async function InsightArticlePage({ params }: RouteParams) {
 
   const related = getRelatedInsights(article, 5);
   const url = `https://gdfirstdent.co.kr/insights/${article.slug}`;
+  const showPricing = isCostArticle(article);
+  const offers = showPricing ? getClinicOffers(article.treatment) : [];
 
   const schema = generateInsightArticleSchema({
     title: article.title,
@@ -100,6 +104,7 @@ export default async function InsightArticlePage({ params }: RouteParams) {
       { name: '의학정보', url: 'https://gdfirstdent.co.kr/insights' },
       { name: article.title, url },
     ],
+    offers,
   });
 
   return (
@@ -205,6 +210,9 @@ export default async function InsightArticlePage({ params }: RouteParams) {
             </p>
           </div>
         </section>
+
+        {/* Clinic non-covered pricing (cost articles only) */}
+        {showPricing ? <ClinicPriceTable treatment={article.treatment} /> : null}
 
         {/* FAQ — 2-tier (short + detail) */}
         {article.faqs.length > 0 ? (

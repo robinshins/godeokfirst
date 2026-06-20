@@ -42,6 +42,12 @@ export function generateBreadcrumbSchema(items: BreadcrumbItem[]) {
   };
 }
 
+interface ClinicOffer {
+  name: string;
+  price: number;
+  vatExtra: boolean;
+}
+
 interface InsightArticleSchemaInput {
   title: string;
   description: string;
@@ -51,6 +57,7 @@ interface InsightArticleSchemaInput {
   keywords?: string[];
   faqs?: FAQ[];
   breadcrumbs?: BreadcrumbItem[];
+  offers?: ClinicOffer[];
 }
 
 export function generateInsightArticleSchema({
@@ -62,6 +69,7 @@ export function generateInsightArticleSchema({
   keywords,
   faqs,
   breadcrumbs,
+  offers,
 }: InsightArticleSchemaInput) {
   const doctor = {
     '@type': 'Person',
@@ -188,6 +196,27 @@ export function generateInsightArticleSchema({
         position: i + 1,
         name: b.name,
         item: b.url,
+      })),
+    });
+  }
+
+  if (offers && offers.length > 0) {
+    graph.push({
+      '@type': 'OfferCatalog',
+      '@id': `${url}#pricing`,
+      name: '고덕퍼스트치과의원 비급여 진료비용',
+      provider: { '@id': 'https://gdfirstdent.co.kr/#clinic' },
+      itemListElement: offers.map((o) => ({
+        '@type': 'Offer',
+        itemOffered: { '@type': 'MedicalProcedure', name: o.name },
+        priceSpecification: {
+          '@type': 'PriceSpecification',
+          price: o.price,
+          priceCurrency: 'KRW',
+          valueAddedTaxIncluded: !o.vatExtra,
+        },
+        seller: { '@id': 'https://gdfirstdent.co.kr/#clinic' },
+        areaServed: '경기도 평택시',
       })),
     });
   }

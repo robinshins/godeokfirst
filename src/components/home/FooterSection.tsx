@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 import Link from 'next/link';
 
 type ModalType = 'privacy' | 'terms' | 'rights' | 'prices' | null;
@@ -27,7 +27,7 @@ export default function FooterSection() {
             <button onClick={() => setOpenModal('privacy')} className="hover:text-gray-900">개인정보처리방침</button>
             <button onClick={() => setOpenModal('terms')} className="hover:text-gray-900">회원약관</button>
             <button onClick={() => setOpenModal('rights')} className="hover:text-gray-900">환자의 권리와 의무</button>
-            <button onClick={() => setOpenModal('prices')} className="hover:text-gray-900">비급여목록</button>
+            <button onClick={() => setOpenModal('prices')} className="hover:text-gray-900">비급여수가표</button>
           </div>
 
           {/* Company Info */}
@@ -106,7 +106,7 @@ export default function FooterSection() {
                 {openModal === 'privacy' && '개인정보처리방침'}
                 {openModal === 'terms' && '회원약관'}
                 {openModal === 'rights' && '환자의 권리와 의무'}
-                {openModal === 'prices' && '비급여 진료비용'}
+                {openModal === 'prices' && '비급여 수가표'}
               </h2>
               <button onClick={() => setOpenModal(null)} className="text-2xl text-gray-500 hover:text-gray-900">&times;</button>
             </div>
@@ -382,63 +382,129 @@ function PatientRights() {
   );
 }
 
-// 비급여 진료비용
+// 비급여 진료비용 (비급여 수가표)
 function NonInsurancePrices() {
-  const prices = [
-    { code: 'UW3021017', item: '치과 처치: 수술료/치석제거/1/3악당', classification: '치석제거 1/3', price: '10,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
-    { code: 'UW3021027', item: '치과 처치: 수술료/치석제거/상악', classification: '치석제거 상악', price: '25,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
-    { code: 'UW3021037', item: '치과 처치: 수술료/치석제거/하악', classification: '치석제거 하악', price: '25,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
-    { code: 'UW3021047', item: '치과 처치: 수술료/치석제거/전악', classification: '치석제거 전악', price: '70,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
-    { code: 'UZ0040014', item: '치과 처치: 수술료/인레이(Inlay) 및 온레이(Onlay)', classification: 'ceramic inlay', price: '300,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
-    { code: 'U02390000', item: '치과 처치: 수술료/광중합형 복합레진 충전/우식-1면', classification: '레진 우식1면', price: '100,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
-    { code: 'U02400000', item: '치과 처치: 수술료/광중합형 복합레진 충전/우식-2면', classification: '레진 2면', price: '100,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
-    { code: 'U02410000', item: '치과 처치: 수술료/광중합형 복합레진 충전/우식-3면 이상', classification: '레진 3면이상', price: '150,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
-    { code: 'UB0010051', item: '치관의 보철료/치과임플란트(1치당)/Zirconia', classification: '임플란트 zir', price: '', minPrice: '890,000', maxPrice: '1,290,000', note: '', updated: '2024-01-01' },
-    { code: 'UW609F350', item: '치관의 보철료/크라운/Zirconia', classification: 'zirconia', price: '500,000', minPrice: '', maxPrice: '', note: 'core별도', updated: '2024-01-01' },
-    { code: 'PDZ010000', item: '제증명수수료/진단서/일반', classification: '일반진단서', price: '20,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
-    { code: 'PDZ090007', item: '제증명수수료/확인서/진료', classification: '진료확인서', price: '3,000', minPrice: '', maxPrice: '', note: '', updated: '2024-01-01' },
+  const priceGroups = [
+    {
+      category: '임플란트 치료',
+      items: [
+        { name: '포인트 SLA', price: '550,000', note: '보증기간 2년 / 보철 2년' },
+        { name: '오스템 SA', price: '790,000', note: '보증기간 3년 / 보철 2년' },
+        { name: '오스템 BA', price: '890,000', note: '보증기간 5년 / 보철 2년' },
+        { name: '단순 뼈이식', price: '200,000', note: '' },
+        { name: '복잡 뼈이식', price: '350,000', note: '' },
+        { name: '커스텀 어버트먼트', price: '100,000', note: '타원 임플란트' },
+        { name: '네비게이션', price: '100,000', note: '' },
+        { name: '상악동 (Crestal)', price: '350,000', note: '' },
+        { name: '상악동 (Lateral)', price: '1,000,000', note: '' },
+        { name: '지르코니아 가공치 (전치부)', price: '550,000', note: '' },
+        { name: '지르코니아 가공치 (구치부)', price: '450,000', note: '' },
+        { name: 'PFM 가공치', price: '450,000', note: '' },
+      ],
+    },
+    {
+      category: '보철 치료',
+      items: [
+        { name: '지르코니아 (구치부)', price: '450,000', note: '보증기간 1년' },
+        { name: '지르크라운 (전치부)', price: '550,000', note: '보증기간 1년' },
+        { name: 'PFM 크라운', price: '450,000', note: '보증기간 1년' },
+        { name: '라미네이트', price: '550,000', note: '부가세 별도' },
+      ],
+    },
+    {
+      category: '틀니 치료',
+      items: [
+        { name: '부분 틀니', price: '1,500,000', note: '' },
+        { name: '전체 틀니', price: '1,500,000', note: '' },
+        { name: '틀니 수리', price: '100,000', note: '' },
+        { name: '틀니 개상', price: '300,000', note: '' },
+        { name: '임시 틀니', price: '300,000', note: '' },
+        { name: 'Wire Temporary', price: '100,000', note: '' },
+      ],
+    },
+    {
+      category: '보존 치료',
+      items: [
+        { name: '레진', price: '100,000', note: '' },
+        { name: '레진 (인접면)', price: '150,000', note: '' },
+        { name: '레진 (Diastema)', price: '150,000', note: '' },
+        { name: '레진-치경부', price: '60,000', note: '보증기간 1년' },
+        { name: '세라믹 인레이', price: '280,000', note: '보증기간 1년' },
+        { name: '레진 코어', price: '50,000', note: '전치부, 구치부' },
+        { name: '포스트', price: '150,000', note: '' },
+      ],
+    },
+    {
+      category: '소아 치료',
+      items: [
+        { name: '소아 레진', price: '50,000', note: '보증기간 6개월' },
+        { name: 'SS Crown', price: '100,000', note: '보증기간 6개월' },
+        { name: '불소 도포', price: '25,000', note: '3회 6만원' },
+        { name: '치아 홈메우기', price: '40,000', note: '' },
+      ],
+    },
+    {
+      category: '교정 치료',
+      items: [
+        { name: 'Fixed 제거 (타의원/치아당)', price: '10,000', note: '' },
+        { name: 'Fixed 재부착 (타의원/치아당)', price: '50,000', note: '' },
+        { name: '유지장치 (악당)', price: '300,000', note: '' },
+      ],
+    },
+    {
+      category: '기타 치료',
+      items: [
+        { name: '이갈이 장치', price: '450,000', note: '' },
+        { name: '비보험 스케일링', price: '60,000', note: '' },
+        { name: '타원 레진홀', price: '50,000', note: '' },
+      ],
+    },
+    {
+      category: '미용 치료 (과세)',
+      items: [
+        { name: '보톡스 (50유닛/100유닛)', price: '100,000 / 150,000', note: '부가세 별도' },
+        { name: '미백 (전문가 3회)', price: '400,000', note: '부가세 별도' },
+      ],
+    },
   ];
 
   return (
     <div className="space-y-4">
-      <div className="bg-blue-50 p-4 rounded-lg text-sm text-gray-700">
-        <p className="font-semibold mb-2">비급여 진료비용 안내</p>
+      <div className="bg-[#e6f3f5] p-4 rounded-lg text-sm text-gray-700">
+        <p className="font-semibold mb-2 text-[#006B7A]">비급여 수가표 안내</p>
         <p className="text-xs leading-relaxed">
-          본 비급여 진료비용은 2024년 기준으로 작성되었으며, 환자의 구강 상태 및 사용 재료에 따라 변동될 수 있습니다.
+          본 비급여 진료비용은 환자의 구강 상태 및 사용 재료에 따라 변동될 수 있습니다.
           정확한 진료비용은 내원 시 상담을 통해 안내드립니다.
         </p>
       </div>
 
-      <div className="overflow-x-auto -mx-6 px-6">
+      <div className="overflow-hidden rounded-lg border border-gray-200">
         <table className="w-full text-xs border-collapse">
           <thead>
             <tr className="bg-[#008095] text-white">
-              <th className="border border-gray-300 px-2 py-2 text-left min-w-[100px]">코드</th>
-              <th className="border border-gray-300 px-2 py-2 text-left min-w-[200px]">중분류 / 소분류</th>
-              <th className="border border-gray-300 px-2 py-2 text-left min-w-[120px]">사용명칭</th>
-              <th className="border border-gray-300 px-2 py-2 text-right min-w-[80px]">비용</th>
-              <th className="border border-gray-300 px-2 py-2 text-right min-w-[80px]">최저비용</th>
-              <th className="border border-gray-300 px-2 py-2 text-right min-w-[80px]">최고비용</th>
-              <th className="border border-gray-300 px-2 py-2 text-left min-w-[80px]">특이사항</th>
+              <th className="px-3 py-2.5 text-left font-semibold">항목</th>
+              <th className="px-3 py-2.5 text-right font-semibold whitespace-nowrap">가격(원)</th>
+              <th className="px-3 py-2.5 text-left font-semibold">비고</th>
             </tr>
           </thead>
           <tbody>
-            {prices.map((item, index) => (
-              <tr key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                <td className="border border-gray-300 px-2 py-2 text-gray-600">{item.code}</td>
-                <td className="border border-gray-300 px-2 py-2">{item.item}</td>
-                <td className="border border-gray-300 px-2 py-2">{item.classification}</td>
-                <td className="border border-gray-300 px-2 py-2 text-right font-semibold">
-                  {item.price ? `${item.price}원` : '-'}
-                </td>
-                <td className="border border-gray-300 px-2 py-2 text-right">
-                  {item.minPrice ? `${item.minPrice}원` : '-'}
-                </td>
-                <td className="border border-gray-300 px-2 py-2 text-right">
-                  {item.maxPrice ? `${item.maxPrice}원` : '-'}
-                </td>
-                <td className="border border-gray-300 px-2 py-2 text-xs text-gray-600">{item.note}</td>
-              </tr>
+            {priceGroups.map((group) => (
+              <Fragment key={group.category}>
+                <tr className="bg-[#f0f5f6]">
+                  <td colSpan={3} className="px-3 py-2 font-bold text-[#006B7A] border-t border-gray-200">
+                    {group.category}
+                  </td>
+                </tr>
+                {group.items.map((item, index) => (
+                  <tr key={`${group.category}-${index}`} className="border-t border-gray-100">
+                    <td className="px-3 py-2 text-gray-800">{item.name}</td>
+                    <td className="px-3 py-2 text-right font-semibold text-gray-900 whitespace-nowrap">
+                      {item.price}
+                    </td>
+                    <td className="px-3 py-2 text-[11px] text-gray-500">{item.note || '-'}</td>
+                  </tr>
+                ))}
+              </Fragment>
             ))}
           </tbody>
         </table>

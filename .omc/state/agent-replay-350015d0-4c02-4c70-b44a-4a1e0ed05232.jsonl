@@ -78,3 +78,4 @@
 {"t":0,"agent":"aac09db","agent_type":"workflow-subagent","event":"agent_stop","success":true,"duration_ms":295823}
 {"t":0,"agent":"aac09db","agent_type":"workflow-subagent","event":"agent_stop","success":true,"duration_ms":299784}
 {"t":0,"agent":"aac09db","agent_type":"workflow-subagent","event":"agent_stop","success":true,"duration_ms":304821}
+{"t":0,"agent":"ac4ff1e","agent_type":"unknown","event":"agent_stop","success":true}
