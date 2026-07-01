@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3001",
+    "dev": "next dev -p $(for p in 3001 3002 3003 3004 3005 3006; do lsof -iTCP:$p -sTCP:LISTEN >/dev/null 2>&1 || { echo $p; break; }; done)",
     "build": "NODE_OPTIONS='--max-old-space-size=4096' next build",
     "start": "next start",
     "lint": "next lint"

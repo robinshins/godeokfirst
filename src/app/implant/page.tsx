@@ -56,7 +56,7 @@ import SkillDifferenceSection from '@/components/implant/SkillDifferenceSection'
 import DoctorSection from '@/components/home/DoctorSection';
 import WhyBestSection from '@/components/home/WhyBestSection';
 import LocationSection from '@/components/home/LocationSection';
-// import YouTubeSection from '@/components/home/YouTubeSection';
+import YouTubeSection from '@/components/home/YouTubeSection';
 import MobileColumnSection from '@/components/home/MobileColumnSection';
 import FAQSection from '@/components/home/FAQSection';
 import SloganSection from '@/components/home/SloganSection';
@@ -82,6 +82,9 @@ export default function ImplantPage() {
       {/* Video Section */}
       {/* <VideoSection /> */}
       <MobileColumnSection page="implant" />
+
+      {/* YouTube Section - 임플란트 Q&A */}
+      <YouTubeSection />
 
       {/* Why Best Section - 전국 1등인 이유 */}
       <WhyBestNewSection />

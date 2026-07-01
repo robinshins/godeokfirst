@@ -6,7 +6,7 @@ import TreatmentSection from '@/components/home/TreatmentSection';
 import DoctorSection from '@/components/home/DoctorSection';
 import WhyBestSection from '@/components/home/WhyBestSection';
 import LocationSection from '@/components/home/LocationSection';
-// import YouTubeSection from '@/components/home/YouTubeSection';
+import YouTubeSection from '@/components/home/YouTubeSection';
 import FAQSection from '@/components/home/FAQSection';
 import CTASection from '@/components/home/CTASection';
 import FooterSection from '@/components/home/FooterSection';
@@ -113,9 +113,9 @@ export default function Home() {
       <StatsSection />
       <TreatmentSection />
       <DoctorSection />
+      <YouTubeSection />
       <WhyBestSection />
       <LocationSection />
-      {/* <YouTubeSection /> */}
       <FAQSection />
       <CTASection />
       <FooterSection />

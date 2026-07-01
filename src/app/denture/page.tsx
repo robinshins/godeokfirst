@@ -61,7 +61,7 @@ import SkillDifferenceSection from '@/components/implant/SkillDifferenceSection'
 import DoctorSection from '@/components/home/DoctorSection';
 import WhyBestSection from '@/components/home/WhyBestSection';
 import LocationSection from '@/components/home/LocationSection';
-// import YouTubeSection from '@/components/home/YouTubeSection';
+import YouTubeSection from '@/components/home/YouTubeSection';
 import MobileColumnSection from '@/components/home/MobileColumnSection';
 import FAQSection from '@/components/home/FAQSection';
 import SloganSection from '@/components/home/SloganSection';
@@ -86,6 +86,9 @@ export default function DenturePage() {
 
       {/* Doctor's Column - 원장 의학 칼럼 */}
       <MobileColumnSection page="denture" />
+
+      {/* YouTube Section - 임플란트 Q&A */}
+      <YouTubeSection />
 
       {/* Treatment Options Section - 치료 선택 가이드 */}
       <TreatmentOptionsSection />
