@@ -14,7 +14,7 @@ import {
 export const metadata: Metadata = {
   title: '치과 의학정보 | 고덕퍼스트치과 인사이트',
   description:
-    '평택 고덕동 고덕퍼스트치과가 정리한 임플란트·사랑니·신경치료·잇몸·미백 등 치과 의학정보 모음. 통합치의학과 전문의 감수.',
+    '평택 고덕동 고덕퍼스트치과의원이 정리한 임플란트·크라운·사랑니·신경치료·잇몸·미백 등 치과 의학정보 모음. 대표원장 이동현(통합치의학과 전문의) 직접 작성·감수.',
   alternates: { canonical: 'https://gdfirstdent.co.kr/insights' },
   openGraph: {
     title: '치과 의학정보 | 고덕퍼스트치과 인사이트',
@@ -41,12 +41,15 @@ const REGION_ORDER: InsightRegionSlug[] = [
 
 const TREATMENT_ORDER: InsightTreatment[] = [
   'implant',
+  'full-implant',
   'denture',
+  'crown',
   'cavity-treatment',
   'wisdom-tooth',
   'gum-care',
   'whitening',
   'tmj',
+  'general',
 ];
 
 export default function InsightsHubPage() {

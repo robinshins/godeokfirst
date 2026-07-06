@@ -236,7 +236,8 @@ export function generateMedicalServiceSchema({ name, description, url }: Medical
     url,
     performer: {
       '@type': 'Dentist',
-      name: '고덕퍼스트치과',
+      name: '고덕퍼스트치과의원',
+      alternateName: '고덕퍼스트치과',
       address: {
         '@type': 'PostalAddress',
         addressLocality: '경기도 평택시',

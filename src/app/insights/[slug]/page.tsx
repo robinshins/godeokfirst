@@ -57,6 +57,8 @@ export async function generateMetadata({
     keywords: [
       article.keyword,
       `${article.region} ${treatmentLabel(article.treatment)}`,
+      '고덕퍼스트치과의원',
+      '평택 고덕퍼스트치과',
       '고덕퍼스트치과',
       '평택 고덕동 치과',
       treatmentLabel(article.treatment),
