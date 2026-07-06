@@ -21,7 +21,7 @@ export default function PromotionSection() {
         <div className="flex flex-col gap-[70px] w-full">
           {/* Title */}
           <div className="flex flex-col gap-6 items-start w-full text-center">
-            <h2 className="font-bold text-[36px] leading-[1.35] tracking-[-0.72px] text-[#f2f2f2] w-full">
+            <h2 className="font-bold text-[30px] min-[375px]:text-[36px] leading-[1.35] tracking-[-0.72px] text-[#f2f2f2] w-full">
               아직 올해 스케일링<br />
               안 받으셨나요?
             </h2>

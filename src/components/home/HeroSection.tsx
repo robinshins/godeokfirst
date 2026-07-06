@@ -44,7 +44,7 @@ export default function HeroSection() {
               <p className="font-semibold leading-[1.5] relative shrink-0 text-lg tracking-[-0.36px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
                 대학병원 외래교수 전문의가 직접 진료하는 곳
               </p>
-              <h1 className="font-extrabold leading-[1.2] relative shrink-0 text-[37px] tracking-[-2px] w-full" style={{ fontFamily: 'Nanum Myeongjo, serif' }}>
+              <h1 className="font-extrabold leading-[1.2] relative shrink-0 text-[30px] min-[375px]:text-[37px] tracking-[-1px] w-full" style={{ fontFamily: 'Nanum Myeongjo, serif' }}>
                 고덕 최고의 치과,<br />퍼스트치과
               </h1>
             </div>

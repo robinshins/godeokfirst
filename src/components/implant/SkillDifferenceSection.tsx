@@ -124,7 +124,7 @@ export default function SkillDifferenceSection() {
                     </p>
                   </div>
                   <div className="shrink-0">
-                    <span className="inline-block px-2.5 py-1 bg-[#008095]/20 text-[#4DC8D8] text-[11px] font-bold rounded-full" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+                    <span className="inline-block px-2.5 py-1 bg-[#008095]/20 text-[#4DC8D8] text-[12px] font-bold rounded-full" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
                       {item.highlight}
                     </span>
                   </div>

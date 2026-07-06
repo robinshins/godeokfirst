@@ -9,7 +9,7 @@ export default function DoctorProfileSection() {
         <div className="flex flex-col gap-10 items-start w-full">
           {/* Title */}
           <div className="flex flex-col gap-3 items-start text-center text-white w-full">
-            <h2 className="font-['Pretendard_JP'] font-bold text-[36px] leading-[1.35] tracking-[-0.72px] w-full">
+            <h2 className="font-['Pretendard_JP'] font-bold text-[30px] min-[375px]:text-[36px] leading-[1.35] tracking-[-0.72px] w-full">
               통합치의학과 전문의가<br />직접 진료합니다
             </h2>
             <p className="font-['Pretendard_JP'] font-semibold text-[20px] leading-[1.6] tracking-[-0.4px] w-full text-[#4DC8D8]">
@@ -46,7 +46,7 @@ export default function DoctorProfileSection() {
                     </p>
                   </div>
                 </div>
-                <div className="font-['Pretendard_JP'] font-bold text-[24px] leading-[1.6] tracking-[-0.48px] whitespace-nowrap">
+                <div className="font-['Pretendard_JP'] font-bold text-[19px] min-[375px]:text-[21px] leading-[1.6] tracking-[-0.48px]">
                   <p>보건복지부 인증 통합치의학과 전문의</p>
                   <p>조선대학교 치과병원 외래교수</p>
                 </div>

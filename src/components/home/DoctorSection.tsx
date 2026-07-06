@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import FadeInSection from '@/components/common/FadeInSection';
 
 export default function DoctorSection() {
   const doctor = {
@@ -44,7 +45,7 @@ export default function DoctorSection() {
           <p className="text-[17px] font-['Pretendard_JP'] font-bold text-[#4DC8D8] uppercase tracking-[2.04px] leading-[32px]">
             통합치의학전문의 이동현 원장
           </p>
-          <h2 className="text-[36px] font-['Pretendard_JP'] font-bold text-white leading-[1.35] tracking-[-0.72px] text-center">
+          <h2 className="text-[30px] min-[375px]:text-[36px] font-['Pretendard_JP'] font-bold text-white leading-[1.35] tracking-[-0.72px] text-center">
             고덕퍼스트치과
             <br />
             최고의 의료진
@@ -52,7 +53,7 @@ export default function DoctorSection() {
         </div>
 
         {/* Doctor Card */}
-        <div className="flex flex-col gap-8 mt-[60px]">
+        <FadeInSection className="flex flex-col gap-8 mt-[60px]">
           {/* Doctor Image */}
           <div className="bg-white rounded-[20px] overflow-hidden shadow-lg h-[480px] relative">
             <Image
@@ -71,7 +72,7 @@ export default function DoctorSection() {
               <span className="text-lg font-bold">{doctor.position}</span>
             </div>
 
-            <div className="text-2xl font-bold mb-8 leading-[1.6]">
+            <div className="text-[20px] min-[375px]:text-2xl font-bold mb-8 leading-[1.6]">
               {doctor.credentials.map((cred, i) => (
                 <p key={i} className={i === 0 ? 'mb-0' : ''}>{cred}</p>
               ))}
@@ -85,17 +86,17 @@ export default function DoctorSection() {
               ))}
             </ul>
           </div>
-        </div>
+        </FadeInSection>
 
         {/* Credentials Photo */}
-        <div className="mt-12 rounded-[20px] overflow-hidden shadow-lg relative h-[250px]">
+        <FadeInSection className="mt-12 rounded-[20px] overflow-hidden shadow-lg relative h-[250px]">
           <Image
             src="/images/goduk_images/원장이력 등 걸려있는사진.jpg"
             alt="고덕퍼스트치과 원장 이력 및 인증"
             fill
             className="object-cover"
           />
-        </div>
+        </FadeInSection>
       </div>
     </div>
   );

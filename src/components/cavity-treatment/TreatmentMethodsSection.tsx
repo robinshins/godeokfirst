@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function TreatmentMethodsSection() {
   return (
-    <div className="bg-white w-full py-[60px] px-4 relative">
+    <div className="bg-white w-full py-[60px] px-4 relative overflow-x-clip">
       {/* Background gradient */}
       <div className="absolute h-[636px] left-[calc(50%+5.5px)] top-[149px] -translate-x-1/2 w-[480px] pointer-events-none">
         <div className="absolute inset-[-62.89%_-83.33%]">
@@ -54,10 +54,10 @@ export default function TreatmentMethodsSection() {
                           />
                         </div>
                         <div className="flex flex-col gap-1 items-start justify-center">
-                          <p className="font-['Pretendard_JP'] font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black whitespace-nowrap">
+                          <p className="font-['Pretendard_JP'] font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black">
                             초기 충치 치료
                           </p>
-                          <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582] whitespace-nowrap">
+                          <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582]">
                             정밀 진단으로 숨은 충치까지 발견
                           </p>
                         </div>
@@ -74,10 +74,10 @@ export default function TreatmentMethodsSection() {
                           />
                         </div>
                         <div className="flex flex-col gap-1 items-start justify-center">
-                          <p className="font-['Pretendard_JP'] font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black whitespace-nowrap">
+                          <p className="font-['Pretendard_JP'] font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black">
                             레진 치료
                           </p>
-                          <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582] whitespace-nowrap">
+                          <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582]">
                             자연 치아와 동일 색상으로 심미적 복원
                           </p>
                         </div>
@@ -94,10 +94,10 @@ export default function TreatmentMethodsSection() {
                           />
                         </div>
                         <div className="flex flex-col gap-1 items-start justify-center">
-                          <p className="font-['Pretendard_JP'] font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black whitespace-nowrap">
+                          <p className="font-['Pretendard_JP'] font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black">
                             인레이 · 온레이
                           </p>
-                          <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582] whitespace-nowrap">
+                          <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582]">
                             넓은 충치도 발치없이 정밀 보존 치료
                           </p>
                         </div>
@@ -126,10 +126,10 @@ export default function TreatmentMethodsSection() {
                           />
                         </div>
                         <div className="flex flex-col gap-1 items-start justify-center flex-1">
-                          <p className="font-['Pretendard_JP'] font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black whitespace-nowrap">
+                          <p className="font-['Pretendard_JP'] font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black">
                             통증 완화
                           </p>
-                          <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582] whitespace-nowrap">
+                          <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582]">
                             심한 치통 제거로 편안한 일상 회복
                           </p>
                         </div>
@@ -146,10 +146,10 @@ export default function TreatmentMethodsSection() {
                           />
                         </div>
                         <div className="flex flex-col gap-1 items-start justify-center flex-1">
-                          <p className="font-['Pretendard_JP'] font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black whitespace-nowrap">
+                          <p className="font-['Pretendard_JP'] font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black">
                             치아 보존
                           </p>
-                          <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582] whitespace-nowrap">
+                          <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582]">
                             발치없이 자연 치아 살리기
                           </p>
                         </div>
@@ -166,10 +166,10 @@ export default function TreatmentMethodsSection() {
                           />
                         </div>
                         <div className="flex flex-col gap-1 items-start justify-center flex-1">
-                          <p className="font-['Pretendard_JP'] font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black whitespace-nowrap">
+                          <p className="font-['Pretendard_JP'] font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black">
                             정밀 신경 치료
                           </p>
-                          <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582] whitespace-nowrap">
+                          <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#727582]">
                             통합치의학과 전문의 직접 집도
                           </p>
                         </div>

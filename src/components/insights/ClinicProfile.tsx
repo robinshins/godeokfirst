@@ -144,7 +144,7 @@ export default function ClinicProfile() {
 
         {/* Statutory notice inside the card */}
         <div className="px-5 py-3 bg-gray-50 border-t border-gray-100">
-          <p className="text-[10px] text-gray-500 leading-relaxed">
+          <p className="text-[11px] text-gray-500 leading-relaxed">
             본 안내는 의료기관 기본정보(의료법 제56조 이하) 고지 목적으로
             제공되며, 특정 치료의 효과를 보장하지 않습니다. 치료 방법 및
             기간은 환자 개별 상태에 따라 달라질 수 있으며, 부작용과 주의사항은

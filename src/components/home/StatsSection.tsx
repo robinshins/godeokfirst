@@ -1,10 +1,11 @@
 'use client';
 
 import Image from 'next/image';
+import FadeInSection from '@/components/common/FadeInSection';
 
 export default function StatsSection() {
   return (
-    <div className="bg-gradient-to-b from-[#21314E] from-[0.541%] to-white w-full relative">
+    <div className="bg-gradient-to-b from-[#21314E] from-[0.541%] to-white w-full relative overflow-x-clip">
       {/* Background gradient effect - full width */}
       <div className="absolute h-[711px] left-[calc(50%+5.5px)] top-[217.35px] -translate-x-1/2 w-[480px] pointer-events-none">
         <div className="absolute inset-[-56.26%_-83.33%]">
@@ -51,10 +52,10 @@ export default function StatsSection() {
           {/* Stats Cards */}
           <div className="flex flex-col gap-4 items-center justify-center relative shrink-0 w-full z-10">
             {/* Card 1: 전문의 직접 진료 */}
-            <div className="bg-white box-border flex flex-col gap-5 items-center px-5 py-8 relative rounded-2xl shrink-0 w-full">
+            <FadeInSection className="bg-white box-border flex flex-col gap-5 items-center px-5 py-8 relative rounded-2xl shrink-0 w-full">
               <div className="flex gap-3 items-baseline justify-center relative shrink-0 w-full">
                 <p
-                  className="font-bold leading-[1] not-italic text-[48px] text-center text-nowrap tracking-[-2.88px] text-[#008095]"
+                  className="font-bold leading-[1] not-italic text-[40px] min-[375px]:text-[48px] text-center text-nowrap tracking-[-1.5px] text-[#008095]"
                   style={{ fontFamily: 'Pretendard, sans-serif' }}
                 >
                   대학병원
@@ -69,13 +70,13 @@ export default function StatsSection() {
                   직접 상담하고 수술하며 끝까지 책임집니다
                 </p>
               </div>
-            </div>
+            </FadeInSection>
 
             {/* Card 2: 임플란트 수술 건수 */}
-            <div className="bg-white box-border flex flex-col gap-4 items-center px-4 py-10 relative rounded-2xl shrink-0 w-full">
+            <FadeInSection delay={100} className="bg-white box-border flex flex-col gap-4 items-center px-4 py-10 relative rounded-2xl shrink-0 w-full">
               <div className="flex gap-3 items-baseline justify-center relative shrink-0 w-full">
                 <p
-                  className="font-bold leading-[1] not-italic text-[72px] text-center text-nowrap tracking-[-2.88px] text-[#008095]"
+                  className="font-bold leading-[1] not-italic text-[56px] min-[375px]:text-[72px] text-center text-nowrap tracking-[-1.5px] text-[#008095]"
                   style={{ fontFamily: 'Pretendard, sans-serif' }}
                 >
                   1,200 +
@@ -92,13 +93,13 @@ export default function StatsSection() {
                   디지털 임플란트 수술 경력
                 </p>
               </div>
-            </div>
+            </FadeInSection>
 
             {/* Card 3: 사랑니 발치 */}
-            <div className="bg-white box-border flex flex-col gap-4 items-center px-4 py-10 relative rounded-2xl shrink-0 w-full">
+            <FadeInSection delay={100} className="bg-white box-border flex flex-col gap-4 items-center px-4 py-10 relative rounded-2xl shrink-0 w-full">
               <div className="flex gap-3 items-baseline justify-center relative shrink-0 w-full">
                 <p
-                  className="font-bold leading-[1] not-italic text-[72px] text-center text-nowrap tracking-[-2.88px] text-[#008095]"
+                  className="font-bold leading-[1] not-italic text-[56px] min-[375px]:text-[72px] text-center text-nowrap tracking-[-1.5px] text-[#008095]"
                   style={{ fontFamily: 'Pretendard, sans-serif' }}
                 >
                   2,000 +
@@ -112,13 +113,13 @@ export default function StatsSection() {
                   사랑니 발치 경력
                 </p>
               </div>
-            </div>
+            </FadeInSection>
 
             {/* Card 4: 보건복지부 인증 */}
-            <div className="bg-white box-border flex flex-col gap-5 items-center px-5 py-8 relative rounded-2xl shrink-0 w-full">
+            <FadeInSection delay={100} className="bg-white box-border flex flex-col gap-5 items-center px-5 py-8 relative rounded-2xl shrink-0 w-full">
               <div className="flex gap-3 items-baseline justify-center relative shrink-0 w-full">
                 <p
-                  className="font-bold leading-[1] not-italic text-[48px] text-center text-nowrap tracking-[-2.88px] text-[#008095]"
+                  className="font-bold leading-[1] not-italic text-[40px] min-[375px]:text-[48px] text-center text-nowrap tracking-[-1.5px] text-[#008095]"
                   style={{ fontFamily: 'Pretendard, sans-serif' }}
                 >
                   보건복지부
@@ -133,10 +134,10 @@ export default function StatsSection() {
                   모든 분야를 통합적으로 진료합니다
                 </p>
               </div>
-            </div>
+            </FadeInSection>
 
             {/* 설명 섹션 */}
-            <div className="bg-[#f8f9fb] box-border flex flex-col gap-4 items-start px-5 py-6 relative rounded-2xl shrink-0 w-full mt-2">
+            <FadeInSection delay={100} className="bg-[#f8f9fb] box-border flex flex-col gap-4 items-start px-5 py-6 relative rounded-2xl shrink-0 w-full mt-2">
               <p className="font-bold text-[18px] text-[#37373e] leading-[1.4]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
                 통합치의학전문의란?
               </p>
@@ -151,7 +152,7 @@ export default function StatsSection() {
                   직접 수술하고, 사후관리까지 끝까지 책임집니다.
                 </p>
               </div>
-            </div>
+            </FadeInSection>
           </div>
         </div>
       </div>

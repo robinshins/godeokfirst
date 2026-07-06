@@ -128,7 +128,7 @@ export default function WhiteningPeroxideSection() {
                   ].map((step, index) => (
                     <div key={index} className="flex gap-2 items-start font-semibold text-[15px] leading-[1.4] tracking-[-0.3px]">
                       <p className="text-[#008095] w-3 shrink-0">{index + 1}</p>
-                      <p className="text-[#727582] whitespace-pre">{step}</p>
+                      <p className="text-[#727582]">{step}</p>
                     </div>
                   ))}
                 </div>
@@ -151,7 +151,7 @@ export default function WhiteningPeroxideSection() {
                       height={24}
                     />
                   </div>
-                  <div className="flex flex-col gap-1 text-white whitespace-pre">
+                  <div className="flex flex-col gap-1 text-white">
                     <p className="font-bold text-[17px] leading-[1.5] tracking-[-0.34px]">
                       {benefit.title}
                     </p>
@@ -198,31 +198,31 @@ export default function WhiteningPeroxideSection() {
                 {/* 농도 */}
                 <div className="bg-white p-3 flex flex-col gap-1">
                   <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#008095]">15% 고농도</p>
-                  <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#727582]">식약처 허가 의료용</p>
+                  <p className="font-medium text-[12px] leading-[1.4] tracking-[-0.22px] text-[#727582]">식약처 허가 의료용</p>
                 </div>
                 <div className="bg-white p-3 flex flex-col gap-1">
                   <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#727582]">1-4% 저농도</p>
-                  <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#999]">효과 미미</p>
+                  <p className="font-medium text-[12px] leading-[1.4] tracking-[-0.22px] text-[#999]">효과 미미</p>
                 </div>
 
                 {/* 효과 */}
                 <div className="bg-white p-3 flex flex-col gap-1">
                   <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#008095]">하루 만에</p>
-                  <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#727582]">3-4단계 밝아짐</p>
+                  <p className="font-medium text-[12px] leading-[1.4] tracking-[-0.22px] text-[#727582]">3-4단계 밝아짐</p>
                 </div>
                 <div className="bg-white p-3 flex flex-col gap-1">
                   <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#727582]">4주 이상</p>
-                  <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#999]">서서히 미미한 효과</p>
+                  <p className="font-medium text-[12px] leading-[1.4] tracking-[-0.22px] text-[#999]">서서히 미미한 효과</p>
                 </div>
 
                 {/* 안전성 */}
                 <div className="bg-white p-3 flex flex-col gap-1">
                   <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#008095]">사전 구강 검진</p>
-                  <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#727582]">+ 불소도포 처치</p>
+                  <p className="font-medium text-[12px] leading-[1.4] tracking-[-0.22px] text-[#727582]">+ 불소도포 처치</p>
                 </div>
                 <div className="bg-white p-3 flex flex-col gap-1">
                   <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#727582]">자가 시술</p>
-                  <p className="font-medium text-[11px] leading-[1.4] tracking-[-0.22px] text-[#999]">잇몸 화상 위험</p>
+                  <p className="font-medium text-[12px] leading-[1.4] tracking-[-0.22px] text-[#999]">잇몸 화상 위험</p>
                 </div>
               </div>
             </div>

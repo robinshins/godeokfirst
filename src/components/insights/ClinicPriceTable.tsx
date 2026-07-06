@@ -58,7 +58,7 @@ export default function ClinicPriceTable({
                     <span className="text-[12.5px] text-gray-700 leading-snug">
                       {item.name}
                       {item.note ? (
-                        <span className="block text-[10.5px] text-gray-400 mt-0.5">
+                        <span className="block text-[11px] text-gray-400 mt-0.5">
                           {item.note}
                         </span>
                       ) : null}
@@ -80,7 +80,7 @@ export default function ClinicPriceTable({
 
         {/* Statutory notice */}
         <div className="px-4 py-3 bg-gray-50 border-t border-gray-100">
-          <p className="text-[10px] text-gray-500 leading-relaxed">
+          <p className="text-[11px] text-gray-500 leading-relaxed">
             의료법 제45조에 따른 비급여 진료비용 고지입니다. 위 금액은 표준
             가격으로, 실제 비용은 진단 결과와 구강 상태, 추가 처치 여부에 따라
             달라질 수 있습니다. 부가세 별도 표기 항목 외 의료비는 면세입니다.

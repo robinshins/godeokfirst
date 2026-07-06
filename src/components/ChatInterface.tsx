@@ -1596,7 +1596,7 @@ export default function ChatInterface({ initialMessage, language = 'ko' }: ChatI
                                   height={80}
                                   className="w-full h-[70px] object-cover"
                                 />
-                                <span className="absolute bottom-1 left-1 bg-black/50 text-white text-[9px] px-1 rounded">전</span>
+                                <span className="absolute bottom-1 left-1 bg-black/50 text-white text-[11px] px-1 rounded">전</span>
                               </div>
                               <div className="flex-1 relative">
                                 <Image
@@ -1606,7 +1606,7 @@ export default function ChatInterface({ initialMessage, language = 'ko' }: ChatI
                                   height={80}
                                   className="w-full h-[70px] object-cover"
                                 />
-                                <span className="absolute bottom-1 right-1 bg-[#008095]/80 text-white text-[9px] px-1 rounded">후</span>
+                                <span className="absolute bottom-1 right-1 bg-[#008095]/80 text-white text-[11px] px-1 rounded">후</span>
                               </div>
                             </div>
                           </div>

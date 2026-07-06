@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import FadeInSection from '@/components/common/FadeInSection';
 
 export default function TreatmentSection() {
   const treatments = [
@@ -131,6 +132,7 @@ export default function TreatmentSection() {
                 index % 2 === 1 ? 'bg-[#f8f9fa]' : 'bg-white'
               }`}
             >
+              <FadeInSection>
               {/* Card Header - Icon + Title */}
               <div className="relative mb-12 pt-10">
                 <div className="flex flex-col gap-4">
@@ -146,8 +148,8 @@ export default function TreatmentSection() {
                   </div>
 
                   {/* Title + Subtitle */}
-                  <div className="flex flex-col gap-2">
-                    <h3 className="text-[33px] font-bold text-[#292a2f] leading-[1.35] tracking-[-0.72px]">
+                  <div className="flex flex-col gap-2 pr-20">
+                    <h3 className="text-[26px] min-[375px]:text-[33px] font-bold text-[#292a2f] leading-[1.35] tracking-[-0.72px]">
                       {treatment.title}
                     </h3>
                     <div className="flex flex-col gap-1">
@@ -190,7 +192,7 @@ export default function TreatmentSection() {
               {/* Card Body */}
               <div className="flex flex-col gap-5">
                 {/* Description */}
-                <p className="text-[20px] font-bold text-[#292a2f] leading-[1.35] whitespace-pre-line tracking-[-0.48px] w-[343px]">
+                <p className="text-[20px] font-bold text-[#292a2f] leading-[1.35] whitespace-pre-line tracking-[-0.48px] w-full">
                   {treatment.description}
                 </p>
 
@@ -215,6 +217,7 @@ export default function TreatmentSection() {
 
               {/* Bottom padding for card */}
               <div className="pb-10"></div>
+              </FadeInSection>
             </div>
           ))}
         </div>

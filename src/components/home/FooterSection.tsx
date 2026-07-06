@@ -13,7 +13,7 @@ export default function FooterSection() {
       {/* 의료법 준수 면책조항 */}
       <div className="bg-gray-100 py-4 px-4">
         <div className="max-w-[430px] mx-auto">
-          <p className="text-[10px] text-gray-500 leading-relaxed text-center">
+          <p className="text-[11px] text-gray-500 leading-relaxed text-center">
             본 웹사이트의 치료 사례 및 후기는 개인의 경험에 따른 것으로, 치료 효과는 개인에 따라 다를 수 있습니다.
             모든 의료 행위에는 출혈, 감염, 부종 등의 부작용이 발생할 수 있으며, 정확한 진단과 치료 계획은 반드시 전문의와 상담 후 결정하시기 바랍니다.
           </p>
@@ -23,7 +23,7 @@ export default function FooterSection() {
       <div className="max-w-[430px] mx-auto px-4 py-10">
         <div className="space-y-20">
           {/* Footer Links */}
-          <div className="flex justify-between text-[13px] font-semibold text-[#37373e]">
+          <div className="flex flex-wrap justify-between gap-x-4 gap-y-2 text-[13px] font-semibold text-[#37373e]">
             <button onClick={() => setOpenModal('privacy')} className="hover:text-gray-900">개인정보처리방침</button>
             <button onClick={() => setOpenModal('terms')} className="hover:text-gray-900">회원약관</button>
             <button onClick={() => setOpenModal('rights')} className="hover:text-gray-900">환자의 권리와 의무</button>
@@ -87,7 +87,7 @@ export default function FooterSection() {
                 <Link
                   key={region.slug}
                   href={`/${region.slug}`}
-                  className="text-[11px] text-gray-400 hover:text-gray-600"
+                  className="text-[12px] text-gray-400 hover:text-gray-600 py-0.5 inline-block"
                 >
                   {region.name}
                 </Link>

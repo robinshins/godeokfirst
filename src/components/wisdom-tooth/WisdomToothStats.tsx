@@ -45,7 +45,7 @@ export default function WisdomToothStats() {
               <span className="sr-only">{stat.number}{stat.unit} {stat.label}{stat.subtitle ? ` - ${stat.subtitle}` : ''}</span>
               <div className="flex gap-2 items-start justify-center relative shrink-0 w-full" aria-hidden="true">
                 <p
-                  className="font-bold leading-normal not-italic text-[72px] text-center text-nowrap tracking-[-2.88px]"
+                  className="font-bold leading-normal not-italic text-[56px] min-[375px]:text-[72px] text-center text-nowrap tracking-[-1.5px]"
                   style={{
                     fontFamily: '"NanumSquare", sans-serif',
                     background: 'linear-gradient(to bottom, #008095 0%, #006B7A 100%)',

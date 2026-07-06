@@ -50,7 +50,7 @@ export default function ImportantMomentsSection() {
               {moments.slice(0, 2).map((moment, index) => (
                 <div
                   key={index}
-                  className="flex-1 bg-[#f3f6fb] rounded-[24px] p-6 flex flex-col gap-12 items-center justify-center"
+                  className="flex-1 bg-[#f3f6fb] rounded-[24px] p-4 min-[375px]:p-6 flex flex-col gap-12 items-center justify-center"
                 >
                   <div className="flex flex-col gap-[6px] items-center justify-center w-full">
                     <div className="w-20 h-20 relative">
@@ -63,7 +63,7 @@ export default function ImportantMomentsSection() {
                       />
                     </div>
                     <div className="flex flex-col gap-2 items-center justify-center text-center w-full">
-                      <p className="font-bold text-[22px] leading-[1.4] tracking-[-0.44px] text-[#37373e]">
+                      <p className="font-bold text-[18px] min-[375px]:text-[22px] leading-[1.4] tracking-[-0.44px] text-[#37373e]">
                         {moment.label}
                       </p>
                       <p className="font-semibold text-base leading-[1.4] tracking-[-0.32px] text-[#5d5f6d] whitespace-pre-line">
@@ -78,7 +78,7 @@ export default function ImportantMomentsSection() {
               {moments.slice(2, 4).map((moment, index) => (
                 <div
                   key={index + 2}
-                  className="flex-1 bg-[#f3f6fb] rounded-[24px] p-6 flex flex-col gap-12 items-center justify-center"
+                  className="flex-1 bg-[#f3f6fb] rounded-[24px] p-4 min-[375px]:p-6 flex flex-col gap-12 items-center justify-center"
                 >
                   <div className="flex flex-col gap-[6px] items-center justify-center w-full">
                     <div className="w-20 h-20 relative">
@@ -91,7 +91,7 @@ export default function ImportantMomentsSection() {
                       />
                     </div>
                     <div className="flex flex-col gap-2 items-center justify-center text-center w-full">
-                      <p className="font-bold text-[22px] leading-[1.4] tracking-[-0.44px] text-[#37373e]">
+                      <p className="font-bold text-[18px] min-[375px]:text-[22px] leading-[1.4] tracking-[-0.44px] text-[#37373e]">
                         {moment.label}
                       </p>
                       <p className="font-semibold text-base leading-[1.4] tracking-[-0.32px] text-[#5d5f6d] whitespace-pre-line">

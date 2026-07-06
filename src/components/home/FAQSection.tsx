@@ -1,3 +1,7 @@
+'use client';
+
+import { useState } from 'react';
+
 type PageType = 'home' | 'implant' | 'denture' | 'whitening' | 'wisdom-tooth' | 'cavity-treatment' | 'gum-care' | 'tmj';
 
 interface FAQ {
@@ -186,32 +190,66 @@ const faqData: Record<PageType, FAQ[]> = {
 
 export default function FAQSection({ page = 'home' }: FAQSectionProps) {
   const faqs = faqData[page];
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
     <div className="bg-white">
       <div className="max-w-[430px] mx-auto px-4 py-[60px]">
         {/* Section Title */}
-        <h2 className="text-4xl font-bold text-[#292a2f] text-center mb-[60px]">
+        <h2 className="text-[28px] min-[375px]:text-4xl font-bold text-[#292a2f] text-center mb-10">
           자주 묻는 질문
         </h2>
 
-        {/* FAQ Items */}
+        {/* FAQ Items (Accordion) */}
         <div className="space-y-0">
-          {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className={`py-10 space-y-5 ${
-                index !== faqs.length - 1 ? 'border-b border-[#e9ebf1]' : ''
-              }`}
-            >
-              <h3 className="text-[22px] font-bold text-black leading-[1.4] whitespace-pre-line">
-                {faq.question}
-              </h3>
-              <p className="text-[17px] font-medium text-[#5d5f6d] leading-[1.59] pr-5">
-                {faq.answer}
-              </p>
-            </div>
-          ))}
+          {faqs.map((faq, index) => {
+            const isOpen = openIndex === index;
+            return (
+              <div
+                key={index}
+                className={index !== faqs.length - 1 ? 'border-b border-[#e9ebf1]' : ''}
+              >
+                <h3>
+                  <button
+                    type="button"
+                    onClick={() => setOpenIndex(isOpen ? null : index)}
+                    aria-expanded={isOpen}
+                    className="flex items-center justify-between gap-4 w-full py-6 text-left"
+                  >
+                    <span className="text-[19px] min-[375px]:text-[21px] font-bold text-black leading-[1.4]">
+                      {faq.question.replace(/\n/g, ' ')}
+                    </span>
+                  <svg
+                    className={`shrink-0 w-5 h-5 text-[#008095] transition-transform duration-300 ${
+                      isOpen ? 'rotate-180' : ''
+                    }`}
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M5 7.5L10 12.5L15 7.5"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                  </button>
+                </h3>
+                <div
+                  className="grid transition-[grid-template-rows] duration-300 ease-out"
+                  style={{ gridTemplateRows: isOpen ? '1fr' : '0fr' }}
+                >
+                  <div className="overflow-hidden">
+                    <p className="text-[16px] min-[375px]:text-[17px] font-medium text-[#5d5f6d] leading-[1.65] pb-6 whitespace-pre-line">
+                      {faq.answer}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

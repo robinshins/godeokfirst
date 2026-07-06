@@ -23,9 +23,9 @@ export default function ComparisonSection() {
           </div>
 
           {/* Comparison Table */}
-          <div className="relative w-full h-[263px]">
+          <div className="flex gap-3 items-start w-full">
             {/* 일반 치과 */}
-            <div className="absolute left-[10px] top-[20.21px] w-[133px]">
+            <div className="flex-1 min-w-0 pt-8 pl-1">
               <div className="flex flex-col gap-[10px] items-start w-full">
                 <div className="flex gap-[10.671px] items-start w-full">
                   <h3 className="font-['Pretendard_JP'] font-bold text-[22px] leading-[1.4] tracking-[-0.44px] text-[#37373e] flex-1">
@@ -61,7 +61,7 @@ export default function ComparisonSection() {
             </div>
 
             {/* 고덕퍼스트치과 */}
-            <div className="absolute left-[157px] top-[-13px] w-[186px] bg-white border-2 border-[#008095] rounded-2xl p-5">
+            <div className="flex-[1.4] min-w-0 bg-white border-2 border-[#008095] rounded-2xl p-4 min-[375px]:p-5">
               <div className="flex flex-col gap-[10px] items-center justify-center w-full">
                 <div className="flex gap-[10.671px] items-start w-full">
                   <h3 className="font-['Pretendard_JP'] font-bold text-[18px] leading-[1.4] tracking-[-0.36px] text-black flex-1">

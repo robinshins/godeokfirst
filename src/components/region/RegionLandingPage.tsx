@@ -85,11 +85,11 @@ export default function RegionLandingPage({ data }: { data: RegionData }) {
             </div>
 
             <div className="flex justify-center">
-              <Image src="/고덕퍼스트치과-로고-(화이트).png" alt="고덕퍼스트치과" width={375} height={84} />
+              <Image src="/고덕퍼스트치과-로고-(화이트).png" alt="고덕퍼스트치과" width={375} height={84} className="w-full max-w-[375px] h-auto" />
             </div>
 
             <h1
-              className="text-[32px] font-bold text-white text-center leading-[1.35] tracking-[-0.64px]"
+              className="text-[26px] min-[375px]:text-[32px] font-bold text-white text-center leading-[1.35] tracking-[-0.64px]"
               style={{ fontFamily: 'Pretendard, sans-serif' }}
             >
               {data.heroTitle}
@@ -365,7 +365,7 @@ export default function RegionLandingPage({ data }: { data: RegionData }) {
       {/* FAQ Section */}
       <div className="bg-white">
         <div className="max-w-[430px] mx-auto px-4 py-[60px]">
-          <h2 className="text-4xl font-bold text-[#292a2f] text-center mb-[60px]">
+          <h2 className="text-[28px] min-[375px]:text-4xl font-bold text-[#292a2f] text-center mb-[60px] leading-[1.35]">
             {data.name} 치과<br />자주 묻는 질문
           </h2>
           <div className="space-y-0">

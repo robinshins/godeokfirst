@@ -134,7 +134,7 @@ export default function GNB() {
               {/* Dropdown Menu */}
               <div
                 className="absolute bg-white border border-[#f3f6fb] rounded-[20px] flex flex-col shadow-lg"
-                style={{ zIndex: 9999, padding: '24px 20px', width: '343px', gap: '20px', top: '40px', right: '0' }}
+                style={{ zIndex: 9999, padding: '24px 20px', width: 'min(343px, calc(100vw - 32px))', gap: '20px', top: '40px', right: '0' }}
               >
                 {languages.map((lang) => (
                   <Link

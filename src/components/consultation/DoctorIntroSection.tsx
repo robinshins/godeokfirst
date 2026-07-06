@@ -58,7 +58,7 @@ export default function DoctorIntroSection() {
                   {mainDoctor.position}
                 </span>
               </div>
-              <div className="font-['Pretendard_JP'] font-medium text-[11.5px] text-[#5d5f6d] leading-[1.7] tracking-[-0.26px]">
+              <div className="font-['Pretendard_JP'] font-medium text-[13px] text-[#5d5f6d] leading-[1.7] tracking-[-0.26px]">
                 {mainDoctor.credentials.slice(0, 3).map((cred, index) => (
                   <p key={index} className="mb-0.5">{cred}</p>
                 ))}

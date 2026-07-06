@@ -18,7 +18,7 @@ export default function LocationSection() {
               />
             </div>
           </div>
-          <h2 className="text-4xl font-bold text-[#292a2f] leading-[1.35] mb-8">
+          <h2 className="text-[30px] min-[375px]:text-4xl font-bold text-[#292a2f] leading-[1.35] mb-8">
             건강한 치아, 행복한 미소를 위한 첫 걸음을
             <br />
             함께하세요
@@ -133,33 +133,33 @@ export default function LocationSection() {
             {/* 진료시간 */}
             <div className="space-y-3">
               <p className="text-base font-semibold text-[#727582]">진료시간</p>
-              <div className="text-[15px] font-semibold text-black leading-[1.8] space-y-1">
+              <div className="text-[14px] min-[375px]:text-[15px] font-semibold text-black leading-[1.8] space-y-1">
                 <div className="flex">
-                  <span className="min-w-[140px]">월 / 목 (야간진료) :</span>
+                  <span className="min-w-[124px] min-[375px]:min-w-[140px] shrink-0">월 / 목 (야간진료) :</span>
                   <span className="whitespace-nowrap">AM 10:00 – PM 09:00</span>
                 </div>
                 <div className="flex">
-                  <span className="min-w-[140px]">화 / 수 / 금 :</span>
+                  <span className="min-w-[124px] min-[375px]:min-w-[140px] shrink-0">화 / 수 / 금 :</span>
                   <span className="whitespace-nowrap">AM 10:00 – PM 07:00</span>
                 </div>
                 <div className="flex">
-                  <span className="min-w-[140px]">토요일 :</span>
+                  <span className="min-w-[124px] min-[375px]:min-w-[140px] shrink-0">토요일 :</span>
                   <span className="whitespace-nowrap">AM 09:30 – PM 02:00</span>
                 </div>
                 <div className="flex">
-                  <span className="min-w-[140px]"></span>
+                  <span className="min-w-[124px] min-[375px]:min-w-[140px] shrink-0"></span>
                   <span className="text-[13px] text-[#727582]">(점심시간 없음)</span>
                 </div>
                 <div className="flex">
-                  <span className="min-w-[140px]">점심시간 :</span>
+                  <span className="min-w-[124px] min-[375px]:min-w-[140px] shrink-0">점심시간 :</span>
                   <span className="whitespace-nowrap">PM 01:00 – PM 02:00</span>
                 </div>
                 <div className="flex">
-                  <span className="min-w-[140px]"></span>
+                  <span className="min-w-[124px] min-[375px]:min-w-[140px] shrink-0"></span>
                   <span className="text-[13px] text-[#727582]">(월~금)</span>
                 </div>
                 <div className="flex">
-                  <span className="min-w-[140px]">휴진 :</span>
+                  <span className="min-w-[124px] min-[375px]:min-w-[140px] shrink-0">휴진 :</span>
                   <span>일요일 및 공휴일</span>
                 </div>
               </div>

@@ -68,7 +68,7 @@ export default function SelfVsProfessionalSection() {
                             <path d="M18 6L6 18M6 6L18 18" stroke="#FF1616" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                           </svg>
                         </div>
-                        <div className="flex flex-col gap-1 justify-center whitespace-pre">
+                        <div className="flex flex-col gap-1 justify-center">
                           <p className="font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black">
                             {item.title}
                           </p>
@@ -108,7 +108,7 @@ export default function SelfVsProfessionalSection() {
                             height={24}
                           />
                         </div>
-                        <div className="flex flex-col gap-1 justify-center whitespace-pre">
+                        <div className="flex flex-col gap-1 justify-center">
                           <p className="font-bold text-[17px] leading-[1.5] tracking-[-0.34px] text-black">
                             {item.title}
                           </p>

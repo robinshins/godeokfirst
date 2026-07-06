@@ -32,7 +32,7 @@ export default function ImplantHero() {
 
           {/* Main Text */}
           <div className="flex flex-col gap-4 items-start leading-[0] not-italic relative shrink-0 text-center w-full">
-            <h1 className="font-extrabold leading-[1.35] relative shrink-0 text-4xl tracking-[-2.16px] w-full text-[#008095]" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+            <h1 className="font-extrabold leading-[1.35] relative shrink-0 text-[30px] min-[375px]:text-4xl tracking-[-1px] w-full text-[#008095]" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
               대학병원 수술의 퀄리티를<br />
               그대로 느껴보세요.
             </h1>

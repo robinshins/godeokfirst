@@ -19,9 +19,9 @@ export default function WhiteningStats() {
         {/* Stats Cards */}
         <div className="flex flex-col gap-5">
           {/* 10+ 년 Card */}
-          <div className="bg-white rounded-2xl p-10 text-center">
+          <div className="bg-white rounded-2xl p-6 min-[375px]:p-10 text-center">
             <div className="flex items-start justify-center gap-2 mb-4">
-              <span className="text-[72px] font-bold bg-gradient-to-b from-[#008095] to-[#006d80] bg-clip-text text-transparent leading-normal tracking-[-2.88px]">
+              <span className="text-[56px] min-[375px]:text-[72px] font-bold bg-gradient-to-b from-[#008095] to-[#006d80] bg-clip-text text-transparent leading-normal tracking-[-1.5px]">
                 10+
               </span>
               <div className="flex flex-col justify-end self-stretch pb-3 pt-2.5">
@@ -34,9 +34,9 @@ export default function WhiteningStats() {
           </div>
 
           {/* 1,000+ 건 Card */}
-          <div className="bg-white rounded-2xl p-10 text-center">
+          <div className="bg-white rounded-2xl p-6 min-[375px]:p-10 text-center">
             <div className="flex items-start justify-center gap-2 mb-4">
-              <span className="text-[72px] font-bold bg-gradient-to-b from-[#008095] to-[#006d80] bg-clip-text text-transparent leading-normal tracking-[-2.88px]">
+              <span className="text-[56px] min-[375px]:text-[72px] font-bold bg-gradient-to-b from-[#008095] to-[#006d80] bg-clip-text text-transparent leading-normal tracking-[-1.5px]">
                 1,000+
               </span>
               <div className="flex flex-col justify-end self-stretch pb-3 pt-2.5">
@@ -49,9 +49,9 @@ export default function WhiteningStats() {
           </div>
 
           {/* 부작용 0건 Card */}
-          <div className="bg-white rounded-2xl p-10 text-center">
+          <div className="bg-white rounded-2xl p-6 min-[375px]:p-10 text-center">
             <div className="flex items-start justify-center gap-2 mb-4">
-              <span className="text-[72px] font-bold bg-gradient-to-b from-[#008095] to-[#006d80] bg-clip-text text-transparent leading-normal tracking-[-2.88px]">
+              <span className="text-[56px] min-[375px]:text-[72px] font-bold bg-gradient-to-b from-[#008095] to-[#006d80] bg-clip-text text-transparent leading-normal tracking-[-1.5px]">
                 0
               </span>
               <div className="flex flex-col justify-end self-stretch pb-3 pt-2.5">

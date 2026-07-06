@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import FadeInSection from '@/components/common/FadeInSection';
 
 export default function CTASection() {
   return (
     <div className="flex items-center" style={{ background: 'linear-gradient(161deg, #21314E 13.86%, #1a2740 19.07%, #0f1a2d 28.55%)' }}>
       <div className="max-w-[430px] mx-auto px-4 w-full py-20">
-        <div className="flex flex-col gap-20">
+        <FadeInSection className="flex flex-col gap-20">
           {/* Logo and Content */}
           <div className="flex flex-col gap-6 w-full">
             {/* Logo */}
@@ -25,7 +26,7 @@ export default function CTASection() {
                 <p className="font-bold leading-[1.35] text-2xl text-white tracking-[-0.48px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
                   지금바로 무료로 상담해 보세요
                 </p>
-                <div className="font-bold leading-[1.35] text-[40px] text-white tracking-[-0.8px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
+                <div className="font-bold leading-[1.35] text-[32px] min-[375px]:text-[40px] text-white tracking-[-0.8px] w-full" style={{ fontFamily: 'Pretendard, sans-serif' }}>
                   <p className="mb-0">고덕 최고의 치과,</p>
                   <p>퍼스트치과</p>
                 </div>
@@ -43,7 +44,7 @@ export default function CTASection() {
               </div>
             </div>
           </div>
-        </div>
+        </FadeInSection>
       </div>
     </div>
   );

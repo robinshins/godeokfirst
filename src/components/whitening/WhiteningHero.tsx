@@ -28,7 +28,7 @@ export default function WhiteningHero() {
 
             <div className="flex flex-col gap-4 text-center w-full">
               <h1
-                className="font-extrabold leading-[1.35] text-4xl tracking-[-2.16px] w-full text-[#008095]"
+                className="font-extrabold leading-[1.35] text-[30px] min-[375px]:text-4xl tracking-[-1px] w-full text-[#008095]"
                 style={{ fontFamily: '"NanumSquare", sans-serif' }}
               >
                 미소 하나로<br />

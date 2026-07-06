@@ -35,6 +35,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   line-height: 1.6;
+  /* 한국어 단어 단위 줄바꿈 (단어 중간 끊김 방지) + 긴 문자열 오버플로우 방지 */
+  word-break: keep-all;
+  overflow-wrap: break-word;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -43,6 +46,55 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+/* 장식용 고정폭 요소(w-[480px] 등)로 인한 가로 스크롤 전역 방어
+   (clip은 스크롤 컨테이너를 만들지 않아 position: sticky에 영향 없음) */
+html,
+body {
+  overflow-x: clip;
+}
+
+/* 앵커 이동 부드럽게 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 모바일 탭 시 회색 하이라이트 제거 (터치 피드백은 아래 :active 스케일로 대체) */
+button,
+a,
+[role='button'] {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 버튼 공통 터치 피드백 — transform/opacity만 사용해 리플로우 없음 */
+@media (prefers-reduced-motion: no-preference) {
+  button {
+    transition:
+      transform 0.15s ease,
+      background-color 0.2s ease,
+      color 0.2s ease,
+      border-color 0.2s ease,
+      box-shadow 0.2s ease,
+      opacity 0.2s ease;
+  }
+  button:active {
+    transform: scale(0.97);
+  }
+}
+
+/* 시스템에서 모션 최소화를 선호하면 모든 애니메이션/스크롤 효과 비활성화 */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 @keyframes fadeInUp {

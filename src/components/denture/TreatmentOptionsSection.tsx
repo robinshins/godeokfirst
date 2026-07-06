@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import FadeInSection from '@/components/common/FadeInSection';
-import { ChevronDown, Check, X, Shield, Clock, TrendingUp, Wallet } from 'lucide-react';
+import { ChevronDown, Check, Minus, Shield, Clock, TrendingUp, Wallet } from 'lucide-react';
 
 const treatments = [
   {
@@ -211,7 +211,7 @@ export default function TreatmentOptionsSection() {
                     
                     <div className="flex flex-col gap-1 flex-1 min-w-0">
                       <div className="flex items-center gap-2">
-                        <span className={`text-[10px] font-bold px-2 py-0.5 rounded-md border ${t.tagColor}`}>
+                        <span className={`text-[11px] font-bold px-2 py-0.5 rounded-md border ${t.tagColor}`}>
                           {t.tag}
                         </span>
                       </div>
@@ -240,7 +240,7 @@ export default function TreatmentOptionsSection() {
                           <div key={stat.label} className="bg-slate-50/80 rounded-2xl p-3 flex flex-col gap-2 border border-slate-100/50">
                             <div className="flex items-center gap-2">
                               <stat.icon size={12} className="text-[#008095]" />
-                              <span className="text-[11px] font-semibold text-slate-500" style={{ fontFamily: '"NanumSquare", sans-serif' }}>{stat.label}</span>
+                              <span className="text-[12px] font-semibold text-slate-500" style={{ fontFamily: '"NanumSquare", sans-serif' }}>{stat.label}</span>
                             </div>
                             <RatingVisual value={stat.value} color={t.color} />
                           </div>
@@ -255,38 +255,54 @@ export default function TreatmentOptionsSection() {
                         </p>
                       </div>
 
-                      {/* 장단점 Side by Side (if screen allows) or Stacked */}
-                      <div className="grid grid-cols-1 gap-4">
-                        <div className="bg-emerald-50/40 rounded-[20px] p-4 border border-emerald-100/50">
-                          <p className="font-bold text-[13px] text-emerald-700 flex items-center gap-2 mb-3" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
-                            <div className="w-5 h-5 rounded-full bg-emerald-100 flex items-center justify-center">
-                              <Check size={12} strokeWidth={3} />
-                            </div>
-                            장점
-                          </p>
-                          <div className="flex flex-col gap-2.5">
-                            {t.pros.map((pro, i) => (
-                              <div key={i} className="flex items-start gap-2">
-                                <span className="text-[13px] text-slate-600 leading-tight" style={{ fontFamily: '"NanumSquare", sans-serif' }}>• {pro}</span>
-                              </div>
-                            ))}
+                      {/* 장단점 비교 카드 */}
+                      <div className="rounded-[20px] border border-slate-200/80 overflow-hidden bg-white shadow-[0_2px_12px_-4px_rgba(15,23,42,0.06)]">
+                        {/* 장점 */}
+                        <div className="p-5 relative">
+                          <div className="absolute left-0 top-5 bottom-5 w-[3px] bg-emerald-400 rounded-r-full" />
+                          <div className="flex items-center gap-2 mb-3.5">
+                            <span className="w-6 h-6 rounded-full bg-emerald-500 flex items-center justify-center shadow-[0_2px_6px_rgba(16,185,129,0.35)]">
+                              <Check size={13} strokeWidth={3.5} className="text-white" />
+                            </span>
+                            <span className="font-bold text-[14px] text-emerald-700 tracking-tight" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+                              이런 점이 좋아요
+                            </span>
                           </div>
+                          <ul className="flex flex-col gap-2.5">
+                            {t.pros.map((pro, i) => (
+                              <li key={i} className="flex items-start gap-2.5">
+                                <Check size={14} strokeWidth={3} className="text-emerald-500 mt-[3px] shrink-0" />
+                                <span className="text-[14px] text-slate-700 leading-[1.55] font-medium" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+                                  {pro}
+                                </span>
+                              </li>
+                            ))}
+                          </ul>
                         </div>
 
-                        <div className="bg-rose-50/40 rounded-[20px] p-4 border border-rose-100/50">
-                          <p className="font-bold text-[13px] text-rose-700 flex items-center gap-2 mb-3" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
-                            <div className="w-5 h-5 rounded-full bg-rose-100 flex items-center justify-center">
-                              <X size={12} strokeWidth={3} />
-                            </div>
-                            단점
-                          </p>
-                          <div className="flex flex-col gap-2.5">
-                            {t.cons.map((con, i) => (
-                              <div key={i} className="flex items-start gap-2">
-                                <span className="text-[13px] text-slate-600 leading-tight" style={{ fontFamily: '"NanumSquare", sans-serif' }}>• {con}</span>
-                              </div>
-                            ))}
+                        <div className="h-px bg-slate-100 mx-5" />
+
+                        {/* 단점 */}
+                        <div className="p-5 relative bg-slate-50/60">
+                          <div className="absolute left-0 top-5 bottom-5 w-[3px] bg-rose-300 rounded-r-full" />
+                          <div className="flex items-center gap-2 mb-3.5">
+                            <span className="w-6 h-6 rounded-full bg-rose-400 flex items-center justify-center shadow-[0_2px_6px_rgba(251,113,133,0.35)]">
+                              <Minus size={13} strokeWidth={3.5} className="text-white" />
+                            </span>
+                            <span className="font-bold text-[14px] text-rose-600 tracking-tight" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+                              이런 점은 아쉬워요
+                            </span>
                           </div>
+                          <ul className="flex flex-col gap-2.5">
+                            {t.cons.map((con, i) => (
+                              <li key={i} className="flex items-start gap-2.5">
+                                <Minus size={14} strokeWidth={3} className="text-rose-400 mt-[3px] shrink-0" />
+                                <span className="text-[14px] text-slate-600 leading-[1.55] font-medium" style={{ fontFamily: '"NanumSquare", sans-serif' }}>
+                                  {con}
+                                </span>
+                              </li>
+                            ))}
+                          </ul>
                         </div>
                       </div>
                     </div>

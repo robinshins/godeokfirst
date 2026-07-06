@@ -92,14 +92,14 @@ export default function AfterCareSection() {
           <p className="text-[#4DC8D8] text-[13px] font-bold mb-5 text-center tracking-[2px]">
             고덕퍼스트치과 사후관리 프로세스
           </p>
-          <div className="grid grid-cols-4 gap-2">
+          <div className="grid grid-cols-2 min-[375px]:grid-cols-4 gap-3 min-[375px]:gap-2">
             {steps.map((s) => (
               <div key={s.step} className="flex flex-col items-center gap-2">
                 <div className="bg-[#008095] rounded-full w-11 h-11 flex items-center justify-center">
                   <span className="text-white font-black text-[16px]">{s.step}</span>
                 </div>
                 <p className="text-white text-[12px] font-bold text-center">{s.title}</p>
-                <p className="text-[#a0c4d4] text-[11px] text-center leading-[1.3]">{s.desc}</p>
+                <p className="text-[#a0c4d4] text-[12px] text-center leading-[1.3]">{s.desc}</p>
               </div>
             ))}
           </div>

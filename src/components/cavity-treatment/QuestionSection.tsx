@@ -12,7 +12,7 @@ export default function QuestionSection() {
                 <p className="font-['Nanum_Myeongjo'] font-extrabold text-[60px] leading-[0.2] tracking-[-3.6px] w-full">
                   &#x201C;
                 </p>
-                <p className="font-['Pretendard_JP'] font-bold text-[32px] leading-[1.35] tracking-[-0.64px] w-full">
+                <p className="font-['Pretendard_JP'] font-bold text-[27px] min-[375px]:text-[32px] leading-[1.35] tracking-[-0.64px] w-full">
                   이렇게 꼼꼼하게 봐주는 치과가 있을 줄 몰랐어요
                 </p>
               </div>
