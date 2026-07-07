@@ -21,12 +21,11 @@ export default function TreatmentCards() {
       id: 2,
       title: '치아 미백',
       subtitle: '최고급 장비 보유',
-      description: '안전하고 효과적인 미백 시술\n스케일링과 함께 시 50% 할인',
+      description: '안전하고 효과적인 미백 시술\n전문가 미백 시스템',
       features: ['1회 시술로 즉시 효과', '치아 손상 없음', '합리적인 가격', '전문가 미백으로 확실한 효과'],
       icon: '✨',
       color: 'purple',
       link: '/whitening',
-      promotion: '특별 50% 할인',
     },
     {
       id: 3,
@@ -78,14 +77,7 @@ export default function TreatmentCards() {
           {treatments.map((treatment) => (
             <Link href={treatment.link} key={treatment.id}>
               <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl hover:bg-gray-800/70 transition-all duration-300 overflow-hidden h-full group cursor-pointer">
-                
-                {/* Promotion Badge */}
-                {treatment.promotion && (
-                  <div className="bg-cyan-500 text-gray-900 text-sm font-bold px-4 py-2 text-center">
-                    {treatment.promotion}
-                  </div>
-                )}
-                
+
                 <div className="p-8">
 
                   {/* Header */}

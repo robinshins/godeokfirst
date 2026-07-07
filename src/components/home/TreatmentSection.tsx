@@ -93,7 +93,7 @@ export default function TreatmentSection() {
       iconBg: 'bg-purple-50',
       title: '치아 미백',
       subtitle: '최고급 장비 보유',
-      description: '안전하고 효과적인 미백 시술\n스케일링과 함께 할인',
+      description: '안전하고 효과적인 미백 시술\n오스템 뷰티스 시스템',
       features: [
         '1회 시술로 즉시 효과',
         '치아 손상 없음',

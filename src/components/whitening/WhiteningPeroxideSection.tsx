@@ -123,8 +123,7 @@ export default function WhiteningPeroxideSection() {
                     '잇몸 보호제 도포 (잇몸 손상 방지)',
                     '고농도 미백제 도포',
                     'LED 광선 조사 (15-20분)',
-                    '2-3회 반복 (당일 완료)',
-                    '불소 도포로 마무리'
+                    '2-3회 반복 진행'
                   ].map((step, index) => (
                     <div key={index} className="flex gap-2 items-start font-semibold text-[15px] leading-[1.4] tracking-[-0.3px]">
                       <p className="text-[#008095] w-3 shrink-0">{index + 1}</p>
@@ -207,7 +206,7 @@ export default function WhiteningPeroxideSection() {
 
                 {/* 효과 */}
                 <div className="bg-white p-3 flex flex-col gap-1">
-                  <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#008095]">하루 만에</p>
+                  <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#008095]">단기간에</p>
                   <p className="font-medium text-[12px] leading-[1.4] tracking-[-0.22px] text-[#727582]">3-4단계 밝아짐</p>
                 </div>
                 <div className="bg-white p-3 flex flex-col gap-1">
@@ -218,7 +217,7 @@ export default function WhiteningPeroxideSection() {
                 {/* 안전성 */}
                 <div className="bg-white p-3 flex flex-col gap-1">
                   <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#008095]">사전 구강 검진</p>
-                  <p className="font-medium text-[12px] leading-[1.4] tracking-[-0.22px] text-[#727582]">+ 불소도포 처치</p>
+                  <p className="font-medium text-[12px] leading-[1.4] tracking-[-0.22px] text-[#727582]">+ 잇몸 보호 처치</p>
                 </div>
                 <div className="bg-white p-3 flex flex-col gap-1">
                   <p className="font-bold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#727582]">자가 시술</p>
@@ -246,12 +245,6 @@ export default function WhiteningPeroxideSection() {
                   <span className="text-[#008095] text-sm shrink-0">✓</span>
                   <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#727582]">
                     <span className="font-bold text-[#008095]">잇몸 보호:</span> 의료용 보호제로 연조직 화상 100% 예방
-                  </p>
-                </div>
-                <div className="flex items-start gap-2">
-                  <span className="text-[#008095] text-sm shrink-0">✓</span>
-                  <p className="font-semibold text-[13px] leading-[1.4] tracking-[-0.26px] text-[#727582]">
-                    <span className="font-bold text-[#008095]">시술 후 관리:</span> 불소도포·재광화 처치로 시림 증상 최소화
                   </p>
                 </div>
                 <div className="flex items-start gap-2">
@@ -289,7 +282,7 @@ export default function WhiteningPeroxideSection() {
               {[
                 {
                   question: '미백 후 치아가 시리지 않나요?',
-                  answer: '일시적으로 약간의 시린 증상이 있을 수 있지만, 뷰티스 미백제는 지각과민 방지제를 함유하고 있어 시림 증상을 최소화합니다. 시술 후 불소도포와 재광화 처치를 통해 민감도를 더욱 줄이며, 대부분 수일 내에 사라집니다. 10년 이상의 임상 경험으로 환자 개개인의 치아 상태에 맞춰 안전하게 진행합니다.'
+                  answer: '일시적으로 약간의 시린 증상이 있을 수 있지만, 뷰티스 미백제는 지각과민 방지제를 함유하고 있어 시림 증상을 최소화합니다. 시린 증상은 대부분 수일 내에 사라지며, 10년 이상의 임상 경험으로 환자 개개인의 치아 상태에 맞춰 안전하게 진행합니다.'
                 },
                 {
                   question: '미백 효과는 얼마나 지속되나요?',

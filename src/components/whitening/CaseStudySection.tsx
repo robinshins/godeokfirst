@@ -65,7 +65,7 @@ export default function CaseStudySection() {
                   오스템 뷰티스 전문가 미백 · 양●● 님
                 </p>
                 <p className="font-semibold text-[14px] text-[#727582] leading-[1.5]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-                  시술 당일 1~2시간 완성 · 지각과민 방지제 포함 · 시림 최소화
+                  지각과민 방지제 포함 · 시림 최소화
                 </p>
               </div>
             </div>

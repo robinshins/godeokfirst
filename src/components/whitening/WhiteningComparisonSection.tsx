@@ -34,7 +34,7 @@ export default function WhiteningComparisonSection() {
                     <tbody>
                       <tr className="border-b border-[#e9ebf1]">
                         <td className="font-semibold text-[15px] leading-[1.5] tracking-[-0.3px] text-[#5d5f6d] px-2 py-[8.536px] align-middle">시술시간</td>
-                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">1-2시간<br />(당일 완료)</td>
+                        <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">1-2시간 시술</td>
                         <td className="font-bold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#5d5f6d] text-center px-2 py-[8.536px] align-middle">2-3회 방문<br />(1-2주)</td>
                       </tr>
                       <tr className="border-b border-[#e9ebf1]">

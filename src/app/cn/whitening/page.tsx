@@ -8,7 +8,6 @@ import ToothDiscolorationSection from '@/components/cn/whitening/ToothDiscolorat
 import WhiteningPeroxideSection from '@/components/cn/whitening/WhiteningPeroxideSection';
 import SelfVsProfessionalSection from '@/components/cn/whitening/SelfVsProfessionalSection';
 import CaseStudySection from '@/components/cn/whitening/CaseStudySection';
-import PromotionSection from '@/components/cn/whitening/PromotionSection';
 import DoctorSection from '@/components/cn/DoctorSection';
 import WhyBestSection from '@/components/cn/WhyBestSection';
 import LocationSection from '@/components/cn/LocationSection';
@@ -49,7 +48,6 @@ export default function WhiteningPage() {
       <WhiteningPeroxideSection />
       <SelfVsProfessionalSection />
       <CaseStudySection />
-      <PromotionSection />
 
       <DoctorSection />
       <WhyBestSection />

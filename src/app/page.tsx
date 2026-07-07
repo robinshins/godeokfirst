@@ -37,7 +37,7 @@ const homeJsonLd = {
           item: {
             '@type': 'Service',
             name: '치아 미백',
-            description: '안전하고 효과적인 미백 시술, 스케일링과 함께 50% 할인',
+            description: '안전하고 효과적인 미백 시술, 오스템 뷰티스 시스템',
             image: 'https://gdfirstdent.co.kr/icons/whitening.png',
             url: 'https://gdfirstdent.co.kr/whitening',
           },

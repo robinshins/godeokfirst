@@ -39,7 +39,7 @@ export default function WhiteningHero() {
                 style={{ fontFamily: 'Pretendard, sans-serif' }}
               >
                 오스템 뷰티스 시스템으로<br />
-                시리지 않고 안전하게, 당일 완성
+                시리지 않고 안전하게
               </p>
             </div>
           </div>
