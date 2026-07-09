@@ -905,6 +905,7 @@ export default function ChatInterface({ initialMessage, language = 'ko' }: ChatI
         timestamp: new Date(),
         caseImages: data.caseImages,
         videoIframes: data.videoIframes,
+        videoRecommendation: data.videoRecommendation,
         structuredQuestion: data.structuredQuestion,
         isRecommendation: data.isRecommendation,
         sedationCard: data.sedationCard,
@@ -1028,6 +1029,7 @@ export default function ChatInterface({ initialMessage, language = 'ko' }: ChatI
         timestamp: new Date(),
         caseImages: data.caseImages,
         videoIframes: data.videoIframes,
+        videoRecommendation: data.videoRecommendation,
         structuredQuestion: data.structuredQuestion,
         isRecommendation: data.isRecommendation,
         sedationCard: data.sedationCard,
@@ -1123,6 +1125,7 @@ export default function ChatInterface({ initialMessage, language = 'ko' }: ChatI
         timestamp: new Date(),
         caseImages: data.caseImages,
         videoIframes: data.videoIframes,
+        videoRecommendation: data.videoRecommendation,
         structuredQuestion: data.structuredQuestion,
         isRecommendation: data.isRecommendation,
         sedationCard: data.sedationCard,
@@ -1501,75 +1504,6 @@ export default function ChatInterface({ initialMessage, language = 'ko' }: ChatI
                     </div>
                   )}
 
-                  {/* 영상 iframe 렌더링 (먼저 표시) */}
-                  {message.videoIframes && message.videoIframes.length > 0 && (() => {
-                    // 수면치료 영상과 일반 치료 영상 분리
-                    const SEDATION_VIDEO_ID = 'WB3M_Uw5X_s';
-                    const sedationVideos = message.videoIframes.filter(iframe => iframe.includes(SEDATION_VIDEO_ID));
-                    const treatmentVideos = message.videoIframes.filter(iframe => !iframe.includes(SEDATION_VIDEO_ID));
-
-                    return (
-                      <>
-                        {/* 일반 치료 영상 */}
-                        {treatmentVideos.length > 0 && (
-                          <div className="mt-4 flex flex-col gap-3">
-                            <div className="flex items-center gap-2 pb-2 border-b border-[#e9ebf1]">
-                              <svg className="w-5 h-5 text-[#008095]" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"/>
-                              </svg>
-                              <p className="font-semibold text-sm text-[#292a2f]">{texts.treatmentVideosLabel}</p>
-                            </div>
-                            {treatmentVideos.map((iframeHtml, idx) => {
-                              const srcMatch = iframeHtml.match(/src="([^"]+)"/);
-                              const src = srcMatch ? srcMatch[1] : '';
-                              if (!src) return null;
-                              return (
-                                <div key={idx} className="w-full">
-                                  <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-                                    <iframe
-                                      src={src}
-                                      className="absolute top-0 left-0 w-full h-full rounded-lg border-0 shadow-lg"
-                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                      allowFullScreen
-                                    />
-                                  </div>
-                                </div>
-                              );
-                            })}
-                          </div>
-                        )}
-
-                        {/* 수면치료(의식하진정) 영상 */}
-                        {sedationVideos.length > 0 && (
-                          <div className="mt-4 flex flex-col gap-3">
-                            <div className="flex items-center gap-2 pb-2 border-b border-[#e9ebf1]">
-                              <svg className="w-5 h-5 text-[#9b59b6]" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
-                              </svg>
-                              <p className="font-semibold text-sm text-[#292a2f]">{texts.sedationVideosLabel}</p>
-                            </div>
-                            {sedationVideos.map((iframeHtml, idx) => {
-                              const srcMatch = iframeHtml.match(/src="([^"]+)"/);
-                              const src = srcMatch ? srcMatch[1] : '';
-                              if (!src) return null;
-                              return (
-                                <div key={`sedation-${idx}`} className="w-full">
-                                  <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-                                    <iframe
-                                      src={src}
-                                      className="absolute top-0 left-0 w-full h-full rounded-lg border-0 shadow-lg"
-                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                      allowFullScreen
-                                    />
-                                  </div>
-                                </div>
-                              );
-                            })}
-                          </div>
-                        )}
-                      </>
-                    );
-                  })()}
 
                   {/* 미백 케이스 전용 그리드 렌더링 (작게 많이) */}
                   {message.caseImages && message.caseImages.length > 0 && message.cosmeticPath === 'whitening' && (
@@ -1783,6 +1717,76 @@ export default function ChatInterface({ initialMessage, language = 'ko' }: ChatI
 
                     </div>
                   )}
+
+                  {/* 영상 iframe 렌더링 (케이스 이미지 뒤, 마지막에 표시) */}
+                  {message.videoIframes && message.videoIframes.length > 0 && (() => {
+                    // 수면치료 영상과 일반 치료 영상 분리
+                    const SEDATION_VIDEO_ID = 'WB3M_Uw5X_s';
+                    const sedationVideos = message.videoIframes.filter(iframe => iframe.includes(SEDATION_VIDEO_ID));
+                    const treatmentVideos = message.videoIframes.filter(iframe => !iframe.includes(SEDATION_VIDEO_ID));
+
+                    return (
+                      <>
+                        {/* 일반 치료 영상 */}
+                        {treatmentVideos.length > 0 && (
+                          <div className="mt-4 flex flex-col gap-3">
+                            <div className="flex items-center gap-2 pb-2 border-b border-[#e9ebf1]">
+                              <svg className="w-5 h-5 text-[#008095]" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"/>
+                              </svg>
+                              <p className="font-semibold text-sm text-[#292a2f]">{texts.treatmentVideosLabel}</p>
+                            </div>
+                            {treatmentVideos.map((iframeHtml, idx) => {
+                              const srcMatch = iframeHtml.match(/src="([^"]+)"/);
+                              const src = srcMatch ? srcMatch[1] : '';
+                              if (!src) return null;
+                              return (
+                                <div key={idx} className="w-full">
+                                  <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                                    <iframe
+                                      src={src}
+                                      className="absolute top-0 left-0 w-full h-full rounded-lg border-0 shadow-lg"
+                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                      allowFullScreen
+                                    />
+                                  </div>
+                                </div>
+                              );
+                            })}
+                          </div>
+                        )}
+
+                        {/* 수면치료(의식하진정) 영상 */}
+                        {sedationVideos.length > 0 && (
+                          <div className="mt-4 flex flex-col gap-3">
+                            <div className="flex items-center gap-2 pb-2 border-b border-[#e9ebf1]">
+                              <svg className="w-5 h-5 text-[#9b59b6]" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                              </svg>
+                              <p className="font-semibold text-sm text-[#292a2f]">{texts.sedationVideosLabel}</p>
+                            </div>
+                            {sedationVideos.map((iframeHtml, idx) => {
+                              const srcMatch = iframeHtml.match(/src="([^"]+)"/);
+                              const src = srcMatch ? srcMatch[1] : '';
+                              if (!src) return null;
+                              return (
+                                <div key={`sedation-${idx}`} className="w-full">
+                                  <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                                    <iframe
+                                      src={src}
+                                      className="absolute top-0 left-0 w-full h-full rounded-lg border-0 shadow-lg"
+                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                      allowFullScreen
+                                    />
+                                  </div>
+                                </div>
+                              );
+                            })}
+                          </div>
+                        )}
+                      </>
+                    );
+                  })()}
 
                   {/* 구조화된 질문 렌더링 */}
                   {message.structuredQuestion && !message.isRecommendation && (() => {

@@ -89,6 +89,22 @@ export interface EventBannerCard {
   ctaUrl: string;
 }
 
+export interface RecommendedVideo {
+  id: string;           // YouTube video ID
+  kind: 'qna' | 'patient_case';
+  title: string;
+}
+
+/** 영상이 왜/어떻게 추천됐는지 추적 (어드민 상담 로그에서 확인) */
+export interface VideoRecommendation {
+  stage: 'q6_recommendation' | 'q7_recommendation' | 'fallback_recommendation' | 'final_recommendation';
+  treatmentSource: 'consultation_topic' | 'ai_response' | 'intent_analysis';
+  matchedTreatments: string[];
+  allTreatments: string[];
+  consultationTopic: string | null;
+  videos: RecommendedVideo[];
+}
+
 export interface ChatMessage {
   id: string;
   role: 'user' | 'assistant';
@@ -97,6 +113,7 @@ export interface ChatMessage {
   image?: string;
   caseImages?: CaseImage[];
   videoIframes?: string[];
+  videoRecommendation?: VideoRecommendation;
   structuredQuestion?: StructuredQuestion;
   isRecommendation?: boolean;
   selectedOptionId?: string; // 사용자가 선택한 옵션 ID
@@ -142,6 +159,7 @@ export interface ChatAPIResponse {
   shouldEnd?: boolean;
   caseImages?: CaseImage[];
   videoIframes?: string[];
+  videoRecommendation?: VideoRecommendation;
   structuredQuestion?: StructuredQuestion;
   isRecommendation?: boolean;
   doctorCredentialCard?: DoctorCredentialCard; // 원장 소개 카드 (심미 상담용)

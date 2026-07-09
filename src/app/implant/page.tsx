@@ -51,6 +51,7 @@ import StatsSection from '@/components/implant/StatsSection';
 import WhyBestNewSection from '@/components/implant/WhyBestNewSection';
 import AfterCareSection from '@/components/denture/AfterCareSection';
 import BeforeAfterSection from '@/components/implant/BeforeAfterSection';
+import CaseVideoSection from '@/components/implant/CaseVideoSection';
 import SkillDifferenceSection from '@/components/implant/SkillDifferenceSection';
 // import SedationSection from '@/components/cavity-treatment/SedationSection';
 import DoctorSection from '@/components/home/DoctorSection';
@@ -85,6 +86,9 @@ export default function ImplantPage() {
 
       {/* YouTube Section - 임플란트 Q&A */}
       <YouTubeSection />
+
+      {/* Case Video Section - 실제 임플란트 환자 케이스 영상 */}
+      <CaseVideoSection />
 
       {/* Why Best Section - 전국 1등인 이유 */}
       <WhyBestNewSection />

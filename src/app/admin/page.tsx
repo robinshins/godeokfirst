@@ -16,6 +16,25 @@ import RankTracker from '@/components/admin/RankTracker';
 import BlogTracker from '@/components/admin/BlogTracker';
 import SedationAppealCard from '@/components/SedationAppealCard';
 
+// 영상 추천 근거 라벨 (chat_history.videoRecommendation)
+const VIDEO_STAGE_LABELS: Record<string, string> = {
+  q6_recommendation: 'Q6 종합 추천',
+  q7_recommendation: 'Q7 종합 추천',
+  fallback_recommendation: 'Fallback 추천',
+  final_recommendation: '최종 추천',
+};
+
+const VIDEO_SOURCE_LABELS: Record<string, string> = {
+  consultation_topic: '상담 주제 기반',
+  ai_response: 'AI 응답에서 추출',
+  intent_analysis: '초기 의도 분석',
+};
+
+const VIDEO_KIND_LABELS: Record<string, string> = {
+  qna: 'Q&A 영상',
+  patient_case: '환자 케이스 영상',
+};
+
 // 알람 옵션 컴포넌트
 function AlarmOption({ id, icon, title, description, defaultChecked }: {
   id: string;
@@ -1673,6 +1692,52 @@ export default function AdminPage() {
                             {/* 의식하진정요법 카드 - SedationAppealCard 컴포넌트 사용 */}
                             {message.sedationCard?.show && (
                               <SedationAppealCard sedationCard={message.sedationCard} />
+                            )}
+
+                            {/* 영상 추천 근거 (어떤 단계에서 무엇을 근거로 추천됐는지) */}
+                            {message.videoRecommendation && (
+                              <div className="mt-4 rounded-lg border border-[#cfe9ed] bg-[#f0fafb] p-3">
+                                <p className="mb-2 text-xs font-semibold text-[#00707f]">📹 영상 추천 근거</p>
+                                <dl className="space-y-1 text-xs text-[#4F5971]">
+                                  <div className="flex gap-2">
+                                    <dt className="w-20 shrink-0 text-[#8b93a7]">추천 단계</dt>
+                                    <dd>{VIDEO_STAGE_LABELS[message.videoRecommendation.stage] || message.videoRecommendation.stage}</dd>
+                                  </div>
+                                  <div className="flex gap-2">
+                                    <dt className="w-20 shrink-0 text-[#8b93a7]">판단 근거</dt>
+                                    <dd>{VIDEO_SOURCE_LABELS[message.videoRecommendation.treatmentSource] || message.videoRecommendation.treatmentSource}</dd>
+                                  </div>
+                                  <div className="flex gap-2">
+                                    <dt className="w-20 shrink-0 text-[#8b93a7]">상담 주제</dt>
+                                    <dd>{message.videoRecommendation.consultationTopic || '-'}</dd>
+                                  </div>
+                                  <div className="flex gap-2">
+                                    <dt className="w-20 shrink-0 text-[#8b93a7]">매칭 치료</dt>
+                                    <dd>
+                                      {message.videoRecommendation.matchedTreatments.join(', ')}
+                                      {message.videoRecommendation.allTreatments.length > message.videoRecommendation.matchedTreatments.length && (
+                                        <span className="text-[#8b93a7]"> (전체: {message.videoRecommendation.allTreatments.join(', ')})</span>
+                                      )}
+                                    </dd>
+                                  </div>
+                                  <div className="flex gap-2">
+                                    <dt className="w-20 shrink-0 text-[#8b93a7]">노출 영상</dt>
+                                    <dd className="flex flex-col gap-0.5">
+                                      {message.videoRecommendation.videos.map(video => (
+                                        <a
+                                          key={video.id}
+                                          href={`https://www.youtube.com/watch?v=${video.id}`}
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                          className="underline decoration-dotted hover:text-[#008095]"
+                                        >
+                                          [{VIDEO_KIND_LABELS[video.kind] || video.kind}] {video.title}
+                                        </a>
+                                      ))}
+                                    </dd>
+                                  </div>
+                                </dl>
+                              </div>
                             )}
 
                             {/* 영상 iframe 렌더링 */}
