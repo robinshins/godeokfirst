@@ -97,7 +97,7 @@ export interface RecommendedVideo {
 
 /** 영상이 왜/어떻게 추천됐는지 추적 (어드민 상담 로그에서 확인) */
 export interface VideoRecommendation {
-  stage: 'q6_recommendation' | 'q7_recommendation' | 'fallback_recommendation' | 'final_recommendation';
+  stage: 'q6_recommendation' | 'q7_recommendation' | 'fallback_recommendation' | 'final_recommendation' | 'cosmetic_recommendation' | 'gum_recommendation';
   treatmentSource: 'consultation_topic' | 'ai_response' | 'intent_analysis';
   matchedTreatments: string[];
   allTreatments: string[];

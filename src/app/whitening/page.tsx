@@ -3,6 +3,7 @@ import GNB from '@/components/home/GNB';
 import FixedCTAButton from '@/components/home/FixedCTAButton';
 import FooterSection from '@/components/home/FooterSection';
 import WhiteningHero from '@/components/whitening/WhiteningHero';
+import CaseVideoSection from '@/components/whitening/CaseVideoSection';
 import WhiteningStats from '@/components/whitening/WhiteningStats';
 import ToothDiscolorationSection from '@/components/whitening/ToothDiscolorationSection';
 import WhiteningPeroxideSection from '@/components/whitening/WhiteningPeroxideSection';
@@ -44,6 +45,7 @@ export default function WhiteningPage() {
       <div className="h-[52px]" />
 
       <WhiteningHero />
+      <CaseVideoSection />
       <ToothDiscolorationSection />
       <WhiteningPeroxideSection />
       <SelfVsProfessionalSection />

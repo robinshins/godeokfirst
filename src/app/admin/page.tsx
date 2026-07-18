@@ -22,6 +22,8 @@ const VIDEO_STAGE_LABELS: Record<string, string> = {
   q7_recommendation: 'Q7 종합 추천',
   fallback_recommendation: 'Fallback 추천',
   final_recommendation: '최종 추천',
+  cosmetic_recommendation: '심미(미백) 종합 추천',
+  gum_recommendation: '잇몸치료 종합 추천',
 };
 
 const VIDEO_SOURCE_LABELS: Record<string, string> = {

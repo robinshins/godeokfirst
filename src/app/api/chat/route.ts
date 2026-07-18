@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { openai } from '@/lib/openai';
 import { ChatMessage, IntentAnalysis, CaseImage, StructuredQuestion, SedationCard, CostWarningCard, DoctorCredentialCard, EventBannerCard, VideoRecommendation } from '@/lib/types';
-import { getImplantVideos, resolveTreatmentSource } from '@/lib/consultation-videos';
+import { getConsultationVideos, resolveTreatmentSource } from '@/lib/consultation-videos';
 import { buildDynamicPrompt, buildFinalRecommendationPrompt } from '@/lib/prompt-builder';
 import { analyzeIntentServerSide, logIntentAnalysis } from '@/lib/intent-analyzer';
 import { getCaseImagesForMultipleTreatments, getCaseImagesForTreatment } from '@/lib/treatment-images';
@@ -514,23 +514,23 @@ export async function POST(request: NextRequest) {
         console.log('🖼️ [questionCount 6] 케이스 이미지 선택:', { consultationTopic, topicTreatments, treatments });
         const caseImages = getCaseImagesForMultipleTreatments(treatments, 5, language);
 
-        // 추천된 치료에 따라 영상 iframe 선택 (임플란트 상담: Q&A + 환자 케이스)
-        const implantVideosQ6 = getImplantVideos({
+        // 추천된 치료에 따라 영상 iframe 선택 (임플란트: Q&A + 환자 케이스, 미백/잇몸: 검게 변한 잇몸 케이스)
+        const consultationVideosQ6 = getConsultationVideos({
           treatments,
           stage: 'q6_recommendation',
           treatmentSource: topicTreatments.length > 0 ? 'consultation_topic' : 'intent_analysis',
           consultationTopic,
         });
-        const videoIframesQ6 = implantVideosQ6?.iframes ?? [];
-        if (implantVideosQ6) {
-          console.log('📹 [questionCount 6] 임플란트 영상 추가:', implantVideosQ6.recommendation);
+        const videoIframesQ6 = consultationVideosQ6?.iframes ?? [];
+        if (consultationVideosQ6) {
+          console.log('📹 [questionCount 6] 상담 영상 추가:', consultationVideosQ6.recommendation);
         }
 
         return NextResponse.json({
           content: finalMessage,
           caseImages: caseImages.length > 0 ? caseImages : undefined,
           videoIframes: videoIframesQ6.length > 0 ? videoIframesQ6 : undefined,
-          videoRecommendation: implantVideosQ6?.recommendation,
+          videoRecommendation: consultationVideosQ6?.recommendation,
           isRecommendation: true,
           sedationCard: sedationCardQ6
         });
@@ -1267,17 +1267,17 @@ message maydonida yuqoridagi 'Javobga mos javob qo'llanmasi'ga murojaat qiling v
         );
       }
 
-      // 임플란트 상담이면 Q&A + 환자 케이스 영상 추가
-      const implantVideosQ7 = getImplantVideos({
+      // 상담 치료에 맞는 영상 추가 (임플란트 / 미백·잇몸치료)
+      const consultationVideosQ7 = getConsultationVideos({
         treatments: finalTreatments,
         stage: 'q7_recommendation',
         treatmentSource: resolveTreatmentSource(topicBasedTreatments, extractedTreatments),
         consultationTopic,
       });
-      if (implantVideosQ7) {
-        videoIframes.push(...implantVideosQ7.iframes);
-        videoRecommendation = implantVideosQ7.recommendation;
-        console.log('📹 [questionCount 7] 임플란트 영상 추가:', implantVideosQ7.recommendation);
+      if (consultationVideosQ7) {
+        videoIframes.push(...consultationVideosQ7.iframes);
+        videoRecommendation = consultationVideosQ7.recommendation;
+        console.log('📹 [questionCount 7] 상담 영상 추가:', consultationVideosQ7.recommendation);
       }
     }
     // questionCount < 6: 구조화된 질문 생성 (question-generator.ts 사용 또는 AI 생성)
@@ -1402,10 +1402,25 @@ message maydonida yuqoridagi 'Javobga mos javob qo'llanmasi'ga murojaat qiling v
         console.log('🎨 [심미 상담] 종합 추천 생성 완료 - 경로:', cosmeticPath);
         console.log('🎨 [심미 상담] 케이스 이미지:', caseImages.length, '개');
 
+        // 미백 경로면 검게 변한 잇몸 환자 케이스 영상 추가
+        const cosmeticVideos = isWhitening
+          ? getConsultationVideos({
+              treatments: ['whitening'],
+              stage: 'cosmetic_recommendation',
+              treatmentSource: 'consultation_topic',
+              consultationTopic,
+            })
+          : null;
+        if (cosmeticVideos) {
+          console.log('📹 [심미 상담] 미백 영상 추가:', cosmeticVideos.recommendation);
+        }
+
         // 심미 종합 추천은 여기서 바로 응답 반환
         return NextResponse.json({
           content: displayMessage,
           caseImages: caseImages.length > 0 ? caseImages : undefined,
+          videoIframes: cosmeticVideos ? cosmeticVideos.iframes : undefined,
+          videoRecommendation: cosmeticVideos?.recommendation,
           structuredQuestion: undefined,
           isRecommendation: true,
           doctorCredentialCard,
@@ -1520,10 +1535,23 @@ ${symptomExplanation}
         console.log('🦷 [잇몸 상담] 전신질환:', gumQ2Answer.optionId);
         console.log('🦷 [잇몸 상담] 케이스 이미지:', caseImages.length, '개');
 
+        // 검게 변한 잇몸 환자 케이스 영상 추가
+        const gumVideos = getConsultationVideos({
+          treatments: ['gum_care'],
+          stage: 'gum_recommendation',
+          treatmentSource: 'consultation_topic',
+          consultationTopic,
+        });
+        if (gumVideos) {
+          console.log('📹 [잇몸 상담] 잇몸치료 영상 추가:', gumVideos.recommendation);
+        }
+
         // 잇몸치료 종합 추천 응답 반환
         return NextResponse.json({
           content: displayMessage,
           caseImages: caseImages.length > 0 ? caseImages : undefined,
+          videoIframes: gumVideos ? gumVideos.iframes : undefined,
+          videoRecommendation: gumVideos?.recommendation,
           structuredQuestion: undefined,
           isRecommendation: true,
           skipPhoneOption: false // 전화 상담 옵션 표시
@@ -1893,17 +1921,17 @@ ${sameDayCTA}
           // 케이스 이미지 추가
           caseImages = getCaseImagesForMultipleTreatments(finalTreatmentsForFallback, 5, language);
 
-          // 임플란트 상담이면 Q&A + 환자 케이스 영상 추가
-          const implantVideosFallback = getImplantVideos({
+          // 상담 치료에 맞는 영상 추가 (임플란트 / 미백·잇몸치료)
+          const consultationVideosFallback = getConsultationVideos({
             treatments: finalTreatmentsForFallback,
             stage: 'fallback_recommendation',
             treatmentSource: 'intent_analysis',
             consultationTopic,
           });
-          if (implantVideosFallback) {
-            videoIframes.push(...implantVideosFallback.iframes);
-            videoRecommendation = implantVideosFallback.recommendation;
-            console.log('📹 [Fallback 추천] 임플란트 영상 추가:', implantVideosFallback.recommendation);
+          if (consultationVideosFallback) {
+            videoIframes.push(...consultationVideosFallback.iframes);
+            videoRecommendation = consultationVideosFallback.recommendation;
+            console.log('📹 [Fallback 추천] 상담 영상 추가:', consultationVideosFallback.recommendation);
           }
         } else {
           // questionCount에 따라 fallback 질문 선택 (0-based index 조정)
@@ -2177,17 +2205,17 @@ ${sameDayCTA}
         );
       }
 
-      // 임플란트 상담이면 Q&A + 환자 케이스 영상 추가
-      const implantVideosFinal = getImplantVideos({
+      // 상담 치료에 맞는 영상 추가 (임플란트 / 미백·잇몸치료)
+      const consultationVideosFinal = getConsultationVideos({
         treatments: finalTreatments,
         stage: 'final_recommendation',
         treatmentSource: resolveTreatmentSource(topicBasedTreatments, extractedTreatments),
         consultationTopic,
       });
-      if (implantVideosFinal) {
-        videoIframes.push(...implantVideosFinal.iframes);
-        videoRecommendation = implantVideosFinal.recommendation;
-        console.log('📹 [최종 추천] 임플란트 영상 추가:', implantVideosFinal.recommendation);
+      if (consultationVideosFinal) {
+        videoIframes.push(...consultationVideosFinal.iframes);
+        videoRecommendation = consultationVideosFinal.recommendation;
+        console.log('📹 [최종 추천] 상담 영상 추가:', consultationVideosFinal.recommendation);
       }
     }
 

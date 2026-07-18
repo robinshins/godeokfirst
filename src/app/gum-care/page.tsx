@@ -3,6 +3,7 @@ import GNB from '@/components/home/GNB';
 import FixedCTAButton from '@/components/home/FixedCTAButton';
 import FooterSection from '@/components/home/FooterSection';
 import HeroSection from '@/components/gum-care/HeroSection';
+import CaseVideoSection from '@/components/gum-care/CaseVideoSection';
 import DoctorMessageSection from '@/components/gum-care/DoctorMessageSection';
 import StatsSection from '@/components/gum-care/StatsSection';
 // import VideoSection from '@/components/gum-care/VideoSection';
@@ -48,6 +49,7 @@ export default function GumCarePage() {
       <div className="h-[52px]" />
 
       <HeroSection />
+      <CaseVideoSection />
       <DoctorMessageSection />
       <StatsSection />
       <RiskSection />
