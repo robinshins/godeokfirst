@@ -5,6 +5,7 @@ import { PatientIntakeData } from '@/lib/patient-intake-types';
 import { CostWarningCard as CostWarningCardType } from '@/lib/types';
 import CostWarningCard from '@/components/CostWarningCard';
 import html2canvas from 'html2canvas-pro';
+import { useAdminEvents } from '@/lib/hooks/useAdminEvents';
 
 export default function PatientIntakeList() {
   const [intakes, setIntakes] = useState<PatientIntakeData[]>([]);
@@ -26,42 +27,11 @@ export default function PatientIntakeList() {
     fetchIntakes();
   }, []);
 
-  // 5초마다 문진표 목록 자동 업데이트 (탭 활성화 시에만)
-  useEffect(() => {
-    let pollingInterval: NodeJS.Timeout;
-
-    const startPolling = () => {
-      pollingInterval = setInterval(() => {
-        if (document.visibilityState === 'visible') {
-          console.log('🔄 5초 주기 문진표 목록 업데이트...');
-          fetchIntakes();
-        }
-      }, 5000); // 5초
-    };
-
-    const handleVisibilityChange = () => {
-      if (document.visibilityState === 'visible') {
-        console.log('👁️ 탭 활성화 - 문진표 즉시 업데이트');
-        fetchIntakes();
-        if (pollingInterval) clearInterval(pollingInterval);
-        startPolling();
-      } else {
-        console.log('🔕 탭 비활성화 - 문진표 폴링 중지');
-        if (pollingInterval) clearInterval(pollingInterval);
-      }
-    };
-
-    // 초기 폴링 시작
-    startPolling();
-
-    // visibility 변경 감지
-    document.addEventListener('visibilitychange', handleVisibilityChange);
-
-    return () => {
-      if (pollingInterval) clearInterval(pollingInterval);
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
-    };
-  }, []);
+  // 실시간 구독: 새 문진표 INSERT 브로드캐스트 수신 시 목록 재조회
+  // (5초 폴링 제거. 재연결/탭 복귀/5분 안전장치 때만 추가 조회)
+  useAdminEvents({
+    onNewIntake: () => fetchIntakes(),
+  });
 
   useEffect(() => {
     if (selectedIntake) {

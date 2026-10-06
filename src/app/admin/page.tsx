@@ -15,6 +15,7 @@ import PatientIntakeList from '@/components/admin/PatientIntakeList';
 import RankTracker from '@/components/admin/RankTracker';
 import BlogTracker from '@/components/admin/BlogTracker';
 import SedationAppealCard from '@/components/SedationAppealCard';
+import { useAdminEvents } from '@/lib/hooks/useAdminEvents';
 
 // 영상 추천 근거 라벨 (chat_history.videoRecommendation)
 const VIDEO_STAGE_LABELS: Record<string, string> = {
@@ -685,30 +686,20 @@ export default function AdminPage() {
     if (!isLimitedAccess) fetchIntakes();
   }, [isAuthenticated, isLimitedAccess, fetchLogs, fetchStats, fetchIntakes]);
 
-  // 1분마다 새로운 상담 내역 체크 (인증된 상태에서만)
-  useEffect(() => {
-    if (!isAuthenticated) return;
+  // 실시간 구독: DB 트리거가 새 상담/문진 INSERT 시 브로드캐스트 → 즉시 재조회
+  // (폴링 제거. 재연결/탭 복귀/5분 안전장치 때만 추가 조회)
+  const handleRealtimeIntake = useCallback(() => {
+    if (!isLimitedAccess) fetchIntakes();
+  }, [isLimitedAccess, fetchIntakes]);
+  const handleRealtimeConsultation = useCallback(() => {
+    fetchLogs(true); // silent mode
+  }, [fetchLogs]);
 
-    // 초기 로드 완료 후 폴링 시작 (5분 간격으로 egress 절약)
-    const pollingInterval = setInterval(() => {
-      console.log('🔄 5분 주기 상담 내역 체크...');
-      fetchLogs(true); // silent mode로 호출
-    }, 300000); // 300초 = 5분
-
-    return () => clearInterval(pollingInterval);
-  }, [isAuthenticated, fetchLogs]);
-
-  // 30초마다 새 문진표 체크 (인증된 상태에서만, 제한 접근 제외)
-  useEffect(() => {
-    if (!isAuthenticated || isLimitedAccess) return;
-
-    const intakePollingInterval = setInterval(() => {
-      console.log('🔄 30초 주기 문진표 체크...');
-      fetchIntakes();
-    }, 30000); // 30초
-
-    return () => clearInterval(intakePollingInterval);
-  }, [isAuthenticated, isLimitedAccess, fetchIntakes]);
+  useAdminEvents({
+    enabled: isAuthenticated,
+    onNewIntake: handleRealtimeIntake,
+    onNewConsultation: handleRealtimeConsultation,
+  });
 
   // 문진표 탭으로 이동하면 뱃지 카운트 초기화
   useEffect(() => {
