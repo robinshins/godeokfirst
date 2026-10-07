@@ -37,9 +37,22 @@ export interface InsightFaq {
   answerDetail: string;
 }
 
+export interface InsightTable {
+  caption: string;
+  headers: string[];
+  rows: string[][];
+  note?: string;
+}
+
 export interface InsightSection {
   heading: string;
   paragraphs: string[];
+  table?: InsightTable;
+}
+
+export interface InsightSource {
+  title: string;
+  url: string;
 }
 
 export interface InsightArticle {
@@ -56,6 +69,7 @@ export interface InsightArticle {
   sections: InsightSection[];
   conclusion: string;
   faqs: InsightFaq[];
+  sources?: InsightSource[];
   publishedAt: string;
   updatedAt: string;
 }

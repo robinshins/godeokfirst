@@ -107,6 +107,7 @@ export default async function InsightArticlePage({ params }: RouteParams) {
       { name: article.title, url },
     ],
     offers,
+    citations: article.sources,
   });
 
   return (
@@ -197,6 +198,68 @@ export default async function InsightArticlePage({ params }: RouteParams) {
                   </p>
                 ))}
               </div>
+              {section.table ? (
+                <figure className="mt-4">
+                  <figcaption className="text-[13px] font-semibold text-gray-900 mb-2 leading-snug">
+                    {section.table.caption}
+                  </figcaption>
+                  {section.table.headers.length > 3 ? (
+                    <p className="text-[11px] text-gray-400 mb-1.5">
+                      표를 옆으로 밀면 나머지 열이 보입니다.
+                    </p>
+                  ) : null}
+                  <div className="overflow-x-auto rounded-xl border border-gray-200">
+                    <table
+                      className="w-full border-collapse text-left text-[13px] leading-relaxed"
+                      style={
+                        section.table.headers.length > 3
+                          ? { minWidth: section.table.headers.length * 115 }
+                          : undefined
+                      }
+                    >
+                      <thead className="bg-gray-50 text-gray-900">
+                        <tr>
+                          {section.table.headers.map((h, hi) => (
+                            <th
+                              key={hi}
+                              scope="col"
+                              className="px-3 py-2.5 font-semibold"
+                            >
+                              {h}
+                            </th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-gray-100 text-gray-700">
+                        {section.table.rows.map((row, ri) => (
+                          <tr key={ri}>
+                            {row.map((cell, ci) =>
+                              ci === 0 ? (
+                                <th
+                                  key={ci}
+                                  scope="row"
+                                  className="px-3 py-2.5 align-top font-medium text-gray-900"
+                                >
+                                  {cell}
+                                </th>
+                              ) : (
+                                <td key={ci} className="px-3 py-2.5 align-top">
+                                  {cell}
+                                </td>
+                              ),
+                            )}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                  {section.table.note ? (
+                    <p className="mt-2 text-[11.5px] text-gray-500 leading-relaxed">
+                      {section.table.note}
+                    </p>
+                  ) : null}
+                </figure>
+              ) : null}
             </section>
           ))}
         </article>
@@ -240,6 +303,29 @@ export default async function InsightArticlePage({ params }: RouteParams) {
                 </div>
               ))}
             </div>
+          </section>
+        ) : null}
+
+        {/* References */}
+        {article.sources && article.sources.length > 0 ? (
+          <section className="px-5 pt-10">
+            <h2 className="text-[15px] font-bold text-gray-900 mb-3">
+              참고 문헌
+            </h2>
+            <ol className="list-decimal pl-5 space-y-1.5 text-[12.5px] text-gray-600 leading-relaxed">
+              {article.sources.map((s, i) => (
+                <li key={i}>
+                  <a
+                    href={s.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline underline-offset-2 decoration-gray-300 hover:text-[#008095] break-words"
+                  >
+                    {s.title}
+                  </a>
+                </li>
+              ))}
+            </ol>
           </section>
         ) : null}
 

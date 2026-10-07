@@ -58,6 +58,7 @@ interface InsightArticleSchemaInput {
   faqs?: FAQ[];
   breadcrumbs?: BreadcrumbItem[];
   offers?: ClinicOffer[];
+  citations?: { title: string; url: string }[];
 }
 
 export function generateInsightArticleSchema({
@@ -70,6 +71,7 @@ export function generateInsightArticleSchema({
   faqs,
   breadcrumbs,
   offers,
+  citations,
 }: InsightArticleSchemaInput) {
   const doctor = {
     '@type': 'Person',
@@ -169,6 +171,15 @@ export function generateInsightArticleSchema({
         '@type': 'MedicalAudience',
         audienceType: 'Patient',
       },
+      ...(citations && citations.length > 0
+        ? {
+            citation: citations.map((c) => ({
+              '@type': 'CreativeWork',
+              name: c.title,
+              url: c.url,
+            })),
+          }
+        : {}),
     },
   ];
 

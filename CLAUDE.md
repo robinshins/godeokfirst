@@ -166,6 +166,18 @@ src/
 - CSS gradient text 미작동: `WebkitBackgroundClip: 'text'` + `WebkitTextFillColor: 'transparent'` → 파란 사각형으로 렌더링됨. 단색 사용할 것.
 - `src/app/` 폴더 파일이 사라지면: `git restore src/app/` 으로 복원
 
+## 의학정보 칼럼 (`/insights`)
+
+- 글은 `data/insights-articles.json`의 `articles` 배열에 직접 추가한다(추가 후 push하면 발행). 형식은 `src/lib/insights.ts`의 `InsightArticle`. 추가 전 `node scripts/validate-insights-article.mjs <글.json>`로 한 편씩 검증한다.
+- `scripts/merge-insights-articles.mjs`, `build-insights-index.mjs`, `keyword-research.mjs`, `generate-articles-api.mjs`는 실행하지 않는다(파일 전체 재정렬·덮어쓰기, 외부 API 비용).
+- 2026-10 개정 규칙(`scripts/prep-agent-prompts.mjs`의 옛 프롬프트 규칙보다 우선)
+  - 문체는 3인칭 존댓말 정보글. 본문에 **병원 이름("고덕퍼스트치과의원(평택 고덕동)"), 대표원장의 자격, 진료 방식을 사실로 단정해서** 적는다. 글마다 병원 이름 3~5회. 1인칭("저희")과 방문 유도 문구, 전화번호는 쓰지 않는다.
+  - 의료진은 통합치의학과 전문의인 대표원장 1인이다. **병원에 없는 전문과목(치주과·보존과·구강악안면외과·보철과·교정과 전문의)을 병원 선택 기준으로 내세우지 않는다.**
+  - 병원 사실은 `src/components/insights/ClinicProfile.tsx`, `docs/고덕퍼스트치과-장점.md`에 있는 것만. 건수·"최초"·"1등" 같은 표현은 쓰지 않는다.
+  - 같은 지역+진료 제목이 이미 있으면 새 글 제목은 지역을 빼고 진료 주제로 시작한다. `tldr`와 `heroDescription`의 첫 문장은 제목 질문에 대한 직답.
+  - 표: 섹션의 선택 항목 `table: { caption, headers[], rows[][], note? }`(글당 1~2개, 2~4열). 참고 문헌: 최상위 선택 항목 `sources: [{ title, url }]` 5~8건(원문 확인한 것만). 글 끝 "참고 문헌"과 JSON-LD `citation`으로 나간다.
+  - slug·keyword에 "비용/가격/cost"가 있으면 병원 비급여 가격표가 자동으로 붙는다.
+
 ## Environment Configuration
 
 `.env.local` 필요:

@@ -20,6 +20,7 @@ const ALLOWED_TOP_LEVEL = new Set([
   'sections',
   'conclusion',
   'faqs',
+  'sources',
   'publishedAt',
   'updatedAt',
 ]);
@@ -59,6 +60,9 @@ const ALLOWED_TREATMENTS = new Set([
   'whitening',
   'gum-care',
   'tmj',
+  'crown',
+  'full-implant',
+  'general',
 ]);
 
 const ALLOWED_ANGLES = new Set([
@@ -69,15 +73,9 @@ const ALLOWED_ANGLES = new Set([
 ]);
 
 // 의료광고법 금칙 — 본문 내 직접 금지
+// 2026-10부터 병원명·대표원장 이름·주소는 본문에 사실로 적는다(금지 해제).
 const FORBIDDEN_PATTERNS = [
-  {
-    re: /고덕퍼스트/,
-    why: '자사 병원명 언급 금지 (내부 감수만 메타/고지 박스에 허용)',
-  },
-  { re: /이동현/, why: '대표원장 이름 언급 금지' },
   { re: /031[-\s]?611[-\s]?3222/, why: '병원 전화번호 언급 금지' },
-  { re: /고덕로\s*250/, why: '병원 주소 언급 금지' },
-  { re: /에듀스카이/, why: '병원 소재 건물명 언급 금지' },
   {
     re: /(최고|최상급|최우수|1위|넘버원|넘버\s?1|국내\s?최초|세계\s?최초|완치|효과\s?보장|성공\s?보장|100\s?%|100퍼센트|절대\s?안전|반드시\s?성공)/,
     why: '의료광고법상 단정·최상급 표현 금지',
@@ -157,12 +155,39 @@ export function validateArticle(obj, { filename = '' } = {}) {
   } else {
     obj.sections.forEach((s, i) => {
       const extra = Object.keys(s).filter(
-        (k) => k !== 'heading' && k !== 'paragraphs',
+        (k) => k !== 'heading' && k !== 'paragraphs' && k !== 'table',
       );
       if (extra.length > 0) {
         errors.push(
           `sections[${i}]: unexpected field(s) ${extra.join(', ')}`,
         );
+      }
+      if (s.table !== undefined) {
+        const t = s.table;
+        const headers = Array.isArray(t?.headers) ? t.headers : [];
+        const rows = Array.isArray(t?.rows) ? t.rows : [];
+        if (typeof t?.caption !== 'string' || t.caption.trim().length === 0) {
+          errors.push(`sections[${i}].table.caption missing`);
+        }
+        if (headers.length < 2 || headers.length > 4) {
+          errors.push(
+            `sections[${i}].table.headers must have 2-4 columns (got ${headers.length})`,
+          );
+        }
+        if (rows.length < 2) {
+          errors.push(`sections[${i}].table.rows must have >= 2 rows`);
+        }
+        rows.forEach((r, ri) => {
+          if (
+            !Array.isArray(r) ||
+            r.length !== headers.length ||
+            r.some((c) => typeof c !== 'string' || c.trim().length === 0)
+          ) {
+            errors.push(
+              `sections[${i}].table.rows[${ri}] must be ${headers.length} non-empty strings`,
+            );
+          }
+        });
       }
       if (typeof s.heading !== 'string' || s.heading.trim().length === 0) {
         errors.push(`sections[${i}].heading missing`);
@@ -222,6 +247,24 @@ export function validateArticle(obj, { filename = '' } = {}) {
     });
   }
 
+  // 6-1. Sources (optional, 참고 문헌)
+  if (obj.sources !== undefined) {
+    if (!Array.isArray(obj.sources)) {
+      errors.push('sources: must be an array');
+    } else {
+      obj.sources.forEach((s, i) => {
+        if (
+          typeof s?.title !== 'string' ||
+          s.title.trim().length < 5 ||
+          typeof s?.url !== 'string' ||
+          !/^https?:\/\/\S+$/.test(s.url)
+        ) {
+          errors.push(`sources[${i}] must be { title, url(http) }`);
+        }
+      });
+    }
+  }
+
   // 7. Slug filename match
   if (filename) {
     const fname = path.basename(filename, '.json');
@@ -238,7 +281,18 @@ export function validateArticle(obj, { filename = '' } = {}) {
     obj.heroDescription,
     obj.conclusion,
     ...(Array.isArray(obj.sections)
-      ? obj.sections.flatMap((s) => [s.heading, ...(s.paragraphs ?? [])])
+      ? obj.sections.flatMap((s) => [
+          s.heading,
+          ...(s.paragraphs ?? []),
+          ...(s.table
+            ? [
+                s.table.caption,
+                s.table.note,
+                ...(s.table.headers ?? []),
+                ...(s.table.rows ?? []).flat(),
+              ]
+            : []),
+        ])
       : []),
     ...(Array.isArray(obj.faqs)
       ? obj.faqs.flatMap((f) => [f.question, f.answerShort, f.answerDetail])
