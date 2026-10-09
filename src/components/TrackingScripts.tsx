@@ -12,14 +12,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-NF8HCJ7R');`
       }} />
       {/* Google Analytics */}
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-PPY2NS6TKS" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-PSQJ460RED" />
       <script dangerouslySetInnerHTML={{
         __html: `
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-PPY2NS6TKS');
+  gtag('config', 'G-PSQJ460RED');
   gtag('config', 'AW-17825343188');`
       }} />
       {/* Meta (Facebook) Pixel */}
