@@ -67,16 +67,41 @@ export default function SalarySlipPage() {
     }
   }, [isAuthenticated]);
 
-  // 로그인 처리
-  const handleLogin = (e: React.FormEvent) => {
+  // 서버 세션 쿠키 확인 (관리자 권한만 허용)
+  useEffect(() => {
+    fetch('/api/admin/login')
+      .then((res) => (res.ok ? res.json() : { authenticated: false, role: null }))
+      .then((data: { authenticated: boolean; role: 'admin' | 'limited' | null }) => {
+        if (data.authenticated && data.role === 'admin') setIsAuthenticated(true);
+      })
+      .catch(() => {});
+  }, []);
+
+  // 로그인 처리 (비밀번호는 서버에서만 검증)
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (password === 'Medis2019') {
+    try {
+      const response = await fetch('/api/admin/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ password }),
+      });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok || result.role !== 'admin') {
+        setAuthError(result.error || '관리자 권한이 필요합니다.');
+        return;
+      }
       setIsAuthenticated(true);
       setAuthError('');
       setPassword('');
-    } else {
-      setAuthError('비밀번호가 올바르지 않습니다.');
+    } catch {
+      setAuthError('로그인 요청에 실패했습니다.');
     }
+  };
+
+  const handleLogout = async () => {
+    await fetch('/api/admin/login', { method: 'DELETE' }).catch(() => {});
+    setIsAuthenticated(false);
   };
 
   // 파일명에서 이름 추출 (예: "2025년 8월 임금명세서(김유진).pdf" -> "김유진")
@@ -320,7 +345,7 @@ export default function SalarySlipPage() {
           <div className="flex justify-between items-center">
             <h1 className="text-2xl font-bold text-gray-900">📧 급여명세서 발송</h1>
             <button
-              onClick={() => setIsAuthenticated(false)}
+              onClick={handleLogout}
               className="px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors text-sm"
             >
               로그아웃

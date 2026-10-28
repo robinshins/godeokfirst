@@ -103,18 +103,14 @@ export default function AdminPage() {
   const modalContentRef = useRef<HTMLDivElement>(null);
   const hiddenModalRef = useRef<HTMLDivElement>(null);
 
-  // 인증 체크 및 알람 설정 확인
+  // 인증 체크(서버 세션 쿠키) 및 알람 설정 확인
   useEffect(() => {
-    const authToken = localStorage.getItem('admin_auth');
-    if (authToken === 'medis_admin_2019') {
-      setIsAuthenticated(true);
-      setIsLimitedAccess(false);
-    } else if (authToken === 'medis_limited_2019') {
-      setIsAuthenticated(true);
-      setIsLimitedAccess(true);
-    }
+    // 예전 클라이언트 전용 인증 토큰은 더 이상 쓰지 않는다 (서버 세션으로 대체)
+    localStorage.removeItem('admin_auth');
 
-    if (authToken === 'medis_admin_2019' || authToken === 'medis_limited_2019') {
+    let cancelled = false;
+
+    const initAfterAuth = () => {
       // 이미 확인한 최신 문진표 timestamp 불러오기
       const storedIntakeTs = localStorage.getItem('last_seen_intake_ts');
       lastSeenIntakeTsRef.current = storedIntakeTs ? parseInt(storedIntakeTs, 10) : null;
@@ -156,7 +152,21 @@ export default function AdminPage() {
       if (!alarmConsent && !browserNotificationConsent) {
         setShowAlarmDialog(true);
       }
-    }
+    };
+
+    fetch('/api/admin/login')
+      .then((res) => (res.ok ? res.json() : { authenticated: false, role: null }))
+      .then((data: { authenticated: boolean; role: 'admin' | 'limited' | null }) => {
+        if (cancelled || !data.authenticated) return;
+        setIsAuthenticated(true);
+        setIsLimitedAccess(data.role === 'limited');
+        initAfterAuth();
+      })
+      .catch(() => {});
+
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   // 제한된 권한인 경우 목록 탭만 접근 가능하도록 강제
@@ -440,27 +450,32 @@ export default function AdminPage() {
     }
   };
 
-  const handleLogin = (e: React.FormEvent) => {
+  // 비밀번호는 서버(/api/admin/login)에서만 검증하고, 세션은 httpOnly 쿠키로 유지한다.
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (password === 'ascasc112') {
-      localStorage.setItem('admin_auth', 'medis_admin_2019');
+    try {
+      const response = await fetch('/api/admin/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ password }),
+      });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok) {
+        setAuthError(result.error || '비밀번호가 올바르지 않습니다.');
+        return;
+      }
       setIsAuthenticated(true);
-      setIsLimitedAccess(false);
-      setAuthError('');
-      setPassword('');
-    } else if (password === 'ascasc112!' || password === 'dkffprfkqh1!') {
       // 외부 업체용 제한된 접근 (목록 탭만 접근 가능)
-      localStorage.setItem('admin_auth', 'medis_limited_2019');
-      setIsAuthenticated(true);
-      setIsLimitedAccess(true);
+      setIsLimitedAccess(result.role === 'limited');
       setAuthError('');
       setPassword('');
-    } else {
-      setAuthError('비밀번호가 올바르지 않습니다.');
+    } catch {
+      setAuthError('로그인 요청에 실패했습니다. 잠시 후 다시 시도해주세요.');
     }
   };
 
-  const handleLogout = () => {
+  const handleLogout = async () => {
+    await fetch('/api/admin/login', { method: 'DELETE' }).catch(() => {});
     localStorage.removeItem('admin_auth');
     setIsAuthenticated(false);
     setIsLimitedAccess(false);
@@ -538,6 +553,10 @@ export default function AdminPage() {
 
       console.log('🔍 Admin - API 호출 URL:', url);
       const response = await fetch(url);
+      if (response.status === 401) {
+        setIsAuthenticated(false);
+        return;
+      }
       const data = await response.json();
 
       console.log('📊 Admin - API 응답:', data);
@@ -588,6 +607,10 @@ export default function AdminPage() {
       }
 
       const response = await fetch(url);
+      if (response.status === 401) {
+        setIsAuthenticated(false);
+        return;
+      }
       const data = await response.json();
 
       if (data.success) {

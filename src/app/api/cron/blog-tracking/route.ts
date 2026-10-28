@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { isCronRequest } from '@/lib/admin-auth';
 import { createServiceClient } from '@/lib/supabase/server';
 
 interface ExposedPost {
@@ -20,8 +21,7 @@ interface KeywordResult {
 
 export async function GET(request: NextRequest) {
   // Vercel Cron 인증 확인
-  const authHeader = request.headers.get('authorization');
-  if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
+  if (!isCronRequest(request)) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
@@ -66,7 +66,10 @@ export async function GET(request: NextRequest) {
         try {
           const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'https://your-domain.vercel.app'}/api/blog-check`, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${process.env.CRON_SECRET}`,
+          },
             body: JSON.stringify({ keyword, blogId: blog.blogId }),
           });
 

@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createServiceClient } from '@/lib/supabase/server';
 import { ConsultationLog } from '@/lib/types';
+import { getAdminSession, requireAdmin } from '@/lib/admin-auth';
 
 /**
  * 상담 로그를 Supabase에 저장하는 API 엔드포인트
@@ -76,9 +77,12 @@ export async function POST(request: NextRequest) {
 
 /**
  * 상담 로그를 조회하는 API 엔드포인트 (관리자용)
- * 선택사항: 필요시 인증 미들웨어 추가
+ * 관리자 세션 쿠키가 있어야 한다 (개인정보 포함).
  */
 export async function GET(request: NextRequest) {
+  const denied = requireAdmin(request);
+  if (denied) return denied;
+
   try {
     const { searchParams } = new URL(request.url);
     const limit = parseInt(searchParams.get('limit') || '50');
@@ -173,6 +177,9 @@ export async function GET(request: NextRequest) {
  * 상담 로그를 삭제하는 API 엔드포인트
  */
 export async function DELETE(request: NextRequest) {
+  const denied = requireAdmin(request, { adminOnly: true });
+  if (denied) return denied;
+
   try {
     const { searchParams } = new URL(request.url);
     const id = searchParams.get('id');
@@ -222,6 +229,16 @@ export async function PATCH(request: NextRequest) {
   try {
     const body = await request.json();
     const { id, status, chat_history, booking_type, preferred_call_time, memo } = body;
+
+    // 환자(채팅 화면)는 자기 로그 ID로 채팅 기록·예약 방식만 갱신할 수 있다.
+    // 상태·메모 등 관리 항목은 관리자 세션이 있어야 바꿀 수 있다.
+    const PATIENT_EDITABLE_FIELDS = ['id', 'chat_history', 'booking_type', 'preferred_call_time'];
+    if (!getAdminSession(request)) {
+      const restricted = Object.keys(body || {}).filter((key) => !PATIENT_EDITABLE_FIELDS.includes(key));
+      if (restricted.length > 0) {
+        return NextResponse.json({ error: '관리자 로그인이 필요합니다.' }, { status: 401 });
+      }
+    }
 
     // 필수 필드 검증
     if (!id) {

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createServiceClient } from '@/lib/supabase/server';
+import { requireAdmin } from '@/lib/admin-auth';
 
 interface BlogPost {
   id: string;
@@ -7,7 +8,10 @@ interface BlogPost {
 }
 
 // 설정 조회
-export async function GET() {
+export async function GET(request: NextRequest) {
+  const denied = requireAdmin(request, { adminOnly: true });
+  if (denied) return denied;
+
   try {
     const supabase = createServiceClient();
 
@@ -32,6 +36,9 @@ export async function GET() {
 
 // 설정 저장/업데이트
 export async function POST(request: NextRequest) {
+  const denied = requireAdmin(request, { adminOnly: true });
+  if (denied) return denied;
+
   try {
     const { blogs, keywords, configId } = await request.json();
 

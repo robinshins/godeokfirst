@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createClient } from '@/lib/supabase/client';
+import { createServiceClient } from '@/lib/supabase/server';
+import { requireAdmin } from '@/lib/admin-auth';
 
 export interface Popup {
   id?: string;
@@ -24,7 +25,12 @@ export async function GET(request: NextRequest) {
     const { searchParams } = new URL(request.url);
     const adminMode = searchParams.get('admin') === 'true';
 
-    const supabase = createClient();
+    if (adminMode) {
+      const denied = requireAdmin(request);
+      if (denied) return denied;
+    }
+
+    const supabase = createServiceClient();
     let query = supabase.from('popups').select('*');
 
     if (!adminMode) {
@@ -70,6 +76,9 @@ export async function GET(request: NextRequest) {
  * POST - 새 팝업 생성
  */
 export async function POST(request: NextRequest) {
+  const denied = requireAdmin(request, { adminOnly: true });
+  if (denied) return denied;
+
   try {
     const body = await request.json() as Popup;
 
@@ -89,7 +98,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const supabase = createClient();
+    const supabase = createServiceClient();
 
     // fixed_sidebar는 1개만 허용
     if (body.popup_type === 'fixed_sidebar') {
@@ -153,6 +162,9 @@ export async function POST(request: NextRequest) {
  * PATCH - 팝업 수정
  */
 export async function PATCH(request: NextRequest) {
+  const denied = requireAdmin(request, { adminOnly: true });
+  if (denied) return denied;
+
   try {
     const body = await request.json();
     const { id, ...updates } = body;
@@ -164,7 +176,7 @@ export async function PATCH(request: NextRequest) {
       );
     }
 
-    const supabase = createClient();
+    const supabase = createServiceClient();
 
     // fixed_sidebar 타입으로 변경하거나 활성화하는 경우 체크
     if (updates.popup_type === 'fixed_sidebar' || (updates.is_active === true && updates.popup_type === 'fixed_sidebar')) {
@@ -218,6 +230,9 @@ export async function PATCH(request: NextRequest) {
  * DELETE - 팝업 삭제
  */
 export async function DELETE(request: NextRequest) {
+  const denied = requireAdmin(request, { adminOnly: true });
+  if (denied) return denied;
+
   try {
     const { searchParams } = new URL(request.url);
     const id = searchParams.get('id');
@@ -229,7 +244,7 @@ export async function DELETE(request: NextRequest) {
       );
     }
 
-    const supabase = createClient();
+    const supabase = createServiceClient();
 
     const { error } = await supabase
       .from('popups')

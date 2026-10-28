@@ -1,7 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import { requireAdmin } from '@/lib/admin-auth';
 
 export async function POST(request: NextRequest) {
+  const denied = requireAdmin(request, { adminOnly: true });
+  if (denied) return denied;
+
   try {
     const formData = await request.formData();
     const file = formData.get('file') as File;

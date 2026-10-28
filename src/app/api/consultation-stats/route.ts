@@ -1,16 +1,20 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createClient } from '@/lib/supabase/client';
+import { createServiceClient } from '@/lib/supabase/server';
+import { requireAdmin } from '@/lib/admin-auth';
 
 /**
  * GET - 상담 통계 조회 (RPC 사용으로 egress 절약)
  */
 export async function GET(request: NextRequest) {
+  const denied = requireAdmin(request);
+  if (denied) return denied;
+
   try {
     const { searchParams } = new URL(request.url);
     const startDateParam = searchParams.get('startDate');
     const endDateParam = searchParams.get('endDate');
 
-    const supabase = createClient();
+    const supabase = createServiceClient();
 
     // RPC 함수 호출 (DB에서 GROUP BY 집계)
     const { data: rpcData, error: rpcError } = await supabase.rpc('get_consultation_stats', {

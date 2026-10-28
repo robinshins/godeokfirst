@@ -1,6 +1,20 @@
 import type { NextConfig } from "next";
 
+const securityHeaders = [
+  { key: 'X-Content-Type-Options', value: 'nosniff' },
+  { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
+  { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+  { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
+];
+
 const nextConfig: NextConfig = {
+  async headers() {
+    return [
+      { source: '/(.*)', headers: securityHeaders },
+      // 개인정보를 다루는 API 응답은 어디에도 캐시되지 않도록
+      { source: '/api/(.*)', headers: [{ key: 'Cache-Control', value: 'no-store' }] },
+    ];
+  },
   images: {
     remotePatterns: [
       {

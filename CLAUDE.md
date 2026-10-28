@@ -185,6 +185,18 @@ src/
 OPENAI_API_KEY=...
 NEXT_PUBLIC_SUPABASE_URL=...
 NEXT_PUBLIC_SUPABASE_ANON_KEY=...
+SUPABASE_SERVICE_ROLE_KEY=...   # 서버 API 라우트 전용
+ADMIN_PASSWORD=...              # /admin 비밀번호 (서버에서만 검증)
+ADMIN_LIMITED_PASSWORD=...      # 외부 업체용 목록 전용 비밀번호 (쉼표로 여러 개 가능)
+ADMIN_SESSION_SECRET=...        # 관리자 세션 쿠키 서명 키
+CRON_SECRET=...                 # Vercel Cron 인증 (cron 라우트 + 내부 rank/blog-check 호출)
 ```
+
+## 보안 규칙 (2026-10-28 사고 이후)
+
+- 상담 로그·문진표 등 개인정보를 반환·수정·삭제하는 API 라우트는 반드시 `src/lib/admin-auth.ts`의 `requireAdmin(request)`로 시작한다. 환자가 직접 쓰는 POST(상담 신청, 문진표 제출)만 공개.
+- 관리자 비밀번호를 클라이언트 코드(`'use client'` 파일)에 적지 않는다. 로그인은 `/api/admin/login`, 세션은 httpOnly 쿠키.
+- Supabase는 서버 라우트에서 `createServiceClient()`만 사용한다. 브라우저용 anon 키에는 테이블 권한이 없다(RLS + revoke).
+- 새 테이블을 만들면 RLS를 켜고 anon/authenticated 권한을 회수한다.
 # currentDate
 Today's date is 2026-03-05.

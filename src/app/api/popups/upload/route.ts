@@ -1,11 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createServiceClient } from '@/lib/supabase/server';
 import sharp from 'sharp';
+import { requireAdmin } from '@/lib/admin-auth';
 
 /**
  * POST - 이미지 업로드 (WebP 변환으로 용량 절약)
  */
 export async function POST(request: NextRequest) {
+  const denied = requireAdmin(request, { adminOnly: true });
+  if (denied) return denied;
+
   try {
     const formData = await request.formData();
     const file = formData.get('file') as File;

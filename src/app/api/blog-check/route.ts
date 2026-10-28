@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { requireAdminOrCron } from '@/lib/admin-auth';
 
 interface ExposedPost {
   url: string;
@@ -15,6 +16,9 @@ interface BlogCheckResult {
 }
 
 export async function POST(request: NextRequest) {
+  const denied = requireAdminOrCron(request, { adminOnly: true });
+  if (denied) return denied;
+
   try {
     const { keyword, blogId } = await request.json();
 

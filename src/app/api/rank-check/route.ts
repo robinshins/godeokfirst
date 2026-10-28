@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { requireAdminOrCron } from '@/lib/admin-auth';
 
 interface PlaceItem {
   position: number;          // 전체 순위 (광고 포함)
@@ -30,6 +31,9 @@ interface ApolloPlaceData {
 }
 
 export async function POST(request: NextRequest) {
+  const denied = requireAdminOrCron(request, { adminOnly: true });
+  if (denied) return denied;
+
   try {
     const { keyword, targetUrl } = await request.json();
 

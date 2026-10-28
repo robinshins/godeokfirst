@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createServiceClient } from '@/lib/supabase/server';
+import { requireAdmin } from '@/lib/admin-auth';
 
 /**
  * POST - 페이지 방문 기록
@@ -57,6 +58,9 @@ export async function POST(request: NextRequest) {
  * RPC 함수로 DB에서 집계 → egress 대폭 절약 (5000개 레코드 → 집계 결과만)
  */
 export async function GET(request: NextRequest) {
+  const denied = requireAdmin(request);
+  if (denied) return denied;
+
   try {
     const { searchParams } = new URL(request.url);
     const days = searchParams.get('days');

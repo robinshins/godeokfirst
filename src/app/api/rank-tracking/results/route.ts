@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createServiceClient } from '@/lib/supabase/server';
+import { requireAdmin } from '@/lib/admin-auth';
 
 interface KeywordResult {
   keyword: string;
@@ -17,6 +18,9 @@ interface KeywordResult {
 
 // 결과 조회 (월별)
 export async function GET(request: NextRequest) {
+  const denied = requireAdmin(request, { adminOnly: true });
+  if (denied) return denied;
+
   try {
     const { searchParams } = new URL(request.url);
     const configId = searchParams.get('configId');
@@ -89,6 +93,9 @@ export async function GET(request: NextRequest) {
 
 // 결과 저장
 export async function POST(request: NextRequest) {
+  const denied = requireAdmin(request, { adminOnly: true });
+  if (denied) return denied;
+
   try {
     const { configId, date, checkedAt, results } = await request.json();
 

@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { requireAdmin } from '@/lib/admin-auth';
 
 interface ValidationResult {
   keyword: string;
@@ -7,6 +8,9 @@ interface ValidationResult {
 }
 
 export async function POST(request: NextRequest) {
+  const denied = requireAdmin(request, { adminOnly: true });
+  if (denied) return denied;
+
   try {
     const { keyword } = await request.json();
 

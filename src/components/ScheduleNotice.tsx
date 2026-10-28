@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { Popup } from '@/app/api/popups/route';
+import type { Popup } from '@/app/api/popups/route';
 
 export default function ScheduleNotice() {
   const [currentPopup, setCurrentPopup] = useState(0);
