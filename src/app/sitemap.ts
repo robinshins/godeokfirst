@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const languages = ['en', 'jp', 'cn', 'vi', 'th', 'ru', 'uz', 'mn']
   const treatments = ['implant', 'denture', 'cavity-treatment', 'wisdom-tooth', 'whitening', 'gum-care', 'tmj']
+  const koreanOnlyTreatments = ['jaw-botox'] // 한국어 페이지만 있는 진료
   const regions = ['godeok', 'godeok-myeon', 'dongsak', 'seojeong', 'ichung', 'jije', 'jangdang', 'segyo']
   const regionTreatments = ['implant', 'cavity-treatment', 'wisdom-tooth']
 
@@ -19,6 +20,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: t === 'implant' ? 1 : 0.8,
+    })),
+    ...koreanOnlyTreatments.map((t) => ({
+      url: `${baseUrl}/${t}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
     })),
   ]
 

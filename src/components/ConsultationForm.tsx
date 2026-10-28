@@ -25,7 +25,8 @@ const presetOptions = [
   { main: '사랑니 발치', sub: '' },
   { main: '잇몸 케어', sub: '' },
   { main: '충치 치료', sub: '레진, 인레이' },
-  { main: '턱관절 치료', sub: '' }
+  { main: '턱관절 치료', sub: '' },
+  { main: '턱 보톡스', sub: '이갈이 · 사각턱' }
 ];
 
 export default function ConsultationForm() {

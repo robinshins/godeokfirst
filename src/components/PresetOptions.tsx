@@ -54,6 +54,11 @@ const presetOptions: PresetOption[] = [
     description: '턱관절 통증·개구 장애'
   },
   {
+    id: 'jaw_botox',
+    title: '턱보톡스',
+    description: '이갈이·턱 근육 통증·사각턱'
+  },
+  {
     id: 'etc',
     title: '기타',
     description: '기타 치과 상담'

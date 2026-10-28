@@ -6,6 +6,7 @@ const HOST = 'https://gdfirstdent.co.kr';
 function getAllUrls(): string[] {
   const languages = ['en', 'jp', 'cn', 'vi', 'th', 'ru', 'uz', 'mn'];
   const treatments = ['implant', 'denture', 'cavity-treatment', 'wisdom-tooth', 'whitening', 'gum-care', 'tmj'];
+  const koreanOnlyTreatments = ['jaw-botox'];
   const regions = ['godeok', 'godeok-myeon', 'dongsak', 'seojeong', 'ichung', 'jije', 'jangdang', 'segyo'];
   const regionTreatments = ['implant', 'cavity-treatment', 'wisdom-tooth'];
 
@@ -13,6 +14,7 @@ function getAllUrls(): string[] {
     HOST,
     `${HOST}/consultation`,
     ...treatments.map((t) => `${HOST}/${t}`),
+    ...koreanOnlyTreatments.map((t) => `${HOST}/${t}`),
   ];
 
   // Foreign language pages

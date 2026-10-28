@@ -56,6 +56,7 @@ export default function GNB() {
     { name: '사랑니 발치', href: '/wisdom-tooth' },
     { name: '잇몸 치료 · 스케일링', href: '/gum-care' },
     { name: '턱관절 치료', href: '/tmj' },
+    { name: '턱 보톡스', href: '/jaw-botox' },
     { name: '치아 미백', href: '/whitening' },
   ];
 

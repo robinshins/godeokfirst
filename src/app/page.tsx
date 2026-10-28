@@ -75,6 +75,17 @@ const homeJsonLd = {
             url: 'https://gdfirstdent.co.kr/gum-care',
           },
         },
+        {
+          '@type': 'ListItem',
+          position: 6,
+          item: {
+            '@type': 'Service',
+            name: '턱 보톡스',
+            description: '이갈이·턱 근육 통증·사각턱, 교합·턱관절 진단과 함께 시술하는 교근 보톡스',
+            image: 'https://gdfirstdent.co.kr/icons/smile.svg',
+            url: 'https://gdfirstdent.co.kr/jaw-botox',
+          },
+        },
       ],
     },
     // 사이트 네비게이션
@@ -88,6 +99,7 @@ const homeJsonLd = {
         { '@type': 'SiteNavigationElement', name: '사랑니', url: 'https://gdfirstdent.co.kr/wisdom-tooth' },
         { '@type': 'SiteNavigationElement', name: '충치치료', url: 'https://gdfirstdent.co.kr/cavity-treatment' },
         { '@type': 'SiteNavigationElement', name: '잇몸치료', url: 'https://gdfirstdent.co.kr/gum-care' },
+        { '@type': 'SiteNavigationElement', name: '턱 보톡스', url: 'https://gdfirstdent.co.kr/jaw-botox' },
       ],
     },
   ],

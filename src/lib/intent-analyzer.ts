@@ -90,7 +90,7 @@ export async function analyzeIntentServerSide(message: string): Promise<IntentAn
   }
 
   // 턱관절 관련
-  if (lowerMessage.includes('턱') || lowerMessage.includes('턱관절') || lowerMessage.includes('이갈이') || lowerMessage.includes('이악물') || lowerMessage.includes('개구장애')) {
+  if (lowerMessage.includes('턱') || lowerMessage.includes('턱관절') || lowerMessage.includes('이갈이') || lowerMessage.includes('이악물') || lowerMessage.includes('개구장애') || lowerMessage.includes('보톡스') || lowerMessage.includes('사각턱')) {
     analysis.categories.push('tmj');
     analysis.categories.push('jaw');
   }

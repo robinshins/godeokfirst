@@ -89,6 +89,20 @@ export default function TreatmentSection() {
       link: '/tmj'
     },
     {
+      icon: '/icons/smile.svg',
+      iconBg: 'bg-teal-50',
+      title: '턱 보톡스',
+      subtitle: '이갈이 · 턱 근육 통증 · 사각턱',
+      description: '턱을 아는 치과에서 맞는 보톡스\n교합·턱관절 진단과 함께 시술합니다',
+      features: [
+        '교근(깨물근) 과긴장 완화',
+        '이갈이 장치 · 턱관절 치료 연계',
+        '씹는 힘을 지키는 용량 설계',
+        '시술 10분 내외 · 야간진료 가능'
+      ],
+      link: '/jaw-botox'
+    },
+    {
       icon: '/icons/whitening.svg',
       iconBg: 'bg-purple-50',
       title: '치아 미백',
