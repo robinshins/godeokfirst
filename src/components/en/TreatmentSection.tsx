@@ -51,7 +51,7 @@ export default function TreatmentSection() {
       iconBg: 'bg-green-50',
       title: 'Wisdom Tooth Extraction',
       subtitle: 'Safe and Quick Extraction',
-      description: '3D CT precise diagnosis for\nsafe extraction without nerve damage',
+      description: 'Extraction planned after checking\nthe nerve canal on 3D CT',
       features: [
         'Pain-minimized anesthesia',
         'Quick recovery',

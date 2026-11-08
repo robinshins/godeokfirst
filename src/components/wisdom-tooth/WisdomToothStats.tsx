@@ -6,7 +6,7 @@ import FadeInSection from '@/components/common/FadeInSection';
 export default function WisdomToothStats() {
   const stats = [
     { number: '2,700+', unit: '건', label: '누적 사랑니 발치' },
-    { number: '0', unit: '건', label: '부작용으로 인한 재치료', subtitle: '고덕에듀타운 개원 이후 재치료 0건' },
+    { number: '3D', unit: 'CT', label: '발치 전 정밀 진단', subtitle: '사랑니 뿌리와 신경관 위치를 입체로 확인' },
     { number: '0', unit: '%', label: '상급병원 전원률', subtitle: '오히려 다른 병원에서 어려운 케이스를 의뢰합니다' },
   ];
 

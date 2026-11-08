@@ -112,7 +112,7 @@ const treatments = [
   {
     id: 'all-on-x',
     num: '05',
-    tag: 'Recommended',
+    tag: 'Option when bone is limited',
     tagColor: 'bg-[#008095]/10 text-[#008095] border-[#008095]/20',
     title: 'All-on-X Implant',
     subtitle: 'All-on-4 / All-on-6',
@@ -124,9 +124,9 @@ const treatments = [
     ],
     color: '#008095',
     pros: [
-      'Lower cost than full-arch implant with same results',
-      'Possible even with poor bone condition, minimized bone grafting',
-      'Significantly shortened treatment period (3~6 months)',
+      'Fixed teeth with fewer implants than a full-arch implant',
+      'Tilted back implants can reduce the need for bone grafts',
+      'Temporary teeth right after surgery when conditions allow',
     ],
     cons: [
       'Higher cost than regular dentures',

@@ -107,18 +107,17 @@ export default function ComparisonSection() {
               <div className="flex flex-col items-center justify-center w-full">
                 <div className="flex flex-col gap-5 items-center justify-center px-4 py-6 w-full">
                   <h3 className="font-['Pretendard_JP'] font-bold text-[22px] leading-[1.4] tracking-[-0.44px] text-black text-center w-full">
-                    &ldquo;Bunday puxta davolashini<br />
-                    kutmagan edim&rdquo;
+                    Chekkasi mos kelmagan<br />inleyni qayta davolash
                   </h3>
                   <div className="flex flex-col gap-4 items-start w-full">
                     {/* Before Image */}
                     <div className="bg-[#f3f6fb] h-48 overflow-hidden relative rounded-[20px] w-full">
                       <Image
-                        src="/images/cavity-before-after.png"
+                        src="/cases/충치치료/인레이경계불량.jpg"
                         alt="Davolashdan oldin"
                         fill
                         className="object-cover"
-                        style={{ objectPosition: 'center 0%' }}
+                        style={{ objectPosition: 'center' }}
                       />
                       <div className="absolute left-0 top-0 p-3 z-10">
                         <div className="bg-[#292a2f] px-2.5 py-1.5 rounded-[10px]">
@@ -132,11 +131,11 @@ export default function ComparisonSection() {
                     {/* After Image */}
                     <div className="bg-[#f3f6fb] h-48 overflow-hidden relative rounded-[20px] w-full">
                       <Image
-                        src="/images/cavity-before-after.png"
+                        src="/cases/충치치료/인레이경계불량치료이후.jpg"
                         alt="Davolashdan keyin"
                         fill
                         className="object-cover"
-                        style={{ objectPosition: 'center 100%' }}
+                        style={{ objectPosition: 'center' }}
                       />
                       <div className="absolute left-0 top-0 p-3">
                         <div className="bg-[#008095] px-2.5 py-1.5 rounded-[10px]">
@@ -149,10 +148,10 @@ export default function ComparisonSection() {
                   </div>
                   <div className="flex flex-col gap-1 items-start text-center w-full">
                     <p className="font-['Pretendard_JP'] font-bold text-base leading-[1.4] tracking-[-0.32px] text-black w-full">
-                      Inley qayta davolashdan keyin 5 yil davomida muammosiz
+                      Eski inley olinib, karies tozalanib, yangisi tayyorlandi
                     </p>
                     <p className="font-['Pretendard_JP'] font-semibold text-[15px] leading-[1.4] tracking-[-0.3px] text-[#9298a6] w-full">
-                      Kim●● · 40 yoshli ayol
+                      Davolash natijasi har kimda turlicha boʼlishi mumkin
                     </p>
                   </div>
                 </div>

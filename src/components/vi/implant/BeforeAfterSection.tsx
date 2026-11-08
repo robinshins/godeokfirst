@@ -13,15 +13,15 @@ export default function BeforeAfterSection() {
       name: 'Ji●●',
       gender: 'Nam',
       type: 'Nhiều Implant · X-ray',
-      beforeImage: '/임상사진/지종환_임플란트/지종환_răng hàm임플란트_엑스레_before.jpg',
-      afterImage: '/임상사진/지종환_임플란트/지종환_răng hàm임플란트_엑스레_after.jpg'
+      beforeImage: '/임상사진/임플란트-1/어금니임플란트_엑스레이_before.jpg',
+      afterImage: '/임상사진/임플란트-1/어금니임플란트_엑스레이_after.jpg'
     },
     {
       name: 'Ji●●',
       gender: 'Nam',
       type: 'Nhiều Implant · Ảnh thực tế',
-      beforeImage: '/임상사진/지종환_임플란트/지종환_răng hàm임플란트_실제사진_before.jpg',
-      afterImage: '/임상사진/지종환_임플란트/지종환_răng hàm임플란트_실제사진_after.jpg'
+      beforeImage: '/임상사진/임플란트-1/어금니임플란트_실제사진_before.jpg',
+      afterImage: '/임상사진/임플란트-1/어금니임플란트_실제사진_after.jpg'
     }
   ];
 
@@ -31,22 +31,22 @@ export default function BeforeAfterSection() {
       name: 'Ji●●',
       gender: 'Nam',
       type: 'Phục hình Implant · X-ray',
-      beforeImage: '/임상사진/지종환_임플란트/지종환_răng hàm임플란트_엑스레_before.jpg',
-      afterImage: '/임상사진/지종환_임플란트/지종환_răng hàm임플란트_엑스레_after.jpg'
+      beforeImage: '/임상사진/임플란트-1/어금니임플란트_엑스레이_before.jpg',
+      afterImage: '/임상사진/임플란트-1/어금니임플란트_엑스레이_after.jpg'
     },
     {
       name: 'Ji●●',
       gender: 'Nam',
       type: 'Phục hình Implant · Ảnh thực tế',
-      beforeImage: '/임상사진/지종환_임플란트/지종환_răng hàm임플란트_실제사진_before.jpg',
-      afterImage: '/임상사진/지종환_임플란트/지종환_răng hàm임플란트_실제사진_after.jpg'
+      beforeImage: '/임상사진/임플란트-1/어금니임플란트_실제사진_before.jpg',
+      afterImage: '/임상사진/임플란트-1/어금니임플란트_실제사진_after.jpg'
     },
     {
       name: 'Lee●●',
       gender: 'Nữ',
       type: 'Implant · Ảnh thực tế',
-      beforeImage: '/임상사진/영주_임플란트/영주_임플란트_실사_before.jpg',
-      afterImage: '/임상사진/영주_임플란트/영주_임플란트_실사_after.jpg'
+      beforeImage: '/임상사진/임플란트-2/임플란트_실사_before.jpg',
+      afterImage: '/임상사진/임플란트-2/20251028_110155.jpg'
     }
   ];
 

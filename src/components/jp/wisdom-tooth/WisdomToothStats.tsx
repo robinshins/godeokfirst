@@ -6,7 +6,7 @@ import FadeInSection from '@/components/common/FadeInSection';
 export default function WisdomToothStats() {
   const stats = [
     { number: '2,700+', unit: '件', label: '累計親知らず抜歯' },
-    { number: '0', unit: '件', label: '副作用による再治療', subtitle: '高徳エデュタウン開院以来、再治療0件' },
+    { number: '3D', unit: 'CT', label: '抜歯前の精密診断', subtitle: '親知らずの根と神経管の位置を立体的に確認' },
     { number: '0', unit: '%', label: '上級病院への転院率', subtitle: 'むしろ他の病院から難しいケースを依頼されています' },
   ];
 

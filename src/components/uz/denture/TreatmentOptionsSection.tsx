@@ -112,7 +112,7 @@ const treatments = [
   {
     id: 'all-on-x',
     num: '05',
-    tag: 'Tavsiya etilgan',
+    tag: 'Suyak yetishmasa variant',
     tagColor: 'bg-[#008095]/10 text-[#008095] border-[#008095]/20',
     title: 'All-on-X implant',
     subtitle: 'All-on-4 / All-on-6',
@@ -124,9 +124,9 @@ const treatments = [
     ],
     color: '#008095',
     pros: [
-      'Toʼliq implantga nisbatan xarajat past va samara bir xil',
-      'Suyak holati yomon boʼlganlar ham suyak koʼchirish minimallashtirilgan holda mumkin',
-      'Davolash muddat sezilarli qisqartiriladi (3~6 oy)',
+      'Toʼliq implantga qaraganda kamroq implant bilan qoʼzgʼalmas tishlar',
+      'Orqa implantlarni qiya oʼrnatish suyak qoʼshishni kamaytiradi',
+      'Sharoit mos boʼlsa, operatsiyadan keyin darhol vaqtinchalik tish',
     ],
     cons: [
       'Oddiy protezga nisbatan yuqori xarajat',

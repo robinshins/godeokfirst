@@ -91,7 +91,7 @@ export default function DoctorProfileSection() {
                             รักษารากฟัน, รักษารากฟันซ้ำ
                           </p>
                           <p className="font-['Pretendard_JP'] font-medium text-[14px] leading-[1.5] tracking-[-0.28px] opacity-80">
-                            การรักษารากฟันที่ต้องการเทคนิคที่ละเอียดอ่อนเป็นสาขาเฉพาะทางของทันตกรรมอนุรักษ์
+                            การรักษารากฟันเป็นการรักษาที่ต้องใช้เทคนิคที่ละเอียดอ่อน
                           </p>
                         </div>
                       </div>
@@ -176,7 +176,7 @@ export default function DoctorProfileSection() {
                     {/* 환자 맞춤 상담 강조 */}
                     <div className="bg-[#008095]/20 backdrop-blur-sm px-4 py-3 rounded-xl w-full border border-[#008095]/30">
                       <p className="font-['Pretendard_JP'] font-semibold text-[14px] leading-[1.5] tracking-[-0.28px] text-white">
-                        💡 ในฐานะผู้เชี่ยวชาญด้านทันตกรรมอนุรักษ์ ด้วยประสบการณ์ที่หลากหลายในทุกการรักษา เราจะปรึกษากับผู้ป่วยอย่างเพียงพอเพื่อดำเนินการรักษาที่จำเป็นที่สุด
+                        💡 ในฐานะทันตแพทย์เฉพาะทางทันตกรรมบูรณาการ เราจะปรึกษาอย่างละเอียดและให้การรักษาเฉพาะที่จำเป็น
                       </p>
                     </div>
                   </div>

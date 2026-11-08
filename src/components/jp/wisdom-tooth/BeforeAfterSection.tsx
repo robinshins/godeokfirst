@@ -13,15 +13,6 @@ const cases = [
     description: '埋伏した左下親知らずを安全に抜歯完了',
   },
   {
-    type: '右下親知らず抜歯',
-    badgeColor: 'bg-[#fef1e5]',
-    badgeTextColor: 'text-[#f57400]',
-    title: '右下親知らず抜歯後のきれいな回復',
-    before: '/임상사진/사랑니/우측아래사랑니_before.jpeg',
-    after: '/임상사진/사랑니/우측아래사랑니_after.jpeg',
-    description: '右下親知らず抜歯後、歯茎がきれいに回復',
-  },
-  {
     type: 'インプラント＋親知らず同時施術',
     badgeColor: 'bg-[#e8f4fd]',
     badgeTextColor: 'text-[#0088cc]',

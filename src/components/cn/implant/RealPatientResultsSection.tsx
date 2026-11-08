@@ -7,20 +7,20 @@ export default function RealPatientResultsSection() {
     {
       name: '池●●',
       description: '臼齿种植牙（X光）',
-      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_before.jpg',
-      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_after.jpg',
+      beforeImage: '/임상사진/임플란트-1/어금니임플란트_엑스레이_before.jpg',
+      afterImage: '/임상사진/임플란트-1/어금니임플란트_엑스레이_after.jpg',
     },
     {
       name: '池●●',
       description: '臼齿种植牙（实拍）',
-      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_before.jpg',
-      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_after.jpg',
+      beforeImage: '/임상사진/임플란트-1/어금니임플란트_실제사진_before.jpg',
+      afterImage: '/임상사진/임플란트-1/어금니임플란트_실제사진_after.jpg',
     },
     {
       name: '李●●',
       description: '种植牙（实拍）',
-      beforeImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_before.jpg',
-      afterImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_after.jpg',
+      beforeImage: '/임상사진/임플란트-2/임플란트_실사_before.jpg',
+      afterImage: '/임상사진/임플란트-2/20251028_110155.jpg',
     },
   ];
 

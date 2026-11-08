@@ -91,7 +91,7 @@ export default function DoctorProfileSection() {
                             Root Canal Treatment & Retreatment
                           </p>
                           <p className="font-['Pretendard_JP'] font-medium text-[14px] leading-[1.5] tracking-[-0.28px] opacity-80">
-                            Root canal treatment requiring delicate procedures is a specialized area of conservative dentistry.
+                            Root canal treatment requires delicate, precise procedures.
                           </p>
                         </div>
                       </div>
@@ -176,7 +176,7 @@ export default function DoctorProfileSection() {
                     {/* Patient Consultation Highlight */}
                     <div className="bg-[#008095]/20 backdrop-blur-sm px-4 py-3 rounded-xl w-full border border-[#008095]/30">
                       <p className="font-['Pretendard_JP'] font-semibold text-[14px] leading-[1.5] tracking-[-0.28px] text-white">
-                        As a conservative dentistry specialist with extensive experience across all treatments, we provide the most needed care through thorough consultation with each patient.
+                        As a board-certified specialist in Integrated Dentistry, we consult thoroughly and provide only the treatment you need.
                       </p>
                     </div>
                   </div>

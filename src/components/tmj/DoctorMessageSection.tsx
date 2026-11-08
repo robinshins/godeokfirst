@@ -61,9 +61,9 @@ export default function TmjDoctorMessageSection() {
           {/* Key Stats */}
           <div className="flex flex-col gap-3">
             {[
-              { num: '70%', desc: '성인 인구 중 턱관절 장애 경험 비율' },
-              { num: '3배', desc: '방치 시 만성화 위험 — 조기 치료가 핵심' },
-              { num: '85%', desc: '보존적 치료(비수술)로 호전되는 비율' },
+              { num: '31%', desc: '성인 턱관절장애 유병률 (2021 메타분석)' },
+              { num: '비수술', desc: '약물·찜질·턱 운동·스플린트부터 시작' },
+              { num: '원인', desc: '이 악물기·이갈이·맞물림을 함께 확인' },
             ].map((item, i) => (
               <div
                 key={i}

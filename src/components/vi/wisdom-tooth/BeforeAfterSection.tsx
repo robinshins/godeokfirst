@@ -4,7 +4,6 @@ import Image from 'next/image';
 
 const cases = [
   { type: 'Nhổ răng khôn dưới trái', badgeColor: 'bg-[#fff9ec]', badgeTextColor: 'text-[#ffc53d]', title: 'Nhổ an toàn răng khôn mọc ngầm dưới trái', before: '/임상사진/사랑니/왼쪽아래사랑니_before.jpeg', after: '/임상사진/사랑니/왼쪽아래사랑니_after.jpeg', description: 'Hoàn thành nhổ an toàn răng khôn mọc ngầm dưới trái' },
-  { type: 'Nhổ răng khôn dưới phải', badgeColor: 'bg-[#fef1e5]', badgeTextColor: 'text-[#f57400]', title: 'Phục hồi sạch sẽ sau nhổ răng khôn dưới phải', before: '/임상사진/사랑니/우측아래사랑니_before.jpeg', after: '/임상사진/사랑니/우측아래사랑니_after.jpeg', description: 'Nướu phục hồi sạch sẽ sau nhổ răng khôn dưới phải' },
   { type: 'Cấy ghép + Nhổ răng khôn đồng thời', badgeColor: 'bg-[#e8f4fd]', badgeTextColor: 'text-[#0088cc]', title: 'Cấy ghép implant và nhổ răng khôn cùng lúc', before: '/임상사진/사랑니/임플란트식립하면서사랑니발치_before.jpeg', after: '/임상사진/사랑니/임플란트하면서발치_after.jpeg', description: 'Giảm thiểu số lần khám bằng cách thực hiện đồng thời' },
 ];
 

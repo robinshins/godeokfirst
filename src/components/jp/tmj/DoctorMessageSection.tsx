@@ -32,9 +32,9 @@ export default function TmjDoctorMessageSection() {
 
           <div className="flex flex-col gap-3">
             {[
-              { num: '70%', desc: '成人人口のうち顎関節障害経験率' },
-              { num: '3倍', desc: '放置時の慢性化リスク — 早期治療が核心' },
-              { num: '85%', desc: '保存的治療（非手術）で改善する割合' },
+              { num: '31%', desc: '成人の顎関節症の有病率（2021年メタ分析）' },
+              { num: '非手術', desc: '薬・温冷罨法・顎の運動・スプリントから' },
+              { num: '原因', desc: '食いしばり・歯ぎしり・かみ合わせも確認' },
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-4 bg-white border border-[#e9ebf1] rounded-2xl px-5 py-4">
                 <p className="font-bold text-[22px] text-[#008095] tracking-[-0.03em] shrink-0 w-[72px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>{item.num}</p>

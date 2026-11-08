@@ -89,10 +89,10 @@ export default function TmjSymptomsSection() {
             className="text-[#4DC8D8] font-bold text-[16px] leading-[1.5]"
             style={{ fontFamily: 'Pretendard, sans-serif' }}
           >
-            Jagʼ boʼgʼimi kasalligi tabiiy tuzalishi qiyin.<br />Erta davolash eng samarali.
+            Ogʼriq yoki ogʼiz ochishdagi qiyinchilik davom etsa,<br />avval sababini aniqlash yaxshi.
           </p>
           <p className="text-white/40 text-[13px]">
-            Eʼtiborsiz qoldirilgan sari boʼgʼim diski shikastlanib davolash murakkablashadi.
+            Faqat tovush boʼlib ogʼriq boʼlmasa, koʼrikdan keyin kuzatish mumkin.
           </p>
         </div>
 

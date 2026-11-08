@@ -7,20 +7,20 @@ export default function RealPatientResultsSection() {
     {
       name: 'Ji●●',
       description: 'Implant răng hàm (X-ray)',
-      beforeImage: '/임상사진/지종환_임플란트/지종환_răng hàm임플란트_엑스레_before.jpg',
-      afterImage: '/임상사진/지종환_임플란트/지종환_răng hàm임플란트_엑스레_after.jpg',
+      beforeImage: '/임상사진/임플란트-1/어금니임플란트_엑스레이_before.jpg',
+      afterImage: '/임상사진/임플란트-1/어금니임플란트_엑스레이_after.jpg',
     },
     {
       name: 'Ji●●',
       description: 'răng hàm Implant (ảnh thực tế)',
-      beforeImage: '/임상사진/지종환_임플란트/지종환_răng hàm임플란트_ảnh thực tế_before.jpg',
-      afterImage: '/임상사진/지종환_임플란트/지종환_răng hàm임플란트_ảnh thực tế_after.jpg',
+      beforeImage: '/임상사진/임플란트-1/어금니임플란트_실제사진_before.jpg',
+      afterImage: '/임상사진/임플란트-1/어금니임플란트_실제사진_after.jpg',
     },
     {
       name: 'Lee●●',
       description: 'Implant (ảnh thực tế)',
-      beforeImage: '/임상사진/영주_임플란트/영주_임플란트_실사_before.jpg',
-      afterImage: '/임상사진/영주_임플란트/영주_임플란트_실사_after.jpg',
+      beforeImage: '/임상사진/임플란트-2/임플란트_실사_before.jpg',
+      afterImage: '/임상사진/임플란트-2/20251028_110155.jpg',
     },
   ];
 

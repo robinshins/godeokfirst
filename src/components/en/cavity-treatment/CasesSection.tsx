@@ -11,12 +11,12 @@ const cases = [
     summary: 'Cavity area precisely removed and cleanly restored with natural tooth-colored resin',
     steps: [
       {
-        img: '/임상사진/Cavity/김효연_Cavity_before.jpg',
+        img: '/임상사진/충치/충치_before.jpg',
         label: 'Before Treatment',
         desc: 'Cavity has progressed in the molar. Discoloration and damage from the cavity are visible on the tooth surface.',
       },
       {
-        img: '/임상사진/Cavity/김효연_Cavity_after.jpg',
+        img: '/임상사진/충치/충치_after.jpg',
         label: 'Treatment Complete',
         desc: 'Cavity completely removed and restored with natural tooth-colored resin. The tooth shape has been cleanly restored.',
       },
@@ -29,12 +29,12 @@ const cases = [
     summary: 'Cavities in multiple teeth precisely removed and restored step by step',
     steps: [
       {
-        img: '/임상사진/Cavity-1/방준영_Cavity_before.jpg',
+        img: '/임상사진/충치-1/충치_before.jpg',
         label: 'Before Treatment',
         desc: 'Cavities have progressed in multiple molars. Secondary cavities are found around existing restorations.',
       },
       {
-        img: '/임상사진/Cavity-1/방준영_Cavity_after.jpg',
+        img: '/임상사진/충치-1/충치_after.jpg',
         label: 'Treatment Complete',
         desc: 'All cavities removed and naturally completed with appropriate restorations for each tooth.',
       },
@@ -43,18 +43,18 @@ const cases = [
   {
     num: '03',
     tag: 'Crack Treatment',
-    title: 'Tooth Crack, Gold Crown Restoration',
-    summary: 'Cracked tooth precisely diagnosed and protected with gold crown',
+    title: 'Cracked Tooth, Tooth-colored Crown Restoration',
+    summary: 'A cracked molar diagnosed and protected with a tooth-colored crown',
     steps: [
       {
-        img: '/임상사진/크랙/김고운_크랙_실사_before.jpg',
-        label: 'X-ray Diagnosis',
-        desc: 'X-ray imaging precisely identifies the location and extent of the tooth crack.',
+        img: '/임상사진/크랙/크랙_실사_before.jpg',
+        label: 'Crack Check',
+        desc: 'Under magnification, a crack line is visible next to the filling. Cracks rarely show on X-rays, so we check visually and by symptoms when biting.',
       },
       {
-        img: '/임상사진/크랙/김고운_크랙_실사_after.jpg',
-        label: 'Gold Crown Placement Complete',
-        desc: 'Cracked tooth protected with gold crown to prevent further fracture. Durable gold material ensures long-term stable use.',
+        img: '/임상사진/크랙/크랙_실사_after.jpg',
+        label: 'Crown Placement Complete',
+        desc: 'The whole tooth was covered with a tooth-colored crown to keep the crack from spreading. The gold restoration in the photo is the existing crown on the neighboring tooth.',
       },
     ],
   },
@@ -65,12 +65,12 @@ const cases = [
     summary: 'Damaged front teeth precisely restored with prosthetics for natural aesthetics',
     steps: [
       {
-        img: '/임상사진/정재윤_Front TeethProsthetics/정재윤_Front TeethProsthetics_실제사진_before.jpg',
+        img: '/임상사진/앞니보철-2/앞니보철_실제사진_before.jpg',
         label: 'Before Treatment',
         desc: 'Front teeth are damaged and need aesthetic and functional improvement.',
       },
       {
-        img: '/임상사진/정재윤_Front TeethProsthetics/정재윤_Front TeethProsthetics_실제사진_after.jpg',
+        img: '/임상사진/앞니보철-2/앞니보철_실제사진_after.jpg',
         label: 'Prosthetics Restoration Complete',
         desc: 'Precise prosthetics restoration achieved a shape and color similar to natural teeth.',
       },
@@ -83,12 +83,12 @@ const cases = [
     summary: 'Existing prosthetics removed and re-restored with new prosthetics for improved aesthetics and function',
     steps: [
       {
-        img: '/임상사진/Front Teeth 재Prosthetics/Front Teeth재Prosthetics_실사_before.jpg',
+        img: '/임상사진/앞니 재보철/앞니재보철_실사_before.jpg',
         label: 'Before Treatment',
         desc: 'Existing prosthetics show discoloration and reduced fit, requiring re-prosthetics.',
       },
       {
-        img: '/임상사진/Front Teeth 재Prosthetics/Front Teeth재Prosthetics_실사_after.jpg',
+        img: '/임상사진/앞니 재보철/앞니재보철_실사_after.jpg',
         label: 'Re-Prosthetics Complete',
         desc: 'Existing prosthetics removed and naturally restored with new prosthetics.',
       },
@@ -101,12 +101,12 @@ const cases = [
     summary: 'Front teeth aesthetics improved with crown for a natural smile',
     steps: [
       {
-        img: '/임상사진/정민아B_Front Teeth Prosthetics/정민아B_Front Teeth심미ProstheticsCrown_before.jpg',
+        img: '/임상사진/앞니보철-1/앞니심미보철크라운_before.jpg',
         label: 'Before Treatment',
         desc: 'Front teeth shape and color need improvement.',
       },
       {
-        img: '/임상사진/정민아B_Front Teeth Prosthetics/정민아B_Front Teeth심미ProstheticsCrown_after.jpg',
+        img: '/임상사진/앞니보철-1/앞니심미보철크라운_after.jpg',
         label: 'Aesthetic Prosthetics Complete',
         desc: 'Natural shape and color achieved with aesthetic prosthetics crown.',
       },

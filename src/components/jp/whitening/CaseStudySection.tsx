@@ -17,7 +17,7 @@ export default function CaseStudySection() {
             <div className="p-5 flex flex-col gap-4">
               <div className="relative w-full">
                 <div className="bg-[#f3f6fb] h-[220px] overflow-hidden relative rounded-[20px] w-full">
-                  <Image src="/임상사진/미백/양해영_미백_before.jpg" alt="ホワイトニング前" fill className="object-cover" />
+                  <Image src="/임상사진/미백/미백_before.jpg" alt="ホワイトニング前" fill className="object-cover" />
                 </div>
                 <div className="absolute left-3 top-3 bg-[#292a2f] px-2.5 py-[5px] rounded-[10px] z-10">
                   <p className="font-semibold text-[13px] leading-[1.4] text-white tracking-[-0.26px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>Before</p>
@@ -25,7 +25,7 @@ export default function CaseStudySection() {
               </div>
               <div className="relative w-full">
                 <div className="bg-[#f3f6fb] h-[220px] overflow-hidden relative rounded-[20px] w-full">
-                  <Image src="/임상사진/미백/양해영_미백_after.jpg" alt="ホワイトニング後" fill className="object-cover" />
+                  <Image src="/임상사진/미백/미백_after.jpg" alt="ホワイトニング後" fill className="object-cover" />
                 </div>
                 <div className="absolute left-3 top-3 bg-[#008095] px-2.5 py-[5px] rounded-[10px] z-10">
                   <p className="font-semibold text-[13px] leading-[1.4] text-white tracking-[-0.26px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>After</p>
@@ -42,7 +42,7 @@ export default function CaseStudySection() {
             <div className="p-5 flex flex-col gap-4">
               <div className="relative w-full">
                 <div className="bg-[#f3f6fb] h-[220px] overflow-hidden relative rounded-[20px] w-full">
-                  <Image src="/임상사진/안동건_미백/안동건_미백_before.jpg" alt="ホワイトニング前" fill className="object-cover" />
+                  <Image src="/임상사진/미백-2/미백_before.jpg" alt="ホワイトニング前" fill className="object-cover" />
                 </div>
                 <div className="absolute left-3 top-3 bg-[#292a2f] px-2.5 py-[5px] rounded-[10px] z-10">
                   <p className="font-semibold text-[13px] leading-[1.4] text-white tracking-[-0.26px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>Before</p>
@@ -50,7 +50,7 @@ export default function CaseStudySection() {
               </div>
               <div className="relative w-full">
                 <div className="bg-[#f3f6fb] h-[220px] overflow-hidden relative rounded-[20px] w-full">
-                  <Image src="/임상사진/안동건_미백/안동건_미백_after.jpg" alt="ホワイトニング後" fill className="object-cover" />
+                  <Image src="/임상사진/미백-2/미백_after.jpg" alt="ホワイトニング後" fill className="object-cover" />
                 </div>
                 <div className="absolute left-3 top-3 bg-[#008095] px-2.5 py-[5px] rounded-[10px] z-10">
                   <p className="font-semibold text-[13px] leading-[1.4] text-white tracking-[-0.26px]" style={{ fontFamily: 'Pretendard, sans-serif' }}>After</p>

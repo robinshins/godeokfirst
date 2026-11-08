@@ -52,7 +52,7 @@ export default function TreatmentSection() {
       iconBg: 'bg-green-50',
       title: '사랑니 발치',
       subtitle: '안전하고 신속한 발치',
-      description: '3D CT 정밀 진단으로\n신경 손상없이 안전하게 발치',
+      description: '3D CT 정밀 진단으로\n신경관 위치를 확인한 뒤 계획하는 발치',
       features: [
         '통증 완화 마취 시행',
         '빠른 회복',

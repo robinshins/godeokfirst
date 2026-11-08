@@ -33,7 +33,7 @@ export default function FeaturesSection() {
             <div className="bg-[#f3f6fb] rounded-[16px] p-5 flex flex-col gap-3 w-full">
               {[
                 { label: 'Сложные ретинированные зубы', desc: 'Даже глубоко залегающие — не проблема' },
-                { label: 'Зубы у нерва', desc: 'Безопасное удаление без повреждения нерва' },
+                { label: 'Зубы у нерва', desc: 'Перед удалением расстояние до нервного канала оцениваем на 3D КТ' },
                 { label: 'Горизонтально ретинированные', desc: 'Даже лежачие сложные случаи — решаем' },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-2">

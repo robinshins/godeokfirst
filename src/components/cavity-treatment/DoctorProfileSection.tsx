@@ -91,7 +91,7 @@ export default function DoctorProfileSection() {
                             신경치료, 재신경치료
                           </p>
                           <p className="font-['Pretendard_JP'] font-medium text-[14px] leading-[1.5] tracking-[-0.28px] opacity-80">
-                            섬세한 술식이 요구되는 신경치료는 치과보존과의 전문 영역입니다.
+                            섬세한 술식이 요구되는 신경치료는 자연치아를 지키는 핵심 치료입니다.
                           </p>
                         </div>
                       </div>
@@ -176,7 +176,7 @@ export default function DoctorProfileSection() {
                     {/* 환자 맞춤 상담 강조 */}
                     <div className="bg-[#008095]/20 backdrop-blur-sm px-4 py-3 rounded-xl w-full border border-[#008095]/30">
                       <p className="font-['Pretendard_JP'] font-semibold text-[14px] leading-[1.5] tracking-[-0.28px] text-white">
-                        💡 보존과 전문의로서 모든 진료에 대한 풍부한 경험을 바탕으로, 환자분과 충분한 상담을 통해 가장 필요한 치료를 진행합니다.
+                        💡 통합치의학과 전문의로서 환자분과 충분히 상담한 뒤 꼭 필요한 치료를 진행합니다.
                       </p>
                     </div>
                   </div>

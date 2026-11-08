@@ -89,10 +89,10 @@ export default function TmjSymptomsSection() {
             className="text-[#4DC8D8] font-bold text-[16px] leading-[1.5]"
             style={{ fontFamily: 'Pretendard, sans-serif' }}
           >
-            颞下颌关节障碍很难自然痊愈。<br />早期治疗效果最好。
+            如果疼痛或张口困难持续，<br />最好先确认原因。
           </p>
           <p className="text-white/40 text-[13px]">
-            放置越久关节盘损伤越严重，治疗也会越复杂。
+            如果只有弹响而不痛，检查后也可以观察经过。
           </p>
         </div>
 

@@ -6,7 +6,7 @@ import FadeInSection from '@/components/common/FadeInSection';
 export default function WisdomToothStats() {
   const stats = [
     { number: '2,700+', unit: '例', label: '累计智齿拔除' },
-    { number: '0', unit: '例', label: '因副作用导致的再治疗', subtitle: '高德Edu Town开院以来再治疗0例' },
+    { number: '3D', unit: 'CT', label: '拔牙前精密诊断', subtitle: '立体确认智齿牙根与神经管的位置' },
     { number: '0', unit: '%', label: '转诊上级医院率', subtitle: '其他医院反而将疑难病例转介给我们' },
   ];
 

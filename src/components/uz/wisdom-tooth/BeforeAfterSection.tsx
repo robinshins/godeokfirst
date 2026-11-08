@@ -4,7 +4,6 @@ import Image from 'next/image';
 
 const cases = [
   { type: 'Chap pastki aql tishini sugʼurish', badgeColor: 'bg-[#fff9ec]', badgeTextColor: 'text-[#ffc53d]', title: 'Chap pastki koʼmilgan aql tishini xavfsiz sugʼurish', before: '/임상사진/사랑니/왼쪽아래사랑니_before.jpeg', after: '/임상사진/사랑니/왼쪽아래사랑니_after.jpeg', description: 'Koʼmilgan chap pastki aql tishi muvaffaqiyatli va xavfsiz sugʼurildi' },
-  { type: 'Oʼng pastki aql tishini sugʼurish', badgeColor: 'bg-[#fef1e5]', badgeTextColor: 'text-[#f57400]', title: 'Oʼng pastki aql tishi sugʼurilgandan keyin toza tiklanish', before: '/임상사진/사랑니/우측아래사랑니_before.jpeg', after: '/임상사진/사랑니/우측아래사랑니_after.jpeg', description: 'Oʼng pastki aql tishi sugʼurilgandan keyin milk toza tiklandi' },
   { type: 'Implant + aql tishi bir vaqtda', badgeColor: 'bg-[#e8f4fd]', badgeTextColor: 'text-[#0088cc]', title: 'Implant oʼrnatish va aql tishi sugʼurish bir vaqtda', before: '/임상사진/사랑니/임플란트식립하면서사랑니발치_before.jpeg', after: '/임상사진/사랑니/임플란트하면서발치_after.jpeg', description: 'Bir vaqtda bajarib, tashrif buyurish sonini kamaytirdik' },
 ];
 

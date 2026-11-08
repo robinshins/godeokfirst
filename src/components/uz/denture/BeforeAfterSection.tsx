@@ -10,15 +10,15 @@ export default function BeforeAfterSection() {
       name: 'Pak●●',
       gender: 'Erkak',
       type: 'Toʼliq implant · Rentgen oldin/keyin',
-      beforeImage: '/임상사진/박균조_toʼliq jagʼimplant/박균조_전체implant_rentgen_before.jpg',
-      afterImage: '/임상사진/박균조_toʼliq jagʼimplant/박균조_전체implant_rentgen_after.jpg'
+      beforeImage: '/임상사진/전체임플란트-1/전체임플란트_엑스레이_before.jpg',
+      afterImage: '/임상사진/전체임플란트-1/전체임플란트_엑스레이_after.jpg'
     },
     {
       name: 'Pak●●',
       gender: 'Erkak',
       type: 'Toʼliq implant · Haqiqiy surat oldin/keyin',
-      beforeImage: '/임상사진/박균조_toʼliq jagʼimplant/박균조_전체implant_haqiqiy surat_before.jpg',
-      afterImage: '/임상사진/박균조_toʼliq jagʼimplant/박균조_전체implant_haqiqiy surat_after.jpg'
+      beforeImage: '/임상사진/전체임플란트-1/전체임플란트_실제사진_before.jpg',
+      afterImage: '/임상사진/전체임플란트-1/전체임플란트_실제사진_after.jpg'
     }
   ];
 

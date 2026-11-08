@@ -82,7 +82,7 @@ export default function DoctorProfileSection() {
                         </div>
                         <div className="flex flex-col gap-1">
                           <p className="font-['Pretendard_JP'] font-bold text-[16px] leading-[1.5] tracking-[-0.32px]">根管治疗、再根管治疗</p>
-                          <p className="font-['Pretendard_JP'] font-medium text-[14px] leading-[1.5] tracking-[-0.28px] opacity-80">需要精细操作的根管治疗是牙科保存科的专业领域。</p>
+                          <p className="font-['Pretendard_JP'] font-medium text-[14px] leading-[1.5] tracking-[-0.28px] opacity-80">根管治疗是需要精细操作的治疗。</p>
                         </div>
                       </div>
 
@@ -129,7 +129,7 @@ export default function DoctorProfileSection() {
 
                     <div className="bg-[#008095]/20 backdrop-blur-sm px-4 py-3 rounded-xl w-full border border-[#008095]/30">
                       <p className="font-['Pretendard_JP'] font-semibold text-[14px] leading-[1.5] tracking-[-0.28px] text-white">
-                        作为保存科专家，凭借所有诊疗的丰富经验，通过与患者充分咨询进行最需要的治疗。
+                        作为综合牙科专科医生，与患者充分沟通后进行必要的治疗。
                       </p>
                     </div>
                   </div>

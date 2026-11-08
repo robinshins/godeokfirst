@@ -9,8 +9,8 @@ const cases = [
     badgeColor: 'bg-[#fff9ec]',
     badgeTextColor: 'text-[#ffc53d]',
     title: 'Phục hồi răng bị tổn thương do sâu răng bằng resin',
-    before: '/임상사진/sâu răng/김효연_sâu răng_before.jpg',
-    after: '/임상사진/sâu răng/김효연_sâu răng_after.jpg',
+    before: '/임상사진/충치/충치_before.jpg',
+    after: '/임상사진/충치/충치_after.jpg',
     description: 'Hoàn thành phục hồi resin phù hợp màu răng tự nhiên sau khi loại bỏ sâu răng',
   },
   {
@@ -19,8 +19,8 @@ const cases = [
     badgeColor: 'bg-[#fef1e5]',
     badgeTextColor: 'text-[#f57400]',
     title: 'Bảo vệ bằng mão răng khi đau do nứt răng',
-    before: '/임상사진/vết nứt/김고운_vết nứt_실사_before.jpg',
-    after: '/임상사진/vết nứt/김고운_vết nứt_실사_after.jpg',
+    before: '/임상사진/크랙/크랙_실사_before.jpg',
+    after: '/임상사진/크랙/크랙_실사_after.jpg',
     description: 'Phục hồi an toàn răng bị nứt tiến triển bằng mão răng',
   },
   {
@@ -29,8 +29,8 @@ const cases = [
     badgeColor: 'bg-[#e8f4fd]',
     badgeTextColor: 'text-[#0088cc]',
     title: 'Phục hồi tự nhiên răng cửa bị tổn thương bằng phục hình',
-    before: '/임상사진/chính재윤_앞니보철/chính재윤_앞니보철_실제사진_before.jpg',
-    after: '/임상사진/chính재윤_앞니보철/chính재윤_앞니보철_실제사진_after.jpg',
+    before: '/임상사진/앞니보철-2/앞니보철_실제사진_before.jpg',
+    after: '/임상사진/앞니보철-2/앞니보철_실제사진_after.jpg',
     description: 'Phục hồi cả thẩm mỹ và chức năng bằng phục hình răng cửa',
   },
   {
@@ -39,8 +39,8 @@ const cases = [
     badgeColor: 'bg-[#ffebed]',
     badgeTextColor: 'text-[#ff1616]',
     title: 'Cải thiện răng cửa đổi màu bằng phục hình thẩm mỹ',
-    before: '/임상사진/chính민아B_앞니 보철/chính민아B_앞니심미보철크라운_before.jpg',
-    after: '/임상사진/chính민아B_앞니 보철/chính민아B_앞니심미보철크라운_after.jpg',
+    before: '/임상사진/앞니보철-1/앞니심미보철크라운_before.jpg',
+    after: '/임상사진/앞니보철-1/앞니심미보철크라운_after.jpg',
     description: 'Hoàn thành răng cửa tự nhiên bằng mão răng thẩm mỹ',
   },
 ];

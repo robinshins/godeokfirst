@@ -33,7 +33,7 @@ export default function FeaturesSection() {
             <div className="bg-[#f3f6fb] rounded-[16px] p-5 flex flex-col gap-3 w-full">
               {[
                 { label: 'Murakkab koʼmilgan aql tishlari', desc: 'Chuqur koʼmilgan boʼlsa ham muammo yoʼq' },
-                { label: 'Nervga yaqin aql tishlari', desc: 'Nerv shikastlanishi xavfisiz xavfsiz sugʼurish' },
+                { label: 'Nervga yaqin aql tishlari', desc: 'Olib tashlashdan oldin nerv kanaligacha masofa 3D KT da tekshiriladi' },
                 { label: 'Gorizontal koʼmilgan aql tishlari', desc: 'Yon tomonga yotgan murakkab holatlar ham hal qilinadi' },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-2">

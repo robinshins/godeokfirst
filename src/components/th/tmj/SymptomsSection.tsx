@@ -89,10 +89,10 @@ export default function TmjSymptomsSection() {
             className="text-[#4DC8D8] font-bold text-[16px] leading-[1.5]"
             style={{ fontFamily: 'Pretendard, sans-serif' }}
           >
-            โรคข้อต่อขากรรไกรหายเองได้ยาก<br />การรักษาเร็วได้ผลดีที่สุด
+            หากยังปวดหรืออ้าปากลำบาก<br />ควรตรวจหาสาเหตุก่อน
           </p>
           <p className="text-white/40 text-[13px]">
-            ยิ่งปล่อยไว้นาน ข้อต่อยิ่งเสียหาย การรักษาจะซับซ้อนขึ้น
+            หากมีเพียงเสียงดังโดยไม่ปวด อาจติดตามอาการหลังการตรวจ
           </p>
         </div>
 

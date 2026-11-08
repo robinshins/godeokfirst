@@ -4,7 +4,6 @@ import Image from 'next/image';
 
 const cases = [
   { type: 'ถอนฟันคุดล่างซ้าย', badgeColor: 'bg-[#fff9ec]', badgeTextColor: 'text-[#ffc53d]', title: 'ถอนฟันคุดฝังล่างซ้ายอย่างปลอดภัย', before: '/임상사진/사랑니/왼쪽아래사랑니_before.jpeg', after: '/임상사진/사랑니/왼쪽아래사랑니_after.jpeg', description: 'ถอนฟันคุดฝังล่างซ้ายสำเร็จอย่างปลอดภัย' },
-  { type: 'ถอนฟันคุดล่างขวา', badgeColor: 'bg-[#fef1e5]', badgeTextColor: 'text-[#f57400]', title: 'ฟื้นตัวดีหลังถอนฟันคุดล่างขวา', before: '/임상사진/사랑니/우측아래사랑니_before.jpeg', after: '/임상사진/사랑니/우측아래사랑니_after.jpeg', description: 'เหงือกฟื้นตัวสะอาดหลังถอนฟันคุดล่างขวา' },
   { type: 'รากฟันเทียม + ถอนฟันคุดพร้อมกัน', badgeColor: 'bg-[#e8f4fd]', badgeTextColor: 'text-[#0088cc]', title: 'ฝังรากฟันเทียมและถอนฟันคุดในครั้งเดียว', before: '/임상사진/사랑니/임플란트식립하면서사랑니발치_before.jpeg', after: '/임상사진/사랑니/임플란트하면서발치_after.jpeg', description: 'ลดจำนวนครั้งที่ต้องมาพบแพทย์โดยทำพร้อมกัน' },
 ];
 

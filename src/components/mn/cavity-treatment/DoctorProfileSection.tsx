@@ -91,7 +91,7 @@ export default function DoctorProfileSection() {
                             мэдрэлэмчилгээ, дахинмэдрэлэмчилгээ
                           </p>
                           <p className="font-['Pretendard_JP'] font-medium text-[14px] leading-[1.5] tracking-[-0.28px] opacity-80">
- нас мэдрэлэмчилгээ шүдний эмнэлэг мэргэжилтэн.
+ Сувгийн эмчилгээ нь нарийн ур чадвар шаарддаг эмчилгээ юм.
                           </p>
                         </div>
                       </div>
@@ -176,7 +176,7 @@ export default function DoctorProfileSection() {
  {/* өвчтөн */}
                     <div className="bg-[#008095]/20 backdrop-blur-sm px-4 py-3 rounded-xl w-full border border-[#008095]/30">
                       <p className="font-['Pretendard_JP'] font-semibold text-[14px] leading-[1.5] tracking-[-0.28px] text-white">
- 💡 мэргэжлийн эмч, өвчтөнминут минут шаардлагатай эмчилгээ явуулах.
+ 💡 Нэгдсэн шүдний эмчилгээний мэргэжлийн эмчийн хувьд сайтар зөвлөлдөж, зөвхөн шаардлагатай эмчилгээг хийнэ.
                       </p>
                     </div>
                   </div>

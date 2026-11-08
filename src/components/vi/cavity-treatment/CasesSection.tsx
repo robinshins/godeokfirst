@@ -11,12 +11,12 @@ const cases = [
     summary: 'sâu răng loại bỏ chính xác phần bệnh và dùng resinphục hồi gọn gàng bằng phục hồi',
     steps: [
       {
-        img: '/임상사진/sâu răng/김효연_sâu răng_before.jpg',
+        img: '/임상사진/충치/충치_before.jpg',
         label: 'Trước điều trị',
         desc: 'răng hàmđang trong tình trạng sâu răng tiến triển. Xác nhận đổi màu và tổn thương do sâu răng trên bề mặt răng.',
       },
       {
-        img: '/임상사진/sâu răng/김효연_sâu răng_after.jpg',
+        img: '/임상사진/충치/충치_after.jpg',
         label: 'Hoàn thành điều trị',
         desc: 'sâu răngloại bỏ hoàn toàn và dùng resinđể phục hồi. Hình dạng răng được phục hồi gọn gàng.',
       },
@@ -29,12 +29,12 @@ const cases = [
     summary: 'Phát sinh ở nhiều răng sâu răngloại bỏ chính xác theo từng bước phục hồi',
     steps: [
       {
-        img: '/임상사진/sâu răng-1/방준영_sâu răng_before.jpg',
+        img: '/임상사진/충치-1/충치_before.jpg',
         label: 'Trước điều trị',
         desc: 'Sâu răng tiến triển ở nhiều răng hàm. Xác nhận sâu răng thứ phát quanh phục hồi cũ.',
       },
       {
-        img: '/임상사진/sâu răng-1/방준영_sâu răng_after.jpg',
+        img: '/임상사진/충치-1/충치_after.jpg',
         label: 'Hoàn thành điều trị',
         desc: 'Loại bỏ tất cả sâu răng và hoàn thành tự nhiên bằng phục hồi phù hợp mỗi răng.',
       },
@@ -43,18 +43,18 @@ const cases = [
   {
     num: '03',
     tag: 'vết nứt điều trị',
-    title: 'Nứt răng, phục hồi mão răng vàng',
-    summary: 'Bảo vệ răng bị nứt bằng mão vàng sau chẩn đoán chính xác',
+    title: 'Nứt răng, phục hồi bằng mão màu răng',
+    summary: 'Răng hàm bị nứt được chẩn đoán và bảo vệ bằng mão màu răng',
     steps: [
       {
-        img: '/임상사진/vết nứt/김고운_vết nứt_실사_before.jpg',
-        label: 'Chẩn đoán X-ray',
-        desc: 'Xác nhận chính xác vị trí và phạm vi vết nứt răng bằng chụp X-ray.',
+        img: '/임상사진/크랙/크랙_실사_before.jpg',
+        label: 'Kiểm tra vết nứt',
+        desc: 'Khi phóng to có thể thấy đường nứt cạnh miếng trám. Vết nứt khó thấy trên X-quang nên được kiểm tra bằng mắt và triệu chứng khi cắn.',
       },
       {
-        img: '/임상사진/vết nứt/김고운_vết nứt_실사_after.jpg',
-        label: 'Hoàn thành lắp mão răng vàng',
-        desc: 'Bảo vệ răng nứt bằng mão răng vàng để ngăn gãy thêm. Với chất liệu vàng bền bỉ, có thể sử dụng ổn định lâu dài.',
+        img: '/임상사진/크랙/크랙_실사_after.jpg',
+        label: 'Hoàn thành gắn mão răng',
+        desc: 'Toàn bộ răng được bọc bằng mão màu răng để vết nứt không lan rộng. Phục hình màu vàng trong ảnh là mão vàng có sẵn ở răng bên cạnh.',
       },
     ],
   },
@@ -65,12 +65,12 @@ const cases = [
     summary: 'Phục hồi phục hình răng cửa bị tổn thương chính xác, khôi phục thẩm mỹ tự nhiên',
     steps: [
       {
-        img: '/임상사진/chính재윤_앞니보철/chính재윤_앞니보철_실제사진_before.jpg',
+        img: '/임상사진/앞니보철-2/앞니보철_실제사진_before.jpg',
         label: 'Trước điều trị',
         desc: 'Răng cửa bị tổn thương cần cải thiện thẩm mỹ và chức năng.',
       },
       {
-        img: '/임상사진/chính재윤_앞니보철/chính재윤_앞니보철_실제사진_after.jpg',
+        img: '/임상사진/앞니보철-2/앞니보철_실제사진_after.jpg',
         label: 'Hoàn thành phục hồi phục hình',
         desc: 'Tái hiện hình dạng và màu sắc tương tự răng tự nhiên bằng phục hồi phục hình chính xác.',
       },
@@ -83,12 +83,12 @@ const cases = [
     summary: 'Loại bỏ phục hình cũ và tái phục hồi bằng phục hình mới để cải thiện thẩm mỹ và chức năng',
     steps: [
       {
-        img: '/임상사진/Tái phục hình răng cửa/앞니재보철_실사_before.jpg',
+        img: '/임상사진/앞니 재보철/앞니재보철_실사_before.jpg',
         label: 'Trước điều trị',
         desc: 'Cần tái phục hình do đổi màu và giảm độ khít của phục hình cũ.',
       },
       {
-        img: '/임상사진/Tái phục hình răng cửa/앞니재보철_실사_after.jpg',
+        img: '/임상사진/앞니 재보철/앞니재보철_실사_after.jpg',
         label: 'Hoàn thành tái phục hình',
         desc: 'Loại bỏ phục hình cũ và phục hồi tự nhiên bằng phục hình mới.',
       },
@@ -101,12 +101,12 @@ const cases = [
     summary: 'Cải thiện thẩm mỹ răng cửa bằng mão răng, phục hồi nụ cười tự nhiên',
     steps: [
       {
-        img: '/임상사진/chính민아B_앞니 보철/chính민아B_앞니심미보철크라운_before.jpg',
+        img: '/임상사진/앞니보철-1/앞니심미보철크라운_before.jpg',
         label: 'Trước điều trị',
         desc: 'Cần cải thiện hình dạng và màu sắc răng cửa.',
       },
       {
-        img: '/임상사진/chính민아B_앞니 보철/chính민아B_앞니심미보철크라운_after.jpg',
+        img: '/임상사진/앞니보철-1/앞니심미보철크라운_after.jpg',
         label: 'Hoàn thành phục hình thẩm mỹ',
         desc: 'Tái hiện hình dạng và màu sắc tự nhiên bằng mão răng thẩm mỹ.',
       },

@@ -9,8 +9,8 @@ const cases = [
     badgeColor: 'bg-[#fff9ec]',
     badgeTextColor: 'text-[#ffc53d]',
     title: 'Tooth damaged by cavity restored with resin',
-    before: '/임상사진/Cavity/김효연_Cavity_before.jpg',
-    after: '/임상사진/Cavity/김효연_Cavity_after.jpg',
+    before: '/임상사진/충치/충치_before.jpg',
+    after: '/임상사진/충치/충치_after.jpg',
     description: 'Resin restoration completed matching natural tooth color after cavity removal',
   },
   {
@@ -19,8 +19,8 @@ const cases = [
     badgeColor: 'bg-[#fef1e5]',
     badgeTextColor: 'text-[#f57400]',
     title: 'Pain from tooth crack, protected with crown',
-    before: '/임상사진/크랙/김고운_크랙_실사_before.jpg',
-    after: '/임상사진/크랙/김고운_크랙_실사_after.jpg',
+    before: '/임상사진/크랙/크랙_실사_before.jpg',
+    after: '/임상사진/크랙/크랙_실사_after.jpg',
     description: 'Cracked tooth safely restored with crown',
   },
   {
@@ -29,8 +29,8 @@ const cases = [
     badgeColor: 'bg-[#e8f4fd]',
     badgeTextColor: 'text-[#0088cc]',
     title: 'Damaged front teeth naturally restored with prosthetics',
-    before: '/임상사진/정재윤_Front TeethProsthetics/정재윤_Front TeethProsthetics_실제사진_before.jpg',
-    after: '/임상사진/정재윤_Front TeethProsthetics/정재윤_Front TeethProsthetics_실제사진_after.jpg',
+    before: '/임상사진/앞니보철-2/앞니보철_실제사진_before.jpg',
+    after: '/임상사진/앞니보철-2/앞니보철_실제사진_after.jpg',
     description: 'Both aesthetics and function restored with front teeth prosthetics',
   },
   {
@@ -39,8 +39,8 @@ const cases = [
     badgeColor: 'bg-[#ffebed]',
     badgeTextColor: 'text-[#ff1616]',
     title: 'Discolored front teeth improved with aesthetic prosthetics',
-    before: '/임상사진/정민아B_Front Teeth Prosthetics/정민아B_Front Teeth심미ProstheticsCrown_before.jpg',
-    after: '/임상사진/정민아B_Front Teeth Prosthetics/정민아B_Front Teeth심미ProstheticsCrown_after.jpg',
+    before: '/임상사진/앞니보철-1/앞니심미보철크라운_before.jpg',
+    after: '/임상사진/앞니보철-1/앞니심미보철크라운_after.jpg',
     description: 'Natural front teeth completed with aesthetic prosthetics crown',
   },
 ];

@@ -61,9 +61,9 @@ export default function TmjDoctorMessageSection() {
           {/* Key Stats */}
           <div className="flex flex-col gap-3">
             {[
-              { num: '70%', desc: 'Tỷ lệ người trưởng thành từng bị rối loạn khớp thái dương hàm' },
-              { num: '3 lần', desc: 'Nguy cơ mãn tính khi bỏ qua — Điều trị sớm là chìa khóa' },
-              { num: '85%', desc: 'Tỷ lệ cải thiện bằng điều trị bảo tồn (không phẫu thuật)' },
+              { num: '31%', desc: 'Tỷ lệ rối loạn khớp thái dương hàm ở người lớn (phân tích gộp 2021)' },
+              { num: 'Không phẫu thuật', desc: 'Bắt đầu bằng thuốc, chườm, bài tập hàm và máng nhai' },
+              { num: 'Nguyên nhân', desc: 'Kiểm tra cả thói quen cắn chặt, nghiến răng và khớp cắn' },
             ].map((item, i) => (
               <div
                 key={i}

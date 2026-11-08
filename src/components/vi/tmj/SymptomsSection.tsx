@@ -89,10 +89,10 @@ export default function TmjSymptomsSection() {
             className="text-[#4DC8D8] font-bold text-[16px] leading-[1.5]"
             style={{ fontFamily: 'Pretendard, sans-serif' }}
           >
-            Rối loạn khớp thái dương hàm khó tự khỏi.<br />Điều trị sớm là hiệu quả nhất.
+            Nếu đau hoặc khó há miệng kéo dài,<br />nên kiểm tra nguyên nhân trước.
           </p>
           <p className="text-white/40 text-[13px]">
-            Càng bỏ qua, tổn thương đĩa khớp càng tiến triển và điều trị càng phức tạp.
+            Nếu chỉ có tiếng kêu mà không đau, có thể theo dõi sau khi khám.
           </p>
         </div>
 

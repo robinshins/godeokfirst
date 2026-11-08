@@ -9,8 +9,8 @@ const cases = [
     badgeColor: 'bg-[#fff9ec]',
     badgeTextColor: 'text-[#ffc53d]',
  title:'цооронхой гэмтэл шүд композит вон',
-    before: '/임상사진/цооронхой/김효연_цооронхой_before.jpg',
-    after: '/임상사진/цооронхой/김효연_цооронхой_after.jpg',
+    before: '/임상사진/충치/충치_before.jpg',
+    after: '/임상사진/충치/충치_after.jpg',
  description:'цооронхой арилгах байгалийншүд өнгө композит сэргээн засвар дууссан',
   },
   {
@@ -19,8 +19,8 @@ const cases = [
     badgeColor: 'bg-[#fef1e5]',
     badgeTextColor: 'text-[#f57400]',
  title:'шүд ан цав өвдөлт, титэм',
-    before: '/임상사진/크랙/김고운_크랙_실사_before.jpg',
-    after: '/임상사진/크랙/김고운_크랙_실사_after.jpg',
+    before: '/임상사진/크랙/크랙_실사_before.jpg',
+    after: '/임상사진/크랙/크랙_실사_after.jpg',
  description:'ан цав явуулах шүд титэм аюулгүй сэргээн засвар',
   },
   {
@@ -29,8 +29,8 @@ const cases = [
     badgeColor: 'bg-[#e8f4fd]',
     badgeTextColor: 'text-[#0088cc]',
  title:'гэмтэл урд шүд хиймэл шүд байгалийн вон',
-    before: '/임상사진/정재윤_앞니хиймэл шүд/정재윤_앞니хиймэл шүд_실제사진_before.jpg',
-    after: '/임상사진/정재윤_앞니хиймэл шүд/정재윤_앞니хиймэл шүд_실제사진_after.jpg',
+    before: '/임상사진/앞니보철-2/앞니보철_실제사진_before.jpg',
+    after: '/임상사진/앞니보철-2/앞니보철_실제사진_after.jpg',
  description:'урд шүд хиймэл шүд гоо сайхны удаа',
   },
   {
@@ -39,8 +39,8 @@ const cases = [
     badgeColor: 'bg-[#ffebed]',
     badgeTextColor: 'text-[#ff1616]',
  title:'урд шүд гоо сайхныхиймэл шүд',
-    before: '/임상사진/정민아B_앞니 хиймэл шүд/정민아B_앞니심미хиймэл шүдтитэм_before.jpg',
-    after: '/임상사진/정민아B_앞니 хиймэл шүд/정민아B_앞니심미хиймэл шүдтитэм_after.jpg',
+    before: '/임상사진/앞니보철-1/앞니심미보철크라운_before.jpg',
+    after: '/임상사진/앞니보철-1/앞니심미보철크라운_after.jpg',
  description:'гоо сайхныхиймэл шүд титэм байгалийн урд шүд дуусгах',
   },
 ];

@@ -48,7 +48,7 @@ const homeJsonLd = {
           item: {
             '@type': 'Service',
             name: 'Wisdom Tooth Extraction',
-            description: '3D CT precise diagnosis for safe extraction without nerve damage',
+            description: 'Extraction planned after checking the nerve canal on 3D CT',
             image: 'https://gdfirstdent.co.kr/icons/extraction.png',
             url: 'https://gdfirstdent.co.kr/wisdom-tooth',
           },

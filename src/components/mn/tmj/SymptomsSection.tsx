@@ -89,10 +89,10 @@ export default function TmjSymptomsSection() {
             className="text-[#4DC8D8] font-bold text-[16px] leading-[1.5]"
             style={{ fontFamily: 'Pretendard, sans-serif' }}
           >
- эрүүний үе эмгэг байгалийн.<br />эхний эмчилгээ.
+ Өвдөлт эсвэл ам ангайхад хүндрэл үргэлжилбэл<br />эхлээд шалтгааныг тодруулах нь зүйтэй.
           </p>
           <p className="text-white/40 text-[13px]">
- гэмтэл явуулах эмчилгээ.
+ Зөвхөн дуу гарч өвдөхгүй бол үзлэгийн дараа ажиглаж болно.
           </p>
         </div>
 

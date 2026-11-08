@@ -13,15 +13,15 @@ export default function BeforeAfterSection() {
       name: '지●●',
       gender: '남성',
       type: '다수 임플란트 · 엑스레이',
-      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_before.jpg',
-      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_after.jpg'
+      beforeImage: '/임상사진/임플란트-1/어금니임플란트_엑스레이_before.jpg',
+      afterImage: '/임상사진/임플란트-1/어금니임플란트_엑스레이_after.jpg'
     },
     {
       name: '지●●',
       gender: '남성',
       type: '다수 임플란트 · 실제사진',
-      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_before.jpg',
-      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_after.jpg'
+      beforeImage: '/임상사진/임플란트-1/어금니임플란트_실제사진_before.jpg',
+      afterImage: '/임상사진/임플란트-1/어금니임플란트_실제사진_after.jpg'
     }
   ];
 
@@ -31,22 +31,22 @@ export default function BeforeAfterSection() {
       name: '지●●',
       gender: '남성',
       type: '임플란트 보철 · 엑스레이',
-      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_before.jpg',
-      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_after.jpg'
+      beforeImage: '/임상사진/임플란트-1/어금니임플란트_엑스레이_before.jpg',
+      afterImage: '/임상사진/임플란트-1/어금니임플란트_엑스레이_after.jpg'
     },
     {
       name: '지●●',
       gender: '남성',
       type: '임플란트 보철 · 실제사진',
-      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_before.jpg',
-      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_after.jpg'
+      beforeImage: '/임상사진/임플란트-1/어금니임플란트_실제사진_before.jpg',
+      afterImage: '/임상사진/임플란트-1/어금니임플란트_실제사진_after.jpg'
     },
     {
       name: '이●●',
       gender: '여성',
       type: '임플란트 · 실제사진',
-      beforeImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_before.jpg',
-      afterImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_after.jpg'
+      beforeImage: '/임상사진/임플란트-2/임플란트_실사_before.jpg',
+      afterImage: '/임상사진/임플란트-2/20251028_110155.jpg'
     }
   ];
 

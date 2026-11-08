@@ -33,7 +33,7 @@ export default function FeaturesSection() {
             <div className="bg-[#f3f6fb] rounded-[16px] p-5 flex flex-col gap-3 w-full">
               {[
                 { label: 'Răng khôn mọc ngầm phức tạp', desc: 'Dù nằm sâu trong nướu cũng OK' },
-                { label: 'Răng khôn gần dây thần kinh', desc: 'Nhổ an toàn không lo tổn thương thần kinh' },
+                { label: 'Răng khôn gần dây thần kinh', desc: 'Kiểm tra khoảng cách đến ống thần kinh bằng 3D CT trước khi nhổ' },
                 { label: 'Răng khôn mọc ngang', desc: 'Ca khó nằm ngang cũng xử lý được' },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-2">

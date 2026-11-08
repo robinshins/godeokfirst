@@ -6,7 +6,7 @@ import FadeInSection from '@/components/common/FadeInSection';
 export default function WisdomToothStats() {
   const stats = [
     { number: '2,700+', unit: 'случаев', label: 'Накопленных удалений зубов мудрости' },
-    { number: '0', unit: 'случаев', label: 'Повторных лечений из-за осложнений', subtitle: '0 повторных лечений с момента открытия в Годок Эду Таун' },
+    { number: '3D', unit: 'КТ', label: 'Диагностика перед удалением', subtitle: 'Положение корней и нервного канала оцениваем в 3D' },
     { number: '0', unit: '%', label: 'Направлений в вышестоящие больницы', subtitle: 'Наоборот, другие клиники направляют сложные случаи к нам' },
   ];
 

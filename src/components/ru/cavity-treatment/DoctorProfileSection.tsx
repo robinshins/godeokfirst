@@ -91,7 +91,7 @@ export default function DoctorProfileSection() {
                             нервлечение, повторныйнервлечение
                           </p>
                           <p className="font-['Pretendard_JP'] font-medium text-[14px] leading-[1.5] tracking-[-0.28px] opacity-80">
- летодин требование нервлечение стоматологиясохранение и специалист.
+ Лечение корневых каналов требует тонкой и точной работы.
                           </p>
                         </div>
                       </div>
@@ -176,7 +176,7 @@ export default function DoctorProfileSection() {
  {/* пациент индивидуально консультация */}
                     <div className="bg-[#008095]/20 backdrop-blur-sm px-4 py-3 rounded-xl w-full border border-[#008095]/30">
                       <p className="font-['Pretendard_JP'] font-semibold text-[14px] leading-[1.5] tracking-[-0.28px] text-white">
- 💡 сохранение и специалист все лечение о богатый опыт сразу, пациентминут и достаточноодин консультация через самый необходимый лечение проведение.
+ 💡 Как специалист по комплексной стоматологии, мы подробно консультируем и проводим только необходимое лечение.
                       </p>
                     </div>
                   </div>

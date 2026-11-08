@@ -61,9 +61,9 @@ export default function TmjDoctorMessageSection() {
           {/* Key Stats */}
           <div className="flex flex-col gap-3">
             {[
-              { num: '70%', desc: 'Percentage of adults who have experienced TMJ disorder' },
-              { num: '3x', desc: 'Risk of becoming chronic if left untreated — early treatment is key' },
-              { num: '85%', desc: 'Percentage improved with conservative (non-surgical) treatment' },
+              { num: '31%', desc: 'Prevalence of TMD in adults (2021 meta-analysis)' },
+              { num: 'Non-surgical', desc: 'Start with medication, heat/cold packs, jaw exercises and splints' },
+              { num: 'Cause', desc: 'We also check clenching, grinding and your bite' },
             ].map((item, i) => (
               <div
                 key={i}

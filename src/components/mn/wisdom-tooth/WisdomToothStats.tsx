@@ -6,7 +6,7 @@ import FadeInSection from '@/components/common/FadeInSection';
 export default function WisdomToothStats() {
   const stats = [
     { number: '2,700+', unit: 'удаа', label: 'Нийт хүзүү шүд авсан тоо' },
-    { number: '0', unit: 'удаа', label: 'Хүндрэлээс болсон дахин эмчилгээ', subtitle: 'Годок Эду Таун нээснээс хойш дахин эмчилгээ 0' },
+    { number: '3D', unit: 'CT', label: 'Авахаас өмнөх оношилгоо', subtitle: 'Үндэс ба мэдрэлийн сувгийн байрлалыг 3D-ээр шалгана' },
     { number: '0', unit: '%', label: 'Дээд шатны эмнэлэгт шилжүүлэх хувь', subtitle: 'Харин ч бусад эмнэлгүүд хүнд тохиолдлуудыг бидэнд илгээдэг' },
   ];
 

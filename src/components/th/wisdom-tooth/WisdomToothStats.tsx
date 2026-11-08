@@ -6,7 +6,7 @@ import FadeInSection from '@/components/common/FadeInSection';
 export default function WisdomToothStats() {
   const stats = [
     { number: '2,700+', unit: 'ครั้ง', label: 'สะสมการถอนฟันคุด' },
-    { number: '0', unit: 'ครั้ง', label: 'การรักษาซ้ำจากผลข้างเคียง', subtitle: 'ไม่มีการรักษาซ้ำตั้งแต่เปิดคลินิกที่ Godeok Edu Town' },
+    { number: '3D', unit: 'CT', label: 'ตรวจวินิจฉัยก่อนถอนฟัน', subtitle: 'ตรวจตำแหน่งรากฟันคุดและคลองประสาทแบบสามมิติ' },
     { number: '0', unit: '%', label: 'อัตราส่งต่อโรงพยาบาลขนาดใหญ่', subtitle: 'จริงๆ แล้วโรงพยาบาลอื่นส่งเคสยากมาให้เรา' },
   ];
 

@@ -37,10 +37,10 @@ export default function TmjSymptomsSection() {
 
         <div className="bg-[#008095]/10 border border-[#008095]/30 rounded-2xl p-6 flex flex-col gap-2 text-center">
           <p className="text-[#4DC8D8] font-bold text-[16px] leading-[1.5]" style={{ fontFamily: 'Pretendard, sans-serif' }}>
-            顎関節障害は自然治癒が困難です。<br />初期治療が最も効果的です。
+            痛みや口の開けにくさが続くなら<br />まず原因を確認しましょう。
           </p>
           <p className="text-white/40 text-[13px]">
-            放置するほど関節ディスクの損傷が進行し治療が複雑になります。
+            音だけで痛みがなければ、診察後に経過を見ることもあります。
           </p>
         </div>
       </div>

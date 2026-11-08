@@ -29,7 +29,7 @@ export default function CaseStudySection() {
               <div className="relative w-full">
                 <div className="bg-[#f3f6fb] h-[220px] overflow-hidden relative rounded-[20px] w-full">
                   <Image
-                    src="/임상사진/美白/양해영_美白_before.jpg"
+                    src="/임상사진/미백/미백_before.jpg"
                     alt="美白 前"
                     fill
                     className="object-cover"
@@ -46,7 +46,7 @@ export default function CaseStudySection() {
               <div className="relative w-full">
                 <div className="bg-[#f3f6fb] h-[220px] overflow-hidden relative rounded-[20px] w-full">
                   <Image
-                    src="/임상사진/美白/양해영_美白_after.jpg"
+                    src="/임상사진/미백/미백_after.jpg"
                     alt="美白 后"
                     fill
                     className="object-cover"
@@ -81,7 +81,7 @@ export default function CaseStudySection() {
               <div className="relative w-full">
                 <div className="bg-[#f3f6fb] h-[220px] overflow-hidden relative rounded-[20px] w-full">
                   <Image
-                    src="/임상사진/안동건_美白/안동건_美白_before.jpg"
+                    src="/임상사진/미백-2/미백_before.jpg"
                     alt="美白 前"
                     fill
                     className="object-cover"
@@ -98,7 +98,7 @@ export default function CaseStudySection() {
               <div className="relative w-full">
                 <div className="bg-[#f3f6fb] h-[220px] overflow-hidden relative rounded-[20px] w-full">
                   <Image
-                    src="/임상사진/안동건_美白/안동건_美白_after.jpg"
+                    src="/임상사진/미백-2/미백_after.jpg"
                     alt="美白 后"
                     fill
                     className="object-cover"

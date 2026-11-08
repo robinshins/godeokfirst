@@ -9,15 +9,15 @@ export default function RealPatientResultsSection() {
       name: 'パク●●',
       gender: '男性',
       type: '全顎インプラント・レントゲン',
-      beforeImage: '/임상사진/박균조_전악임플란트/박균조_전체임플란트_엑스레이_before.jpg',
-      afterImage: '/임상사진/박균조_전악임플란트/박균조_전체임플란트_엑스레이_after.jpg'
+      beforeImage: '/임상사진/전체임플란트-1/전체임플란트_엑스레이_before.jpg',
+      afterImage: '/임상사진/전체임플란트-1/전체임플란트_엑스레이_after.jpg'
     },
     {
       name: 'パク●●',
       gender: '男性',
       type: '全顎インプラント・実物写真',
-      beforeImage: '/임상사진/박균조_전악임플란트/박균조_전체임플란트_실제사진_before.jpg',
-      afterImage: '/임상사진/박균조_전악임플란트/박균조_전체임플란트_실제사진_after.jpg'
+      beforeImage: '/임상사진/전체임플란트-1/전체임플란트_실제사진_before.jpg',
+      afterImage: '/임상사진/전체임플란트-1/전체임플란트_실제사진_after.jpg'
     }
   ];
 

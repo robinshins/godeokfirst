@@ -33,7 +33,7 @@ export default function FeaturesSection() {
             <div className="bg-[#f3f6fb] rounded-[16px] p-5 flex flex-col gap-3 w-full">
               {[
                 { label: 'Хүндрэлтэй далд хүзүү шүд', desc: 'Гүн суусан байсан ч асуудалгүй' },
-                { label: 'Мэдрэлд ойр хүзүү шүд', desc: 'Мэдрэл гэмтэх эрсдэлгүй аюулгүй авалт' },
+                { label: 'Мэдрэлд ойр хүзүү шүд', desc: 'Авахаас өмнө мэдрэлийн сувгийн зайг 3D CT-ээр шалгана' },
                 { label: 'Хэвтээ далд хүзүү шүд', desc: 'Хажуу тийш хэвтсэн хүнд тохиолдол ч шийдэгдэнэ' },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-2">

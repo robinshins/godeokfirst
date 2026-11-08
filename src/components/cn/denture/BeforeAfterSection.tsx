@@ -10,15 +10,15 @@ export default function BeforeAfterSection() {
       name: '박●●',
       gender: '남성',
       type: '전악 임플란트 · 엑스레이 전후',
-      beforeImage: '/임상사진/박균조_전악임플란트/박균조_전체임플란트_엑스레이_before.jpg',
-      afterImage: '/임상사진/박균조_전악임플란트/박균조_전체임플란트_엑스레이_after.jpg'
+      beforeImage: '/임상사진/전체임플란트-1/전체임플란트_엑스레이_before.jpg',
+      afterImage: '/임상사진/전체임플란트-1/전체임플란트_엑스레이_after.jpg'
     },
     {
       name: '박●●',
       gender: '남성',
       type: '전악 임플란트 · 실제사진 전후',
-      beforeImage: '/임상사진/박균조_전악임플란트/박균조_전체임플란트_실제사진_before.jpg',
-      afterImage: '/임상사진/박균조_전악임플란트/박균조_전체임플란트_실제사진_after.jpg'
+      beforeImage: '/임상사진/전체임플란트-1/전체임플란트_실제사진_before.jpg',
+      afterImage: '/임상사진/전체임플란트-1/전체임플란트_실제사진_after.jpg'
     }
   ];
 

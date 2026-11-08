@@ -48,7 +48,7 @@ const homeJsonLd = {
           item: {
             '@type': 'Service',
             name: '사랑니 발치',
-            description: '3D CT 정밀 진단으로 신경 손상없이 안전하게 발치',
+            description: '3D CT로 신경관 위치를 확인한 뒤 계획하는 발치',
             image: 'https://gdfirstdent.co.kr/icons/extraction.png',
             url: 'https://gdfirstdent.co.kr/wisdom-tooth',
           },
@@ -59,7 +59,7 @@ const homeJsonLd = {
           item: {
             '@type': 'Service',
             name: '충치치료 & 신경치료',
-            description: '발치 대신 살리는 치료, 보존과 전문의의 정밀 치료',
+            description: '발치 대신 살리는 치료, 통합치의학과 전문의의 정밀 치료',
             image: 'https://gdfirstdent.co.kr/icons/cavity.png',
             url: 'https://gdfirstdent.co.kr/cavity-treatment',
           },

@@ -13,15 +13,6 @@ const cases = [
     description: 'Successfully and safely extracted impacted lower left wisdom tooth',
   },
   {
-    type: 'Lower Right Wisdom Tooth Extraction',
-    badgeColor: 'bg-[#fef1e5]',
-    badgeTextColor: 'text-[#f57400]',
-    title: 'Clean Recovery After Lower Right Wisdom Tooth Extraction',
-    before: '/임상사진/사랑니/우측아래사랑니_before.jpeg',
-    after: '/임상사진/사랑니/우측아래사랑니_after.jpeg',
-    description: 'Clean gum recovery after lower right wisdom tooth extraction',
-  },
-  {
     type: 'Implant + Wisdom Tooth Simultaneous',
     badgeColor: 'bg-[#e8f4fd]',
     badgeTextColor: 'text-[#0088cc]',

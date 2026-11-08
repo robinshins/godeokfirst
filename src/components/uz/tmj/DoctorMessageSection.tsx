@@ -61,9 +61,9 @@ export default function TmjDoctorMessageSection() {
           {/* Key Stats */}
           <div className="flex flex-col gap-3">
             {[
-              { num: '70%', desc: 'Kattalar orasida jagʼ boʼgʼimi kasalligini boshdan kechirgan nisbati' },
-              { num: '3 marta', desc: 'Eʼtiborsiz qoldirilganda surunkali boʼlish xavfi — erta davolash asosiy' },
-              { num: '85%', desc: 'Konservativ davolash (operatsiyasiz) bilan yaxshilangan nisbat' },
+              { num: '31%', desc: 'Kattalarda jagʼ boʼgʼimi buzilishi tarqalishi (2021 meta-tahlil)' },
+              { num: 'Jarrohliksiz', desc: 'Dori, issiq-sovuq, jagʼ mashqlari va splintdan boshlanadi' },
+              { num: 'Sabab', desc: 'Tishni qisish, gʼijirlatish va tishlamni ham tekshiramiz' },
             ].map((item, i) => (
               <div
                 key={i}

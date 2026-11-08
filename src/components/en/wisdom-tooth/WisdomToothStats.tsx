@@ -6,7 +6,7 @@ import FadeInSection from '@/components/common/FadeInSection';
 export default function WisdomToothStats() {
   const stats = [
     { number: '2,700+', unit: 'cases', label: 'Cumulative Wisdom Tooth Extractions' },
-    { number: '0', unit: 'cases', label: 'Retreatments Due to Complications', subtitle: 'Zero retreatments since opening at Godeok Edu Town' },
+    { number: '3D', unit: 'CT', label: 'Pre-extraction Diagnosis', subtitle: 'Root and nerve canal positions checked in 3D' },
     { number: '0', unit: '%', label: 'Referral Rate to Higher-Level Hospitals', subtitle: 'In fact, other clinics send their difficult cases to us' },
   ];
 

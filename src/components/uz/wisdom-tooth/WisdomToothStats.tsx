@@ -6,7 +6,7 @@ import FadeInSection from '@/components/common/FadeInSection';
 export default function WisdomToothStats() {
   const stats = [
     { number: '2,700+', unit: 'marta', label: 'Jami aql tishi sugʼurilgan' },
-    { number: '0', unit: 'marta', label: 'Asoratlar tufayli qayta davolash', subtitle: 'Godeok Edu Town ochilganidan beri qayta davolash 0 marta' },
+    { number: '3D', unit: 'KT', label: 'Olib tashlashdan oldingi tashxis', subtitle: 'Ildiz va nerv kanali joylashuvini 3D da tekshiramiz' },
     { number: '0', unit: '%', label: 'Yuqori darajali kasalxonaga yoʼnaltirish', subtitle: 'Aksincha, boshqa kasalxonalar murakkab holatlarni bizga yoʼnaltiradi' },
   ];
 

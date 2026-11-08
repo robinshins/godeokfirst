@@ -89,10 +89,10 @@ export default function TmjSymptomsSection() {
             className="text-[#4DC8D8] font-bold text-[16px] leading-[1.5]"
             style={{ fontFamily: 'Pretendard, sans-serif' }}
           >
-            TMJ disorders rarely heal on their own.<br />Early treatment is the most effective.
+            If pain or difficulty opening your mouth continues,<br />it is best to check the cause first.
           </p>
           <p className="text-white/40 text-[13px]">
-            The longer it is left untreated, the more the joint disc deteriorates, making treatment more complex.
+            If there is only a clicking sound without pain, we may simply monitor it after an exam.
           </p>
         </div>
 

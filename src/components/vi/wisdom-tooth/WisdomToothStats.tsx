@@ -6,7 +6,7 @@ import FadeInSection from '@/components/common/FadeInSection';
 export default function WisdomToothStats() {
   const stats = [
     { number: '2,700+', unit: 'ca', label: 'Tổng số ca nhổ răng khôn' },
-    { number: '0', unit: 'ca', label: 'Tái điều trị do biến chứng', subtitle: '0 ca tái điều trị kể từ khi khai trương tại Godeok Edu Town' },
+    { number: '3D', unit: 'CT', label: 'Chẩn đoán trước khi nhổ', subtitle: 'Kiểm tra vị trí chân răng và ống thần kinh bằng 3D' },
     { number: '0', unit: '%', label: 'Tỷ lệ chuyển viện lên tuyến trên', subtitle: 'Thực tế các bệnh viện khác chuyển ca khó đến chúng tôi' },
   ];
 

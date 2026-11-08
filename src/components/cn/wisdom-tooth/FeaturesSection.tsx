@@ -33,7 +33,7 @@ export default function FeaturesSection() {
             <div className="bg-[#f3f6fb] rounded-[16px] p-5 flex flex-col gap-3 w-full">
               {[
                 { label: '复杂阻生智齿', desc: '即使深埋在牙龈中也没问题' },
-                { label: '靠近神经的智齿', desc: '无需担心神经损伤的安全拔除' },
+                { label: '靠近神经的智齿', desc: '用3D CT确认与神经管的距离后再拔除' },
                 { label: '水平阻生智齿', desc: '横躺的疑难病例也能处理' },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-2">

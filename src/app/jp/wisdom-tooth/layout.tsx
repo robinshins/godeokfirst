@@ -25,7 +25,7 @@ const wisdomToothJsonLd = {
       '@type': 'MedicalProcedure',
       '@id': 'https://gdfirstdent.co.kr/wisdom-tooth#service',
       name: '고덕동사랑니 평택사랑니발치',
-      description: '고덕동사랑니 평택사랑니발치 전문. 3D CT精密診断으로 신경 손상없이 안전하게 발치. 대학병원급 난이도 발치.',
+      description: '고덕동사랑니 평택사랑니발치 전문. 3D CT精密診断으로 신경관 위치를 확인한 뒤 계획하는 발치. 대학병원급 난이도 발치.',
       image: 'https://gdfirstdent.co.kr/icons/extraction.png',
       url: 'https://gdfirstdent.co.kr/wisdom-tooth',
       procedureType: 'Surgical',

@@ -4,7 +4,6 @@ import Image from 'next/image';
 
 const cases = [
   { type: '左下智齿拔除', badgeColor: 'bg-[#fff9ec]', badgeTextColor: 'text-[#ffc53d]', title: '左下阻生智齿安全拔除', before: '/임상사진/사랑니/왼쪽아래사랑니_before.jpeg', after: '/임상사진/사랑니/왼쪽아래사랑니_after.jpeg', description: '安全完成阻生左下智齿拔除' },
-  { type: '右下智齿拔除', badgeColor: 'bg-[#fef1e5]', badgeTextColor: 'text-[#f57400]', title: '右下智齿拔除后恢复良好', before: '/임상사진/사랑니/우측아래사랑니_before.jpeg', after: '/임상사진/사랑니/우측아래사랑니_after.jpeg', description: '右下智齿拔除后牙龈恢复整洁' },
   { type: '种植牙+智齿同时手术', badgeColor: 'bg-[#e8f4fd]', badgeTextColor: 'text-[#0088cc]', title: '种植牙植入与智齿拔除同时进行', before: '/임상사진/사랑니/임플란트식립하면서사랑니발치_before.jpeg', after: '/임상사진/사랑니/임플란트하면서발치_after.jpeg', description: '同时进行种植牙植入和智齿拔除，最大限度减少就诊次数' },
 ];
 

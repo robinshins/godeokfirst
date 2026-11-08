@@ -9,8 +9,8 @@ const cases = [
     badgeColor: 'bg-[#fff9ec]',
     badgeTextColor: 'text-[#ffc53d]',
     title: 'Kariyes sababli shikastlangan tishni rezin bilan tiklash',
-    before: '/임상사진/충치/김효연_충치_before.jpg',
-    after: '/임상사진/충치/김효연_충치_after.jpg',
+    before: '/임상사진/충치/충치_before.jpg',
+    after: '/임상사진/충치/충치_after.jpg',
     description: 'Kariyes olib tashlanganidan soʼng tabiiy tish rangiga mos rezin bilan tiklash tugallandi',
   },
   {
@@ -19,8 +19,8 @@ const cases = [
     badgeColor: 'bg-[#fef1e5]',
     badgeTextColor: 'text-[#f57400]',
     title: 'Tish yorilishi sababli ogʼriq, toj bilan himoya',
-    before: '/임상사진/크랙/김고운_크랙_실사_before.jpg',
-    after: '/임상사진/크랙/김고운_크랙_실사_after.jpg',
+    before: '/임상사진/크랙/크랙_실사_before.jpg',
+    after: '/임상사진/크랙/크랙_실사_after.jpg',
     description: 'Yoriq rivojlangan tishni toj bilan xavfsiz tiklash',
   },
   {
@@ -29,8 +29,8 @@ const cases = [
     badgeColor: 'bg-[#e8f4fd]',
     badgeTextColor: 'text-[#0088cc]',
     title: 'Shikastlangan old tishni protez bilan tabiiy tiklash',
-    before: '/임상사진/정재윤_앞니보철/정재윤_앞니보철_실제사진_before.jpg',
-    after: '/임상사진/정재윤_앞니보철/정재윤_앞니보철_실제사진_after.jpg',
+    before: '/임상사진/앞니보철-2/앞니보철_실제사진_before.jpg',
+    after: '/임상사진/앞니보철-2/앞니보철_실제사진_after.jpg',
     description: 'Old tish protezi bilan estetika va funksiya tiklantirildi',
   },
   {
@@ -39,8 +39,8 @@ const cases = [
     badgeColor: 'bg-[#ffebed]',
     badgeTextColor: 'text-[#ff1616]',
     title: 'Rangi oʼzgargan old tishni estetik protez bilan yaxshilash',
-    before: '/임상사진/정민아B_앞니 보철/정민아B_앞니심미보철크라운_before.jpg',
-    after: '/임상사진/정민아B_앞니 보철/정민아B_앞니심미보철크라운_after.jpg',
+    before: '/임상사진/앞니보철-1/앞니심미보철크라운_before.jpg',
+    after: '/임상사진/앞니보철-1/앞니심미보철크라운_after.jpg',
     description: 'Estetik protez toj bilan tabiiy old tish yaratildi',
   },
 ];

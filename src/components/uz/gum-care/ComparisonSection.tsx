@@ -16,9 +16,9 @@ const levels = [
     level: 'Step 2',
     title: 'Tozalash',
     badge: 'Yiliga 1~2 marta · Sugʼurta qoʼllaniladi',
-    desc: 'Milk ustidagi qotib qolgan tish toshi va yog\'larni ultratovush jihozi bilan olib tashlaydi. 1 marta tozalash bilan yurak-qon tomir kasalligi xavfini 10~14% kamaytirish mumkinligi tadqiqotlarda isbotlangan. 19 yoshdan oshganlar uchun yiliga 1 marta sugʼurta qoʼllaniladi.',
+    desc: 'Milk ustidagi qotib qolgan tish toshi va yog\'larni ultratovush jihozi bilan olib tashlaydi. Muntazam tozalatganlarda yurak-qon tomir kasalliklari kamroq uchragani haqida Koreya kuzatuv tadqiqotlari bor. 19 yoshdan oshganlar uchun yiliga 1 marta sugʼurta qoʼllaniladi.',
     point: 'Milk ichidagi chuqur joylargacha faqat tozalash bilan yetib boʼlmaydi.',
-    insurance: '19 yoshdan oshganlar · Yiliga 1 marta · Sugʼurta qoʼllaniladi (oʼz hissasi 20%)',
+    insurance: '19 yoshdan oshganlar · Yiliga 1 marta · Sugʼurta qoʼllaniladi',
     highlight: false,
   },
   {

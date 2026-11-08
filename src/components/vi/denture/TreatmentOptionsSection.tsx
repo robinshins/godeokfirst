@@ -112,7 +112,7 @@ const treatments = [
   {
     id: 'all-on-x',
     num: '05',
-    tag: 'Điều trị khuyên dùng',
+    tag: 'Lựa chọn khi thiếu xương',
     tagColor: 'bg-[#008095]/10 text-[#008095] border-[#008095]/20',
     title: 'All-on-X Implant',
     subtitle: 'All-on-4 / All-on-6',
@@ -124,9 +124,9 @@ const treatments = [
     ],
     color: '#008095',
     pros: [
-      'Chi phí thấp hơn Implant toàn hàm nhưng hiệu quả tương đương',
-      'Người có tình trạng xương kém cũng có thể thực hiện với ghép xương tối thiểu',
-      'Rút ngắn đáng kể thời gian điều trị (3~6 tháng)',
+      'Răng cố định với ít trụ hơn cấy ghép toàn hàm',
+      'Cấy nghiêng trụ phía sau giúp giảm ghép xương',
+      'Có thể gắn răng tạm ngay sau phẫu thuật nếu đủ điều kiện',
     ],
     cons: [
       'Gánh nặng chi phí cao hơn Hàm giả thông thường',

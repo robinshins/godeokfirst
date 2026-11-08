@@ -13,15 +13,15 @@ export default function BeforeAfterSection() {
       name: 'จ●●',
       gender: 'ชาย',
       type: 'รากฟันเทียมหลายซี่ · เอกซเรย์',
-      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_before.jpg',
-      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_after.jpg'
+      beforeImage: '/임상사진/임플란트-1/어금니임플란트_엑스레이_before.jpg',
+      afterImage: '/임상사진/임플란트-1/어금니임플란트_엑스레이_after.jpg'
     },
     {
       name: 'จ●●',
       gender: 'ชาย',
       type: 'รากฟันเทียมหลายซี่ · ภาพจริง',
-      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_before.jpg',
-      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_after.jpg'
+      beforeImage: '/임상사진/임플란트-1/어금니임플란트_실제사진_before.jpg',
+      afterImage: '/임상사진/임플란트-1/어금니임플란트_실제사진_after.jpg'
     }
   ];
 
@@ -31,22 +31,22 @@ export default function BeforeAfterSection() {
       name: 'จ●●',
       gender: 'ชาย',
       type: 'ครอบฟันรากเทียม · เอกซเรย์',
-      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_before.jpg',
-      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_엑스레이_after.jpg'
+      beforeImage: '/임상사진/임플란트-1/어금니임플란트_엑스레이_before.jpg',
+      afterImage: '/임상사진/임플란트-1/어금니임플란트_엑스레이_after.jpg'
     },
     {
       name: 'จ●●',
       gender: 'ชาย',
       type: 'ครอบฟันรากเทียม · ภาพจริง',
-      beforeImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_before.jpg',
-      afterImage: '/임상사진/지종환_임플란트/지종환_어금니임플란트_실제사진_after.jpg'
+      beforeImage: '/임상사진/임플란트-1/어금니임플란트_실제사진_before.jpg',
+      afterImage: '/임상사진/임플란트-1/어금니임플란트_실제사진_after.jpg'
     },
     {
       name: 'อ●●',
       gender: 'หญิง',
       type: 'รากฟันเทียม · ภาพจริง',
-      beforeImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_before.jpg',
-      afterImage: '/임상사진/이영주_임플란트/이영주_임플란트_실사_after.jpg'
+      beforeImage: '/임상사진/임플란트-2/임플란트_실사_before.jpg',
+      afterImage: '/임상사진/임플란트-2/20251028_110155.jpg'
     }
   ];
 

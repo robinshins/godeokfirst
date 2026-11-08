@@ -16,9 +16,9 @@ const levels = [
     level: 'Step 2',
     title: 'Scaling',
     badge: '1~2 times/year · Insurance Covered',
-    desc: 'Removes hardened tartar and plaque above the gumline using ultrasonic equipment. Studies show that a single scaling session can reduce cardiovascular disease risk by 10~14%. For those aged 19 and above, one session per year is covered by health insurance.',
+    desc: 'Removes hardened tartar and plaque above the gumline using ultrasonic equipment. Korean observational studies found fewer cardiovascular events in people who had regular scaling. For those aged 19 and above, one session per year is covered by health insurance.',
     point: 'Scaling alone cannot reach deep below the gumline (subgingival areas).',
-    insurance: 'Age 19+ · Once per year · Insurance Covered (co-pay 20%)',
+    insurance: 'Age 19+ · Once per year · Insurance Covered',
     highlight: false,
   },
   {

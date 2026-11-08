@@ -33,7 +33,7 @@ export default function FeaturesSection() {
             <div className="bg-[#f3f6fb] rounded-[16px] p-5 flex flex-col gap-3 w-full">
               {[
                 { label: 'ฟันคุดฝังที่ซับซ้อน', desc: 'แม้ฝังลึกในเหงือกก็ไม่มีปัญหา' },
-                { label: 'ฟันคุดใกล้เส้นประสาท', desc: 'ถอนปลอดภัยไม่ต้องกังวลเส้นประสาทเสียหาย' },
+                { label: 'ฟันคุดใกล้เส้นประสาท', desc: 'ตรวจระยะห่างจากคลองประสาทด้วย 3D CT ก่อนถอน' },
                 { label: 'ฟันคุดฝังตะแคง', desc: 'เคสยากที่นอนตะแคงก็จัดการได้' },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-2">

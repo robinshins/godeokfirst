@@ -16,9 +16,9 @@ const levels = [
     level: 'Step 2',
     title: 'Cạo vôi răng',
     badge: '1~2 lần/năm · Bảo hiểm y tế',
-    desc: 'Loại bỏ cao răng và mảng bám cứng phía trên nướu bằng thiết bị siêu âm. Chỉ một lần lấy cao răng có thể giảm nguy cơ bệnh tim mạch 10~14% theo kết quả nghiên cứu. Từ 19 tuổi trở lên, bảo hiểm y tế được áp dụng 1 lần/năm.',
+    desc: 'Loại bỏ cao răng và mảng bám cứng phía trên nướu bằng thiết bị siêu âm. Nghiên cứu quan sát tại Hàn Quốc cho thấy người lấy cao răng định kỳ ít mắc bệnh tim mạch hơn. Từ 19 tuổi trở lên, bảo hiểm y tế được áp dụng 1 lần/năm.',
     point: 'Chỉ lấy cao răng không thể tiếp cận sâu dưới nướu.',
-    insurance: 'Từ 19 tuổi · 1 lần/năm · Bảo hiểm y tế (tự chi trả 20%)',
+    insurance: 'Từ 19 tuổi · 1 lần/năm · Bảo hiểm y tế',
     highlight: false,
   },
   {

@@ -46,7 +46,7 @@ export default function FeaturesSection() {
             <div className="bg-[#f3f6fb] rounded-[16px] p-5 flex flex-col gap-3 w-full">
               {[
                 { label: '複雑な埋伏親知らず', desc: '歯茎の奥深くに埋まっていてもOK' },
-                { label: '神経近接親知らず', desc: '神経損傷の心配なく安全に抜歯' },
+                { label: '神経近接親知らず', desc: '3D CTで神経管との距離を確認してから抜歯' },
                 { label: '水平埋伏親知らず', desc: '横向きの難しいケースも対応可能' },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-2">

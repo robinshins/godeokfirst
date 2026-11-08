@@ -78,7 +78,7 @@ export default function DoctorProfileSection() {
                             根管治療、再根管治療
                           </p>
                           <p className="font-['Pretendard_JP'] font-medium text-[14px] leading-[1.5] tracking-[-0.28px] opacity-80">
-                            繊細な術式が求められる根管治療は歯科保存科の専門領域です。
+                            根管治療は繊細な技術が求められる治療です。
                           </p>
                         </div>
                       </div>
@@ -142,7 +142,7 @@ export default function DoctorProfileSection() {
 
                     <div className="bg-[#008095]/20 backdrop-blur-sm px-4 py-3 rounded-xl w-full border border-[#008095]/30">
                       <p className="font-['Pretendard_JP'] font-semibold text-[14px] leading-[1.5] tracking-[-0.28px] text-white">
-                        保存科専門医として全ての診療に対する豊富な経験を基に、患者様と十分なカウンセリングを通じて最も必要な治療を進めます。
+                        統合歯科専門医として、十分なカウンセリングのうえ必要な治療を行います。
                       </p>
                     </div>
                   </div>

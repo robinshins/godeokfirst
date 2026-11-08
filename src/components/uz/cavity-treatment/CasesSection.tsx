@@ -11,12 +11,12 @@ const cases = [
     summary: 'Kariyes sohasini aniq olib tashlab, tabiiy tish rangidagi rezin bilan toza tiklash',
     steps: [
       {
-        img: '/임상사진/충치/김효연_충치_before.jpg',
+        img: '/임상사진/충치/충치_before.jpg',
         label: 'Davolashdan oldingi holat',
         desc: 'Oziq tishda kariyes rivojlangan holat. Tish yuzasida kariyes sababli rangning oʼzgarishi va shikastlanish aniqlangan.',
       },
       {
-        img: '/임상사진/충치/김효연_충치_after.jpg',
+        img: '/임상사진/충치/충치_after.jpg',
         label: 'Davolash tugallandi',
         desc: 'Kariyes toʼliq olib tashlandi va tabiiy tish rangidagi rezin bilan tiklandi. Tish shakli toza tiklandi.',
       },
@@ -29,12 +29,12 @@ const cases = [
     summary: 'Bir nechta tishda paydo boʼlgan kariyesni bosqichma-bosqich aniq olib tashlab tiklash',
     steps: [
       {
-        img: '/임상사진/충치-1/방준영_충치_before.jpg',
+        img: '/임상사진/충치-1/충치_before.jpg',
         label: 'Davolashdan oldingi holat',
         desc: 'Bir nechta oziq tishda kariyes rivojlangan holat. Mavjud tiklanma atrofida ikkilamchi kariyes aniqlangan.',
       },
       {
-        img: '/임상사진/충치-1/방준영_충치_after.jpg',
+        img: '/임상사진/충치-1/충치_after.jpg',
         label: 'Davolash tugallandi',
         desc: 'Barcha kariyeslar olib tashlandi va har bir tishga mos tiklanma bilan tabiiy tarzda yakunlandi.',
       },
@@ -43,18 +43,18 @@ const cases = [
   {
     num: '03',
     tag: 'Yoriq davolash',
-    title: 'Tish yorilishi, oltin toj bilan tiklash',
-    summary: 'Yorilgan tishni aniq tashxisdan soʼng oltin toj bilan himoya qilish',
+    title: 'Tish yorilishi, tish rangidagi toj bilan tiklash',
+    summary: 'Yorilgan oziq tish tashxis qilinib, tish rangidagi toj bilan himoyalandi',
     steps: [
       {
-        img: '/임상사진/크랙/김고운_크랙_실사_before.jpg',
-        label: 'Rentgen tashxisi',
-        desc: 'Rentgen surati orqali tish yorilishining joylashuvi va koʼlami aniq tekshiriladi.',
+        img: '/임상사진/크랙/크랙_실사_before.jpg',
+        label: 'Yoriqni tekshirish',
+        desc: 'Kattalashtirilganda plomba yonida yoriq chizigʼi koʼrinadi. Yoriqlar rentgenda yaxshi koʼrinmaydi, shuning uchun koʼrik va tishlaganda seziladigan belgilar bilan tekshiriladi.',
       },
       {
-        img: '/임상사진/크랙/김고운_크랙_실사_after.jpg',
-        label: 'Oltin toj oʼrnatish tugallandi',
-        desc: 'Yorilgan tish oltin toj bilan himoyalandi va qoʼshimcha sinishning oldini oladi. Yuqori chidamli oltin material bilan uzoq muddat barqaror foydalanish mumkin.',
+        img: '/임상사진/크랙/크랙_실사_after.jpg',
+        label: 'Toj oʼrnatildi',
+        desc: 'Yoriq kengaymasligi uchun butun tish tish rangidagi toj bilan qoplandi. Rasmdagi oltin rangli protez — qoʼshni tishdagi eski oltin toj.',
       },
     ],
   },
@@ -65,12 +65,12 @@ const cases = [
     summary: 'Shikastlangan old tishni aniq protezlash orqali tabiiy estetikani tiklash',
     steps: [
       {
-        img: '/임상사진/정재윤_앞니보철/정재윤_앞니보철_실제사진_before.jpg',
+        img: '/임상사진/앞니보철-2/앞니보철_실제사진_before.jpg',
         label: 'Davolashdan oldingi holat',
         desc: 'Old tish shikastlangan boʼlib, estetik va funksional jihatdan yaxshilash kerak holat.',
       },
       {
-        img: '/임상사진/정재윤_앞니보철/정재윤_앞니보철_실제사진_after.jpg',
+        img: '/임상사진/앞니보철-2/앞니보철_실제사진_after.jpg',
         label: 'Protez tiklash tugallandi',
         desc: 'Aniq protezlash orqali tabiiy tishga oʼxshash shakl va rang yaratildi.',
       },
@@ -101,12 +101,12 @@ const cases = [
     summary: 'Old tish estetikasini toj bilan yaxshilab, tabiiy tabassumni tiklash',
     steps: [
       {
-        img: '/임상사진/정민아B_앞니 보철/정민아B_앞니심미보철크라운_before.jpg',
+        img: '/임상사진/앞니보철-1/앞니심미보철크라운_before.jpg',
         label: 'Davolashdan oldingi holat',
         desc: 'Old tish shakli va rangini yaxshilash kerak boʼlgan holat.',
       },
       {
-        img: '/임상사진/정민아B_앞니 보철/정민아B_앞니심미보철크라운_after.jpg',
+        img: '/임상사진/앞니보철-1/앞니심미보철크라운_after.jpg',
         label: 'Estetik protezlash tugallandi',
         desc: 'Estetik protez toj bilan tabiiy shakl va rang yaratildi.',
       },

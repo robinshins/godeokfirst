@@ -84,7 +84,7 @@ export default function FeaturesSection() {
             <div className="bg-[#f3f6fb] rounded-[16px] p-5 flex flex-col gap-3 w-full">
               {[
                 { label: '복잡한 매복 사랑니', desc: '잇몸 속 깊이 묻혀있어도 OK' },
-                { label: '신경 근접 사랑니', desc: '신경 손상 걱정 없는 안전한 발치' },
+                { label: '신경 근접 사랑니', desc: '3D CT로 신경관과의 거리를 확인한 뒤 발치' },
                 { label: '수평 매복 사랑니', desc: '옆으로 누워있는 어려운 케이스도 가능' },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-2">

@@ -91,7 +91,7 @@ export default function DoctorProfileSection() {
                             Điều trị tủy, Tái điều trị tủy
                           </p>
                           <p className="font-['Pretendard_JP'] font-medium text-[14px] leading-[1.5] tracking-[-0.28px] opacity-80">
-                            Điều trị tủy đòi hỏi kỹ thuật tinh tế là lĩnh vực chuyên môn của nha khoa bảo tồn.
+                            Điều trị tủy là điều trị đòi hỏi kỹ thuật tinh tế.
                           </p>
                         </div>
                       </div>
@@ -176,7 +176,7 @@ export default function DoctorProfileSection() {
                     {/* bệnh nhân 맞춤 tư vấn 강조 */}
                     <div className="bg-[#008095]/20 backdrop-blur-sm px-4 py-3 rounded-xl w-full border border-[#008095]/30">
                       <p className="font-['Pretendard_JP'] font-semibold text-[14px] leading-[1.5] tracking-[-0.28px] text-white">
-                        💡 Với tư cách chuyên gia bảo tồn, dựa trên kinh nghiệm phong phú về mọi khám, tiến hành điều trị cần thiết nhất thông qua tư vấn đầy đủ với bệnh nhân.
+                        💡 Là bác sĩ chuyên khoa Nha khoa tích hợp, chúng tôi tư vấn kỹ lưỡng và chỉ tiến hành điều trị cần thiết.
                       </p>
                     </div>
                   </div>

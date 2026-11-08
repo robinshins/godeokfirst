@@ -84,7 +84,7 @@ export default function FeaturesSection() {
             <div className="bg-[#f3f6fb] rounded-[16px] p-5 flex flex-col gap-3 w-full">
               {[
                 { label: 'Complex Impacted Wisdom Teeth', desc: 'Even deeply buried — no problem' },
-                { label: 'Nerve-Adjacent Wisdom Teeth', desc: 'Safe extraction without nerve damage' },
+                { label: 'Nerve-Adjacent Wisdom Teeth', desc: 'Nerve canal distance checked with 3D CT before extraction' },
                 { label: 'Horizontal Impaction', desc: 'Even sideways difficult cases — handled' },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-2">

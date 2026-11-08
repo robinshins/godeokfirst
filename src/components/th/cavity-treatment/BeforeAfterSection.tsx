@@ -9,8 +9,8 @@ const cases = [
     badgeColor: 'bg-[#fff9ec]',
     badgeTextColor: 'text-[#ffc53d]',
     title: 'ฟื้นฟูฟันที่เสียหายจากฟันผุด้วยเรซิน',
-    before: '/임상사진/충치/김효연_충치_before.jpg',
-    after: '/임상사진/충치/김효연_충치_after.jpg',
+    before: '/임상사진/충치/충치_before.jpg',
+    after: '/임상사진/충치/충치_after.jpg',
     description: 'อุดเรซินเสร็จสมบูรณ์โดยให้เข้ากับสีฟันธรรมชาติหลังกำจัดฟันผุ',
   },
   {
@@ -19,8 +19,8 @@ const cases = [
     badgeColor: 'bg-[#fef1e5]',
     badgeTextColor: 'text-[#f57400]',
     title: 'ปวดจากฟันแตกร้าว ปกป้องด้วยครอบฟัน',
-    before: '/임상사진/크랙/김고운_크랙_실사_before.jpg',
-    after: '/임상사진/크랙/김고운_크랙_실사_after.jpg',
+    before: '/임상사진/크랙/크랙_실사_before.jpg',
+    after: '/임상사진/크랙/크랙_실사_after.jpg',
     description: 'บูรณะฟันที่แตกร้าวอย่างปลอดภัยด้วยครอบฟัน',
   },
   {
@@ -29,8 +29,8 @@ const cases = [
     badgeColor: 'bg-[#e8f4fd]',
     badgeTextColor: 'text-[#0088cc]',
     title: 'ฟื้นฟูฟันหน้าที่เสียหายอย่างเป็นธรรมชาติด้วยครอบฟัน',
-    before: '/임상사진/정재윤_앞니보철/정재윤_앞니보철_실제사진_before.jpg',
-    after: '/임상사진/정재윤_앞니보철/정재윤_앞니보철_실제사진_after.jpg',
+    before: '/임상사진/앞니보철-2/앞니보철_실제사진_before.jpg',
+    after: '/임상사진/앞니보철-2/앞니보철_실제사진_after.jpg',
     description: 'ฟื้นฟูทั้งความสวยงามและการทำงานด้วยครอบฟันหน้า',
   },
   {
@@ -39,8 +39,8 @@ const cases = [
     badgeColor: 'bg-[#ffebed]',
     badgeTextColor: 'text-[#ff1616]',
     title: 'ปรับปรุงฟันหน้าที่เปลี่ยนสีด้วยครอบฟันเพื่อความสวยงาม',
-    before: '/임상사진/정민아B_앞니 보철/정민아B_앞니심미보철크라운_before.jpg',
-    after: '/임상사진/정민아B_앞니 보철/정민아B_앞니심미보철크라운_after.jpg',
+    before: '/임상사진/앞니보철-1/앞니심미보철크라운_before.jpg',
+    after: '/임상사진/앞니보철-1/앞니심미보철크라운_after.jpg',
     description: 'ฟันหน้าที่ดูเป็นธรรมชาติด้วยครอบฟันเพื่อความสวยงาม',
   },
 ];

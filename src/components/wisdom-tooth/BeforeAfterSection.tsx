@@ -13,15 +13,6 @@ const cases = [
     description: '매복된 왼쪽 아래 사랑니를 안전하게 발치 완료',
   },
   {
-    type: '우측 아래 사랑니 발치',
-    badgeColor: 'bg-[#fef1e5]',
-    badgeTextColor: 'text-[#f57400]',
-    title: '우측 아래 사랑니 발치 후 깔끔한 회복',
-    before: '/임상사진/사랑니/우측아래사랑니_before.jpeg',
-    after: '/임상사진/사랑니/우측아래사랑니_after.jpeg',
-    description: '우측 아래 사랑니 발치 후 잇몸 깔끔하게 회복',
-  },
-  {
     type: '임플란트 + 사랑니 동시 시술',
     badgeColor: 'bg-[#e8f4fd]',
     badgeTextColor: 'text-[#0088cc]',

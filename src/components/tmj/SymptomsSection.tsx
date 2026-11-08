@@ -89,10 +89,10 @@ export default function TmjSymptomsSection() {
             className="text-[#4DC8D8] font-bold text-[16px] leading-[1.5]"
             style={{ fontFamily: 'Pretendard, sans-serif' }}
           >
-            턱관절 장애는 자연 치유가 어렵습니다.<br />초기 치료가 가장 효과적입니다.
+            통증이나 입 벌리기 불편이 이어진다면<br />원인부터 확인하는 것이 좋습니다.
           </p>
           <p className="text-white/40 text-[13px]">
-            방치할수록 관절 디스크 손상이 진행되어 치료가 복잡해집니다.
+            소리만 나고 아프지 않다면 진찰 후 경과를 지켜보기도 합니다.
           </p>
         </div>
 

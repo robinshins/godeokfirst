@@ -61,9 +61,9 @@ export default function TmjDoctorMessageSection() {
           {/* Key Stats */}
           <div className="flex flex-col gap-3">
             {[
-              { num: '70%', desc: '成人中有颞下颌关节障碍经历的比例' },
-              { num: '3倍', desc: '放置不管时慢性化风险 — 早期治疗是关键' },
-              { num: '85%', desc: '通过保守治疗（非手术）好转的比例' },
+              { num: '31%', desc: '成人颞下颌关节紊乱患病率（2021年荟萃分析）' },
+              { num: '非手术', desc: '从药物、冷热敷、下颌运动、咬合板开始' },
+              { num: '原因', desc: '同时检查紧咬牙、磨牙和咬合' },
             ].map((item, i) => (
               <div
                 key={i}

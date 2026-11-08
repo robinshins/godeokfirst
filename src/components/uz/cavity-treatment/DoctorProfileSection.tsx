@@ -91,7 +91,7 @@ export default function DoctorProfileSection() {
                             Nerv davolash, qayta nerv davolash
                           </p>
                           <p className="font-['Pretendard_JP'] font-medium text-[14px] leading-[1.5] tracking-[-0.28px] opacity-80">
-                            Nozik jarrohlik talab qilinadigan nerv davolash stomatologiya konservatsiya boʼlimining mutaxassislik sohasi.
+                            Ildiz kanalini davolash nozik va aniq ish talab qiladi.
                           </p>
                         </div>
                       </div>
@@ -176,7 +176,7 @@ export default function DoctorProfileSection() {
                     {/* 환자 맞춤 상담 강조 */}
                     <div className="bg-[#008095]/20 backdrop-blur-sm px-4 py-3 rounded-xl w-full border border-[#008095]/30">
                       <p className="font-['Pretendard_JP'] font-semibold text-[14px] leading-[1.5] tracking-[-0.28px] text-white">
-                        💡 Konservativ stomatologiya mutaxassisi sifatida barcha davolash boʼyicha boy tajribaga asoslanib, bemor bilan yetarli maslahat orqali eng zarur davolashni amalga oshiramiz.
+                        💡 Integratsiyalashgan stomatologiya mutaxassisi sifatida batafsil maslahatlashib, faqat zarur davolashni bajaramiz.
                       </p>
                     </div>
                   </div>
